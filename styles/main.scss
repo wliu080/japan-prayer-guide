@@ -1,0 +1,9 @@
+// overrides first
+$primary: #002A63;
+//$link-color: #0000ee;
+//$navbar-dark-color: #fff;
+//$display-font-weight: 700;
+//$font-family-sans-serif: Roboto, Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// and then import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
