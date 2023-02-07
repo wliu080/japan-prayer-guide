@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
 
-const ToggleHeader = () => {
+const ToggleHeader: React.FC = () => {
   // when the Navbar.Collapse is expanded we want to switch to the dark theme
   const [bg, setBg] = useState("white");
   const [variant, setVariant] = useState("light");
