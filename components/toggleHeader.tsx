@@ -24,14 +24,27 @@ const ToggleHeader: React.FC = () => {
             className="d-inline-block align-top"
           />{" "}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleColorScheme} />
-        <Navbar.Collapse id="basic-navbar-nav" className="no-transition">
-          <Nav className="mr-auto" variant={variant}>
-            <Nav.Link href="#topics">Topics</Nav.Link>
-            <Nav.Link href="#downloads">Downloads</Nav.Link>
-            <Nav.Link href="#purchase">Purchase the Book</Nav.Link>
-            <Nav.Link href="#about">About Us</Nav.Link>
-          </Nav>
+        <Navbar.Toggle aria-controls="header-navbar-nav" onClick={toggleColorScheme} />
+        <Navbar.Collapse id="header-navbar-nav">
+          <Container className="mobile-header d-flex flex-column justify-content-between">
+            <Nav className="mr-auto" variant={variant}>
+              <Nav.Link href="#topics">Topics</Nav.Link>
+              <Nav.Link href="#downloads">Downloads</Nav.Link>
+              <Nav.Link href="#purchase">Purchase the Book</Nav.Link>
+              <Nav.Link href="#about">About Us</Nav.Link>
+            </Nav>
+            <Container className="d-lg-none text-center">
+              <Image
+                alt="Crane logo"
+                src={bg === "white" ? "/bts-crane-wht-logo-en.png" : "/bts-crane-blue-logo-en.png"}
+                width="150"
+                height="30"
+              />{" "}
+              <p className="text-light fs-6">
+                We desire to see a prayer movement for Japan&apos;s spiritual breakthrough
+              </p>
+            </Container>
+          </Container>
         </Navbar.Collapse>
       </Container>
     </Navbar>

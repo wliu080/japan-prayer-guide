@@ -1,4 +1,3 @@
-import { SiteMapFooter } from "../components/siteMapFooter";
 import { ToggleHeader } from "../components/toggleHeader";
 import Head from "next/head";
 import { Container } from "react-bootstrap";
@@ -41,7 +40,6 @@ export default function Home() {
             Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
           </p>
         </Container>
-        <SiteMapFooter />
       </main>
     </>
   );
