@@ -9,10 +9,11 @@ In the prototype NextJS with typescript was used, and react-bootstrap was the fr
 
 - Use NextJS (no typescript)
 - Use react-bootstrap
+- Use typescript
 
 ### Status
 
-PROPOSED
+✅ CONFIRMED 2023/02/11
 
 ### Consequences
 
