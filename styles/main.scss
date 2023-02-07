@@ -1,5 +1,5 @@
 // overrides first
-$primary: #002A63;
+$primary: #002a63;
 //$link-color: #0000ee;
 //$navbar-dark-color: #fff;
 //$display-font-weight: 700;
@@ -7,3 +7,19 @@ $primary: #002A63;
 
 // and then import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// navbar override - this is used by the toggleHeader component to have the collapse fill full screen when expanded
+.no-transition {
+    -webkit-transition: height 0.01s !important;
+    -moz-transition: height 0.01s !important;
+    -ms-transition: height 0.01s !important;
+    -o-transition: height 0.01s !important;
+    transition: height 0.01s !important;
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar-collapse {
+      height: 100vh;
+    }
+}
+  

@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { ToggleHeader } from "@/components/toggleHeader";
+import Head from "next/head";
+import { Container } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -12,29 +12,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <Navbar fixed="top" bg="white" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">
-            <Image
-              alt="Crane logo with the text: Beneath the Surface"
-              src="/bts-crane-wht-logo-en.png"
-              width="150"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#topics">Topics</Nav.Link>
-              <Nav.Link href="#downloads">Downloads</Nav.Link>
-              <Nav.Link href="#purchase">Purchase the Book</Nav.Link>
-              <Nav.Link href="#about">About Us</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+        <ToggleHeader />
+        <Container id="landingbody" style={{'padding-top': '70px'}}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ante vehicula, maximus erat vel,
+            mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas.
+            Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat
+            varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim.
+            Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
+          </p>
         </Container>
-      </Navbar>
+        <Container>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ante vehicula, maximus erat vel,
+            mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas.
+            Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat
+            varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim.
+            Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
+          </p>
+        </Container>
+        <Container>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ante vehicula, maximus erat vel,
+            mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas.
+            Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat
+            varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim.
+            Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
+          </p>
+        </Container>
       </main>
     </>
-  )
+  );
 }
