@@ -1,4 +1,5 @@
-import { ToggleHeader } from "@/components/toggleHeader";
+import { SiteMapFooter } from "../components/siteMapFooter";
+import { ToggleHeader } from "../components/toggleHeader";
 import Head from "next/head";
 import { Container } from "react-bootstrap";
 
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
       <main>
         <ToggleHeader />
-        <Container id="landingbody" style={{'padding-top': '70px'}}>
+        <Container id="landingbody" style={{'paddingTop': '50px'}}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ante vehicula, maximus erat vel,
             mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas.
@@ -40,6 +41,7 @@ export default function Home() {
             Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
           </p>
         </Container>
+        <SiteMapFooter />
       </main>
     </>
   );
