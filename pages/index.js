@@ -1,48 +1,43 @@
-import { ToggleHeader } from "../components/toggleHeader";
 import Head from "next/head";
+import { ToggleHeader } from "../components/toggleHeader";
 import { Container } from "react-bootstrap";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Footer from "../components/footer"
 
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
+
 export default function Home() {
+  const { t } = useTranslation("common");
+
   return (
-    <>
+    <div>
       <Head>
-        <title>Beneath the Surface</title>
+        <title>{t("title")}</title>
         <meta name="description" content="Japan prayer guide" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <ToggleHeader />
-        <Container id="landingbody" style={{'paddingTop': '50px'}}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ante vehicula, maximus erat vel,
-            mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas.
-            Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat
-            varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim.
-            Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
-          </p>
+        <Container id="landingbody" style={{ paddingTop: "50px" }}>
+          <p>{t("placeholder")}</p>
         </Container>
         <Container>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ante vehicula, maximus erat vel,
-            mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas.
-            Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat
-            varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim.
-            Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
-          </p>
+          <p>{t("placeholder")}</p>
         </Container>
         <Container>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ante vehicula, maximus erat vel,
-            mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas.
-            Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat
-            varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim.
-            Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
-          </p>
+          <p>{t("placeholder")}</p>
         </Container>
         <Footer/>
       </main>
-    </>
+    </div>
   );
 }
