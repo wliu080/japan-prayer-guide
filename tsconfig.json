@@ -15,7 +15,7 @@
       "jsx": "preserve",
       "incremental": true
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scss/styles.js", "components/audioPlayer.tsx"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scss/styles.js", "components/audioPlayer.tsx", "next-i18next.config.js"],
     "exclude": ["node_modules"]
   }
   
