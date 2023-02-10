@@ -1,0 +1,17 @@
+// overrides first
+$primary: #002a63;
+//$link-color: #0000ee;
+//$navbar-dark-color: #fff;
+//$display-font-weight: 700;
+//$font-family-sans-serif: Roboto, Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// and then import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// navbar override - this is used by the toggleHeader component to have the collapse fill full screen when expanded
+@include media-breakpoint-down(md) {
+    .mobile-header {
+      height: 92vh;
+    }
+}
+  
