@@ -48,7 +48,7 @@ export default function Footer({data}:{data:any}) {
                 </div>
             </Row>
             <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
-                <Image style={{maxHeight:'75px', width:'auto'}} src="/apple-touch-icon.png" alt="logo"></Image>
+                <Image style={{maxHeight:'75px', width:'auto'}} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
             </Row>
             <Row className="text-center">
                 <p style={{color: 'white', fontSize:'0.8rem'}}>We desire to see a prayer movement for Japan&apos;s spiritual breakthrough</p>
