@@ -8,6 +8,7 @@ import { IconContext } from "react-icons/lib";
 import { BsYoutube, BsInstagram } from "react-icons/bs";
 import { MdEmail } from 'react-icons/md'
 import { FaAmazon } from "react-icons/fa";
+import styles from '../styles/Footer.module.css'
 
 export default function Footer({data}:{data:any}) {
 
@@ -17,7 +18,8 @@ export default function Footer({data}:{data:any}) {
         <>
         {/* Footer starts here */}
 
-        <Container fluid style={{backgroundColor: '#002A63', margin: 0}}>
+        <Container fluid className={styles.footerContainer}>
+            {/* For this row, replace this when Simon finishes and merges the language switcher */}
             <Row className="text-center d-flex justify-content-center align-items-center py-3" style={{color: 'white'}}>
                 <div>
                     <span onClick={()=>setLang(0)} style={lang === 0 ? {textDecoration:'underline #4592CF', cursor:'pointer'} : {cursor:'pointer', color:'#CECECE'}}>English</span>
@@ -25,6 +27,7 @@ export default function Footer({data}:{data:any}) {
                     <span onClick={()=>setLang(1)} style={lang === 1 ? {textDecoration:'underline #4592CF', cursor:'pointer'} : {cursor:'pointer', color:'#CECECE'}}>Japanese</span>
                 </div>
             </Row>
+            {/* See comment above */}
             <Row className="text-center d-flex flex-column justify-content-center align-items-center py-3 px-3">
                 <div style={{maxWidth:"600px"}}>
                     <input style={{border: 'none', backgroundColor:'#002A63', color:'white', borderBottom:'#CECECE 1px solid', borderRadius:0}} 
