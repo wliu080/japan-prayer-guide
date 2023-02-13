@@ -2,3 +2,30 @@
     background-color: #002A63;
     margin: 0;
 }
+
+.signupContainer {
+    max-width: 600px;
+}
+
+.signupInput {
+    border: none;
+    background-color: #002A63;
+    color: white;
+    border-bottom: '#CECECE 1px solid';
+    border-radius: 0;
+}
+
+.submitButton {
+    background-color: #4592CF;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+}
+
+.footerLink {
+    font-size:'0.8rem';
+    font-weight:300;
+    color: 'white';
+    text-decoration:'none';
+    margin-left: 8px;
+}
