@@ -2,7 +2,7 @@ name: Synchronize Editorial Branch from Main Branch
 run-name: Synchronizing the Editorial Branch due to changes on Main Branch
 on: 
   push:
-    branches: [ add-editorial-workflow ]
+    branches: [ main ]
 jobs:
   sync-editorial:
     runs-on: ubuntu-latest
@@ -10,14 +10,14 @@ jobs:
     - name: Checkout main
       uses: actions/checkout@v2
       with:
-        ref: add-editorial-workflow
+        ref: main
         fetch-depth: 0
     - name: Push to editorial
       id: pull
       uses: jojomatik/sync-branch@v1
       with:
-        source: "add-editorial-workflow"
-        target: "test-target-editorial"
+        source: "main"
+        target: "editorial"
         # The strategy to use, if fast-forward is not possible (merge, rebase, force, 
         # fail).
         #   Optional
