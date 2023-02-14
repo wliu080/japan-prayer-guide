@@ -14,8 +14,31 @@ jobs:
         fetch-depth: 0
     - name: Push to editorial
       id: pull
-      uses: tretuna/sync-branches@1.4.0
+      uses: jojomatik/sync-branch@v1
       with:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        FROM_BRANCH: "add-editorial-workflow"
-        TO_BRANCH: "test-target-editorial"
+        source: "add-editorial-workflow"
+        target: "test-target-editorial"
+        # The strategy to use, if fast-forward is not possible (merge, rebase, force, 
+        # fail).
+        #   Optional
+        #   Default: `merge`
+        #   Possible values:
+        #     - `merge`:  merge the source branch into the target branch
+        #     - `rebase`: rebase the target branch onto the source branch
+        #     - `force`:  force push the source branch to the target branch (overrides
+        #                 any changes on the target branch)
+        #     - `fail`:   pushes the source branch to the target branch, fails if the 
+        #                 target branch contains changes that are not present in the 
+        #                 source branch
+        strategy: "force"
+        resolve_conflicts: "source"
+        # The name to create merge commits with
+        #   Required, if strategy `merge` is used
+        #git_committer_name: ${{ secrets.BOT_GIT_NAME }}
+        # The email to create merge commits with
+        #   Required, if strategy `merge` is used
+        #git_committer_email: ${{ secrets.BOT_GIT_EMAIL }}
+        # The access token to push to the repository
+        #   Optional
+        #   Default: github.token
+        github_token: ${{ secrets.GH_TOKEN }}
