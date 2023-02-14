@@ -45,7 +45,7 @@ export default function Footer({data}:{data:any}) {
                 <Image style={{maxHeight:'20px', width:'auto'}} src="https://pioneers.org/wp-content/uploads/2018/09/pioneers_logo_full.png" alt="pioneers logo"></Image>
             </Row>
             <Row className="d-flex justify-content-center">
-                {/* another temp maxWidth */}
+                {/* another temp inline style maxWidth */}
                 <div className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
                     <p className="m-1 fs-5 fw-bold">Site Map</p>
                     <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by topics</Link>
@@ -57,13 +57,13 @@ export default function Footer({data}:{data:any}) {
                 </div>
             </Row>
             <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
-                {/* another temp maxHeight for an image */}
+                {/* another temp inline-style for an image */}
                 <Image style={{maxHeight:'50px', width:'auto'}} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
             </Row>
             <Row className="text-center px-5">
                 <p className="text-white fs-6 fw-light">We desire to see a prayer movement for Japan&apos;s spiritual breakthrough</p>
             </Row>
-            <Row className="d-flex justify-content-center align-items-center pt-1 pb-3" style={{color:'white'}}>
+            <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
                 <IconContext.Provider value={{size:'25px'}}>
                     <BsYoutube className="footer-icon"></BsYoutube>
                     <BsInstagram className="footer-icon"></BsInstagram>
