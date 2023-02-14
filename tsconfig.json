@@ -18,4 +18,3 @@
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scss/styles.js", "components/audioPlayer.tsx"],
     "exclude": ["node_modules"]
   }
-  
