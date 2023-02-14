@@ -1,0 +1,21 @@
+name: Synchronize Editorial Branch from Main Branch
+run-name: Synchronizing the Editorial Branch due to changes on Main Branch
+on: 
+  push:
+    branches: [ add-editorial-workflow ]
+jobs:
+  sync-editorial:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout main
+      uses: actions/checkout@v2
+      with:
+        ref: add-editorial-workflow
+        fetch-depth: 0
+    - name: Push to editorial
+      id: pull
+      uses: tretuna/sync-branches@1.4.0
+      with:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        FROM_BRANCH: "add-editorial-workflow"
+        TO_BRANCH: "test-target-editorial"
