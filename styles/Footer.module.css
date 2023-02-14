@@ -29,3 +29,12 @@
     text-decoration:'none';
     margin-left: 8px;
 }
+
+.footerIcon {
+    width: auto;
+    cursor: pointer;
+}
+
+.footerIcon:hover {
+    color:#4592CF
+}

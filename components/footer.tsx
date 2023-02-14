@@ -62,10 +62,10 @@ export default function Footer({data}:{data:any}) {
             </Row>
             <Row className="d-flex justify-content-center align-items-center pt-1 pb-3" style={{color:'white'}}>
                 <IconContext.Provider value={{size:'25px'}}>
-                    <BsYoutube style={{width:'auto'}}></BsYoutube>
-                    <BsInstagram style={{width:'auto'}}></BsInstagram>
-                    <MdEmail style={{width:'auto'}}></MdEmail>
-                    <FaAmazon style={{width:'auto'}}></FaAmazon>
+                    <BsYoutube className={styles.footerIcon}></BsYoutube>
+                    <BsInstagram className={styles.footerIcon} style={{width:'auto'}}></BsInstagram>
+                    <MdEmail className={styles.footerIcon} style={{width:'auto'}}></MdEmail>
+                    <FaAmazon className={styles.footerIcon} style={{width:'auto'}}></FaAmazon>
                 </IconContext.Provider>
             </Row>
             <Row className="text-center py-3 px-5">
