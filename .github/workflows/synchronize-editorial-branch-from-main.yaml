@@ -41,4 +41,4 @@ jobs:
         # The access token to push to the repository
         #   Optional
         #   Default: github.token
-        github_token: ${{ secrets.GH_TOKEN }}
+        #github_token: ${{ secrets.GH_TOKEN }}
