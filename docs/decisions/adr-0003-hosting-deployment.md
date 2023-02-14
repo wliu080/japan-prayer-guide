@@ -12,11 +12,11 @@ See Additional Information for the breakdown
 
 ### Decision
 
-Vercel to be used for Phase 1 and this to be revisited afterwards
+Vercel free tier to be used for Phase 1 and this to be revisited afterwards
 
 ### Status
 
-PROPOSED
+✅ CONFIRMED - 2023/02/14, to be revisited when the 'Downloads feature is looked at
 
 ### Consequences
 

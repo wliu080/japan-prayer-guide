@@ -19,6 +19,8 @@ PROPOSED
 
 
 ### Additional Information
+Useful links:
+- Alt-text naming decision tree https://www.w3.org/WAI/tutorials/images/decision-tree/
 
 Considered options:
 - WCAG 2 Level A standard https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=312&currentsidebar=%23col_customize&levels=aa%2Caaa&technologies=smil%2Cflash%2Csl#interruptions
@@ -30,3 +32,11 @@ Considered options:
     - (opt) aria roles -> needs more research
     - (opt) skip links support for skipping over repetitive link sections
 
+- 2023/02/14 suggestion raised for the following:
+    - alt text for images
+    - cc for videos
+    - keyboard navigation
+    - high contrast color theming
+    - detailed page titles
+    - correct HTML tags for headers (for screen readers). 
+Refer to basic examples here https://www.audioeye.com/post/accessible-website-design-examples/
