@@ -18,7 +18,7 @@ Some possibilities include:
 - Find a separate hosting website to use, such as Cloudflare or Box or Google Drive
 
 If going with the first option, we need to figure out how we want to keep access to our files in the codebase. For example, would it be in
-/public/audio/topic/<topicName>-<filename>? or /public/topic/<topicName>/audio/<filename> .. etc
+/public/audio/topic/TOPIC_NAME-FILE_NAME? or /public/topic/TOPIC_NAME/audio/FILE_NAME .. etc
 
 ### Decision
 
@@ -26,7 +26,7 @@ For now, we can keep the media files in the public folder. Overtime as the proje
 
 Regarding the code structure, since one requirement is that a user must be able to download all content per topic or location, they should be kept by topic or location. So structure will be:
 /public/topic
-../<topicName>/audio or ../<topicName>/video etc.
+../TOPIC_NAME/audio or ../TOPIC_NAME/video etc.
 ../misc/audio
 
 The misc is for resources without a topic.
