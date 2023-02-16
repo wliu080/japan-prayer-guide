@@ -45,9 +45,10 @@ const ToggleHeader: React.FC = () => {
                 width="150"
                 height="30"
               />{" "}
-              <p className="text-light fs-6">
+              <p className="text-light fs-6 pb-3">
                 {t('header.blurb')}
               </p>
+
             </Container>
           </Container>
         </Navbar.Collapse>
