@@ -4,7 +4,6 @@
 
 One of the requirements for phase 1 is to have resources available to download, such as articles, video, audio, etc. In general, in the downloads section, we want a user to be able to:
 - Download all files organized by topic
-- Download all files organized by location
 - Browse individual audio files, and download individual ones
 - Browse individual photo files, and download individual ones
 - Browse individual PDF files, and download individual ones
