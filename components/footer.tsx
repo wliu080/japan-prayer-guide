@@ -10,7 +10,7 @@ import { MdEmail } from 'react-icons/md'
 import { FaAmazon } from "react-icons/fa";
 import Link from "next/link";
 
-export default function Footer({data}:{data:any}) {
+export default function Footer() {
 
     const [lang, setLang] = React.useState(0)
 
@@ -18,7 +18,7 @@ export default function Footer({data}:{data:any}) {
         <>
         {/* Footer starts here */}
 
-        <Container fluid className="bg-primary">
+        <Container fluid className="bg-primary" data-testid="footer">
             {/* For this row, replace this when Simon finishes and merges the language switcher */}
             <Row className="text-center d-flex justify-content-center align-items-center py-3 fs-6 text-white">
                 <div>
