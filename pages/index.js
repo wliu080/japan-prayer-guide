@@ -1,6 +1,7 @@
 import { ToggleHeader } from "../components/toggleHeader";
 import Head from "next/head";
 import { Container } from "react-bootstrap";
+import Footer from "../components/footer"
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
             Duis quis metus ac nisi accumsan eleifend id quis massa.{" "}
           </p>
         </Container>
+        <Footer/>
       </main>
     </>
   );
