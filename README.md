@@ -75,6 +75,10 @@ The rough flow for making edits is - (1) navigate to the desired text `*.json` f
     2. You will see a list of open pull-requests, and a green button to create a `New pull request`. Click it.
     3. There should now be a grey bar showing the `base` and `compare` branches. Ensure that `base` is set to `main` and `compare` is `editorial`.
     4. You should now see a summary of your changes below, the files changed and a preview of the changes themselves. Click on the `Create pull request button` to confirm and continue.
+    5. You will be given a optional field to provided a more detailed explanation for other editors to see when reviewing your changes. By default at least one person needs to approve your changes before it can be merged (unless you are the code owner). Confirm your message by click the `Create pull request` button (make sure it is not set to Create Draft pull request)
+    6. Wait for someone to approve your changes. You can always view the status of your pull request on the `pull requests` tab. The conversation tab in your pull-request will display any updates, comments or suggestions from others, and will also have a button allowing you to `Merge pull request` once you have the necessary approvals. 
+
+### Reviewing and approving other people's changes
 
 ### Giving other accounts permission
 1. As the codebase owner, navigate to the [project access settings page](https://github.com/wliu080/japan-prayer-guide/settings/access). You may be prompted to re-input your account password to proceed.
