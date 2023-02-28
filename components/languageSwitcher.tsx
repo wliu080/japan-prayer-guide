@@ -1,8 +1,6 @@
 import { useRouter } from "next/router";
-import { useCallback, useMemo, useState } from "react";
 import { useTranslation } from "next-i18next";
-import { Container, Stack } from "react-bootstrap";
-import Link from "next/link";
+import { Stack } from "react-bootstrap";
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
@@ -19,12 +17,12 @@ const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <Stack direction="horizontal" gap={3} className="ms-auto">
-      <a href="#english" onClick={() => handleLanguageChange("en")} className="ms-auto link-light">
+    <Stack data-testid="language-switcher" direction="horizontal" gap={3} className="ms-auto">
+      <a href="#english" onClick={() => handleLanguageChange("en")} className="ms-auto link-light" data-testid="link-english">
         English
       </a>
       <div className="vr" />
-      <a href="#japanese" onClick={() => handleLanguageChange("ja")} className="me-auto link-light">
+      <a href="#japanese" onClick={() => handleLanguageChange("ja")} className="me-auto link-light" data-testid="link-japanese">
         日本語
       </a>
     </Stack>
