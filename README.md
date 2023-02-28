@@ -60,7 +60,7 @@ The rough flow for making edits is - (1) navigate to the desired text `*.json` f
     2. Locate the file you need to change, either via Github search, or by navigation <TODO: confirm one option with Sarah and just stick with that>
         1. Github has a search function but the results will direct you to the `main` branch, so you will need to remember to toggle back to the editorial branch once you have found the desired file.
         2. Simply put in the search text in the top left search bar and choose the `in this repository` option when searching.
-        3. Toggle back to the editorial branch via the button next to the breadcumbs.
+        3. Toggle back to the editorial branch via the button next to the breadcrumbs.
         4. For navigation, simply navigate to the `/public/locales` folder. It will have folders for each supported language `en`, `ja` etc.
         5. Whichever language you choose, the files inside will all have the same structure - there will be files for each section `downloads.json`, `about.json`, as well as files for each individual topic page, select the relevant file you desire.
 2. With the file selected, make your desired edits by clicking the pencil icon ('Edit this file`) located next to the 'Raw | Blame' buttons.
