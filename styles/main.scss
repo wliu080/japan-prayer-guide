@@ -1,9 +1,14 @@
 // overrides first
 $primary: #002a63;
+$secondary: #4592CF;
 //$link-color: #0000ee;
 //$navbar-dark-color: #fff;
 //$display-font-weight: 700;
 //$font-family-sans-serif: Roboto, Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-sizes: (
+  5: 0.875rem,
+  6: 0.8rem
+);
 
 // and then import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -13,5 +18,16 @@ $primary: #002a63;
     .mobile-header {
       height: 95vh;
     }
+}
+
+// general classes
+.footer-icon {
+  width: auto;
+  cursor: pointer;
+  width: auto;
+}
+
+.footer-icon:hover {
+  color:#4592CF
 }
   

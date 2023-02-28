@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ToggleHeader } from "../components/toggleHeader";
 import { Container } from "react-bootstrap";
+import Footer from "../components/footer"
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -12,6 +13,7 @@ export async function getStaticProps({ locale }) {
     },
   };
 }
+
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -35,6 +37,7 @@ export default function Home() {
         <Container>
           <p>{t("placeholder")}</p>
         </Container>
+        <Footer/>
       </main>
     </div>
   );

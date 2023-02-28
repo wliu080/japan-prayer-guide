@@ -1,0 +1,44 @@
+name: Synchronize Editorial Branch from Main Branch
+run-name: Synchronizing the Editorial Branch due to changes on Main Branch
+on: 
+  push:
+    branches: [ main ]
+jobs:
+  sync-editorial:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout main
+      uses: actions/checkout@v2
+      with:
+        ref: main
+        fetch-depth: 0
+    - name: Push to editorial
+      id: pull
+      uses: jojomatik/sync-branch@v1
+      with:
+        source: "main"
+        target: "editorial"
+        # The strategy to use, if fast-forward is not possible (merge, rebase, force, 
+        # fail).
+        #   Optional
+        #   Default: `merge`
+        #   Possible values:
+        #     - `merge`:  merge the source branch into the target branch
+        #     - `rebase`: rebase the target branch onto the source branch
+        #     - `force`:  force push the source branch to the target branch (overrides
+        #                 any changes on the target branch)
+        #     - `fail`:   pushes the source branch to the target branch, fails if the 
+        #                 target branch contains changes that are not present in the 
+        #                 source branch
+        strategy: "force"
+        resolve_conflicts: "source"
+        # The name to create merge commits with
+        #   Required, if strategy `merge` is used
+        #git_committer_name: ${{ secrets.BOT_GIT_NAME }}
+        # The email to create merge commits with
+        #   Required, if strategy `merge` is used
+        #git_committer_email: ${{ secrets.BOT_GIT_EMAIL }}
+        # The access token to push to the repository
+        #   Optional
+        #   Default: github.token
+        #github_token: ${{ secrets.GH_TOKEN }}

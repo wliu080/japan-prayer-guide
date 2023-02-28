@@ -2,7 +2,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+1. Install [NVM](https://github.com/nvm-sh/nvm).  This helps us to maintain the node dev environment.
+2. Install dependencies
+
+```bash
+nvm use && yarn start
+# or
+nvm use && npm i
+```
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,6 +23,13 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+```
+
+
+## Testing
+
+```bash
+nvm use && npm test
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
