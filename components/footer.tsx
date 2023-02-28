@@ -10,7 +10,7 @@ import { MdEmail } from 'react-icons/md'
 import { FaAmazon } from "react-icons/fa";
 import Link from "next/link";
 
-export default function Footer({data}:{data:any}) {
+export default function Footer() {
 
     const [lang, setLang] = React.useState(0)
 
@@ -18,7 +18,7 @@ export default function Footer({data}:{data:any}) {
         <>
         {/* Footer starts here */}
 
-        <Container fluid className="bg-primary">
+        <Container fluid className="bg-primary" data-testid="footer">
             {/* For this row, replace this when Simon finishes and merges the language switcher */}
             <Row className="text-center d-flex justify-content-center align-items-center py-3 fs-6 text-white">
                 <div>
@@ -34,7 +34,7 @@ export default function Footer({data}:{data:any}) {
                     <input className="form-control border-0 border-bottom bg-primary text-white px-0 fs-6 rounded-0"
                     type="email" placeholder="Sign up to get updates from us"></input>
                 </div>
-                <Button className="my-3 text-center bg-secondary text-white fs-6" style={{maxWidth:'600px'}}>Submit</Button>
+                <Button data-testid='signupButton' className="my-3 text-center bg-secondary text-white fs-6" style={{maxWidth:'600px'}}>Submit</Button>
             </Row>
             <Row className="text-center">
                 <p className="my-2 text-white fs-6 fw-light">In partnership with these ministry organizations</p>
@@ -46,7 +46,7 @@ export default function Footer({data}:{data:any}) {
             </Row>
             <Row className="d-flex justify-content-center">
                 {/* another temp inline style maxWidth */}
-                <div className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
+                <div data-testid='linksList' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
                     <p className="m-1 fs-5 fw-bold">Site Map</p>
                     <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by topics</Link>
                     <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by location</Link>
@@ -72,7 +72,7 @@ export default function Footer({data}:{data:any}) {
                 </IconContext.Provider>
             </Row>
             <Row className="text-center py-3 px-5">
-                <p className="text-white fs-6 fw-light">Copyright &copy; 2021 Beneath the Surface. All rights reserved.</p>
+                <p className="text-white fs-6 fw-light" data-testid={'copyright'}>Copyright &copy; 2021 Beneath the Surface. All rights reserved.</p>
             </Row>
         </Container>
         </>
