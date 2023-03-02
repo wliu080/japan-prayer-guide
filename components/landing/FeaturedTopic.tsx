@@ -2,22 +2,17 @@ import React from "react";
 import { Container, Card } from "react-bootstrap";
 import {FaPrayingHands} from 'react-icons/fa'
 import { IconContext } from "react-icons/lib";
-import { BsDownload } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 
-export default function TopicPrayerPoints({prayerPoints}:any) {
+export default function FeaturedTopic({title, prayerPoints}:any) {
     return (
-        <Container className="d-flex justify-content-center px-6">
-            <Card className="my-4 shadow" style={{maxWidth: '400px'}}>
-                {/* temporary height for video, before we finalize videos */}
+        <Container className="d-flex justify-content-center">
+            <Card className="my-4 shadow" style={{width: '400px'}}>
+                {/* temporary height for image, before we finalize images */}
                 <Card.Img variant="top" src="/bamboo.jpeg" style={{height:'300px'}}></Card.Img>
                 <Card.Body>
-                    <Card.Text className="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey d-flex justify-content-between align-items-center">
-                        Prayer Points
-                        <IconContext.Provider value={{size:'30px'}}>
-                            <BsDownload className="text-secondary fw-bold" style={{cursor: 'pointer'}}>
-                            </BsDownload>
-                        </IconContext.Provider>
+                    <Card.Text className="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey">
+                        {title}
                     </Card.Text>
                     <Card.Text className="d-flex align-items-center gap-2 text-secondary">
                         <IconContext.Provider value={{size:'20px'}}>
@@ -30,6 +25,10 @@ export default function TopicPrayerPoints({prayerPoints}:any) {
                             <li key={point} className="my-3">{point}</li>
                         )}
                     </ul>
+                    <Button className="w-100 mt-2 text-secondary border-secondary bg-white" variant="primary">Read the entire article</Button>
+                    <Card.Text className="my-3 w-100 mx-auto text-center text-decoration-underline text-secondary" style={{cursor:"pointer"}}>
+                        View all topics
+                    </Card.Text>
                 </Card.Body>
             </Card>
         </Container>

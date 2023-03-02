@@ -4,6 +4,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { Container, Stack } from "react-bootstrap";
 import { ToggleHeader } from "../../components/toggleHeader";
 import TopicPrayerPoints from "../../components/topic/TopicPrayerPoints";
+import PrayerSummary from "../../components/topic/PrayerSummary";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getTopicPageIds();
@@ -56,6 +57,9 @@ export default function TopicPage({
         <br/>
         <br/>
         <TopicPrayerPoints prayerPoints={topicMetadata.summary}/>
+        <br/>
+        <br/>
+        <PrayerSummary prayerPoints={topicMetadata.summary}/>
     </main>
     </>
   );
