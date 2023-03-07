@@ -16,7 +16,7 @@ $font-sizes: (
 // navbar override - this is used by the toggleHeader component to have the collapse fill full screen when expanded
 @include media-breakpoint-down(md) {
     .mobile-header {
-      height: 92vh;
+      height: 95vh;
     }
 }
 

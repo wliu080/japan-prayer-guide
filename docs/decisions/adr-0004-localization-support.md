@@ -6,11 +6,14 @@ Given that this is a prayer resource for international supports of Japanese miss
 
 ### Decision
 
-No decision proposed as yet.
+- Use `next-i18next` for localization.
+- Preference towards making things easy for editors
+    - Follow the standard of `public/locale/<lang>/...` to keep all the files in an easy place
+    - Preference on more .json files over lots of nesting
 
 ### Status
 
-INVESTIGATING
+✅ CONFIRMED 2023/02/28
 
 ### Consequences
 
