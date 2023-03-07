@@ -8,10 +8,10 @@ import Button from "react-bootstrap/Button";
 export default function TopicPrayerPoints({prayerPoints}:any) {
     return (
         <Container className="d-flex justify-content-center px-6">
-            <Card className="my-4 shadow" style={{maxWidth: '400px'}}>
+            <Card className="my-4 shadow d-lg-flex flex-lg-row">
                 {/* temporary height for video, before we finalize videos */}
-                <Card.Img variant="top" src="/bamboo.jpeg" style={{height:'300px'}}></Card.Img>
-                <Card.Body>
+                <Card.Img variant="top" src="/bamboo.jpeg" style={{height:'300px', maxWidth:'600px'}}></Card.Img>
+                <Card.Body style={{maxWidth:'600px'}}>
                     <Card.Text className="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey d-flex justify-content-between align-items-center">
                         Prayer Points
                         <IconContext.Provider value={{size:'30px'}}>

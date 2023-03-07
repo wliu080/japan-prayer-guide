@@ -7,10 +7,10 @@ import Button from "react-bootstrap/Button";
 export default function FeaturedTopic({title, prayerPoints}:any) {
     return (
         <Container className="d-flex justify-content-center">
-            <Card className="my-4 shadow" style={{width: '400px'}}>
+            <Card className="my-4 shadow d-lg-flex flex-lg-row">
                 {/* temporary height for image, before we finalize images */}
-                <Card.Img variant="top" src="/bamboo.jpeg" style={{height:'300px'}}></Card.Img>
-                <Card.Body>
+                <Card.Img variant="top" src="/bamboo.jpeg" style={{height:'300px', maxWidth: '600px'}}></Card.Img>
+                <Card.Body style={{maxWidth: '600px'}}>
                     <Card.Text className="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey">
                         {title}
                     </Card.Text>
