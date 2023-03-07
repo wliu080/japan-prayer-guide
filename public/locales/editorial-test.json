@@ -1,0 +1,11 @@
+{
+    "key1": "This is what a sample locale file looks like!",
+    "title": "It is a grouped collection of key-value pairs",
+    "subtitle": "The keys (on the left), are 'codewords' relating to where this text is used",
+    "abstract": "As an editor, you should not need to make any changes to the keys",
+    "blurb": "The japan prayer guide is intended for ....",
+    "menu-item-home": "Home",
+    "menu-item-topics": "Topics",
+    "menu-item-downloads": "Downloads",
+    "menu-logo-url": "https://www.google.com"
+}
