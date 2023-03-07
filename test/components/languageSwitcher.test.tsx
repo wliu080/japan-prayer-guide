@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import LanguageSwitcher from '../../components/languageSwitcher';
-import { useTranslation } from 'next-i18next';
+
+const changeLanguageSpy = jest.fn();
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn()
@@ -12,7 +13,7 @@ jest.mock("react-i18next", () => ({
     return {
       t: (str) => str,
       i18n: {
-        changeLanguage: jest.fn(),
+        changeLanguage: changeLanguageSpy,
       },
     };
   }),
@@ -50,7 +51,8 @@ describe('LanguageSwitcher', () => {
     fireEvent.click(engLink);
 
     expect(engLink).toHaveClass("link-light");
-    expect(useTranslation().i18n.changeLanguage).toHaveBeenCalledWith("en");
+    expect(changeLanguageSpy).toHaveBeenCalledTimes(1);
+    expect(changeLanguageSpy).toHaveBeenCalledWith("en");
   });
 });
 
