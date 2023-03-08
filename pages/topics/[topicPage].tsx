@@ -6,6 +6,9 @@ import { ToggleHeader } from "../../components/toggleHeader";
 import TopicPrayerPoints from "../../components/topic/TopicPrayerPoints";
 import PrayerSummary from "../../components/topic/PrayerSummary";
 import TopicDownloadables from "../../components/topic/TopicDownloadables";
+import Footer from "../../components/footer";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getTopicPageIds();
@@ -16,17 +19,19 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, locale }:any) => {
   if (!params) {
     return {
       props: {},
     };
   }
   const topicMetadata = await getTopicMetadata(params.topicPage as String);
+  
 
   return {
     props: {
       topicMetadata,
+      ...(await serverSideTranslations(locale, ['common'])),
     },
   };
 };
@@ -64,6 +69,7 @@ export default function TopicPage({
         <br/>
         <br/>
         <TopicDownloadables/>
+        <Footer/>
     </main>
     </>
   );
