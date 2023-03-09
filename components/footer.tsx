@@ -9,6 +9,7 @@ import { BsYoutube, BsInstagram } from "react-icons/bs";
 import { MdEmail } from 'react-icons/md'
 import { FaAmazon } from "react-icons/fa";
 import Link from "next/link";
+import LanguageSwitcher from "./languageSwitcher";
 
 export default function Footer() {
 
@@ -18,15 +19,16 @@ export default function Footer() {
         <>
         {/* Footer starts here */}
 
-        <Container fluid className="bg-primary" data-testid="footer">
+        <Container fluid className="bg-primary pt-3" data-testid="footer">
             {/* For this row, replace this when Simon finishes and merges the language switcher */}
-            <Row className="text-center d-flex justify-content-center align-items-center py-3 fs-6 text-white">
+            {/* <Row className="text-center d-flex justify-content-center align-items-center py-3 fs-6 text-white">
                 <div>
                     <span onClick={()=>setLang(0)} style={lang === 0 ? {textDecoration:'underline #4592CF', cursor:'pointer'} : {cursor:'pointer', color:'#CECECE'}}>English</span>
                     <span>&nbsp; | &nbsp;</span>
                     <span onClick={()=>setLang(1)} style={lang === 1 ? {textDecoration:'underline #4592CF', cursor:'pointer'} : {cursor:'pointer', color:'#CECECE'}}>Japanese</span>
                 </div>
-            </Row>
+            </Row> */}
+            <LanguageSwitcher/>
             {/* See comment above */}
             <Row className="text-center d-flex flex-column justify-content-center align-items-center py-3 px-3">
                 {/* this max width is temporary until we know final desktop layout */}

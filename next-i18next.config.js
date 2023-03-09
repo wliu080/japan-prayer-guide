@@ -24,5 +24,7 @@ module.exports = {
     // saveMissing: false,
     // strictMode: true,
     // serializeConfig: false,
-    react: { useSuspense: false }
+    react: { useSuspense: false },
+
+    returnObjects: true
   }
