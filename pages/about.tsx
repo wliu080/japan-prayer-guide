@@ -1,23 +1,30 @@
 import Head from "next/head";
+import React from "react";
 import { ToggleHeader } from "../components/toggleHeader";
 import { Container } from "react-bootstrap";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Footer from "../components/footer"
-import Row from "react-bootstrap/Row";
-import BibleVerse from "../components/About/BibleVerse";
+import MissionVision from "../components/About/MissionVision";
+import WhyTheName from "../components/About/WhyTheName";
+import MeetOurTeam from "../components/About/MeetOurTeam";
+import Partners from "../components/About/Partners";
+import { useWindowSize } from "../components/helper";
 
 export async function getStaticProps({ locale }:any) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["about", "common"])),
       // Will be passed to the page component as props
+      // About used in content, common used in header
     },
   };
 }
 
-export default function About() {
+const About: React.FC = () => {
   const { t } = useTranslation("about");
+
+  const {width, height} = useWindowSize()
 
   return (
     <div>
@@ -36,32 +43,14 @@ export default function About() {
             <h1>{t("content.who.title")}</h1>
             <p className="py-3">{t("content.who.content")[0]}</p>
         </Container>
-        <section id="mission-vision-section" className="position-relative">
-            <Container id="mission-vision" className="p-5">
-                <div id="about-landing-image" className="w-100 p-3">
-                    temporary image placeholder
-                </div>
-                <Container className="d-flex flex-wrap justify-content-center align-items-center p-4">
-                    <Row md={2} sm={1}>
-                        <Container className="">
-                            <h4>{t("content.mission.title")}</h4>
-                            {t("content.mission.content").map((e) => 
-                                <p className="fs-6">{e}</p>
-                            )}
-                        </Container>
-                        <Container className="">
-                            <h4>{t("content.vision.title")}</h4>
-                            {t("content.vision.content").map((e) => 
-                                <p className="fs-6">{e}</p>
-                            )}
-                        </Container>
-                    </Row>
-                </Container>
-                <BibleVerse verse={t("content.bible.content")[0]} chapter={t("content.bible.title")}/>
-            </Container>
-        </section>
+        <MissionVision/>
+        <WhyTheName/>
+        <MeetOurTeam/>
+        <Partners/>
         <Footer/>
       </main>
     </div>
   );
 }
+
+export default About
