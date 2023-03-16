@@ -2,6 +2,7 @@ import React from "react"
 import { Container } from "react-bootstrap"
 
 export default function BibleVerse(props:any) {
+    
     return (
         <Container id="about-bible-verse" className="bg-white shadow py-3 px-5 text-center d-flex flex-column align-items-center">
             <div className="verse-bar mb-4 mt-3 bg-primary"></div>

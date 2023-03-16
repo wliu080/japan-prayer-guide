@@ -2,6 +2,7 @@ import React from "react";
 import { Image } from "react-bootstrap";
 
 const Partners:React.FC = () => {
+    
     return (
         <section id="partners-section" className="text-center">
             <p className="fs-6 fw-bold pt-5">Our missionary organization partners</p>

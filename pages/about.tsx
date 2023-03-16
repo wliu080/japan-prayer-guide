@@ -22,8 +22,8 @@ export async function getStaticProps({ locale }:any) {
 }
 
 const About: React.FC = () => {
-  const { t } = useTranslation("about");
 
+  const { t } = useTranslation("about");
   const {width, height} = useWindowSize()
 
   return (
