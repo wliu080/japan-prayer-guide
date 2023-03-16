@@ -9,10 +9,18 @@ Similar to localization support, this is something which we want to have the fra
 ### Decision
 
 Bare minimum support for phase 1, with an aim to evaluate against the WCAG 2.2 Level A standard heading into phase 2
+- alt text for images
+- cc for videos
+- keyboard navigation
+- high contrast color theming
+- detailed page titles
+- correct HTML tags for headers (for screen readers)
+
+Support for these accessibility features are to be kept in mind with each card and to be pointed out if noticed as part of reviews. In addition, accessibility support will be checked at the completion of each milestone.
 
 ### Status
 
-PROPOSED
+✅ CONFIRMED 2023/02/28
 
 ### Consequences
 
