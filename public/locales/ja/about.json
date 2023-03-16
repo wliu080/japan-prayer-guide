@@ -1,56 +1,55 @@
 {
-  "title": "About Page",
-  "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
-  "header": {
-    "brandAlt": "Crane logo with the text: Beneath the Surface",
-    "topics": "Topics",
-    "downloads": "Downloads",
-    "purchase": "Purchase the Book",
-    "about": "About Us",
-    "blurb": "We desire to see a prayer movement for Japan's spiritual breakthrough"
-  },
-  "content": {
-    "who": {
-      "title": "Who are we?",
-      "content": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla."]
-    },
-    "mission": {
-      "title": "Our Mission",
-      "content": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"]
-    },
-    "vision": {
-      "title": "Our Vision",
-      "content": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"]
-    },
-    "bible": {
-      "title": "Matthew 28:16-20",
-      "content": ["Now the eleven disciples went to Galilee, to the mountain to which Jesus had directed them. And when they saw him they worshiped him, but some doubted. And Jesus came and said to them, “All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.”"]
-    },
-    "why": {
-      "title": "Why the name 'Beneath the surface?'",
-      "content": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"]
-    },
-    "meet": {
-      "title": "Meet our team",
-      "content": [
-          {
-              "title": "Written by",
-              "number": "35+",
-              "subtext": "Missionaries & Japanese Christian leaders"
-          },
-          {
-              "title": "A collaboration from",
-              "number": "17",
-              "subtext": "Organizations"
-          },
-          {
-              "title": "This website is created and built by",
-              "number": "9+",
-              "subtext": "Servants of the Church"
-          }
-      ]
+    "title": "About Us",
+    "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
+    "header": {
+        "brandAlt": "Crane logo with the text: Beneath the Surface",
+        "topics": "Topics",
+        "downloads": "Downloads",
+        "purchase": "Purchase the Book",
+        "about": "About Us",
+        "blurb": "We desire to see a prayer movement for Japan's spiritual breakthrough"
+      },
+    "content": {
+      "who": {
+        "title": "Who are we?",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "content": "象ロ省与シフ掲覧泊ヤオカ新鹿ホケクセ本載とラね感重ンど式曲ょイ原閣ケネ不国をめく統4関ょゅ規26町べ壊易誕号ろラめわ。歳省ヲネフ料卒ウリ内北オヲ変分くて理気あ注辺おトるい講70識79以非もスにぞ寺学つ式動似よこ事目セエ覧受ごにる鉄削員卒くもけひ。泣こぶク坊特うた録所カヒメ顔5宝シアミノ工監者図フナレサ福化モホチイ左生家ヨ契図ナ生工ラーがフ論情ご研姿護どへみず省傘イくむを。/n象ロ省与シフ掲覧泊ヤオカ新鹿ホケクセ本載とラね感重ンど式曲ょイ原閣ケネ不国をめく統4関ょゅ規26町べ壊易誕号ろラめわ。歳省ヲネフ料卒ウリ内北オヲ変分くて理気あ注辺おトるい講70識79以非もスにぞ寺学つ式動似よこ事目セエ覧受ごにる鉄削員卒くもけひ。泣こぶク坊特うた録所カヒメ顔5宝シアミノ工監者図フナレサ福化モホチイ左生家ヨ契図ナ生工ラーがフ論情ご研姿護どへみず省傘イくむを。"
+      },
+      "vision": {
+        "title": "Our Vision",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+      },
+      "bible": {
+        "title": "Matthew 28:16-20",
+        "content": "Now the eleven disciples went to Galilee, to the mountain to which Jesus had directed them. And when they saw him they worshiped him, but some doubted. And Jesus came and said to them, “All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.”"
+      },
+      "why": {
+        "title": "Why the name 'Beneath the surface?'",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat./nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+      },
+      "meet": {
+        "title": "Meet our team",
+        "content1":
+            {
+                "title": "Written by",
+                "number": "35+",
+                "subtext": "Missionaries & Japanese Christian leaders"
+            },
+        "content2":
+            {
+                "title": "A collaboration from",
+                "number": "17",
+                "subtext": "Organizations"
+            },
+        "content3":  
+            {
+                "title": "This website is created and built by",
+                "number": "9+",
+                "subtext": "Servants of the Church"
+            }
+      }
     }
   }
-}

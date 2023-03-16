@@ -24,7 +24,6 @@ export async function getStaticProps({ locale }:any) {
 const About: React.FC = () => {
 
   const { t } = useTranslation("about");
-  const {width, height} = useWindowSize()
 
   return (
     <div>
@@ -41,7 +40,7 @@ const About: React.FC = () => {
         </div>
         <Container id="who-are-we" className="text-center">
             <h1>{t("content.who.title")}</h1>
-            <p className="py-3">{t("content.who.content")[0]}</p>
+            <p className="py-3">{t("content.who.content")}</p>
         </Container>
         <MissionVision/>
         <WhyTheName/>

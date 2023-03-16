@@ -7,6 +7,8 @@ import { useTranslation } from "next-i18next";
 const MissionVision:React.FC = () => {
 
     const { t } = useTranslation("about");
+    const missionArray = t("content.mission.content").split("/n")
+    const visionArray = t("content.vision.content").split("/n")
 
     return (
         <section id="mission-vision-section" className="position-relative">
@@ -18,19 +20,19 @@ const MissionVision:React.FC = () => {
                     <Row md={2} sm={1}>
                         <Container>
                             <h4>{t("content.mission.title")}</h4>
-                            {t("content.mission.content").map((e:string) => 
+                            {missionArray.map((e:string) => 
                                 <p key={e} className="fs-6">{e}</p>
                             )}
                         </Container>
                         <Container>
                             <h4>{t("content.vision.title")}</h4>
-                            {t("content.vision.content").map((e:string) => 
+                            {visionArray.map((e:string) => 
                                 <p key={e} className="fs-6">{e}</p>
                             )}
                         </Container>
                     </Row>
                 </Container>
-                <BibleVerse verse={t("content.bible.content")[0]} chapter={t("content.bible.title")}/>
+                <BibleVerse verse={t("content.bible.content")} chapter={t("content.bible.title")}/>
             </Container>
         </section>
     )

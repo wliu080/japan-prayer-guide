@@ -7,6 +7,7 @@ const WhyTheName:React.FC = () => {
     
     const { t } = useTranslation("about")
     const {width, height} = useWindowSize()
+    const contentArray = t("content.why.content").split("/n")
 
     return (
         <section id="why-the-name-section" className="position-relative">
@@ -16,7 +17,7 @@ const WhyTheName:React.FC = () => {
                 </div>
                 <Container className="why-content mt-5">
                     <h4 className="my-3">{t("content.why.title")}</h4>
-                    {t("content.why.content").map((e:string) => 
+                    {contentArray.map((e:string) => 
                         <p key={e} className="fs-6">{e}</p>
                     )}
                 </Container>
