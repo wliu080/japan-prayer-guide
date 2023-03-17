@@ -6,7 +6,6 @@ import { useWindowSize } from "../helper";
 const WhyTheName:React.FC = () => {
     
     const { t } = useTranslation("about")
-    const {width, height} = useWindowSize()
     const contentArray = t("content.why.content").split("/n")
 
     return (
@@ -21,7 +20,7 @@ const WhyTheName:React.FC = () => {
                         <p key={e} className="fs-6">{e}</p>
                     )}
                 </Container>
-                {width > 700 && <div className="why-bar mt-5"></div>}
+                <div className="why-bar mt-5"></div>
             </Container>
         </section>
     )
