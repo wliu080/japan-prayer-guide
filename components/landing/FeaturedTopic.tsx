@@ -4,7 +4,12 @@ import {FaPrayingHands} from 'react-icons/fa'
 import { IconContext } from "react-icons/lib";
 import Button from "react-bootstrap/Button";
 
-export default function FeaturedTopic({title, prayerPoints}:any) {
+interface Props {
+    title: string[]
+    prayerPoints: string[]
+}
+
+export default function FeaturedTopic({title, prayerPoints}:Props) {
     return (
         <Container className="d-flex justify-content-center">
             <Card className="my-4 shadow d-lg-flex flex-lg-row">

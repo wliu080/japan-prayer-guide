@@ -50,6 +50,11 @@ export default function TopicPage({
     tags: string[];
   };
 }) {
+
+  const placeholderLinks = [
+    "/", "/", "/", "/", "/"
+  ]
+
   return (
     <>
     <Head>
@@ -68,7 +73,7 @@ export default function TopicPage({
         <PrayerSummary prayerPoints={topicMetadata.summary}/>
         <br/>
         <br/>
-        <TopicDownloadables/>
+        <TopicDownloadables links={placeholderLinks}/>
         <Footer/>
     </main>
     </>

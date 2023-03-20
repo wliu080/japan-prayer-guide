@@ -5,7 +5,11 @@ import { IconContext } from "react-icons/lib";
 import { BsDownload } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 
-export default function TopicPrayerPoints({prayerPoints}:any) {
+interface Props {
+    prayerPoints: string[]
+}
+
+export default function TopicPrayerPoints({prayerPoints}:Props) {
     return (
         <Container className="d-flex justify-content-center px-6">
             <Card className="my-4 shadow d-lg-flex flex-lg-row">
