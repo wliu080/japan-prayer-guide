@@ -19,7 +19,7 @@ const ToggleHeader: React.FC = () => {
   return (
     <Navbar fixed="top" bg={bg} expand="lg" variant={variant}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <Image
             alt={t('header.brandAlt')}
             src={bg === "white" ? "/bts-crane-wht-logo-en.png" : "/bts-crane-blue-logo-en.png"}
@@ -32,10 +32,10 @@ const ToggleHeader: React.FC = () => {
         <Navbar.Collapse id="header-navbar-nav">
           <Container className="mobile-header d-flex flex-column justify-content-between">
             <Nav className="mr-auto" variant={variant}>
-              <Nav.Link href="#topics">{t('header.topics')}</Nav.Link>
-              <Nav.Link href="#downloads">{t('header.downloads')}</Nav.Link>
-              <Nav.Link href="#purchase">{t('header.purchase')}</Nav.Link>
-              <Nav.Link href="#about">{t('header.about')}</Nav.Link>
+              <Nav.Link href="/topics">{t('header.topics')}</Nav.Link>
+              <Nav.Link href="/downloads">{t('header.downloads')}</Nav.Link>
+              <Nav.Link href="/purchase">{t('header.purchase')}</Nav.Link>
+              <Nav.Link href="/about">{t('header.about')}</Nav.Link>
             </Nav>
             <Container className="d-lg-none text-center">
               <LanguageSwitcher />

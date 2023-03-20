@@ -9,6 +9,7 @@ import { BsYoutube, BsInstagram } from "react-icons/bs";
 import { MdEmail } from 'react-icons/md'
 import { FaAmazon } from "react-icons/fa";
 import Link from "next/link";
+import LanguageSwitcher from "./languageSwitcher";
 
 export default function Footer() {
 
@@ -17,16 +18,8 @@ export default function Footer() {
     return (
         <>
         {/* Footer starts here */}
-
-        <Container fluid className="bg-primary" data-testid="footer">
-            {/* For this row, replace this when Simon finishes and merges the language switcher */}
-            <Row className="text-center d-flex justify-content-center align-items-center py-3 fs-6 text-white">
-                <div>
-                    <span onClick={()=>setLang(0)} style={lang === 0 ? {textDecoration:'underline #4592CF', cursor:'pointer'} : {cursor:'pointer', color:'#CECECE'}}>English</span>
-                    <span>&nbsp; | &nbsp;</span>
-                    <span onClick={()=>setLang(1)} style={lang === 1 ? {textDecoration:'underline #4592CF', cursor:'pointer'} : {cursor:'pointer', color:'#CECECE'}}>Japanese</span>
-                </div>
-            </Row>
+        <Container fluid className="bg-primary pt-3" data-testid="footer">
+            <LanguageSwitcher/>
             {/* See comment above */}
             <Row className="text-center d-flex flex-column justify-content-center align-items-center py-3 px-3">
                 {/* this max width is temporary until we know final desktop layout */}
@@ -48,12 +41,12 @@ export default function Footer() {
                 {/* another temp inline style maxWidth */}
                 <div data-testid='linksList' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
                     <p className="m-1 fs-5 fw-bold">Site Map</p>
-                    <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by topics</Link>
-                    <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by location</Link>
-                    <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Downloadable resources</Link>
-                    <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Stories</Link>
-                    <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Purchase the book</Link>
-                    <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">About us</Link>
+                    <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by topics</Link>
+                    <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by location</Link>
+                    <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Downloadable resources</Link>
+                    <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Stories</Link>
+                    <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Purchase the book</Link>
+                    <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">About us</Link>
                 </div>
             </Row>
             <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
