@@ -6,9 +6,12 @@ import { ToggleHeader } from "../../components/toggleHeader";
 import TopicPrayerPoints from "../../components/topic/TopicPrayerPoints";
 import PrayerSummary from "../../components/topic/PrayerSummary";
 import TopicDownloadables from "../../components/topic/TopicDownloadables";
+import RelatedContent from "../../components/topic/RelatedContent";
 import Footer from "../../components/footer";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import DidYouKnow from "../../components/topic/DidYouKnow";
+import Feedback from "../../components/topic/Feedback";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getTopicPageIds();
@@ -55,6 +58,13 @@ export default function TopicPage({
     "/", "/", "/", "/", "/"
   ]
 
+  // Assume for now something like 6 related topics
+  const placeholderRelated = [
+    "Ancestor Veneration", "Workplace Pressure", "Other Topics", "Other Topics 2", "Other Topics 3", "Other Topics 4"
+  ]
+
+  const sampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.'
+
   return (
     <>
     <Head>
@@ -72,8 +82,14 @@ export default function TopicPage({
         <br/>
         <PrayerSummary prayerPoints={topicMetadata.summary}/>
         <br/>
+        <DidYouKnow text={sampleText}/>
+        <br/>
+        <br/>
+        <Feedback/>
         <br/>
         <TopicDownloadables links={placeholderLinks}/>
+        <br/>
+        <RelatedContent topics={placeholderRelated}/>
         <Footer/>
     </main>
     </>

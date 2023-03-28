@@ -1,0 +1,32 @@
+import React from "react";
+import { Container } from "react-bootstrap";
+import { IconContext } from "react-icons";
+import { BsLightbulb } from "react-icons/bs";
+
+interface Props {
+    text: string
+}
+
+const DidYouKnow = ({text}:Props) => {
+    return (
+        <Container className="d-flex justify-content-center">
+            <div className="did-you-know p-4 shadow">
+                <div className="d-flex align-items-center">
+                    <IconContext.Provider value={{size: '25px'}}>
+                        <BsLightbulb/>
+                    </IconContext.Provider>
+                    <h1 className="fw-bold fs-5 my-0 mx-2">Did you know?</h1>
+                </div>
+                <div className="fs-5 my-3">
+                    {text}
+                </div>
+            </div>
+        </Container>
+    )
+}
+
+const Icon = () => {
+
+}
+
+export default DidYouKnow
