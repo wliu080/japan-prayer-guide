@@ -12,6 +12,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DidYouKnow from "../../components/topic/DidYouKnow";
 import Feedback from "../../components/topic/Feedback";
+import ImageGroup from "../../components/topic/ImageGrid";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getTopicPageIds();
@@ -81,6 +82,8 @@ export default function TopicPage({
         <br/>
         <br/>
         <PrayerSummary prayerPoints={topicMetadata.summary}/>
+        <br/>
+        <ImageGroup/>
         <br/>
         <DidYouKnow text={sampleText}/>
         <br/>
