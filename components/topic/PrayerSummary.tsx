@@ -6,23 +6,24 @@ import { BsDownload } from "react-icons/bs";
 
 interface Props {
     prayerPoints: string[]
+    style?: any
 }
 
-export default function PrayerSummary({prayerPoints}:Props) {
+export default function PrayerSummary({prayerPoints, style}:Props) {
     return (
-        <Container className="d-flex justify-content-center px-6">
+        <Container className="d-flex px-6 justify-content-start" style={style}>
             <Card className="my-4 shadow" style={{maxWidth: '400px'}}>
                 <Card.Body>
-                    <Card.Text className="text-primary px-2 py-3 fs-3 fst-italic border-bottom border-grey d-flex justify-content-between align-items-center">
+                    <Card.Text className="text-primary px-2 py-3 fs-4 fst-italic border-bottom border-grey d-flex justify-content-between align-items-center">
                         Please pray for:
-                        <IconContext.Provider value={{size:'30px'}}>
+                        <IconContext.Provider value={{size:'20px'}}>
                             <BsDownload className="text-secondary fw-bold" style={{cursor: 'pointer'}}>
                             </BsDownload>
                         </IconContext.Provider>
                     </Card.Text>
                     <ul className="fs-5">
                         {prayerPoints.map((point:string) => 
-                            <li key={point} className="my-3">{point}</li>
+                            <li key={point} className="my-3 fs-6">{point}</li>
                         )}
                     </ul>
                 </Card.Body>
