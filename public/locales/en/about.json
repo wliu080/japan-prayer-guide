@@ -1,47 +1,53 @@
 {
     "title": "About Us",
     "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
-    "content": {
-      "who": {
+    "who": {
         "title": "Who are we?",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla."
-      },
-      "mission": {
+    },
+    "mission": {
         "title": "Our Mission",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat./nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-      },
-      "vision": {
+        "content": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        ]
+    },
+    "vision": {
         "title": "Our Vision",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-      },
-      "bible": {
+        "content": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        ]
+    },
+    "bible": {
         "title": "Matthew 28:16-20",
         "content": "Now the eleven disciples went to Galilee, to the mountain to which Jesus had directed them. And when they saw him they worshiped him, but some doubted. And Jesus came and said to them, “All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.”"
-      },
-      "why": {
+    },
+    "why": {
         "title": "Why the name 'Beneath the surface?'",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat./nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-      },
-      "meet": {
+        "content": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        ]
+    },
+    "team": {
         "title": "Meet our team",
-        "content1":
-            {
-                "title": "Written by",
-                "number": "35+",
-                "subtext": "Missionaries & Japanese Christian leaders"
-            },
-        "content2":
-            {
-                "title": "A collaboration from",
-                "number": "17",
-                "subtext": "Organizations"
-            },
-        "content3":  
-            {
-                "title": "This website is created and built by",
-                "number": "9+",
-                "subtext": "Servants of the Church"
-            }
-      }
+        "content1": {
+            "title": "Written by",
+            "number": "35+",
+            "subtext": "Missionaries & Japanese Christian leaders"
+        },
+        "content2": {
+            "title": "A collaboration from",
+            "number": "17",
+            "subtext": "Organizations"
+        },
+        "content3": {
+            "title": "This website is created and built by",
+            "number": "9+",
+            "subtext": "Servants of the Church"
+        }
     }
-  }
+}
