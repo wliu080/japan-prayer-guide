@@ -19,7 +19,7 @@ const MeetOurTeam: React.FC = () => {
                 <h4>{t("team.title")}</h4>
                 <Row md={3} sm={1} xs={1} className="w-100 m-0 pt-4 pb-5">
                     {/* For some reason with i18n I can't figure out how to type it correctly */}
-                    {contentArray.map((teamDetails: any) => (
+                    {contentArray.map((teamDetails:any) => (
                         <Col key={teamDetails.title} className="p-2">
                             <div className="team-box p-3">
                                 <p className="fs-6 fw-bold">{teamDetails.title}</p>

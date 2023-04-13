@@ -1,7 +1,6 @@
 // overrides first
 $primary: #002a63;
 $secondary: #4592CF;
-$tertiary: #EAF4FF;
 //$link-color: #0000ee;
 //$navbar-dark-color: #fff;
 //$display-font-weight: 700;
@@ -33,82 +32,85 @@ $font-sizes: (
 }
 
 // About Page Classes
-#about-landing-image {
-  height: 350px;
-  background-color: #868686;
-}
-
-#who-are-we {
-  max-width: 850px;
-  padding-top: 60px;
-  padding-bottom: 80px;
-
-  @media screen and (max-width: 1200px) {
-    padding-top: 40px;
-    padding-bottom: 50px;
-  }
-}
-
-#mission-vision-section {
-  min-height: 100px;
-  background-color: #EAF4FF;
-}
-
-#mission-vision {
-  max-width: 1000px;
-  position: relative;
-  top: -110px;
-}
-
-#about-bible-verse {
-  max-width: 850px;
-}
-
-.verse-bar {
-  width: 171px;
-  height: 5px;
-}
+#about {
   
-#why-the-name-section {
-  min-height: 100px;
-}
-
-#why-the-name {
-  max-width: 1000px;
-  position: relative;
-  top: -110px;
-}
-
-.why-content {
-  max-width: 800px;
-}
-
-.why-bar {
-  width: 100%;
-  height: 2px;
-  background-color: #cecece;
-
-  @media screen and (max-width: 700px) {
-    display: none;
+  #about-landing-image {
+    height: 350px;
+    background-color: #868686;
   }
-}
-
-#team-image {
-  height: 350px;
-  background-color: #868686;
-  top: -50px;
-  position: relative;
-}
-
-#team-container {
-  max-width: 1000px;
-}
-
-.team-box {
-  background-color: #EFEFEF;
-}
-
-#partners-section {
-  min-height: 100px;
-  background-color: #EAF4FF;
+  
+  #who-are-we {
+    max-width: 850px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  
+    @media screen and (max-width: 1200px) {
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
+  }
+  
+  #mission-vision-section {
+    min-height: 100px;
+    background-color: #EAF4FF;
+  }
+  
+  #mission-vision {
+    max-width: 1000px;
+    position: relative;
+    top: -110px;
+  }
+  
+  #about-bible-verse {
+    max-width: 850px;
+  }
+  
+  .verse-bar {
+    width: 171px;
+    height: 5px;
+  }
+    
+  #why-the-name-section {
+    min-height: 100px;
+  }
+  
+  #why-the-name {
+    max-width: 1000px;
+    position: relative;
+    top: -110px;
+  }
+  
+  .why-content {
+    max-width: 800px;
+  }
+  
+  .why-bar {
+    width: 100%;
+    height: 2px;
+    background-color: #cecece;
+  
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+  
+  #team-image {
+    height: 350px;
+    background-color: #868686;
+    top: -50px;
+    position: relative;
+  }
+  
+  #team-container {
+    max-width: 1000px;
+  }
+  
+  .team-box {
+    background-color: #EFEFEF;
+  }
+  
+  #partners-section {
+    min-height: 100px;
+    background-color: #EAF4FF;
+  }
 }

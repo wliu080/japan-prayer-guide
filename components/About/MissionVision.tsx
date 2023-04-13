@@ -35,7 +35,7 @@ const MissionVision: React.FC = () => {
                         </Container>
                     </Row>
                 </Container>
-                <BibleVerse verse={t("bible.content")} chapter={t("bible.title")} />
+                <BibleVerse content={t("bible.content")} passageLocation={t("bible.passageLocation")} />
             </Container>
         </section>
     );
