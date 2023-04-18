@@ -1,0 +1,21 @@
+name: Run tests when PR is made
+run-name: Running tests
+on:
+    pull_request:
+        types:
+            - opened
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Setup node
+              uses: actions/setup-node@v1
+
+            - name: npm install
+              uses: npm install
+
+            - name: run npm test
+              uses: npm test
