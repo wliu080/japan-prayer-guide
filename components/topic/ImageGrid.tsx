@@ -3,6 +3,8 @@ import { Container, Carousel } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+// TODO: Should accept an array of image links which are displayed here
+
 const ImageGroup = () => {
     return (
         <Container className="w-100 d-flex justify-content-center">
@@ -15,20 +17,20 @@ const ImageGroup = () => {
 const ImageGrid = () => {
     return (
         <div className="w-100 d-flex flex-column gap-3 d-none d-lg-flex my-3">
-            <Row className="">
+            <Row>
                 <Col>
-                    <div id="about-landing-image" className=""></div>
+                    <div className="placeholder-image"></div>
                 </Col>
                 <Col>
-                    <div id="about-landing-image" className=""></div>
+                    <div className="placeholder-image"></div>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <div id="about-landing-image" className=""></div>
+                    <div className="placeholder-image"></div>
                 </Col>
                 <Col>
-                    <div id="about-landing-image" className=""></div>
+                    <div className="placeholder-image"></div>
                 </Col>
             </Row>
         </div>
@@ -39,16 +41,16 @@ const ImageCarousel = () => {
     return (
         <Carousel id="image-carousel" className="w-100 d-lg-none" interval={null}>
             <Carousel.Item>
-                <div id="about-landing-image" className=""></div>
+                <div className="placeholder-image"></div>
             </Carousel.Item>
             <Carousel.Item>
-                <div id="about-landing-image" className=""></div>
+                <div className="placeholder-image"></div>
             </Carousel.Item>
             <Carousel.Item>
-                <div id="about-landing-image" className=""></div>
+                <div className="placeholder-image"></div>
             </Carousel.Item>
             <Carousel.Item>
-                <div id="about-landing-image" className=""></div>
+                <div className="placeholder-image"></div>
             </Carousel.Item>
         </Carousel>
     )
