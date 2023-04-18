@@ -32,18 +32,19 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }: any) =>
         };
     }
 
-    const topicId: string = params.topicPage;
+    // const topicId: string = params.topicPage;
+    const localeRef: string = "topics/" + params.topicPage;
 
     return {
         props: {
-            topicId,
-            ...(await serverSideTranslations(locale, ["common", params.topicPage])),
+            localeRef,
+            ...(await serverSideTranslations(locale, ["common", localeRef])),
         },
     };
 };
 
-export default function TopicPage({ topicId }: { topicId: string }) {
-    const { t } = useTranslation(topicId);
+export default function TopicPage({ localeRef }: { localeRef: string }) {
+    const { t } = useTranslation(localeRef);
     const prayerSummary: string[] = t("summary", { returnObjects: true });
 
     const [selected, setSelected] = React.useState<string>("About");
