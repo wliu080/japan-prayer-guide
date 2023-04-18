@@ -83,7 +83,7 @@ export default function TopicPage({
         <ToggleHeader />
 
         {/* Component to Hold image, as well as title and Prayer Summary */}
-        <div id="about-landing-image" className="w-100 mx-0 px-0 position-relative" style={{height: '700px'}}>
+        <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{height: '700px'}}>
             temporary image placeholder
             <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
               <h1 className="fs-1 text-white px-3">
@@ -99,8 +99,8 @@ export default function TopicPage({
         <TopicNav selected={selected} setSelected={setSelected}/>
 
         {/* Video/Reel Placeholder */}
-        <Container className="py-5">
-          <div id="about-landing-image" className="w-100">Video Placeholder</div>
+        <Container className="py-5" id="topic-about">
+          <div id="placeholder-image" className="w-100">Video Placeholder</div>
         </Container>
         
         {/* Placeholder text */}
@@ -121,7 +121,7 @@ export default function TopicPage({
 
         {/* Infographics Placeholder */}
         <Container>
-          <div id="about-landing-image" className="w-100">Infographics Placeholder</div>
+          <div id="placeholder-image" className="w-100">Infographics Placeholder</div>
         </Container>
 
         {/* Placeholder for a quote */}
@@ -131,7 +131,7 @@ export default function TopicPage({
         </Container>
 
         {/* Placeholder Image */}
-        <div id="about-landing-image" className="w-100 my-5">Placeholder</div>
+        <div id="placeholder-image" className="w-100 my-5">Placeholder</div>
 
         <DidYouKnow text={sampleText}/>
 
@@ -140,11 +140,18 @@ export default function TopicPage({
           <p>{sampleText}</p>
         </Container>
 
+        {/* Prayer Points */}
         <TopicPrayerPoints prayerPoints={topicMetadata.summary}/>
         <br/>
+
+        {/* Give us Feedback */}
         <Feedback/>
+
+        {/* Downloads and Related */}
         <TopicDownloadables links={placeholderLinks}/>
         <RelatedContent topics={placeholderRelated}/>
+
+        {/* Footer */}
         <Footer/>
     </main>
     </>

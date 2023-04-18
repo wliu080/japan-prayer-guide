@@ -11,7 +11,7 @@ interface Props {
 
 export default function TopicPrayerPoints({prayerPoints}:Props) {
     return (
-        <Container className="d-flex justify-content-center px-6">
+        <Container className="d-flex justify-content-center px-6" id="topic-prayer">
             <Card className="my-4 shadow d-lg-flex flex-lg-row">
                 {/* temporary height for video, before we finalize videos */}
                 <Card.Img variant="top" src="/bamboo.jpeg" style={{height:'300px', maxWidth:'600px'}}></Card.Img>

@@ -11,7 +11,7 @@ interface Props {
 
 export default function TopicDownloadables({links}:Props) {
     return (
-        <Container className="d-flex flex-column my-5">
+        <Container className="d-flex flex-column my-5" id="topic-downloads">
             <Container className="d-flex flex-row justify-content-between align-items-center">
                 <h1 className="text-primary my-4 fs-1">Downloadables</h1>
                 <a href={'/downloads'} className="text-secondary d-none d-md-block">View all downloadables</a>

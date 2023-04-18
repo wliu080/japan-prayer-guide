@@ -11,7 +11,7 @@ export const TopicNav = ({selected, setSelected}:Props) => {
         <Container className="w-100 d-flex justify-content-center">
             <div className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around">
                 <a
-                    href="#about"
+                    href="#topic-about"
                     className={"px-3 my-0 text-decoration-none fs-4" + 
                     (selected === 'About' ? " border-bottom border-secondary border-3 text-secondary" : "")}
                     onClick={()=>setSelected('About')}
@@ -19,7 +19,7 @@ export const TopicNav = ({selected, setSelected}:Props) => {
                         About this Topic
                 </a>
                 <a
-                    href="#prayer"
+                    href="#topic-prayer"
                     className={"px-3 my-0 text-decoration-none fs-4" + 
                     (selected === 'Prayer' ? " border-bottom border-secondary border-3 text-secondary" : "")}
                     onClick={()=>setSelected('Prayer')}
@@ -27,7 +27,7 @@ export const TopicNav = ({selected, setSelected}:Props) => {
                         Prayer Points
                 </a>
                 <a
-                    href="#downloads"
+                    href="#topic-downloads"
                     className={"px-3 my-0 text-decoration-none fs-4" + 
                     (selected === 'Downloads' ? " border-bottom border-secondary border-3 text-secondary" : "")}
                     onClick={()=>setSelected('Downloads')}
