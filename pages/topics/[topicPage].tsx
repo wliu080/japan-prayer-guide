@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { getTopicPageIds, getTopicMetadata } from "../../services/staticTopicLoader";
+import { getTopicPageIds } from "../../services/staticTopicLoader";
 import { GetStaticProps, GetStaticPaths } from "next";
-import { Container, Stack } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { ToggleHeader } from "../../components/toggleHeader";
 import TopicPrayerPoints from "../../components/topic/TopicPrayerPoints";
 import PrayerSummary from "../../components/topic/PrayerSummary";
@@ -17,143 +17,139 @@ import { TopicNav } from "../../components/topic/TopicNav";
 import React from "react";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getTopicPageIds();
+    const paths = getTopicPageIds();
 
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params, locale }:any) => {
-  if (!params) {
     return {
-      props: {},
+        paths,
+        fallback: false,
     };
-  }
-  const topicMetadata = await getTopicMetadata(params.topicPage as String);
-  
-
-  return {
-    props: {
-      topicMetadata,
-      ...(await serverSideTranslations(locale, ['common'])),
-    },
-  };
 };
 
-export default function TopicPage({
-  topicMetadata,
-}: {
-  topicMetadata: {
-    title: string;
-    summary: string[];
-    audio: {
-      src: string;
-      timestamps: number[];
+export const getStaticProps: GetStaticProps = async ({ params, locale }: any) => {
+    if (!params) {
+        return {
+            props: {},
+        };
+    }
+
+    // const topicId: string = params.topicPage;
+    const localeRef: string = "topics/" + params.topicPage;
+
+    return {
+        props: {
+            localeRef,
+            ...(await serverSideTranslations(locale, ["common", localeRef])),
+        },
     };
-    markdownSections: string[];
-    tags: string[];
-  };
-}) {
+};
 
-  const [selected, setSelected] = React.useState<string>('About')
+export default function TopicPage({ localeRef }: { localeRef: string }) {
+    const { t } = useTranslation(localeRef);
+    const prayerSummary: string[] = t("summary", { returnObjects: true });
 
-  const placeholderLinks = [
-    "/", "/", "/", "/", "/"
-  ]
+    const [selected, setSelected] = React.useState<string>("About");
 
-  // Assume for now something like 6 related topics
-  const placeholderRelated = [
-    "Ancestor Veneration", "Workplace Pressure", "Other Topics", "Other Topics 2", "Other Topics 3", "Other Topics 4"
-  ]
+    const placeholderLinks = ["/", "/", "/", "/", "/"];
 
-  const sampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.'
+    // Assume for now something like 6 related topics
+    const placeholderRelated = [
+        "Ancestor Veneration",
+        "Workplace Pressure",
+        "Other Topics",
+        "Other Topics 2",
+        "Other Topics 3",
+        "Other Topics 4",
+    ];
 
-  return (
-    <>
-    <Head>
-        <title>Beneath the Surface</title>
-        <meta name="description" content="Japan prayer guide" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <main>
-        {/* Header Component */}
-        <ToggleHeader />
+    const sampleText =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.";
 
-        {/* Component to Hold image, as well as title and Prayer Summary */}
-        <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{height: '700px'}}>
-            temporary image placeholder
-            <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
-              <h1 className="fs-1 text-white px-3">
-                Ancestor Veneration
-              </h1>
-              <PrayerSummary
-                prayerPoints={topicMetadata.summary}
-              />
-            </Container>
-        </div>
+    return (
+        <>
+            <Head>
+                <title>{t("title")}</title>
+                <meta name="description" content="Japan prayer guide" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <main>
+                {/* Header Component */}
+                <ToggleHeader />
 
-        {/* Topic Nav Component */}
-        <TopicNav selected={selected} setSelected={setSelected}/>
+                {/* Component to Hold image, as well as title and Prayer Summary */}
+                <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{ height: "700px" }}>
+                    temporary image placeholder
+                    <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
+                        <h1 className="fs-1 text-white px-3">{t("title")}</h1>
+                        <PrayerSummary prayerPoints={prayerSummary} />
+                    </Container>
+                </div>
 
-        {/* Video/Reel Placeholder */}
-        <Container className="py-5" id="topic-about">
-          <div id="placeholder-image" className="w-100">Video Placeholder</div>
-        </Container>
-        
-        {/* Placeholder text */}
-        <Container className="py-5">
-          <p>{sampleText}</p>
-          <p>{sampleText}</p>
-        </Container>
+                {/* Topic Nav Component */}
+                <TopicNav selected={selected} setSelected={setSelected} />
 
-        {/* Image Grid */}
-        <ImageGroup/>
+                {/* Video/Reel Placeholder */}
+                <Container className="py-5" id="topic-about">
+                    <div id="placeholder-image" className="w-100">
+                        Video Placeholder
+                    </div>
+                </Container>
 
-        {/* Placeholder text */}
-        <Container className="py-5">
-          <p>{sampleText}</p>
-          <p>{sampleText}</p>
-          <p>{sampleText}</p>
-        </Container>
+                {/* Placeholder text */}
+                <Container className="py-5">
+                    <p>{sampleText}</p>
+                    <p>{sampleText}</p>
+                </Container>
 
-        {/* Infographics Placeholder */}
-        <Container>
-          <div id="placeholder-image" className="w-100">Infographics Placeholder</div>
-        </Container>
+                {/* Image Grid */}
+                <ImageGroup />
 
-        {/* Placeholder for a quote */}
-        <Container className="d-flex flex-column justify-content-center align-items-center py-4 my-4">
-          <h1 className="text-secondary fs-1 text-center">{sampleText}</h1>
-          <h2 className="text-secondary fs-6 text-center">-Bible verse or quote</h2>
-        </Container>
+                {/* Placeholder text */}
+                <Container className="py-5">
+                    <p>{sampleText}</p>
+                    <p>{sampleText}</p>
+                    <p>{sampleText}</p>
+                </Container>
 
-        {/* Placeholder Image */}
-        <div id="placeholder-image" className="w-100 my-5">Placeholder</div>
+                {/* Infographics Placeholder */}
+                <Container>
+                    <div id="placeholder-image" className="w-100">
+                        Infographics Placeholder
+                    </div>
+                </Container>
 
-        <DidYouKnow text={sampleText}/>
+                {/* Placeholder for a quote */}
+                <Container className="d-flex flex-column justify-content-center align-items-center py-4 my-4">
+                    <h1 className="text-secondary fs-1 text-center">{sampleText}</h1>
+                    <h2 className="text-secondary fs-6 text-center">-Bible verse or quote</h2>
+                </Container>
 
-         {/* Placeholder text */}
-         <Container className="py-5">
-          <p>{sampleText}</p>
-        </Container>
+                {/* Placeholder Image */}
+                <div id="placeholder-image" className="w-100 my-5">
+                    Placeholder
+                </div>
 
-        {/* Prayer Points */}
-        <TopicPrayerPoints prayerPoints={topicMetadata.summary}/>
-        <br/>
+                <DidYouKnow text={sampleText} />
 
-        {/* Give us Feedback */}
-        <Feedback/>
+                {/* Placeholder text */}
+                <Container className="py-5">
+                    <p>{sampleText}</p>
+                </Container>
 
-        {/* Downloads and Related */}
-        <TopicDownloadables links={placeholderLinks}/>
-        <RelatedContent topics={placeholderRelated}/>
+                {/* Prayer Points */}
+                <TopicPrayerPoints prayerPoints={prayerSummary} />
+                <br />
 
-        {/* Footer */}
-        <Footer/>
-    </main>
-    </>
-  );
+                {/* Give us Feedback */}
+                <Feedback />
+
+                {/* Downloads and Related */}
+                <TopicDownloadables links={placeholderLinks} />
+                <RelatedContent topics={placeholderRelated} />
+
+                {/* Footer */}
+                <Footer />
+            </main>
+        </>
+    );
 }
