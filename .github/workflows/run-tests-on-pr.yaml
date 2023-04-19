@@ -2,8 +2,10 @@ name: Run tests when PR is made
 run-name: Running tests
 on:
     pull_request:
-        types:
-            - opened
+        paths:
+            - "**.tsx"
+            - "**.ts"
+            - "**.js"
 jobs:
     build:
         runs-on: ubuntu-latest
