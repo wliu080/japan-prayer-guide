@@ -5,9 +5,10 @@ import { BsLightbulb } from "react-icons/bs";
 
 interface Props {
     text: string
+    title: string
 }
 
-const DidYouKnow = ({text}:Props) => {
+const DidYouKnow = ({text, title}:Props) => {
     return (
         <Container className="d-flex justify-content-center">
             <div className="did-you-know p-4 shadow">
@@ -15,7 +16,7 @@ const DidYouKnow = ({text}:Props) => {
                     <IconContext.Provider value={{size: '25px'}}>
                         <BsLightbulb/>
                     </IconContext.Provider>
-                    <h1 className="fw-bold fs-5 my-0 mx-2">Did you know?</h1>
+                    <h1 className="fw-bold fs-5 my-0 mx-2">{title}</h1>
                 </div>
                 <div className="fs-5 my-3">
                     {text}
