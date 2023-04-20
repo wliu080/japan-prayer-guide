@@ -7,26 +7,30 @@ import Link from "next/link";
 
 interface Props {
     links: string[]
+    title: string
+    labels: string[]
 }
 
-export default function TopicDownloadables({links}:Props) {
+export default function TopicDownloadables({links, title, labels}:Props) {
     return (
         <Container className="d-flex flex-column my-5" id="topic-downloads">
             <Container className="d-flex flex-row justify-content-between align-items-center">
-                <h1 className="text-primary my-4 fs-1">Downloadables</h1>
+                <h1 className="text-primary my-4 fs-1">{title}</h1>
                 <a href={'/downloads'} className="text-secondary d-none d-md-block">View all downloadables</a>
             </Container>
            <Row xl={4} lg={2} className="g-3">
-            <Col>
-                <Link href={links[0]} className="text-decoration-none">
-                    <Card className="shadow-sm border-0 rounded" style={{backgroundColor: '#E2E2E2', minHeight: '125px'}}>
-                            <Card.Body className="d-flex align-items-center justify-content-center">
-                                <p className="text-center fw-bold fs-4 my-0">Infographics</p>
-                            </Card.Body>
-                    </Card>
-                </Link>
-            </Col>
-            <Col>
+            {labels.map((label, idx) => 
+                 <Col key={label}>
+                    <Link href={links[idx]} className="text-decoration-none">
+                        <Card className="shadow-sm border-0 rounded" style={{backgroundColor: '#E2E2E2', minHeight: '125px'}}>
+                                <Card.Body className="d-flex align-items-center justify-content-center">
+                                    <p className="text-center fw-bold fs-4 my-0">{label}</p>
+                                </Card.Body>
+                        </Card>
+                    </Link>
+                </Col>
+            )}
+            {/* <Col>
                 <Link href={links[1]} className="text-decoration-none">
                     <Card className="shadow-sm border-0 rounded" style={{backgroundColor: '#E2E2E2', minHeight: '125px'}}>
                             <Card.Body className="d-flex align-items-center justify-content-center">
@@ -52,7 +56,7 @@ export default function TopicDownloadables({links}:Props) {
                             </Card.Body>
                     </Card>
                 </Link>
-            </Col>
+            </Col> */}
            </Row>
             <Link href={links[4]} className="align-self-center w-100" style={{maxWidth:'500px'}}>
                 <Button className="align-self-center w-100 mt-4 text-white border-secondary bg-secondary" variant="primary">Download all</Button>
