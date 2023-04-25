@@ -1,5 +1,5 @@
-import { render, screen } from "@testing-library/react";
-import { useTranslation, UseTranslationResponse } from "react-i18next";
+import { render } from "@testing-library/react";
+import { useTranslation } from "react-i18next";
 import MissionVision from "../../../components/About/MissionVision";
 
 jest.mock("react-i18next", () => ({
@@ -10,7 +10,6 @@ describe("Mission Vision", () => {
     test("Renders a section containing both a mission & vision statement section with the translated contents", () => {
         // Not sure what Type I could use for useTranslationSpy here...
         const useTranslationSpy: any = useTranslation;
-        //const tSpy = jest.fn((str) => [str, str + "1"]);
         const contentFromi18n: string[] = [
             "missionContent1",
             "missionContent2",
@@ -48,7 +47,6 @@ describe("Mission Vision", () => {
     test("Should handle missing mission / vision statements", () => {
         // Not sure what Type I could use for useTranslationSpy here...
         const useTranslationSpy: any = useTranslation;
-        //const tSpy = jest.fn((str) => [str, str + "1"]);
         const contentFromi18n: string[] = ["missionTitle", "visionTitle", "bibleContent", "biblePassageRef"];
         const tSpy = jest
             .fn()

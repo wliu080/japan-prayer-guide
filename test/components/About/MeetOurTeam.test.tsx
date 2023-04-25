@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import MeetOurTeam from "../../../components/About/MeetOurTeam";
 
-describe("Bible Verse", () => {
+describe("Meet Our Team", () => {
     test("Renders a container with title, image and 3 boxes", () => {
         const { getByTestId } = render(<MeetOurTeam />);
         const meetOurTeam = getByTestId("meet-our-team");
