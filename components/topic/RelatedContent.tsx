@@ -4,15 +4,15 @@ import { Card, Container, Carousel } from "react-bootstrap";
 
 interface Props {
     topics: string[]
-    links?: string[]
+    links: string[]
     title?: string
 }
 
 export default function RelatedContent({topics, links, title}:Props) {
     return (
-        <Container className="d-flex flex-column my-5">
+        <Container data-testid={"related-content-container"} className="d-flex flex-column my-5">
             <Container className="d-flex flex-row justify-content-between align-items-center">
-                <h1 className="text-primary my-4 fs-1">{title}</h1>
+                <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1">{title}</h1>
                 <a href={'/topics'} className="text-secondary d-none d-md-block">View all topics</a>
             </Container>
             <CarouselSmall topics={topics} links={links}/>
@@ -26,7 +26,7 @@ function CarouselSmall({topics, links}:Props) {
     return (
         <Carousel indicators={false} interval={null} className="d-md-none">
             <Carousel.Item>
-                    <div className="d-flex justify-content-around gap-2">
+                    <div data-testid={"related-content-links"} className="d-flex justify-content-around gap-2">
                     {topics.slice(0,2).map((topic, idx) => 
                         <Link href={links[idx]} key={topic}>
                             <Card style={{width: "308px", height: "186px"}} key={topic}>
@@ -81,7 +81,7 @@ function CarouselLarge({topics, links}:Props) {
     return (
         <Carousel indicators={false} interval={null} className="d-none d-md-block">
                 <Carousel.Item>
-                    <div className="d-flex justify-content-around gap-2">
+                    <div data-tesid={"related-content-links"} className="d-flex justify-content-around gap-2">
                     {topics.slice(0,4).map((topic, idx) => 
                         <Link href={links[idx]} key={topic}>
                             <Card style={{width: "308px", height: "186px"}} key={topic}>
