@@ -10,7 +10,7 @@ interface Props {
 
 const DidYouKnow = ({text, title}:Props) => {
     return (
-        <Container className="d-flex justify-content-center">
+        <Container data-testid={"dyk-container"} className="d-flex justify-content-center">
             <div className="did-you-know p-4 shadow">
                 <div className="d-flex align-items-center">
                     <IconContext.Provider value={{size: '25px'}}>
@@ -18,16 +18,12 @@ const DidYouKnow = ({text, title}:Props) => {
                     </IconContext.Provider>
                     <h1 className="fw-bold fs-5 my-0 mx-2">{title}</h1>
                 </div>
-                <div className="fs-5 my-3">
+                <div data-testid={"dyk-text"} className="fs-5 my-3">
                     {text}
                 </div>
             </div>
         </Container>
     )
-}
-
-const Icon = () => {
-
 }
 
 export default DidYouKnow

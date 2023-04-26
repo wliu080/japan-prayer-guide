@@ -8,13 +8,14 @@ interface Props {
 
 export const TopicNav = ({selected, setSelected}:Props) => {
     return (
-        <Container className="w-100 d-flex justify-content-center">
-            <div className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around">
+        <Container data-testid={"topic-nav-container"} className="w-100 d-flex justify-content-center">
+            <div data-testid={"topic-nav-links"} className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around">
                 <a
                     href="#topic-about"
                     className={"px-3 my-0 text-decoration-none fs-4" + 
                     (selected === 'About' ? " border-bottom border-secondary border-3 text-secondary" : "")}
                     onClick={()=>setSelected('About')}
+                    data-testid={"topic-nav-link"}
                 >
                         About this Topic
                 </a>
