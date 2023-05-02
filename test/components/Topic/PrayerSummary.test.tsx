@@ -15,7 +15,7 @@ describe("Prayer Summary", () => {
         expect(prayerSummaryTitle).toHaveTextContent(testTitle)
         expect(prayerSummaryTitle).toHaveClass("text-primary", "fst-italic", "border-bottom")
 
-        expect(prayerSummaryPoints).length.toBe(3)
+        expect(prayerSummaryPoints.length).toBe(3)
         expect(prayerSummaryPoints[0]).toHaveTextContent(testTextArray[0])
         expect(prayerSummaryPoints[0]).toHaveClass("my-3", "fs-6")
     })

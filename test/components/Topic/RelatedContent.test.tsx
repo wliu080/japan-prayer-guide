@@ -16,7 +16,7 @@ describe("Related Content", () => {
         expect(relatedContentTitle).toHaveTextContent(testTitle)
         expect(relatedContentTitle).toHaveClass("text-primary", "my-4", "fs-1")
 
-        expect(relatedContentLinks).length.toBeGreaterThan(1)
+        expect(relatedContentLinks.length).toBeGreaterThan(1)
         expect(relatedContentLinks[0]).toHaveTextContent(testTextArray[0])
     })
 })

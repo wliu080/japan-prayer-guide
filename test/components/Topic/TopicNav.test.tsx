@@ -13,7 +13,7 @@ describe("Topic Nav", () => {
         expect(topicNavLinks).toHaveClass("pt-4", "pb-0", "w-100")
         expect(topicNavLinks.children.length).toBe(3)
 
-        expect(topicNavLink).toHaveTextContent("About This Topic")
-        expect(topicNavLink).toHaveClass("px-3", "my-0", "text-decoration-non")
+        expect(topicNavLink).toHaveTextContent("About this Topic")
+        expect(topicNavLink).toHaveClass("px-3", "my-0", "text-decoration-none")
     })
 })

@@ -4,7 +4,7 @@ import TopicDownloadables from '../../../components/topic/TopicDownloadables';
 describe("Topic Downloadables", () => {
     test("Renders a section with the right text inside", () => {
         const testTextArray = ["Hey how's it going", "I'm doing fine", "Thanks", "great"]
-        const testTextArray2 = ["/link1", "/link2", "/link3", "/link4"]
+        const testTextArray2 = ["/", "/", "/", "/", "/"]
         const testTitle = "Topic Downloadables"
         render(<TopicDownloadables labels={testTextArray} links={testTextArray2} title={testTitle}/>)
         const topicDownloadablesCont = screen.getByTestId("topic-downloadables-container")
@@ -16,7 +16,7 @@ describe("Topic Downloadables", () => {
         expect(topicDownloadablesTitle).toHaveTextContent(testTitle)
         expect(topicDownloadablesTitle).toHaveClass("text-primary", "my-4", "fs-1")
 
-        expect(topicDownloadablesLinks).length.toBe(4)
+        expect(topicDownloadablesLinks.length).toBe(4)
         expect(topicDownloadablesLinks[0]).toHaveTextContent(testTextArray[0])
         expect(topicDownloadablesLinks[0]).toHaveClass("col")
     })

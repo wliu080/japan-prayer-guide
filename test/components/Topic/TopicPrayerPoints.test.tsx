@@ -16,7 +16,7 @@ describe("Topic Prayer Points", () => {
         expect(TopicPrayerPointsTitle).toHaveTextContent(testTitle)
         expect(TopicPrayerPointsTitle).toHaveClass("px-2", "pb-3", "d-flex")
 
-        expect(TopicPrayerPointsPoints).length.toBe(3)
+        expect(TopicPrayerPointsPoints.length).toBe(3)
         expect(TopicPrayerPointsPoints[0]).toHaveTextContent(testTextArray[0])
         expect(TopicPrayerPointsPoints[0]).toHaveClass("my-3")
         expect(TopicPrayerPointsPoints[1]).toHaveTextContent(testTextArray[1])
