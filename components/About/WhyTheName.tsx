@@ -5,16 +5,17 @@ import { Container } from "react-bootstrap";
 const WhyTheName: React.FC = () => {
     const { t } = useTranslation("about");
     const nameExplanations: string[] = t("why.content", { returnObjects: true });
+    const nameMap: string[] = Array.isArray(nameExplanations) ? nameExplanations : [];
 
     return (
-        <section id="why-the-name-section" className="position-relative">
+        <section id="why-the-name-section" data-testid="why-the-name-section" className="position-relative">
             <Container id="why-the-name" className="py-4">
                 <div id="about-landing-image" className="w-100 mx-0 px-0 my-4">
                     temporary image placeholder
                 </div>
                 <Container className="why-content mt-5">
                     <h4 className="my-3">{t("why.title")}</h4>
-                    {nameExplanations.map((text: string) => (
+                    {nameMap.map((text: string) => (
                         <p key={text} className="fs-6">
                             {text}
                         </p>
