@@ -1,0 +1,28 @@
+name: Run tests when PR is made
+run-name: Running tests
+on:
+    pull_request:
+        paths:
+            - "**.tsx"
+            - "**.ts"
+            - "**.js"
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [14.x]
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: npm install
+              run: npm install
+
+            - name: run npm test
+              run: npm test
