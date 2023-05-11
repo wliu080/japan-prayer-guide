@@ -6,7 +6,8 @@ describe("Topic Downloadables", () => {
         const testTextArray = ["Hey how's it going", "I'm doing fine", "Thanks", "great"]
         const testTextArray2 = ["/", "/", "/", "/", "/"]
         const testTitle = "Topic Downloadables"
-        render(<TopicDownloadables labels={testTextArray} links={testTextArray2} title={testTitle}/>)
+        const testHeaders = ["hello", "testing"]
+        render(<TopicDownloadables labels={testTextArray} links={testTextArray2} title={testTitle} headers={testHeaders}/>)
         const topicDownloadablesCont = screen.getByTestId("topic-downloadables-container")
         const topicDownloadablesTitle = screen.getByTestId("topic-downloadables-title")
         const topicDownloadablesLinks = screen.getByTestId("topic-downloadables-links").children
