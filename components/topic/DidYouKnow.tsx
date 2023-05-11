@@ -3,12 +3,12 @@ import { Container } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { BsLightbulb } from "react-icons/bs";
 
-interface Props {
+interface dykProps {
     text: string
     title: string
 }
 
-const DidYouKnow = ({text, title}:Props) => {
+const DidYouKnow = ({text, title}:dykProps) => {
     return (
         <Container data-testid={"dyk-container"} className="d-flex justify-content-center">
             <div className="did-you-know p-4 shadow">

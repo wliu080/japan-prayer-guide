@@ -2,12 +2,12 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
-interface Props {
+interface feedbackProps {
     title: string
     button: string
 }
 
-const Feedback = ({title, button}:Props) => {
+const Feedback = ({title, button}:feedbackProps) => {
     return (
         <section data-testid={"feedback-sect"} className="text-center m-0 p-4 w-100" style={{backgroundColor: "#EAF4FF"}}>
             <h1 data-testid={"feedback-title"} className="text-primary fs-2">{title}</h1>

@@ -1,12 +1,13 @@
 import { Dispatch, SetStateAction } from "react"
 import { Container } from "react-bootstrap"
 
-interface Props {
+interface navProps {
     selected: string
     setSelected: Dispatch<SetStateAction<string>>
+    labels: string[]
 }
 
-export const TopicNav = ({selected, setSelected}:Props) => {
+export const TopicNav = ({selected, setSelected, labels}:navProps) => {
     return (
         <Container data-testid={"topic-nav-container"} className="w-100 d-flex justify-content-center">
             <div data-testid={"topic-nav-links"} className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around">
@@ -17,7 +18,7 @@ export const TopicNav = ({selected, setSelected}:Props) => {
                     onClick={()=>setSelected('About')}
                     data-testid={"topic-nav-link"}
                 >
-                        About this Topic
+                        {labels[0]}
                 </a>
                 <a
                     href="#topic-prayer"
@@ -25,7 +26,7 @@ export const TopicNav = ({selected, setSelected}:Props) => {
                     (selected === 'Prayer' ? " border-bottom border-secondary border-3 text-secondary" : "")}
                     onClick={()=>setSelected('Prayer')}
                 >
-                        Prayer Points
+                        {labels[1]}
                 </a>
                 <a
                     href="#topic-downloads"
@@ -33,7 +34,7 @@ export const TopicNav = ({selected, setSelected}:Props) => {
                     (selected === 'Downloads' ? " border-bottom border-secondary border-3 text-secondary" : "")}
                     onClick={()=>setSelected('Downloads')}
                 >
-                        Downloadables
+                        {labels[2]}
                 </a>
             </div>
         </Container>

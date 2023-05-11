@@ -4,15 +4,14 @@ import {FaPrayingHands} from 'react-icons/fa'
 import { IconContext } from "react-icons/lib";
 import { BsDownload } from "react-icons/bs";
 
-interface Props {
+interface summaryProps {
     prayerPoints: string[]
     title: string
-    style?: any
 }
 
-export default function PrayerSummary({prayerPoints, style, title}:Props) {
+export default function PrayerSummary({prayerPoints, title}:summaryProps) {
     return (
-        <Container data-testid={"prayer-summary-container"} className="d-flex px-6 justify-content-start" style={style}>
+        <Container data-testid={"prayer-summary-container"} className="d-flex px-6 justify-content-start">
             <Card className="my-4 shadow" style={{maxWidth: '400px'}}>
                 <Card.Body>
                     <Card.Text data-testid={"prayer-summary-title"} className="text-primary px-2 py-3 fs-4 fst-italic border-bottom border-grey d-flex justify-content-between align-items-center">

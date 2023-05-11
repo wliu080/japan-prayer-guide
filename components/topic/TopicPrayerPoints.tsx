@@ -4,13 +4,13 @@ import {FaPrayingHands} from 'react-icons/fa'
 import { IconContext } from "react-icons/lib";
 import { BsDownload } from "react-icons/bs";
 
-interface Props {
+interface prayerProps {
     prayerPoints: string[]
     title: string
     subtitle: string
 }
 
-export default function TopicPrayerPoints({prayerPoints, title, subtitle}:Props) {
+export default function TopicPrayerPoints({prayerPoints, title, subtitle}:prayerProps) {
     return (
         <Container data-testid={"topic-points-container"} className="d-flex justify-content-center px-6" id="topic-prayer">
             <Card className="my-4 shadow d-lg-flex flex-lg-row">
