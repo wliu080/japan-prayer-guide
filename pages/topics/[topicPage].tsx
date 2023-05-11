@@ -10,9 +10,8 @@ import RelatedContent from "../../components/topic/RelatedContent";
 import Footer from "../../components/footer";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import DidYouKnow from "../../components/topic/DidYouKnow";
 import Feedback from "../../components/topic/Feedback";
-import ImageGroup from "../../components/topic/ImageGrid";
+import ImageGroup from "../../components/topic/ImageGroup";
 import { TopicNav } from "../../components/topic/TopicNav";
 import React from "react";
 
@@ -58,9 +57,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const quoteContent: string = t("quote.content")
     const quoteSource: string = t("quote.source")
 
-    const dykTitle: string = t("didYouKnow.title")
-    const dykContent: string = t("didYouKnow.content")
-
     const prayerTitle: string = t("prayerPoints.title")
     const prayerSub: string = t("prayerPoints.subtitle")
 
@@ -70,10 +66,15 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const downloadsTitle: string = t("downloads.title")
     const downloadsLabels: string[] = t("downloads.labels", { returnObjects: true })
     const downloadsLinks: string[] = t("downloads.links", { returnObjects: true })
+    const downloadsHeaders: string[] = t("downloads.headers", { returnObjects: true })
 
     const relatedTitle: string = t("related.title")
     const relatedLabels: string[] = t("related.labels", { returnObjects: true })
     const relatedLinks: string[] = t("related.links", { returnObjects: true })
+
+    const navLabels: string[] = t("topicNav.labels", { returnObjects: true })
+
+    const pageTitle: string = t("title")
 
     // States
     const [selected, setSelected] = React.useState<string>("About");
@@ -81,7 +82,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     return (
         <>
             <Head>
-                <title>{t("title")}</title>
+                <title>{pageTitle}</title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -100,7 +101,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </div>
 
                 {/* Topic Nav Component */}
-                <TopicNav selected={selected} setSelected={setSelected} />
+                <TopicNav selected={selected} setSelected={setSelected} labels={navLabels}/>
 
                 {/* Video/Reel Placeholder */}
                 <Container className="py-5" id="topic-about">
@@ -144,8 +145,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     Placeholder
                 </div>
 
-                <DidYouKnow text={dykContent} title={dykTitle}/>
-
                 {/* Placeholder text */}
                 <Container className="py-5">
                     {bodyContent3.map((text) => 
@@ -161,7 +160,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <Feedback title={feedbackTitle} button={feedbackButton}/>
 
                 {/* Downloads and Related */}
-                <TopicDownloadables links={downloadsLinks} labels={downloadsLabels} title={downloadsTitle}/>
+                <TopicDownloadables links={downloadsLinks} labels={downloadsLabels} title={downloadsTitle} headers={downloadsHeaders}/>
                 <RelatedContent topics={relatedLabels} links={relatedLinks} title={relatedTitle}/>
 
                 {/* Footer */}

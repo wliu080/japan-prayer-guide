@@ -2,13 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { Card, Container, Carousel } from "react-bootstrap";
 
-interface Props {
+interface relatedProps {
     topics: string[]
     links: string[]
     title?: string
 }
 
-export default function RelatedContent({topics, links, title}:Props) {
+export default function RelatedContent({topics, links, title}:relatedProps) {
     return (
         <Container data-testid={"related-content-container"} className="d-flex flex-column my-5">
             <Container className="d-flex flex-row justify-content-between align-items-center">
@@ -22,7 +22,7 @@ export default function RelatedContent({topics, links, title}:Props) {
     )
 }
 
-function CarouselSmall({topics, links}:Props) {
+function CarouselSmall({topics, links}:relatedProps) {
     return (
         <Carousel indicators={false} interval={null} className="d-md-none">
             <Carousel.Item>
@@ -77,7 +77,7 @@ function CarouselSmall({topics, links}:Props) {
     )
 }
 
-function CarouselLarge({topics, links}:Props) {
+function CarouselLarge({topics, links}:relatedProps) {
     return (
         <Carousel indicators={false} interval={null} className="d-none d-md-block">
                 <Carousel.Item>

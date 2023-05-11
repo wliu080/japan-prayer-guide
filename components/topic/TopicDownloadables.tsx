@@ -5,18 +5,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 
-interface Props {
+interface downloadProps {
     links: string[]
     title: string
     labels: string[]
+    headers: string[]
 }
 
-export default function TopicDownloadables({links, title, labels}:Props) {
+export default function TopicDownloadables({links, title, labels, headers}:downloadProps) {
     return (
         <Container data-testid={"topic-downloadables-container"} className="d-flex flex-column my-5" id="topic-downloads">
             <Container className="d-flex flex-row justify-content-between align-items-center">
                 <h1 data-testid={"topic-downloadables-title"} className="text-primary my-4 fs-1">{title}</h1>
-                <a href={'/downloads'} className="text-secondary d-none d-md-block">View all downloadables</a>
+                <a href={'/downloads'} className="text-secondary d-none d-md-block">{headers[0]}</a>
             </Container>
            <Row xl={4} lg={2} className="g-3" data-testid={"topic-downloadables-links"}>
             {labels.map((label, idx) => 
@@ -32,9 +33,9 @@ export default function TopicDownloadables({links, title, labels}:Props) {
             )}
            </Row>
             <Link href={links[4]} className="align-self-center w-100" style={{maxWidth:'500px'}}>
-                <Button className="align-self-center w-100 mt-4 text-white border-secondary bg-secondary" variant="primary">Download all</Button>
+                <Button className="align-self-center w-100 mt-4 text-white border-secondary bg-secondary" variant="primary">{headers[1]}</Button>
             </Link>
-            <a href={'/downloads'} className="align-self-center my-3 text-secondary d-md-none">View all downloadables</a>
+            <a href={'/downloads'} className="align-self-center my-3 text-secondary d-md-none">{headers[0]}</a>
         </Container>
     )
 }
