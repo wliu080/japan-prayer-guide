@@ -1,8 +1,16 @@
 import fs from "fs";
 import path from "path";
+import i18nConfig from "../next-i18next.config.js";
 
 // The file structure of the other (non-EN) locales should all still match, we just need a folder to scan through
 const staticPageDirectory = path.join(process.cwd(), "public/locales/en/topics");
+
+type StaticPathWithLocaleType = {
+    params: {
+        topicPage: string;
+    };
+    locale: string;
+};
 
 function getTopicPageIds() {
     const fileNames = fs
@@ -16,22 +24,30 @@ function getTopicPageIds() {
     //   {
     //     params: {
     //       topicPage: 'ancestor-veneration'
-    //     }
+    //     }, locale: "en"
     //   },
     //   {
     //     params: {
-    //       topicPage: 'toolkit'
-    //     }
+    //       topicPage: 'ancestor-veneration'
+    //     }, locale: "ja"
     //   }
     // ]
 
-    return fileNames.map((fileName) => {
-        return {
-            params: {
-                topicPage: fileName.replace(/\.md$/, ""),
-            },
-        };
+    let paths: StaticPathWithLocaleType[] = [];
+    const configLocales = i18nConfig.i18n.locales;
+
+    fileNames.map((fileName) => {
+        configLocales.forEach((lang) => {
+            paths.push({
+                params: {
+                    topicPage: fileName.replace(/\.md$/, ""),
+                },
+                locale: lang,
+            });
+        });
     });
+
+    return paths;
 }
 
 export { getTopicPageIds };
