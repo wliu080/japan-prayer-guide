@@ -31,7 +31,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }: any) =>
         };
     }
 
-    // const topicId: string = params.topicPage;
+    // const topicId: string = params.topicPage
     const localeRef: string = "topics/" + params.topicPage;
 
     return {
@@ -68,10 +68,15 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const downloadsTitle: string = t("downloads.title");
     const downloadsLabels: string[] = t("downloads.labels", { returnObjects: true });
     const downloadsLinks: string[] = t("downloads.links", { returnObjects: true });
+    const downloadsHeaders: string[] = t("downloads.headers", { returnObjects: true });
 
     const relatedTitle: string = t("related.title");
     const relatedLabels: string[] = t("related.labels", { returnObjects: true });
     const relatedLinks: string[] = t("related.links", { returnObjects: true });
+
+    const navLabels: string[] = t("topicNav.labels", { returnObjects: true });
+
+    const pageTitle: string = t("title");
 
     // States
     const [selected, setSelected] = React.useState<string>("About");
@@ -141,8 +146,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <div id="placeholder-image" className="w-100 my-5">
                     Placeholder
                 </div>
-
-                <DidYouKnow text={dykContent} title={dykTitle} />
 
                 {/* Placeholder text */}
                 <Container className="py-5">
