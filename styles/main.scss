@@ -6,6 +6,10 @@ $secondary: #4592CF;
 //$display-font-weight: 700;
 //$font-family-sans-serif: Roboto, Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-sizes: (
+  1: 2rem,
+  2: 1.5rem,
+  3: 1.25rem,
+  4: 1rem,
   5: 0.875rem,
   6: 0.8rem
 );
@@ -35,7 +39,7 @@ $font-sizes: (
 #about {
   
   #about-landing-image {
-    height: 350px;
+    height: 400px;
     background-color: #868686;
   }
   
@@ -113,4 +117,21 @@ $font-sizes: (
     min-height: 100px;
     background-color: #EAF4FF;
   }
+}
+
+// topic page classes
+
+.did-you-know {
+  max-width: 800px;
+  background-color: #EAF4FF;
+}
+
+.placeholder-image {
+  height: 400px;
+  background-color: #868686;
+}
+
+#placeholder-image {
+  height: 400px;
+  background-color: #868686;
 }
