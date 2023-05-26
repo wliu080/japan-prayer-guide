@@ -43,38 +43,35 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }: any) =>
 };
 
 export default function TopicPage({ localeRef }: { localeRef: string }) {
-
     const { t } = useTranslation(localeRef);
 
     // Objects holding translations
     const summaryPoints: string[] = t("summary.content", { returnObjects: true });
-    const summaryTitle: string = t("summary.title")
+    const summaryTitle: string = t("summary.title");
 
     const bodyContent1: string[] = t("mainBody.content1", { returnObjects: true });
     const bodyContent2: string[] = t("mainBody.content2", { returnObjects: true });
     const bodyContent3: string[] = t("mainBody.content3", { returnObjects: true });
 
-    const quoteContent: string = t("quote.content")
-    const quoteSource: string = t("quote.source")
+    const quoteContent: string = t("quote.content");
+    const quoteSource: string = t("quote.source");
 
-    const prayerTitle: string = t("prayerPoints.title")
-    const prayerSub: string = t("prayerPoints.subtitle")
+    const dykTitle: string = t("didYouKnow.title");
+    const dykContent: string = t("didYouKnow.content");
 
-    const feedbackTitle: string = t("feedback.title")
-    const feedbackButton: string = t("feedback.button")
+    const prayerTitle: string = t("prayerPoints.title");
+    const prayerSub: string = t("prayerPoints.subtitle");
 
-    const downloadsTitle: string = t("downloads.title")
-    const downloadsLabels: string[] = t("downloads.labels", { returnObjects: true })
-    const downloadsLinks: string[] = t("downloads.links", { returnObjects: true })
-    const downloadsHeaders: string[] = t("downloads.headers", { returnObjects: true })
+    const feedbackTitle: string = t("feedback.title");
+    const feedbackButton: string = t("feedback.button");
 
-    const relatedTitle: string = t("related.title")
-    const relatedLabels: string[] = t("related.labels", { returnObjects: true })
-    const relatedLinks: string[] = t("related.links", { returnObjects: true })
+    const downloadsTitle: string = t("downloads.title");
+    const downloadsLabels: string[] = t("downloads.labels", { returnObjects: true });
+    const downloadsLinks: string[] = t("downloads.links", { returnObjects: true });
 
-    const navLabels: string[] = t("topicNav.labels", { returnObjects: true })
-
-    const pageTitle: string = t("title")
+    const relatedTitle: string = t("related.title");
+    const relatedLabels: string[] = t("related.labels", { returnObjects: true });
+    const relatedLinks: string[] = t("related.links", { returnObjects: true });
 
     // States
     const [selected, setSelected] = React.useState<string>("About");
@@ -96,12 +93,12 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     temporary image placeholder
                     <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
                         <h1 className="fs-1 text-white px-3">{t("title")}</h1>
-                        <PrayerSummary prayerPoints={summaryPoints} title={summaryTitle}/>
+                        <PrayerSummary prayerPoints={summaryPoints} title={summaryTitle} />
                     </Container>
                 </div>
 
                 {/* Topic Nav Component */}
-                <TopicNav selected={selected} setSelected={setSelected} labels={navLabels}/>
+                <TopicNav selected={selected} setSelected={setSelected} labels={navLabels} />
 
                 {/* Video/Reel Placeholder */}
                 <Container className="py-5" id="topic-about">
@@ -112,9 +109,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                 {/* Placeholder text */}
                 <Container className="py-5">
-                    {bodyContent1.map((text) => 
+                    {bodyContent1.map((text) => (
                         <p key={text}>{text}</p>
-                    )}
+                    ))}
                 </Container>
 
                 {/* Image Grid */}
@@ -122,9 +119,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                 {/* Placeholder text */}
                 <Container className="py-5">
-                    {bodyContent2.map((text) => 
+                    {bodyContent2.map((text) => (
                         <p key={text}>{text}</p>
-                    )}
+                    ))}
                 </Container>
 
                 {/* Infographics Placeholder */}
@@ -145,23 +142,30 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     Placeholder
                 </div>
 
+                <DidYouKnow text={dykContent} title={dykTitle} />
+
                 {/* Placeholder text */}
                 <Container className="py-5">
-                    {bodyContent3.map((text) => 
+                    {bodyContent3.map((text) => (
                         <p key={text}>{text}</p>
-                    )}
+                    ))}
                 </Container>
 
                 {/* Prayer Points */}
-                <TopicPrayerPoints prayerPoints={summaryPoints} title={prayerTitle} subtitle={prayerSub}/>
+                <TopicPrayerPoints prayerPoints={summaryPoints} title={prayerTitle} subtitle={prayerSub} />
                 <br />
 
                 {/* Give us Feedback */}
-                <Feedback title={feedbackTitle} button={feedbackButton}/>
+                <Feedback title={feedbackTitle} button={feedbackButton} />
 
                 {/* Downloads and Related */}
-                <TopicDownloadables links={downloadsLinks} labels={downloadsLabels} title={downloadsTitle} headers={downloadsHeaders}/>
-                <RelatedContent topics={relatedLabels} links={relatedLinks} title={relatedTitle}/>
+                <TopicDownloadables
+                    links={downloadsLinks}
+                    labels={downloadsLabels}
+                    title={downloadsTitle}
+                    headers={downloadsHeaders}
+                />
+                <RelatedContent topics={relatedLabels} links={relatedLinks} title={relatedTitle} />
 
                 {/* Footer */}
                 <Footer />
