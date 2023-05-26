@@ -1,12 +1,19 @@
 {
-  "title": "Beneath the Surface",
-  "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
-  "header": {
-    "brandAlt": "Crane logo with the text: Beneath the Surface",
-    "topics": "Topics",
-    "downloads": "Downloads",
-    "purchase": "Purchase the Book",
-    "about": "About Us",
-    "blurb": "We desire to see a prayer movement for Japan's spiritual breakthrough"
-  }
+    "title": "Beneath the Surface",
+    "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
+    "header": {
+        "brandAlt": "Crane logo with the text: Beneath the Surface",
+        "topics": "Topics",
+        "downloads": "Downloads",
+        "purchase": "Purchase the Book",
+        "about": "About Us",
+        "blurb": "We desire to see a prayer movement for Japan's spiritual breakthrough"
+    },
+    "home": {
+        "heroHeading": "Title goes here",
+        "mainBlurb": "Main fact for this Japan - Sarah will be leading in copy - so we’ll be sure to capture the correct heart and posture for this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+        "viewTopics": "View All Topics",
+        "featuredTopicTitle": "Featured Topic",
+        "featuredTopicSubtitle": "for this month"
+    }
 }
