@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import MeetOurTeam from "../../../components/about/MeetOurTeam";
+import MeetOurTeam from "../../../components/About/MeetOurTeam";
 
 describe("Meet Our Team", () => {
     test("Renders a container with title, image and 3 boxes", () => {

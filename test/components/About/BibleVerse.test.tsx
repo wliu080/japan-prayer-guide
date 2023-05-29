@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import BibleVerse from "../../../components/about/BibleVerse";
+import BibleVerse from "../../../components/About/BibleVerse";
 
 describe("Bible Verse", () => {
     test("Renders with the bible verse and reference as text", () => {

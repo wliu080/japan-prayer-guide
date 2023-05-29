@@ -5,10 +5,10 @@ import { Container } from "react-bootstrap";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Footer from "../components/footer";
-import MissionVision from "../components/about/MissionVision";
-import WhyTheName from "../components/about/WhyTheName";
-import MeetOurTeam from "../components/about/MeetOurTeam";
-import Partners from "../components/about/Partners";
+import MissionVision from "../components/About/MissionVision";
+import WhyTheName from "../components/About/WhyTheName";
+import MeetOurTeam from "../components/About/MeetOurTeam";
+import Partners from "../components/About/Partners";
 
 export async function getStaticProps({ locale }: any) {
     return {
