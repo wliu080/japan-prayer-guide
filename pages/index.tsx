@@ -5,18 +5,26 @@ import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
 import Footer from "../components/footer"
+import PrayerSummary from "../components/topic/PrayerSummary"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
+    const featuredTopicRef: string = "topics/" + getFeaturedTopic(getSchedule())
+
     return {
         props: {
-            ...(await serverSideTranslations(locale, ["common"])),
+            featuredTopicRef,
+            ...(await serverSideTranslations(locale, ["common", featuredTopicRef])),
             // Will be passed to the page component as props
         },
     }
 }
 
-const Home: React.FC = () => {
+const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
     const { t } = useTranslation("common")
+    const { t: featuredTranslation } = useTranslation(featuredTopicRef)
+
+    const summaryPoints: string[] = featuredTranslation("summary.content", { returnObjects: true })
+    const summaryTitle: string = featuredTranslation("title")
 
     return (
         <div>
@@ -52,8 +60,7 @@ const Home: React.FC = () => {
                         <h3 className="text-white">{t("home.featuredTopicTitle")}</h3>
                         <h4 className="text-white">{t("home.featuredTopicSubtitle")}</h4>
                     </Container>
-                    <span>{getFeaturedTopic(getSchedule())}</span>
-                    {/* Reuse topic prayer point component */}
+                    <PrayerSummary prayerPoints={summaryPoints} title={summaryTitle} />
                 </Container>
 
                 {/* Downloads snippet */}
