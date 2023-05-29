@@ -6,6 +6,7 @@ interface Props {
     passageLocation: string;
 }
 
+
 export default function BibleVerse({ content, passageLocation }: Props) {
     return (
         <Container
