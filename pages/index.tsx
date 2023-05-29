@@ -49,14 +49,14 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                     </Container>
                 </Container>
 
-                <Container id="mainBlurbSection" className="bg-white">
-                    <div className="px-3">{t("home.mainBlurb")}</div>
+                <Container fluid id="mainBlurbSection" className="bg-white p-5 w-75">
+                    <p className="px-3">{t("home.mainBlurb")}</p>
                 </Container>
 
                 {/* Why Japan component */}
 
                 {/* Featured topic component - has to potentially be pulled from a schedule that Sarah can edit */}
-                <Container id="featuredTopicSection" className="bg-warning">
+                <Container fluid id="featuredTopicSection" className="py-5 bg-warning">
                     <Container className="d-flex flex-column align-items-center justify-content-center">
                         <h3 className="text-white">{t("home.featuredTopicTitle")}</h3>
                         <h4 className="text-white">{t("home.featuredTopicSubtitle")}</h4>
