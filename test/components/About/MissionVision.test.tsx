@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { useTranslation } from "react-i18next";
-import MissionVision from "../../../components/About/MissionVision";
+import MissionVision from "../../../components/about/MissionVision";
 
 jest.mock("react-i18next", () => ({
     useTranslation: jest.fn(),

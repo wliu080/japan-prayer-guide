@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { useTranslation } from "react-i18next";
-import WhyTheName from "../../../components/About/WhyTheName";
+import WhyTheName from "../../../components/about/WhyTheName";
 
 jest.mock("react-i18next", () => ({
     useTranslation: jest.fn(),

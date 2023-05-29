@@ -5,11 +5,12 @@ import { IconContext } from "react-icons/lib";
 import Button from "react-bootstrap/Button";
 
 interface Props {
-    title: string[]
+    title: string
     prayerPoints: string[]
+    subtitle: string
 }
 
-export default function FeaturedTopic({title, prayerPoints}:Props) {
+export default function FeaturedTopic({title, prayerPoints, subtitle}:Props) {
     return (
         <Container className="d-flex justify-content-center">
             <Card className="my-4 shadow d-lg-flex flex-lg-row">
@@ -23,7 +24,7 @@ export default function FeaturedTopic({title, prayerPoints}:Props) {
                         <IconContext.Provider value={{size:'20px'}}>
                             <FaPrayingHands></FaPrayingHands>
                         </IconContext.Provider>
-                        Pray For
+                        {subtitle}
                     </Card.Text>
                     <ul className="fs-5">
                         {prayerPoints.map((point:string) => 

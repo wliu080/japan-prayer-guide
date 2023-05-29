@@ -8,5 +8,10 @@
     "purchase": "書籍の購入",
     "about": "会社案内",
     "blurb": "日本の霊的躍進のための祈りのムーブメントを望む"
+  },
+  "prayerSummary": {
+    "subtitle": "Pray for",
+    "read": "Read the entire article",
+    "view": "View all topics"
   }
 }

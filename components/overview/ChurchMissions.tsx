@@ -11,7 +11,7 @@ export const ChurchMissions = () => {
                 </Container>
             </div>
             <Container className="p-4">
-                <Row xl={4} lg={3} md={2} sm={2}>
+                <Row xl={4} lg={3} md={2} sm={2} xs={2}>
                     {placeholder.map((element) => 
                         <Col key={element}>
                             <Link href={"/"} className="text-decoration-none">

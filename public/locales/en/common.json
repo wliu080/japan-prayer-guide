@@ -8,5 +8,10 @@
     "purchase": "Purchase the Book",
     "about": "About Us",
     "blurb": "We desire to see a prayer movement for Japan's spiritual breakthrough"
+  },
+  "prayerSummary": {
+    "subtitle": "Pray for",
+    "read": "Read the entire article",
+    "view": "View all topics"
   }
 }

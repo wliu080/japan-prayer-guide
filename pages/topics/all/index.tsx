@@ -7,6 +7,17 @@ import React from "react";
 import Footer from "../../../components/footer";
 import { CultureSociety } from "../../../components/overview/CultureSociety";
 import { ChurchMissions } from "../../../components/overview/ChurchMissions";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+export async function getStaticProps({ locale }: any) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ["overview", "common"])),
+            // Will be passed to the page component as props
+            // About used in content, common used in header
+        },
+    };
+}
 
 export default function Overview() {
 

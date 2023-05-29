@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Partners from "../../../components/About/Partners";
+import Partners from "../../../components/about/Partners";
 
 describe("Partners", () => {
     test("Renders with the partner text and the two partner logos", () => {
