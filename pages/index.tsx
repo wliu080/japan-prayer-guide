@@ -5,7 +5,7 @@ import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
 import Footer from "../components/footer"
-import PrayerSummary from "../components/topic/PrayerSummary"
+import TopicPrayerPoints from "../components/topic/TopicPrayerPoints"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
     const featuredTopicRef: string = "topics/" + getFeaturedTopic(getSchedule())
@@ -23,8 +23,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
     const { t } = useTranslation("common")
     const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
-    const summaryPoints: string[] = featuredTranslation("summary.content", { returnObjects: true })
-    const summaryTitle: string = featuredTranslation("title")
+    const prayerPoints: string[] = featuredTranslation("summary.content", { returnObjects: true })
+    const prayerTitle: string = featuredTranslation("title")
+    const prayerSub: string = featuredTranslation("prayerPoints.subtitle")
 
     return (
         <div>
@@ -60,7 +61,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                         <h3 className="text-white">{t("home.featuredTopicTitle")}</h3>
                         <h4 className="text-white">{t("home.featuredTopicSubtitle")}</h4>
                     </Container>
-                    <PrayerSummary prayerPoints={summaryPoints} title={summaryTitle} />
+                    <TopicPrayerPoints prayerPoints={prayerPoints} title={prayerTitle} subtitle={prayerSub} />
                 </Container>
 
                 {/* Downloads snippet */}
