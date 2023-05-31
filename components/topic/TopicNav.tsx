@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react"
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react"
 import { Container } from "react-bootstrap"
 
 interface navProps {
@@ -8,9 +8,32 @@ interface navProps {
 }
 
 export const TopicNav = ({selected, setSelected, labels}:navProps) => {
+
+    const bannerRef = useRef(null)
+    const [show, setShow] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const bannerElement:any = bannerRef.current;
+            if (bannerElement) {
+                const { top } = bannerElement.getBoundingClientRect();
+                if (top === 0) {
+                    setShow(true)
+                } else {
+                    setShow(false)
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [])
+
     return (
-        <Container data-testid={"topic-nav-container"} className="w-100 d-flex justify-content-center">
-            <div data-testid={"topic-nav-links"} className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around">
+        <Container ref={bannerRef} data-testid={"topic-nav-container"} className="w-100 d-flex justify-content-center flex-column sticky-top">
+            <div id="overview-nav" className="w-100" style={show ? {height: '40px'} : {height: '0px'}}></div>
+            <div data-testid={"topic-nav-links"} className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around bg-white">
                 <a
                     href="#topic-about"
                     className={"px-3 my-0 text-decoration-none fs-4" + 
