@@ -28,7 +28,7 @@ export default function PrayerPoints({prayerPoints, title, featured=false, showI
             <Card className="my-4 shadow d-lg-flex flex-lg-row">
                 {/* temporary height for video, before we finalize videos */}
                 {showImg &&
-                    <Card.Img variant="top" src="/bamboo.jpeg" style={{height:'100%', maxWidth:'600px'}}></Card.Img>
+                    <Card.Img className='h-100' variant="top" src="/bamboo.jpeg" style={{maxWidth:'600px'}}></Card.Img>
                 }
                 <Card.Body style={showSubtitle ? {maxWidth:'600px'} : {maxWidth: '400px'}}>
                     <Card.Text data-testid={"prayer-points-title"} className="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey d-flex justify-content-between align-items-center">
