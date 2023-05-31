@@ -3,8 +3,6 @@ import { getTopicPageIds } from "../../services/staticTopicLoader";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { Container } from "react-bootstrap";
 import { ToggleHeader } from "../../components/toggleHeader";
-import TopicPrayerPoints from "../../components/topic/TopicPrayerPoints";
-import PrayerSummary from "../../components/topic/PrayerSummary";
 import TopicDownloadables from "../../components/topic/TopicDownloadables";
 import RelatedContent from "../../components/topic/RelatedContent";
 import Footer from "../../components/footer";
@@ -14,6 +12,7 @@ import Feedback from "../../components/topic/Feedback";
 import ImageGroup from "../../components/topic/ImageGroup";
 import { TopicNav } from "../../components/topic/TopicNav";
 import React from "react";
+import PrayerPoints from "../../components/common/PrayerPoints";
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds();
@@ -98,7 +97,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     temporary image placeholder
                     <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
                         <h1 className="fs-1 text-white px-3">{t("title")}</h1>
-                        <PrayerSummary prayerPoints={summaryPoints} title={summaryTitle} />
+                        <PrayerPoints prayerPoints={summaryPoints} title={summaryTitle} />
                     </Container>
                 </div>
 
@@ -155,7 +154,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
 
                 {/* Prayer Points */}
-                <TopicPrayerPoints prayerPoints={summaryPoints} title={prayerTitle} subtitle={prayerSub} />
+                <PrayerPoints prayerPoints={summaryPoints} title={prayerTitle} showImg={true} showSubtitle={true} />
                 <br />
 
                 {/* Give us Feedback */}
