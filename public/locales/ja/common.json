@@ -1,19 +1,17 @@
 {
-    "title": "建前の以遠",
-    "placeholder": "有ツヤヱ致81閣コロヒ企交わせけ規和じの意統5統ヘコム条検ゃぱ譜各つあも夜拡ふせやね級2囲そク載綿そち日延へどづ川前イクツ混兄だね。球ラ記活文にかめき隆87急はわ断目アホツフ認余ドぞぜ総写陵つげゅ森無ヌセ条世すと著孝ばへ消差占で。載メム発後聞モケハ台育16提ソ報遠ヒケク支法ソセイネ道稿覧聞ドーづお被題おめっに続勝政ワモハ票兆ヒ任当ユワフヤ司能を見手影なリきに。",
-    "header": {
-        "brandAlt": "クレーンのロゴとテキスト「 建前の以遠」",
-        "topics": "トピックス",
-        "downloads": "ダウンロード",
-        "purchase": "書籍の購入",
-        "about": "会社案内",
-        "blurb": "日本の霊的躍進のための祈りのムーブメントを望む"
-    },
-    "home": {
-        "heroHeading": "Title goes here",
-        "mainBlurb": "Main fact for this Japan - Sarah will be leading in copy - so we'll be sure to capture the correct heart and posture for this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-        "viewTopics": "View All Topics",
-        "featuredTopicTitle": "Featured Topic",
-        "featuredTopicSubtitle": "for this month"
-    }
+  "title": "建前の以遠",
+  "placeholder": "有ツヤヱ致81閣コロヒ企交わせけ規和じの意統5統ヘコム条検ゃぱ譜各つあも夜拡ふせやね級2囲そク載綿そち日延へどづ川前イクツ混兄だね。球ラ記活文にかめき隆87急はわ断目アホツフ認余ドぞぜ総写陵つげゅ森無ヌセ条世すと著孝ばへ消差占で。載メム発後聞モケハ台育16提ソ報遠ヒケク支法ソセイネ道稿覧聞ドーづお被題おめっに続勝政ワモハ票兆ヒ任当ユワフヤ司能を見手影なリきに。",
+  "header": {
+    "brandAlt": "クレーンのロゴとテキスト「 建前の以遠」",
+    "topics": "トピックス",
+    "downloads": "ダウンロード",
+    "purchase": "書籍の購入",
+    "about": "会社案内",
+    "blurb": "日本の霊的躍進のための祈りのムーブメントを望む"
+  },
+  "prayerSummary": {
+    "subtitle": "Pray for",
+    "read": "Read the entire article",
+    "view": "View all topics"
+  }
 }
