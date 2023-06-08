@@ -5,8 +5,7 @@ import { Container } from "react-bootstrap";
 import { OverviewNav } from "../../../components/overview/OverviewNav";
 import React from "react";
 import Footer from "../../../components/footer";
-import { CultureSociety } from "../../../components/overview/CultureSociety";
-import { ChurchMissions } from "../../../components/overview/ChurchMissions";
+import { TopicOverviewSection } from "../../../components/overview/TopicOverviewSection";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export async function getStaticProps({ locale }: any) {
@@ -21,15 +20,21 @@ export async function getStaticProps({ locale }: any) {
 
 export default function Overview() {
 
-    const { t } = useTranslation("common")
+    const { t } = useTranslation("overview")
     
     // States
     const [selected, setSelected] = React.useState<string>("culture");
 
+    const cultureTopics:string[] = t("cultureTopics", { returnObjects: true })
+    const churchTopics:string[] = t("churchTopics", { returnObjects: true })
+
+    const title1 = t("culture")
+    const title2 = t("church")
+
     return (
         <>
             <Head>
-                <title>Topics</title>
+                <title>{t("pageTitle")}</title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -42,9 +47,9 @@ export default function Overview() {
                 <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{ height: "470px" }}>
                     temporary image placeholder
                     <Container className="d-flex flex-column align-items-center justify-content-start h-100 py-5">
-                        <h1 className="fs-1 text-white px-3 mt-5">Topics</h1>
+                        <h1 className="fs-1 text-white px-3 mt-5">{t("pageTitle")}</h1>
                         <p className="fs-5 text-white text-center" style={{maxWidth: '400px'}}>
-                            A subtitle to talk about an over view of topics and what we hope to do with these. Lorem ipsum dolor sit amet, consectetur.
+                            {t("pageSubtitle")}
                         </p>
                     </Container>
                 </div>
@@ -53,10 +58,10 @@ export default function Overview() {
                 <OverviewNav selected={selected} setSelected={setSelected}/>
 
                 {/* Culture and Society Section */}
-                <CultureSociety/>
+                <TopicOverviewSection title={title1} section={"culture"} links={cultureTopics}/>
 
                 {/* Church and Missions Section */}
-                <ChurchMissions/>
+                <TopicOverviewSection title={title2} section={"church"} links={churchTopics}/>
 
                 <Footer/>
             </main>
