@@ -237,11 +237,16 @@ $font-sizes: (
     max-width: 1000px;
     position: relative;
     top: -110px;
-    @media screen and (max-width: 700px) {
-      img {
-        height: auto;
-        width: auto;
-      }
+    .page-container {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 700px) {
+            img {
+                max-width: 400px;
+                height: auto;
+                width: auto;
+            }
+        }
     }
   }
 
@@ -308,8 +313,7 @@ $font-sizes: (
       }
       margin-left: auto;
       margin-right: auto;
-      height: 114px;
-      width: 632px;
+      max-width: 632px;
       border-radius: 10px;
       background-color: #FFFFFF;
       box-shadow: 0px 4px 4px 0px #00000040;

@@ -61,7 +61,7 @@ const Purchase: React.FC = () => {
                     <div id="prayer-landing-image" className="w-100 p-3">
                         temporary image placeholder
                     </div>
-                    <Container className="d-flex flex-wrap justify-content-center align-items-center p-4 ">
+                    <Container className="page-container py-3">
                         <Image
                             src={SampleBookPageImage}
                             alt={t('samplePageImageAlt')}
