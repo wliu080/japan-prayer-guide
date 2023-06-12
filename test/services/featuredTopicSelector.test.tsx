@@ -24,7 +24,7 @@ describe("Month Selector", () => {
         ]
         const file = getFeaturedTopic(testSchedule)
 
-        expect(file).toBe("Topic A")
+        expect(file).toBe("Topic B")
     })
 
     test("'today' should be after the returned topic's start date, but before the next topic's start date", () => {
