@@ -27,6 +27,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const heroHeading: string = homePageTranslation("heroHeading")
   const heroViewTopicsBtn: string = homePageTranslation("viewTopics")
   const mainBlurb: string = homePageTranslation("mainBlurb")
+
+  const whyJapanHeading: string = homePageTranslation("whyJapanHeading")
+  const whyJapanText: string = homePageTranslation("whyJapanText")
+  const prayerCTAHeading: string = homePageTranslation("prayerCTAHeading")
+  const prayerCTATextMap: string[] = homePageTranslation("prayerCTAText", { returnObjects: true })
+
   const featuredTopicTitle: string = homePageTranslation("featuredTopicTitle")
   const featuredTopicSubtitle: string = homePageTranslation("featuredTopicSubtitle")
 
@@ -42,7 +48,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main id="home">
         <ToggleHeader />
 
         {/* Hero banner? section */}
@@ -60,7 +66,27 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           <p className="px-3">{mainBlurb}</p>
         </Container>
 
-        {/* Why Japan component */}
+        {/* Why Japan component - nb the CTA image intrudes into this section */}
+        <Container fluid id="whyJapanSection" className="p-5 bg-light">
+          <Container className="d-flex flex-column align-items-center justify-content-center">
+            <h3>{whyJapanHeading}</h3>
+            <p>{whyJapanText}</p>
+          </Container>
+        </Container>
+        <Container fluid id="prayerCTA" className="px-5 bg-info">
+          <div id="placeholder-image" className="mb-4 p-3 offset-into-above">
+            temporary image placeholder
+          </div>
+          <Container
+            id="prayerCTAText"
+            className="d-flex flex-column align-items-center justify-content-center offset-into-above"
+          >
+            <h4>{prayerCTAHeading}</h4>
+            {prayerCTATextMap.map((text: string, idx: number) => (
+              <p>{text}</p>
+            ))}
+          </Container>
+        </Container>
 
         {/* Featured topic */}
         <Container fluid id="featuredTopicSection" className="py-5 bg-warning">
