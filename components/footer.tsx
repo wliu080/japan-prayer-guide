@@ -11,27 +11,11 @@ import { FaAmazon } from "react-icons/fa";
 import Link from "next/link";
 import LanguageSwitcher from "./languageSwitcher";
 import { Col } from "react-bootstrap";
+import { useTranslation } from "next-i18next";
 
 export default function Footer() {
 
-    const [lang, setLang] = React.useState(0)
-
-    /**
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * BIG NOTE SO I DON't FORGET: NEED TO INCORPORATE i18 INTO HERE!!!
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     *  */ 
+    const {t} = useTranslation("common")
 
     return (
         // Footer needs to be two separate things I THINK because the order of components is different between
@@ -44,12 +28,12 @@ export default function Footer() {
                 <Row className="d-flex justify-content-center mt-4">
                     {/* another temp inline style maxWidth */}
                     <div data-testid='linksList' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
-                        <p className="m-1 fs-5 fw-bold">Site Map</p>
-                        <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by Topics</Link>
-                        <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Downloadable resources</Link>
-                        <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Stories</Link>
-                        <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Purchase the book</Link>
-                        <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">About us</Link>
+                        <p className="m-1 fs-5 fw-bold">{t("footer.map.title")}</p>
+                        <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link1")}</Link>
+                        <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link2")}</Link>
+                        <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link3")}</Link>
+                        <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link4")}</Link>
+                        <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link5")}</Link>
                     </div>
                 </Row>
                 <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
@@ -57,7 +41,7 @@ export default function Footer() {
                     <Image style={{maxHeight:'50px', width:'auto'}} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
                 </Row>
                 <Row className="text-center px-5">
-                    <p className="text-white fs-6 fw-light">We desire to see a prayer movement for Japan&apos;s spiritual breakthrough</p>
+                    <p className="text-white fs-6 fw-light">{t("footer.missionStatement")}</p>
                 </Row>
                 <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
                     <IconContext.Provider value={{size:'25px'}}>
@@ -68,7 +52,7 @@ export default function Footer() {
                     </IconContext.Provider>
                 </Row>
                 <Row className="text-center py-3 px-5">
-                    <p className="text-white fs-6 fw-light" data-testid={'copyright'}>Copyright &copy; 2021 Beneath the Surface. All rights reserved.</p>
+                    <p className="text-white fs-6 fw-light" data-testid={'copyright'}>{t("footer.copyright")}</p>
                 </Row>
             </Container>
         </div>
@@ -80,11 +64,11 @@ export default function Footer() {
                     {/* another temp inline style maxWidth */}
                     <div data-testid='linksList' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
                         <p className="m-1 fs-5 fw-bold">Site Map</p>
-                        <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Praying for Japan by Topics</Link>
-                        <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Downloadable resources</Link>
-                        <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Stories</Link>
-                        <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">Purchase the book</Link>
-                        <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">About us</Link>
+                        <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link1")}</Link>
+                        <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link2")}</Link>
+                        <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link3")}</Link>
+                        <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link4")}</Link>
+                        <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link5")}</Link>
                     </div>
                 </Col>
                 <Col sm={4} className="my-4">
@@ -97,7 +81,7 @@ export default function Footer() {
                         </IconContext.Provider>
                     </Row>
                     <Row className="text-center py-3 px-5">
-                        <p className="text-white fs-6 fw-light" data-testid={'copyright'}>Copyright &copy; 2021 Beneath the Surface. All rights reserved.</p>
+                        <p className="text-white fs-6 fw-light" data-testid={'copyright'}>{t("footer.copyright")}</p>
                     </Row>
                 </Col>
                 <Col sm={4} className="my-4">
@@ -109,7 +93,7 @@ export default function Footer() {
                         <Image style={{maxHeight:'50px', width:'auto'}} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
                     </Row>
                     <Row className="text-center px-5">
-                        <p className="text-white fs-6 fw-light">We desire to see a prayer movement for Japan&apos;s spiritual breakthrough</p>
+                        <p className="text-white fs-6 fw-light">{t("footer.missionStatement")}</p>
                     </Row>
                 </Col>
             </Container>
