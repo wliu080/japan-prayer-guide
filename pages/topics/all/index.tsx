@@ -2,16 +2,16 @@ import Head from "next/head";
 import { ToggleHeader } from "../../../components/toggleHeader";
 import { useTranslation } from "next-i18next";
 import { Container } from "react-bootstrap";
-import { OverviewNav } from "../../../components/overview/OverviewNav";
+import { TopicOverviewNav } from "../../../components/topic-overview/TopicOverviewNav";
 import React from "react";
 import Footer from "../../../components/footer";
-import { TopicOverviewSection } from "../../../components/overview/TopicOverviewSection";
+import { TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export async function getStaticProps({ locale }: any) {
     return {
         props: {
-            ...(await serverSideTranslations(locale, ["overview", "common"])),
+            ...(await serverSideTranslations(locale, ["topic-overview", "common"])),
             // Will be passed to the page component as props
             // About used in content, common used in header
         },
@@ -20,7 +20,7 @@ export async function getStaticProps({ locale }: any) {
 
 export default function Overview() {
 
-    const { t } = useTranslation("overview")
+    const { t } = useTranslation("topic-overview")
     
     // States
     const [selected, setSelected] = React.useState<string>("culture");
@@ -28,8 +28,8 @@ export default function Overview() {
     const cultureTopics:string[] = t("cultureTopics", { returnObjects: true })
     const churchTopics:string[] = t("churchTopics", { returnObjects: true })
 
-    const title1 = t("culture")
-    const title2 = t("church")
+    const title1 = t("topHeading")
+    const title2 = t("botHeading")
 
     return (
         <>
@@ -55,7 +55,7 @@ export default function Overview() {
                 </div>
 
                 {/* Overview Nav Component */}
-                <OverviewNav selected={selected} setSelected={setSelected}/>
+                <TopicOverviewNav selected={selected} setSelected={setSelected}/>
 
                 {/* Culture and Society Section */}
                 <TopicOverviewSection title={title1} section={"culture"} links={cultureTopics}/>
