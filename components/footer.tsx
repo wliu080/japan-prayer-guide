@@ -2,7 +2,6 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 // import Image from "next/image";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import { IconContext } from "react-icons/lib";
 import { BsYoutube, BsInstagram } from "react-icons/bs";
@@ -57,12 +56,12 @@ export default function Footer() {
             </Container>
         </div>
         {/* Large screens footer starts here */}
+        {/* Test ids need to be modified to stop duplicates */}
         <div className="w-100 d-none d-lg-flex">
-            <Container fluid className="bg-primary pt-3 d-flex" data-testid="footer">
-                {/* <LanguageSwitcher/> */}
+            <Container fluid className="bg-primary pt-3 d-flex" data-testid="footer-2">
                 <Col className="d-flex justify-content-center my-4" sm={4}>
                     {/* another temp inline style maxWidth */}
-                    <div data-testid='linksList' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
+                    <div data-testid='linksList-2' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
                         <p className="m-1 fs-5 fw-bold">Site Map</p>
                         <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link1")}</Link>
                         <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link2")}</Link>
@@ -81,7 +80,7 @@ export default function Footer() {
                         </IconContext.Provider>
                     </Row>
                     <Row className="text-center py-3 px-5">
-                        <p className="text-white fs-6 fw-light" data-testid={'copyright'}>{t("footer.copyright")}</p>
+                        <p className="text-white fs-6 fw-light" data-testid={'copyright-2'}>{t("footer.copyright")}</p>
                     </Row>
                 </Col>
                 <Col sm={4} className="my-4">
