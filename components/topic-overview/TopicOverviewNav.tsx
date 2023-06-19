@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next"
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react"
 import { Container } from "react-bootstrap"
 
@@ -6,7 +7,9 @@ interface Props {
     setSelected: Dispatch<SetStateAction<string>>
 }
 
-export const OverviewNav = ({selected, setSelected}:Props) => {
+export const TopicOverviewNav = ({selected, setSelected}:Props) => {
+
+    const { t } = useTranslation("topic-overview")
     
     const bannerRef = useRef(null)
     const [show, setShow] = useState(false)
@@ -41,7 +44,7 @@ export const OverviewNav = ({selected, setSelected}:Props) => {
                         onClick={()=>setSelected('culture')}
                         data-testid={"overview-nav-link"}
                     >
-                            Culture and Society
+                            {t("topHeading")}
                     </a>
                     <a
                         href="#church"
@@ -49,7 +52,7 @@ export const OverviewNav = ({selected, setSelected}:Props) => {
                         (selected === 'church' ? " border-bottom border-secondary border-3 text-secondary" : "")}
                         onClick={()=>setSelected('church')}
                     >
-                            Church and Missions
+                            {t("botHeading")}
                     </a>
                 </div>
             </Container>
