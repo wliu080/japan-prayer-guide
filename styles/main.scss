@@ -35,47 +35,37 @@ $font-sizes: (
   color: #4592cf;
 }
 
-.offset-into-above {
-  position: relative;
-
-  @include media-breakpoint-up(xs) {
-    top: -150px;
-  }
-
-  @include media-breakpoint-up(md) {
-    top: -300px;
-  }
-}
-
 // Home page classes
-#home {
-  @include media-breakpoint-up(xs) {
-    #placeholder-image {
-      height: 300px;
-      background-color: #868686;
-    }
+#prayForJapanSection {
+  .offset-pad-bottom {
+    padding-bottom: 10rem !important;
 
-    #whyJapanSection {
-      height: 400px;
-    }
-
-    #prayerCTA {
-      height: 800px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 20rem !important;
     }
   }
 
-  @include media-breakpoint-up(lg) {
-    #placeholder-image {
+  .offset-relative-top {
+    position: relative;
+    top: -10rem;
+
+    @include media-breakpoint-up(md) {
+      top: -20rem;
+    }
+  }
+
+  .offset-remove-bottom {
+    margin-bottom: -10rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: -20rem;
+    }
+  }
+
+  #placeholder-image {
+    background-color: #868686;
+    @include media-breakpoint-up(lg) {
       height: 600px;
-      background-color: #868686;
-    }
-
-    #whyJapanSection {
-      height: 460px;
-    }
-
-    #prayerCTA {
-      height: 560px;
     }
   }
 }

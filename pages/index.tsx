@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
 import Footer from "../components/footer"
 import FeaturedTopic from "../components/landing/FeaturedTopic"
+import PrayForJapan from "../components/landing/PrayForJapan"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
   const featuredTopicRef: string = "topics/" + getFeaturedTopic(getSchedule())
@@ -62,31 +63,16 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           </Container>
         </Container>
 
-        <Container fluid id="mainBlurbSection" className="bg-white p-5 w-75">
+        <Container fluid id="mainBlurbSection" className="p-5">
           <p className="px-3">{mainBlurb}</p>
         </Container>
 
-        {/* Why Japan component - nb the CTA image intrudes into this section */}
-        <Container fluid id="whyJapanSection" className="p-5 bg-light">
-          <Container className="d-flex flex-column align-items-center justify-content-center">
-            <h3>{whyJapanHeading}</h3>
-            <p>{whyJapanText}</p>
-          </Container>
-        </Container>
-        <Container fluid id="prayerCTA" className="px-5 bg-info">
-          <div id="placeholder-image" className="mb-4 p-3 offset-into-above">
-            temporary image placeholder
-          </div>
-          <Container
-            id="prayerCTAText"
-            className="d-flex flex-column align-items-center justify-content-center offset-into-above"
-          >
-            <h4>{prayerCTAHeading}</h4>
-            {prayerCTATextMap.map((text: string, idx: number) => (
-              <p>{text}</p>
-            ))}
-          </Container>
-        </Container>
+        <PrayForJapan
+          whyJapanHeading={whyJapanHeading}
+          whyJapanText={whyJapanText}
+          prayerCTAHeading={prayerCTAHeading}
+          prayerCTATextMap={prayerCTATextMap}
+        />
 
         {/* Featured topic */}
         <Container fluid id="featuredTopicSection" className="py-5 bg-warning">
