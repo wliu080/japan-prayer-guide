@@ -27,7 +27,7 @@ export default function PrayForJapan({ whyJapanHeading, whyJapanText, prayerCTAH
         >
           <h4>{prayerCTAHeading}</h4>
           {prayerCTATextMap.map((text: string, idx: number) => (
-            <p>{text}</p>
+            <p key={idx + text}>{text}</p>
           ))}
         </Container>
       </Container>
