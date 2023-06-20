@@ -17,7 +17,7 @@ const ToggleHeader: React.FC = () => {
   };
 
   return (
-    <Navbar fixed="top" bg={bg} expand="lg" variant={variant}>
+    <Navbar sticky="top" bg={bg} expand="lg" variant={variant}>
       <Container>
         <Navbar.Brand href="/">
           <Image
