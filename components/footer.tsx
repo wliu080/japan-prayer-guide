@@ -16,6 +16,9 @@ export default function Footer() {
 
     const {t} = useTranslation("common")
 
+    const missionStatementText = t("footer.missionStatement")
+    const copyrightText = t("footer.copyright")
+
     return (
         // Footer needs to be two separate things I THINK because the order of components is different between
         // mobile and large sizes
@@ -25,22 +28,14 @@ export default function Footer() {
             <Container fluid className="bg-primary pt-3" data-testid="footer">
                 <LanguageSwitcher/>
                 <Row className="d-flex justify-content-center mt-4">
-                    {/* another temp inline style maxWidth */}
-                    <div data-testid='linksList' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
-                        <p className="m-1 fs-5 fw-bold">{t("footer.map.title")}</p>
-                        <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link1")}</Link>
-                        <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link2")}</Link>
-                        <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link3")}</Link>
-                        <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link4")}</Link>
-                        <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link5")}</Link>
-                    </div>
+                    <LinksList additional=""/>
                 </Row>
                 <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
                     {/* another temp inline-style for an image */}
                     <Image style={{maxHeight:'50px', width:'auto'}} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
                 </Row>
                 <Row className="text-center px-5">
-                    <p className="text-white fs-6 fw-light">{t("footer.missionStatement")}</p>
+                    <p className="text-white fs-6 fw-light">{missionStatementText}</p>
                 </Row>
                 <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
                     <IconContext.Provider value={{size:'25px'}}>
@@ -51,7 +46,7 @@ export default function Footer() {
                     </IconContext.Provider>
                 </Row>
                 <Row className="text-center py-3 px-5">
-                    <p className="text-white fs-6 fw-light" data-testid={'copyright'}>{t("footer.copyright")}</p>
+                    <p className="text-white fs-6 fw-light" data-testid={'copyright'}>{copyrightText}</p>
                 </Row>
             </Container>
         </div>
@@ -60,15 +55,7 @@ export default function Footer() {
         <div className="w-100 d-none d-lg-flex">
             <Container fluid className="bg-primary pt-3 d-flex" data-testid="footer-2">
                 <Col className="d-flex justify-content-center my-4" sm={4}>
-                    {/* another temp inline style maxWidth */}
-                    <div data-testid='linksList-2' className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
-                        <p className="m-1 fs-5 fw-bold">Site Map</p>
-                        <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link1")}</Link>
-                        <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link2")}</Link>
-                        <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link3")}</Link>
-                        <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link4")}</Link>
-                        <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{t("footer.map.link5")}</Link>
-                    </div>
+                    <LinksList additional="1"/>
                 </Col>
                 <Col sm={4} className="my-4">
                     <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
@@ -80,7 +67,7 @@ export default function Footer() {
                         </IconContext.Provider>
                     </Row>
                     <Row className="text-center py-3 px-5">
-                        <p className="text-white fs-6 fw-light" data-testid={'copyright-2'}>{t("footer.copyright")}</p>
+                        <p className="text-white fs-6 fw-light" data-testid={'copyright-2'}>{copyrightText}</p>
                     </Row>
                 </Col>
                 <Col sm={4} className="my-4">
@@ -92,11 +79,34 @@ export default function Footer() {
                         <Image style={{maxHeight:'50px', width:'auto'}} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
                     </Row>
                     <Row className="text-center px-5">
-                        <p className="text-white fs-6 fw-light">{t("footer.missionStatement")}</p>
+                        <p className="text-white fs-6 fw-light">{missionStatementText}</p>
                     </Row>
                 </Col>
             </Container>
         </div>
         </>
+    )
+}
+
+function LinksList({additional}:{additional: string}) {
+
+    const {t} = useTranslation("common")
+
+    const siteMapText = t("footer.title")
+    const mapLink1Text = t("footer.link1")
+    const mapLink2Text = t("footer.link2")
+    const mapLink3Text = t("footer.link3")
+    const mapLink4Text= t("footer.link4")
+    const mapLink5Text = t("footer.link5")
+
+    return (
+        <div data-testid={'linksList' + additional} className="d-flex flex-column px-3 gap-0 text-white" style={{maxWidth:'600px'}}>
+            <p className="m-1 fs-5 fw-bold">{siteMapText}</p>
+            <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{mapLink1Text}</Link>
+            <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{mapLink2Text}</Link>
+            <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{mapLink3Text}</Link>
+            <Link href="/purchase" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{mapLink4Text}</Link>
+            <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">{mapLink5Text}</Link>
+        </div>
     )
 }

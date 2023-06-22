@@ -15,14 +15,12 @@
     "view": "View all topics"
   },
   "footer": {
-    "map": {
-        "title": "Site Map",
-        "link1": "Praying for Japan by Topics",
-        "link2": "Downloadable resources",
-        "link3": "Stories",
-        "link4": "Purchase the book",
-        "link5": "About us"
-    },
+    "title": "Site Map",
+    "link1": "Praying for Japan by Topics",
+    "link2": "Downloadable resources",
+    "link3": "Stories",
+    "link4": "Purchase the book",
+    "link5": "About us",
     "missionStatement": "We desire to see a prayer movement for Japan's spiritual breakthrough",
     "copyright": "Copyright © 2021 Beneath the Surface. All rights reserved."
   }
