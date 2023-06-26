@@ -1,6 +1,6 @@
 // overrides first
 $primary: #002a63;
-$secondary: #4592CF;
+$secondary: #4592cf;
 //$link-color: #0000ee;
 //$navbar-dark-color: #fff;
 //$display-font-weight: 700;
@@ -11,7 +11,7 @@ $font-sizes: (
   3: 1.25rem,
   4: 1rem,
   5: 0.875rem,
-  6: 0.8rem
+  6: 0.8rem,
 );
 
 // and then import bootstrap
@@ -19,9 +19,9 @@ $font-sizes: (
 
 // navbar override - this is used by the toggleHeader component to have the collapse fill full screen when expanded
 @include media-breakpoint-down(md) {
-    .mobile-header {
-      height: 95vh;
-    }
+  .mobile-header {
+    height: 95vh;
+  }
 }
 
 // general classes
@@ -32,90 +32,124 @@ $font-sizes: (
 }
 
 .footer-icon:hover {
-  color:#4592CF
+  color: #4592cf;
+}
+
+// Home page classes
+#prayForJapanSection {
+  .offset-pad-bottom {
+    padding-bottom: 10rem !important;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 20rem !important;
+    }
+  }
+
+  .offset-up {
+    position: relative;
+    top: -10rem;
+
+    @include media-breakpoint-up(md) {
+      top: -20rem;
+    }
+  }
+
+  .offset-remove-bottom {
+    margin-bottom: -10rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: -20rem;
+    }
+  }
+
+  #placeholder-image {
+    background-color: #868686;
+    @include media-breakpoint-up(lg) {
+      height: 600px;
+    }
+  }
 }
 
 // About Page Classes
 #about {
-  
   #about-landing-image {
     height: 400px;
     background-color: #868686;
   }
-  
+
   #who-are-we {
     max-width: 850px;
     padding-top: 60px;
     padding-bottom: 80px;
-  
+
     @media screen and (max-width: 1200px) {
       padding-top: 40px;
       padding-bottom: 50px;
     }
   }
-  
+
   #mission-vision-section {
     min-height: 100px;
-    background-color: #EAF4FF;
+    background-color: #eaf4ff;
   }
-  
+
   #mission-vision {
     max-width: 1000px;
     position: relative;
     top: -110px;
   }
-  
+
   #about-bible-verse {
     max-width: 850px;
   }
-  
+
   .verse-bar {
     width: 171px;
     height: 5px;
   }
-    
+
   #why-the-name-section {
     min-height: 100px;
   }
-  
+
   #why-the-name {
     max-width: 1000px;
     position: relative;
     top: -110px;
   }
-  
+
   .why-content {
     max-width: 800px;
   }
-  
+
   .why-bar {
     width: 100%;
     height: 2px;
     background-color: #cecece;
-  
+
     @media screen and (max-width: 700px) {
       display: none;
     }
   }
-  
+
   #team-image {
     height: 350px;
     background-color: #868686;
     top: -50px;
     position: relative;
   }
-  
+
   #team-container {
     max-width: 1000px;
   }
-  
+
   .team-box {
-    background-color: #EFEFEF;
+    background-color: #efefef;
   }
-  
+
   #partners-section {
     min-height: 100px;
-    background-color: #EAF4FF;
+    background-color: #eaf4ff;
   }
 }
 
@@ -325,7 +359,7 @@ $font-sizes: (
 
 .did-you-know {
   max-width: 800px;
-  background-color: #EAF4FF;
+  background-color: #eaf4ff;
 }
 
 .placeholder-image {
