@@ -372,6 +372,20 @@ $font-sizes: (
   background-color: #868686;
 }
 
+.slick-next::before, .slick-prev::before {
+  color: black!important;
+}
+
+@media screen and (max-width: 560px) {
+  .slick-prev {
+    left: -10px!important;
+  }
+  
+  .slick-next {
+    right: -10px!important;
+  }
+}
+
 // Topic Overview classes
 
 #overview-nav {
