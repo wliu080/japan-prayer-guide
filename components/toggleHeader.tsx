@@ -1,11 +1,24 @@
 import Image from "next/image";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import LanguageSwitcher from "./languageSwitcher";
+import { useRouter } from "next/router";
 
 const ToggleHeader: React.FC = () => {
   const { t } = useTranslation("common"); // specify translation file from public/locales/[lng]
+  const { i18n } = useTranslation();
+  const router = useRouter();
+
+  const handleLanguageChange = (language: string) => {
+    i18n.changeLanguage(language);
+    const path = router.asPath;
+    const options = {
+      locale: language
+    };
+
+    router.push(path, path, options);
+  };
 
   // when the Navbar.Collapse is expanded we want to switch to the dark theme
   const [bg, setBg] = useState("white");
@@ -30,12 +43,21 @@ const ToggleHeader: React.FC = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="header-navbar-nav" onClick={toggleColorScheme} />
         <Navbar.Collapse id="header-navbar-nav">
-          <Container className="mobile-header d-flex flex-column justify-content-between">
-            <Nav className="mr-auto" variant={variant}>
-              <Nav.Link href="/topics">{t('header.topics')}</Nav.Link>
+          <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
+            <Nav className="ml-auto d-md-flex gap-md-3 align-items-md-center" variant={variant}>
+              <Nav.Link href="/topics/all">{t('header.topics')}</Nav.Link>
               <Nav.Link href="/downloads">{t('header.downloads')}</Nav.Link>
-              <Nav.Link href="/purchase">{t('header.purchase')}</Nav.Link>
               <Nav.Link href="/about">{t('header.about')}</Nav.Link>
+              {i18n.language === "en" ? 
+                <Nav.Link onClick={() => handleLanguageChange("ja")}>日本語</Nav.Link>
+                : <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
+              }
+              {/* Purchase Button to only show on md or larger */}
+              <Nav.Link href="/purchase" className="d-none d-md-block">
+                <Button>{t('header.purchase')}</Button>
+              </Nav.Link>
+              {/* regular purchase Nav menu item on sm or smaller */}
+              <Nav.Link className="d-md-none" href="/purchase">{t('header.purchase')}</Nav.Link>
             </Nav>
             <Container className="d-lg-none text-center">
               <LanguageSwitcher />
