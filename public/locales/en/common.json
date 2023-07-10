@@ -15,6 +15,10 @@
     "read": "Read the entire article",
     "view": "View all topics"
   },
+  "feedback": {
+    "title": "Share your reflections with us! We'd love to hear it!",
+    "button": "Give Feedback"
+  },
   "footer": {
     "title": "Site Map",
     "link1": "Praying for Japan by Topics",

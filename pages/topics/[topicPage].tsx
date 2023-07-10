@@ -43,6 +43,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }: any) =>
 
 export default function TopicPage({ localeRef }: { localeRef: string }) {
   const { t } = useTranslation(localeRef)
+  const { t: common } = useTranslation("common")
 
   // Objects holding translations
   const summaryPoints: string[] = t("prayerSummary", { returnObjects: true })
@@ -54,8 +55,8 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
   const quoteContent: string = t("quote.content")
   const quoteSource: string = t("quote.source")
 
-  const feedbackTitle: string = t("feedback.title")
-  const feedbackButton: string = t("feedback.button")
+  const feedbackTitle: string = common("feedback.title")
+  const feedbackButton: string = common("feedback.button")
 
   const downloadsTitle: string = t("downloads.title")
   const downloadsLabels: string[] = t("downloads.labels", { returnObjects: true })

@@ -27,10 +27,6 @@
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
     "source": "-Bible verse or quote."
   },
-  "feedback": {
-    "title": "Share your reflections with us! We'd love to hear it!",
-    "button": "Give Feedback"
-  },
   "downloads": {
     "title": "Downloads",
     "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
