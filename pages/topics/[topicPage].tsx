@@ -45,8 +45,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
   const { t } = useTranslation(localeRef)
 
   // Objects holding translations
-  const summaryPoints: string[] = t("summary.content", { returnObjects: true })
-  const summaryTitle: string = t("summary.title")
+  const summaryPoints: string[] = t("prayerSummary", { returnObjects: true })
 
   const bodyContent1: string[] = t("mainBody.content1", { returnObjects: true })
   const bodyContent2: string[] = t("mainBody.content2", { returnObjects: true })
@@ -54,12 +53,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
   const quoteContent: string = t("quote.content")
   const quoteSource: string = t("quote.source")
-
-  const dykTitle: string = t("didYouKnow.title")
-  const dykContent: string = t("didYouKnow.content")
-
-  const prayerTitle: string = t("prayerPoints.title")
-  const prayerSub: string = t("prayerPoints.subtitle")
 
   const feedbackTitle: string = t("feedback.title")
   const feedbackButton: string = t("feedback.button")
@@ -97,7 +90,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
           temporary image placeholder
           <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
             <h1 className="fs-1 text-white px-3">{t("title")}</h1>
-            <PrayerPoints prayerPoints={summaryPoints} title={summaryTitle} />
+            <PrayerPoints prayerPoints={summaryPoints} />
           </Container>
         </div>
 
@@ -154,7 +147,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
         </Container>
 
         {/* Prayer Points */}
-        <PrayerPoints prayerPoints={summaryPoints} title={prayerTitle} showImg={true} showSubtitle={true} />
+        <PrayerPoints prayerPoints={summaryPoints} showImg={true} showSubtitle={true} />
         <br />
 
         {/* Give us Feedback */}
