@@ -3,6 +3,6 @@
     "pageSubtitle": "A subtitle to talk about an over view of topics and what we hope to do with these. Lorem ipsum dolor sit amet, consectetur.",
     "topHeading": "Culture and Society",
     "botHeading": "Church and Missions",
-    "cultureTopics": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"],
-    "churchTopics": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o"]
+    "cultureTopics": ["Popular-Religious-Practices", "Ancestor-Veneration", "Harmony", "Social-Conformity"],
+    "churchTopics": ["Church-Leadership", "Personal-Evangelism", "Missionary-Life", "Japanese-Overseas", "Unity-In-Christ"]
 }
