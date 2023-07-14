@@ -1,73 +1,51 @@
 {
-    "title": "Ancestor Veneration",
-    "summary": {
-        "content": [
-            "Pray for wisdom and compassion for pastors as they answer seekers' questions.",
-            "Pray for freedom and peace in Christ for those who feel bound by fear or obligation to their ancestors.",
-            "Pray for Christians to find appropriate ways to remember those who have died and to care  for their graves."
-        ],
-        "title": "Please pray for:"
-    },
-    "mainBody": {
-        "content1": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-        ],
-        "content2": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-        ],
-        "content3": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-        ]
-    },
-    "quote": {
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-        "source": "-Bible verse or quote."
-    },
-    "didYouKnow": {
-        "title": "Did you know?",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    },
-    "prayerPoints": {
-        "title": "Prayer Points",
-        "subtitle": "Pray For"
-    },
-    "feedback": {
-        "title": "Share your reflections with us! We'd love to hear it!",
-        "button": "Give Feedback"
-    },
-    "downloads": {
-        "title": "Downloads",
-        "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-        "links": ["/", "/", "/", "/", "/"],
-        "headers": ["View all downloadables", "Download All"]
-    },
-    "related": {
-        "title": "Other related topics",
-        "labels": [
-            "Ancestor Veneration",
-            "Workplace Pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": [
-            "/topics/ancestor-veneration",
-            "/topics/workplace-pressure",
-            "/",
-            "/",
-            "/",
-            "/"
-        ]
-    },
-    "topicNav": {
-        "labels": ["About this Topic", "Prayer Points", "Downloadables"]
-    }
+  "title": "Ancestor Veneration",
+  "prayerSummary": [
+    "Pray for wisdom and compassion for pastors as they answer seekers' questions.",
+    "Pray for freedom and peace in Christ for those who feel bound by fear or obligation to their ancestors.",
+    "Pray for Christians to find appropriate ways to remember those who have died and to care for their graves."
+  ],
+  "mainBody": {
+    "content1": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    ],
+    "content2": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    ],
+    "content3": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    ]
+  },
+  "quote": {
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    "source": "-Bible verse or quote."
+  },
+  "downloads": {
+    "title": "Downloads",
+    "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
+    "links": ["/", "/", "/", "/", "/"],
+    "headers": ["View all downloadables", "Download All"]
+  },
+  "related": {
+    "title": "Other related topics",
+    "labels": [
+      "Ancestor Veneration",
+      "Workplace Pressure",
+      "Other Topics",
+      "Other Topics 2",
+      "Other Topics 3",
+      "Other Topics 4"
+    ],
+    "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+  },
+  "topicNav": {
+    "labels": ["About this Topic", "Prayer Points", "Downloadables"]
+  }
 }

@@ -10,9 +10,14 @@
     "blurb": "We desire to see a prayer movement for Japan's spiritual breakthrough"
   },
   "prayerSummary": {
+    "title": "Prayer Points",
     "subtitle": "Pray for",
     "read": "Read the entire article",
     "view": "View all topics"
+  },
+  "feedback": {
+    "title": "Share your reflections with us! We'd love to hear it!",
+    "button": "Give Feedback"
   },
   "footer": {
     "title": "Site Map",
