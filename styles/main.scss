@@ -389,5 +389,9 @@ $font-sizes: (
 // Topic Overview classes
 
 #overview-nav {
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
+  height: 70px;
+  @media screen and (max-width: 992px) {
+    height: 56px;
+  }
 }

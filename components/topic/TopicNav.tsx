@@ -31,8 +31,8 @@ export const TopicNav = ({selected, setSelected, labels}:navProps) => {
     }, [])
 
     return (
-        <Container ref={bannerRef} data-testid={"topic-nav-container"} className="w-100 d-flex justify-content-center flex-column sticky-top">
-            <div id="overview-nav" className="w-100" style={show ? {height: '40px'} : {height: '0px'}}></div>
+        <Container style={{maxWidth: 'none'}} ref={bannerRef} data-testid={"topic-nav-container"} className="w-100 d-flex justify-content-center flex-column sticky-top p-0">
+            <div id="overview-nav" className="w-100" style={show ? {} : {height: '0px'}}></div>
             <div data-testid={"topic-nav-links"} className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around bg-white">
                 <a
                     href="#topic-about"
