@@ -34,9 +34,9 @@ export const TopicOverviewNav = ({selected, setSelected}:Props) => {
 
     return (
         <>
-            <Container style={{maxWidth: 'none'}} ref={bannerRef} data-testid={"overview-nav-container"} className="bg-white w-100 d-flex flex-column align-items-center justify-content-center sticky-top">
-                <div id="overview-nav" className="w-100" style={show ? {height: '40px'} : {height: '0px'}}></div>
-                <div data-testid={"overview-nav-links"} className="pt-4 pb-0 w-100 d-flex justify-content-around">
+            <Container style={{maxWidth: 'none'}} ref={bannerRef} data-testid={"overview-nav-container"} className="w-100 d-flex flex-column align-items-center justify-content-center sticky-top p-0">
+                <div id="overview-nav" className="w-100 opacity-0" style={show ? {} : {height: '0px'}}></div>
+                <div data-testid={"overview-nav-links"} className="pt-4 pb-0 w-100 d-flex justify-content-center gap-3 bg-white">
                     <a
                         href="#culture"
                         className={"px-3 my-0 text-decoration-none fs-4" + 
