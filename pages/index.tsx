@@ -37,7 +37,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const featuredTopicTitle: string = homePageTranslation("featuredTopicTitle")
   const featuredTopicSubtitle: string = homePageTranslation("featuredTopicSubtitle")
 
-  const prayerPoints: string[] = featuredTranslation("summary.content", { returnObjects: true })
+  const prayerPoints: string[] = featuredTranslation("prayerSummary", { returnObjects: true })
   const prayerTitle: string = featuredTranslation("title")
   const prayerSub: string = featuredTranslation("prayerPoints.subtitle")
 

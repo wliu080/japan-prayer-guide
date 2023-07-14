@@ -10,9 +10,14 @@
     "blurb": "日本の霊的躍進のための祈りのムーブメントを望む"
   },
   "prayerSummary": {
+    "title": "Prayer Points",
     "subtitle": "Pray for",
     "read": "Read the entire article",
     "view": "View all topics"
+  },
+  "feedback": {
+    "title": "Share your reflections with us! We'd love to hear it!",
+    "button": "Give Feedback"
   },
   "footer": {
     "title": "Site Map",

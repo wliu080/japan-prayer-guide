@@ -8,7 +8,7 @@ import { useTranslation } from "next-i18next"
 
 interface prayerProps {
   prayerPoints: string[] // array of prayer points
-  title: string // Title that goes on top of card
+  title?: string // Title that goes on top of card
   featured?: boolean // is this component the "featured" component?
   showImg?: boolean // show the image?
   showSubtitle?: boolean // show the "Pray For" subtitle?
@@ -27,6 +27,8 @@ export default function PrayerPoints({
   const view: string = t("prayerSummary.view")
   const read: string = t("prayerSummary.read")
 
+  const displayTitle: string = title ? title : t("prayerSummary.title")
+
   return (
     <Container
       data-testid={"prayer-points-container"}
@@ -43,7 +45,7 @@ export default function PrayerPoints({
             data-testid={"prayer-points-title"}
             className="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey d-flex justify-content-between align-items-center"
           >
-            {title}
+            {displayTitle}
             <IconContext.Provider value={{ size: "30px" }}>
               <BsDownload className="text-secondary fw-bold" style={{ cursor: "pointer" }}></BsDownload>
             </IconContext.Provider>
