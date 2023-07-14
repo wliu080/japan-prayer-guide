@@ -35,9 +35,9 @@ There are two main ways, either by Github search, or by navigation. Either way, 
 ![2-edit-and-3-commit](https://user-images.githubusercontent.com/8304496/221731625-08d09584-a18e-4684-b495-ab40ffa7809a.gif)
 
 1. With the file selected, make your desired edits by clicking the pencil icon ('Edit this file`) located next to the 'Raw | Blame' buttons.
-    1. The format of all the text .json files are collections of key-value pairs, with the whole file enclosed with brackets '{', '}'
-    2. Each pair is in the format of `"key": "website text"` with a comma to separate pairs (do not add a comma to the end of the last item!)
-    3. The `key` value is what the code uses and is replaced with the `website text` when rendered, make your desired changes in the `website text` part of the file.
+   1. The format of all the text .json files are collections of key-value pairs, with the whole file enclosed with brackets '{', '}'
+   2. Each pair is in the format of `"key": "website text"` with a comma to separate pairs (do not add a comma to the end of the last item!)
+   3. The `key` value is what the code uses and is replaced with the `website text` when rendered, make your desired changes in the `website text` part of the file.
 2. When you are happy with your change, scroll to the bottom of the page to see a `Commit Changes` form. You will have the option to provide additional information to be associated with your change, as well as a option to either commit the change to the `editorial` branch, or `create a new branch` for your changes. Please commit it to the `editorial` branch (default option). Note that if a different branch is listed here, you are on the wrong branch! Make a copy of your changes (on notepad or wherever) and toggle your branch back to `editorial`.
 
 ### (３) Verify your changes
