@@ -54,7 +54,6 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Hero banner? section */}
         <Container fluid id="heroBannerSection" className="w-100 bg-secondary" style={{ height: "400px" }}>
-          temporary image placeholder
           <Container className="d-flex flex-column align-items-center justify-content-center h-100 py-4">
             <h1 className="text-white">{heroHeading}</h1>
             <Button href="/about" className="text-white">
