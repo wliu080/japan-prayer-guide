@@ -89,6 +89,8 @@ pnpm dev
 
 ## Testing
 
+This project is tested with [BrowserStack](https://www.browserstack.com/).
+
 ```bash
 nvm use && npm test
 ```
