@@ -8,10 +8,12 @@
 // theme colors
 $primary: #002266;
 $secondary: #74b6ff;
-// custom theme colors
+// custom theme map
 $custom-colors: (
+  "primary": $primary,
   "primary-blue": #002266,
   "primary-dark": #2b2f37,
+  "secondary": $secondary,
   "secondary-1": #f2f4f9,
   "secondary-2": #dfeeff,
   "secondary-3": #acd2ff,
@@ -22,7 +24,7 @@ $custom-colors: (
 // Merge custom to theme & regenerate
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-//$link-color: #0000ee;
+$link-color: #000000;
 //$navbar-dark-color: #fff;
 //$display-font-weight: 700;
 //$font-family-sans-serif: Roboto, Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
