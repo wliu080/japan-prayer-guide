@@ -17,7 +17,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                 <Container className="no-max-container">
                     <h1 className="topic-nav-section-title text-primary pt-4 px-3">{title}</h1>
                 </Container>
-                <Container className="px-4 pt-1 no-max-container pb-4" style={{ borderBottom: '1px #D6DDE6 solid'}}>
+                <Container className="bottom-grey-border px-4 pt-1 no-max-container pb-4">
                     <Row xl={3} lg={3} md={2} sm={2} xs={2}>
                         {labels.map((element, idx) => {
                             // Special if statement for conference, the 'else' will be removed for final
@@ -31,7 +31,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                                                     alt={""}
                                                 />
                                                 <Card.Body className="d-flex align-items-center topic-nav-card-title">
-                                                    <p className="m-0">{element.split('-').join(' ')}</p>
+                                                    <p className="m-0">{element}</p>
                                                 </Card.Body>
                                             </Card>
                                         </Link>
@@ -51,7 +51,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                                                     <div style={{zIndex: 2, top: 0, cursor: 'not-allowed', backgroundColor: '#727C96'}} className="position-absolute w-100 h-100 opacity-75"></div>
                                                 </div>
                                                 <Card.Body className="d-flex align-items-center topic-nav-card-title" style={{cursor: 'not-allowed'}}>
-                                                    <p className="m-0">{element.split('-').join(' ')}</p>
+                                                    <p className="m-0">{element}</p>
                                                 </Card.Body>
                                             </Card>
                                         </Link>

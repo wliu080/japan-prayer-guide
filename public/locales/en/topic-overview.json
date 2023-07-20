@@ -4,27 +4,27 @@
     "topHeading": "Culture and society",
     "botHeading": "Church and mission",
     "cultureLinks": [
-        "Popular-religious-practices", "Japanese-views-of-Chrisianity", "Japansese-culture-and-Christianity",
-        "Ancestor-veneration", "Harmony", "Social-conformity", "Self-reliance-and-materialism",
-        "Mental-and-emotional-health", "Aging-society", "Politics-and-international-relations", "Natural-disasters",
-        "Technology-and-media", "Workplace-pressure", "Family-life", "Youth-and-young-adults"
+        "popular-religious-practices", "japanese-views-of-chrisianity", "japansese-culture-and-christianity",
+        "ancestor-veneration", "harmony", "social-conformity", "self-reliance-and-materialism",
+        "mental-and-emotional-health", "aging-society", "politics-and-international-relations", "natural-disasters",
+        "technology-and-media", "workplace-pressure", "family-life", "youth-and-young-adults"
     ],
     "cultureTopics": [
-        "Popular-religious-practices", "Japanese-views-of-Chrisianity", "Japansese-culture-and-Christianity",
-        "Ancestor-veneration", "Harmony", "Social-conformity", "Self-reliance-and-materialism",
-        "Mental-and-emotional-health", "Aging-society", "Politics-and-international-relations", "Natural-disasters",
-        "Technology-and-media", "Workplace-pressure", "Family-life", "Youth-and-young-adults"
+        "Popular religious practices", "Japanese views of Chrisianity", "Japansese culture and Christianity",
+        "Ancestor veneration", "Harmony", "Social conformity", "Self reliance and materialism",
+        "Mental and emotional health", "Aging society", "Politics and international relations", "Natural disasters",
+        "Technology and media", "Workplace pressure", "Family life", "Youth and young adults"
     ],
     "churchLinks": [
-        "Struggling-churches", "Church-planting", "Church-leadership", "Church-in-the-community",
-        "Creative-ways-of-ministry", "Christianity-in-rural-areas", "Personal-evangelism", "Faith-in-the-workplace",
-        "Daily-Christian-life-and-faith", "Japanese-overseas", "Missionary-life", "Unity-in-Christ",
-        "Japanese-mission-movement", "Prayer-for-spiritual-breakthrough"
+        "struggling-churches", "church-planting", "church-leadership", "church-in-the-community",
+        "creative-ways-of-ministry", "christianity-in-rural-areas", "personal-evangelism", "faith-in-the-workplace",
+        "daily-christian-life-and-faith", "japanese-overseas", "missionary-life", "unity-in-christ",
+        "japanese-mission-movement", "prayer-for-spiritual-breakthrough"
     ],
     "churchTopics": [
-        "Struggling-churches", "Church-planting", "Church-leadership", "Church-in-the-community",
-        "Creative-ways-of-ministry", "Christianity-in-rural-areas", "Personal-evangelism", "Faith-in-the-workplace",
-        "Daily-Christian-life-and-faith", "Japanese-overseas", "Missionary-life", "Unity-in-Christ",
-        "Japanese-mission-movement", "Prayer-for-spiritual-breakthrough"
+        "Struggling churches", "Church planting", "Church leadership", "Church in the community",
+        "Creative ways of ministry", "Christianity in rural areas", "Personal evangelism", "Faith in the workplace",
+        "Daily Christian life and faith", "Japanese overseas", "Missionary life", "Unity in Christ",
+        "Japanese mission movement", "Prayer for spiritual breakthrough"
     ]
 }
