@@ -19,7 +19,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                 </Container>
                 <Container className="px-4 pt-1 no-max-container pb-4" style={{ borderBottom: '1px #D6DDE6 solid'}}>
                     <Row xl={3} lg={3} md={2} sm={2} xs={2}>
-                        {links.map((element, idx) => {
+                        {labels.map((element, idx) => {
                             // Special if statement for conference, the 'else' will be removed for final
                             if ((idx === 0 && section === "culture") || (idx === 2 && section === "church")) {
                                 return (
