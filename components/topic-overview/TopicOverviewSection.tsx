@@ -27,7 +27,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                                         <Link href={`/topics/${element.toLowerCase()}`} className="text-decoration-none">
                                             <Card className="topic-nav-card mx-1 my-3">
                                                 <Image
-                                                    src={`/photos/topic-nav/${section}/${links[idx]}.jpg`}
+                                                    src={`/photos/topic-nav/${section}/${links[idx]}.png`}
                                                     alt={""}
                                                 />
                                                 <Card.Body className="d-flex align-items-center topic-nav-card-title">
@@ -44,7 +44,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                                             <Card className="topic-nav-card mx-1 my-3">
                                                 <div className="position-relative" style={{width: 'fit-content', height: 'fit-content'}}>
                                                     <Image
-                                                        src={`/photos/topic-nav/${section}/placeholder.jpeg`}
+                                                        src={`/photos/topic-nav/${section}/placeholder.png`}
                                                         alt={""}
                                                         style={{aspectRatio: 1.772, objectFit: 'cover', width: '100%'}}
                                                     />

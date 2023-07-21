@@ -53,7 +53,7 @@ export default function Overview() {
                 {/* Hero Banner */}
                 <div className="w-100 mx-0 px-0 position-relative" style={{ height: "490px" }}>
                     <Image
-                        src={'/photos/topic-nav/top-nav_hero.jpg'}
+                        src={'/photos/topic-nav/top-nav_hero.png'}
                         alt={'Topic-nav hero image'}
                         className="w-100 h-100 topic-nav-hero position-absolute"
                     />

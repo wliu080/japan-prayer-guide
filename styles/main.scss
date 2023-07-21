@@ -14,7 +14,7 @@ $font-sizes: (
   6: 0.8rem,
 );
 
-$font-family-base: 'Figtree', 'sans-serif';
+$font-family-base: 'Open Sans', 'sans-serif';
 
 // and then import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -465,7 +465,7 @@ $font-family-base: 'Figtree', 'sans-serif';
   }
   @media screen and (max-width: 572px) {
     min-height: 140px;
-    max-height: 160px;
+    max-height: 170px;
     width: 170px;
   }
 }
