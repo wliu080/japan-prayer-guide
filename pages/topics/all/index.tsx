@@ -36,7 +36,7 @@ export default function Overview() {
     const title2 = t("botHeading")
 
     const heroTitle = t("pageTitle")
-    const heroSubtext = t("pageSubtitle").split(".")
+    const heroSubtext:string[] = t("pageSubtitle", { returnObjects: true })
 
     return (
         <>
@@ -59,12 +59,11 @@ export default function Overview() {
                     />
                     <Container className="d-flex flex-column align-items-center justify-content-start h-100 pt-md-2 pt-lg-5 pb-5">
                         <h1 className="text-black px-3 mt-5 mb-3 topic-nav-hero-title">{heroTitle}</h1>
-                        <p className="text-black text-center topic-nav-hero-subtitle" style={{maxWidth: '672px'}}>
-                            {heroSubtext[0]}
-                        </p>
-                        <p className="text-black text-center topic-nav-hero-subtitle" style={{maxWidth: '672px'}}>
-                            {heroSubtext[1]}
-                        </p>
+                        {heroSubtext.map((text) =>
+                            <p key={text} className="text-black text-center topic-nav-hero-subtitle" style={{maxWidth: '672px'}}>
+                                {text}
+                            </p>
+                        )}
                     </Container>
                 </div>
 

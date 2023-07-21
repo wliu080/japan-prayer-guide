@@ -24,7 +24,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                             if ((idx === 0 && section === "culture") || (idx === 2 && section === "church")) {
                                 return (
                                     <Col key={element + idx} className="d-flex justify-content-center">
-                                        <Link href={`/topics/${element.toLowerCase()}`} className="text-decoration-none">
+                                        <Link href={`/topics/${links[idx].toLowerCase()}`} className="text-decoration-none">
                                             <Card className="topic-nav-card mx-1 my-3">
                                                 <Image
                                                     src={`/photos/topic-nav/${section}/${links[idx]}.png`}
