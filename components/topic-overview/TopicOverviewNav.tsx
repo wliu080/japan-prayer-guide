@@ -39,8 +39,8 @@ export const TopicOverviewNav = ({selected, setSelected}:Props) => {
                 <div data-testid={"overview-nav-links"} className="pt-4 pb-0 w-100 d-flex justify-content-center gap-3 bg-white">
                     <a
                         href="#culture"
-                        className={"topic-nav-tab px-3 my-0 text-decoration-none" + 
-                        (selected === 'culture' ? " border-bottom border-secondary border-3 text-secondary" : "")}
+                        className={"topic-nav-tab px-3 my-0 text-decoration-none text-secondary-5" + 
+                        (selected === 'culture' ? " border-bottom border-secondary-5 border-3 text-secondary" : "")}
                         onClick={()=>setSelected('culture')}
                         data-testid={"overview-nav-link"}
                     >
@@ -48,8 +48,8 @@ export const TopicOverviewNav = ({selected, setSelected}:Props) => {
                     </a>
                     <a
                         href="#church"
-                        className={"topic-nav-tab px-3 my-0 text-decoration-none" + 
-                        (selected === 'church' ? " border-bottom border-secondary border-3 text-secondary" : "")}
+                        className={"topic-nav-tab px-3 my-0 text-decoration-none text-secondary-5" + 
+                        (selected === 'church' ? " border-bottom border-secondary-5 border-3 text-secondary" : "")}
                         onClick={()=>setSelected('church')}
                     >
                             {t("botHeading")}
