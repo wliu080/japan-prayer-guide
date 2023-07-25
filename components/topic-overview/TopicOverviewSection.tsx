@@ -12,9 +12,8 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
 
     return (
         <>
-            <div id={section}></div>
             <section>
-                <Container className="no-max-container">
+                <Container id={section} className="no-max-container">
                     <h1 className="topic-nav-section-title text-primary pt-4 px-3">{title}</h1>
                 </Container>
                 <Container className="bottom-grey-border px-4 pt-1 no-max-container pb-4">
@@ -30,7 +29,7 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
                                                     src={`/photos/topic-nav/${section}/${links[idx]}.png`}
                                                     alt={""}
                                                 />
-                                                <Card.Body className="d-flex align-items-center topic-nav-card-title">
+                                                <Card.Body style={{height: 'fit-content'}} className="d-flex align-items-center topic-nav-card-title">
                                                     <p className="m-0">{element}</p>
                                                 </Card.Body>
                                             </Card>
