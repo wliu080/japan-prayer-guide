@@ -32,25 +32,34 @@ export const TopicOverviewNav = ({selected, setSelected}:Props) => {
         };
     }, [])
 
+    const scrollToCustomPosition = (id:string) => {
+        setSelected(id)
+        const targetElement = document.getElementById(id);
+        const offset = -50; // Adjust this value to the desired scroll height
+
+        if (targetElement) {
+            const topPosition = targetElement.getBoundingClientRect().top;
+            window.scrollTo({ top: topPosition + offset, behavior: 'smooth' });
+        }
+    }
+
     return (
         <>
-            <Container style={{maxWidth: 'none'}} ref={bannerRef} data-testid={"overview-nav-container"} className="w-100 d-flex flex-column align-items-center justify-content-center sticky-top p-0">
+            <Container style={{ maxWidth:"none" }} ref={bannerRef} data-testid={"overview-nav-container"} className="bottom-grey-border w-100 d-flex flex-column align-items-center justify-content-center sticky-top p-0">
                 <div id="overview-nav" className="w-100 opacity-0" style={show ? {} : {height: '0px'}}></div>
                 <div data-testid={"overview-nav-links"} className="pt-4 pb-0 w-100 d-flex justify-content-center gap-3 bg-white">
                     <a
-                        href="#culture"
-                        className={"px-3 my-0 text-decoration-none fs-4" + 
-                        (selected === 'culture' ? " border-bottom border-secondary border-3 text-secondary" : "")}
-                        onClick={()=>setSelected('culture')}
+                        className={"topic-nav-tab px-3 my-0 text-decoration-none text-secondary-5" + 
+                        (selected === 'culture' ? " border-bottom border-secondary-5 border-3 text-secondary" : "")}
+                        onClick={()=>scrollToCustomPosition('culture')}
                         data-testid={"overview-nav-link"}
                     >
                             {t("topHeading")}
                     </a>
                     <a
-                        href="#church"
-                        className={"px-3 my-0 text-decoration-none fs-4" + 
-                        (selected === 'church' ? " border-bottom border-secondary border-3 text-secondary" : "")}
-                        onClick={()=>setSelected('church')}
+                        className={"topic-nav-tab px-3 my-0 text-decoration-none text-secondary-5" + 
+                        (selected === 'church' ? " border-bottom border-secondary-5 border-3 text-secondary" : "")}
+                        onClick={()=>scrollToCustomPosition('church')}
                     >
                             {t("botHeading")}
                     </a>

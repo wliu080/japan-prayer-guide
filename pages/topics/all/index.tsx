@@ -7,6 +7,7 @@ import React from "react";
 import Footer from "../../../components/footer";
 import { TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Image from "react-bootstrap/Image";
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -28,8 +29,14 @@ export default function Overview() {
     const cultureTopics:string[] = t("cultureTopics", { returnObjects: true })
     const churchTopics:string[] = t("churchTopics", { returnObjects: true })
 
+    const cultureLinks:string[] = t("cultureLinks", { returnObjects: true })
+    const churchLinks:string[] = t("churchLinks", { returnObjects: true })
+
     const title1 = t("topHeading")
     const title2 = t("botHeading")
+
+    const heroTitle = t("pageTitle")
+    const heroSubtext:string[] = t("pageSubtitle", { returnObjects: true })
 
     return (
         <>
@@ -43,14 +50,20 @@ export default function Overview() {
                 {/* Header component */}
                 <ToggleHeader/>
 
-                {/* Placeholder for landing image */}
-                <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{ height: "470px" }}>
-                    temporary image placeholder
-                    <Container className="d-flex flex-column align-items-center justify-content-start h-100 py-5">
-                        <h1 className="fs-1 text-white px-3 mt-5">{t("pageTitle")}</h1>
-                        <p className="fs-5 text-white text-center" style={{maxWidth: '400px'}}>
-                            {t("pageSubtitle")}
-                        </p>
+                {/* Hero Banner */}
+                <div className="w-100 mx-0 px-0 position-relative" style={{ height: "490px" }}>
+                    <Image
+                        src={'/photos/topic-nav/top-nav_hero.png'}
+                        alt={'Topic-nav hero image'}
+                        className="w-100 h-100 topic-nav-hero position-absolute"
+                    />
+                    <Container className="d-flex flex-column align-items-center justify-content-start h-100 pt-md-2 pt-lg-5 pb-5">
+                        <h1 className="text-black px-3 mt-5 mb-3 topic-nav-hero-title">{heroTitle}</h1>
+                        {heroSubtext.map((text) =>
+                            <p key={text} className="text-black text-center topic-nav-hero-subtitle" style={{maxWidth: '672px'}}>
+                                {text}
+                            </p>
+                        )}
                     </Container>
                 </div>
 
@@ -58,10 +71,10 @@ export default function Overview() {
                 <TopicOverviewNav selected={selected} setSelected={setSelected}/>
 
                 {/* Culture and Society Section */}
-                <TopicOverviewSection title={title1} section={"culture"} links={cultureTopics}/>
+                <TopicOverviewSection title={title1} section={"culture"} labels={cultureTopics} links={cultureLinks}/>
 
                 {/* Church and Missions Section */}
-                <TopicOverviewSection title={title2} section={"church"} links={churchTopics}/>
+                <TopicOverviewSection title={title2} section={"church"} labels={churchTopics} links={churchLinks}/>
 
                 <Footer/>
             </main>
