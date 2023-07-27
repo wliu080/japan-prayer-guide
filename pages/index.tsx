@@ -37,6 +37,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const bibleVerse: string = homePageTranslation("bibleVerse")
   const bibleRef: string = homePageTranslation("bibleRef")
 
+  const wePray: string = homePageTranslation("wePray")
+  const callToAction: string = homePageTranslation("callToAction")
+
   const whyJapanHeading: string = homePageTranslation("whyJapanHeading")
   const whyJapanText: string = homePageTranslation("whyJapanText")
   const prayerCTAHeading: string = homePageTranslation("prayerCTAHeading")
@@ -102,8 +105,10 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           <h3 className="w-100 text-center text-primary mt-3 pb-4">{bibleRef}</h3>
         </Container>
 
-        <Container>
-          Hi
+        <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center">
+          <p className="w-100 text-center">
+            {wePray} <strong>{callToAction}</strong>
+          </p>
         </Container>
 
         <PrayForJapan
