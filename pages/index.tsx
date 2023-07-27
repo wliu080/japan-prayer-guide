@@ -25,6 +25,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const { t: homePageTranslation } = useTranslation("home")
   const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
+  const webpageTitle: string = homePageTranslation("webpageTitle")
   const heroHeading: string = homePageTranslation("heroHeading")
   const heroSubheading: string = homePageTranslation("heroSubheading")
   const heroViewTopicsBtn: string = homePageTranslation("viewTopics")
@@ -51,7 +52,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   return (
     <div>
       <Head>
-        <title>{t("title")}</title>
+        <title>{webpageTitle}</title>
         <meta name="description" content="Japan prayer guide" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
