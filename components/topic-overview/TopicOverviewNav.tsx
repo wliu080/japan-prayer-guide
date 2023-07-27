@@ -7,6 +7,8 @@ interface Props {
     setSelected: Dispatch<SetStateAction<string>>
 }
 
+const scrollOffset = -50 // Adjust this value to the desired scroll height
+
 export const TopicOverviewNav = ({selected, setSelected}:Props) => {
 
     const { t } = useTranslation("topic-overview")
@@ -35,11 +37,10 @@ export const TopicOverviewNav = ({selected, setSelected}:Props) => {
     const scrollToCustomPosition = (id:string) => {
         setSelected(id)
         const targetElement = document.getElementById(id);
-        const offset = -50; // Adjust this value to the desired scroll height
 
         if (targetElement) {
             const topPosition = targetElement.getBoundingClientRect().top;
-            window.scrollTo({ top: topPosition + offset, behavior: 'smooth' });
+            window.scrollTo({ top: topPosition + scrollOffset, behavior: 'smooth' });
         }
     }
 
