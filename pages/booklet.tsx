@@ -15,15 +15,15 @@ import Footer from "../components/footer"
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["purchase", "common"])),
+      ...(await serverSideTranslations(locale, ["booklet", "common"])),
       // Will be passed to the page component as props
       // About used in content, common used in header
     },
   }
 }
 
-const Purchase: React.FC = () => {
-  const { t } = useTranslation("purchase")
+const Booklet: React.FC = () => {
+  const { t } = useTranslation("booklet")
 
   return (
     <div>
@@ -70,7 +70,7 @@ const Purchase: React.FC = () => {
 
             <div className="language-availability">
               <span>
-                <Image src={TranslationIcon} alt={t("translationIconAlt")} />
+                <Image src={TranslationIcon} alt={t("languageAvailability.translationIconAlt")} />
                 {t("languageAvailability.header")}
               </span>
               <p>{t("languageAvailability.text")}</p>
@@ -83,4 +83,4 @@ const Purchase: React.FC = () => {
   )
 }
 
-export default Purchase
+export default Booklet

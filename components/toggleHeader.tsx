@@ -54,11 +54,11 @@ const ToggleHeader: React.FC = () => {
                 <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
               )}
               {/* Purchase Button to only show on md or larger */}
-              <Nav.Link href="/purchase" className="d-none d-md-block">
+              <Nav.Link href="/booklet" className="d-none d-md-block">
                 <Button>{t("header.booklet")}</Button>
               </Nav.Link>
               {/* regular purchase Nav menu item on sm or smaller */}
-              <Nav.Link className="d-md-none" href="/purchase">
+              <Nav.Link className="d-md-none" href="/booklet">
                 {t("header.booklet")}
               </Nav.Link>
             </Nav>
