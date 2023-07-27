@@ -37,10 +37,9 @@ $font-sizes: (
   6: 0.8rem,
 );
 
-$font-family-base: 'Open Sans', 'sans-serif';
+$font-family-base: "Open Sans", "sans-serif";
 
 // and then import bootstrap
-// finally, import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // -------------------------
@@ -434,7 +433,7 @@ $font-family-base: 'Open Sans', 'sans-serif';
 }
 
 .topic-nav-hero-title {
-  font-family: 'Aleo', 'sans-serif';
+  font-family: "Aleo", "sans-serif";
   font-size: 40px;
 
   @media screen and (max-width: 768px) {
@@ -465,7 +464,7 @@ $font-family-base: 'Open Sans', 'sans-serif';
 
 .topic-nav-section-title {
   font-size: 32px;
-  font-family: 'Aleo';
+  font-family: "Aleo";
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
@@ -477,7 +476,7 @@ $font-family-base: 'Open Sans', 'sans-serif';
 .topic-nav-card {
   height: 280px;
   aspect-ratio: 1.416;
-  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
   @media screen and (max-width: 1400px) {
     height: 250px;
   }
@@ -502,7 +501,7 @@ $font-family-base: 'Open Sans', 'sans-serif';
 .topic-nav-card-title {
   font-size: 19px;
   padding: 0 8px;
-  color: #49474E;
+  color: #49474e;
   @media screen and (max-width: 768px) {
     font-size: 16px;
   }
@@ -514,10 +513,10 @@ $font-family-base: 'Open Sans', 'sans-serif';
 .no-max-container {
   @media screen and (max-width: 768px) {
     max-width: none;
-    padding: 0 16px!important;
+    padding: 0 16px !important;
   }
 }
 
 .bottom-grey-border {
-  border-bottom: 1px #D6DDE6 solid;
+  border-bottom: 1px #d6dde6 solid;
 }
