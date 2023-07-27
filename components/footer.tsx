@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row"
 // import Image from "next/image";
 import Image from "react-bootstrap/Image"
 import { IconContext } from "react-icons/lib"
-import { BsYoutube, BsInstagram } from "react-icons/bs"
+import { BsYoutube, BsInstagram, BsVimeo } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 import { FaAmazon } from "react-icons/fa"
 import Link from "next/link"
@@ -15,7 +15,7 @@ import { useTranslation } from "next-i18next"
 export default function Footer() {
   const { t } = useTranslation("common")
 
-  const missionStatementText = t("footer.missionStatement")
+  const tagline = t("footer.tagline")
   const copyrightText = t("footer.copyright")
 
   return (
@@ -34,14 +34,22 @@ export default function Footer() {
             <Image style={{ maxHeight: "50px", width: "auto" }} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
           </Row>
           <Row className="text-center px-5">
-            <p className="text-white fs-6 fw-light">{missionStatementText}</p>
+            <p className="text-white fs-6 fw-light">{tagline}</p>
           </Row>
           <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
             <IconContext.Provider value={{ size: "25px" }}>
-              <BsYoutube className="footer-icon"></BsYoutube>
-              <BsInstagram className="footer-icon"></BsInstagram>
-              <MdEmail className="footer-icon"></MdEmail>
-              <FaAmazon className="footer-icon"></FaAmazon>
+              <a className="text-white footer-icon" href="https://vimeo.com/japanprayerguide">
+                <BsVimeo />
+              </a>
+              <a
+                className="text-white footer-icon"
+                href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+              >
+                <FaAmazon />
+              </a>
+              <a className="text-white footer-icon" href="https://www.instagram.com/omf_japan/">
+                <BsInstagram />
+              </a>
             </IconContext.Provider>
           </Row>
           <Row className="text-center py-3 px-5">
@@ -61,10 +69,18 @@ export default function Footer() {
           <Col sm={4} className="my-4">
             <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
               <IconContext.Provider value={{ size: "25px" }}>
-                <BsYoutube className="footer-icon"></BsYoutube>
-                <BsInstagram className="footer-icon"></BsInstagram>
-                <MdEmail className="footer-icon"></MdEmail>
-                <FaAmazon className="footer-icon"></FaAmazon>
+                <a className="text-white footer-icon" href="https://vimeo.com/japanprayerguide">
+                  <BsVimeo />
+                </a>
+                <a
+                  className="text-white footer-icon"
+                  href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+                >
+                  <FaAmazon />
+                </a>
+                <a className="text-white footer-icon" href="https://www.instagram.com/omf_japan/">
+                  <BsInstagram />
+                </a>
               </IconContext.Provider>
             </Row>
             <Row className="text-center py-3 px-5">
@@ -82,7 +98,7 @@ export default function Footer() {
               <Image style={{ maxHeight: "50px", width: "auto" }} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
             </Row>
             <Row className="text-center px-5">
-              <p className="text-white fs-6 fw-light">{missionStatementText}</p>
+              <p className="text-white fs-6 fw-light">{tagline}</p>
             </Row>
           </Col>
         </Container>
@@ -108,16 +124,16 @@ function LinksList({ additional }: { additional: string }) {
       style={{ maxWidth: "600px" }}
     >
       <p className="m-1 fs-5 fw-bold">{siteMapText}</p>
-      <Link href="/topics" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
         {mapLink1Text}
       </Link>
-      <Link href="/downloads" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/topics/all" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
         {mapLink2Text}
       </Link>
-      <Link href="/stories" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/booklet" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
         {mapLink3Text}
       </Link>
-      <Link href="/booklet" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/download" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
         {mapLink4Text}
       </Link>
       <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
