@@ -20,6 +20,8 @@ $custom-colors: (
   "secondary-4": #74b6ff,
   "secondary-5": #285abd,
   "tertiary": #f46b59,
+  "grey-2": #EBF0F6,
+  "grey-7": #505C7C
 );
 // Merge custom to theme & regenerate
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -63,6 +65,10 @@ $font-family-base: 'Open Sans', 'sans-serif';
 
 .footer-icon:hover {
   color: #4592cf;
+}
+
+.aleo {
+  font-family: 'Aleo', 'sans-serif';
 }
 
 // Home page classes
@@ -222,6 +228,75 @@ $font-family-base: 'Open Sans', 'sans-serif';
     @media screen and (max-width: 768px) {
       font-size: 12px;
     }
+  }
+}
+
+#featuredTopicSection {
+  h3 {
+    font-size: 40px;
+    @media screen and (max-width: 1200px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  .home-feature-img {
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+  }
+  .bullet-points {
+    font-size: 14px;
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.home-purchase-section {
+  .purchase-text-container {
+    max-width: 558px;
+  }
+  img {
+    height: 470px;
+    @media screen and (max-width: 1200px) {
+      height: 322px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 240px;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    @media screen and (max-width: 1200px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.home-order-section {
+  max-width: 1130px;
+  gap: 14px;
+  h1 {
+    font-size: 18px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .region {
+    width: 208px;
+    border-radius: 4px;
+    padding: 8px 16px;
   }
 }
 

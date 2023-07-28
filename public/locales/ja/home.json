@@ -17,5 +17,17 @@
     "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
   ],
   "featuredTopicTitle": "Featured Topic",
-  "featuredTopicSubtitle": "for this month"
+  "featuredTopicSubtitle": "for this month",
+  "purchaseTitle": "Get the prayer booklet",
+  "purchaseBlurb": "The Beneath the Surface prayer guide was produced in collaboration with missionaries and leaders from 17 organizations in Japan. About 20,000 copies have been distributed around the world. It is also available in Japanese and a few other languages.",
+  "learnMore": "Learn more",
+  "orderTitle": "Order the english booklet",
+  "orderBlurb": "Where are you ordering the booklet from?",
+  "orderRegions": [
+    "North America",
+    "Japan",
+    "International"
+  ],
+  "orderEnglish": "Order the english e-book",
+  "orderJapan": "Order the Japanese Booklet"
 }

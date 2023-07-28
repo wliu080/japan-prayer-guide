@@ -9,7 +9,8 @@ import FeaturedTopic from "../components/landing/FeaturedTopic"
 import PrayForJapan from "../components/landing/PrayForJapan"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
-  const featuredTopicRef: string = "topics/" + getFeaturedTopic(getSchedule())
+  // const featuredTopicRef: string = "topics/" + getFeaturedTopic(getSchedule())
+  const featuredTopicRef: string = "topics/church-leadership"
 
   return {
     props: {
@@ -40,17 +41,26 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const wePray: string = homePageTranslation("wePray")
   const callToAction: string = homePageTranslation("callToAction")
 
-  const whyJapanHeading: string = homePageTranslation("whyJapanHeading")
-  const whyJapanText: string = homePageTranslation("whyJapanText")
-  const prayerCTAHeading: string = homePageTranslation("prayerCTAHeading")
-  const prayerCTATextMap: string[] = homePageTranslation("prayerCTAText", { returnObjects: true })
+  // const whyJapanHeading: string = homePageTranslation("whyJapanHeading")
+  // const whyJapanText: string = homePageTranslation("whyJapanText")
+  // const prayerCTAHeading: string = homePageTranslation("prayerCTAHeading")
+  // const prayerCTATextMap: string[] = homePageTranslation("prayerCTAText", { returnObjects: true })
 
   const featuredTopicTitle: string = homePageTranslation("featuredTopicTitle")
-  const featuredTopicSubtitle: string = homePageTranslation("featuredTopicSubtitle")
+  // const featuredTopicSubtitle: string = homePageTranslation("featuredTopicSubtitle")
+
+  const purchaseTitle: string = homePageTranslation("purchaseTitle")
+  const purchaseBlurb: string = homePageTranslation("purchaseBlurb")
+  const learnMore: string = homePageTranslation("learnMore")
+
+  const orderTitle: string = homePageTranslation("orderTitle")
+  const orderBlurb: string = homePageTranslation("orderBlurb")
+  const orderRegions: string[] = homePageTranslation("orderRegions", { returnObjects: true })
+  const orderEnglish: string = homePageTranslation("orderEnglish")
+  const orderJapan: string = homePageTranslation("orderJapan")
 
   const prayerPoints: string[] = featuredTranslation("prayerSummary", { returnObjects: true })
   const prayerTitle: string = featuredTranslation("title")
-  const prayerSub: string = featuredTranslation("prayerPoints.subtitle")
 
   return (
     <div>
@@ -111,25 +121,48 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           </p>
         </Container>
 
-        <PrayForJapan
+        {/* Featured topic */}
+        <Container fluid id="featuredTopicSection" className="py-5 bg-secondary-2">
+          <Container className="d-flex flex-column align-items-center justify-content-center">
+            <h3 className="aleo">{featuredTopicTitle}</h3>
+            {/* <h4>{featuredTopicSubtitle}</h4> */}
+          </Container>
+          <FeaturedTopic featuredImg="/photos/topic-nav/church/church-leadership.png" title={prayerTitle} prayerPoints={prayerPoints} />
+        </Container>
+
+        {/* Purchase snippet */}
+        <Container className="home-purchase-section p-5 d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <Image alt="book-cover" src="/photos/home/hp_cover.png"/>
+          <div className="w-100 d-flex flex-column align-items-center purchase-text-container mx-5">
+            <h1 className="text-center aleo mt-5">{purchaseTitle}</h1>
+            <p className="text-center my-3">{purchaseBlurb}</p>
+            <p className="fw-bold my-3 text-secondary-5 text-decoration-underline">{learnMore}</p>
+          </div>
+        </Container>
+
+        {/* Order snippet */}
+        <Container className="d-flex align-items-center w-100 mt-2 mb-5">
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
+            <h1 className="aleo text-grey-7 my-4 fw-bold text-center">{orderTitle}</h1>
+            <h2 className="text-primary fs-5 text-center fw-bold mb-2">{orderBlurb}</h2>
+            <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
+              {orderRegions.map((region) =>
+                <div className="fs-6 bg-secondary-5 text-white text-center region" key={region}>{region}</div>
+              )}
+            </div>
+            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline">{orderEnglish}</h3>
+            <h3 className="mb-3 fs-5 text-secondary-5 fw-bold text-decoration-underline">{orderJapan}</h3>
+          </Container>
+        </Container>
+
+        {/* <PrayForJapan
           whyJapanHeading={whyJapanHeading}
           whyJapanText={whyJapanText}
           prayerCTAHeading={prayerCTAHeading}
           prayerCTATextMap={prayerCTATextMap}
-        />
-
-        {/* Featured topic */}
-        <Container fluid id="featuredTopicSection" className="py-5 bg-warning">
-          <Container className="d-flex flex-column align-items-center justify-content-center text-white">
-            <h3>{featuredTopicTitle}</h3>
-            <h4>{featuredTopicSubtitle}</h4>
-          </Container>
-          <FeaturedTopic title={prayerTitle} prayerPoints={prayerPoints} subtitle={prayerSub} />
-        </Container>
+        /> */}
 
         {/* Downloads snippet */}
-
-        {/* Purchase snippet */}
 
         {/* About snippet */}
 
