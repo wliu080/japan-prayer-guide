@@ -58,7 +58,7 @@ export default function Overview() {
             className="w-100 h-100 topic-nav-hero position-absolute"
           />
           <Container className="d-flex flex-column align-items-center justify-content-start h-100 pt-md-2 pt-lg-5 pb-5">
-            <h1 className="text-black px-3 mt-5 mb-3 topic-nav-hero-title">{heading}</h1>
+            <h1 className="text-black px-3 mt-5 mb-3 display-2">{heading}</h1>
             {heroSubtext.map((text) => (
               <p key={text} className="text-black text-center topic-nav-hero-subtitle" style={{ maxWidth: "672px" }}>
                 {text}
