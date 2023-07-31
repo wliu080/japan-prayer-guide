@@ -27,7 +27,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 $link-color: #000000;
 //$navbar-dark-color: #fff;
 //$display-font-weight: 700;
-//$font-family-sans-serif: Roboto, Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-sizes: (
   1: 2rem,
   2: 1.5rem,
@@ -42,9 +41,6 @@ $font-sizes: (
 $font-family-base: "Proxima Nova", "Open Sans", "sans-serif";
 $font-family-secondary: "adelle", "Aleo", "serif";
 
-// display-1~6 for Headings, h1~6 for subheadings
-$display-font-family: $font-family-secondary;
-
 // and then import bootstrap
 // finally, import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -52,51 +48,6 @@ $display-font-family: $font-family-secondary;
 // -------------------------
 // Project specific styling
 // -------------------------
-
-.display-1 {
-  // home - main
-  @include media-breakpoint-down(sm) {
-    font-size: 40px;
-  }
-
-  @include media-breakpoint-between(md, lg) {
-    font-size: 52px;
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: 60px;
-  }
-}
-
-.display-2 {
-  // topic nav
-  @include media-breakpoint-down(sm) {
-    font-size: 24px;
-  }
-
-  @include media-breakpoint-between(md, lg) {
-    font-size: 32px;
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: 40px;
-  }
-}
-
-.display-3 {
-  // home - mini
-  @include media-breakpoint-down(sm) {
-    font-size: 24px;
-  }
-
-  @include media-breakpoint-between(md, lg) {
-    font-size: 32px;
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: 34px;
-  }
-}
 
 // navbar override - this is used by the toggleHeader component to have the collapse fill full screen when expanded
 @include media-breakpoint-down(md) {
@@ -274,7 +225,6 @@ $display-font-family: $font-family-secondary;
           width: 308px;
           border-radius: 4px;
           border: unset;
-          font-family: Proxima Nova;
           font-size: 14px;
           font-weight: 700;
           line-height: 17px;
@@ -316,7 +266,6 @@ $display-font-family: $font-family-secondary;
         line-height: 48px;
       }
       .book-subtext {
-        font-family: Proxima Nova;
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
@@ -327,7 +276,6 @@ $display-font-family: $font-family-secondary;
         }
       }
       .book-subtitle {
-        font-family: Proxima Nova;
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
@@ -366,7 +314,6 @@ $display-font-family: $font-family-secondary;
   .purchase-section {
     padding: 60px;
     background-color: #eaf3ff;
-    font-family: Proxima Nova;
 
     .purchase-copy-header {
       font-size: 24px;
@@ -383,7 +330,6 @@ $display-font-family: $font-family-secondary;
       width: 308px;
       border-radius: 4px;
       border: unset;
-      font-family: Proxima Nova;
       font-size: 14px;
       font-weight: 700;
       line-height: 17px;
@@ -483,6 +429,19 @@ $display-font-family: $font-family-secondary;
   object-position: 80% 80%;
 }
 
+.topic-nav-hero-title {
+  font-family: $font-family-secondary;
+  font-size: 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 24px;
+  }
+}
+
 .topic-nav-hero-subtitle {
   font-size: 19px;
   @media screen and (max-width: 768px) {
@@ -502,7 +461,7 @@ $display-font-family: $font-family-secondary;
 
 .topic-nav-section-title {
   font-size: 32px;
-  font-family: "Aleo";
+  font-family: $font-family-secondary;
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
