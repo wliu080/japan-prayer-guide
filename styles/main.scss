@@ -27,7 +27,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 $link-color: #000000;
 //$navbar-dark-color: #fff;
 //$display-font-weight: 700;
-//$font-family-sans-serif: Roboto, Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-sizes: (
   1: 2rem,
   2: 1.5rem,
@@ -37,7 +36,10 @@ $font-sizes: (
   6: 0.8rem,
 );
 
-$font-family-base: "Open Sans", "sans-serif";
+// Proxima Nova / Open Sans - sub-heading, body copy, quote source
+// Adelle / Aleo - heading, quote body
+$font-family-base: "Proxima Nova", "Open Sans", "sans-serif";
+$font-family-secondary: "adelle", "Aleo", "serif";
 
 // and then import bootstrap
 // finally, import bootstrap
@@ -223,7 +225,6 @@ $font-family-base: "Open Sans", "sans-serif";
           width: 308px;
           border-radius: 4px;
           border: unset;
-          font-family: Proxima Nova;
           font-size: 14px;
           font-weight: 700;
           line-height: 17px;
@@ -265,7 +266,6 @@ $font-family-base: "Open Sans", "sans-serif";
         line-height: 48px;
       }
       .book-subtext {
-        font-family: Proxima Nova;
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
@@ -276,7 +276,6 @@ $font-family-base: "Open Sans", "sans-serif";
         }
       }
       .book-subtitle {
-        font-family: Proxima Nova;
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
@@ -315,7 +314,6 @@ $font-family-base: "Open Sans", "sans-serif";
   .purchase-section {
     padding: 60px;
     background-color: #eaf3ff;
-    font-family: Proxima Nova;
 
     .purchase-copy-header {
       font-size: 24px;
@@ -332,7 +330,6 @@ $font-family-base: "Open Sans", "sans-serif";
       width: 308px;
       border-radius: 4px;
       border: unset;
-      font-family: Proxima Nova;
       font-size: 14px;
       font-weight: 700;
       line-height: 17px;
@@ -433,7 +430,7 @@ $font-family-base: "Open Sans", "sans-serif";
 }
 
 .topic-nav-hero-title {
-  font-family: "Aleo", "sans-serif";
+  font-family: $font-family-secondary;
   font-size: 40px;
 
   @media screen and (max-width: 768px) {
@@ -464,7 +461,7 @@ $font-family-base: "Open Sans", "sans-serif";
 
 .topic-nav-section-title {
   font-size: 32px;
-  font-family: "Aleo";
+  font-family: $font-family-secondary;
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
@@ -520,3 +517,4 @@ $font-family-base: "Open Sans", "sans-serif";
 .bottom-grey-border {
   border-bottom: 1px #d6dde6 solid;
 }
+
