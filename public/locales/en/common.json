@@ -1,12 +1,11 @@
 {
-  "title": "Beneath the Surface",
   "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
   "header": {
     "brandAlt": "Crane logo with the text: Beneath the Surface",
     "topics": "Topics",
-    "downloads": "Downloads",
-    "purchase": "Purchase the Book",
-    "about": "About Us",
+    "booklet": "Booklet",
+    "download": "Resources",
+    "about": "About",
     "blurb": "We desire to see a prayer movement for Japan's spiritual breakthrough"
   },
   "prayerSummary": {
@@ -20,13 +19,13 @@
     "button": "Give Feedback"
   },
   "footer": {
-    "title": "Site Map",
-    "link1": "Praying for Japan by Topics",
-    "link2": "Downloadable resources",
-    "link3": "Stories",
-    "link4": "Purchase the book",
-    "link5": "About us",
-    "missionStatement": "We desire to see a prayer movement for Japan's spiritual breakthrough",
-    "copyright": "Copyright © 2021 Beneath the Surface. All rights reserved."
+    "title": "Site map",
+    "link1": "Home",
+    "link2": "Topics",
+    "link3": "Booklet",
+    "link4": "Resources",
+    "link5": "About",
+    "tagline": "We exist to call and equip God's people to pray for spiritual breakthrough in Japan",
+    "copyright": "Copyright © 2023 Beneath the Surface. All rights reserved."
   }
 }

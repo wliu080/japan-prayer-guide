@@ -1,40 +1,40 @@
-import Image from "next/image";
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
-import { useState } from "react";
-import { useTranslation } from "next-i18next";
-import LanguageSwitcher from "./languageSwitcher";
-import { useRouter } from "next/router";
+import Image from "next/image"
+import { Button, Container, Nav, Navbar } from "react-bootstrap"
+import { useState } from "react"
+import { useTranslation } from "next-i18next"
+import LanguageSwitcher from "./languageSwitcher"
+import { useRouter } from "next/router"
 
 const ToggleHeader: React.FC = () => {
-  const { t } = useTranslation("common"); // specify translation file from public/locales/[lng]
-  const { i18n } = useTranslation();
-  const router = useRouter();
+  const { t } = useTranslation("common") // specify translation file from public/locales/[lng]
+  const { i18n } = useTranslation()
+  const router = useRouter()
 
   const handleLanguageChange = (language: string) => {
-    i18n.changeLanguage(language);
-    const path = router.asPath;
+    i18n.changeLanguage(language)
+    const path = router.asPath
     const options = {
-      locale: language
-    };
+      locale: language,
+    }
 
-    router.push(path, path, options);
-  };
+    router.push(path, path, options)
+  }
 
   // when the Navbar.Collapse is expanded we want to switch to the dark theme
-  const [bg, setBg] = useState("white");
-  const [variant, setVariant] = useState("light");
+  const [bg, setBg] = useState("white")
+  const [variant, setVariant] = useState("light")
 
   const toggleColorScheme = () => {
-    setBg(bg === "white" ? "primary" : "white");
-    setVariant(variant === "light" ? "dark" : "light");
-  };
+    setBg(bg === "white" ? "primary" : "white")
+    setVariant(variant === "light" ? "dark" : "light")
+  }
 
   return (
     <Navbar sticky="top" bg={bg} expand="lg" variant={variant}>
       <Container>
         <Navbar.Brand href="/">
           <Image
-            alt={t('header.brandAlt')}
+            alt={t("header.brandAlt")}
             src={bg === "white" ? "/bts-crane-wht-logo-en.png" : "/bts-crane-blue-logo-en.png"}
             width="150"
             height="30"
@@ -45,19 +45,22 @@ const ToggleHeader: React.FC = () => {
         <Navbar.Collapse id="header-navbar-nav">
           <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
             <Nav className="ml-auto d-md-flex gap-md-3 align-items-md-center" variant={variant}>
-              <Nav.Link href="/topics/all">{t('header.topics')}</Nav.Link>
-              <Nav.Link href="/downloads">{t('header.downloads')}</Nav.Link>
-              <Nav.Link href="/about">{t('header.about')}</Nav.Link>
-              {i18n.language === "en" ? 
+              <Nav.Link href="/topics/all">{t("header.topics")}</Nav.Link>
+              <Nav.Link href="/downloads">{t("header.download")}</Nav.Link>
+              <Nav.Link href="/about">{t("header.about")}</Nav.Link>
+              {i18n.language === "en" ? (
                 <Nav.Link onClick={() => handleLanguageChange("ja")}>日本語</Nav.Link>
-                : <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
-              }
+              ) : (
+                <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
+              )}
               {/* Purchase Button to only show on md or larger */}
-              <Nav.Link href="/purchase" className="d-none d-md-block">
-                <Button>{t('header.purchase')}</Button>
+              <Nav.Link href="/booklet" className="d-none d-md-block">
+                <Button>{t("header.booklet")}</Button>
               </Nav.Link>
               {/* regular purchase Nav menu item on sm or smaller */}
-              <Nav.Link className="d-md-none" href="/purchase">{t('header.purchase')}</Nav.Link>
+              <Nav.Link className="d-md-none" href="/booklet">
+                {t("header.booklet")}
+              </Nav.Link>
             </Nav>
             <Container className="d-lg-none text-center">
               <LanguageSwitcher />
@@ -67,16 +70,13 @@ const ToggleHeader: React.FC = () => {
                 width="150"
                 height="30"
               />{" "}
-              <p className="text-light fs-6 pb-3">
-                {t('header.blurb')}
-              </p>
-
+              <p className="text-light fs-6 pb-3">{t("header.blurb")}</p>
             </Container>
           </Container>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
-};
+  )
+}
 
-export { ToggleHeader };
+export { ToggleHeader }
