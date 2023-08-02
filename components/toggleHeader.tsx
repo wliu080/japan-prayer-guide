@@ -46,6 +46,7 @@ const ToggleHeader: React.FC = () => {
           <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
             <Nav className="ml-auto d-md-flex gap-md-3 align-items-md-center" variant={variant}>
               <Nav.Link href="/topics/all">{t("header.topics")}</Nav.Link>
+              <Nav.Link href="/booklet">{t("header.booklet")}</Nav.Link>
               <Nav.Link href="/downloads">{t("header.download")}</Nav.Link>
               <Nav.Link href="/about">{t("header.about")}</Nav.Link>
               {i18n.language === "en" ? (
@@ -53,14 +54,6 @@ const ToggleHeader: React.FC = () => {
               ) : (
                 <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
               )}
-              {/* Purchase Button to only show on md or larger */}
-              <Nav.Link href="/booklet" className="d-none d-md-block">
-                <Button>{t("header.booklet")}</Button>
-              </Nav.Link>
-              {/* regular purchase Nav menu item on sm or smaller */}
-              <Nav.Link className="d-md-none" href="/booklet">
-                {t("header.booklet")}
-              </Nav.Link>
             </Nav>
             <Container className="d-lg-none text-center">
               <LanguageSwitcher />
