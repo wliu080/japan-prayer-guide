@@ -57,6 +57,11 @@ $font-family-secondary: "adelle", "Aleo", "serif";
   }
 }
 
+div.nav-item.dropdown {
+  border-radius: 0.25rem;
+  border: 1px solid $secondary-5;
+}
+
 // general classes
 .footer-icon {
   width: auto;

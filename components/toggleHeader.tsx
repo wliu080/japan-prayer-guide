@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button, Container, Nav, Navbar } from "react-bootstrap"
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { useState } from "react"
 import { useTranslation } from "next-i18next"
 import LanguageSwitcher from "./languageSwitcher"
@@ -49,11 +49,30 @@ const ToggleHeader: React.FC = () => {
               <Nav.Link href="/booklet">{t("header.booklet")}</Nav.Link>
               <Nav.Link href="/downloads">{t("header.download")}</Nav.Link>
               <Nav.Link href="/about">{t("header.about")}</Nav.Link>
+              {/* 
+                Need a more extensibile way for future languages but for now this should do
+              */}
               {i18n.language === "en" ? (
-                <Nav.Link onClick={() => handleLanguageChange("ja")}>日本語</Nav.Link>
+                <NavDropdown title="English">
+                  <NavDropdown.Item href="" onClick={() => handleLanguageChange("ja")}>
+                    日本語
+                  </NavDropdown.Item>
+                </NavDropdown>
+              ) : (
+                <NavDropdown title="日本語">
+                  <NavDropdown.Item href="" onClick={() => handleLanguageChange("en")}>
+                    English
+                  </NavDropdown.Item>
+                </NavDropdown>
+              )}
+
+              {/* {i18n.language === "en" ? (
+                <Nav.Link onClick={() => handleLanguageChange("ja")}>
+                  <Button>{t("header.booklet")}</Button>日本語
+                </Nav.Link>
               ) : (
                 <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
-              )}
+              )} */}
             </Nav>
             <Container className="d-lg-none text-center">
               <LanguageSwitcher />
