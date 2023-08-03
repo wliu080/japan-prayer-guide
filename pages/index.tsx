@@ -1,12 +1,19 @@
 import Head from "next/head"
 import { ToggleHeader } from "../components/toggleHeader"
-import { Button, Carousel, CarouselItem, Container, Image } from "react-bootstrap"
+import { Button, Carousel, CarouselItem, Col, Container, Image, Row } from "react-bootstrap"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
 import Footer from "../components/footer"
 import FeaturedTopic from "../components/landing/FeaturedTopic"
 import PrayForJapan from "../components/landing/PrayForJapan"
+import { IconContext } from "react-icons"
+import {
+  RiMic2Fill, RiSlideshowLine,
+  RiDonutChartFill, RiImageFill,
+  RiFile3Line, 
+} from "react-icons/ri"
+import { FaPrayingHands } from "react-icons/fa"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
   // const featuredTopicRef: string = "topics/" + getFeaturedTopic(getSchedule())
@@ -59,8 +66,16 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const orderEnglish: string = homePageTranslation("orderEnglish")
   const orderJapan: string = homePageTranslation("orderJapan")
 
+  const downloadTitle: string = homePageTranslation("downloadTitle")
+  const downloadBlurb: string = homePageTranslation("downloadBlurb")
+  const downloadList: string[] = homePageTranslation("downloadList", { returnObjects: true })
+  const comingSoon: string = homePageTranslation("comingSoon")
+
   const prayerPoints: string[] = featuredTranslation("prayerSummary", { returnObjects: true })
   const prayerTitle: string = featuredTranslation("title")
+
+  const learnBlurb: string = homePageTranslation("learnBlurb")
+  const learnMoreAbout: string = homePageTranslation("learnMoreAbout")
 
   return (
     <div>
@@ -74,7 +89,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         <ToggleHeader />
 
         {/* Hero banner section */}
-        <div id="heroBannerSection" className="w-100 bg-secondary position-relative">
+        <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
           <Image alt="home page hero" src="/photos/home/hp_hero.png" className="home-hero"/>
           <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute">
             <h2 className="text-white">{heroSubheading}</h2>
@@ -87,16 +102,16 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Main blurb */}
         <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
-          <p className="px-3 text-primary text-center">{mainBlurb}</p>
+          <p className="px-3 text-primary">{mainBlurb}</p>
         </Container>
 
         {/* Invitation to prayer */}
         <div className="home-invitation d-flex flex-column align-items-center w-100 position-relative">
           <Container>
             <h1 className="text-center mt-5">{invitationTitle}</h1>
-            <p className="text-center mt-4">{invitationBlurb}</p>
+            <p className="mt-4">{invitationBlurb}</p>
           </Container>
-          <Carousel controls={false} fade={true} interval={3000} className="w-100 d-flex flex-column justify-content-center align-items-center">
+          <Carousel controls={true} fade={true} interval={3000} className="w-100 d-flex flex-column justify-content-center align-items-center">
             <CarouselItem className="w-100 d-flex justify-content-center">
               <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png"/>
             </CarouselItem>
@@ -111,12 +126,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Bible Verse */}
         <Container className="home-verse-container d-flex flex-column w-100 px-4">
-          <h2 className="w-100 text-center text-primary">{bibleVerse}</h2>
-          <h3 className="w-100 text-center text-primary mt-3 pb-4">{bibleRef}</h3>
+          <h2 className="w-100 text-primary">{bibleVerse}</h2>
+          <h3 className="w-100 text-primary mt-3 pb-4">{bibleRef}</h3>
         </Container>
 
-        <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center">
-          <p className="w-100 text-center">
+        <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4">
+          <p className="w-100">
             {wePray} <strong>{callToAction}</strong>
           </p>
         </Container>
@@ -155,14 +170,70 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           </Container>
         </Container>
 
+        {/* Downloads snippet */}
+        <div className="bg-secondary-2 w-100 d-flex align-items-center flex-column justify-content-center p-4" style={{height: 'auto'}}>
+          {/* Placeholder for future image */}
+          <div className="mt-5" style={{backgroundColor: "#BCC3CF", width: '100%', maxWidth: '442px', aspectRatio: 1.80}}></div>
+          <h1 className="mt-4 w-100 text-center home-common-h1 aleo">{downloadTitle}</h1>
+          <h2 className="fw-normal w-100 text-center home-common-blurb">{downloadBlurb}</h2>
+          <IconContext.Provider value={{size: "30px"}}>
+            <Row lg={6} md={3} sm={2} xs={2} className="w-100 my-4">
+              <Col>
+                  <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
+                    <RiMic2Fill/>
+                    {downloadList[0]}
+                  </div>
+              </Col>
+              <Col>
+                  <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
+                    <RiSlideshowLine/>
+                    {downloadList[1]}
+                  </div>
+              </Col>
+              <Col>
+                  <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
+                    <RiDonutChartFill/>
+                    {downloadList[2]}
+                  </div>
+              </Col>
+              <Col>
+                  <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
+                    <RiImageFill/>
+                    {downloadList[3]}
+                  </div>
+              </Col>
+              <Col>
+                  <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
+                    <RiFile3Line/>
+                    {downloadList[4]}
+                  </div>
+              </Col>
+              <Col>
+                  <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
+                    <FaPrayingHands/>
+                    {downloadList[5]}
+                  </div>
+              </Col>
+            </Row>
+          </IconContext.Provider>
+          <Button className="bg-grey-4 text-white px-3 text-center border-0 mb-5">{comingSoon}</Button>
+        </div>
+
+        <div className="w-100 bg-grey-7 p-5 d-flex flex-column align-items-center">
+          <div className="d-flex gap-3 align-items-center justify-content-center w-100">
+            <Image alt="BTS Crane" src="/photos/home/hp_crane.png"/>
+            <Image alt="BTS Crane" src="/photos/home/hp_logo.png"/>
+          </div>
+          <div className="home-common-blurb text-center text-white my-3 w-100">{learnBlurb}</div>
+          <Button className="fs-5 text-nowrap border-white px-4 py-2 text-white text-center bg-grey-7 mt-4">{learnMoreAbout}</Button>
+        </div>
+
         {/* <PrayForJapan
           whyJapanHeading={whyJapanHeading}
           whyJapanText={whyJapanText}
           prayerCTAHeading={prayerCTAHeading}
           prayerCTATextMap={prayerCTATextMap}
-        /> */}
-
-        {/* Downloads snippet */}
+        /> */}        
 
         {/* About snippet */}
 

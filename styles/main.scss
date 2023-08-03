@@ -21,6 +21,7 @@ $custom-colors: (
   "secondary-5": #285abd,
   "tertiary": #f46b59,
   "grey-2": #EBF0F6,
+  "grey-4": #BCC3CF,
   "grey-7": #505C7C
 );
 // Merge custom to theme & regenerate
@@ -117,6 +118,10 @@ $font-family-secondary: "adelle", "Aleo", "serif";
 
 .home-hero-text-group {
   bottom: 104px;
+  max-width: 1128px;
+  @media screen and (min-width: 1600px) {
+    margin-left: 10%;
+  }
   h1 {
     font-family: 'Aleo', 'sans-serif';
     font-size: 60px;
@@ -141,7 +146,7 @@ $font-family-secondary: "adelle", "Aleo", "serif";
 
 .home-main-blurb {
   height: 320px;
-  max-width: 900px;
+  max-width: 1128px;
   font-size: 32px;
   font-family: 'Aleo', 'sans-serif';
   @media screen and (max-width: 1440px) {
@@ -299,6 +304,30 @@ $font-family-secondary: "adelle", "Aleo", "serif";
     border-radius: 4px;
     padding: 8px 16px;
   }
+}
+
+.home-common-h1 {
+  font-size: 40px;
+  @media screen and (max-width: 1200px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.home-common-blurb {
+  font-size: 16px;
+  max-width: 900px;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.home-download-card {
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  aspect-ratio: 1.69;
 }
 
 // About Page Classes
