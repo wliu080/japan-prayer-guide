@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { useState } from "react"
 import { useTranslation } from "next-i18next"
 import LanguageSwitcher from "./languageSwitcher"
@@ -44,7 +44,7 @@ const ToggleHeader: React.FC = () => {
         <Navbar.Toggle aria-controls="header-navbar-nav" onClick={toggleColorScheme} />
         <Navbar.Collapse id="header-navbar-nav">
           <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
-            <Nav className="ml-auto d-md-flex gap-md-3 align-items-md-center" variant={variant}>
+            <Nav className="ml-auto d-md-flex gap-md-3" variant={variant}>
               <Nav.Link href="/topics/all">{t("header.topics")}</Nav.Link>
               <Nav.Link href="/booklet">{t("header.booklet")}</Nav.Link>
               <Nav.Link href="/downloads">{t("header.download")}</Nav.Link>
@@ -53,26 +53,18 @@ const ToggleHeader: React.FC = () => {
                 Need a more extensibile way for future languages but for now this should do
               */}
               {i18n.language === "en" ? (
-                <NavDropdown title="English">
+                <NavDropdown title="English" className="d-none d-lg-block">
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("ja")}>
                     日本語
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (
-                <NavDropdown title="日本語">
+                <NavDropdown title="日本語" className="d-none d-lg-block">
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("en")}>
                     English
                   </NavDropdown.Item>
                 </NavDropdown>
               )}
-
-              {/* {i18n.language === "en" ? (
-                <Nav.Link onClick={() => handleLanguageChange("ja")}>
-                  <Button>{t("header.booklet")}</Button>日本語
-                </Nav.Link>
-              ) : (
-                <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
-              )} */}
             </Nav>
             <Container className="d-lg-none text-center">
               <LanguageSwitcher />

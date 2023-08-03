@@ -50,8 +50,12 @@ $font-family-secondary: "adelle", "Aleo", "serif";
 // Project specific styling
 // -------------------------
 
-// navbar override - this is used by the toggleHeader component to have the collapse fill full screen when expanded
-@include media-breakpoint-down(md) {
+// navbar overrides:
+// - toggleHeader component should collapse fill full screen when expanded on mobile
+// - dropdowns should look button-ish (border)
+// - nav language links don't have underline unless active
+@include media-breakpoint-down(lg) {
+  // do need specific heights for different mobile browsers?
   .mobile-header {
     height: 95vh;
   }
@@ -60,6 +64,14 @@ $font-family-secondary: "adelle", "Aleo", "serif";
 div.nav-item.dropdown {
   border-radius: 0.25rem;
   border: 1px solid $secondary-5;
+}
+
+nav a {
+  text-decoration: none;
+
+  &.active-language-link {
+    text-decoration: underline #4592cf 3.8px;
+  }
 }
 
 // general classes
