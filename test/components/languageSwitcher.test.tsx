@@ -1,11 +1,7 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import LanguageSwitcher from '../../components/languageSwitcher';
+import { render, screen, fireEvent } from "@testing-library/react"
+import LanguageSwitcher from "../../components/languageSwitcher"
 
-const changeLanguageSpy = jest.fn();
-
-jest.mock('next/router', () => ({
-  useRouter: jest.fn()
-}));
+const changeLanguageSpy = jest.fn()
 
 jest.mock("react-i18next", () => ({
   // this mock makes sure any components using the translate hook can use it without a warning being shown
@@ -15,44 +11,49 @@ jest.mock("react-i18next", () => ({
       i18n: {
         changeLanguage: changeLanguageSpy,
       },
-    };
+    }
   }),
   initReactI18next: {
     type: "3rdParty",
     init: () => {},
   },
-}));
+}))
 
-describe('LanguageSwitcher', () => {
+const useRouter = jest.spyOn(require("next/router"), "useRouter")
 
+describe("LanguageSwitcher", () => {
   beforeEach(() => {
-    const useRouter = jest.spyOn(require("next/router"), "useRouter");
     useRouter.mockReturnValue({
       push: () => {},
-    });
-  });
+    })
+  })
 
-  test('renders a horizontal stack with 2 links', () => {
-    render(<LanguageSwitcher />);
-    const languageSwitcher = screen.getByTestId('language-switcher');
-    const engLink = screen.getByTestId('link-english');
-    const jpLink = screen.getByTestId('link-japanese');
+  test("renders a horizontal stack with 2 links", () => {
+    render(<LanguageSwitcher />)
+    const languageSwitcher = screen.getByTestId("language-switcher")
+    const engLink = screen.getByTestId("link-english")
+    const jpLink = screen.getByTestId("link-japanese")
 
-    expect(languageSwitcher).toHaveClass('hstack');
-    expect(languageSwitcher).toContainElement(engLink);
-    expect(languageSwitcher).toContainElement(jpLink);
-  });
+    expect(languageSwitcher).toHaveClass("hstack")
+    expect(languageSwitcher).toContainElement(engLink)
+    expect(languageSwitcher).toContainElement(jpLink)
+  })
 
-  test('clicking on a language link should use i18n to change language', () => {
+  test("clicking on a language link should use i18n to change language", () => {
+    useRouter.mockReturnValue({
+      push: () => {},
+      locale: "en",
+    })
 
-    render(<LanguageSwitcher />);
-    const engLink = screen.getByTestId('link-english');
+    render(<LanguageSwitcher />)
+    const engLink = screen.getByTestId("link-english")
+    const jaLink = screen.getByTestId("link-japanese")
 
-    fireEvent.click(engLink);
+    fireEvent.click(engLink)
 
-    expect(engLink).toHaveClass("link-light");
-    expect(changeLanguageSpy).toHaveBeenCalledTimes(1);
-    expect(changeLanguageSpy).toHaveBeenCalledWith("en");
-  });
-});
-
+    expect(engLink).toHaveClass("active-language-link")
+    expect(jaLink).not.toHaveClass("active-language-link")
+    expect(changeLanguageSpy).toHaveBeenCalledTimes(1)
+    expect(changeLanguageSpy).toHaveBeenCalledWith("en")
+  })
+})

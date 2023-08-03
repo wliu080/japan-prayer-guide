@@ -8,6 +8,7 @@
 // theme colors
 $primary: #002266;
 $secondary: #74b6ff;
+$secondary-5: #285abd;
 // custom theme map
 $custom-colors: (
   "primary": $primary,
@@ -18,14 +19,14 @@ $custom-colors: (
   "secondary-2": #dfeeff,
   "secondary-3": #acd2ff,
   "secondary-4": #74b6ff,
-  "secondary-5": #285abd,
+  "secondary-5": $secondary-5,
   "tertiary": #f46b59,
 );
 // Merge custom to theme & regenerate
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-$link-color: #000000;
-//$navbar-dark-color: #fff;
+$link-color: $secondary-5;
+$navbar-light-color: $secondary-5;
 //$display-font-weight: 700;
 $font-sizes: (
   1: 2rem,
@@ -49,10 +50,27 @@ $font-family-secondary: "adelle", "Aleo", "serif";
 // Project specific styling
 // -------------------------
 
-// navbar override - this is used by the toggleHeader component to have the collapse fill full screen when expanded
-@include media-breakpoint-down(md) {
+// navbar overrides:
+// - toggleHeader component should collapse fill full screen when expanded on mobile
+// - dropdowns should look button-ish (border)
+// - nav language links don't have underline unless active
+@include media-breakpoint-down(lg) {
+  // do need specific heights for different mobile browsers?
   .mobile-header {
     height: 95vh;
+  }
+}
+
+div.nav-item.dropdown {
+  border-radius: 0.25rem;
+  border: 1px solid $secondary-5;
+}
+
+nav a {
+  text-decoration: none;
+
+  &.active-language-link {
+    text-decoration: underline $secondary-5 3.8px;
   }
 }
 
@@ -517,4 +535,3 @@ $font-family-secondary: "adelle", "Aleo", "serif";
 .bottom-grey-border {
   border-bottom: 1px #d6dde6 solid;
 }
-
