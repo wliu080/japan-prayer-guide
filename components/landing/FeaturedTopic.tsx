@@ -29,8 +29,8 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
         {/* temporary height for image, before we finalize images */}
         <Card.Img variant="top" src={featuredImg} className="home-feature-img"/>
         <Card.Body className="p-4" style={{ maxWidth: "600px" }}>
-          <Card.Text className="aleo px-2 pb-2 fs-2 fw-bold border-bottom border-grey">{title}</Card.Text>
-          <Card.Text className="aleo d-flex align-items-center gap-2 text-secondary-5 fw-bold fs-3">
+          <Card.Text className="featuredTopicTitle px-2 pb-2 fs-2 fw-bold border-bottom border-grey">{title}</Card.Text>
+          <Card.Text className="featuredTopicTitle d-flex align-items-center gap-2 text-secondary-5 fw-bold fs-3">
             <IconContext.Provider value={{ size: "20px" }}>
               <FaPrayingHands></FaPrayingHands>
             </IconContext.Provider>

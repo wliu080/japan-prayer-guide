@@ -139,7 +139,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Featured topic */}
         <Container fluid id="featuredTopicSection" className="py-5 bg-secondary-2">
           <Container className="d-flex flex-column align-items-center justify-content-center">
-            <h3 className="aleo">{featuredTopicTitle}</h3>
+            <h3>{featuredTopicTitle}</h3>
             {/* <h4>{featuredTopicSubtitle}</h4> */}
           </Container>
           <FeaturedTopic featuredImg="/photos/topic-nav/church/church-leadership.png" title={prayerTitle} prayerPoints={prayerPoints} />
@@ -149,7 +149,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         <Container className="home-purchase-section p-5 d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <Image alt="book-cover" src="/photos/home/hp_cover.png"/>
           <div className="w-100 d-flex flex-column align-items-center purchase-text-container mx-5">
-            <h1 className="text-center aleo mt-5">{purchaseTitle}</h1>
+            <h1 className="text-center mt-5">{purchaseTitle}</h1>
             <p className="text-center my-3">{purchaseBlurb}</p>
             <p className="fw-bold my-3 text-secondary-5 text-decoration-underline">{learnMore}</p>
           </div>
@@ -158,7 +158,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Order snippet */}
         <Container className="d-flex align-items-center w-100 mt-2 mb-5">
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
-            <h1 className="aleo text-grey-7 my-4 fw-bold text-center">{orderTitle}</h1>
+            <h1 className="text-grey-7 my-4 fw-bold text-center">{orderTitle}</h1>
             <h2 className="text-primary fs-5 text-center fw-bold mb-2">{orderBlurb}</h2>
             <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
               {orderRegions.map((region) =>
@@ -174,7 +174,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         <div className="bg-secondary-2 w-100 d-flex align-items-center flex-column justify-content-center p-4" style={{height: 'auto'}}>
           {/* Placeholder for future image */}
           <div className="mt-5" style={{backgroundColor: "#BCC3CF", width: '100%', maxWidth: '442px', aspectRatio: 1.80}}></div>
-          <h1 className="mt-4 w-100 text-center home-common-h1 aleo">{downloadTitle}</h1>
+          <h1 className="mt-4 w-100 text-center home-common-h1">{downloadTitle}</h1>
           <h2 className="fw-normal w-100 text-center home-common-blurb">{downloadBlurb}</h2>
           <IconContext.Provider value={{size: "30px"}}>
             <Row lg={6} md={3} sm={2} xs={2} className="w-100 my-4">

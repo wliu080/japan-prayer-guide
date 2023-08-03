@@ -87,10 +87,6 @@ nav a {
   color: $secondary;
 }
 
-.aleo {
-  font-family: 'Aleo', 'sans-serif';
-}
-
 // Home page classes
 #prayForJapanSection {
   .offset-pad-bottom {
@@ -141,22 +137,22 @@ nav a {
     margin-left: 10%;
   }
   h1 {
-    font-family: 'Aleo', 'sans-serif';
+    font-family: $font-family-secondary;
     font-size: 60px;
-    @media screen and (max-width: 1440px) {
+    @include media-breakpoint-down(xxl) {
       font-size: 52px;
     }
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 40px;
     }
   }
   h2 {
-    font-family: 'Aleo', 'sans-serif';
+    font-family: $font-family-secondary;
     font-size: 34px;
-    @media screen and (max-width: 1440px) {
+    @include media-breakpoint-down(xxl) {
       font-size: 32px;
     }
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 32px;
     }
   }
@@ -166,12 +162,12 @@ nav a {
   height: 320px;
   max-width: 1128px;
   font-size: 32px;
-  font-family: 'Aleo', 'sans-serif';
-  @media screen and (max-width: 1440px) {
+  font-family: $font-family-secondary;
+  @include media-breakpoint-down(xxl) {
     height: 248px;
     font-size: 24px;
   }
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     height: 228px;
     font-size: 18px;
   }
@@ -180,28 +176,28 @@ nav a {
 .home-invitation {
   height: 700px;
   background-color: #EBF0F6;
-  @media screen and (max-width: 1440px) {
+  @include media-breakpoint-down(xxl) {
     height: 500px;
   }
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     height: 300px;
   }
   .container {
     max-width: 900px;
   }
   h1 {
-    font-family: 'Aleo', 'sans-serif';
+    font-family: $font-family-secondary;
     font-size: 40px;
-    @media screen and (max-width: 1440px) {
+    @include media-breakpoint-down(xxl) {
       font-size: 32px;
     }
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 24px;
     }
   }
   p {
     font-size: 16px;
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(xxl) {
       font-size: 12px;
     }
   }
@@ -211,10 +207,10 @@ nav a {
   max-height: 584px;
   object-fit: cover;
   aspect-ratio: 1.93;
-  @media screen and (max-width: 1440px) {
+  @include media-breakpoint-down(xxl) {
     max-height: 373px;
   }
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     max-height: 178px;
   }
 }
@@ -222,15 +218,15 @@ nav a {
 .home-verse-container {
   max-width: 900px;
   height: 190px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     height: 210px;
   }
   h2 {
     margin-top: 100px;
-    font-family: 'Aleo';
+    font-family: $font-family-secondary;
     font-size: 18px;
     font-style: italic;
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 16px;
     }
   }
@@ -238,7 +234,7 @@ nav a {
     font-size: 16px;
     text-transform: uppercase;
     border-bottom: #BCC3CF 1px solid;
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 14px;
     }
   }
@@ -249,7 +245,7 @@ nav a {
   height: 190px;
   p {
     font-size: 16px;
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 12px;
     }
   }
@@ -257,11 +253,12 @@ nav a {
 
 #featuredTopicSection {
   h3 {
+    font-family: $font-family-secondary;
     font-size: 40px;
-    @media screen and (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       font-size: 32px;
     }
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 24px;
     }
   }
@@ -272,7 +269,7 @@ nav a {
   }
   .bullet-points {
     font-size: 14px;
-    @media screen and (max-width: 500px) {
+    @include media-breakpoint-down(sm) {
       font-size: 12px;
     }
   }
@@ -284,25 +281,26 @@ nav a {
   }
   img {
     height: 470px;
-    @media screen and (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       height: 322px;
     }
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       height: 240px;
     }
   }
   h1 {
+    font-family: $font-family-secondary;
     font-size: 40px;
-    @media screen and (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       font-size: 32px;
     }
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 24px;
     }
   }
   p {
     font-size: 16px;
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 12px;
     }
   }
@@ -312,8 +310,9 @@ nav a {
   max-width: 1130px;
   gap: 14px;
   h1 {
+    font-family: $font-family-secondary;
     font-size: 18px;
-    @media screen and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       font-size: 16px;
     }
   }
@@ -326,10 +325,11 @@ nav a {
 
 .home-common-h1 {
   font-size: 40px;
-  @media screen and (max-width: 1200px) {
+  font-family: $font-family-secondary;
+  @include media-breakpoint-down(xl) {
     font-size: 32px;
   }
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 24px;
   }
 }
@@ -337,7 +337,7 @@ nav a {
 .home-common-blurb {
   font-size: 16px;
   max-width: 900px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 12px;
   }
 }
@@ -346,6 +346,10 @@ nav a {
   border-radius: 10px;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
   aspect-ratio: 1.69;
+}
+
+.featuredTopicTitle {
+  font-family: $font-family-secondary;
 }
 
 // About Page Classes
@@ -360,7 +364,7 @@ nav a {
     padding-top: 60px;
     padding-bottom: 80px;
 
-    @media screen and (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       padding-top: 40px;
       padding-bottom: 50px;
     }
@@ -648,7 +652,7 @@ nav a {
   color: black !important;
 }
 
-@media screen and (max-width: 560px) {
+@include media-breakpoint-down(sm) {
   .slick-prev {
     left: -10px !important;
   }
@@ -663,7 +667,7 @@ nav a {
 #overview-nav {
   transition: all 0.1s ease;
   height: 50px;
-  @media screen and (max-width: 992px) {
+  @include media-breakpoint-down(lg) {
     height: 56px;
   }
 }
@@ -680,28 +684,28 @@ nav a {
   font-family: $font-family-secondary;
   font-size: 40px;
 
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 32px;
   }
 
-  @media screen and (max-width: 576px) {
+  @include media-breakpoint-down(sm) {
     font-size: 24px;
   }
 }
 
 .topic-nav-hero-subtitle {
   font-size: 19px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 16px;
   }
-  @media screen and (max-width: 576px) {
+  @include media-breakpoint-down(sm) {
     font-size: 14px;
   }
 }
 
 .topic-nav-tab {
   font-size: 19px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 14px;
   }
 }
@@ -709,10 +713,10 @@ nav a {
 .topic-nav-section-title {
   font-size: 32px;
   font-family: $font-family-secondary;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 24px;
   }
-  @media screen and (max-width: 576px) {
+  @include media-breakpoint-down(sm) {
     font-size: 18px;
   }
 }
@@ -721,21 +725,21 @@ nav a {
   height: 280px;
   aspect-ratio: 1.416;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
-  @media screen and (max-width: 1400px) {
+  @include media-breakpoint-down(xxl) {
     height: 250px;
   }
-  @media screen and (max-width: 1200px) {
+  @include media-breakpoint-down(xl) {
     min-height: 200px;
     max-height: 230px;
     width: 300px;
   }
-  @media screen and (max-width: 992px) {
+  @include media-breakpoint-down(lg) {
     height: 240px;
   }
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     height: 180px;
   }
-  @media screen and (max-width: 572px) {
+  @include media-breakpoint-down(sm) {
     min-height: 140px;
     max-height: 170px;
     width: 170px;
@@ -746,16 +750,16 @@ nav a {
   font-size: 19px;
   padding: 0 8px;
   color: #49474e;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 16px;
   }
-  @media screen and (max-width: 572px) {
+  @include media-breakpoint-down(sm) {
     padding: 0 8px;
   }
 }
 
 .no-max-container {
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     max-width: none;
     padding: 0 16px !important;
   }
