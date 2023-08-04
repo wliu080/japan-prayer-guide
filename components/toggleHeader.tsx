@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button, Container, Nav, Navbar } from "react-bootstrap"
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { useState } from "react"
 import { useTranslation } from "next-i18next"
 import LanguageSwitcher from "./languageSwitcher"
@@ -44,23 +44,27 @@ const ToggleHeader: React.FC = () => {
         <Navbar.Toggle aria-controls="header-navbar-nav" onClick={toggleColorScheme} />
         <Navbar.Collapse id="header-navbar-nav">
           <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
-            <Nav className="ml-auto d-md-flex gap-md-3 align-items-md-center" variant={variant}>
+            <Nav className="ml-auto d-md-flex gap-md-3" variant={variant}>
               <Nav.Link href="/topics/all">{t("header.topics")}</Nav.Link>
+              <Nav.Link href="/booklet">{t("header.booklet")}</Nav.Link>
               <Nav.Link href="/downloads">{t("header.download")}</Nav.Link>
               <Nav.Link href="/about">{t("header.about")}</Nav.Link>
+              {/* 
+                Need a more extensibile way for future languages but for now this should do
+              */}
               {i18n.language === "en" ? (
-                <Nav.Link onClick={() => handleLanguageChange("ja")}>日本語</Nav.Link>
+                <NavDropdown title="English" className="d-none d-lg-block">
+                  <NavDropdown.Item href="" onClick={() => handleLanguageChange("ja")}>
+                    日本語
+                  </NavDropdown.Item>
+                </NavDropdown>
               ) : (
-                <Nav.Link onClick={() => handleLanguageChange("en")}>English</Nav.Link>
+                <NavDropdown title="日本語" className="d-none d-lg-block">
+                  <NavDropdown.Item href="" onClick={() => handleLanguageChange("en")}>
+                    English
+                  </NavDropdown.Item>
+                </NavDropdown>
               )}
-              {/* Purchase Button to only show on md or larger */}
-              <Nav.Link href="/booklet" className="d-none d-md-block">
-                <Button>{t("header.booklet")}</Button>
-              </Nav.Link>
-              {/* regular purchase Nav menu item on sm or smaller */}
-              <Nav.Link className="d-md-none" href="/booklet">
-                {t("header.booklet")}
-              </Nav.Link>
             </Nav>
             <Container className="d-lg-none text-center">
               <LanguageSwitcher />
