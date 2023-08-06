@@ -46,7 +46,6 @@ $font-family-base: "Proxima Nova", "Open Sans", "sans-serif";
 $font-family-secondary: "adelle", "Aleo", "serif";
 
 // and then import bootstrap
-// finally, import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // -------------------------
@@ -216,13 +215,8 @@ nav a {
 }
 
 .home-verse-container {
-  max-width: 900px;
-  height: 190px;
-  @include media-breakpoint-down(md) {
-    height: 210px;
-  }
+  max-width: none;
   h2 {
-    margin-top: 100px;
     font-family: $font-family-secondary;
     font-size: 18px;
     font-style: italic;
@@ -233,7 +227,6 @@ nav a {
   h3 {
     font-size: 16px;
     text-transform: uppercase;
-    border-bottom: #BCC3CF 1px solid;
     @include media-breakpoint-down(md) {
       font-size: 14px;
     }
@@ -413,8 +406,15 @@ nav a {
   .about-beneath-surface {
     .about-images {
       width: 100%;
-      @include media-breakpoint-up(md) {
-        height: 400px;
+      height: 400px;
+      @include media-breakpoint-down(xl) {
+        height: 300px;
+      }
+      @include media-breakpoint-down(lg) {
+        height: 225px;
+      }
+      @include media-breakpoint-down(md) {
+        height: auto;
       }
     }
   }
@@ -443,14 +443,27 @@ nav a {
     }
   }
 
-  #who-are-we {
+  .about-invite {
     max-width: 900px;
+  }
+
+  #who-are-we {
+    max-width: 1100px;
     padding-top: 60px;
     padding-bottom: 80px;
 
     @include media-breakpoint-down(xl) {
       padding-top: 40px;
       padding-bottom: 50px;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 1.5;
+    }
+
+    p {
+      max-width: 900px;
     }
   }
 

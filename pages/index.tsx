@@ -58,13 +58,13 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
   const purchaseTitle: string = homePageTranslation("purchaseTitle")
   const purchaseBlurb: string = homePageTranslation("purchaseBlurb")
-  const learnMore: string = homePageTranslation("learnMore")
 
   const orderTitle: string = homePageTranslation("orderTitle")
   const orderBlurb: string = homePageTranslation("orderBlurb")
   const orderRegions: string[] = homePageTranslation("orderRegions", { returnObjects: true })
   const orderEnglish: string = homePageTranslation("orderEnglish")
   const orderJapan: string = homePageTranslation("orderJapan")
+  const preview: string = homePageTranslation("preview")
 
   const downloadTitle: string = homePageTranslation("downloadTitle")
   const downloadBlurb: string = homePageTranslation("downloadBlurb")
@@ -125,9 +125,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </div>
 
         {/* Bible Verse */}
-        <Container className="home-verse-container d-flex flex-column w-100 px-4">
-          <h2 className="w-100 text-primary">{bibleVerse}</h2>
-          <h3 className="w-100 text-primary mt-3 pb-4">{bibleRef}</h3>
+        <Container className="home-verse-container d-flex flex-column w-100 mx-0 px-0">
+          <div className="w-100" style={{height: '90px'}}></div>
+          <div className="d-flex flex-column w-100 bg-grey-7 px-4">
+            <h2 className="w-100 text-white text-center mt-5">{bibleVerse}</h2>
+            <h3 className="w-100 text-white mt-3 pb-4 text-center">{bibleRef}</h3>
+          </div>
         </Container>
 
         <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4">
@@ -148,26 +151,26 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Purchase snippet */}
         <Container className="home-purchase-section p-5 d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <Image alt="book-cover" src="/photos/home/hp_cover.png"/>
-          <div className="w-100 d-flex flex-column align-items-center purchase-text-container mx-5">
-            <h1 className="text-center mt-5">{purchaseTitle}</h1>
-            <p className="text-center my-3">{purchaseBlurb}</p>
-            <p className="fw-bold my-3 text-secondary-5 text-decoration-underline">{learnMore}</p>
+          <div className="w-100 d-flex flex-column purchase-text-container mx-5">
+            <h1 className="mt-5">{purchaseTitle}</h1>
+            <p className="my-3">{purchaseBlurb}</p>
           </div>
         </Container>
 
         {/* Order snippet */}
-        <Container className="d-flex align-items-center w-100 mt-2 mb-5">
+        <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5">
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
-            <h1 className="text-grey-7 my-4 fw-bold text-center">{orderTitle}</h1>
-            <h2 className="text-primary fs-5 text-center fw-bold mb-2">{orderBlurb}</h2>
+            <h1 className="text-grey-7 my-4 fw-bold">{orderTitle}</h1>
+            <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
             <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
               {orderRegions.map((region) =>
                 <div className="fs-6 bg-secondary-5 text-white text-center region" key={region}>{region}</div>
               )}
             </div>
-            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline">{orderEnglish}</h3>
-            <h3 className="mb-3 fs-5 text-secondary-5 fw-bold text-decoration-underline">{orderJapan}</h3>
+            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-3">{orderEnglish}</h3>
           </Container>
+          <h3 className="my-3 fs-5 text-secondary-5 fw-bold text-decoration-underline">{orderJapan}</h3>
+          <Button className="bg-white text-secondary-5 border-secondary-5 fw-bold fs-5">{preview}</Button>
         </Container>
 
         {/* Downloads snippet */}
