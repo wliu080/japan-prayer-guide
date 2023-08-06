@@ -215,13 +215,12 @@ nav a {
 }
 
 .home-verse-container {
-  max-width: 900px;
-  height: 190px;
-  @include media-breakpoint-down(md) {
-    height: 210px;
-  }
+  max-width: none;
+  // height: 190px;
+  // @include media-breakpoint-down(md) {
+  //   height: 210px;
+  // }
   h2 {
-    margin-top: 100px;
     font-family: $font-family-secondary;
     font-size: 18px;
     font-style: italic;
@@ -232,7 +231,6 @@ nav a {
   h3 {
     font-size: 16px;
     text-transform: uppercase;
-    border-bottom: #BCC3CF 1px solid;
     @include media-breakpoint-down(md) {
       font-size: 14px;
     }
