@@ -31,10 +31,10 @@ export default function Footer() {
           </Row>
           <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
             {/* another temp inline-style for an image */}
-            <Image style={{ maxHeight: "50px", width: "auto" }} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
+            <Image style={{ maxHeight: "100px", width: "auto" }} src="/wire-logo.png" alt="logo"></Image>
           </Row>
           <Row className="text-center px-5">
-            <p className="text-white fs-6 fw-light">{tagline}</p>
+            <p className="footer-blurb text-white fs-6 fw-light">{tagline}</p>
           </Row>
           <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
             <IconContext.Provider value={{ size: "25px" }}>
@@ -53,7 +53,7 @@ export default function Footer() {
             </IconContext.Provider>
           </Row>
           <Row className="text-center py-3 px-5">
-            <p className="text-white fs-6 fw-light" data-testid={"copyright"}>
+            <p className="text-white fs-6 fw-light footer-copyright" data-testid={"copyright"}>
               {copyrightText}
             </p>
           </Row>
@@ -61,13 +61,31 @@ export default function Footer() {
       </div>
       {/* Large screens footer starts here */}
       {/* Test ids need to be modified to stop duplicates */}
-      <div className="w-100 d-none d-lg-flex">
+      <div className="w-100 d-none d-lg-flex flex-column bg-primary align-items-center">
+        <div className="footer-language w-75 border-bottom border-grey-6 py-4">
+          <LanguageSwitcher/>
+        </div>
         <Container fluid className="bg-primary pt-3 d-flex" data-testid="footer-2">
-          <Col className="d-flex justify-content-center my-4" sm={4}>
-            <LinksList additional="1" />
+          <Col className="d-flex flex-column justify-content-center my-4" sm={3}>
+            <Row>
+              <LinksList additional="1" />
+            </Row>
+            <Row className="py-3 px-2">
+              <p className="text-white fs-6 fw-light footer-copyright" data-testid={"copyright-2"}>
+                {copyrightText}
+              </p>
+            </Row>
           </Col>
-          <Col sm={4} className="my-4">
-            <Row className="d-flex justify-content-center align-items-center pt-1 pb-3 text-white">
+          <Col sm={6}></Col>
+          <Col sm={3} className="my-4">
+            <Row className="d-flex align-items-center pt-3 pb-2">
+              {/* another temp inline-style for an image */}
+              <Image style={{ maxHeight: "100px", width: "auto" }} src="/wire-logo.png" alt="logo"></Image>
+            </Row>
+            <Row>
+              <p className="footer-blurb text-white">{tagline}</p>
+            </Row>
+            <Row className="d-flex align-items-center pt-1 pb-3 text-white">
               <IconContext.Provider value={{ size: "25px" }}>
                 <a className="text-white footer-icon" href="https://vimeo.com/japanprayerguide">
                   <BsVimeo />
@@ -82,23 +100,6 @@ export default function Footer() {
                   <BsInstagram />
                 </a>
               </IconContext.Provider>
-            </Row>
-            <Row className="text-center py-3 px-5">
-              <p className="text-white fs-6 fw-light" data-testid={"copyright-2"}>
-                {copyrightText}
-              </p>
-            </Row>
-          </Col>
-          <Col sm={4} className="my-4">
-            <Row>
-              <LanguageSwitcher />
-            </Row>
-            <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
-              {/* another temp inline-style for an image */}
-              <Image style={{ maxHeight: "50px", width: "auto" }} src="/bts-crane-blue-logo-en.png" alt="logo"></Image>
-            </Row>
-            <Row className="text-center px-5">
-              <p className="text-white fs-6 fw-light">{tagline}</p>
             </Row>
           </Col>
         </Container>
@@ -121,7 +122,6 @@ function LinksList({ additional }: { additional: string }) {
     <div
       data-testid={"linksList" + additional}
       className="d-flex flex-column px-3 gap-0 text-white"
-      style={{ maxWidth: "600px" }}
     >
       <p className="m-1 fs-5 fw-bold">{siteMapText}</p>
       <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
