@@ -1,12 +1,12 @@
 {
   "webpageTitle": "日本のために祈る３０項目",
-  "heading": "Prayer topics",
+  "heading": "祈りのテーマ",
   "pageSubtitle": [
-    "After surveying missionaries, pastors, and Christian leaders in Japan, we collected over 500 prayer points and grouped them into topics for Japanese culture and society, and church and mission.",
-    "The 30 topics chosen were those prioritized by Japanese leaders as key opportunities and challenges for the gospel in Japan today."
+    "日本在住の宣教師、牧師、クリスチャンリーダーたちにアンケートを取ったところ、500以上もの祈祷課題が集まりました。「御心が地にもなるように」では、それらを日本の文化や社会、そして教会や宣教に基づいてテーマごとに分類しています。",
+    "選ばれた30のテーマは、今日の日本における福音の重要な機会および課題として、日本のクリスチャンリーダーたちが優先的に取り上げたものです。"
   ],
-  "topHeading": "Culture and society",
-  "botHeading": "Church and mission",
+  "topHeading": "文化と社会",
+  "botHeading": "教会と宣教",
   "cultureLinks": [
     "popular-religious-practices",
     "japanese-views-of-chrisianity",
@@ -18,6 +18,7 @@
     "mental-and-emotional-health",
     "aging-society",
     "politics-and-international-relations",
+    "immigration-and-foreign-nationals",
     "natural-disasters",
     "technology-and-media",
     "workplace-pressure",
@@ -25,21 +26,22 @@
     "youth-and-young-adults"
   ],
   "cultureTopics": [
-    "Popular religious practices",
-    "Japanese views of Chrisianity",
-    "Japansese culture and Christianity",
-    "Ancestor veneration",
-    "Harmony",
-    "Social conformity",
-    "Self reliance and materialism",
-    "Mental and emotional health",
-    "Aging society",
-    "Politics and international relations",
-    "Natural disasters",
-    "Technology and media",
-    "Workplace pressure",
-    "Family life",
-    "Youth and young adults"
+    "日本人の宗教的習慣",
+    "日本人のキリスト教観",
+    "日本文化とキリスト教",
+    "先祖崇拝",
+    "和を重んじる文化",
+    "社会の同調圧力",
+    "自分に頼る生き方と物質主義",
+    "精神と心の健康",
+    "高齢化社会",
+    "政治と国際関係",
+    "入国管理と外国人居住者",
+    "自然災害",
+    "テクノロジーとメディア",
+    "仕事のプレッシャー",
+    "家庭生活",
+    "若者たち"
   ],
   "churchLinks": [
     "struggling-churches",
@@ -58,19 +60,19 @@
     "prayer-for-spiritual-breakthrough"
   ],
   "churchTopics": [
-    "Struggling churches",
-    "Church planting",
-    "Church leadership",
-    "Church in the community",
-    "Creative ways of ministry",
-    "Christianity in rural areas",
-    "Personal evangelism",
-    "Faith in the workplace",
-    "Daily Christian life and faith",
-    "Japanese overseas",
-    "Missionary life",
-    "Unity in Christ",
-    "Japanese mission movement",
-    "Prayer for spiritual breakthrough"
+    "伸び悩む教会",
+    "教会開拓",
+    "教会のリーダーシップ",
+    "地域社会における教会",
+    "創造的なミニストリー",
+    "地方伝道",
+    "個人伝道",
+    "職場における信仰生活",
+    "日常生活と信仰",
+    "海外に住む日本人",
+    "宣教師の生活",
+    "キリストにおける一致",
+    "世界宣教への関わり",
+    "霊的突破のための祈り"
   ]
 }
