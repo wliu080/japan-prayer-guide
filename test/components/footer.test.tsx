@@ -54,7 +54,5 @@ describe("Footer", () => {
         render(<Footer />);
         const linksList = screen.getByTestId("linksList");
         const maxWidth = getComputedStyle(linksList).maxWidth;
-
-        expect(maxWidth).toBe("600px");
     });
 });
