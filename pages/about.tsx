@@ -26,20 +26,18 @@ const About: React.FC = () => {
   const heroHeader: string = t("heroHeader")
   const heroSubheader: string = t("heroSubheader")
 
-  const growingTitle: string = t("growingTitle")
-  const growingBlurb1: string = t("growingBlurb1")
-  const growingBlurb2: string = t("growingBlurb2")
+  const introTitle: string = t("introTitle")
+  const introBlurb: string[] = t("introBlurb", {returnObjects: true})
 
-  const beneathTitle: string = t("beneathTitle")
-  const beneathBlurb1: string = t("beneathBlurb1")
-  const beneathBlurb2: string = t("beneathBlurb2")
+  const contextTitle: string = t("contextTitle")
+  const contextBlurb: string[] = t("contextBlurb", {returnObjects: true})
 
   const biblePassageLocation: string = t("bible.passageLocation")
   const bibleContent: string = t("bible.content")
 
   const inviteTitle: string = t("inviteTitle")
   const inviteBlurb: string = t("inviteBlurb")
-  const willYouJoin: string = t("willYouJoin")
+  const callToAction: string = t("callToAction")
 
   return (
     <div>
@@ -61,23 +59,27 @@ const About: React.FC = () => {
 
         {/* Growing interest section */}
         <Container id="who-are-we" className="w-100 d-flex flex-column align-items-center">
-          <h1 className="text-primary about-h1-header text-center">{growingTitle}</h1>
+          <h1 className="text-primary about-h1-header text-center">{introTitle}</h1>
           <Image className="mt-3" alt="about img 1" src="/photos/about/about_01.png"/>
-          <p className="mt-5 about-body-text">{growingBlurb1}</p>
-          <p className="about-body-text">{growingBlurb2}</p>
+          <div className="w-100 mt-5"></div>
+          {introBlurb.map((text, idx) =>
+            <p key={idx + text} className="about-body-text">{text}</p>
+          )}
         </Container>
 
         {/* Beneath section */}
         <div className="bg-secondary-2 w-100 py-5 d-flex align-items-center flex-column">
           <Container className="about-beneath-surface">
-            <h1 className="mb-5 text-primary about-h1-header text-center">{beneathTitle}</h1>
+            <h1 className="mb-5 text-primary about-h1-header text-center">{contextTitle}</h1>
             <Container className="d-flex flex-column flex-md-row gap-3 about-images justify-content-between">
               <Image alt="about img 2" src="/photos/about/about_01.png" className=""/>
               <Image alt="about img 3" src="/photos/about/about_02.png" className=""/>
             </Container>
           </Container>
-          <p className="about-body-text mt-5 px-3">{beneathBlurb1}</p>
-          <p className="about-body-text mt-3 px-3">{beneathBlurb2}</p>
+          <div className="mt-5"></div>
+          {contextBlurb.map((text, idx) =>
+            <p key={idx + text} className="about-body-text px-3">{text}</p>
+          )}
         </div>
 
         {/* Verse section */}
@@ -92,7 +94,7 @@ const About: React.FC = () => {
         <Container className="w-100 about-invite px-4">
           <div className="d-flex flex-column align-items-center border-grey-4 border-bottom">
             <h1 className="mt-5 about-h1-header text-black text-center">{inviteTitle}</h1>
-            <p className=" mt-4 mb-5 about-body-text">{inviteBlurb} <strong>{willYouJoin}</strong></p>
+            <p className=" mt-4 mb-5 about-body-text">{inviteBlurb} <strong>{callToAction}</strong></p>
           </div>
         </Container>
 

@@ -13,8 +13,8 @@ export const TopicOverviewSection = ({title, links, labels, section}:TopicOvervi
     return (
         <>
             <section>
-                <Container id={section} className="no-max-container">
-                    <h1 className="topic-nav-section-title text-primary pt-4 px-3">{title}</h1>
+                <Container id={section} className="no-max-container mt-4 mt-md-5">
+                    <h1 className="topic-nav-section-title text-primary pt-4 px-0 px-md-2 mb-0">{title}</h1>
                 </Container>
                 <Container className="bottom-grey-border px-4 pt-1 no-max-container pb-4">
                     <Row xl={3} lg={3} md={2} sm={2} xs={2}>
