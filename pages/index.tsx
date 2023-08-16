@@ -9,6 +9,8 @@ import FeaturedTopic from "../components/landing/FeaturedTopic"
 import { IconContext } from "react-icons"
 import { RiMic2Fill, RiSlideshowLine, RiDonutChartFill, RiImageFill, RiFile3Line } from "react-icons/ri"
 import { FaPrayingHands } from "react-icons/fa"
+import DownloadLinkCard from "../components/landing/DownloadLinkCard"
+import { ReactNode } from "react"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
   // schedule is from featured-topics.json
@@ -65,6 +67,15 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
   const learnBlurb: string = homePageTranslation("learnBlurb")
   const learnMoreAbout: string = homePageTranslation("learnMoreAbout")
+
+  const iconList: ReactNode[] = [
+    <RiMic2Fill key={0} />,
+    <RiSlideshowLine key={1} />,
+    <RiDonutChartFill key={2} />,
+    <RiImageFill key={3} />,
+    <RiFile3Line key={4} />,
+    <FaPrayingHands key={5} />,
+  ]
 
   return (
     <div>
@@ -184,49 +195,22 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           ></div>
           <h1 className="mt-4 w-100 text-center home-common-h1">{downloadTitle}</h1>
           <h2 className="fw-normal w-100 text-center home-common-blurb">{downloadBlurb}</h2>
-          <IconContext.Provider value={{ size: "30px" }}>
-            <Row lg={6} md={3} sm={2} xs={2} className="w-100 my-4">
-              <Col>
-                <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
-                  <RiMic2Fill />
-                  {downloadList[0]}
-                </div>
-              </Col>
-              <Col>
-                <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
-                  <RiSlideshowLine />
-                  {downloadList[1]}
-                </div>
-              </Col>
-              <Col>
-                <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
-                  <RiDonutChartFill />
-                  {downloadList[2]}
-                </div>
-              </Col>
-              <Col>
-                <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
-                  <RiImageFill />
-                  {downloadList[3]}
-                </div>
-              </Col>
-              <Col>
-                <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
-                  <RiFile3Line />
-                  {downloadList[4]}
-                </div>
-              </Col>
-              <Col>
-                <div className="home-download-card bg-white home-common-blurb d-flex flex-column align-items-center justify-content-center gap-1 text-secondary-5 m-1">
-                  <FaPrayingHands />
-                  {downloadList[5]}
-                </div>
-              </Col>
-            </Row>
-          </IconContext.Provider>
+          <Container className="d-none d-xl-block">
+            <IconContext.Provider value={{ size: "30px" }}>
+              <Row lg={6} className="w-100 my-4">
+                {downloadList.map((downloadText, idx) => (
+                  <Col key={idx + downloadText}>
+                    <DownloadLinkCard downloadText={downloadText}>{iconList[idx]}</DownloadLinkCard>
+                  </Col>
+                ))}
+              </Row>
+            </IconContext.Provider>
+          </Container>
+
           <Button className="bg-grey-4 text-white px-3 text-center border-0 mb-5">{comingSoon}</Button>
         </div>
 
+        {/* Beneath the Surface initiative - About snippet */}
         <div className="w-100 bg-grey-7 p-5 d-flex flex-column align-items-center">
           <div className="d-flex gap-3 align-items-center justify-content-center w-100">
             <Image alt="BTS Crane" src="/photos/home/hp_crane.png" />
@@ -237,12 +221,6 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             {learnMoreAbout}
           </Button>
         </div>
-
-        {/* Prayer Booklet snippet */}
-
-        {/* Resources snippet */}
-
-        {/* Beneath the Surface initiative - About snippet */}
 
         <Footer />
       </main>
