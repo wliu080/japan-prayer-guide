@@ -33,10 +33,12 @@ describe("LanguageSwitcher", () => {
     const languageSwitcher = screen.getByTestId("language-switcher")
     const engLink = screen.getByTestId("link-english")
     const jpLink = screen.getByTestId("link-japanese")
+    const verticalBorder = languageSwitcher.querySelector(".vr.border")
 
     expect(languageSwitcher).toHaveClass("hstack")
     expect(languageSwitcher).toContainElement(engLink)
     expect(languageSwitcher).toContainElement(jpLink)
+    expect(verticalBorder).toBeInTheDocument()
   })
 
   test("clicking on a language link should use i18n to change language", () => {
