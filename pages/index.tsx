@@ -10,6 +10,7 @@ import { IconContext } from "react-icons"
 import { RiMic2Fill, RiSlideshowLine, RiDonutChartFill, RiImageFill, RiFile3Line } from "react-icons/ri"
 import { FaPrayingHands } from "react-icons/fa"
 import DownloadLinkCard from "../components/landing/DownloadLinkCard"
+import { ReactNode } from "react"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
   // schedule is from featured-topics.json
@@ -68,12 +69,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const learnMoreAbout: string = homePageTranslation("learnMoreAbout")
 
   const iconList: ReactNode[] = [
-    <RiMic2Fill />,
-    <RiSlideshowLine />,
-    <RiDonutChartFill />,
-    <RiImageFill />,
-    <RiFile3Line />,
-    <FaPrayingHands />,
+    <RiMic2Fill key={0} />,
+    <RiSlideshowLine key={1} />,
+    <RiDonutChartFill key={2} />,
+    <RiImageFill key={3} />,
+    <RiFile3Line key={4} />,
+    <FaPrayingHands key={5} />,
   ]
 
   return (

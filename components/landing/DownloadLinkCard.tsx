@@ -21,10 +21,10 @@ export default function DownloadLinkCard({ downloadText, downloadLink, children 
     <>
       {downloadLink ? (
         <Link href={"/" + downloadLink} className="text-decoration-none">
-          <Card text={downloadText} children={children} />
+          <Card text={downloadText}>{children}</Card>
         </Link>
       ) : (
-        <Card text={downloadText} children={children} />
+        <Card text={downloadText}>{children}</Card>
       )}
     </>
   )
