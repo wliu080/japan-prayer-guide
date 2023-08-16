@@ -7,6 +7,8 @@ interface Props {
   setSelected: Dispatch<SetStateAction<string>>
 }
 
+const scrollOffset = -50 // Adjust this value to the desired scroll height
+
 export const TopicOverviewNav = ({ selected, setSelected }: Props) => {
   const { t } = useTranslation("topic-overview")
 
