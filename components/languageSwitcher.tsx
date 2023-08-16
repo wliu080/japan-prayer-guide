@@ -26,7 +26,7 @@ const LanguageSwitcher: React.FC = () => {
       >
         English
       </a>
-      <div className="vr" />
+      <div className="vr border opacity-100" />
       <a
         href="#japanese"
         onClick={() => handleLanguageChange("ja")}
