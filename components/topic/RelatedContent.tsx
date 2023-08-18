@@ -2,8 +2,8 @@ import Link from "next/link"
 import React from "react"
 import { Card, Container } from "react-bootstrap"
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 interface relatedProps {
   topics: string[]
@@ -11,15 +11,9 @@ interface relatedProps {
   title?: string
 }
 
-function SampleArrow(props:any) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", borderRadius: '50%' }}
-      onClick={onClick}
-    />
-  );
+function SampleArrow(props: any) {
+  const { className, style, onClick } = props
+  return <div className={className} style={{ ...style, display: "block", borderRadius: "50%" }} onClick={onClick} />
 }
 
 export default function RelatedContent({ topics, links, title }: relatedProps) {
@@ -29,22 +23,22 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-      }
+      },
     },
     {
       breakpoint: 1000,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-      }
+      },
     },
     {
       breakpoint: 800,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
+        slidesToScroll: 1,
+      },
+    },
   ]
   return (
     <Container data-testid={"related-content-container"} className="d-flex flex-column my-5">
@@ -67,7 +61,7 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
         nextArrow={<SampleArrow />}
         prevArrow={<SampleArrow />}
       >
-        {topics.map((topic, idx) =>
+        {topics.map((topic, idx) => (
           <Link href={links[idx]} key={idx + topic} className="d-flex flex-column align-items-center">
             <Card style={{ width: "308px", height: "186px" }}>
               <Card.Body className="m-0 p-0">
@@ -78,7 +72,7 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
               </Card.Body>
             </Card>
           </Link>
-        )}
+        ))}
       </Slider>
       <a href={"/topics"} className="align-self-center my-3 text-secondary d-md-none">
         View all topics
