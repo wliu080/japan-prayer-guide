@@ -1,6 +1,21 @@
 {
   "webpageTitle": "About",
   "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
+  "heroHeader": "prayer initiative",
+  "heroSubheader": "About the",
+  "introTitle": "A growing interest",
+  "introBlurb": [
+    "After nearly three decades of missionary decline, the early 2010s saw a growing interest in God's work in Japan. Since then, mission agencies have been receiving an increasing number of inquiries for Japan from more varied places around the world than before.",
+    "We are also seeing an increase of people who know about Japan's spiritual needs and have a desire to pray. Christian leaders in Japan have been emphasizing the necessity of prayer for significant spiritual breakthrough and are calling God's people to pray for Japan."
+  ],
+  "contextTitle": "Beneath the Surface",
+  "contextBlurb": [
+    "In response to this growing missions interest, in 2020, OMF Japan and Pioneers Japan published a prayer guide called Beneath the Surface: 30 ways to pray for Japan. Our hope is that this guide will be a helpful tool for God's people to pray in specific and informed ways for Japan.",
+    "A fuller expression of the booklet was then reimagined into this website by a team of young creatives who freely gave their skills, time, and passion to the Lord for this work."
+  ],
+  "inviteTitle": "Invitation to prayer",
+  "inviteBlurb": "Together with many people and ministries praying for Japan, we long to see a significant breakthrough of the gospel and God's kingdom here. We believe that committed prayers of faith are needed for this.",
+  "callToAction": "Will you join us?",
   "who": {
     "title": "Who are we?",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla."
@@ -22,8 +37,8 @@
     ]
   },
   "bible": {
-    "passageLocation": "Matthew 28:16-20",
-    "content": "Now the eleven disciples went to Galilee, to the mountain to which Jesus had directed them. And when they saw him they worshiped him, but some doubted. And Jesus came and said to them, “All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.”"
+    "passageLocation": "1 JOHN 5:14-15",
+    "content": "And this is the confidence that we have toward him, that if we ask anything according to his will he hears us. And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him."
   },
   "why": {
     "title": "Why the name 'Beneath the surface?'",

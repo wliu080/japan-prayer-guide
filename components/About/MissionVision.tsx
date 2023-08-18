@@ -15,9 +15,6 @@ const MissionVision: React.FC = () => {
   return (
     <section id="mission-vision-section" data-testid="mission-vision-section" className="position-relative">
       <Container id="mission-vision" className="py-5">
-        <div id="about-landing-image" className="w-100 p-3">
-          temporary image placeholder
-        </div>
         <Container className="d-flex flex-wrap justify-content-center align-items-center p-4">
           <Row md={2} sm={1}>
             <Container>
