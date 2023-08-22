@@ -24,8 +24,8 @@ export default function PrayerPoints({
   const { t } = useTranslation("common")
 
   const subtitle: string = t("prayerSummary.subtitle")
-  const view: string = t("prayerSummary.view")
-  const read: string = t("prayerSummary.read")
+  const view: string = t("prayerSummary.viewAll")
+  const read: string = t("prayerSummary.readMore")
 
   const displayTitle: string = title ? title : t("prayerSummary.title")
 
