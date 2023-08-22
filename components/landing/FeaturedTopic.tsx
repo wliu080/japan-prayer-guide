@@ -15,8 +15,8 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
   const { t } = useTranslation("common")
 
   const subtitle: string = t("prayerSummary.subtitle")
-  const read: string = t("prayerSummary.read")
-  const view: string = t("prayerSummary.view")
+  const read: string = t("prayerSummary.readMore")
+  const view: string = t("prayerSummary.viewAll")
 
   const redirect = (location: string) => {
     window.location.replace(location)

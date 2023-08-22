@@ -33,17 +33,17 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const webpageTitle: string = homePageTranslation("webpageTitle")
   const heroHeading: string = homePageTranslation("heroHeading")
   const heroSubheading: string = homePageTranslation("heroSubheading")
-  const heroViewTopicsBtn: string = homePageTranslation("viewTopics")
-  const mainBlurb: string = homePageTranslation("mainBlurb")
+  const heroViewTopicsBtn: string = homePageTranslation("titleButton")
+  const introText1: string = homePageTranslation("introText1")
 
-  const invitationTitle: string = homePageTranslation("invitationTitle")
-  const invitationBlurb: string = homePageTranslation("invitationBlurb")
+  const introText2Subheading: string = homePageTranslation("introText2Subheading")
+  const introText2a: string = homePageTranslation("introText2a")
 
   const bibleVerse: string = homePageTranslation("bibleVerse")
   const bibleRef: string = homePageTranslation("bibleRef")
 
-  const wePray: string = homePageTranslation("wePray")
-  const callToAction: string = homePageTranslation("callToAction")
+  const introText2b: string = homePageTranslation("introText2b")
+  const callToAction: string = homePageTranslation("introText2bCallToAction")
 
   const featuredTopicTitle: string = homePageTranslation("featuredTopicTitle")
 
@@ -102,14 +102,14 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Main blurb */}
         <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
-          <p className="px-3 text-primary">{mainBlurb}</p>
+          <p className="px-3 text-primary">{introText1}</p>
         </Container>
 
         {/* Invitation to prayer */}
         <div className="home-invitation d-flex flex-column align-items-center w-100 position-relative">
           <Container>
-            <h1 className="text-center mt-5">{invitationTitle}</h1>
-            <p className="mt-4">{invitationBlurb}</p>
+            <h1 className="text-center mt-5">{introText2Subheading}</h1>
+            <p className="mt-4">{introText2a}</p>
           </Container>
           <Carousel
             controls={true}
@@ -140,7 +140,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4">
           <p className="w-100">
-            {wePray} <strong>{callToAction}</strong>
+            {introText2b} <strong>{callToAction}</strong>
           </p>
         </Container>
 

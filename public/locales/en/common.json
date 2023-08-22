@@ -11,8 +11,8 @@
   "prayerSummary": {
     "title": "Prayer Points",
     "subtitle": "Pray",
-    "read": "Learn more",
-    "view": "View all topics"
+    "readMore": "Learn more",
+    "viewAll": "View all topics"
   },
   "feedback": {
     "title": "Share your reflections with us! We'd love to hear it!",
