@@ -21,7 +21,7 @@ export default function Footer() {
     // mobile and large sizes
     <>
       {/* Small screens footer starts here */}
-      <div className="w-100 d-lg-none">
+      <div className="w-100 d-xl-none">
         <Container fluid className="bg-primary pt-3" data-testid="footer">
           <LanguageSwitcher />
           <Row className="d-flex justify-content-center mt-4">
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
       {/* Large screens footer starts here */}
       {/* Test ids need to be modified to stop duplicates */}
-      <div className="w-100 d-none d-lg-flex flex-column bg-primary align-items-center">
+      <div className="w-100 d-none d-xl-flex flex-column bg-primary align-items-center">
         <div className="footer-language w-75 border-bottom border-grey-6 py-4">
           <LanguageSwitcher />
         </div>

@@ -41,7 +41,7 @@ const ToggleHeader: React.FC = () => {
   }
 
   return (
-    <Navbar sticky="top" bg={bg} expand="lg" variant={variant}>
+    <Navbar sticky="top" bg={bg} expand="xl" variant={variant}>
       <Container>
         <Navbar.Brand href="/">
           <Image
@@ -64,20 +64,20 @@ const ToggleHeader: React.FC = () => {
                 Need a more extensibile way for future languages but for now this should do
               */}
               {i18n.language === "en" ? (
-                <NavDropdown title="English" className="d-none d-lg-block">
+                <NavDropdown title="English" className="d-none d-xl-block">
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("ja")}>
                     日本語
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (
-                <NavDropdown title="日本語" className="d-none d-lg-block">
+                <NavDropdown title="日本語" className="d-none d-xl-block">
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("en")}>
                     English
                   </NavDropdown.Item>
                 </NavDropdown>
               )}
             </Nav>
-            <Container className="d-lg-none text-center">
+            <Container className="d-xl-none text-center">
               <LanguageSwitcher />
               <Image
                 alt="Crane logo"
