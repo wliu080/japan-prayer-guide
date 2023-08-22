@@ -30,7 +30,10 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
 }
 
 const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
+<<<<<<< HEAD
   const { t, i18n } = useTranslation("common")
+=======
+>>>>>>> e6cd63d (potential solution for bold text w i18n)
   const { t: homePageTranslation } = useTranslation("home")
   const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
@@ -107,8 +110,13 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </div>
 
         {/* Main blurb */}
+<<<<<<< HEAD
         <Container fluid id="mainBlurbSection" className="px-1 px-md-4 py-5 home-main-blurb d-flex align-items-center">
           <p className="px-3 text-primary">{introText1}</p>
+=======
+        <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
+          <p className="px-3 text-primary" dangerouslySetInnerHTML={{ __html: introText1 }}></p>
+>>>>>>> e6cd63d (potential solution for bold text w i18n)
         </Container>
 
         {/* Bible Verse */}

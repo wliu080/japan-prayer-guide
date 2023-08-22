@@ -2,8 +2,13 @@
   "webpageTitle": "Beneath the Surface",
   "heroHeading": "pray for Japan",
   "heroSubheading": "30 ways to",
+<<<<<<< HEAD
   "titleButton": "View all topics",
   "introText1": "It has been almost 500 years since the name of Jesus was first proclaimed in Japan. Since then, the Japanese church has persevered through long periods of persecution and hardship. Today, less than one percent of Japan's population is Christian.",
+=======
+  "titleButton": "View All Topics",
+  "introText1": "<b>It has been almost 500 years</b> since the name of Jesus was first proclaimed in Japan. Since then, the Japanese church has persevered with great endurance. Today, <b>less than one percent</b> of Japan's population is Christian.",
+>>>>>>> e6cd63d (potential solution for bold text w i18n)
   "bibleVerse": "Look with your eyes, and hear with your ears, and set your heart upon all that I shall show you.",
   "bibleRef": "Ezekiel 40:4",
   "introText2Subheading": "Invitation to prayer",
