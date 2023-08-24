@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { ToggleHeader } from "../components/toggleHeader"
 import { Button, Carousel, CarouselItem, Col, Container, Image, Row } from "react-bootstrap"
-import { useTranslation } from "next-i18next"
+import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
 import Footer from "../components/footer"
@@ -110,21 +110,10 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </div>
 
         {/* Main blurb */}
-<<<<<<< HEAD
-        <Container fluid id="mainBlurbSection" className="px-1 px-md-4 py-5 home-main-blurb d-flex align-items-center">
-          <p className="px-3 text-primary">{introText1}</p>
-=======
         <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
-          <p className="px-3 text-primary" dangerouslySetInnerHTML={{ __html: introText1 }}></p>
->>>>>>> e6cd63d (potential solution for bold text w i18n)
-        </Container>
-
-        {/* Bible Verse */}
-        <Container className="home-verse-container d-flex flex-column w-100 mx-0 px-0">
-          <div className="d-flex flex-column w-100 bg-grey-7 px-4 py-4">
-            <h2 className="w-100 text-white text-center mt-5">{bibleVerse}</h2>
-            <h3 className="w-100 text-white mt-3 pb-4 text-center">{bibleRef}</h3>
-          </div>
+          <p className="px-3 text-primary">
+            <Trans t={homePageTranslation} i18nKey='introText1' components={{bold: <b />}}/>
+          </p>
         </Container>
 
         {/* Invitation to prayer */}
