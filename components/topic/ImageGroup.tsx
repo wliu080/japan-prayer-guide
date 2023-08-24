@@ -16,7 +16,7 @@ const ImageGroup = () => {
 
 const ImageGrid = () => {
   return (
-    <div className="w-100 d-flex flex-column gap-3 d-none d-lg-flex my-3">
+    <div className="w-100 d-flex flex-column gap-3 d-none d-md-flex my-3">
       <Row>
         <Col>
           <div className="placeholder-image"></div>
@@ -39,7 +39,7 @@ const ImageGrid = () => {
 
 const ImageCarousel = () => {
   return (
-    <Carousel id="image-carousel" className="w-100 d-lg-none" interval={null}>
+    <Carousel id="image-carousel" className="w-100 d-md-none" interval={null}>
       <Carousel.Item>
         <div className="placeholder-image"></div>
       </Carousel.Item>

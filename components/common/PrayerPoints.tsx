@@ -35,7 +35,7 @@ export default function PrayerPoints({
       className={"d-flex px-6" + (showSubtitle ? " justify-content-center" : " justify-content-start")}
       id="topic-prayer"
     >
-      <Card className="my-4 shadow d-lg-flex flex-lg-row">
+      <Card className="my-4 shadow d-md-flex flex-md-row">
         {/* temporary height for video, before we finalize videos */}
         {showImg && (
           <Card.Img className="h-100" variant="top" src="/bamboo.jpeg" style={{ maxWidth: "600px" }}></Card.Img>

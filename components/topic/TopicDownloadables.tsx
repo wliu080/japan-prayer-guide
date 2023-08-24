@@ -23,7 +23,7 @@ export default function TopicDownloadables({ links, title, labels, headers }: do
           {headers[0]}
         </a>
       </Container>
-      <Row xl={4} lg={2} className="g-3" data-testid={"topic-downloadables-links"}>
+      <Row xl={4} md={2} className="g-3" data-testid={"topic-downloadables-links"}>
         {labels.map((label, idx) => (
           <Col key={idx + label}>
             <Link href={links[idx]} className="text-decoration-none">
