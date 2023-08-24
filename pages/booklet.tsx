@@ -10,7 +10,6 @@ import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import SampleBookPageImage from "../public/sample book page.svg"
 import SampleBookPageImage2 from "../public/photos/booklet/Book - Slider 1 JP 3.png"
-import SampleBookPageImage3 from "../public/photos/booklet/BOOK_GIF_JP 4.png"
 import TranslationIcon from "../public/translationIcon.svg"
 import Footer from "../components/footer"
 import ImagePagination from "../components/image-pagination/ImagePagination"
@@ -77,8 +76,7 @@ const Booklet: React.FC = () => {
             src="/photos/booklet/BOOK_GIF_JP 4.png"
           />
         </Container>
-        <section className="purchase-section">
-          <Container className="text-center">
+          <Container className="purchase-section text-center">
             <div className="purchase-copy-header">{t("purchaseCopy")}</div>
             <PurchaseButtons />
             <Link href="https://amazon.com" target="_blank">
@@ -93,7 +91,6 @@ const Booklet: React.FC = () => {
               <p>{t("languageAvailability.text")}</p>
             </div>
           </Container>
-        </section>
         <Footer />
       </main>
     </div>
