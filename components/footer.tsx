@@ -107,7 +107,7 @@ export default function Footer() {
 }
 
 function LinksList({ additional }: { additional: string }) {
-  const { t } = useTranslation("common")
+  const { t, i18n } = useTranslation("common")
 
   const siteMapText = t("footer.title")
   const mapLink1Text = t("footer.link1")
@@ -119,19 +119,19 @@ function LinksList({ additional }: { additional: string }) {
   return (
     <div data-testid={"linksList" + additional} className="d-flex flex-column px-3 gap-0 text-white">
       <p className="m-1 fs-5 fw-bold">{siteMapText}</p>
-      <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink1Text}
       </Link>
-      <Link href="/topics/all" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/topics/all" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink2Text}
       </Link>
-      <Link href="/booklet" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/booklet" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink3Text}
       </Link>
-      <Link href="/download" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/download" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink4Text}
       </Link>
-      <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink5Text}
       </Link>
     </div>

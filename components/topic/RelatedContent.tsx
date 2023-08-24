@@ -4,6 +4,7 @@ import { Card, Container } from "react-bootstrap"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { useTranslation } from "react-i18next"
 
 interface relatedProps {
   topics: string[]
@@ -17,6 +18,7 @@ function SampleArrow(props: any) {
 }
 
 export default function RelatedContent({ topics, links, title }: relatedProps) {
+  const { i18n } = useTranslation("common")
   const responsive = [
     {
       breakpoint: 1300,
@@ -46,9 +48,9 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
         <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1">
           {title}
         </h1>
-        <a href={"/topics"} className="text-secondary d-none d-md-block">
+        <Link href={"/topics"} className="text-secondary d-none d-md-block" locale={i18n.language}>
           View all topics
-        </a>
+        </Link>
       </Container>
       <Slider
         dots={false}
@@ -62,7 +64,12 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
         prevArrow={<SampleArrow />}
       >
         {topics.map((topic, idx) => (
-          <Link href={links[idx]} key={idx + topic} className="d-flex flex-column align-items-center">
+          <Link
+            href={links[idx]}
+            key={idx + topic}
+            className="d-flex flex-column align-items-center"
+            locale={i18n.language}
+          >
             <Card style={{ width: "308px", height: "186px" }}>
               <Card.Body className="m-0 p-0">
                 <div className="w-100 bg-secondary" style={{ height: "138px" }}></div>
@@ -74,9 +81,9 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
           </Link>
         ))}
       </Slider>
-      <a href={"/topics"} className="align-self-center my-3 text-secondary d-md-none">
+      <Link href={"/topics"} className="align-self-center my-3 text-secondary d-md-none" locale={i18n.language}>
         View all topics
-      </a>
+      </Link>
     </Container>
   )
 }
