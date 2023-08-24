@@ -7,7 +7,10 @@ import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector
 import Footer from "../components/footer"
 import FeaturedTopic from "../components/landing/FeaturedTopic"
 import { IconContext } from "react-icons"
-import { RiMic2Fill, RiSlideshowLine, RiDonutChartFill, RiImageFill, RiFile3Line } from "react-icons/ri"
+import {
+  RiMic2Fill, RiSlideshowLine, RiDonutChartFill,
+  RiImageFill, RiFile3Line, RiInformationLine
+} from "react-icons/ri"
 import { FaPrayingHands } from "react-icons/fa"
 import DownloadLinkCard from "../components/landing/DownloadLinkCard"
 import { ReactNode } from "react"
@@ -55,7 +58,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const orderRegions: string[] = homePageTranslation("orderRegions", { returnObjects: true })
   const orderEnglish: string = homePageTranslation("orderEnglish")
   const orderJapan: string = homePageTranslation("orderJapan")
-  const preview: string = homePageTranslation("preview")
+  const orderWarning: string = homePageTranslation("orderWarning")
+  const orderBooklet: string = homePageTranslation("orderBooklet")
 
   const downloadTitle: string = homePageTranslation("downloadTitle")
   const downloadBlurb: string = homePageTranslation("downloadBlurb")
@@ -91,31 +95,37 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Hero banner section */}
         <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
           <Image alt="home page hero" src="/photos/home/hp_hero.png" className="home-hero" />
-          <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute">
-            <h2 className="text-white">{heroSubheading}</h2>
-            <h1 className="text-white">{heroHeading}</h1>
-            <Button href="/topics/all" className="text-white my-3 bg-secondary-5 border-secondary-5">
-              {heroViewTopicsBtn}
-            </Button>
+          <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute w-100">
+            <Container className="d-flex flex-column align-items-start w-100">
+              <h2 className="text-white">{heroSubheading}</h2>
+              <h1 className="text-white">{heroHeading}</h1>
+              <Button href="/topics/all" className="text-white my-3 bg-secondary-5 border-secondary-5">
+                {heroViewTopicsBtn}
+              </Button>
+            </Container>
           </div>
         </div>
 
         {/* Main blurb */}
-        <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
+        <Container fluid id="mainBlurbSection" className="px-1 px-md-4 py-5 home-main-blurb d-flex align-items-center">
           <p className="px-3 text-primary">{introText1}</p>
+        </Container>
+
+        {/* Bible Verse */}
+        <Container className="home-verse-container d-flex flex-column w-100 mx-0 px-0">
+          <div className="d-flex flex-column w-100 bg-grey-7 px-4 py-4">
+            <h2 className="w-100 text-white text-center mt-5">{bibleVerse}</h2>
+            <h3 className="w-100 text-white mt-3 pb-4 text-center">{bibleRef}</h3>
+          </div>
         </Container>
 
         {/* Invitation to prayer */}
         <div className="home-invitation d-flex flex-column align-items-center w-100 position-relative">
-          <Container>
-            <h1 className="text-center mt-5">{introText2Subheading}</h1>
-            <p className="mt-4">{introText2a}</p>
-          </Container>
           <Carousel
             controls={true}
             fade={true}
             interval={3000}
-            className="w-100 d-flex flex-column justify-content-center align-items-center"
+            className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
           >
             <CarouselItem className="w-100 d-flex justify-content-center">
               <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png" />
@@ -129,19 +139,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           </Carousel>
         </div>
 
-        {/* Bible Verse */}
-        <Container className="home-verse-container d-flex flex-column w-100 mx-0 px-0">
-          <div className="w-100" style={{ height: "90px" }}></div>
-          <div className="d-flex flex-column w-100 bg-grey-7 px-4">
-            <h2 className="w-100 text-white text-center mt-5">{bibleVerse}</h2>
-            <h3 className="w-100 text-white mt-3 pb-4 text-center">{bibleRef}</h3>
-          </div>
-        </Container>
-
-        <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4">
-          <p className="w-100">
-            {introText2b} <strong>{callToAction}</strong>
-          </p>
+        <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
+            <h1 className="text-center mt-5">{introText2Subheading}</h1>
+            <p className="mt-4">{introText2a}</p>
+            <p className="w-100 mt-3">
+              {introText2b} <strong>{callToAction}</strong>
+            </p>
         </Container>
 
         {/* Featured topic */}
@@ -167,8 +170,11 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Order snippet */}
         <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5">
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
-            <h1 className="text-grey-7 my-4 fw-bold">{orderTitle}</h1>
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4">
+            <div className="position-relative w-100 d-flex align-items-center flex-column">
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderTitle}</h1>
+              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
+            </div>
             <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
             <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
               {orderRegions.map((region) => (
@@ -177,10 +183,21 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </div>
               ))}
             </div>
-            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-3">{orderEnglish}</h3>
+            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4">{orderEnglish}</h3>
           </Container>
-          <h3 className="my-3 fs-5 text-secondary-5 fw-bold text-decoration-underline">{orderJapan}</h3>
-          <Button className="bg-white text-secondary-5 border-secondary-5 fw-bold fs-5">{preview}</Button>
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
+          <div className="position-relative w-100 d-flex align-items-center flex-column">
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
+              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
+            </div>
+            <h2 className="text-black fs-6 fst-italic mb-2 d-flex align-items-center gap-1">
+              <IconContext.Provider value={{size: '16px'}}>
+                <RiInformationLine/>
+              </IconContext.Provider>
+              {orderWarning}
+            </h2>
+            <Button className="bg-grey-2 text-secondary-5 border-secondary-5 fw-bold fs-5 mb-4">{orderBooklet}</Button>
+          </Container>
         </Container>
 
         {/* Downloads snippet */}
