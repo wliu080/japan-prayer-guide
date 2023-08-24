@@ -18,7 +18,7 @@ export default function PrayForJapan({ whyJapanHeading, whyJapanText, prayerCTAH
         </Container>
       </Container>
       <Container fluid id="prayerCTA" className="px-5 bg-info offset-remove-bottom">
-        <div id="placeholder-image" className="mb-4 p-3 h-xs-50 h-lg-100 offset-up">
+        <div id="placeholder-image" className="mb-4 p-3 h-xs-50 h-md-100 offset-up">
           temporary image placeholder
         </div>
         <Container
