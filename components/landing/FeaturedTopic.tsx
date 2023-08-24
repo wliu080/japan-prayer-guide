@@ -4,6 +4,7 @@ import { FaPrayingHands } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import Button from "react-bootstrap/Button"
 import { useTranslation } from "next-i18next"
+import { Image } from "react-bootstrap"
 
 interface Props {
   title: string
@@ -25,28 +26,29 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
   return (
     <Container className="d-flex justify-content-center">
       <Card className="my-4 shadow d-lg-flex flex-lg-row">
-        {/* temporary height for image, before we finalize images */}
         <Card.Img variant="top" src={featuredImg} className="home-feature-img" />
         <Card.Body className="p-4" style={{ maxWidth: "600px" }}>
-          <Card.Text className="featuredTopicTitle px-2 pb-2 fs-2 fw-bold border-bottom border-grey">{title}</Card.Text>
-          <Card.Text className="featuredTopicTitle d-flex align-items-center gap-2 text-secondary-5 fw-bold fs-3">
-            <IconContext.Provider value={{ size: "20px" }}>
+          <Card.Text className="featuredTopicTitle px-2 pb-2 fs-2 border-bottom border-grey">{title}</Card.Text>
+          <Card.Text className="featuredTopicSubtitle d-flex align-items-center gap-2 text-secondary-5">
+            {/* TODO: Icon still a little weird, come back to this later */}
+            {/* <IconContext.Provider value={{ size: "20px" }}>
               <FaPrayingHands></FaPrayingHands>
-            </IconContext.Provider>
+            </IconContext.Provider> */}
+            <Image alt="praying hands" src="/icons/prayer.png" style={{height: '20px'}}/>
             {subtitle}
           </Card.Text>
           <ul className="bullet-points">
             {prayerPoints.map((point: string, idx: number) => (
-              <li key={idx + point} className="my-3">
+              <li key={idx + point} className="my-2">
                 {point}
               </li>
             ))}
           </ul>
-          <Button className="w-100 mt-0 text-secondary-5 border-secondary-5 bg-white fw-bold" variant="primary">
+          <Button className="w-100 mt-3 mb-2 text-secondary-5 border-secondary-5 bg-white fw-bold feature-button" variant="primary">
             {read}
           </Button>
           <Card.Text
-            className="mt-3 w-100 mx-auto text-center text-decoration-underline text-secondary-5 fw-bold"
+            className="mt-3 w-100 mx-auto text-center text-decoration-underline text-secondary-5 fw-bold feature-view-all"
             style={{ cursor: "pointer" }}
             onClick={() => redirect("topics/all")}
           >
