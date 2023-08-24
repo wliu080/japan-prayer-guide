@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Card, Container, Row, Col, Image } from "react-bootstrap"
+import { useTranslation } from "react-i18next"
 
 interface TopicOverviewProps {
   title: string
@@ -9,6 +10,7 @@ interface TopicOverviewProps {
 }
 
 export const TopicOverviewSection = ({ title, links, labels, section }: TopicOverviewProps) => {
+  const { i18n } = useTranslation("common")
   return (
     <>
       <section>
@@ -22,7 +24,11 @@ export const TopicOverviewSection = ({ title, links, labels, section }: TopicOve
               if ((idx === 0 && section === "culture") || (idx === 2 && section === "church")) {
                 return (
                   <Col key={element + idx} className="d-flex justify-content-center px-0 px-sm-1 px-md-2">
-                    <Link href={`/topics/${links[idx].toLowerCase()}`} className="text-decoration-none">
+                    <Link
+                      href={`/topics/${links[idx].toLowerCase()}`}
+                      className="text-decoration-none"
+                      locale={i18n.language}
+                    >
                       <Card className="topic-nav-card mx-1 my-3">
                         <Image
                           src={`/photos/topic-nav/${section}/${links[idx]}.png`}
@@ -39,7 +45,7 @@ export const TopicOverviewSection = ({ title, links, labels, section }: TopicOve
               } else {
                 return (
                   <Col key={element + idx} className="d-flex justify-content-center px-0 px-sm-1 px-md-2">
-                    <Link href={""} className="text-decoration-none position-relative">
+                    <Link href={""} className="text-decoration-none position-relative" locale={i18n.language}>
                       <Card className="topic-nav-card mx-1 my-3">
                         <div
                           className="position-relative"

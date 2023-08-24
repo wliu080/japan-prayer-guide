@@ -214,7 +214,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           <h2 className="fw-normal w-100 text-center home-common-blurb">{downloadBlurb}</h2>
           <Container className="d-none d-xl-block">
             <IconContext.Provider value={{ size: "30px" }}>
-              <Row lg={6} className="w-100 my-4">
+              <Row xl={6} className="w-100 my-4">
                 {downloadList.map((downloadText, idx) => (
                   <Col key={idx + downloadText}>
                     <DownloadLinkCard downloadText={downloadText}>{iconList[idx]}</DownloadLinkCard>
