@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { ToggleHeader } from "../components/toggleHeader"
 import { Button, Carousel, CarouselItem, Col, Container, Image, Row } from "react-bootstrap"
-import { useTranslation } from "next-i18next"
+import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
 import Footer from "../components/footer"
@@ -101,7 +101,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Main blurb */}
         <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
-          <p className="px-3 text-primary" dangerouslySetInnerHTML={{ __html: introText1 }}></p>
+          <p className="px-3 text-primary">
+            <Trans t={homePageTranslation} i18nKey='introText1' components={{bold: <b />}}/>
+          </p>
         </Container>
 
         {/* Invitation to prayer */}
