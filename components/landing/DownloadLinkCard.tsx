@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ReactNode } from "react"
+import { useTranslation } from "react-i18next"
 
 interface DownloadLinkCardProps {
   downloadText: string
@@ -17,10 +18,12 @@ function Card({ text, children }: { text: string; children: ReactNode }) {
 }
 
 export default function DownloadLinkCard({ downloadText, downloadLink, children }: DownloadLinkCardProps) {
+  const { i18n } = useTranslation("common")
+
   return (
     <>
       {downloadLink ? (
-        <Link href={"/" + downloadLink} className="text-decoration-none">
+        <Link href={"/" + downloadLink} className="text-decoration-none" locale={i18n.language}>
           <Card text={downloadText}>{children}</Card>
         </Link>
       ) : (

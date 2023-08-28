@@ -90,7 +90,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Hero banner section */}
         <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
           <Image alt="home page hero" src="/photos/home/hp_hero.png" className="home-hero" />
-          <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute">
+          <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-xl-5 px-md-4 px-3 position-absolute">
             <h2 className="text-white">{heroSubheading}</h2>
             <h1 className="text-white">{heroHeading}</h1>
             <Button href="/topics/all" className="text-white my-3 bg-secondary-5 border-secondary-5">
@@ -198,7 +198,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           <h2 className="fw-normal w-100 text-center home-common-blurb">{downloadBlurb}</h2>
           <Container className="d-none d-xl-block">
             <IconContext.Provider value={{ size: "30px" }}>
-              <Row lg={6} className="w-100 my-4">
+              <Row xl={6} className="w-100 my-4">
                 {downloadList.map((downloadText, idx) => (
                   <Col key={idx + downloadText}>
                     <DownloadLinkCard downloadText={downloadText}>{iconList[idx]}</DownloadLinkCard>
