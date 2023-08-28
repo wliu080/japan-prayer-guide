@@ -24,7 +24,7 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
   }
 
   return (
-    <Container className="d-flex justify-content-center">
+    <Container className="d-flex justify-content-center featured-topic-container">
       <Card className="my-4 shadow d-md-flex flex-md-row">
         {/* temporary height for image, before we finalize images */}
         <Card.Img variant="top" src={featuredImg} className="home-feature-img" />
@@ -40,7 +40,7 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
           </Card.Text>
           <ul className="bullet-points">
             {prayerPoints.map((point: string, idx: number) => (
-              <li key={idx + point} className="my-2">
+              <li key={idx + point} className="my-2 bullet-point">
                 {point}
               </li>
             ))}

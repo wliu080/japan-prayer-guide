@@ -13,6 +13,7 @@
   "featuredTopicTitle": "Featured Topic",
   "purchaseTitle": "Get the prayer booklet",
   "purchaseBlurb": "The Beneath the Surface prayer guide was produced in collaboration with missionaries and leaders from 17 organizations in Japan. About 20,000 copies have been distributed around the world. It is also available in Japanese and a few other languages.",
+  "purchasePreview": "Preview the booklet",
   "orderTitle": "Order the English booklet",
   "orderBlurb": "Select your shipping destination",
   "orderRegions": ["North America", "Japan", "International"],
@@ -31,6 +32,6 @@
     "Prayer points"
   ],
   "comingSoon": "Coming soon",
-  "learnBlurb": "In 2020, OMF Japan and Pioneers Japan started making a concentrated effort to raise prayer for Japan's spiritual breakthrough. The first of those efforts was publishing the Beneath the Surface prayer guide.",
+  "learnBlurb": "In 2018, OMF Japan and Pioneers Japan started partnering together with a vision to raise prayer for spiritual breakthrough in Japan. The first fruit of this partnership was the publication of the Beneath the Surface prayer guide in 2020.",
   "learnMoreAbout": "Learn more about the prayer initiative"
 }
