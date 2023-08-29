@@ -110,7 +110,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Main blurb */}
         <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
-          <p className="px-3 text-primary">
+          <p className="px-3 text-primary py-4 py-md-5 mb-0">
             <Trans t={homePageTranslation} i18nKey='introText1' components={{bold: <b />}}/>
           </p>
         </Container>
@@ -145,7 +145,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
             <h1 className="text-center mt-5">{introText2Subheading}</h1>
-            <p className="mt-4">{introText2a}</p>
+            <p className="mt-4">
+              <Trans t={homePageTranslation} i18nKey='introText2a' components={{italic: <i />}}/>
+            </p>
             <p className="w-100 mt-3">
               {introText2b} <strong>{callToAction}</strong>
             </p>
@@ -168,7 +170,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           <Image alt="book-cover" src="/photos/home/hp_cover.png" className="mt-3 mx-3 shadow"/>
           <div className="w-100 align-items-center align-items-md-start d-flex flex-column purchase-text-container mx-2 me-md-5 ms-md-2">
             <h1 className="mt-5 mb-0">{purchaseTitle}</h1>
-            <p className="my-3 px-3 px-md-0">{purchaseBlurb}</p>
+            <p className="my-3 px-3 px-md-0">
+              <Trans t={homePageTranslation} i18nKey='purchaseBlurb' components={{italic: <i />}}/>
+            </p>
             <Link
               href={"/purchase"}
               locale={i18n.language}
@@ -248,7 +252,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             <Image alt="BTS Crane" src="/photos/home/hp_crane.png" className="home-logo-crane" />
             <Image alt="BTS Logo" src="/photos/home/hp_logo.png" className="home-logo-text" />
           </div>
-          <div className="home-common-blurb text-center text-white my-3 w-100">{learnBlurb}</div>
+          <div className="home-common-blurb text-center text-white my-3 w-100">
+            <Trans t={homePageTranslation} i18nKey='learnBlurb' components={{italic: <i />}}/>
+          </div>
           <Button className="fs-5 text-nowrap border-white px-4 py-2 text-white text-center bg-grey-7 mt-2 mb-4">
             {learnMoreAbout}
           </Button>
