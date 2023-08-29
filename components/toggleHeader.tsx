@@ -64,13 +64,13 @@ const ToggleHeader: React.FC = () => {
                 Need a more extensibile way for future languages but for now this should do
               */}
               {i18n.language === "en" ? (
-                <NavDropdown title="English" className="d-none d-xl-block">
+                <NavDropdown title="English" className="d-none d-xl-flex align-items-center">
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("ja")}>
                     日本語
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (
-                <NavDropdown title="日本語" className="d-none d-xl-block">
+                <NavDropdown title="日本語" className="d-none d-xl-flex align-items-center">
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("en")}>
                     English
                   </NavDropdown.Item>

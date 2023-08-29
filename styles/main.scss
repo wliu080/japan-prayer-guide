@@ -162,10 +162,9 @@ div.nav-item.dropdown {
 }
 
 .home-hero-text-group {
-  bottom: 104px;
-  max-width: 1128px;
-  @media screen and (min-width: 1600px) {
-    margin-left: 10%;
+  bottom: 170px;
+  .container {
+    max-width: 1128px;
   }
   h1 {
     font-family: $font-family-secondary;
@@ -184,48 +183,73 @@ div.nav-item.dropdown {
       font-size: 32px;
     }
     @include media-breakpoint-down(md) {
-      font-size: 32px;
+      font-size: 24px;
     }
   }
 }
 
 .home-main-blurb {
-  height: 320px;
   max-width: 1128px;
   font-size: 32px;
   font-family: $font-family-secondary;
   @include media-breakpoint-down(xxl) {
-    height: 248px;
     font-size: 24px;
   }
   @include media-breakpoint-down(md) {
-    height: 228px;
     font-size: 18px;
   }
 }
 
 .home-invitation {
-  height: 700px;
-  background-color: $grey-2;
-  @include media-breakpoint-down(xxl) {
-    height: 500px;
+
+  .carousel {
+    .carousel-indicators {
+      button {
+        background-color: white;
+        transition: none;
+        opacity: 0.7;
+      }
+      .active {
+        background-color: $secondary-5;
+        transition: none;
+        opacity: 0.7;
+      }
+    }
+    .carousel-indicators [data-bs-target] {
+      height: 5px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+      color: $secondary-5;
+      height: 30px;
+      width: 30px;
+      top: 50%;
+      border-radius: 50%;
+      background-color: $grey-2;
+    }
+    .carousel-control-next{
+      right: 10%;
+      @include media-breakpoint-down(md) {
+        right: 5%;
+      }
+    }
+    .carousel-control-prev {
+      left: 10%;
+      @include media-breakpoint-down(md) {
+        left: 5%;
+      }
+    }
+    .carousel-control-next-icon {
+      background-image: url('/icons/arrow-right-s-line.svg');
+    }
+    .carousel-control-prev-icon {
+      background-image: url('/icons/arrow-left-s-line.svg');
+    }
   }
-  @include media-breakpoint-down(md) {
-    height: 300px;
-  }
+
   .container {
     max-width: 900px;
   }
-  h1 {
-    font-family: $font-family-secondary;
-    font-size: 40px;
-    @include media-breakpoint-down(xxl) {
-      font-size: 32px;
-    }
-    @include media-breakpoint-down(md) {
-      font-size: 24px;
-    }
-  }
+
   p {
     font-size: 16px;
     @include media-breakpoint-down(xxl) {
@@ -242,7 +266,8 @@ div.nav-item.dropdown {
     max-height: 373px;
   }
   @include media-breakpoint-down(md) {
-    max-height: 178px;
+    max-height: none;
+    width: 95%;
   }
 }
 
@@ -250,15 +275,23 @@ div.nav-item.dropdown {
   max-width: none;
   h2 {
     font-family: $font-family-secondary;
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
+    font-weight: 300;
+    @include media-breakpoint-down(xl) {
+      font-size: 18px;
+    }
     @include media-breakpoint-down(md) {
       font-size: 16px;
     }
   }
   h3 {
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
+    letter-spacing: 1.8px;
+    @include media-breakpoint-down(xl) {
+      font-size: 16px;
+    }
     @include media-breakpoint-down(md) {
       font-size: 14px;
     }
@@ -267,11 +300,20 @@ div.nav-item.dropdown {
 
 .home-call-to-action {
   max-width: 900px;
-  height: 190px;
+  h1 {
+    font-family: $font-family-secondary;
+    font-size: 40px;
+    @include media-breakpoint-down(xxl) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
   p {
     font-size: 16px;
     @include media-breakpoint-down(md) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
@@ -291,16 +333,29 @@ div.nav-item.dropdown {
     height: auto;
     max-width: 600px;
     object-fit: cover;
-  }
-  .bullet-points {
-    font-size: 14px;
-    @include media-breakpoint-down(sm) {
-      font-size: 12px;
+    @include media-breakpoint-down(lg) {
+      max-width: 400px;
     }
+    @include media-breakpoint-down(md) {
+      max-width: 600px;
+    }
+  }
+  .bullet-point {
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+  }
+
+  .feature-button, .feature-view-all {
+    font-size: 14px;
   }
 }
 
 .home-purchase-section {
+  @include media-breakpoint-down(xl) {
+    max-width: none!important;
+  }
   .purchase-text-container {
     max-width: 558px;
   }
@@ -329,16 +384,36 @@ div.nav-item.dropdown {
       font-size: 12px;
     }
   }
+  a {
+    font-weight: 700;
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+  }
 }
 
 .home-order-section {
   max-width: 1130px;
   gap: 14px;
   h1 {
+    z-index: 2;
     font-family: $font-family-secondary;
-    font-size: 18px;
+    font-size: 24px;
+    width: fit-content!important;
+    font-weight: 700;
+    @include media-breakpoint-down(xl) {
+      font-size: 18px;
+    }
     @include media-breakpoint-down(md) {
       font-size: 16px;
+    }
+  }
+  .horizontal-bar {
+    height: 1px;
+    top: -35px;
+    @include media-breakpoint-down(md) {
+      top: -30px;
     }
   }
   .region {
@@ -348,9 +423,16 @@ div.nav-item.dropdown {
   }
 }
 
+.coming-soon-button {
+  @include media-breakpoint-up(md) {
+    width: auto!important;
+  }
+}
+
 .home-common-h1 {
   font-size: 40px;
   font-family: $font-family-secondary;
+  font-weight: 600;
   @include media-breakpoint-down(xl) {
     font-size: 32px;
   }
@@ -373,8 +455,36 @@ div.nav-item.dropdown {
   aspect-ratio: 1.69;
 }
 
+.home-logo-crane {
+  @include media-breakpoint-down(md) {
+    height: 72px
+  }
+}
+
+.home-logo-text {
+  @include media-breakpoint-down(md) {
+    height: 40px
+  }
+}
+
 .featuredTopicTitle {
   font-family: $font-family-secondary;
+  font-weight: 700;
+}
+
+.featuredTopicSubtitle {
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 16px;
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+}
+
+.featured-topic-container {
+  @include media-breakpoint-down(lg) {
+    max-width: none;
+  }
 }
 
 // About Page Classes

@@ -7,10 +7,14 @@ import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector
 import Footer from "../components/footer"
 import FeaturedTopic from "../components/landing/FeaturedTopic"
 import { IconContext } from "react-icons"
-import { RiMic2Fill, RiSlideshowLine, RiDonutChartFill, RiImageFill, RiFile3Line } from "react-icons/ri"
+import {
+  RiMic2Fill, RiSlideshowLine, RiDonutChartFill,
+  RiImageFill, RiFile3Line, RiInformationLine
+} from "react-icons/ri"
 import { FaPrayingHands } from "react-icons/fa"
 import DownloadLinkCard from "../components/landing/DownloadLinkCard"
 import { ReactNode } from "react"
+import Link from "next/link"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
   // schedule is from featured-topics.json
@@ -26,6 +30,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
 }
 
 const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
+  const { t, i18n } = useTranslation("common")
   const { t: homePageTranslation } = useTranslation("home")
   const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
@@ -48,13 +53,15 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
   const purchaseTitle: string = homePageTranslation("purchaseTitle")
   const purchaseBlurb: string = homePageTranslation("purchaseBlurb")
+  const purchasePreview: string = homePageTranslation("purchasePreview")
 
   const orderTitle: string = homePageTranslation("orderTitle")
   const orderBlurb: string = homePageTranslation("orderBlurb")
   const orderRegions: string[] = homePageTranslation("orderRegions", { returnObjects: true })
   const orderEnglish: string = homePageTranslation("orderEnglish")
   const orderJapan: string = homePageTranslation("orderJapan")
-  const preview: string = homePageTranslation("preview")
+  const orderWarning: string = homePageTranslation("orderWarning")
+  const orderBooklet: string = homePageTranslation("orderBooklet")
 
   const downloadTitle: string = homePageTranslation("downloadTitle")
   const downloadBlurb: string = homePageTranslation("downloadBlurb")
@@ -90,33 +97,39 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Hero banner section */}
         <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
           <Image alt="home page hero" src="/photos/home/hp_hero.png" className="home-hero" />
-          <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-xl-5 px-md-4 px-3 position-absolute">
-            <h2 className="text-white">{heroSubheading}</h2>
-            <h1 className="text-white">{heroHeading}</h1>
-            <Button href="/topics/all" className="text-white my-3 bg-secondary-5 border-secondary-5">
-              {heroViewTopicsBtn}
-            </Button>
+          <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute w-100">
+            <Container className="d-flex flex-column align-items-start w-100">
+              <h2 className="text-white">{heroSubheading}</h2>
+              <h1 className="text-white">{heroHeading}</h1>
+              <Button href="/topics/all" className="text-white my-3 bg-secondary-5 border-secondary-5">
+                {heroViewTopicsBtn}
+              </Button>
+            </Container>
           </div>
         </div>
 
         {/* Main blurb */}
         <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
-          <p className="px-3 text-primary">
+          <p className="px-3 text-primary py-4 py-md-5 mb-0">
             <Trans t={homePageTranslation} i18nKey='introText1' components={{bold: <b />}}/>
           </p>
         </Container>
 
+        {/* Bible Verse */}
+        <Container className="home-verse-container d-flex flex-column w-100 mx-0 px-0">
+          <div className="d-flex flex-column w-100 bg-grey-7 px-4 py-4">
+            <h2 className="w-100 text-white text-center mt-5">{bibleVerse}</h2>
+            <h3 className="w-100 text-white mt-3 pb-4 text-center">{bibleRef}</h3>
+          </div>
+        </Container>
+
         {/* Invitation to prayer */}
         <div className="home-invitation d-flex flex-column align-items-center w-100 position-relative">
-          <Container>
-            <h1 className="text-center mt-5">{introText2Subheading}</h1>
-            <p className="mt-4">{introText2a}</p>
-          </Container>
           <Carousel
             controls={true}
             fade={true}
             interval={3000}
-            className="w-100 d-flex flex-column justify-content-center align-items-center"
+            className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
           >
             <CarouselItem className="w-100 d-flex justify-content-center">
               <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png" />
@@ -130,19 +143,14 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           </Carousel>
         </div>
 
-        {/* Bible Verse */}
-        <Container className="home-verse-container d-flex flex-column w-100 mx-0 px-0">
-          <div className="w-100" style={{ height: "90px" }}></div>
-          <div className="d-flex flex-column w-100 bg-grey-7 px-4">
-            <h2 className="w-100 text-white text-center mt-5">{bibleVerse}</h2>
-            <h3 className="w-100 text-white mt-3 pb-4 text-center">{bibleRef}</h3>
-          </div>
-        </Container>
-
-        <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4">
-          <p className="w-100">
-            {introText2b} <strong>{callToAction}</strong>
-          </p>
+        <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
+            <h1 className="text-center mt-5">{introText2Subheading}</h1>
+            <p className="mt-4">
+              <Trans t={homePageTranslation} i18nKey='introText2a' components={{italic: <i />}}/>
+            </p>
+            <p className="w-100 mt-3">
+              {introText2b} <strong>{callToAction}</strong>
+            </p>
         </Container>
 
         {/* Featured topic */}
@@ -158,18 +166,30 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </Container>
 
         {/* Purchase snippet */}
-        <Container className="home-purchase-section p-5 d-flex align-items-center justify-content-center flex-column flex-sm-row">
-          <Image alt="book-cover" src="/photos/home/hp_cover.png" />
-          <div className="w-100 d-flex flex-column purchase-text-container mx-5">
-            <h1 className="mt-5">{purchaseTitle}</h1>
-            <p className="my-3">{purchaseBlurb}</p>
+        <Container className="home-purchase-section py-3 py-md-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
+          <Image alt="book-cover" src="/photos/home/hp_cover.png" className="mt-3 mx-3 shadow"/>
+          <div className="w-100 align-items-center align-items-md-start d-flex flex-column purchase-text-container mx-2 me-md-5 ms-md-2">
+            <h1 className="mt-5 mb-0">{purchaseTitle}</h1>
+            <p className="my-3 px-3 px-md-0">
+              <Trans t={homePageTranslation} i18nKey='purchaseBlurb' components={{italic: <i />}}/>
+            </p>
+            <Link
+              href={"/purchase"}
+              locale={i18n.language}
+              className="text-secondary-5 mb-2 mb-md-5"
+            >
+              {purchasePreview}
+            </Link>
           </div>
         </Container>
 
         {/* Order snippet */}
-        <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5">
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
-            <h1 className="text-grey-7 my-4 fw-bold">{orderTitle}</h1>
+        <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container">
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4">
+            <div className="position-relative w-100 d-flex align-items-center flex-column">
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderTitle}</h1>
+              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
+            </div>
             <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
             <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
               {orderRegions.map((region) => (
@@ -178,10 +198,21 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </div>
               ))}
             </div>
-            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-3">{orderEnglish}</h3>
+            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4">{orderEnglish}</h3>
           </Container>
-          <h3 className="my-3 fs-5 text-secondary-5 fw-bold text-decoration-underline">{orderJapan}</h3>
-          <Button className="bg-white text-secondary-5 border-secondary-5 fw-bold fs-5">{preview}</Button>
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
+          <div className="position-relative w-100 d-flex align-items-center flex-column">
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
+              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
+            </div>
+            <h2 className="text-black fs-6 fst-italic mb-2 d-flex align-items-center gap-1">
+              <IconContext.Provider value={{size: '16px'}}>
+                <RiInformationLine/>
+              </IconContext.Provider>
+              {orderWarning}
+            </h2>
+            <Button className="bg-grey-2 text-secondary-5 border-secondary-5 fw-bold fs-5 mb-4">{orderBooklet}</Button>
+          </Container>
         </Container>
 
         {/* Downloads snippet */}
@@ -191,11 +222,11 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         >
           {/* Placeholder for future image */}
           <div
-            className="mt-5"
+            className="mt-3"
             style={{ backgroundColor: "#BCC3CF", width: "100%", maxWidth: "442px", aspectRatio: 1.8 }}
           ></div>
           <h1 className="mt-4 w-100 text-center home-common-h1">{downloadTitle}</h1>
-          <h2 className="fw-normal w-100 text-center home-common-blurb">{downloadBlurb}</h2>
+          <h2 className="fw-normal w-100 text-center home-common-blurb my-2">{downloadBlurb}</h2>
           <Container className="d-none d-xl-block">
             <IconContext.Provider value={{ size: "30px" }}>
               <Row xl={6} className="w-100 my-4">
@@ -208,17 +239,23 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             </IconContext.Provider>
           </Container>
 
-          <Button className="bg-grey-4 text-white px-3 text-center border-0 mb-5">{comingSoon}</Button>
+          <Button
+            className="coming-soon-button bg-grey-4 text-white px-3 text-center border-0 mt-3 mb-3 w-100"
+          >
+            {comingSoon}
+          </Button>
         </div>
 
         {/* Beneath the Surface initiative - About snippet */}
-        <div className="w-100 bg-grey-7 p-5 d-flex flex-column align-items-center">
-          <div className="d-flex gap-3 align-items-center justify-content-center w-100">
-            <Image alt="BTS Crane" src="/photos/home/hp_crane.png" />
-            <Image alt="BTS Crane" src="/photos/home/hp_logo.png" />
+        <div className="w-100 bg-grey-7 p-3 p-md-5 d-flex flex-column align-items-center">
+          <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2">
+            <Image alt="BTS Crane" src="/photos/home/hp_crane.png" className="home-logo-crane" />
+            <Image alt="BTS Logo" src="/photos/home/hp_logo.png" className="home-logo-text" />
           </div>
-          <div className="home-common-blurb text-center text-white my-3 w-100">{learnBlurb}</div>
-          <Button className="fs-5 text-nowrap border-white px-4 py-2 text-white text-center bg-grey-7 mt-4">
+          <div className="home-common-blurb text-center text-white my-3 w-100">
+            <Trans t={homePageTranslation} i18nKey='learnBlurb' components={{italic: <i />}}/>
+          </div>
+          <Button className="fs-5 text-nowrap border-white px-4 py-2 text-white text-center bg-grey-7 mt-2 mb-4">
             {learnMoreAbout}
           </Button>
         </div>
