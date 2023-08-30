@@ -5,7 +5,8 @@ const PurchaseButtons: React.FC = () => {
   const { t } = useTranslation("booklet")
   return (
     <div>
-      <button onClick={() => window.open("https://google.com", "_blank")}>{t("buttons.usa")}</button>
+      <button onClick={() => window.open("https://google.com", "_blank")}>{t("buttons.northAmerica")}</button>
+      <button onClick={() => window.open("https://google.com", "_blank")}>{t("buttons.japan")}</button>
       <button onClick={() => window.open("https://google.com", "_blank")}>{t("buttons.international")}</button>
     </div>
   )

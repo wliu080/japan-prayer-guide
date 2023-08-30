@@ -21,7 +21,7 @@ $custom-colors: (
   "secondary-4": #74b6ff,
   "secondary-5": $secondary-5,
   "tertiary": #f46b59,
-  "grey-6": #727C96
+  "grey-6": #727c96,
 );
 // Merge custom to theme & regenerate
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -252,7 +252,7 @@ div.nav-item.dropdown {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    background-color: rgba(0,34,102, 0.3);
+    background-color: rgba(0, 34, 102, 0.3);
     background-size: cover;
     background-position: center;
     background-image: url("../public/photos/booklet/Rectangle 237.png");
@@ -322,7 +322,7 @@ div.nav-item.dropdown {
         font-weight: 700;
         line-height: 48px;
       }
-      .book-subtext {
+      .book-subheading {
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
@@ -332,7 +332,7 @@ div.nav-item.dropdown {
           line-height: 17px;
         }
       }
-      .book-subtitle {
+      .book-introText {
         font-family: Proxima Nova;
         font-size: 16px;
         font-weight: 400;
@@ -368,11 +368,11 @@ div.nav-item.dropdown {
 
   .purchase-section {
     padding: 30px;
-    background-color: #EBF0F6;
+    background-color: #ebf0f6;
 
     .purchase-copy-header {
-      color: #505C7C;
-      font-family: 'Aleo';
+      color: #505c7c;
+      font-family: "Aleo";
       font-size: 24px;
       font-weight: 700;
       line-height: 29px;
@@ -403,35 +403,6 @@ div.nav-item.dropdown {
       font-size: 16px;
       font-weight: 700;
       line-height: 19px;
-    }
-
-    .language-availability {
-      margin-top: 45px;
-      padding: 24px;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 17px;
-      letter-spacing: 0em;
-      text-align: left;
-
-      span {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        display: inline-flex;
-        line-height: 18px;
-        img {
-          height: 100%;
-          align-self: center;
-          padding: 4px;
-        }
-      }
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 632px;
-      border-radius: 10px;
-      background-color: #ffffff;
-      box-shadow: 0px 4px 4px 0px #00000040;
     }
   }
 }

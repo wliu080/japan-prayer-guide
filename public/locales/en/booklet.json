@@ -1,20 +1,21 @@
 {
   "webpageTitle": "Booklet",
   "heading": "Beneath the Surface",
-  "subtext": "30 ways to pray for Japan",
-  "subtitle": "The Beneath the Surface prayer guide was produced in collaboration with missionaries and leaders from 17 organizations. Since its first printing in 2020, near 20,000 copies have been distributed around the world. It is available in English, Japanese, and a few other languages.The guide presents 30 priority topics for prayer in Japanese culture and society, and church and mission. They represent some of this decade's greatest challenges and opportunities for the gospel in Japan.",
+  "subheading": "30 ways to pray for Japan",
+  "introText": [
+    "The Beneath the Surface prayer guide was produced in collaboration with missionaries and leaders from 17 Christian organizations. Since its first printing in 2020, about 20,000 copies have been distributed around the world. It is available in English, Japanese, and a few other languages.",
+    "This guide introduces 30 prayer topics for Japanese culture and society, and church and mission. The 30 topics chosen were prioritized by Japanese leaders as key opportunities and challenges for the gospel in Japan today."
+  ],
   "bookImageAlt": "Beneath the Surface Book Front Cover",
   "samplePageImageAlt": "Beneath the Surface Sample Page",
-  "purchase": "Purchase",
-  "purchaseCopy": "Order the English Booklet",
+  "purchaseHeading": "Order the English Booklet",
+  "purchaseText": "Select your shipping destination",
   "buttons": {
-    "international": "International [UK]",
-    "usa": "US & Canada"
+    "northAmerica": "North America",
+    "japan": "International [UK]",
+    "international": "US & Canada"
   },
   "order": "I would like to order an e-book version",
-  "languageAvailability": {
-    "header": "Don't see the book in your language?",
-    "text": "We're working on it! Information about the prayer guide in other languages will be posted as they become available.",
-    "translationIconAlt": "Translation Icon"
-  }
+  "languageAvailability": "Information about other languages coming soon",
+  "orderJapan": "Order the Japanese booklet"
 }
