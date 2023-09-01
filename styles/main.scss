@@ -871,3 +871,88 @@ div.nav-item.dropdown {
 .bottom-grey-border {
   border-bottom: 1px #d6dde6 solid;
 }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.body {
+  overflow-y: scroll;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  padding: 8px;
+  height: 40px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  cursor: pointer;
+  padding: 9px 8px;
+  border-radius: 100%;
+}
+
+.icon:hover{
+  background-color: #f0eded;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right a{
+  display: inline-block;
+  color: black;
+  font-weight: 400;
+}
+
+.header-right a span{
+  margin-left: 4px;
+}
+
+.image-gallery {
+  animation: moveUp .20s linear;
+}
+.gallery-container{
+  height: calc(100vh - 40px);
+  overflow-y: scroll;
+}
+
+.center{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+  margin-bottom: 10px !important;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100%); /* Start from the bottom of the container */
+  }
+  to {
+    transform: translateY(0); /* Move to the top of the container */
+  }
+}
