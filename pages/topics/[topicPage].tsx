@@ -76,9 +76,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
   // States
   const [selected, setSelected] = React.useState<string>("About")
 
-  const[modal, setModal] = useState(false);
-  const[lightBox, setLightBox] = useState(false);
-  const [index, setImage] = useState(0);
+  const[modal, setModal] = React.useState(false);
+  const[lightBox, setLightBox] = React.useState(false);
+  const [index, setImage] = React.useState(0);
  
   const images = [
     { src: "/images/0.png", title: "scrambled it to make a type specimen book" }, 
@@ -125,6 +125,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
         {/* Topic Nav Component */}
         <TopicNav selected={selected} setSelected={setSelected} labels={navLabels} />
 
+        {/* Gallery */}
       {modal? <Gallery 
         images={images}
         modal={modal}
