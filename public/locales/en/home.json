@@ -17,10 +17,10 @@
   "orderTitle": "Order the English booklet",
   "orderBlurb": "Select your shipping destination",
   "orderRegions": ["North America", "Japan", "International"],
-  "orderEnglish": "Order the e-book",
+  "orderEBook": "Order the e-book",
   "orderJapan": "Order the Japanese booklet",
   "orderWarning": "We're only able to ship these within Japan",
-  "orderBooklet": "Order the booklet",
+  "orderBooklet": "Fill out the order form",
   "downloadTitle": "Resources to download",
   "downloadBlurb": "The design, text, and media assets on our website are available to download or stream. Our heart is to share what we have so that many people will be equipped to pray for Japan.",
   "downloadList": [
