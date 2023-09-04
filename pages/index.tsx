@@ -8,8 +8,12 @@ import Footer from "../components/footer"
 import FeaturedTopic from "../components/landing/FeaturedTopic"
 import { IconContext } from "react-icons"
 import {
-  RiMic2Fill, RiSlideshowLine, RiDonutChartFill,
-  RiImageFill, RiFile3Line, RiInformationLine
+  RiMic2Fill,
+  RiSlideshowLine,
+  RiDonutChartFill,
+  RiImageFill,
+  RiFile3Line,
+  RiInformationLine,
 } from "react-icons/ri"
 import { FaPrayingHands } from "react-icons/fa"
 import DownloadLinkCard from "../components/landing/DownloadLinkCard"
@@ -52,13 +56,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const featuredTopicTitle: string = homePageTranslation("featuredTopicTitle")
 
   const purchaseTitle: string = homePageTranslation("purchaseTitle")
-  const purchaseBlurb: string = homePageTranslation("purchaseBlurb")
   const purchasePreview: string = homePageTranslation("purchasePreview")
 
   const orderTitle: string = homePageTranslation("orderTitle")
   const orderBlurb: string = homePageTranslation("orderBlurb")
   const orderRegions: string[] = homePageTranslation("orderRegions", { returnObjects: true })
-  const orderEnglish: string = homePageTranslation("orderEnglish")
+  const orderEBook: string = homePageTranslation("orderEBook")
   const orderJapan: string = homePageTranslation("orderJapan")
   const orderWarning: string = homePageTranslation("orderWarning")
   const orderBooklet: string = homePageTranslation("orderBooklet")
@@ -111,7 +114,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Main blurb */}
         <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
           <p className="px-3 text-primary py-4 py-md-5 mb-0">
-            <Trans t={homePageTranslation} i18nKey='introText1' components={{bold: <b />}}/>
+            <Trans t={homePageTranslation} i18nKey="introText1" components={{ bold: <b /> }} />
           </p>
         </Container>
 
@@ -144,13 +147,13 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </div>
 
         <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
-            <h1 className="text-center mt-5">{introText2Subheading}</h1>
-            <p className="mt-4">
-              <Trans t={homePageTranslation} i18nKey='introText2a' components={{italic: <i />}}/>
-            </p>
-            <p className="w-100 mt-3">
-              {introText2b} <strong>{callToAction}</strong>
-            </p>
+          <h1 className="text-center mt-5">{introText2Subheading}</h1>
+          <p className="mt-4">
+            <Trans t={homePageTranslation} i18nKey="introText2a" components={{ italic: <i /> }} />
+          </p>
+          <p className="w-100 mt-3">
+            {introText2b} <strong>{callToAction}</strong>
+          </p>
         </Container>
 
         {/* Featured topic */}
@@ -167,17 +170,13 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Purchase snippet */}
         <Container className="home-purchase-section py-3 py-md-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
-          <Image alt="book-cover" src="/photos/home/hp_cover.png" className="mt-3 mx-3 shadow"/>
+          <Image alt="book-cover" src="/photos/home/hp_cover.png" className="mt-3 mx-3 shadow" />
           <div className="w-100 align-items-center align-items-md-start d-flex flex-column purchase-text-container mx-2 me-md-5 ms-md-2">
             <h1 className="mt-5 mb-0">{purchaseTitle}</h1>
             <p className="my-3 px-3 px-md-0">
-              <Trans t={homePageTranslation} i18nKey='purchaseBlurb' components={{italic: <i />}}/>
+              <Trans t={homePageTranslation} i18nKey="purchaseBlurb" components={{ italic: <i /> }} />
             </p>
-            <Link
-              href={"/purchase"}
-              locale={i18n.language}
-              className="text-secondary-5 mb-2 mb-md-5"
-            >
+            <Link href={"/purchase"} locale={i18n.language} className="text-secondary-5 mb-2 mb-md-5">
               {purchasePreview}
             </Link>
           </div>
@@ -198,16 +197,16 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </div>
               ))}
             </div>
-            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4">{orderEnglish}</h3>
+            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4">{orderEBook}</h3>
           </Container>
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
-          <div className="position-relative w-100 d-flex align-items-center flex-column">
+            <div className="position-relative w-100 d-flex align-items-center flex-column">
               <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
               <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
             </div>
             <h2 className="text-black fs-6 fst-italic mb-2 d-flex align-items-center gap-1">
-              <IconContext.Provider value={{size: '16px'}}>
-                <RiInformationLine/>
+              <IconContext.Provider value={{ size: "16px" }}>
+                <RiInformationLine />
               </IconContext.Provider>
               {orderWarning}
             </h2>
@@ -239,9 +238,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             </IconContext.Provider>
           </Container>
 
-          <Button
-            className="coming-soon-button bg-grey-4 text-white px-3 text-center border-0 mt-3 mb-3 w-100"
-          >
+          <Button className="coming-soon-button bg-grey-4 text-white px-3 text-center border-0 mt-3 mb-3 w-100">
             {comingSoon}
           </Button>
         </div>
@@ -253,7 +250,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             <Image alt="BTS Logo" src="/photos/home/hp_logo.png" className="home-logo-text" />
           </div>
           <div className="home-common-blurb text-center text-white my-3 w-100">
-            <Trans t={homePageTranslation} i18nKey='learnBlurb' components={{italic: <i />}}/>
+            <Trans t={homePageTranslation} i18nKey="learnBlurb" components={{ italic: <i /> }} />
           </div>
           <Button className="fs-5 text-nowrap border-white px-4 py-2 text-white text-center bg-grey-7 mt-2 mb-4">
             {learnMoreAbout}
