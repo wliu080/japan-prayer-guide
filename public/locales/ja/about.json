@@ -1,8 +1,7 @@
 {
   "webpageTitle": "活動紹介",
-  "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
-  "heroHeader": "祈りの働きについて",
-  "heroSubheader": "",
+  "heroSubheader": "祈りの",
+  "heroHeader": "働きについて",
   "introTitle": "日本への関心の高まり",
   "introBlurb": [
     "およそ30年間、来日する宣教師の数は減り続けていましたが、2010年代より日本での神の働きへの関心の再び高まり始めました。それ以降、宣教機関では世界中から日本への問い合わせが増え続けています。",
@@ -16,54 +15,8 @@
   "inviteTitle": "祈りへの招き",
   "inviteBlurb": "私たちは、日本のために祈ってくださる多くの方々、宣教師の方々とともに、福音が、そして神の御国が、この地で大きく前進するのを見たいと切に願っています。そのためには、熱心な信仰の祈りが必要であると信じます。",
   "callToAction": "この祈りに、あなたも加わりませんか？",
-  "who": {
-    "title": "Who are we?",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla."
-  },
-  "mission": {
-    "title": "Our Mission",
-    "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-    ]
-  },
-  "vision": {
-    "title": "Our Vision",
-    "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-    ]
-  },
   "bible": {
     "passageLocation": "第一ヨハネ5:14-15",
     "content": "何事でも神のみこころにしたがって願うなら、神は聞いてくださるということ、これこそ神に対して私たちが抱いている確信です。私たちが願うことは何でも神が聞いてくださると分かるなら、私たちは、神に願い求めたことをすでに手にしていると分かります。"
-  },
-  "why": {
-    "title": "Why the name 'Beneath the surface?'",
-    "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-    ]
-  },
-  "team": {
-    "title": "Meet our team",
-    "content1": {
-      "title": "Written by",
-      "number": "35+",
-      "subtext": "Missionaries & Japanese Christian leaders"
-    },
-    "content2": {
-      "title": "A collaboration from",
-      "number": "17",
-      "subtext": "Organizations"
-    },
-    "content3": {
-      "title": "This website is created and built by",
-      "number": "9+",
-      "subtext": "Servants of the Church"
-    }
-  },
-  "partners": "Our missionary organization partners"
+  }
 }
