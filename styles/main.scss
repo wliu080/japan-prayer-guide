@@ -242,7 +242,7 @@ div.nav-item.dropdown {
 }
 
 // Purchase page classes
-#purchase {
+#booklet {
   .book-description {
     display: flex;
     flex-direction: row;
@@ -366,6 +366,16 @@ div.nav-item.dropdown {
     }
   }
 
+  .purchase-wrapper {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
   .purchase-section {
     padding: 30px;
     background-color: #ebf0f6;
@@ -403,6 +413,35 @@ div.nav-item.dropdown {
       font-size: 16px;
       font-weight: 700;
       line-height: 19px;
+    }
+  }
+
+  .redirect-section {
+    height: 21rem;
+    @include media-breakpoint-up(md) {
+      height: 48rem;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 25rem;
+    }
+
+    background-image: url("../public/photos/booklet/book_prayer_section.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 133%;
+
+    h1 {
+      font-family: $font-family-secondary;
+      font-size: 18px;
+      padding-bottom: 1rem;
+
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 32px;
+        padding-bottom: 1.5rem;
+      }
     }
   }
 }

@@ -3,7 +3,7 @@ import Link from "next/link"
 import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
 import { PurchaseButtons } from "../components/purchase/PurchaseButtons"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
@@ -36,7 +36,7 @@ const Booklet: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ToggleHeader />
-      <main id="purchase">
+      <main id="booklet">
         <div className="w-100 book-description position-relative">
           <Container>
             <Row md={1} xl={2}>
@@ -81,24 +81,34 @@ const Booklet: React.FC = () => {
         <Container>
           <BootstrapImage className="w-100 px-10" src="/photos/booklet/BOOK_GIF_JP 4.png" />
         </Container>
-        <Container className="purchase-section text-center">
-          <div className="purchase-copy-header">{t("purchaseHeading")}</div>
-          <div>{t("purchaseText")}</div>
-          <PurchaseButtons />
-          <Link href="https://amazon.com" target="_blank">
-            {t("order")}
-          </Link>
+        <Container className="purchase-wrapper text-center">
+          <Container className="purchase-section">
+            <div className="purchase-copy-header">{t("purchaseHeading")}</div>
+            <div>{t("purchaseText")}</div>
+            <PurchaseButtons />
+            <Link href="https://amazon.com" target="_blank">
+              {t("order")}
+            </Link>
 
-          <div className="language-availability">
-            <span>
-              <GrCircleInformation></GrCircleInformation>
-            </span>
-            <i>{t("languageAvailability")}</i>
-          </div>
+            <div className="language-availability">
+              <span>
+                <GrCircleInformation></GrCircleInformation>
+              </span>
+              <i>{t("languageAvailability")}</i>
+            </div>
+          </Container>
+          <Link href="https://amazon.com" target="_blank">
+            {t("orderJapan")}
+          </Link>
         </Container>
-        <Link href="https://amazon.com" target="_blank">
-          {t("orderJapan")}
-        </Link>
+        <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
+          <Container className="text-center">
+            <h1>{t("prayerRedirectHeading")}</h1>
+            <Button href="/about" className="text-white">
+              {t("prayerRedirectButtonText")}
+            </Button>
+          </Container>
+        </section>
         <Footer />
       </main>
     </div>

@@ -12,10 +12,12 @@
   "purchaseText": "Select your shipping destination",
   "buttons": {
     "northAmerica": "North America",
-    "japan": "International [UK]",
-    "international": "US & Canada"
+    "japan": "Japan",
+    "international": "International"
   },
-  "order": "I would like to order an e-book version",
+  "order": "Order the e-book",
   "languageAvailability": "Information about other languages coming soon",
-  "orderJapan": "Order the Japanese booklet"
+  "orderJapan": "Order the Japanese booklet",
+  "prayerRedirectHeading": "Prayer topics",
+  "prayerRedirectButtonText": "View all topics"
 }
