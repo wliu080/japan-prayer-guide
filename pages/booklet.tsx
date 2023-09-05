@@ -5,7 +5,7 @@ import { ToggleHeader } from "../components/toggleHeader"
 import { PurchaseButtons } from "../components/purchase/PurchaseButtons"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
-import { useTranslation } from "next-i18next"
+import { i18n, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import SampleBookPageImage from "../public/sample book page.svg"
 import SampleBookPageImage2 from "../public/photos/booklet/Book - Slider 1 JP 3.png"
@@ -24,7 +24,7 @@ export async function getStaticProps({ locale }: any) {
 }
 
 const Booklet: React.FC = () => {
-  const { t } = useTranslation("booklet")
+  const { t, i18n } = useTranslation("booklet")
   const introTextParagraphs: string[] = t("introText", { returnObjects: true })
 
   return (
@@ -82,31 +82,38 @@ const Booklet: React.FC = () => {
           <BootstrapImage className="w-100 px-10" src="/photos/booklet/BOOK_GIF_JP 4.png" />
         </Container>
         <Container className="purchase-wrapper text-center">
-          <Container className="purchase-section">
-            <div className="purchase-copy-header">{t("purchaseHeading")}</div>
+          <Container className="purchase-section mb-4">
+            <Container className="purchase-header-block d-flex justify-content-center">
+              <div className="inline-hr"></div>
+              <div className="purchase-copy-header mx-4">{t("purchaseHeading")}</div>
+              <div className="inline-hr"></div>
+            </Container>
             <div>{t("purchaseText")}</div>
             <PurchaseButtons />
-            <Link href="https://amazon.com" target="_blank">
-              {t("order")}
+            <Link href="https://www.amazon.com/dp/B099KSSY79" target="_blank">
+              {t("orderEBook")}
             </Link>
 
             <div className="language-availability">
-              <span>
+              <span className="me-1">
                 <GrCircleInformation></GrCircleInformation>
               </span>
               <i>{t("languageAvailability")}</i>
             </div>
           </Container>
-          <Link href="https://amazon.com" target="_blank">
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+            target="_blank"
+          >
             {t("orderJapan")}
           </Link>
         </Container>
         <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
           <Container className="text-center">
             <h1>{t("prayerRedirectHeading")}</h1>
-            <Button href="/about" className="text-white">
-              {t("prayerRedirectButtonText")}
-            </Button>
+            <Link href="/topics/all" locale={i18n.language}>
+              <Button className="text-white">{t("prayerRedirectButtonText")}</Button>
+            </Link>
           </Container>
         </section>
         <Footer />

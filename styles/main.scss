@@ -345,6 +345,19 @@ div.nav-item.dropdown {
       padding-top: 4rem;
       padding-bottom: 4rem;
     }
+
+    a {
+      font-weight: 700;
+      line-height: 19px;
+
+      font-size: 0.875rem;
+      @include media-breakpoint-up(md) {
+        font-size: 0.75rem;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 1rem;
+      }
+    }
   }
 
   .purchase-section {
@@ -354,18 +367,25 @@ div.nav-item.dropdown {
     .purchase-copy-header {
       color: $grey-7;
       font-family: $font-family-secondary;
-      font-size: 24px;
       font-weight: 700;
       line-height: 29px;
       letter-spacing: 0em;
+
+      font-size: 16px;
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 24px;
+      }
     }
 
     button {
-      margin-top: 24px;
       background-color: $secondary-5;
       color: #ffffff;
       height: 40px;
-      width: 308px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
       border-radius: 4px;
       border: unset;
       font-size: 14px;
@@ -373,18 +393,48 @@ div.nav-item.dropdown {
       line-height: 17px;
       letter-spacing: 0em;
       text-align: center;
-      margin-bottom: 30px;
+      margin-top: 24px;
+      margin-bottom: 2rem;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 1rem;
+        margin-bottom: 0px;
+
+        &:last-child {
+          margin-bottom: 1.5rem;
+        }
+      }
 
       &:nth-child(2) {
-        margin-left: 16px;
+        @include media-breakpoint-up(md) {
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
+        }
       }
     }
 
-    a {
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 19px;
+    .language-availability {
+      padding-top: 2rem;
     }
+  }
+
+  .inline-hr {
+    width: 2.9rem;
+    @include media-breakpoint-up(md) {
+      width: 10.7rem;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 23.4rem;
+    }
+
+    margin: 1rem 0;
+    color: $grey-7;
+    border: 0;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-top-color: currentcolor;
+    border-top: 1px solid;
+    opacity: 0.25;
   }
 
   .redirect-section {

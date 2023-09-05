@@ -15,7 +15,7 @@
     "japan": "日本",
     "international": "その他"
   },
-  "order": "英語の eBook を注文する",
+  "orderEBook": "英語の eBook を注文する",
   "languageAvailability": "Information about other languages coming soon",
   "orderJapan": "日本語の冊子を注文する",
   "prayerRedirectHeading": "祈りのテーマ",
