@@ -10,6 +10,9 @@
         "test": "jest"
     },
     "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@mui/material": "^5.14.7",
         "@next/font": "13.1.2",
         "@types/react-slick": "^0.23.10",
         "bootstrap": "^5.2.3",
@@ -23,7 +26,9 @@
         "react-i18next": "^12.1.5",
         "react-icons": "^4.7.1",
         "react-markdown": "^8.0.4",
+        "react-modal": "^3.16.1",
         "react-slick": "^0.29.0",
+        "react-transition-group": "^4.4.5",
         "sass": "^1.57.1",
         "slick-carousel": "^1.8.1"
     },

@@ -14,7 +14,10 @@ import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
 import PrayerPoints from "../../components/common/PrayerPoints"
 import Gallery from '../../components/Gallery';
+import Modal from '../../components/Modal';
+import LightBox from '../../components/LightBox';
 import { images } from '../../lib/data';
+import NestedModal from "../../components/NestedModal/NestedModal"
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getTopicPageIds()
@@ -76,31 +79,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
   // States
   const [selected, setSelected] = React.useState<string>("About")
 
-  const[modal, setModal] = React.useState(false);
-  const[lightBox, setLightBox] = React.useState(false);
-  const [index, setImage] = React.useState(0);
- 
-  const images = [
-    { src: "/images/0.png", title: "scrambled it to make a type specimen book" }, 
-    { src: "/images/1.png", title: "now use Lorem Ipsum as their default model text" }, 
-    { src: "/images/2.png", title: "Various versions have evolved over the years" }, 
-    { src: "/images/3.png", title: "Lorem Ipsum available" }, 
-    { src: "/images/4.png", title: "you need to be sure there" }, 
-    { src: "/images/5.png", title: "making this the first true generator on the Internet" }, 
-    { src: "/images/3.png", title: "look even slightly believable" }, 
-    { src: "/images/2.png", title: "Various versions have evolved" }, 
-    { src: "/images/4.png", title: "Ipsum as their default model tex" }, 
-    { src: "/images/0.png", title: "scrambled it to make a type" }, 
-    { src: "/images/5.png", title: "making this the first true" }, 
-    { src: "/images/1.png", title: "Various versions have evolved" }, 
-    { src: "/images/3.png", title: "making this the first true" }, 
-    { src: "/images/0.png", title: "scrambled it to make a type" }, 
-    { src: "/images/1.png", title: "Various versions have evolved" }, 
-    { src: "/images/2.png", title: "Ipsum as their default model tex" }, 
-    { src: "/images/4.png", title: "making this the first true" }, 
-    { src: "/images/5.png", title: "scrambled it to make a type" }
-]
-
   return (
     <>
       <Head>
@@ -125,33 +103,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
         {/* Topic Nav Component */}
         <TopicNav selected={selected} setSelected={setSelected} labels={navLabels} />
 
-        {/* Gallery */}
-      {modal? <Gallery 
-        images={images}
-        modal={modal}
-        setModal={setModal}
-        index={index}
-        setImage={setImage}
-        lightBox={lightBox}
-        setLightBox={setLightBox}
-      />: (
-        <div className="body mt-5">
-          <div className="container">
-            <div className="gallery">
-            {
-                images.splice(0, 4).map((item, index)=><img 
-                key={index}
-                src={item.src} 
-                style={{width: '100%', cursor: 'pointer', marginBottom: 10}}
-                onClick={()=>setModal(true)}
-                alt="logo" 
-            />)
-            }
-            </div>
-          </div>
-        </div>
-        
-      )}
+        <NestedModal />
 
         {/* Video/Reel Placeholder */}
         <Container className="py-5" id="topic-about">
