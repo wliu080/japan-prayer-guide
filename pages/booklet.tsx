@@ -5,7 +5,7 @@ import { ToggleHeader } from "../components/toggleHeader"
 import { PurchaseButtons } from "../components/purchase/PurchaseButtons"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
-import { i18n, useTranslation } from "next-i18next"
+import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import SampleBookPageImage from "../public/sample book page.svg"
 import SampleBookPageImage2 from "../public/photos/booklet/Book - Slider 1 JP 3.png"
@@ -39,8 +39,8 @@ const Booklet: React.FC = () => {
       <main id="booklet">
         <div className="w-100 book-description position-relative">
           <Container>
-            <Row md={1} xl={2}>
-              <Col>
+            <Row xs={1} sm={1} md={1} xl={2}>
+              <Col className="align-items-center">
                 <div className="book-image">
                   <BootstrapImage
                     className="book-front-cover"
@@ -51,7 +51,7 @@ const Booklet: React.FC = () => {
               </Col>
               <Col className="d-flex align-items-center">
                 <div className="book-text">
-                  <h1 className="display-1">
+                  <h1>
                     <i>{t("heading")}</i>
                   </h1>
                   <p className="book-subheading">
@@ -81,7 +81,7 @@ const Booklet: React.FC = () => {
         <Container>
           <BootstrapImage className="w-100 px-10" src="/photos/booklet/BOOK_GIF_JP 4.png" />
         </Container>
-        <Container className="purchase-wrapper text-center">
+        <Container fluid className="purchase-wrapper text-center">
           <Container className="purchase-section mb-4">
             <Container className="purchase-header-block d-flex justify-content-center">
               <div className="inline-hr"></div>

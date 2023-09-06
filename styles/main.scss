@@ -234,7 +234,6 @@ div.nav-item.dropdown {
 }
 
 .bar-display {
-  cursor: pointer;
   display: inline-block;
   transition: background-color 0.3s ease;
   margin: 10px 2px;
@@ -262,23 +261,30 @@ div.nav-item.dropdown {
     text-align: center;
     padding-bottom: 100px;
     align-items: center;
-    @include media-breakpoint-down(md) {
-      justify-content: center;
-      text-align: center;
-    }
 
     .book-image {
-      max-width: 550px;
       .book-front-cover {
         flex-grow: 1;
         max-width: 100%;
         max-height: 100%;
         padding-top: 60px;
+        @include media-breakpoint-down(md) {
+          max-height: 500px;
+        }
+        @include media-breakpoint-down(xl) {
+          max-height: 650px;
+        }
       }
     }
     .book-text {
       @include media-breakpoint-down(md) {
-        padding-top: unset;
+        padding-top: 35px;
+        padding-left: unset;
+        text-align: center;
+      }
+
+      @include media-breakpoint-down(xl) {
+        padding-top: 30px;
         padding-left: unset;
         text-align: center;
       }
@@ -292,14 +298,26 @@ div.nav-item.dropdown {
         font-size: 40px;
         font-weight: 700;
         line-height: 48px;
+        @include media-breakpoint-down(xl) {
+          font-size: 32px;
+          line-height: 38px;
+        }
+
+        @include media-breakpoint-down(md) {
+          font-size: 24px;
+          line-height: 28px;
+        }
       }
       .book-subheading {
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
+        @include media-breakpoint-down(xl) {
+          font-size: 18px;
+          line-height: 21.6px;
+        }
         @include media-breakpoint-down(md) {
-          font-size: 14px;
-          font-weight: 700;
+          font-size: 16px;
           line-height: 17px;
         }
       }
@@ -311,8 +329,7 @@ div.nav-item.dropdown {
         @include media-breakpoint-down(md) {
           font-size: 14px;
           font-weight: 400;
-          line-height: 17px;
-          letter-spacing: 0em;
+          line-height: 21px;
         }
       }
     }
@@ -360,6 +377,10 @@ div.nav-item.dropdown {
     }
   }
 
+  .book-sample {
+    max-width: 1000px;
+  }
+
   .purchase-section {
     padding: 30px;
     background-color: $grey-2;
@@ -380,8 +401,17 @@ div.nav-item.dropdown {
       }
     }
 
+    .shipping-subtext {
+      color: #002266;
+      font-family: 'Proxima Nova';
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.92px;
+    }
+
     button {
       background-color: $secondary-5;
+      margin-top: 24px;
       color: #ffffff;
       height: 40px;
       padding-left: 1.5rem;
@@ -405,10 +435,9 @@ div.nav-item.dropdown {
         }
       }
 
-      &:nth-child(2) {
+      &:nth-child(2), &:nth-child(3) {
         @include media-breakpoint-up(md) {
           margin-left: 1.5rem;
-          margin-right: 1.5rem;
         }
       }
     }
@@ -456,13 +485,18 @@ div.nav-item.dropdown {
       font-size: 18px;
       padding-bottom: 1rem;
 
-      @include media-breakpoint-up(md) {
-        font-size: 24px;
-      }
       @include media-breakpoint-up(xl) {
-        font-size: 32px;
         padding-bottom: 1.5rem;
       }
+      font-family: $font-family-secondary;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    button {
+      background-color: $secondary-5;
     }
   }
 }
