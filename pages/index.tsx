@@ -127,23 +127,25 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </Container>
 
         {/* Invitation to prayer */}
-        <div className="home-invitation d-flex flex-column align-items-center w-100 position-relative">
-          <Carousel
-            controls={true}
-            fade={true}
-            interval={3000}
-            className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
-          >
-            <CarouselItem className="w-100 d-flex justify-content-center">
-              <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png" />
-            </CarouselItem>
-            <CarouselItem className="w-100 d-flex justify-content-center">
-              <Image className="home-carousel-image" alt="hero image 2" src="/photos/home/hp_slider-2.png" />
-            </CarouselItem>
-            <CarouselItem className="w-100 d-flex justify-content-center">
-              <Image className="home-carousel-image" alt="hero image 3" src="/photos/home/hp_slider-3.png" />
-            </CarouselItem>
-          </Carousel>
+        <div className="home-invitation d-flex flex-column align-items-center position-relative w-100">
+          <div className="home-invite-inner mb-0 mb-md-5">
+            <Carousel
+              controls={true}
+              fade={true}
+              interval={3000}
+              className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
+            >
+              <CarouselItem className="w-100 d-flex justify-content-center">
+                <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png" />
+              </CarouselItem>
+              <CarouselItem className="w-100 d-flex justify-content-center">
+                <Image className="home-carousel-image" alt="hero image 2" src="/photos/home/hp_slider-2.png" />
+              </CarouselItem>
+              <CarouselItem className="w-100 d-flex justify-content-center">
+                <Image className="home-carousel-image" alt="hero image 3" src="/photos/home/hp_slider-3.png" />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </div>
 
         <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
