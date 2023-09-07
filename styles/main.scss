@@ -81,9 +81,14 @@ $grid-breakpoints: (
   }
 }
 
+div.nav-item {
+  font-family: $font-family-secondary;
+}
+
 div.nav-item.dropdown {
   border-radius: 0.25rem;
   border: 1px solid $secondary-5;
+  font-family: $font-family-secondary;
 }
 
 #language-switch a {
