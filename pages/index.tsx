@@ -33,8 +33,13 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
   }
 }
 
+interface OrderRegionType {
+  text: string
+  url: string
+}
+
 const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
-  const { t, i18n } = useTranslation("common")
+  const { i18n } = useTranslation("common")
   const { t: homePageTranslation } = useTranslation("home")
   const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
@@ -42,10 +47,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const heroHeading: string = homePageTranslation("heroHeading")
   const heroSubheading: string = homePageTranslation("heroSubheading")
   const heroViewTopicsBtn: string = homePageTranslation("titleButton")
-  const introText1: string = homePageTranslation("introText1")
 
   const introText2Subheading: string = homePageTranslation("introText2Subheading")
-  const introText2a: string = homePageTranslation("introText2a")
 
   const bibleVerse: string = homePageTranslation("bibleVerse")
   const bibleRef: string = homePageTranslation("bibleRef")
@@ -60,7 +63,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
   const orderTitle: string = homePageTranslation("orderTitle")
   const orderBlurb: string = homePageTranslation("orderBlurb")
-  const orderRegions: string[] = homePageTranslation("orderRegions", { returnObjects: true })
+  const orderRegions: OrderRegionType[] = homePageTranslation("orderRegions", { returnObjects: true })
   const orderEBook: string = homePageTranslation("orderEBook")
   const orderJapan: string = homePageTranslation("orderJapan")
   const orderWarning: string = homePageTranslation("orderWarning")
@@ -74,7 +77,6 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const prayerPoints: string[] = featuredTranslation("prayerSummary", { returnObjects: true })
   const prayerTitle: string = featuredTranslation("title")
 
-  const learnBlurb: string = homePageTranslation("learnBlurb")
   const learnMoreAbout: string = homePageTranslation("learnMoreAbout")
 
   const iconList: ReactNode[] = [
@@ -127,23 +129,25 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </Container>
 
         {/* Invitation to prayer */}
-        <div className="home-invitation d-flex flex-column align-items-center w-100 position-relative">
-          <Carousel
-            controls={true}
-            fade={true}
-            interval={3000}
-            className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
-          >
-            <CarouselItem className="w-100 d-flex justify-content-center">
-              <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png" />
-            </CarouselItem>
-            <CarouselItem className="w-100 d-flex justify-content-center">
-              <Image className="home-carousel-image" alt="hero image 2" src="/photos/home/hp_slider-2.png" />
-            </CarouselItem>
-            <CarouselItem className="w-100 d-flex justify-content-center">
-              <Image className="home-carousel-image" alt="hero image 3" src="/photos/home/hp_slider-3.png" />
-            </CarouselItem>
-          </Carousel>
+        <div className="home-invitation d-flex flex-column align-items-center position-relative w-100">
+          <div className="home-invite-inner mb-0 mb-md-5">
+            <Carousel
+              controls={true}
+              fade={true}
+              interval={3000}
+              className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
+            >
+              <CarouselItem className="w-100 d-flex justify-content-center">
+                <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png" />
+              </CarouselItem>
+              <CarouselItem className="w-100 d-flex justify-content-center">
+                <Image className="home-carousel-image" alt="hero image 2" src="/photos/home/hp_slider-2.png" />
+              </CarouselItem>
+              <CarouselItem className="w-100 d-flex justify-content-center">
+                <Image className="home-carousel-image" alt="hero image 3" src="/photos/home/hp_slider-3.png" />
+              </CarouselItem>
+            </Carousel>
+          </div>
         </div>
 
         <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
@@ -192,12 +196,21 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
             <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
               {orderRegions.map((region) => (
-                <div className="fs-6 bg-secondary-5 text-white text-center region" key={region}>
-                  {region}
-                </div>
+                <Link
+                  className="fs-6 bg-secondary-5 text-white text-center region text-decoration-none"
+                  href={region.url}
+                  key={region.text}
+                >
+                  {region.text}
+                </Link>
               ))}
             </div>
-            <h3 className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4">{orderEBook}</h3>
+            <Link
+              className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4"
+              href="https://www.amazon.com/dp/B099KSSY79"
+            >
+              {orderEBook}
+            </Link>
           </Container>
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
             <div className="position-relative w-100 d-flex align-items-center flex-column">
@@ -210,7 +223,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
               </IconContext.Provider>
               {orderWarning}
             </h2>
-            <Button className="bg-grey-2 text-secondary-5 border-secondary-5 fw-bold fs-5 mb-4">{orderBooklet}</Button>
+            <Link
+              className="bg-grey-2 text-secondary-5 border-secondary-5 fw-bold fs-5 mb-4 p-2 text-decoration-none border rounded"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+            >
+              {orderBooklet}
+            </Link>
           </Container>
         </Container>
 
@@ -220,10 +238,10 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           style={{ height: "auto" }}
         >
           {/* Placeholder for future image */}
-          <div
+          {/* <div
             className="mt-3"
             style={{ backgroundColor: "#BCC3CF", width: "100%", maxWidth: "442px", aspectRatio: 1.8 }}
-          ></div>
+          ></div> */}
           <h1 className="mt-4 w-100 text-center home-common-h1">{downloadTitle}</h1>
           <h2 className="fw-normal w-100 text-center home-common-blurb my-2">{downloadBlurb}</h2>
           <Container className="d-none d-xl-block">

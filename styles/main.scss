@@ -81,9 +81,14 @@ $grid-breakpoints: (
   }
 }
 
+div.nav-item {
+  font-family: $font-family-secondary;
+}
+
 div.nav-item.dropdown {
   border-radius: 0.25rem;
   border: 1px solid $secondary-5;
+  font-family: $font-family-secondary;
 }
 
 #language-switch a {
@@ -202,6 +207,18 @@ div.nav-item.dropdown {
 
 .home-invitation {
 
+  .home-invite-inner {
+    max-height: 584px;
+    aspect-ratio: 1.93;
+    @include media-breakpoint-down(xxl) {
+      max-height: 373px;
+    }
+    @include media-breakpoint-down(md) {
+      max-height: none;
+      width: 95%;
+    }
+  }
+
   .carousel {
     .carousel-indicators {
       button {
@@ -214,9 +231,15 @@ div.nav-item.dropdown {
         transition: none;
         opacity: 0.7;
       }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 5px;
+      }
     }
     .carousel-indicators [data-bs-target] {
       height: 5px;
+      @include media-breakpoint-down(md) {
+        height: 4px;
+      }
     }
     .carousel-control-next, .carousel-control-prev {
       color: $secondary-5;
@@ -227,13 +250,13 @@ div.nav-item.dropdown {
       background-color: $grey-2;
     }
     .carousel-control-next{
-      right: 10%;
+      right: 2%;
       @include media-breakpoint-down(md) {
         right: 5%;
       }
     }
     .carousel-control-prev {
-      left: 10%;
+      left: 2%;
       @include media-breakpoint-down(md) {
         left: 5%;
       }
@@ -1009,4 +1032,12 @@ div.nav-item.dropdown {
 
 .bottom-grey-border {
   border-bottom: 1px #d6dde6 solid;
+}
+
+// Resources classes
+
+.sorryMsg {
+  height: 80vh;
+  font-family: $font-family-secondary;
+  font-size: 20px;
 }
