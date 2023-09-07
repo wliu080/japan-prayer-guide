@@ -33,8 +33,13 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
   }
 }
 
+interface OrderRegionType {
+  text: string
+  url: string
+}
+
 const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
-  const { t, i18n } = useTranslation("common")
+  const { i18n } = useTranslation("common")
   const { t: homePageTranslation } = useTranslation("home")
   const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
@@ -42,10 +47,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const heroHeading: string = homePageTranslation("heroHeading")
   const heroSubheading: string = homePageTranslation("heroSubheading")
   const heroViewTopicsBtn: string = homePageTranslation("titleButton")
-  const introText1: string = homePageTranslation("introText1")
 
   const introText2Subheading: string = homePageTranslation("introText2Subheading")
-  const introText2a: string = homePageTranslation("introText2a")
 
   const bibleVerse: string = homePageTranslation("bibleVerse")
   const bibleRef: string = homePageTranslation("bibleRef")
@@ -60,7 +63,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
   const orderTitle: string = homePageTranslation("orderTitle")
   const orderBlurb: string = homePageTranslation("orderBlurb")
-  const orderRegions: string[] = homePageTranslation("orderRegions", { returnObjects: true })
+  const orderRegions: OrderRegionType[] = homePageTranslation("orderRegions", { returnObjects: true })
   const orderEBook: string = homePageTranslation("orderEBook")
   const orderJapan: string = homePageTranslation("orderJapan")
   const orderWarning: string = homePageTranslation("orderWarning")
@@ -74,7 +77,6 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const prayerPoints: string[] = featuredTranslation("prayerSummary", { returnObjects: true })
   const prayerTitle: string = featuredTranslation("title")
 
-  const learnBlurb: string = homePageTranslation("learnBlurb")
   const learnMoreAbout: string = homePageTranslation("learnMoreAbout")
 
   const iconList: ReactNode[] = [
@@ -193,24 +195,15 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             </div>
             <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
             <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
-              <Link
-                className="fs-6 bg-secondary-5 text-white text-center region text-decoration-none"
-                href="https://www.davidsonpublishing.org/prayer-guides1.html"
-              >
-                  {orderRegions[0]}
-              </Link>
-              <Link
-                className="fs-6 bg-secondary-5 text-white text-center region text-decoration-none"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-              >
-                  {orderRegions[1]}
-              </Link>
-              <Link
-                className="fs-6 bg-secondary-5 text-white text-center region text-decoration-none"
-                href="https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback"
-              >
-                  {orderRegions[2]}
-              </Link>
+              {orderRegions.map((region) => (
+                <Link
+                  className="fs-6 bg-secondary-5 text-white text-center region text-decoration-none"
+                  href={region.url}
+                  key={region.text}
+                >
+                  {region.text}
+                </Link>
+              ))}
             </div>
             <Link
               className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4"
