@@ -16,7 +16,14 @@
   "purchasePreview": "冊子のプレビュー",
   "orderTitle": "英語の冊子を注文する",
   "orderBlurb": "配送先の地域を選択してください",
-  "orderRegions": ["北米", "日本", "その他"],
+  "orderRegions": [
+    { "text": "北米", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
+    {
+      "text": "日本",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+    },
+    { "text": "その他", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
+  ],
   "orderEBook": "英語の eBook を注文する",
   "orderJapan": "日本語の冊子を注文する",
   "orderWarning": "現在は国内発送のみ承っています。",
