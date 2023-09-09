@@ -13,7 +13,7 @@ interface prayerProps {
 export default function TopicPrayerPoints({ prayerPoints, title, subtitle }: prayerProps) {
   return (
     <Container data-testid={"topic-points-container"} className="d-flex justify-content-center px-6" id="topic-prayer">
-      <Card className="my-4 shadow d-lg-flex flex-lg-row">
+      <Card className="my-4 shadow d-md-flex flex-md-row">
         {/* temporary height for video, before we finalize videos */}
         <Card.Img variant="top" src="/bamboo.jpeg" style={{ height: "300px", maxWidth: "600px" }}></Card.Img>
         <Card.Body style={{ maxWidth: "600px" }}>

@@ -20,7 +20,10 @@ jobs:
         with:
           filters: |
             javascript_changed: 
-              - js jsx ts tsx
+              - '**/*.js'
+              - '**/*.jsx'
+              - '**/*.ts'
+              - '**/*.tsx'
         continue-on-error: true
 
       - name: Use Node.js ${{ matrix.node-version }}

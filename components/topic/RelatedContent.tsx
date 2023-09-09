@@ -2,8 +2,9 @@ import Link from "next/link"
 import React from "react"
 import { Card, Container } from "react-bootstrap"
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { useTranslation } from "react-i18next"
 
 interface relatedProps {
   topics: string[]
@@ -11,40 +12,35 @@ interface relatedProps {
   title?: string
 }
 
-function SampleArrow(props:any) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", borderRadius: '50%' }}
-      onClick={onClick}
-    />
-  );
+function SampleArrow(props: any) {
+  const { className, style, onClick } = props
+  return <div className={className} style={{ ...style, display: "block", borderRadius: "50%" }} onClick={onClick} />
 }
 
 export default function RelatedContent({ topics, links, title }: relatedProps) {
+  const { i18n } = useTranslation("common")
   const responsive = [
     {
       breakpoint: 1300,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-      }
+      },
     },
     {
       breakpoint: 1000,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-      }
+      },
     },
     {
       breakpoint: 800,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
+        slidesToScroll: 1,
+      },
+    },
   ]
   return (
     <Container data-testid={"related-content-container"} className="d-flex flex-column my-5">
@@ -52,9 +48,9 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
         <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1">
           {title}
         </h1>
-        <a href={"/topics"} className="text-secondary d-none d-md-block">
+        <Link href={"/topics"} className="text-secondary d-none d-md-block" locale={i18n.language}>
           View all topics
-        </a>
+        </Link>
       </Container>
       <Slider
         dots={false}
@@ -67,8 +63,13 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
         nextArrow={<SampleArrow />}
         prevArrow={<SampleArrow />}
       >
-        {topics.map((topic, idx) =>
-          <Link href={links[idx]} key={idx + topic} className="d-flex flex-column align-items-center">
+        {topics.map((topic, idx) => (
+          <Link
+            href={links[idx]}
+            key={idx + topic}
+            className="d-flex flex-column align-items-center"
+            locale={i18n.language}
+          >
             <Card style={{ width: "308px", height: "186px" }}>
               <Card.Body className="m-0 p-0">
                 <div className="w-100 bg-secondary" style={{ height: "138px" }}></div>
@@ -78,11 +79,11 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
               </Card.Body>
             </Card>
           </Link>
-        )}
+        ))}
       </Slider>
-      <a href={"/topics"} className="align-self-center my-3 text-secondary d-md-none">
+      <Link href={"/topics"} className="align-self-center my-3 text-secondary d-md-none" locale={i18n.language}>
         View all topics
-      </a>
+      </Link>
     </Container>
   )
 }

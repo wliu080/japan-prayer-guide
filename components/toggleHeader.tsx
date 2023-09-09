@@ -4,6 +4,17 @@ import { useState } from "react"
 import { useTranslation } from "next-i18next"
 import LanguageSwitcher from "./languageSwitcher"
 import { useRouter } from "next/router"
+import Link from "next/link"
+
+const NavLinkWithLocale = ({ text, href, locale }: { text: string; href: string; locale: string }) => {
+  return (
+    <Nav.Item>
+      <Link href={href} passHref locale={locale} className="nav-link">
+        <Nav.Link as="span">{text}</Nav.Link>
+      </Link>
+    </Nav.Item>
+  )
+}
 
 const ToggleHeader: React.FC = () => {
   const { t } = useTranslation("common") // specify translation file from public/locales/[lng]
@@ -30,43 +41,44 @@ const ToggleHeader: React.FC = () => {
   }
 
   return (
-    <Navbar sticky="top" bg={bg} expand="lg" variant={variant}>
+    <Navbar sticky="top" bg={bg} expand="xl" variant={variant}>
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href={"/" + i18n.language}>
           <Image
             alt={t("header.brandAlt")}
             src={bg === "white" ? "/bts-crane-wht-logo-en.png" : "/bts-crane-blue-logo-en.png"}
-            width="150"
-            height="30"
+            width="200"
+            height="40"
             className="d-inline-block align-top"
           />{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="header-navbar-nav" onClick={toggleColorScheme} />
         <Navbar.Collapse id="header-navbar-nav">
           <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
-            <Nav className="ml-auto d-md-flex gap-md-3" variant={variant}>
-              <Nav.Link href="/topics/all">{t("header.topics")}</Nav.Link>
-              <Nav.Link href="/booklet">{t("header.booklet")}</Nav.Link>
-              <Nav.Link href="/downloads">{t("header.download")}</Nav.Link>
-              <Nav.Link href="/about">{t("header.about")}</Nav.Link>
+            <Nav className="ml-auto d-md-flex gap-md-3 align-items-xl-center" variant={variant}>
+              <NavLinkWithLocale text={t("header.home")} href="/" locale={i18n.language} />
+              <NavLinkWithLocale text={t("header.topics")} href="/topics/all" locale={i18n.language} />
+              <NavLinkWithLocale text={t("header.booklet")} href="/booklet" locale={i18n.language} />
+              <NavLinkWithLocale text={t("header.download")} href="/downloads" locale={i18n.language} />
+              <NavLinkWithLocale text={t("header.about")} href="/about" locale={i18n.language} />
               {/* 
                 Need a more extensibile way for future languages but for now this should do
               */}
               {i18n.language === "en" ? (
-                <NavDropdown title="English" className="d-none d-lg-block">
+                <NavDropdown title="English" className="d-none d-xl-flex align-items-center" style={{height: '40px'}}>
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("ja")}>
                     日本語
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (
-                <NavDropdown title="日本語" className="d-none d-lg-block">
+                <NavDropdown title="日本語" className="d-none d-xl-flex align-items-center" style={{height: '40px'}}>
                   <NavDropdown.Item href="" onClick={() => handleLanguageChange("en")}>
                     English
                   </NavDropdown.Item>
                 </NavDropdown>
               )}
             </Nav>
-            <Container className="d-lg-none text-center">
+            <Container className="d-xl-none text-center">
               <LanguageSwitcher />
               <Image
                 alt="Crane logo"

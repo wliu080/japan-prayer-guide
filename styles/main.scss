@@ -5,13 +5,13 @@
 // Bootstrap overrides
 // ------------------------
 
-// theme colors
+// theme colors - include here also used in scss
 $primary: #002266;
 $secondary: #74b6ff;
 $secondary-5: #285abd;
 $grey-2: #ebf0f6;
 $grey-7: #505c7c;
-// custom theme map
+// custom theme map - if set here, will be available as bootstrap theme, e.g, text-primary-blue
 $custom-colors: (
   "primary": $primary,
   "primary-blue": #002266,
@@ -23,7 +23,10 @@ $custom-colors: (
   "secondary-4": #74b6ff,
   "secondary-5": $secondary-5,
   "tertiary": #f46b59,
+  "grey-2": $grey-2,
+  "grey-4": #bcc3cf,
   "grey-6": #727c96,
+  "grey-7": #505c7c,
 );
 // Merge custom to theme & regenerate
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -45,6 +48,21 @@ $font-sizes: (
 $font-family-base: "Proxima Nova", "Open Sans", "sans-serif";
 $font-family-secondary: "adelle", "Aleo", "serif";
 
+// From design library, please prefer media-breakpoint-up/down/only/between to target certain breakpoints
+// See also: https://getbootstrap.com/docs/5.2/layout/breakpoints/#media-queries
+// xs + sm: 365px (mobile)
+// md     : 768px (tablet)
+// lg + xl: 1280px (desktop)
+// xxl    : 1440px (wide screen desktop)
+$grid-breakpoints: (
+  xs: 0,
+  sm: 365px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px,
+);
+
 // and then import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -56,16 +74,21 @@ $font-family-secondary: "adelle", "Aleo", "serif";
 // - toggleHeader component should collapse fill full screen when expanded on mobile
 // - dropdowns should look button-ish (border)
 // - nav language links don't have underline unless active
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
   // do need specific heights for different mobile browsers?
   .mobile-header {
     height: 95vh;
   }
 }
 
+div.nav-item {
+  font-family: $font-family-secondary;
+}
+
 div.nav-item.dropdown {
   border-radius: 0.25rem;
   border: 1px solid $secondary-5;
+  font-family: $font-family-secondary;
 }
 
 #language-switch a {
@@ -129,27 +152,495 @@ div.nav-item.dropdown {
 
   #placeholder-image {
     background-color: #868686;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       height: 600px;
     }
   }
 }
 
+.home-hero {
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 40% 10%;
+}
+
+.home-hero-text-group {
+  bottom: 170px;
+  .container {
+    max-width: 1128px;
+  }
+  h1 {
+    font-family: $font-family-secondary;
+    font-size: 60px;
+    @include media-breakpoint-down(xxl) {
+      font-size: 52px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+    }
+  }
+  h2 {
+    font-family: $font-family-secondary;
+    font-size: 34px;
+    @include media-breakpoint-down(xxl) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+}
+
+.home-main-blurb {
+  max-width: 1128px;
+  font-size: 32px;
+  font-family: $font-family-secondary;
+  @include media-breakpoint-down(xxl) {
+    font-size: 24px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
+
+.home-invitation {
+
+  .home-invite-inner {
+    max-height: 584px;
+    aspect-ratio: 1.93;
+    @include media-breakpoint-down(xxl) {
+      max-height: 373px;
+    }
+    @include media-breakpoint-down(md) {
+      max-height: none;
+      width: 95%;
+    }
+  }
+
+  .carousel {
+    .carousel-indicators {
+      button {
+        background-color: white;
+        transition: none;
+        opacity: 0.7;
+      }
+      .active {
+        background-color: $secondary-5;
+        transition: none;
+        opacity: 0.7;
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 5px;
+      }
+    }
+    .carousel-indicators [data-bs-target] {
+      height: 5px;
+      @include media-breakpoint-down(md) {
+        height: 4px;
+      }
+    }
+    .carousel-control-next, .carousel-control-prev {
+      color: $secondary-5;
+      height: 30px;
+      width: 30px;
+      top: 50%;
+      border-radius: 50%;
+      background-color: $grey-2;
+    }
+    .carousel-control-next{
+      right: 2%;
+      @include media-breakpoint-down(md) {
+        right: 5%;
+      }
+    }
+    .carousel-control-prev {
+      left: 2%;
+      @include media-breakpoint-down(md) {
+        left: 5%;
+      }
+    }
+    .carousel-control-next-icon {
+      background-image: url('/icons/arrow-right-s-line.svg');
+    }
+    .carousel-control-prev-icon {
+      background-image: url('/icons/arrow-left-s-line.svg');
+    }
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  p {
+    font-size: 16px;
+    @include media-breakpoint-down(xxl) {
+      font-size: 12px;
+    }
+  }
+}
+
+.home-carousel-image {
+  max-height: 584px;
+  object-fit: cover;
+  aspect-ratio: 1.93;
+  @include media-breakpoint-down(xxl) {
+    max-height: 373px;
+  }
+  @include media-breakpoint-down(md) {
+    max-height: none;
+    width: 95%;
+  }
+}
+
+.home-verse-container {
+  max-width: none;
+  h2 {
+    font-family: $font-family-secondary;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    @include media-breakpoint-down(xl) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+  h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    @include media-breakpoint-down(xl) {
+      font-size: 16px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+  }
+}
+
+.home-call-to-action {
+  max-width: 900px;
+  h1 {
+    font-family: $font-family-secondary;
+    font-size: 40px;
+    @include media-breakpoint-down(xxl) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+  }
+}
+
+#featuredTopicSection {
+  h3 {
+    font-family: $font-family-secondary;
+    font-size: 40px;
+    @include media-breakpoint-down(xl) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+  .home-feature-img {
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+    @include media-breakpoint-down(lg) {
+      max-width: 400px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 600px;
+    }
+  }
+  .bullet-point {
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+  }
+
+  .feature-button, .feature-view-all {
+    font-size: 14px;
+  }
+}
+
+.home-purchase-section {
+  @include media-breakpoint-down(xl) {
+    max-width: none!important;
+  }
+  .purchase-text-container {
+    max-width: 558px;
+  }
+  img {
+    height: 470px;
+    @include media-breakpoint-down(xl) {
+      height: 322px;
+    }
+    @include media-breakpoint-down(md) {
+      height: 240px;
+    }
+  }
+  h1 {
+    font-family: $font-family-secondary;
+    font-size: 40px;
+    @include media-breakpoint-down(xl) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+  }
+  a {
+    font-weight: 700;
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+  }
+}
+
+.home-order-section {
+  max-width: 1130px;
+  gap: 14px;
+  h1 {
+    z-index: 2;
+    font-family: $font-family-secondary;
+    font-size: 24px;
+    width: fit-content!important;
+    font-weight: 700;
+    @include media-breakpoint-down(xl) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+  .horizontal-bar {
+    height: 1px;
+    top: -35px;
+    @include media-breakpoint-down(md) {
+      top: -30px;
+    }
+  }
+  .region {
+    width: 208px;
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
+}
+
+.coming-soon-button {
+  @include media-breakpoint-up(md) {
+    width: auto!important;
+  }
+}
+
+.home-common-h1 {
+  font-size: 40px;
+  font-family: $font-family-secondary;
+  font-weight: 600;
+  @include media-breakpoint-down(xl) {
+    font-size: 32px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 24px;
+  }
+}
+
+.home-common-blurb {
+  font-size: 16px;
+  max-width: 900px;
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+  }
+}
+
+.home-download-card {
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1.69;
+}
+
+.home-logo-crane {
+  @include media-breakpoint-down(md) {
+    height: 72px
+  }
+}
+
+.home-logo-text {
+  @include media-breakpoint-down(md) {
+    height: 40px
+  }
+}
+
+.featuredTopicTitle {
+  font-family: $font-family-secondary;
+  font-weight: 700;
+}
+
+.featuredTopicSubtitle {
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 16px;
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+}
+
+.featured-topic-container {
+  @include media-breakpoint-down(lg) {
+    max-width: none;
+  }
+}
+
 // About Page Classes
 #about {
+  .about-h1-header {
+    font-family: $font-family-secondary;
+    font-size: 40px;
+    @include media-breakpoint-down(xl) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+
+  .about-body-text {
+    font-size: 16px;
+    max-width: 900px;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+  }
+
   #about-landing-image {
-    height: 400px;
-    background-color: #868686;
+    height: 600px;
+
+    img {
+      object-fit: cover;
+      object-position: 60% 0%;
+      width: 100%;
+      height: 600px;
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-family: $font-family-secondary;
+      max-width: 1120px;
+      @include media-breakpoint-down(xl) {
+        font-size: 52px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 40px;
+      }
+    }
+
+    h2 {
+      font-size: 34px;
+      font-family: $font-family-secondary;
+      max-width: 1120px;
+      @include media-breakpoint-down(xl) {
+        font-size: 32px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .about-beneath-surface {
+    @include media-breakpoint-down(md) {
+      max-width: none;
+    }
+    .about-images {
+      width: 100%;
+      height: 400px;
+      @include media-breakpoint-down(xxl) {
+        height: 400px;
+      }
+      @include media-breakpoint-down(xl) {
+        height: 300px;
+      }
+      @include media-breakpoint-down(lg) {
+        height: 240px;
+      }
+      @include media-breakpoint-down(md) {
+        max-width: none;
+        height: auto;
+      }
+    }
+  }
+
+  .about-verse {
+    max-width: 900px;
+    font-size: 18px;
+    font-family: $font-family-secondary;
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+    .about-passage-location {
+      font-family: $font-family-base;
+      letter-spacing: 1.6px;
+      font-weight: 600;
+    }
+  }
+
+  .about-logo {
+    height: 150px;
+    @include media-breakpoint-down(xl) {
+      height: 106px;
+    }
+    @include media-breakpoint-down(md) {
+      height: 90px;
+    }
+  }
+
+  .about-invite {
+    max-width: 900px;
   }
 
   #who-are-we {
-    max-width: 850px;
+    max-width: 1100px;
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 64px;
 
-    @media screen and (max-width: 1200px) {
+    @include media-breakpoint-down(xl) {
       padding-top: 40px;
-      padding-bottom: 50px;
+      padding-bottom: 48px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 1.7;
+      object-fit: cover;
+    }
+
+    p {
+      max-width: 900px;
     }
   }
 
@@ -523,7 +1014,7 @@ div.nav-item.dropdown {
   color: black !important;
 }
 
-@media screen and (max-width: 560px) {
+@include media-breakpoint-down(sm) {
   .slick-prev {
     left: -10px !important;
   }
@@ -538,7 +1029,7 @@ div.nav-item.dropdown {
 #overview-nav {
   transition: all 0.1s ease;
   height: 50px;
-  @media screen and (max-width: 992px) {
+  @include media-breakpoint-down(md) {
     height: 56px;
   }
 }
@@ -555,28 +1046,33 @@ div.nav-item.dropdown {
   font-family: $font-family-secondary;
   font-size: 40px;
 
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 32px;
   }
 
-  @media screen and (max-width: 576px) {
+  @include media-breakpoint-down(sm) {
     font-size: 24px;
   }
 }
 
 .topic-nav-hero-subtitle {
+  max-width: 896px;
   font-size: 19px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 16px;
   }
-  @media screen and (max-width: 576px) {
+  @include media-breakpoint-down(sm) {
     font-size: 14px;
   }
 }
 
 .topic-nav-tab {
+  cursor: pointer;
   font-size: 19px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-down(sm) {
     font-size: 14px;
   }
 }
@@ -584,58 +1080,52 @@ div.nav-item.dropdown {
 .topic-nav-section-title {
   font-size: 32px;
   font-family: $font-family-secondary;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 24px;
   }
-  @media screen and (max-width: 576px) {
+  @include media-breakpoint-down(sm) {
     font-size: 18px;
   }
 }
 
 .topic-nav-card {
-  height: 280px;
-  aspect-ratio: 1.416;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
-  @media screen and (max-width: 1400px) {
-    height: 250px;
-  }
-  @media screen and (max-width: 1200px) {
-    min-height: 200px;
-    max-height: 230px;
-    width: 300px;
-  }
-  @media screen and (max-width: 992px) {
-    height: 240px;
-  }
-  @media screen and (max-width: 768px) {
-    height: 180px;
-  }
-  @media screen and (max-width: 572px) {
-    min-height: 140px;
-    max-height: 170px;
-    width: 170px;
-  }
+  height: 90%;
 }
 
 .topic-nav-card-title {
   font-size: 19px;
-  padding: 0 8px;
   color: #49474e;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 16px;
   }
-  @media screen and (max-width: 572px) {
-    padding: 0 8px;
+  P {
+    padding: 16px;
+    @include media-breakpoint-down(md) {
+      padding: 8px 16px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 8px;
+    }
   }
 }
 
 .no-max-container {
-  @media screen and (max-width: 768px) {
-    max-width: none;
-    padding: 0 16px !important;
+  @include media-breakpoint-down(xl) {
+    max-width: 98%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 .bottom-grey-border {
   border-bottom: 1px #d6dde6 solid;
+}
+
+// Resources classes
+
+.sorryMsg {
+  height: 80vh;
+  font-family: $font-family-secondary;
+  font-size: 20px;
 }

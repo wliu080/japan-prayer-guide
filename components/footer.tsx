@@ -1,11 +1,9 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
-// import Image from "next/image";
 import Image from "react-bootstrap/Image"
 import { IconContext } from "react-icons/lib"
-import { BsYoutube, BsInstagram, BsVimeo } from "react-icons/bs"
-import { MdEmail } from "react-icons/md"
+import { BsInstagram, BsVimeo } from "react-icons/bs"
 import { FaAmazon } from "react-icons/fa"
 import Link from "next/link"
 import LanguageSwitcher from "./languageSwitcher"
@@ -23,7 +21,7 @@ export default function Footer() {
     // mobile and large sizes
     <>
       {/* Small screens footer starts here */}
-      <div className="w-100 d-lg-none">
+      <div className="w-100 d-xl-none">
         <Container fluid className="bg-primary pt-3" data-testid="footer">
           <LanguageSwitcher />
           <Row className="d-flex justify-content-center mt-4">
@@ -61,9 +59,9 @@ export default function Footer() {
       </div>
       {/* Large screens footer starts here */}
       {/* Test ids need to be modified to stop duplicates */}
-      <div className="w-100 d-none d-lg-flex flex-column bg-primary align-items-center">
+      <div className="w-100 d-none d-xl-flex flex-column bg-primary align-items-center">
         <div className="footer-language w-75 border-bottom border-grey-6 py-4">
-          <LanguageSwitcher/>
+          <LanguageSwitcher />
         </div>
         <Container fluid className="bg-primary pt-3 d-flex" data-testid="footer-2">
           <Col className="d-flex flex-column justify-content-center my-4" sm={3}>
@@ -109,7 +107,7 @@ export default function Footer() {
 }
 
 function LinksList({ additional }: { additional: string }) {
-  const { t } = useTranslation("common")
+  const { t, i18n } = useTranslation("common")
 
   const siteMapText = t("footer.title")
   const mapLink1Text = t("footer.link1")
@@ -119,27 +117,23 @@ function LinksList({ additional }: { additional: string }) {
   const mapLink5Text = t("footer.link5")
 
   return (
-    <div
-      data-testid={"linksList" + additional}
-      className="d-flex flex-column px-3 gap-0 text-white"
-    >
+    <div data-testid={"linksList" + additional} className="d-flex flex-column px-3 gap-0 text-white">
       <p className="m-1 fs-5 fw-bold">{siteMapText}</p>
-      <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink1Text}
       </Link>
-      <Link href="/topics/all" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/topics/all" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink2Text}
       </Link>
-      <Link href="/booklet" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/booklet" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink3Text}
       </Link>
-      <Link href="/download" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/download" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink4Text}
       </Link>
-      <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none">
+      <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
         {mapLink5Text}
       </Link>
     </div>
   )
 }
-
