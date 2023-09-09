@@ -1,20 +1,23 @@
 {
   "webpageTitle": "冊子",
-  "heading": "Beneath the Surface",
-  "subtext": "30 ways to pray for Japan",
-  "subtitle": "Subtitle for an “about this book” -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.",
+  "heading": "御心が地にもなるように",
+  "subheading": "日本のために祈る３０項目",
+  "introText": [
+    "祈りの冊子「御心が地にもなるように」は17団体の宣教師やクリスチャンリーダーの協力で制作されました。2020年の第一出版以降、約2万冊が世界中で配布されています。現在は日本語版、英語版、その他数ヶ国語に翻訳されています。",
+    "「御心が地にもなるように」では、日本の文化と社会、そして日本におけるキリスト教会と宣教を覚えて祈るための30のテーマが紹介されています。これらの30の祈りテーマは、今日の日本における福音の重要な機会および課題として、日本のクリスチャンリーダーたちが優先的に取り上げたものです。"
+  ],
   "bookImageAlt": "Beneath the Surface Book Front Cover",
   "samplePageImageAlt": "Beneath the Surface Sample Page",
-  "purchase": "Purchase",
-  "purchaseCopy": "Purchase a copy from",
+  "purchaseHeading": "英語の冊子を注文する",
+  "purchaseText": "配送先の地域を選択してください",
   "buttons": {
-    "international": "International [UK]",
-    "usa": "US & Canada"
+    "northAmerica": "北米",
+    "japan": "日本",
+    "international": "その他"
   },
-  "order": "I would like to order an e-book version",
-  "languageAvailability": {
-    "header": "Don't see the book in your language?",
-    "text": "We're working on it! Information about the prayer guide in other languages will be posted as they become available.",
-    "translationIconAlt": "Translation Icon"
-  }
+  "orderEBook": "英語の eBook を注文する",
+  "languageAvailability": "Information about other languages coming soon",
+  "orderJapan": "日本語の冊子を注文する",
+  "prayerRedirectHeading": "祈りのテーマ",
+  "prayerRedirectButtonText": "全てのテーマを見る"
 }

@@ -1,20 +1,23 @@
 {
   "webpageTitle": "Booklet",
   "heading": "Beneath the Surface",
-  "subtext": "30 ways to pray for Japan",
-  "subtitle": "Subtitle for an “about this book” -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.",
+  "subheading": "30 ways to pray for Japan",
+  "introText": [
+    "The Beneath the Surface prayer guide was produced in collaboration with missionaries and leaders from 17 Christian organizations. Since its first printing in 2020, about 20,000 copies have been distributed around the world. It is available in English, Japanese, and a few other languages.",
+    "This guide introduces 30 prayer topics for Japanese culture and society, and church and mission. The 30 topics chosen were prioritized by Japanese leaders as key opportunities and challenges for the gospel in Japan today."
+  ],
   "bookImageAlt": "Beneath the Surface Book Front Cover",
   "samplePageImageAlt": "Beneath the Surface Sample Page",
-  "purchase": "Purchase",
-  "purchaseCopy": "Purchase a copy from",
+  "purchaseHeading": "Order the English Booklet",
+  "purchaseText": "Select your shipping destination",
   "buttons": {
-    "international": "International [UK]",
-    "usa": "US & Canada"
+    "northAmerica": "North America",
+    "japan": "Japan",
+    "international": "International"
   },
-  "order": "I would like to order an e-book version",
-  "languageAvailability": {
-    "header": "Don't see the book in your language?",
-    "text": "We're working on it! Information about the prayer guide in other languages will be posted as they become available.",
-    "translationIconAlt": "Translation Icon"
-  }
+  "orderEBook": "Order the e-book",
+  "languageAvailability": "Information about other languages coming soon",
+  "orderJapan": "Order the Japanese booklet",
+  "prayerRedirectHeading": "Prayer topics",
+  "prayerRedirectButtonText": "View all topics"
 }

@@ -1,16 +1,17 @@
-import Image from "next/image"
 import Head from "next/head"
 import Link from "next/link"
 import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
 import { PurchaseButtons } from "../components/purchase/PurchaseButtons"
-import { Container } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
+import BootstrapImage from "react-bootstrap/Image"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import BookImage from "../public/front-cover-sm-424x600 1.svg"
 import SampleBookPageImage from "../public/sample book page.svg"
-import TranslationIcon from "../public/translationIcon.svg"
+import SampleBookPageImage2 from "../public/photos/booklet/Book - Slider 1 JP 3.png"
 import Footer from "../components/footer"
+import ImagePagination from "../components/image-pagination/ImagePagination"
+import { GrCircleInformation } from "react-icons/gr"
 
 export async function getStaticProps({ locale }: any) {
   return {
@@ -23,7 +24,8 @@ export async function getStaticProps({ locale }: any) {
 }
 
 const Booklet: React.FC = () => {
-  const { t } = useTranslation("booklet")
+  const { t, i18n } = useTranslation("booklet")
+  const introTextParagraphs: string[] = t("introText", { returnObjects: true })
 
   return (
     <div>
@@ -34,47 +36,84 @@ const Booklet: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ToggleHeader />
-      <main id="purchase">
-        <div className="book-description">
-          <div className="book-image">
-            <Image className="book-front-cover" src={BookImage} alt={t("bookImageAlt")} />
-          </div>
-          <div className="book-text">
-            <h1>{t("heading")}</h1>
-            <p className="book-subtext">{t("subtext")}</p>
-            <p className="book-subtitle">{t("subtitle")}</p>
-            <h3>{t("purchase")}: </h3>
-            <div className="purchase-links">
-              <PurchaseButtons />
-              <Link href="https://amazon.com" target="_blank">
-                {t("order")}
-              </Link>
-            </div>
-          </div>
+      <main id="booklet">
+        <div className="w-100 book-description position-relative">
+          <Container>
+            <Row xs={1} sm={1} md={1} xl={2}>
+              <Col className="align-items-center">
+                <div className="book-image">
+                  <BootstrapImage
+                    className="book-front-cover"
+                    src="/photos/booklet/Book - Cover EN 2.png"
+                    alt={t("bookImageAlt")!}
+                  />
+                </div>
+              </Col>
+              <Col className="d-flex align-items-center">
+                <div className="book-text">
+                  <h1>
+                    <i>{t("heading")}</i>
+                  </h1>
+                  <p className="book-subheading">
+                    <i>{t("subheading")}</i>
+                  </p>
+                  {introTextParagraphs.map((text: string, idx: number) => (
+                    <p key={idx + text} className="book-introText">
+                      {text}
+                    </p>
+                  ))}
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </div>
         <Container id="prayer-sample" className="py-5">
-          <div id="prayer-landing-image" className="w-100 p-3">
-            temporary image placeholder
-          </div>
           <Container className="page-container py-3">
-            <Image src={SampleBookPageImage} alt={t("samplePageImageAlt")} />
+            <ImagePagination
+              pages={[
+                { src: SampleBookPageImage, text: t("samplePageImageAlt") },
+                { src: SampleBookPageImage2, text: "" },
+                { src: "", text: "" },
+              ]}
+            />
           </Container>
         </Container>
-        <section className="purchase-section">
-          <Container className="text-center">
-            <div className="purchase-copy-header">{t("purchaseCopy")}</div>
+        <Container>
+          <BootstrapImage className="w-100 px-10" src="/photos/booklet/BOOK_GIF_JP 4.png" />
+        </Container>
+        <Container fluid className="purchase-wrapper text-center">
+          <Container className="purchase-section mb-4">
+            <Container className="purchase-header-block d-flex justify-content-center">
+              <div className="inline-hr"></div>
+              <div className="purchase-copy-header mx-4">{t("purchaseHeading")}</div>
+              <div className="inline-hr"></div>
+            </Container>
+            <div>{t("purchaseText")}</div>
             <PurchaseButtons />
-            <Link href="https://amazon.com" target="_blank">
-              {t("order")}
+            <Link href="https://www.amazon.com/dp/B099KSSY79" target="_blank">
+              {t("orderEBook")}
             </Link>
 
             <div className="language-availability">
-              <span>
-                <Image src={TranslationIcon} alt={t("languageAvailability.translationIconAlt")} />
-                {t("languageAvailability.header")}
+              <span className="me-1">
+                <GrCircleInformation></GrCircleInformation>
               </span>
-              <p>{t("languageAvailability.text")}</p>
+              <i>{t("languageAvailability")}</i>
             </div>
+          </Container>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+            target="_blank"
+          >
+            {t("orderJapan")}
+          </Link>
+        </Container>
+        <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
+          <Container className="text-center">
+            <h1>{t("prayerRedirectHeading")}</h1>
+            <Link href="/topics/all" locale={i18n.language}>
+              <Button className="text-white">{t("prayerRedirectButtonText")}</Button>
+            </Link>
           </Container>
         </section>
         <Footer />
