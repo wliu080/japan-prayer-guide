@@ -189,8 +189,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Order snippet */}
         <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container">
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4">
+            <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3"/>
             <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderTitle}</h1>
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderTitle}</h1>
               <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
             </div>
             <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
@@ -213,8 +214,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             </Link>
           </Container>
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
+            <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3"/>
             <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderJapan}</h1>
               <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
             </div>
             <h2 className="text-black fs-6 fst-italic mb-2 d-flex align-items-center gap-1">
