@@ -20,29 +20,6 @@ export const TopicOverviewSection = ({ title, links, labels, section }: TopicOve
         <Container className="bottom-grey-border px-4 pt-1 no-max-container pb-5">
           <Row xl={3} lg={3} md={2} sm={2} xs={2} className="d-flex">
             {labels.map((element, idx) => {
-              // Special if statement for conference, the 'else' will be removed for final
-              if ((idx === 0 && section === "culture") || (idx === 2 && section === "church")) {
-                return (
-                  <Col key={element + idx} className="d-flex justify-content-center px-0 px-sm-1 px-md-2">
-                    <Link
-                      href={`/topics/${links[idx].toLowerCase()}`}
-                      className="text-decoration-none"
-                      locale={i18n.language}
-                    >
-                      <Card className="topic-nav-card mx-1 my-3">
-                        <Image
-                          src={`/photos/topic-nav/${section}/${links[idx]}.png`}
-                          alt={""}
-                          style={{ aspectRatio: 1.772, objectFit: "cover", width: "100%" }}
-                        />
-                        <Card.Body className="d-flex topic-nav-card-title p-0">
-                          <p className="my-0">{element}</p>
-                        </Card.Body>
-                      </Card>
-                    </Link>
-                  </Col>
-                )
-              } else {
                 return (
                   <Col key={element + idx} className="d-flex justify-content-center px-0 px-sm-1 px-md-2">
                     <Link href={""} className="text-decoration-none position-relative" locale={i18n.language}>
@@ -79,8 +56,8 @@ export const TopicOverviewSection = ({ title, links, labels, section }: TopicOve
                     </Link>
                   </Col>
                 )
-              }
-            })}
+              })
+            }
           </Row>
         </Container>
       </section>

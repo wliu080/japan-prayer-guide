@@ -80,12 +80,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const learnMoreAbout: string = homePageTranslation("learnMoreAbout")
 
   const iconList: ReactNode[] = [
-    <RiMic2Fill key={0} />,
-    <RiSlideshowLine key={1} />,
-    <RiDonutChartFill key={2} />,
-    <RiImageFill key={3} />,
-    <RiFile3Line key={4} />,
-    <FaPrayingHands key={5} />,
+    <RiDonutChartFill key={0} />,
+    <RiFile3Line key={1} />,
+    <RiImageFill key={2} />,
+    <FaPrayingHands key={3} />,
+    <RiMic2Fill key={4} />,
+    <RiSlideshowLine key={5} />
   ]
 
   return (
@@ -264,8 +264,10 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Beneath the Surface initiative - About snippet */}
         <div className="w-100 bg-grey-7 p-3 p-md-5 d-flex flex-column align-items-center">
           <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2">
-            <Image alt="BTS Crane" src="/photos/home/hp_crane.png" className="home-logo-crane" />
-            <Image alt="BTS Logo" src="/photos/home/hp_logo.png" className="home-logo-text" />
+            {i18n.language === "en" &&
+              <Image alt="BTS Crane" src={`/photos/home/hp_crane_en.png`} className="home-logo-crane" />
+            }
+            <Image alt="BTS Logo" src={`/photos/home/hp_logo_${i18n.language}.png`} className="home-logo-text" />
           </div>
           <div className="home-common-blurb text-center text-white my-3 w-100">
             <Trans t={homePageTranslation} i18nKey="learnBlurb" components={{ italic: <i /> }} />
