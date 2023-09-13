@@ -266,9 +266,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Beneath the Surface initiative - About snippet */}
         <div className="w-100 bg-grey-7 p-3 p-md-5 d-flex flex-column align-items-center">
           <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2">
-            {i18n.language === "en" &&
-              <Image alt="BTS Crane" src={`/photos/home/hp_crane_en.png`} className="home-logo-crane" />
-            }
+            <Image alt="BTS Crane" src={`/photos/home/hp_crane.png`} className="home-logo-crane" />
             <Image alt="BTS Logo" src={`/photos/home/hp_logo_${i18n.language}.png`} className="home-logo-text" />
           </div>
           <div className="home-common-blurb text-center text-white my-3 w-100">
