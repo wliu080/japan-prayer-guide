@@ -59,7 +59,7 @@ const ImagePagination = ({
                 key={`${img.src}_${idx}`}
               >
                 <Image src={img.src} alt={img.text}/> 
-                {img.text && <span>{img.text}</span>}
+                <span>{img.text}</span>
               </div>
             ))
           }

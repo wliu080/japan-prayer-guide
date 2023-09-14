@@ -58,7 +58,7 @@ const Booklet: React.FC = () => {
                     <i>{t("subheading")}</i>
                   </p>
                   {introTextParagraphs.map((text: string, idx: number) => (
-                    <p key={idx + text} className="book-introText">
+                    <p key={idx + text} className="book-introText common-p">
                       {text}
                     </p>
                   ))}
