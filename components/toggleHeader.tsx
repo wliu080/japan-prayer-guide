@@ -16,8 +16,7 @@ const NavLinkWithLocale = ({ text, href, locale, current }: { text: string; href
   )
 }
 
-const mediaQuery = '(min-width: 1280px)';
-const mediaQuerySmall = '(max-width: 1270px)';
+const mediaQuery = "(min-width: 1280px)";
 
 const ToggleHeader: React.FC = () => {
   const { t } = useTranslation("common") // specify translation file from public/locales/[lng]
@@ -48,7 +47,7 @@ const ToggleHeader: React.FC = () => {
   // scheme will not change accordingly.
   useEffect(() => {
     const mediaQueryList = window.matchMedia(mediaQuery);
-    function update(e) {
+    function update(e: MediaQueryListEvent) {
       if (e.matches) {
         setBg("white");
         setVariant("light");
