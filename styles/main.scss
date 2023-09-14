@@ -99,6 +99,15 @@ div.nav-item.dropdown {
   }
 }
 
+.selected-nav-link {
+  color: white;
+  background-color: $secondary-5;
+  border-radius: 6px;
+  &:hover {
+    color: white;
+  }
+}
+
 // general classes
 .footer-icon {
   width: auto;
@@ -485,6 +494,7 @@ div.nav-item.dropdown {
 }
 
 .home-logo-text {
+  max-width: 300px;
   @include media-breakpoint-down(md) {
     height: 40px
   }
@@ -550,7 +560,7 @@ div.nav-item.dropdown {
         font-size: 52px;
       }
       @include media-breakpoint-down(md) {
-        font-size: 40px;
+        font-size: 38px;
       }
     }
 
@@ -1124,8 +1134,24 @@ div.nav-item.dropdown {
 
 // Resources classes
 
-.sorryMsg {
+.sorryContainer {
   height: 80vh;
+}
+
+.sorryTitle {
   font-family: $font-family-secondary;
-  font-size: 20px;
+  font-size: 34px;
+  @include media-breakpoint-down(xl) {
+    font-size: 32px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 24px;
+  }
+}
+
+.sorryMsg {
+  font-size: 18px;
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
 }

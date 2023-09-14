@@ -80,12 +80,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const learnMoreAbout: string = homePageTranslation("learnMoreAbout")
 
   const iconList: ReactNode[] = [
-    <RiMic2Fill key={0} />,
-    <RiSlideshowLine key={1} />,
-    <RiDonutChartFill key={2} />,
-    <RiImageFill key={3} />,
-    <RiFile3Line key={4} />,
-    <FaPrayingHands key={5} />,
+    <RiDonutChartFill key={0} />,
+    <RiFile3Line key={1} />,
+    <RiImageFill key={2} />,
+    <FaPrayingHands key={3} />,
+    <RiMic2Fill key={4} />,
+    <RiSlideshowLine key={5} />
   ]
 
   return (
@@ -189,8 +189,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Order snippet */}
         <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container">
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4">
+            <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3"/>
             <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderTitle}</h1>
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderTitle}</h1>
               <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
             </div>
             <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
@@ -213,8 +214,9 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             </Link>
           </Container>
           <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
+            <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3"/>
             <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderJapan}</h1>
               <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
             </div>
             <h2 className="text-black fs-6 fst-italic mb-2 d-flex align-items-center gap-1">
@@ -264,8 +266,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Beneath the Surface initiative - About snippet */}
         <div className="w-100 bg-grey-7 p-3 p-md-5 d-flex flex-column align-items-center">
           <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2">
-            <Image alt="BTS Crane" src="/photos/home/hp_crane.png" className="home-logo-crane" />
-            <Image alt="BTS Logo" src="/photos/home/hp_logo.png" className="home-logo-text" />
+            <Image alt="BTS Crane" src={`/photos/home/hp_crane.png`} className="home-logo-crane" />
+            <Image alt="BTS Logo" src={`/photos/home/hp_logo_${i18n.language}.png`} className="home-logo-text" />
           </div>
           <div className="home-common-blurb text-center text-white my-3 w-100">
             <Trans t={homePageTranslation} i18nKey="learnBlurb" components={{ italic: <i /> }} />

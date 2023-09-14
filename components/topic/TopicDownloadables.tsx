@@ -21,7 +21,7 @@ export default function TopicDownloadables({ links, title, labels, headers }: do
         <h1 data-testid={"topic-downloadables-title"} className="text-primary my-4 fs-1">
           {title}
         </h1>
-        <Link href={"/downloads"} className="text-secondary d-none d-md-block" locale={i18n.language}>
+        <Link href={"/resources"} className="text-secondary d-none d-md-block" locale={i18n.language}>
           {headers[0]}
         </Link>
       </Container>
@@ -43,7 +43,7 @@ export default function TopicDownloadables({ links, title, labels, headers }: do
           {headers[1]}
         </Button>
       </Link>
-      <Link href={"/downloads"} className="align-self-center my-3 text-secondary d-md-none" locale={i18n.language}>
+      <Link href={"/resources"} className="align-self-center my-3 text-secondary d-md-none" locale={i18n.language}>
         {headers[0]}
       </Link>
     </Container>

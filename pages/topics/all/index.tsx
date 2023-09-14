@@ -51,14 +51,14 @@ export default function Overview() {
         <ToggleHeader />
 
         {/* Hero Banner */}
-        <div className="w-100 mx-0 px-0 position-relative" style={{ height: "490px" }}>
+        <div className="w-100 mx-0 px-0 position-relative d-flex flex-column align-items-center justify-content-center" style={{ height: "490px" }}>
           <Image
             src={"/photos/topic-nav/top-nav_hero.png"}
             alt={"Topic-nav hero image"}
             className="w-100 h-100 topic-nav-hero position-absolute"
           />
-          <Container className="d-flex flex-column align-items-center justify-content-start h-100 pt-md-2 pt-lg-5 pb-5">
-            <h1 className="text-black px-3 mt-5 mb-3 topic-nav-hero-title">{heading}</h1>
+          <Container className="d-flex flex-column align-items-center justify-content-center h-100">
+            <h1 className="text-black px-3 topic-nav-hero-title">{heading}</h1>
             {heroSubtext.map((text) => (
               <p key={text} className="text-black text-center topic-nav-hero-subtitle">
                 {text}

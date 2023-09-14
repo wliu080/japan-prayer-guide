@@ -6,11 +6,11 @@ import LanguageSwitcher from "./languageSwitcher"
 import { useRouter } from "next/router"
 import Link from "next/link"
 
-const NavLinkWithLocale = ({ text, href, locale }: { text: string; href: string; locale: string }) => {
+const NavLinkWithLocale = ({ text, href, locale, current }: { text: string; href: string; locale: string, current: string }) => {
   return (
     <Nav.Item>
-      <Link href={href} passHref locale={locale} className="nav-link">
-        <Nav.Link as="span">{text}</Nav.Link>
+      <Link href={href} passHref locale={locale} className={"nav-link"}>
+        <Nav.Link as="span" className={(current === href ? "selected-nav-link" : "")}>{text}</Nav.Link>
       </Link>
     </Nav.Item>
   )
@@ -46,7 +46,7 @@ const ToggleHeader: React.FC = () => {
         <Navbar.Brand href={"/" + i18n.language}>
           <Image
             alt={t("header.brandAlt")}
-            src={bg === "white" ? "/bts-crane-wht-logo-en.png" : "/bts-crane-blue-logo-en.png"}
+            src={bg === "white" ? `/bts-crane-wht-logo-${i18n.language}.png` : `/bts-crane-blue-logo-${i18n.language}.png`}
             width="200"
             height="40"
             className="d-inline-block align-top"
@@ -56,11 +56,11 @@ const ToggleHeader: React.FC = () => {
         <Navbar.Collapse id="header-navbar-nav">
           <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
             <Nav className="ml-auto d-md-flex gap-md-3 align-items-xl-center" variant={variant}>
-              <NavLinkWithLocale text={t("header.home")} href="/" locale={i18n.language} />
-              <NavLinkWithLocale text={t("header.topics")} href="/topics/all" locale={i18n.language} />
-              <NavLinkWithLocale text={t("header.booklet")} href="/booklet" locale={i18n.language} />
-              <NavLinkWithLocale text={t("header.download")} href="/downloads" locale={i18n.language} />
-              <NavLinkWithLocale text={t("header.about")} href="/about" locale={i18n.language} />
+              <NavLinkWithLocale current={router.pathname} text={t("header.home")} href="/" locale={i18n.language} />
+              <NavLinkWithLocale current={router.pathname} text={t("header.topics")} href="/topics/all" locale={i18n.language} />
+              <NavLinkWithLocale current={router.pathname} text={t("header.booklet")} href="/booklet" locale={i18n.language} />
+              <NavLinkWithLocale current={router.pathname} text={t("header.download")} href="/resources" locale={i18n.language} />
+              <NavLinkWithLocale current={router.pathname} text={t("header.about")} href="/about" locale={i18n.language} />
               {/* 
                 Need a more extensibile way for future languages but for now this should do
               */}
