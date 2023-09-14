@@ -30,6 +30,7 @@ $custom-colors: (
 );
 // Merge custom to theme & regenerate
 $theme-colors: map-merge($theme-colors, $custom-colors);
+$box-shadow-sm: 0 0.25rem 1rem rgba($black, 0.1);
 
 $link-color: $secondary-5;
 $navbar-light-color: $secondary-5;
@@ -46,7 +47,7 @@ $font-sizes: (
 // Proxima Nova / Open Sans - sub-heading, body copy, quote source
 // Adelle / Aleo - heading, quote body
 $font-family-base: "Proxima Nova", "Open Sans", "sans-serif";
-$font-family-secondary: "adelle", "Aleo", "serif";
+$font-family-secondary: "Aleo", "adelle", "serif";
 
 // From design library, please prefer media-breakpoint-up/down/only/between to target certain breakpoints
 // See also: https://getbootstrap.com/docs/5.2/layout/breakpoints/#media-queries
@@ -81,31 +82,66 @@ $grid-breakpoints: (
   }
 }
 
-div.nav-item {
+.mobile-menu-footer {
+  max-width: 400px;
   font-family: $font-family-secondary;
 }
 
+.mobile-menu-tagline {
+  font-size: 16px;
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .navbar .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .navbar .navbar-nav .selected-nav-link {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  @include media-breakpoint-down(xl) {
+    font-size: 24px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+}
+
+div.nav-item {
+  font-family: $font-family-secondary;
+  margin-top: 1px;
+  margin-bottom: -1px;
+}
+
+$dropdown-button-height: 38px;
 div.nav-item.dropdown {
   border-radius: 0.25rem;
   border: 1px solid $secondary-5;
   font-family: $font-family-secondary;
+  height: $dropdown-button-height;
 }
 
 #language-switch a {
+  font-family: $font-family-secondary;
   text-decoration: none;
 
   &.active-language-link {
-    text-decoration: underline $secondary-5 3.8px;
+    text-decoration: underline #4592cf 3px;
+    text-underline-position: under;
+    text-underline-offset: 4px;
   }
 }
 
 .selected-nav-link {
-  color: white;
-  background-color: $secondary-5;
-  border-radius: 6px;
-  &:hover {
-    color: white;
-  }
+  font-weight: 800;
+  text-decoration: underline #4592cf 2px;
+  text-underline-position: under;
+  text-underline-offset: 2px;
 }
 
 // general classes
@@ -121,11 +157,18 @@ div.nav-item.dropdown {
 .footer-blurb {
   font-family: $font-family-secondary;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   @include media-breakpoint-down(md) {
     font-size: 12px;
     font-weight: 400;
+    padding-left: 0px;
+    padding-right: 0px;
   }
+}
+
+.footer-blurb-row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .footer-copyright {
@@ -170,30 +213,48 @@ div.nav-item.dropdown {
 .home-hero {
   z-index: -1;
   width: 100%;
-  height: 600px;
+  height: 800px;
+  @include media-breakpoint-down(xl) {
+    height: 700px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 600px;
+  }
   object-fit: cover;
   object-position: 40% 10%;
 }
 
 .home-hero-text-group {
-  bottom: 170px;
+  bottom: 250px;
+  @include media-breakpoint-down(xl) {
+    bottom: 225px;
+  }
+  @include media-breakpoint-down(md) {
+    bottom: 200px;
+  }
   .container {
     max-width: 1128px;
   }
   h1 {
     font-family: $font-family-secondary;
     font-size: 60px;
-    @include media-breakpoint-down(xxl) {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    @include media-breakpoint-down(xl) {
       font-size: 52px;
+      margin-top: -9px;
+      margin-bottom: 26px;
     }
     @include media-breakpoint-down(md) {
       font-size: 40px;
+      margin-top: -8px;
+      margin-bottom: 22px;
     }
   }
   h2 {
     font-family: $font-family-secondary;
     font-size: 34px;
-    @include media-breakpoint-down(xxl) {
+    @include media-breakpoint-down(xl) {
       font-size: 32px;
     }
     @include media-breakpoint-down(md) {
@@ -204,10 +265,11 @@ div.nav-item.dropdown {
 
 .home-main-blurb {
   max-width: 1128px;
-  font-size: 32px;
+  font-size: 30px;
   font-family: $font-family-secondary;
-  @include media-breakpoint-down(xxl) {
+  @include media-breakpoint-down(xl) {
     font-size: 24px;
+    max-width: 920px;
   }
   @include media-breakpoint-down(md) {
     font-size: 18px;
@@ -215,12 +277,28 @@ div.nav-item.dropdown {
 }
 
 .home-invitation {
+  $carousel-image-height: 500px;
+  $carousel-image-height-tablet: 400px;
+  $carousel-image-ratio: 1.93;
+  .home-carousel-image {
+    max-height: $carousel-image-height;
+    object-fit: cover;
+    aspect-ratio: $carousel-image-ratio;
+    @include media-breakpoint-down(xl) {
+      max-height: $carousel-image-height-tablet;
+    }
+    @include media-breakpoint-down(md) {
+      max-height: none;
+      width: 95%;
+    }
+  }
 
   .home-invite-inner {
-    max-height: 584px;
-    aspect-ratio: 1.93;
-    @include media-breakpoint-down(xxl) {
-      max-height: 373px;
+    max-height: $carousel-image-height;
+    aspect-ratio: $carousel-image-ratio + 0.3;
+    @include media-breakpoint-down(xl) {
+      max-height: $carousel-image-height-tablet;
+      aspect-ratio: $carousel-image-ratio;
     }
     @include media-breakpoint-down(md) {
       max-height: none;
@@ -250,7 +328,8 @@ div.nav-item.dropdown {
         height: 4px;
       }
     }
-    .carousel-control-next, .carousel-control-prev {
+    .carousel-control-next,
+    .carousel-control-prev {
       color: $secondary-5;
       height: 30px;
       width: 30px;
@@ -258,7 +337,7 @@ div.nav-item.dropdown {
       border-radius: 50%;
       background-color: $grey-2;
     }
-    .carousel-control-next{
+    .carousel-control-next {
       right: 2%;
       @include media-breakpoint-down(md) {
         right: 5%;
@@ -271,56 +350,33 @@ div.nav-item.dropdown {
       }
     }
     .carousel-control-next-icon {
-      background-image: url('/icons/arrow-right-s-line.svg');
+      background-image: url("/icons/arrow-right-s-line.svg");
     }
     .carousel-control-prev-icon {
-      background-image: url('/icons/arrow-left-s-line.svg');
+      background-image: url("/icons/arrow-left-s-line.svg");
     }
   }
 
   .container {
+    margin-top: 100px;
     max-width: 900px;
   }
-
-  p {
-    font-size: 16px;
-    @include media-breakpoint-down(xxl) {
-      font-size: 12px;
-    }
-  }
 }
 
-.home-carousel-image {
-  max-height: 584px;
-  object-fit: cover;
-  aspect-ratio: 1.93;
-  @include media-breakpoint-down(xxl) {
-    max-height: 373px;
-  }
-  @include media-breakpoint-down(md) {
-    max-height: none;
-    width: 95%;
-  }
-}
-
+$home-paragraph-text: 20px;
+$home-paragraph-text-tablet: $home-paragraph-text - 1px;
+$home-paragraph-text-mobile: $home-paragraph-text - 2px;
 .home-verse-container {
   max-width: none;
   h2 {
     font-family: $font-family-secondary;
-    font-size: 24px;
     font-style: italic;
     font-weight: 300;
-    @include media-breakpoint-down(xl) {
-      font-size: 18px;
-    }
-    @include media-breakpoint-down(md) {
-      font-size: 16px;
-    }
   }
   h3 {
-    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1.8px;
+    font-size: 18px;
     @include media-breakpoint-down(xl) {
       font-size: 16px;
     }
@@ -332,61 +388,62 @@ div.nav-item.dropdown {
 
 .home-call-to-action {
   max-width: 900px;
-  h1 {
-    font-family: $font-family-secondary;
-    font-size: 40px;
-    @include media-breakpoint-down(xxl) {
-      font-size: 32px;
-    }
-    @include media-breakpoint-down(md) {
-      font-size: 24px;
-    }
-  }
   p {
-    font-size: 16px;
+    font-size: $home-paragraph-text;
+    @include media-breakpoint-down(xl) {
+      font-size: $home-paragraph-text-tablet;
+    }
     @include media-breakpoint-down(md) {
-      font-size: 14px;
+      font-size: $home-paragraph-text-mobile;
     }
   }
 }
 
 #featuredTopicSection {
-  h3 {
-    font-family: $font-family-secondary;
-    font-size: 40px;
-    @include media-breakpoint-down(xl) {
-      font-size: 32px;
+  $featured-card-width: 500px;
+  $featured-card-width-tablet: 375px;
+  $featured-card-width-mobile: 600px;
+  .featured-topic-card {
+    max-width: $featured-card-width;
+    @include media-breakpoint-down(lg) {
+      max-width: $featured-card-width-tablet;
     }
     @include media-breakpoint-down(md) {
-      font-size: 24px;
+      max-width: $featured-card-width-mobile;
     }
   }
   .home-feature-img {
     height: auto;
-    max-width: 600px;
+    max-width: $featured-card-width;
     object-fit: cover;
     @include media-breakpoint-down(lg) {
-      max-width: 400px;
+      max-width: $featured-card-width-tablet;
     }
     @include media-breakpoint-down(md) {
-      max-width: 600px;
-    }
-  }
-  .bullet-point {
-    font-size: 16px;
-    @include media-breakpoint-down(md) {
-      font-size: 14px;
+      max-width: $featured-card-width-mobile;
     }
   }
 
-  .feature-button, .feature-view-all {
+  $bullet-point-factor: 1px;
+  .bullet-point {
+    font-size: $home-paragraph-text - $bullet-point-factor;
+    @include media-breakpoint-down(xl) {
+      font-size: $home-paragraph-text-tablet - $bullet-point-factor;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: $home-paragraph-text-mobile - $bullet-point-factor;
+    }
+  }
+
+  .feature-button,
+  .feature-view-all {
     font-size: 14px;
   }
 }
 
 .home-purchase-section {
   @include media-breakpoint-down(xl) {
-    max-width: none!important;
+    max-width: none !important;
   }
   .purchase-text-container {
     max-width: 558px;
@@ -400,28 +457,8 @@ div.nav-item.dropdown {
       height: 240px;
     }
   }
-  h1 {
-    font-family: $font-family-secondary;
-    font-size: 40px;
-    @include media-breakpoint-down(xl) {
-      font-size: 32px;
-    }
-    @include media-breakpoint-down(md) {
-      font-size: 24px;
-    }
-  }
-  p {
-    font-size: 16px;
-    @include media-breakpoint-down(md) {
-      font-size: 12px;
-    }
-  }
   a {
     font-weight: 700;
-    font-size: 16px;
-    @include media-breakpoint-down(md) {
-      font-size: 12px;
-    }
   }
 }
 
@@ -431,14 +468,14 @@ div.nav-item.dropdown {
   h1 {
     z-index: 2;
     font-family: $font-family-secondary;
-    font-size: 24px;
-    width: fit-content!important;
+    width: fit-content !important;
     font-weight: 700;
+    font-size: 24px;
     @include media-breakpoint-down(xl) {
-      font-size: 18px;
+      font-size: 20px;
     }
     @include media-breakpoint-down(md) {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   .horizontal-bar {
@@ -450,6 +487,17 @@ div.nav-item.dropdown {
   }
   .region {
     width: 208px;
+    @include media-breakpoint-down(md) {
+      width: 308px;
+    }
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
+  .japan-order {
+    width: 208px;
+    @include media-breakpoint-down(md) {
+      width: 308px;
+    }
     border-radius: 4px;
     padding: 8px 16px;
   }
@@ -457,14 +505,14 @@ div.nav-item.dropdown {
 
 .coming-soon-button {
   @include media-breakpoint-up(md) {
-    width: auto!important;
+    width: auto !important;
   }
 }
 
 .home-common-h1 {
   font-size: 40px;
   font-family: $font-family-secondary;
-  font-weight: 600;
+  font-weight: 700;
   @include media-breakpoint-down(xl) {
     font-size: 32px;
   }
@@ -473,12 +521,18 @@ div.nav-item.dropdown {
   }
 }
 
-.home-common-blurb {
-  font-size: 16px;
-  max-width: 900px;
-  @include media-breakpoint-down(md) {
-    font-size: 12px;
+.common-p {
+  font-size: $home-paragraph-text;
+  @include media-breakpoint-down(xl) {
+    font-size: $home-paragraph-text-tablet;
   }
+  @include media-breakpoint-down(md) {
+    font-size: $home-paragraph-text-mobile;
+  }
+}
+
+.home-common-blurb {
+  max-width: 900px;
 }
 
 .home-download-card {
@@ -489,14 +543,14 @@ div.nav-item.dropdown {
 
 .home-logo-crane {
   @include media-breakpoint-down(md) {
-    height: 72px
+    height: 72px;
   }
 }
 
 .home-logo-text {
   max-width: 300px;
   @include media-breakpoint-down(md) {
-    height: 40px
+    height: 40px;
   }
 }
 
@@ -534,21 +588,17 @@ div.nav-item.dropdown {
   }
 
   .about-body-text {
-    font-size: 16px;
     max-width: 900px;
-    @include media-breakpoint-down(md) {
-      font-size: 14px;
-    }
   }
 
   #about-landing-image {
-    height: 600px;
+    height: 490px;
 
     img {
       object-fit: cover;
-      object-position: 60% 0%;
+      object-position: 60% 10%;
       width: 100%;
-      height: 600px;
+      height: 490px;
       z-index: -1;
     }
 
@@ -578,20 +628,18 @@ div.nav-item.dropdown {
   }
 
   .about-beneath-surface {
+    max-width: 900px;
     @include media-breakpoint-down(md) {
       max-width: none;
     }
     .about-images {
-      width: 100%;
-      height: 400px;
-      @include media-breakpoint-down(xxl) {
-        height: 400px;
-      }
+      aspect-ratio: 1.5;
+      max-width: 700px;
+      object-fit: cover;
+
+      height: 285px;
       @include media-breakpoint-down(xl) {
-        height: 300px;
-      }
-      @include media-breakpoint-down(lg) {
-        height: 240px;
+        height: 245px;
       }
       @include media-breakpoint-down(md) {
         max-width: none;
@@ -602,34 +650,51 @@ div.nav-item.dropdown {
 
   .about-verse {
     max-width: 900px;
-    font-size: 18px;
     font-family: $font-family-secondary;
-    @include media-breakpoint-down(md) {
-      font-size: 16px;
-    }
+
     .about-passage-location {
       font-family: $font-family-base;
-      letter-spacing: 1.6px;
-      font-weight: 600;
+    }
+
+    h2 {
+      font-family: $font-family-secondary;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      font-size: 18px;
+
+      @include media-breakpoint-down(xl) {
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+      }
     }
   }
 
   .about-logo {
     height: 150px;
+
     @include media-breakpoint-down(xl) {
       height: 106px;
     }
+
     @include media-breakpoint-down(md) {
       height: 90px;
     }
   }
-
   .about-invite {
     max-width: 900px;
   }
 
   #who-are-we {
-    max-width: 1100px;
+    max-width: 900px;
     padding-top: 60px;
     padding-bottom: 64px;
 
@@ -643,8 +708,9 @@ div.nav-item.dropdown {
       padding-bottom: 40px;
     }
 
-    img {
-      width: 100%;
+    .about-main-image {
+      width: 85%;
+      max-width: 700px;
       aspect-ratio: 1.7;
       object-fit: cover;
     }
@@ -749,9 +815,26 @@ div.nav-item.dropdown {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    z-index: -1000;
     width: 100%;
-    height: 100%;
+    height: 800px;
+    // More than lg breakpoint
+    @include media-breakpoint-up(lg) {
+      .container {
+        // This value keeps the text under the booklet centered
+        max-width: 924px;
+      }
+    }
+    // More than xl breakpoint
+    @include media-breakpoint-up(xl) {
+      .container {
+        // This value returns the max-width to the bootstrap default after the above lg breakpoint.
+        max-width: 1140px;
+      }
+    }
+
+    @include media-breakpoint-down(xl) {
+      height: 100%;
+    }
     object-fit: cover;
     object-position: 50% 50%;
     background-color: rgba(0, 34, 102, 0.3);
@@ -767,13 +850,13 @@ div.nav-item.dropdown {
       .book-front-cover {
         flex-grow: 1;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 666px;
         padding-top: 60px;
         @include media-breakpoint-down(md) {
-          max-height: 500px;
+          max-height: 418px;
         }
         @include media-breakpoint-down(xl) {
-          max-height: 650px;
+          max-height: 543px;
         }
       }
     }
@@ -789,6 +872,7 @@ div.nav-item.dropdown {
         padding-left: unset;
         text-align: center;
       }
+      width: 1000px;
 
       text-align: left;
       color: #ffffff;
@@ -810,25 +894,24 @@ div.nav-item.dropdown {
         }
       }
       .book-subheading {
-        font-size: 20px;
+        font-size: $home-paragraph-text + 2;
         font-weight: 700;
         line-height: 24px;
+        margin-bottom: 30px;
         @include media-breakpoint-down(xl) {
-          font-size: 18px;
+          font-size: $home-paragraph-text-tablet + 2;
           line-height: 21.6px;
         }
         @include media-breakpoint-down(md) {
-          font-size: 16px;
+          font-size: $home-paragraph-text-mobile + 2;
           line-height: 17px;
         }
       }
       .book-introText {
         font-family: $font-family-base;
-        font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         @include media-breakpoint-down(md) {
-          font-size: 14px;
           font-weight: 400;
           line-height: 21px;
         }
@@ -847,9 +930,8 @@ div.nav-item.dropdown {
     .page-container {
       @include media-breakpoint-down(md) {
         img {
-          max-width: 400px;
-          height: auto;
-          width: auto;
+          height: 100%;
+          width: 100%;
         }
       }
     }
@@ -904,7 +986,7 @@ div.nav-item.dropdown {
 
     .shipping-subtext {
       color: #002266;
-      font-family: 'Proxima Nova';
+      font-family: "Proxima Nova";
       font-size: 18px;
       font-weight: 700;
       line-height: 21.92px;
@@ -936,7 +1018,8 @@ div.nav-item.dropdown {
         }
       }
 
-      &:nth-child(2), &:nth-child(3) {
+      &:nth-child(2),
+      &:nth-child(3) {
         @include media-breakpoint-up(md) {
           margin-left: 1.5rem;
         }
@@ -1053,6 +1136,7 @@ div.nav-item.dropdown {
 }
 
 .topic-nav-hero-title {
+  padding-top: 10px;
   font-family: $font-family-secondary;
   font-size: 40px;
 
@@ -1067,13 +1151,6 @@ div.nav-item.dropdown {
 
 .topic-nav-hero-subtitle {
   max-width: 896px;
-  font-size: 19px;
-  @include media-breakpoint-down(md) {
-    font-size: 16px;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 14px;
-  }
 }
 
 .topic-nav-tab {
@@ -1132,6 +1209,21 @@ div.nav-item.dropdown {
   border-bottom: 1px #d6dde6 solid;
 }
 
+.header-crane-button {
+  @include media-breakpoint-down(xl) {
+    width: calc(640px * 0.3);
+    height: calc(123px * 0.3);
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 156px;
+    height: 30px;
+  }
+
+  margin-bottom: 3px;
+  width: calc(640px * 0.35);
+  height: calc(123px * 0.35);
+}
 // Resources classes
 
 .sorryContainer {

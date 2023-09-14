@@ -90,7 +90,7 @@ export const TopicOverviewNav = ({ selected, setSelected }: Props) => {
         >
           <a
             className={
-              "topic-nav-tab px-3 my-0 text-decoration-none" +
+              "common-p topic-nav-tab px-3 my-0 text-decoration-none" +
               (selected === "culture"
                 ? " border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
                 : " text-black")
@@ -102,7 +102,7 @@ export const TopicOverviewNav = ({ selected, setSelected }: Props) => {
           </a>
           <a
             className={
-              "topic-nav-tab px-3 my-0 text-decoration-none " +
+              "common-p topic-nav-tab px-3 my-0 text-decoration-none " +
               (selected === "church"
                 ? " border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
                 : " text-black")
