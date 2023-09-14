@@ -1,23 +1,35 @@
 import Image from "next/image"
 import { Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap"
-import { useState, useEffect } from "react"
+import { useState, useEffect, ChangeEvent } from "react"
 import { useTranslation } from "next-i18next"
 import LanguageSwitcher from "./languageSwitcher"
 import { useRouter } from "next/router"
 import Link from "next/link"
 
-const NavLinkWithLocale = ({ text, href, locale, current }: { text: string; href: string; locale: string, current: string }) => {
+const NavLinkWithLocale = ({
+  text,
+  href,
+  locale,
+  current,
+}: {
+  text: string
+  href: string
+  locale: string
+  current: string
+}) => {
   return (
     <Nav.Item>
       <Link href={href} passHref locale={locale} className={"nav-link"}>
-        <Nav.Link as="span" className={(current === href ? "selected-nav-link" : "")}>{text}</Nav.Link>
+        <Nav.Link as="span" className={current === href ? "selected-nav-link" : ""}>
+          {text}
+        </Nav.Link>
       </Link>
     </Nav.Item>
   )
 }
 
-const mediaQuery = '(min-width: 1280px)';
-const mediaQuerySmall = '(max-width: 1270px)';
+const mediaQuery = "(min-width: 1280px)"
+const mediaQuerySmall = "(max-width: 1270px)"
 
 const ToggleHeader: React.FC = () => {
   const { t } = useTranslation("common") // specify translation file from public/locales/[lng]
@@ -47,25 +59,25 @@ const ToggleHeader: React.FC = () => {
   // is opened, if you expand the screen to become a desktop width, the color
   // scheme will not change accordingly.
   useEffect(() => {
-    const mediaQueryList = window.matchMedia(mediaQuery);
-    function update(e) {
+    const mediaQueryList = window.matchMedia(mediaQuery)
+    function update(e: MediaQueryListEvent) {
       if (e.matches) {
-        setBg("white");
-        setVariant("light");
+        setBg("white")
+        setVariant("light")
       } else {
         if (document.getElementById("header-navbar-nav")?.classList.contains("show")) {
-          setBg("primary");
-          setVariant("dark");
-        } 
+          setBg("primary")
+          setVariant("dark")
+        }
       }
     }
 
-    mediaQueryList.addEventListener('change', update)
+    mediaQueryList.addEventListener("change", update)
     return () => {
-       // This is called the cleanup phase aka beforeUnmount
-       mediaQueryList.removeEventListener('change', update)   
+      // This is called the cleanup phase aka beforeUnmount
+      mediaQueryList.removeEventListener("change", update)
     }
- }, []) // Only do this once, aka hook-ish way of saying didMount
+  }, []) // Only do this once, aka hook-ish way of saying didMount
 
   return (
     <Navbar className="shadow-sm" sticky="top" bg={bg} expand="xl" variant={variant}>
@@ -73,7 +85,9 @@ const ToggleHeader: React.FC = () => {
         <Navbar.Brand href={"/" + i18n.language}>
           <Image
             alt={t("header.brandAlt")}
-            src={bg === "white" ? `/bts-crane-wht-logo-${i18n.language}.png` : `/bts-crane-blue-logo-${i18n.language}.png`}
+            src={
+              bg === "white" ? `/bts-crane-wht-logo-${i18n.language}.png` : `/bts-crane-blue-logo-${i18n.language}.png`
+            }
             width="640"
             height="123"
             className="d-inline-block align-top header-crane-button"
@@ -84,10 +98,30 @@ const ToggleHeader: React.FC = () => {
           <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
             <Nav className="ml-auto d-md-flex gap-md-3 align-items-xl-center" variant={variant}>
               <NavLinkWithLocale current={router.pathname} text={t("header.home")} href="/" locale={i18n.language} />
-              <NavLinkWithLocale current={router.pathname} text={t("header.topics")} href="/topics/all" locale={i18n.language} />
-              <NavLinkWithLocale current={router.pathname} text={t("header.booklet")} href="/booklet" locale={i18n.language} />
-              <NavLinkWithLocale current={router.pathname} text={t("header.download")} href="/resources" locale={i18n.language} />
-              <NavLinkWithLocale current={router.pathname} text={t("header.about")} href="/about" locale={i18n.language} />
+              <NavLinkWithLocale
+                current={router.pathname}
+                text={t("header.topics")}
+                href="/topics/all"
+                locale={i18n.language}
+              />
+              <NavLinkWithLocale
+                current={router.pathname}
+                text={t("header.booklet")}
+                href="/booklet"
+                locale={i18n.language}
+              />
+              <NavLinkWithLocale
+                current={router.pathname}
+                text={t("header.download")}
+                href="/resources"
+                locale={i18n.language}
+              />
+              <NavLinkWithLocale
+                current={router.pathname}
+                text={t("header.about")}
+                href="/about"
+                locale={i18n.language}
+              />
               {/* 
                 Need a more extensibile way for future languages but for now this should do
               */}
@@ -109,15 +143,9 @@ const ToggleHeader: React.FC = () => {
               <Row className="mb-4">
                 <LanguageSwitcher />
               </Row>
-              <Image
-                alt="Crane logo"
-                src="/wire-logo.png"
-                width="48"
-                height="48"
-                className="mb-2"
-              />{" "}
+              <Image alt="Crane logo" src="/wire-logo.png" width="48" height="48" className="mb-2" />{" "}
               <Row className="mt-2 mb-5">
-              <p className="mobile-menu-tagline text-light pb-3">{t("header.blurb")}</p>
+                <p className="mobile-menu-tagline text-light pb-3">{t("header.blurb")}</p>
               </Row>
             </Container>
           </Container>
