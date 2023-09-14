@@ -7,11 +7,30 @@ import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import SampleBookPageImage from "../public/sample book page.svg"
-import SampleBookPageImage2 from "../public/photos/booklet/Book - Slider 1 JP 3.png"
 import Footer from "../components/footer"
 import ImagePagination from "../components/image-pagination/ImagePagination"
 import { GrCircleInformation } from "react-icons/gr"
+import BookPageImageEN1 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 1.jpg"
+import BookPageImageEN2 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 2.jpg"
+import BookPageImageEN3 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 3.jpg"
+import BookPageImageEN4 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 4.jpg"
+import BookPageImageEN5 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 5.jpg"
+import BookPageImageEN6 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 6.jpg"
+import BookPageImageEN7 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 7.jpg"
+import BookPageImageEN8 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 8.jpg"
+import BookPageImageEN9 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 9.jpg"
+import BookPageImageEN10 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 10.jpg"
+import BookPageImageJA1 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 1.jpg"
+import BookPageImageJA2 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 2.jpg"
+import BookPageImageJA3 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 3.jpg"
+import BookPageImageJA4 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 4.jpg"
+import BookPageImageJA5 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 5.jpg"
+import BookPageImageJA6 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 6.jpg"
+import BookPageImageJA7 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 7.jpg"
+import BookPageImageJA8 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 8.jpg"
+import BookPageImageJA9 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 9.jpg"
+import BookPageImageJA10 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 10.jpg"
+import { StaticImageData } from "next/image"
 
 export async function getStaticProps({ locale }: any) {
   return {
@@ -22,6 +41,36 @@ export async function getStaticProps({ locale }: any) {
     },
   }
 }
+
+interface PaginationSrcType {
+  src: StaticImageData
+  text: string
+}
+
+const enImages: PaginationSrcType[] = [
+  { src: BookPageImageEN1, text: "" },
+  { src: BookPageImageEN2, text: "" },
+  { src: BookPageImageEN3, text: "" },
+  { src: BookPageImageEN4, text: "" },
+  { src: BookPageImageEN5, text: "" },
+  { src: BookPageImageEN6, text: "" },
+  { src: BookPageImageEN7, text: "" },
+  { src: BookPageImageEN8, text: "" },
+  { src: BookPageImageEN9, text: "" },
+  { src: BookPageImageEN10, text: "" },
+]
+const jaImages: PaginationSrcType[] = [
+  { src: BookPageImageJA1, text: "" },
+  { src: BookPageImageJA2, text: "" },
+  { src: BookPageImageJA3, text: "" },
+  { src: BookPageImageJA4, text: "" },
+  { src: BookPageImageJA5, text: "" },
+  { src: BookPageImageJA6, text: "" },
+  { src: BookPageImageJA7, text: "" },
+  { src: BookPageImageJA8, text: "" },
+  { src: BookPageImageJA9, text: "" },
+  { src: BookPageImageJA10, text: "" },
+]
 
 const Booklet: React.FC = () => {
   const { t, i18n } = useTranslation("booklet")
@@ -69,13 +118,7 @@ const Booklet: React.FC = () => {
         </div>
         <Container id="prayer-sample" className="py-5">
           <Container className="page-container py-3">
-            <ImagePagination
-              pages={[
-                { src: SampleBookPageImage, text: t("samplePageImageAlt") },
-                { src: SampleBookPageImage2, text: "" },
-                { src: "", text: "" },
-              ]}
-            />
+            <ImagePagination pages={i18n.language === "en" ? enImages : jaImages} />
           </Container>
         </Container>
         <Container>
