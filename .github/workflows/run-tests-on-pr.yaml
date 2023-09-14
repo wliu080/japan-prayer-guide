@@ -30,6 +30,7 @@ jobs:
         if: ${{ steps.filter_changes.outputs.javascript_changed == 'true' }}
         uses: actions/setup-node@v2
         with:
+          architecture: "arm"
           node-version: ${{ matrix.node-version }}
 
       - name: npm install
