@@ -12,6 +12,7 @@ interface OrderBookProps {
   orderJapan: string
   orderWarning: string
   orderBooklet: string
+  language: string
 }
 
 export default function OrderBook({
@@ -22,10 +23,12 @@ export default function OrderBook({
   orderJapan,
   orderWarning,
   orderBooklet,
+  language
 }: OrderBookProps) {
-  return (
-    <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container">
-      <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4">
+
+  function ENSection() {
+    return (
+      <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4 mt-4">
         <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3" />
         <div className="position-relative w-100 d-flex align-items-center flex-column">
           <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{title}</h1>
@@ -50,6 +53,11 @@ export default function OrderBook({
           {orderPrompt}
         </Link>
       </Container>
+    )
+  }
+
+  function JASection() {
+    return (
       <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
         <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3" />
         <div className="position-relative w-100 d-flex align-items-center flex-column">
@@ -69,6 +77,22 @@ export default function OrderBook({
           {orderBooklet}
         </Link>
       </Container>
+    )
+  }
+
+  return (
+    <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container">
+      {language === 'en' ?
+        <>
+          {ENSection()}
+          {JASection()}
+        </>
+        :
+        <>
+          {JASection()}
+          {ENSection()}
+        </>
+      }
     </Container>
   )
 }

@@ -99,6 +99,7 @@ const Booklet: React.FC = () => {
           orderJapan={orderJapan}
           orderWarning={orderWarning}
           orderBooklet={orderBooklet}
+          language={i18n.language}
         />
         <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
           <Container className="text-center">

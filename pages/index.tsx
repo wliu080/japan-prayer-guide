@@ -189,6 +189,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           orderJapan={orderJapan}
           orderWarning={orderWarning}
           orderBooklet={orderBooklet}
+          language={i18n.language}
         />
 
         {/* Downloads snippet */}
