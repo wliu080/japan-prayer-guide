@@ -15,6 +15,22 @@
     "readMore": "Coming soon",
     "viewAll": "View all topics"
   },
+  "order": {
+    "title": "Order the English booklet",
+    "blurb": "Select your shipping destination",
+    "regions": [
+      { "text": "North America", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
+      {
+        "text": "Japan",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+      },
+      { "text": "International", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
+    ],
+    "prompt": "Order the e-book",
+    "japan": "Order the Japanese booklet",
+    "warning": "We're only able to ship within Japan at this time.",
+    "form": "Fill out the order form"
+  },
   "feedback": {
     "title": "Share your reflections with us! We'd love to hear it!",
     "button": "Give Feedback"

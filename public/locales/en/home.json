@@ -14,20 +14,6 @@
   "purchaseTitle": "Get the prayer booklet",
   "purchaseBlurb": "The <italic>Beneath the Surface</italic> prayer guide was produced in collaboration with missionaries and leaders from 17 organizations in Japan. About 20,000 copies have been distributed around the world. It is also available in Japanese and a few other languages.",
   "purchasePreview": "Preview the booklet",
-  "orderTitle": "Order the English booklet",
-  "orderBlurb": "Select your shipping destination",
-  "orderRegions": [
-    { "text": "North America", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
-    {
-      "text": "Japan",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-    },
-    { "text": "International", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
-  ],
-  "orderEBook": "Order the e-book",
-  "orderJapan": "Order the Japanese booklet",
-  "orderWarning": "We're only able to ship within Japan at this time.",
-  "orderBooklet": "Fill out the order form",
   "downloadTitle": "Resources to download",
   "downloadBlurb": "The design, text, and media assets on our website are available to download or stream. Our heart is to share what we have so that many people will be equipped to pray for Japan.",
   "downloadList": [

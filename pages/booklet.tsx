@@ -2,7 +2,6 @@ import Head from "next/head"
 import Link from "next/link"
 import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
-import { PurchaseButtons } from "../components/purchase/PurchaseButtons"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
 import { useTranslation } from "next-i18next"
@@ -11,7 +10,8 @@ import SampleBookPageImage from "../public/sample book page.svg"
 import SampleBookPageImage2 from "../public/photos/booklet/Book - Slider 1 JP 3.png"
 import Footer from "../components/footer"
 import ImagePagination from "../components/image-pagination/ImagePagination"
-import { GrCircleInformation } from "react-icons/gr"
+import OrderBook from "../components/common/OrderBook"
+import { OrderRegionType } from "."
 
 export async function getStaticProps({ locale }: any) {
   return {
@@ -25,7 +25,16 @@ export async function getStaticProps({ locale }: any) {
 
 const Booklet: React.FC = () => {
   const { t, i18n } = useTranslation("booklet")
+  const { t: commonTranslation } = useTranslation("common")
   const introTextParagraphs: string[] = t("introText", { returnObjects: true })
+
+  const orderTitle: string = commonTranslation("order.title")
+  const orderBlurb: string = commonTranslation("order.blurb")
+  const orderRegions: OrderRegionType[] = commonTranslation("order.regions", { returnObjects: true })
+  const orderEBook: string = commonTranslation("order.prompt")
+  const orderJapan: string = commonTranslation("order.japan")
+  const orderWarning: string = commonTranslation("order.warning")
+  const orderBooklet: string = commonTranslation("order.form")
 
   return (
     <div>
@@ -81,33 +90,16 @@ const Booklet: React.FC = () => {
         <Container>
           <BootstrapImage className="w-100 px-10" src="/photos/booklet/BOOK_GIF_JP 4.png" />
         </Container>
-        <Container fluid className="purchase-wrapper text-center">
-          <Container className="purchase-section mb-4">
-            <Container className="purchase-header-block d-flex justify-content-center">
-              <div className="inline-hr"></div>
-              <div className="purchase-copy-header mx-4">{t("purchaseHeading")}</div>
-              <div className="inline-hr"></div>
-            </Container>
-            <div>{t("purchaseText")}</div>
-            <PurchaseButtons />
-            <Link href="https://www.amazon.com/dp/B099KSSY79" target="_blank">
-              {t("orderEBook")}
-            </Link>
 
-            <div className="language-availability">
-              <span className="me-1">
-                <GrCircleInformation></GrCircleInformation>
-              </span>
-              <i>{t("languageAvailability")}</i>
-            </div>
-          </Container>
-          <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-            target="_blank"
-          >
-            {t("orderJapan")}
-          </Link>
-        </Container>
+        <OrderBook
+          title={orderTitle}
+          blurb={orderBlurb}
+          orderRegionsMap={orderRegions}
+          orderPrompt={orderEBook}
+          orderJapan={orderJapan}
+          orderWarning={orderWarning}
+          orderBooklet={orderBooklet}
+        />
         <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
           <Container className="text-center">
             <h1>{t("prayerRedirectHeading")}</h1>

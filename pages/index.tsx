@@ -7,18 +7,12 @@ import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector
 import Footer from "../components/footer"
 import FeaturedTopic from "../components/landing/FeaturedTopic"
 import { IconContext } from "react-icons"
-import {
-  RiMic2Fill,
-  RiSlideshowLine,
-  RiDonutChartFill,
-  RiImageFill,
-  RiFile3Line,
-  RiInformationLine,
-} from "react-icons/ri"
+import { RiMic2Fill, RiSlideshowLine, RiDonutChartFill, RiImageFill, RiFile3Line } from "react-icons/ri"
 import { FaPrayingHands } from "react-icons/fa"
 import DownloadLinkCard from "../components/landing/DownloadLinkCard"
 import { ReactNode } from "react"
 import Link from "next/link"
+import OrderBook from "../components/common/OrderBook"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
   // schedule is from featured-topics.json
@@ -33,13 +27,13 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
   }
 }
 
-interface OrderRegionType {
+export interface OrderRegionType {
   text: string
   url: string
 }
 
 const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
-  const { i18n } = useTranslation("common")
+  const { t: commonTranslation, i18n } = useTranslation("common")
   const { t: homePageTranslation } = useTranslation("home")
   const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
@@ -61,13 +55,13 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
   const purchaseTitle: string = homePageTranslation("purchaseTitle")
   const purchasePreview: string = homePageTranslation("purchasePreview")
 
-  const orderTitle: string = homePageTranslation("orderTitle")
-  const orderBlurb: string = homePageTranslation("orderBlurb")
-  const orderRegions: OrderRegionType[] = homePageTranslation("orderRegions", { returnObjects: true })
-  const orderEBook: string = homePageTranslation("orderEBook")
-  const orderJapan: string = homePageTranslation("orderJapan")
-  const orderWarning: string = homePageTranslation("orderWarning")
-  const orderBooklet: string = homePageTranslation("orderBooklet")
+  const orderTitle: string = commonTranslation("order.title")
+  const orderBlurb: string = commonTranslation("order.blurb")
+  const orderRegions: OrderRegionType[] = commonTranslation("order.regions", { returnObjects: true })
+  const orderEBook: string = commonTranslation("order.prompt")
+  const orderJapan: string = commonTranslation("order.japan")
+  const orderWarning: string = commonTranslation("order.warning")
+  const orderBooklet: string = commonTranslation("order.form")
 
   const downloadTitle: string = homePageTranslation("downloadTitle")
   const downloadBlurb: string = homePageTranslation("downloadBlurb")
@@ -85,7 +79,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
     <RiImageFill key={2} />,
     <FaPrayingHands key={3} />,
     <RiMic2Fill key={4} />,
-    <RiSlideshowLine key={5} />
+    <RiSlideshowLine key={5} />,
   ]
 
   return (
@@ -187,52 +181,15 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         </Container>
 
         {/* Order snippet */}
-        <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container">
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4">
-            <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3"/>
-            <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderTitle}</h1>
-              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
-            </div>
-            <h2 className="text-primary fs-5 fw-bold mb-2">{orderBlurb}</h2>
-            <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
-              {orderRegions.map((region) => (
-                <Link
-                  className="fs-6 bg-secondary-5 text-white text-center region text-decoration-none"
-                  href={region.url}
-                  key={region.text}
-                >
-                  {region.text}
-                </Link>
-              ))}
-            </div>
-            <Link
-              className="fs-5 text-secondary-5 fw-bold text-decoration-underline mb-4"
-              href="https://www.amazon.com/dp/B099KSSY79"
-            >
-              {orderEBook}
-            </Link>
-          </Container>
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
-            <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3"/>
-            <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderJapan}</h1>
-              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
-            </div>
-            <h2 className="text-black fs-6 fst-italic mb-2 d-flex align-items-center gap-1">
-              <IconContext.Provider value={{ size: "16px" }}>
-                <RiInformationLine />
-              </IconContext.Provider>
-              {orderWarning}
-            </h2>
-            <Link
-              className="bg-grey-2 text-secondary-5 border-secondary-5 fw-bold fs-5 mb-4 p-2 text-decoration-none border rounded"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-            >
-              {orderBooklet}
-            </Link>
-          </Container>
-        </Container>
+        <OrderBook
+          title={orderTitle}
+          blurb={orderBlurb}
+          orderRegionsMap={orderRegions}
+          orderPrompt={orderEBook}
+          orderJapan={orderJapan}
+          orderWarning={orderWarning}
+          orderBooklet={orderBooklet}
+        />
 
         {/* Downloads snippet */}
         <div
