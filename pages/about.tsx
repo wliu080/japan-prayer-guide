@@ -49,17 +49,17 @@ const About: React.FC = () => {
           className="w-100 mx-0 d-flex align-items-center justify-content-center flex-column position-relative"
         >
           <Image alt="about hero image" src="/photos/about/about_hero.jpg" className="position-absolute top-0" />
-          <h2 className="px-4 text-white w-100">{heroSubheader}</h2>
-          <h1 className="px-4 text-white w-100">{heroHeader}</h1>
+          <h2 className="px-4 px-md-5 px-lg-4 text-white w-100">{heroSubheader}</h2>
+          <h1 className="px-4 px-md-5 px-lg-4 text-white w-100" style={({whiteSpace: "pre-line"})}>{heroHeader}</h1>
         </div>
 
         {/* Growing interest section */}
         <Container id="who-are-we" className="w-100 d-flex flex-column align-items-center px-4 px-md-4">
           <h1 className="text-primary about-h1-header text-center">{introTitle}</h1>
-          <Image className="mt-2 mt-md-4 about-main-image" alt="about img 1" src="/photos/about/about_01.png" />
+          <Image className="mt-4 about-main-image" alt="about img 1" src="/photos/about/about_01.png" />
           <Container className="px-0">
 
-          <div className="w-100 mt-4 mt-md-4 pt-md-3"></div>
+          <div className="w-100 mt-4 pt-3"></div>
           {introBlurb.map((text, idx) => (
             <p key={idx + text} className="common-p about-body-text">
               {text}
@@ -71,14 +71,14 @@ const About: React.FC = () => {
         {/* Beneath section */}
         <div className="bg-secondary-2 w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center flex-column px-4 px-md-4">
           <Container className="about-beneath-surface align-items-center">
-            <h1 className="mb-3 mt-2 mb-md-4 pb-md-2 text-primary about-h1-header text-center">
+            <h1 className="mt-2 mb-4 pb-2 text-primary about-h1-header text-center">
               <Trans t={t} i18nKey="contextTitle" components={{ italic: <i /> }} />
             </h1>
             <Container className="d-flex flex-column flex-md-row gap-3 gap-xl-4 about-images justify-content-center px-4">
               <Image alt="about img 2" src="/photos/about/about_02.png" className="about-image" />
               <Image alt="about img 3" src="/photos/about/about_03.png" className="about-image" />
             </Container>
-          <div className="w-100 mt-4 mt-md-4 pt-md-3"></div>
+          <div className="w-100 mt-4 pt-3"></div>
           <Container className="about-beneath-surface-text">
 
           <p className="common-p about-body-text">
@@ -114,10 +114,10 @@ const About: React.FC = () => {
         {/* Logos */}
         <Container className="about-logos-container w-100 d-flex justify-content-center align-items-center my-5">
           <div className="ms-2">
-            <Image className="about-logo" alt="omf logo" src="/photos/about/about_omf.png" />
+            <Image className="omf-logo" alt="omf logo" src="/photos/about/about_omf.png" />
           </div>
           <div className="">
-            <Image className="about-logo" alt="omf logo" src="/photos/about/about_pioneers.png" />
+            <Image className="pioneers-logo" alt="omf logo" src="/photos/about/about_pioneers.png" />
           </div>
         </Container>
 

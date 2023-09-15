@@ -703,15 +703,27 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
     }
   }
 
-  .about-logo {
-    height: 115px;
-
+  $logo-size: 100px;
+  $logo-size-tablet: 90px;
+  $logo-size-mobile: 80px;
+  .omf-logo {
+    height: $logo-size;
     @include media-breakpoint-down(xl) {
-      height: 100px;
+      height: $logo-size-tablet;
     }
-
     @include media-breakpoint-down(md) {
-      height: 85px;
+      height: $logo-size-mobile;
+    }
+  }
+
+  $logo-ratio: 102/116;
+  .pioneers-logo {
+    height: $logo-size * $logo-ratio ;
+    @include media-breakpoint-down(xl) {
+      height: $logo-size-tablet * $logo-ratio;
+    }
+    @include media-breakpoint-down(md) {
+      height: $logo-size-mobile * $logo-ratio;
     }
   }
   .about-invite {
