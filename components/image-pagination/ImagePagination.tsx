@@ -49,8 +49,8 @@ const ImagePagination = ({ pages, barDisplay = true }: ImagePaginationProps) => 
         </button>
         <Container className="image-pagination-images" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
           {pages.map((img, idx) => (
-            <div style={activeIndex === idx ? { display: "block" } : { display: "none" }} key={`${img.src}_${idx}`}>
-              <Image src={img.src} alt={img.text} />
+            <div className="image-pagination" style={activeIndex === idx ? { display: "block" } : { display: "none" }} key={`${img.src}_${idx}`}>
+              <Image src={img.src} alt={img.text} loading="eager"/>
               {img.text && <span>{img.text}</span>}
             </div>
           ))}
