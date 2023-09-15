@@ -57,10 +57,10 @@ export default function Overview() {
             alt={"Topic-nav hero image"}
             className="w-100 h-100 topic-nav-hero position-absolute"
           />
-          <Container className="d-flex flex-column align-items-center justify-content-center h-100">
-            <h1 className="text-black px-3 topic-nav-hero-title">{heading}</h1>
+          <Container className="d-flex flex-column align-items-center justify-content-center h-100 topics-header-container">
+            <h1 className="text-black px-3 pb-2 topic-nav-hero-title">{heading}</h1>
             {heroSubtext.map((text) => (
-              <p key={text} className="common-p text-black text-center topic-nav-hero-subtitle">
+              <p key={text} style={{ whiteSpace: "pre-line" }} className="text-black text-center topic-nav-hero-subtitle coming-soon">
                 {text}
               </p>
             ))}

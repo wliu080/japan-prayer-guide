@@ -73,8 +73,8 @@ const ToggleHeader: React.FC = () => {
           <Image
             alt={t("header.brandAlt")}
             src={bg === "white" ? `/bts-crane-wht-logo-${i18n.language}.png` : `/bts-crane-blue-logo-${i18n.language}.png`}
-            width="640"
-            height="123"
+            width="2136"
+            height="384"
             className="d-inline-block align-top header-crane-button"
           />{" "}
         </Navbar.Brand>

@@ -138,13 +138,13 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
               className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
             >
               <CarouselItem className="w-100 d-flex justify-content-center">
-                <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.png" />
+                <Image className="home-carousel-image" alt="hero image 1" src="/photos/home/hp_slider-1.jpg" />
               </CarouselItem>
               <CarouselItem className="w-100 d-flex justify-content-center">
-                <Image className="home-carousel-image" alt="hero image 2" src="/photos/home/hp_slider-2.png" />
+                <Image className="home-carousel-image" alt="hero image 2" src="/photos/home/hp_slider-2.jpg" />
               </CarouselItem>
               <CarouselItem className="w-100 d-flex justify-content-center">
-                <Image className="home-carousel-image" alt="hero image 3" src="/photos/home/hp_slider-3.png" />
+                <Image className="home-carousel-image" alt="hero image 3" src="/photos/home/hp_slider-3.jpg" />
               </CarouselItem>
             </Carousel>
           </div>
@@ -163,10 +163,10 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
         {/* Featured topic */}
         <Container fluid id="featuredTopicSection" className="py-5 bg-secondary-2">
           <Container className="d-flex flex-column align-items-center justify-content-center">
-            <h1 className="home-common-h1">{featuredTopicTitle}</h1>
+            <h1 className="home-common-h1 pb-1">{featuredTopicTitle}</h1>
           </Container>
           <FeaturedTopic
-            featuredImg="/photos/topic-nav/church/church-leadership.png"
+            featuredImg="/photos/topic-nav/church/church-leadership-b.jpg"
             title={prayerTitle}
             prayerPoints={prayerPoints}
           />
@@ -174,13 +174,13 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Purchase snippet */}
         <Container className="home-purchase-section py-3 py-md-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
-          <Image alt="book-cover" src="/photos/home/hp_cover.png" className="mt-3 mx-3 shadow" />
+          <Image alt="book-cover" src={`/photos/home/hp_cover-${i18n.language}.jpg`} className="mt-3 mx-3 shadow" />
           <div className="w-100 align-items-center align-items-md-start d-flex flex-column purchase-text-container mx-2 me-md-5 ms-md-2">
-            <h1 className="mt-5 mb-0 home-common-h1">{purchaseTitle}</h1>
-            <p className="my-3 px-3 px-md-0 common-p">
+            <h1 className="mt-5 mb-1 home-common-h1">{purchaseTitle}</h1>
+            <p className="mb-3 mt-4 px-3 px-md-0 common-p">
               <Trans t={homePageTranslation} i18nKey="purchaseBlurb" components={{ italic: <i /> }} />
             </p>
-            <Link href={"/purchase"} locale={i18n.language} className="text-secondary-5 mb-2 mb-md-5 common-p">
+            <Link href={"/purchase"} locale={i18n.language} className="text-secondary-5 mb-2 mb-md-5 common-p fs-4">
               {purchasePreview}
             </Link>
           </div>
@@ -188,10 +188,29 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Order snippet */}
         <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container">
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4">
-            <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3"/>
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
+            {/* <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3"/> */}
             <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderTitle}</h1>
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
+              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
+            </div>
+            <Link
+              className="fs-5 japan-order bg-grey-2 text-secondary-5 border-secondary-5 text-center fw-bold fs-5 mb-1 p-2 text-decoration-none border rounded"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+            >
+              {orderBooklet}
+            </Link>
+            <h2 className="text-black fs-5 fst-italic mb-2 d-flex align-items-center gap-1 mb-4">
+              <IconContext.Provider value={{ size: "16px" }}>
+                <RiInformationLine />
+              </IconContext.Provider>
+              {orderWarning}
+            </h2>
+          </Container>
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4 mt-4">
+            {/* <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3"/> */}
+            <div className="position-relative w-100 d-flex align-items-center flex-column">
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderTitle}</h1>
               <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
             </div>
             <h2 className="text-primary fs-4 fw-bold mb-2 mt-1">{orderBlurb}</h2>
@@ -213,25 +232,6 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
               {orderEBook}
             </Link>
           </Container>
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center mt-4">
-            <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3"/>
-            <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderJapan}</h1>
-              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
-            </div>
-            <Link
-              className="fs-5 japan-order bg-grey-2 text-secondary-5 border-secondary-5 text-center fw-bold fs-5 mb-1 p-2 text-decoration-none border rounded"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-            >
-              {orderBooklet}
-            </Link>
-            <h2 className="text-black fs-5 fst-italic mb-2 d-flex align-items-center gap-1 mb-4">
-              <IconContext.Provider value={{ size: "16px" }}>
-                <RiInformationLine />
-              </IconContext.Provider>
-              {orderWarning}
-            </h2>
-          </Container>
         </Container>
 
         {/* Downloads snippet */}
@@ -244,8 +244,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             className="mt-3"
             style={{ backgroundColor: "#BCC3CF", width: "100%", maxWidth: "442px", aspectRatio: 1.8 }}
           ></div> */}
-          <h1 className="mt-4 w-100 text-center home-common-h1">{downloadTitle}</h1>
-          <p className="fw-normal w-100 text-center home-common-blurb common-p my-2">{downloadBlurb}</p>
+          <h1 className="my-4 w-100 text-center home-common-h1">{downloadTitle}</h1>
+          <p className="fw-normal w-100 text-center home-common-blurb common-p mt-1 mb-2">{downloadBlurb}</p>
           {/* Icons for downloads */}
           {/* <Container className="d-none d-xl-block">
             <IconContext.Provider value={{ size: "30px" }}>
@@ -266,14 +266,14 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
         {/* Beneath the Surface initiative - About snippet */}
         <div className="w-100 bg-grey-7 p-3 p-md-5 d-flex flex-column align-items-center">
-          <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2">
+          <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2 mb-1 pb-1">
             <Image alt="BTS Crane" src={`/photos/home/hp_crane.png`} className="home-logo-crane" />
             <Image alt="BTS Logo" src={`/photos/home/hp_logo_${i18n.language}.png`} className="home-logo-text" />
           </div>
           <div className="home-common-blurb common-p text-center text-white my-3 w-100">
             <Trans t={homePageTranslation} i18nKey="learnBlurb" components={{ italic: <i /> }} />
           </div>
-          <Button className="fs-4 text-nowrap border-white px-4 py-2 text-white text-center bg-grey-7 mt-2 mb-4">
+          <Button className="fs-4 text-nowrap border-white px-4 text-white text-center bg-grey-7 mt-2 mb-4">
             {learnMoreAbout}
           </Button>
         </div>

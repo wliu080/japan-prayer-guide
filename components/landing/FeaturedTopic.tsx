@@ -45,7 +45,7 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
               </li>
             ))}
           </ul>
-          <Button className="w-100 mt-3 mb-2 text-secondary-5 border-secondary-5 bg-white fw-bold fs-4 feature-button" variant="primary">
+          <Button className="feature-button fs-4 fw-bold bg-grey-4 text-white text-center border-0 mt-3 mb-2 w-100" variant="primary">
             {read}
           </Button>
           <Card.Text
