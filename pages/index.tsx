@@ -104,8 +104,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           <Image alt="home page hero" src="/photos/home/hp_hero.png" className="home-hero" />
           <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute w-100">
             <Container className="d-flex flex-column align-items-start w-100">
-              <h2 className="text-white">{heroSubheading}</h2>
-              <h1 className="text-white">{heroHeading}</h1>
+              <h2 className="text-white text-start">{heroSubheading}</h2>
+              <h1 className="text-white text-start">{heroHeading}</h1>
               <Button href="/topics/all" className="text-white my-3 bg-secondary-5 border-secondary-5 hero-button">
                 {heroViewTopicsBtn}
               </Button>
