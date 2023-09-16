@@ -35,7 +35,7 @@ const Downloads: React.FC = () => {
             <Image
                 alt={"We're sorry"}
                 src="/sorry.png"
-                height="250"
+                height="150"
             />
             <div className="text-center sorryTitle">
               {t("title")}

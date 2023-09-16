@@ -1,10 +1,10 @@
 {
   "webpageTitle": "御心が地にもなるように",
-  "heroHeading": "日本のために祈る３０項目",
+  "heroHeading": "日本のために祈る30項目",
   "heroSubheading": "",
   "titleButton": "全てのテーマを見る",
   "introText1": "日本でイエスの御名が初めて宣べ伝えられてから、<bold>500年近く経ちます</bold>。以来、日本の教会は深い忍耐をもって迫害や困難を乗り越え、たゆまず歩んできました。今日、日本のクリスチャン人口は、<bold>全体の1パーセント</bold>に及びません。",
-  "bibleVerse": "あなたの目で見、耳で聞き、わたしがあなたに見せるすべてのことを心に留めよ。",
+  "bibleVerse": "あなたの目で見、耳で聞き、わたしがあなたに見せるすべてのことを心に留めよ…",
   "bibleRef": "エゼキエル書40:4",
   "introText2Subheading": "祈りへの招き",
   "introText2a": "このウェブサイトは、祈りの冊子「御心が地にもなるように」をもとに、日本における神の働きのうち、重要度の高い30の祈りのテーマをより深く知っていただくために作られました。",
@@ -14,6 +14,20 @@
   "purchaseTitle": "祈りの冊子を注文する",
   "purchaseBlurb": "祈りの冊子「御心が地にもなるように」は17団体の宣教師やクリスチャンリーダーの協力で制作されました。すでに2万冊が世界中で配布されています。現在、日本語版、英語版、その他数ヶ国語に翻訳されています。",
   "purchasePreview": "冊子のプレビュー",
+  "orderTitle": "英語の冊子を注文する",
+  "orderBlurb": "配送先の地域を選択してください",
+  "orderRegions": [
+    { "text": "北米", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
+    {
+      "text": "日本",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+    },
+    { "text": "その他", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
+  ],
+  "orderEBook": "英語の eBook を注文する",
+  "orderJapan": "日本語の冊子を注文する",
+  "orderWarning": "現在は国内発送のみ承っています",
+  "orderBooklet": "注文フォームを入力する",
   "downloadTitle": "資料のダウンロード",
   "downloadBlurb": "当ウェブサイトのデザイン、テキスト、画像・映像などは、ダウンロードまたはストリーミングでご利用いただけます。 私たちの願いは、これらの資料を通して多くの人々が日本のための祈りに招かれ、整えられることです。",
   "downloadList": ["インフォグラフィック", "PDFファイル", "写真", "祈りの課題", "祈りの音声", "プレゼン用スライド"],
