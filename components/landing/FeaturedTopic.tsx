@@ -28,9 +28,9 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
       <Card className="my-4 shadow d-md-flex flex-md-row">
         {/* temporary height for image, before we finalize images */}
         <Card.Img variant="top" src={featuredImg} className="home-feature-img" />
-        <Card.Body className="p-4" style={{ maxWidth: "600px" }}>
+        <Card.Body className="p-4 featured-topic-card">
           <Card.Text className="featuredTopicTitle px-2 pb-2 fs-2 border-bottom border-grey">{title}</Card.Text>
-          <Card.Text className="featuredTopicSubtitle d-flex align-items-center gap-2 text-secondary-5">
+          <Card.Text className="fs-3 featuredTopicSubtitle d-flex align-items-center gap-2 text-secondary-5">
             {/* TODO: Icon still a little weird, come back to this later */}
             {/* <IconContext.Provider value={{ size: "20px" }}>
               <FaPrayingHands></FaPrayingHands>
@@ -45,11 +45,11 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
               </li>
             ))}
           </ul>
-          <Button className="w-100 mt-3 mb-2 text-secondary-5 border-secondary-5 bg-white fw-bold feature-button" variant="primary">
+          <Button className="feature-button fs-4 fw-bold bg-grey-4 text-white text-center border-0 mt-3 mb-2 w-100" variant="primary">
             {read}
           </Button>
           <Card.Text
-            className="mt-3 w-100 mx-auto text-center text-decoration-underline text-secondary-5 fw-bold feature-view-all"
+            className="mt-3 w-100 mx-auto text-center text-decoration-underline text-secondary-5 fw-bold fs-4 feature-view-all"
             style={{ cursor: "pointer" }}
             onClick={() => redirect("topics/all")}
           >

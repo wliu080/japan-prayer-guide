@@ -5,11 +5,15 @@ import { ToggleHeader } from "../components/toggleHeader"
 import { PurchaseButtons } from "../components/purchase/PurchaseButtons"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
-import { useTranslation } from "next-i18next"
+import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
 import ImagePagination from "../components/image-pagination/ImagePagination"
 import { GrCircleInformation } from "react-icons/gr"
+import { IconContext } from "react-icons"
+import {
+  RiInformationLine,
+} from "react-icons/ri"
 import BookPageImageEN1 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 1.jpg"
 import BookPageImageEN2 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 2.jpg"
 import BookPageImageEN3 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 3.jpg"
@@ -40,6 +44,11 @@ export async function getStaticProps({ locale }: any) {
       // About used in content, common used in header
     },
   }
+}
+
+interface OrderRegionType {
+  text: string
+  url: string
 }
 
 interface PaginationSrcType {
@@ -74,7 +83,16 @@ const jaImages: PaginationSrcType[] = [
 
 const Booklet: React.FC = () => {
   const { t, i18n } = useTranslation("booklet")
+  const { t: bookletTranslation } = useTranslation("booklet")
   const introTextParagraphs: string[] = t("introText", { returnObjects: true })
+
+  const orderTitle: string = bookletTranslation("orderTitle")
+  const orderBlurb: string = bookletTranslation("orderBlurb")
+  const orderRegions: OrderRegionType[] = bookletTranslation("orderRegions", { returnObjects: true })
+  const orderEBook: string = bookletTranslation("orderEBook")
+  const orderJapan: string = bookletTranslation("orderJapan")
+  const orderWarning: string = bookletTranslation("orderWarning")
+  const orderBooklet: string = bookletTranslation("orderBooklet")
 
   return (
     <div>
@@ -93,7 +111,7 @@ const Booklet: React.FC = () => {
                 <div className="book-image">
                   <BootstrapImage
                     className="book-front-cover"
-                    src="/photos/booklet/Book - Cover EN 2.png"
+                    src={`/photos/home/hp_cover-${i18n.language}.jpg`}
                     alt={t("bookImageAlt")!}
                   />
                 </div>
@@ -101,14 +119,14 @@ const Booklet: React.FC = () => {
               <Col className="d-flex align-items-center">
                 <div className="book-text">
                   <h1>
-                    <i>{t("heading")}</i>
+                    <Trans components={{ italic: <i /> }}>{t("heading")}</Trans>
                   </h1>
                   <p className="book-subheading">
-                    <i>{t("subheading")}</i>
+                    <Trans components={{ italic: <i /> }}>{t("subheading")}</Trans>
                   </p>
                   {introTextParagraphs.map((text: string, idx: number) => (
                     <p key={idx + text} className="book-introText">
-                      {text}
+                      <Trans components={{ italic: <i /> }}>{text}</Trans>
                     </p>
                   ))}
                 </div>
@@ -121,10 +139,59 @@ const Booklet: React.FC = () => {
             <ImagePagination pages={i18n.language === "en" ? enImages : jaImages} />
           </Container>
         </Container>
-        <Container>
-          <BootstrapImage className="w-100 px-10" src="/photos/booklet/BOOK_GIF_JP 4.png" />
+        <Container className="booklet-gif mb-5">
+          <BootstrapImage className="w-100 px-10" src={`/photos/booklet/BOOK_GIF-${i18n.language}.gif`} />
         </Container>
-        <Container fluid className="purchase-wrapper text-center">
+
+        {/* Order snippet */}
+        <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container pt-3">
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
+            {/* <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3"/> */}
+            <div className="position-relative w-100 d-flex align-items-center flex-column">
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
+              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
+            </div>
+            <Link
+              className="fs-5 japan-order bg-grey-2 text-secondary-5 border-secondary-5 text-center fw-bold fs-5 mb-1 p-2 text-decoration-none border rounded"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+            >
+              {orderBooklet}
+            </Link>
+            <h2 className="text-black fs-5 fst-italic mb-2 d-flex align-items-center gap-1 mb-4">
+              <IconContext.Provider value={{ size: "16px" }}>
+                <RiInformationLine />
+              </IconContext.Provider>
+              {orderWarning}
+            </h2>
+          </Container>
+          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4 mt-4">
+            {/* <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3"/> */}
+            <div className="position-relative w-100 d-flex align-items-center flex-column">
+              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderTitle}</h1>
+              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
+            </div>
+            <h2 className="text-primary fs-4 fw-bold mb-2 mt-1">{orderBlurb}</h2>
+            <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
+              {orderRegions.map((region) => (
+                <Link
+                  className="fs-5 fw-bold bg-secondary-5 text-white text-center region text-decoration-none"
+                  href={region.url}
+                  key={region.text}
+                >
+                  {region.text}
+                </Link>
+              ))}
+            </div>
+            <Link
+              className="fs-4 text-secondary-5 fw-bold text-decoration-underline mb-4"
+              href="https://www.amazon.com/dp/B099KSSY79"
+            >
+              {orderEBook}
+            </Link>
+          </Container>
+        </Container>
+
+        {/* <Container fluid className="purchase-wrapper text-center">
           <Container className="purchase-section mb-4">
             <Container className="purchase-header-block d-flex justify-content-center">
               <div className="inline-hr"></div>
@@ -150,7 +217,8 @@ const Booklet: React.FC = () => {
           >
             {t("orderJapan")}
           </Link>
-        </Container>
+        </Container> */}
+
         <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
           <Container className="text-center">
             <h1>{t("prayerRedirectHeading")}</h1>

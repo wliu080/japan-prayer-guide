@@ -1,23 +1,27 @@
 {
   "webpageTitle": "Booklet",
-  "heading": "Beneath the Surface",
-  "subheading": "30 ways to pray for Japan",
+  "heading": "<i>Beneath the Surface</i>",
+  "subheading": "<i>30 ways to pray for Japan</i>",
   "introText": [
-    "The Beneath the Surface prayer guide was produced in collaboration with missionaries and leaders from 17 Christian organizations. Since its first printing in 2020, about 20,000 copies have been distributed around the world. It is available in English, Japanese, and a few other languages.",
+    "The <i>Beneath the Surface</i> prayer guide was produced in collaboration with missionaries and leaders from 17 Christian organizations. Since its first printing in 2020, about 20,000 copies have been distributed around the world. It is available in English, Japanese, and a few other languages.",
     "This guide introduces 30 prayer topics for Japanese culture and society, and church and mission. The 30 topics chosen were prioritized by Japanese leaders as key opportunities and challenges for the gospel in Japan today."
   ],
   "bookImageAlt": "Beneath the Surface Book Front Cover",
   "samplePageImageAlt": "Beneath the Surface Sample Page",
-  "purchaseHeading": "Order the English Booklet",
-  "purchaseText": "Select your shipping destination",
-  "buttons": {
-    "northAmerica": "North America",
-    "japan": "Japan",
-    "international": "International"
-  },
+  "orderTitle": "Order the English booklet",
+  "orderBlurb": "Select your shipping destination",
+  "orderRegions": [
+    { "text": "North America", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
+    {
+      "text": "Japan",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+    },
+    { "text": "International", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
+  ],
   "orderEBook": "Order the e-book",
-  "languageAvailability": "Information about other languages coming soon",
   "orderJapan": "Order the Japanese booklet",
+  "orderWarning": "We're only able to ship within Japan at this time",
+  "orderBooklet": "Fill out the order form",
   "prayerRedirectHeading": "Prayer topics",
   "prayerRedirectButtonText": "View all topics"
 }
