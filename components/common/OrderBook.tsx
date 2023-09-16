@@ -61,7 +61,7 @@ export default function OrderBook({
       <Container className={"home-order-section bg-grey-2 d-flex flex-column align-items-center" + (language !== "en" ? "" : " mt-4")}>
         {/* <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3" /> */}
         <div className="position-relative w-100 d-flex align-items-center flex-column">
-          <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-md-3 mb-1 position-relative">{orderJapan}</h1>
+          <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
           <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
         </div>
         <Link
