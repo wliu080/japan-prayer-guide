@@ -8,6 +8,14 @@
   ],
   "bookImageAlt": "Beneath the Surface Book Front Cover",
   "samplePageImageAlt": "Beneath the Surface Sample Page",
+  "purchaseHeading": "英語の冊子を注文する",
+  "purchaseText": "配送先の地域を選択してください",
+  "buttons": {
+    "northAmerica": "北米",
+    "japan": "日本",
+    "international": "その他"
+  },
+  "languageAvailability": "Information about other languages coming soon",
   "orderTitle": "英語の冊子を注文する",
   "orderBlurb": "配送先の地域を選択してください",
   "orderRegions": [

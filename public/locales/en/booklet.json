@@ -8,6 +8,14 @@
   ],
   "bookImageAlt": "Beneath the Surface Book Front Cover",
   "samplePageImageAlt": "Beneath the Surface Sample Page",
+  "purchaseHeading": "Order the English Booklet",
+  "purchaseText": "Select your shipping destination",
+  "buttons": {
+    "northAmerica": "North America",
+    "japan": "Japan",
+    "international": "International"
+  },
+  "languageAvailability": "Information about other languages coming soon",
   "orderTitle": "Order the English booklet",
   "orderBlurb": "Select your shipping destination",
   "orderRegions": [
