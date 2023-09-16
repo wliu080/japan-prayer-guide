@@ -142,55 +142,6 @@ const Booklet: React.FC = () => {
         <Container className="booklet-gif mb-5">
           <BootstrapImage className="w-100 px-10" src={`/photos/booklet/BOOK_GIF-${i18n.language}.gif`} />
         </Container>
-
-        {/* Order snippet */}
-        <Container className="d-flex flex-column align-items-center w-100 mt-2 mb-5 no-max-container pt-3">
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center">
-            {/* <Image alt="order-icon" src="/photos/home/hp_order_ja.png" className="d-block d-md-none mt-3"/> */}
-            <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderJapan}</h1>
-              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
-            </div>
-            <Link
-              className="fs-5 japan-order bg-grey-2 text-secondary-5 border-secondary-5 text-center fw-bold fs-5 mb-1 p-2 text-decoration-none border rounded"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-            >
-              {orderBooklet}
-            </Link>
-            <h2 className="text-black fs-5 fst-italic mb-2 d-flex align-items-center gap-1 mb-4">
-              <IconContext.Provider value={{ size: "16px" }}>
-                <RiInformationLine />
-              </IconContext.Provider>
-              {orderWarning}
-            </h2>
-          </Container>
-          <Container className="home-order-section bg-grey-2 d-flex flex-column align-items-center px-4 mt-4">
-            {/* <Image alt="order-icon" src="/photos/home/hp_order_en.png" className="d-block d-md-none mt-3"/> */}
-            <div className="position-relative w-100 d-flex align-items-center flex-column">
-              <h1 className="w-auto bg-grey-2 p-3 text-grey-7 mt-3 mb-1 position-relative">{orderTitle}</h1>
-              <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
-            </div>
-            <h2 className="text-primary fs-4 fw-bold mb-2 mt-1">{orderBlurb}</h2>
-            <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
-              {orderRegions.map((region) => (
-                <Link
-                  className="fs-5 fw-bold bg-secondary-5 text-white text-center region text-decoration-none"
-                  href={region.url}
-                  key={region.text}
-                >
-                  {region.text}
-                </Link>
-              ))}
-            </div>
-            <Link
-              className="fs-4 text-secondary-5 fw-bold text-decoration-underline mb-4"
-              href="https://www.amazon.com/dp/B099KSSY79"
-            >
-              {orderEBook}
-            </Link>
-          </Container>
-        </Container>
-
         <OrderBook
           title={orderTitle}
           blurb={orderBlurb}
