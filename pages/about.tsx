@@ -1,10 +1,11 @@
 import Head from "next/head"
 import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
-import { Col, Container, Image } from "react-bootstrap"
+import { Container, Image } from "react-bootstrap"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
+import Link from "next/link"
 
 export async function getStaticProps({ locale }: any) {
   return {
@@ -50,7 +51,9 @@ const About: React.FC = () => {
         >
           <Image alt="about hero image" src="/photos/about/about_hero.jpg" className="position-absolute top-0" />
           <h2 className="px-4 px-md-5 px-lg-4 text-white w-100">{heroSubheader}</h2>
-          <h1 className="px-4 px-md-5 px-lg-4 text-white w-100" style={({whiteSpace: "pre-line"})}>{heroHeader}</h1>
+          <h1 className="px-4 px-md-5 px-lg-4 text-white w-100" style={{ whiteSpace: "pre-line" }}>
+            {heroHeader}
+          </h1>
         </div>
 
         {/* Growing interest section */}
@@ -58,13 +61,12 @@ const About: React.FC = () => {
           <h1 className="text-primary about-h1-header text-center">{introTitle}</h1>
           <Image className="mt-4 about-main-image" alt="about img 1" src="/photos/about/about_01.png" />
           <Container className="px-0">
-
-          <div className="w-100 mt-4 pt-3"></div>
-          {introBlurb.map((text, idx) => (
-            <p key={idx + text} className="common-p about-body-text">
-              {text}
-            </p>
-          ))}
+            <div className="w-100 mt-4 pt-3"></div>
+            {introBlurb.map((text, idx) => (
+              <p key={idx + text} className="common-p about-body-text">
+                {text}
+              </p>
+            ))}
           </Container>
         </Container>
 
@@ -78,16 +80,15 @@ const About: React.FC = () => {
               <Image alt="about img 2" src="/photos/about/about_02.png" className="about-image" />
               <Image alt="about img 3" src="/photos/about/about_03.png" className="about-image" />
             </Container>
-          <div className="w-100 mt-4 pt-3"></div>
-          <Container className="about-beneath-surface-text">
-
-          <p className="common-p about-body-text">
-            <Trans t={t} i18nKey="contextBlurb.0" components={{ italic: <i /> }} />
-          </p>
-          <p className="common-p about-body-text">
-            <Trans t={t} i18nKey="contextBlurb.1" components={{ italic: <i /> }} />
-          </p>
-          </Container>
+            <div className="w-100 mt-4 pt-3"></div>
+            <Container className="about-beneath-surface-text">
+              <p className="common-p about-body-text">
+                <Trans t={t} i18nKey="contextBlurb.0" components={{ italic: <i /> }} />
+              </p>
+              <p className="common-p about-body-text">
+                <Trans t={t} i18nKey="contextBlurb.1" components={{ italic: <i /> }} />
+              </p>
+            </Container>
           </Container>
         </div>
 
@@ -103,21 +104,25 @@ const About: React.FC = () => {
         <Container className="w-100 about-invite px-4">
           <div className="d-flex mt-2 flex-column align-items-center border-grey-4 border-bottom">
             <h1 className="mt-5 about-h1-header text-black text-center">{inviteTitle}</h1>
-          <Container className="px-0">
-            <p className="mt-4 mb-5 common-p about-body-text">
-              {inviteBlurb} <strong>{callToAction}</strong>
-            </p>
-        </Container>
+            <Container className="px-0">
+              <p className="mt-4 mb-5 common-p about-body-text">
+                {inviteBlurb} <strong>{callToAction}</strong>
+              </p>
+            </Container>
           </div>
         </Container>
 
         {/* Logos */}
         <Container className="about-logos-container w-100 d-flex justify-content-center align-items-center my-5">
           <div className="ms-2">
-            <Image className="omf-logo" alt="omf logo" src="/photos/about/about_omf.png" />
+            <Link href="https://omf.org/east-asia/japan/">
+              <Image className="omf-logo" alt="omf logo" src="/photos/about/about_omf.png" />
+            </Link>
           </div>
           <div className="">
-            <Image className="pioneers-logo" alt="omf logo" src="/photos/about/about_pioneers.png" />
+            <Link href="https://www.pioneersjapan.org/">
+              <Image className="pioneers-logo" alt="omf logo" src="/photos/about/about_pioneers.png" />
+            </Link>
           </div>
         </Container>
 
