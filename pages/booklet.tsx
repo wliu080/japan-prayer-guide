@@ -4,36 +4,42 @@ import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
+import { useMediaQuery } from 'react-responsive'
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
 import ImagePagination from "../components/image-pagination/ImagePagination"
 import OrderBook from "../components/common/OrderBook"
-import { GrCircleInformation } from "react-icons/gr"
-import { IconContext } from "react-icons"
-import {
-  RiInformationLine,
-} from "react-icons/ri"
-import BookPageImageEN1 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 1.jpg"
-import BookPageImageEN2 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 2.jpg"
-import BookPageImageEN3 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 3.jpg"
-import BookPageImageEN4 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 4.jpg"
-import BookPageImageEN5 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 5.jpg"
-import BookPageImageEN6 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 6.jpg"
-import BookPageImageEN7 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 7.jpg"
-import BookPageImageEN8 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 8.jpg"
-import BookPageImageEN9 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 9.jpg"
-import BookPageImageEN10 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 10.jpg"
-import BookPageImageJA1 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 1.jpg"
-import BookPageImageJA2 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 2.jpg"
-import BookPageImageJA3 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 3.jpg"
-import BookPageImageJA4 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 4.jpg"
-import BookPageImageJA5 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 5.jpg"
-import BookPageImageJA6 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 6.jpg"
-import BookPageImageJA7 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 7.jpg"
-import BookPageImageJA8 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 8.jpg"
-import BookPageImageJA9 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 9.jpg"
-import BookPageImageJA10 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 10.jpg"
+import BookPageImageEN1 from "../public/photos/booklet/pagination/en/Book - Slider 1 EN.jpg"
+import BookPageImageEN2 from "../public/photos/booklet/pagination/en/Book - Slider 2 EN.jpg"
+import BookPageImageEN3 from "../public/photos/booklet/pagination/en/Book - Slider 3 EN.jpg"
+import BookPageImageEN4 from "../public/photos/booklet/pagination/en/Book - Slider 4 EN.jpg"
+import BookPageImageEN5 from "../public/photos/booklet/pagination/en/Book - Slider 5 EN.jpg"
+import BookPageImageJA1 from "../public/photos/booklet/pagination/ja/Book - Slider 1 JP.jpg"
+import BookPageImageJA2 from "../public/photos/booklet/pagination/ja/Book - Slider 2 JP.jpg"
+import BookPageImageJA3 from "../public/photos/booklet/pagination/ja/Book - Slider 3 JP.jpg"
+import BookPageImageJA4 from "../public/photos/booklet/pagination/ja/Book - Slider 4 JP.jpg"
+import BookPageImageJA5 from "../public/photos/booklet/pagination/ja/Book - Slider 5 JP.jpg"
+import MobileBookPageImageEN1 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 1.jpg"
+import MobileBookPageImageEN2 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 2.jpg"
+import MobileBookPageImageEN3 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 3.jpg"
+import MobileBookPageImageEN4 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 4.jpg"
+import MobileBookPageImageEN5 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 5.jpg"
+import MobileBookPageImageEN6 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 6.jpg"
+import MobileBookPageImageEN7 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 7.jpg"
+import MobileBookPageImageEN8 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 8.jpg"
+import MobileBookPageImageEN9 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 9.jpg"
+import MobileBookPageImageEN10 from "../public/photos/booklet/pagination/en/en_Book_mweb-Slider 10.jpg"
+import MobileBookPageImageJA1 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 1.jpg"
+import MobileBookPageImageJA2 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 2.jpg"
+import MobileBookPageImageJA3 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 3.jpg"
+import MobileBookPageImageJA4 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 4.jpg"
+import MobileBookPageImageJA5 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 5.jpg"
+import MobileBookPageImageJA6 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 6.jpg"
+import MobileBookPageImageJA7 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 7.jpg"
+import MobileBookPageImageJA8 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 8.jpg"
+import MobileBookPageImageJA9 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 9.jpg"
+import MobileBookPageImageJA10 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 10.jpg"
 import { StaticImageData } from "next/image"
 
 export async function getStaticProps({ locale }: any) {
@@ -53,38 +59,70 @@ interface OrderRegionType {
 
 interface PaginationSrcType {
   src: StaticImageData
-  text: string
+  text?: string
 }
 
-const enImages: PaginationSrcType[] = [
-  { src: BookPageImageEN1, text: "" },
-  { src: BookPageImageEN2, text: "" },
-  { src: BookPageImageEN3, text: "" },
-  { src: BookPageImageEN4, text: "" },
-  { src: BookPageImageEN5, text: "" },
-  { src: BookPageImageEN6, text: "" },
-  { src: BookPageImageEN7, text: "" },
-  { src: BookPageImageEN8, text: "" },
-  { src: BookPageImageEN9, text: "" },
-  { src: BookPageImageEN10, text: "" },
+const enDesktopImages: PaginationSrcType[] = [
+  { src: BookPageImageEN1 },
+  { src: BookPageImageEN2 },
+  { src: BookPageImageEN3 },
+  { src: BookPageImageEN4 },
+  { src: BookPageImageEN5 },
 ]
-const jaImages: PaginationSrcType[] = [
-  { src: BookPageImageJA1, text: "" },
-  { src: BookPageImageJA2, text: "" },
-  { src: BookPageImageJA3, text: "" },
-  { src: BookPageImageJA4, text: "" },
-  { src: BookPageImageJA5, text: "" },
-  { src: BookPageImageJA6, text: "" },
-  { src: BookPageImageJA7, text: "" },
-  { src: BookPageImageJA8, text: "" },
-  { src: BookPageImageJA9, text: "" },
-  { src: BookPageImageJA10, text: "" },
+
+const jaDesktopImages: PaginationSrcType[] = [
+  { src: BookPageImageJA1 },
+  { src: BookPageImageJA2 },
+  { src: BookPageImageJA3 },
+  { src: BookPageImageJA4 },
+  { src: BookPageImageJA5 },
+]
+
+const enMobileImages: PaginationSrcType[] = [
+  { src: MobileBookPageImageEN1 },
+  { src: MobileBookPageImageEN2 },
+  { src: MobileBookPageImageEN3 },
+  { src: MobileBookPageImageEN4 },
+  { src: MobileBookPageImageEN5 },
+  { src: MobileBookPageImageEN6 },
+  { src: MobileBookPageImageEN7 },
+  { src: MobileBookPageImageEN8 },
+  { src: MobileBookPageImageEN9 },
+  { src: MobileBookPageImageEN10 },
+]
+const jaMobileImages: PaginationSrcType[] = [
+  { src: MobileBookPageImageJA1 },
+  { src: MobileBookPageImageJA2 },
+  { src: MobileBookPageImageJA3 },
+  { src: MobileBookPageImageJA4 },
+  { src: MobileBookPageImageJA5 },
+  { src: MobileBookPageImageJA6 },
+  { src: MobileBookPageImageJA7 },
+  { src: MobileBookPageImageJA8 },
+  { src: MobileBookPageImageJA9 },
+  { src: MobileBookPageImageJA10 },
 ]
 
 const Booklet: React.FC = () => {
   const { t, i18n } = useTranslation("booklet")
   const { t: bookletTranslation } = useTranslation("booklet")
   const introTextParagraphs: string[] = t("introText", { returnObjects: true })
+  const isTabletOrMobile = useMediaQuery({query: '(max-width: 1280px)'})
+  const isInEnglish=  i18n.language === 'en'
+  let sampleBookImages
+  if (isInEnglish) {
+    if (isTabletOrMobile) {
+      sampleBookImages = enMobileImages
+    } else {
+      sampleBookImages = enDesktopImages
+    }
+  } else {
+    if (isTabletOrMobile) {
+      sampleBookImages = jaMobileImages
+    } else {
+      sampleBookImages = jaDesktopImages
+    }
+  }
 
   const orderTitle: string = bookletTranslation("orderTitle")
   const orderBlurb: string = bookletTranslation("orderBlurb")
@@ -136,7 +174,7 @@ const Booklet: React.FC = () => {
         </div>
         <Container id="prayer-sample" className="py-5">
           <Container className="page-container py-3">
-            <ImagePagination pages={i18n.language === "en" ? enImages : jaImages} />
+            <ImagePagination pages={sampleBookImages} />
           </Container>
         </Container>
         <Container className="booklet-gif mb-5">
