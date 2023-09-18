@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react"
+import React, { useState, useCallback, useEffect } from "react"
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri"
 import { Container } from "react-bootstrap"
 import Image, { StaticImageData } from "next/image"
@@ -8,10 +8,11 @@ interface ImagePaginationProps {
     src: StaticImageData
     text?: string
   }[]
+  TabletOrMobileMediaQuery: string
   barDisplay?: boolean
 }
 
-const ImagePagination = ({ pages, barDisplay = true }: ImagePaginationProps) => {
+const ImagePagination = ({ pages, TabletOrMobileMediaQuery, barDisplay = true }: ImagePaginationProps) => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const onNextClick = useCallback(
@@ -40,6 +41,25 @@ const ImagePagination = ({ pages, barDisplay = true }: ImagePaginationProps) => 
   const onMouseLeave = useCallback((e: React.MouseEvent) => {
     e.preventDefault()
   }, [])
+
+  useEffect(() => {
+    const mediaQueryList = window.matchMedia(TabletOrMobileMediaQuery);
+    function update(e: MediaQueryListEvent) {
+      if (e.matches) {
+        // Mobile to tablet
+        setActiveIndex((activeIndex) => activeIndex >> 1)
+      } else {
+        // Tablet to mobile
+        setActiveIndex((activeIndex) => activeIndex << 1)
+      }
+    }
+
+    mediaQueryList.addEventListener('change', update)
+    return () => {
+       // This is called the cleanup phase aka beforeUnmount
+       mediaQueryList.removeEventListener('change', update)   
+    }
+ }, []) // Only do this once, aka hook-ish way of saying didMount
 
   return (
     <>

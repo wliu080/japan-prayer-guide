@@ -103,24 +103,39 @@ const jaMobileImages: PaginationSrcType[] = [
   { src: MobileBookPageImageJA10 },
 ]
 
+function useBetterMediaQuery(query:string) {
+  const [matches, setMatches] = React.useState<boolean>();
+
+  React.useEffect(() => {
+    const mediaQueryList = window.matchMedia(query);
+    const listener = () => setMatches(!!mediaQueryList.matches);
+    listener();
+    mediaQueryList.addEventListener("change",listener);
+    return () => mediaQueryList.removeEventListener("change",listener);
+  }, [query])
+
+  return matches;
+}
+
+const TabletOrMobileMediaQuery = "(min-width: 992px)";
 const Booklet: React.FC = () => {
   const { t, i18n } = useTranslation("booklet")
   const { t: bookletTranslation } = useTranslation("booklet")
   const introTextParagraphs: string[] = t("introText", { returnObjects: true })
-  const isTabletOrMobile = useMediaQuery({query: '(max-width: 1280px)'})
+  const isTabletOrMobile = useBetterMediaQuery(TabletOrMobileMediaQuery)
   const isInEnglish=  i18n.language === 'en'
   let sampleBookImages
   if (isInEnglish) {
     if (isTabletOrMobile) {
-      sampleBookImages = enMobileImages
-    } else {
       sampleBookImages = enDesktopImages
+    } else {
+      sampleBookImages = enMobileImages
     }
   } else {
     if (isTabletOrMobile) {
-      sampleBookImages = jaMobileImages
-    } else {
       sampleBookImages = jaDesktopImages
+    } else {
+      sampleBookImages = jaMobileImages
     }
   }
 
@@ -174,7 +189,7 @@ const Booklet: React.FC = () => {
         </div>
         <Container id="prayer-sample" className="py-5">
           <Container className="page-container py-3">
-            <ImagePagination pages={sampleBookImages} />
+            <ImagePagination pages={sampleBookImages} TabletOrMobileMediaQuery={TabletOrMobileMediaQuery}/>
           </Container>
         </Container>
         <Container className="booklet-gif mb-5">
