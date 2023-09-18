@@ -718,7 +718,7 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
 
   $logo-ratio: 102/116;
   .pioneers-logo {
-    height: $logo-size * $logo-ratio ;
+    height: $logo-size * $logo-ratio;
     @include media-breakpoint-down(xl) {
       height: $logo-size-tablet * $logo-ratio;
     }
@@ -828,6 +828,17 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
   border: none;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+#prayer-sample {
+  @include media-breakpoint-only(lg) {
+    max-width: 1140px;
+  }
+  .container {
+    @include media-breakpoint-only(lg) {
+      max-width: 1140px;
+    }
+  }
 }
 
 .image-pagination-images {
