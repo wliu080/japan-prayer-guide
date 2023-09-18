@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import React, {useEffect} from "react"
+import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import BootstrapImage from "react-bootstrap/Image"
