@@ -100,9 +100,11 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             <Container className="d-flex flex-column align-items-start w-100">
               <h2 className="text-white text-start">{heroSubheading}</h2>
               <h1 className="text-white text-start">{heroHeading}</h1>
-              <Button href="/topics/all" className="text-white my-3 bg-secondary-5 border-secondary-5 hero-button">
-                {heroViewTopicsBtn}
-              </Button>
+              <Link href="/topics/all" locale={i18n.language}>
+                <Button className="text-white my-3 bg-secondary-5 border-secondary-5 hero-button">
+                  {heroViewTopicsBtn}
+                </Button>
+              </Link>
             </Container>
           </div>
         </div>
@@ -174,7 +176,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             <p className="mb-3 mt-4 px-3 px-md-0 common-p">
               <Trans t={homePageTranslation} i18nKey="purchaseBlurb" components={{ italic: <i /> }} />
             </p>
-            <Link href={"/purchase"} locale={i18n.language} className="text-secondary-5 mb-2 mb-md-5 common-p fs-4">
+            <Link href={"/booklet"} locale={i18n.language} className="text-secondary-5 mb-2 mb-md-5 common-p fs-4">
               {purchasePreview}
             </Link>
           </div>
@@ -231,9 +233,11 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
           <div className="home-common-blurb common-p text-center text-white my-3 w-100">
             <Trans t={homePageTranslation} i18nKey="learnBlurb" components={{ italic: <i /> }} />
           </div>
-          <Button className="fs-4 text-nowrap border-white px-4 text-white text-center bg-grey-7 mt-2 mb-4">
-            {learnMoreAbout}
-          </Button>
+          <Link href="/about" locale={i18n.language}>
+            <Button className="fs-4 text-nowrap border-white px-4 text-white text-center bg-grey-7 mt-2 mb-4">
+              {learnMoreAbout}
+            </Button>
+          </Link>
         </div>
 
         <Footer />
