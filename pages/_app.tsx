@@ -4,12 +4,12 @@ import { Analytics } from "@vercel/analytics/react"
 import "../styles/main.scss"
 
 function App({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Component {...pageProps} />
-      <Analytics />
-    </>
-  )
+    return (
+        <>
+            <Component {...pageProps} />
+            <Analytics />
+        </>
+    )
 }
 
 export default appWithTranslation(App)

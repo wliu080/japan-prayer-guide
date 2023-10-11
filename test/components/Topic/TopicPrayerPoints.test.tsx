@@ -1,12 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import TopicPrayerPoints from '../../../components/topic/TopicPrayerPoints';
+import { render, screen } from "@testing-library/react"
+import TopicPrayerPoints from "../../../components/topic/TopicPrayerPoints"
 
 describe("Topic Prayer Points", () => {
     test("Renders a section with the right text inside", () => {
         const testTextArray = ["Hey how's it going", "I'm doing fine", "Thanks"]
         const testTitle = "Topic Prayer Points"
         const testSubtitle = "Topic Prayer Points Sub"
-        render(<TopicPrayerPoints prayerPoints={testTextArray} title={testTitle} subtitle={testSubtitle}/>)
+        render(<TopicPrayerPoints prayerPoints={testTextArray} title={testTitle} subtitle={testSubtitle} />)
         const TopicPrayerPointsCont = screen.getByTestId("topic-points-container")
         const TopicPrayerPointsTitle = screen.getByTestId("topic-points-title")
         const TopicPrayerPointsPoints = screen.getByTestId("topic-points-points").children
