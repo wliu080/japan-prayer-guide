@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import Feedback from '../../../components/topic/Feedback';
+import { render, screen } from "@testing-library/react"
+import Feedback from "../../../components/topic/Feedback"
 
 describe("Feedback", () => {
     test("Renders a section with the right text inside", () => {

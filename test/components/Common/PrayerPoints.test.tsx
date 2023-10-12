@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import PrayerPoints from '../../../components/common/PrayerPoints';
+import { render, screen } from "@testing-library/react"
+import PrayerPoints from "../../../components/common/PrayerPoints"
 
 describe("Prayer Points", () => {
     test("Renders a section with the right text inside", () => {

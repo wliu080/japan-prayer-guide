@@ -1,10 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import { TopicNav } from '../../../components/topic/TopicNav';
+import { render, screen } from "@testing-library/react"
+import { TopicNav } from "../../../components/topic/TopicNav"
 
 describe("Topic Nav", () => {
     test("Renders a section with the right text inside", () => {
         const labels = ["About this Topic", "Prayer Points", "Downloadables"]
-        render(<TopicNav selected={"About"} setSelected={() => {}} labels={labels}/>)
+        render(<TopicNav selected={"About"} setSelected={() => {}} labels={labels} />)
         const topicNavCont = screen.getByTestId("topic-nav-container")
         const topicNavLinks = screen.getByTestId("topic-nav-links")
         const topicNavLink = screen.getByTestId("topic-nav-link")

@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import TopicDownloadables from '../../../components/topic/TopicDownloadables';
+import { render, screen } from "@testing-library/react"
+import TopicDownloadables from "../../../components/topic/TopicDownloadables"
 
 describe("Topic Downloadables", () => {
     test("Renders a section with the right text inside", () => {
@@ -7,7 +7,14 @@ describe("Topic Downloadables", () => {
         const testTextArray2 = ["/", "/", "/", "/", "/"]
         const testTitle = "Topic Downloadables"
         const testHeaders = ["hello", "testing"]
-        render(<TopicDownloadables labels={testTextArray} links={testTextArray2} title={testTitle} headers={testHeaders}/>)
+        render(
+            <TopicDownloadables
+                labels={testTextArray}
+                links={testTextArray2}
+                title={testTitle}
+                headers={testHeaders}
+            />,
+        )
         const topicDownloadablesCont = screen.getByTestId("topic-downloadables-container")
         const topicDownloadablesTitle = screen.getByTestId("topic-downloadables-title")
         const topicDownloadablesLinks = screen.getByTestId("topic-downloadables-links").children
