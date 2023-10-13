@@ -1,0 +1,762 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Snapshot test 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="w-100 d-xl-none"
+      >
+        <div
+          class="bg-primary pt-3 container-fluid"
+          data-testid="footer"
+        >
+          <div
+            class="ms-auto hstack gap-3 minBreakpoint-xs"
+            data-testid="language-switcher"
+            id="language-switch"
+          >
+            <a
+              class="ms-auto text-white "
+              data-testid="link-english"
+              href="#english"
+            >
+              English
+            </a>
+            <div
+              class="vr border opacity-100"
+            />
+            <a
+              class="me-auto text-white "
+              data-testid="link-japanese"
+              href="#japanese"
+            >
+              日本語
+            </a>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="d-flex justify-content-center mt-4 row"
+            >
+              <div
+                class="d-flex flex-column px-3 gap-0 text-white"
+                data-testid="linksList"
+              >
+                <p
+                  class="m-1 fs-5 fw-bold"
+                >
+                  footer.title
+                </p>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/"
+                >
+                  footer.link1
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/topics/all"
+                >
+                  footer.link2
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/booklet"
+                >
+                  footer.link3
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/resources"
+                >
+                  footer.link4
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/about"
+                >
+                  footer.link5
+                </a>
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center pt-3 pb-2 row"
+            >
+              <img
+                alt="logo"
+                class=""
+                src="/wire-logo.png"
+                style="max-height: 100px; width: 96px;"
+              />
+            </div>
+            <div
+              class="text-center px-3 mx-1 row"
+            >
+              <p
+                class="footer-blurb text-white fs-6 fw-light"
+              >
+                footer.tagline
+              </p>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center pt-4 text-white row"
+            >
+              <a
+                class="text-white footer-icon"
+                href="https://vimeo.com/japanprayerguide"
+              >
+                <svg
+                  fill="currentColor"
+                  height="25px"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-white footer-icon"
+                href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+              >
+                <svg
+                  fill="currentColor"
+                  height="25px"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  width="25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-white footer-icon"
+                href="https://www.instagram.com/omf_japan/"
+              >
+                <svg
+                  fill="currentColor"
+                  height="25px"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="text-center py-4 px-3 row"
+            >
+              <p
+                class="text-white fs-6 fw-light footer-copyright"
+                data-testid="copyright"
+              >
+                footer.copyright
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-100 d-none d-xl-flex flex-column bg-primary align-items-center"
+      >
+        <div
+          class="footer-language w-75 border-bottom border-grey-6 py-4"
+        >
+          <div
+            class="ms-auto hstack gap-3 minBreakpoint-xs"
+            data-testid="language-switcher"
+            id="language-switch"
+          >
+            <a
+              class="ms-auto text-white "
+              data-testid="link-english"
+              href="#english"
+            >
+              English
+            </a>
+            <div
+              class="vr border opacity-100"
+            />
+            <a
+              class="me-auto text-white "
+              data-testid="link-japanese"
+              href="#japanese"
+            >
+              日本語
+            </a>
+          </div>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="bg-primary pt-3 d-flex container-fluid"
+            data-testid="footer-2"
+          >
+            <div
+              class="d-flex flex-column justify-content-center mt-4 mb-3 px-4 col-sm-4"
+            >
+              <div
+                class="mb-4 row"
+              >
+                <div
+                  class="d-flex flex-column px-3 gap-0 text-white"
+                  data-testid="linksList1"
+                >
+                  <p
+                    class="m-1 fs-5 fw-bold"
+                  >
+                    footer.title
+                  </p>
+                  <a
+                    class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                    href="/"
+                  >
+                    footer.link1
+                  </a>
+                  <a
+                    class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                    href="/topics/all"
+                  >
+                    footer.link2
+                  </a>
+                  <a
+                    class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                    href="/booklet"
+                  >
+                    footer.link3
+                  </a>
+                  <a
+                    class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                    href="/resources"
+                  >
+                    footer.link4
+                  </a>
+                  <a
+                    class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                    href="/about"
+                  >
+                    footer.link5
+                  </a>
+                </div>
+              </div>
+              <div
+                class="pt-3 px-2 row"
+              >
+                <p
+                  class="text-white fs-5 fw-light footer-copyright"
+                  data-testid="copyright-2"
+                >
+                  footer.copyright
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-sm-6"
+            />
+            <div
+              class="my-4 pl-5 col-sm-2"
+            >
+              <div
+                class="d-flex align-items-center pt-2 pb-2 row"
+              >
+                <img
+                  alt="logo"
+                  class=""
+                  src="/wire-logo.png"
+                  style="max-height: 100px; width: 96px;"
+                />
+              </div>
+              <div
+                class="row"
+              >
+                <p
+                  class="footer-blurb text-white"
+                >
+                  footer.tagline
+                </p>
+              </div>
+              <div
+                class="d-flex align-items-center pt-3 pb-4 text-white row"
+              >
+                <a
+                  class="text-white footer-icon"
+                  href="https://vimeo.com/japanprayerguide"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="25px"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    width="25px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="text-white footer-icon"
+                  href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="25px"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="25px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="text-white footer-icon"
+                  href="https://www.instagram.com/omf_japan/"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="25px"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    width="25px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-100 d-xl-none"
+    >
+      <div
+        class="bg-primary pt-3 container-fluid"
+        data-testid="footer"
+      >
+        <div
+          class="ms-auto hstack gap-3 minBreakpoint-xs"
+          data-testid="language-switcher"
+          id="language-switch"
+        >
+          <a
+            class="ms-auto text-white "
+            data-testid="link-english"
+            href="#english"
+          >
+            English
+          </a>
+          <div
+            class="vr border opacity-100"
+          />
+          <a
+            class="me-auto text-white "
+            data-testid="link-japanese"
+            href="#japanese"
+          >
+            日本語
+          </a>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="d-flex justify-content-center mt-4 row"
+          >
+            <div
+              class="d-flex flex-column px-3 gap-0 text-white"
+              data-testid="linksList"
+            >
+              <p
+                class="m-1 fs-5 fw-bold"
+              >
+                footer.title
+              </p>
+              <a
+                class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                href="/"
+              >
+                footer.link1
+              </a>
+              <a
+                class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                href="/topics/all"
+              >
+                footer.link2
+              </a>
+              <a
+                class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                href="/booklet"
+              >
+                footer.link3
+              </a>
+              <a
+                class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                href="/resources"
+              >
+                footer.link4
+              </a>
+              <a
+                class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                href="/about"
+              >
+                footer.link5
+              </a>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center pt-3 pb-2 row"
+          >
+            <img
+              alt="logo"
+              class=""
+              src="/wire-logo.png"
+              style="max-height: 100px; width: 96px;"
+            />
+          </div>
+          <div
+            class="text-center px-3 mx-1 row"
+          >
+            <p
+              class="footer-blurb text-white fs-6 fw-light"
+            >
+              footer.tagline
+            </p>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center pt-4 text-white row"
+          >
+            <a
+              class="text-white footer-icon"
+              href="https://vimeo.com/japanprayerguide"
+            >
+              <svg
+                fill="currentColor"
+                height="25px"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                width="25px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"
+                />
+              </svg>
+            </a>
+            <a
+              class="text-white footer-icon"
+              href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+            >
+              <svg
+                fill="currentColor"
+                height="25px"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                width="25px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z"
+                />
+              </svg>
+            </a>
+            <a
+              class="text-white footer-icon"
+              href="https://www.instagram.com/omf_japan/"
+            >
+              <svg
+                fill="currentColor"
+                height="25px"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                width="25px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="text-center py-4 px-3 row"
+          >
+            <p
+              class="text-white fs-6 fw-light footer-copyright"
+              data-testid="copyright"
+            >
+              footer.copyright
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-100 d-none d-xl-flex flex-column bg-primary align-items-center"
+    >
+      <div
+        class="footer-language w-75 border-bottom border-grey-6 py-4"
+      >
+        <div
+          class="ms-auto hstack gap-3 minBreakpoint-xs"
+          data-testid="language-switcher"
+          id="language-switch"
+        >
+          <a
+            class="ms-auto text-white "
+            data-testid="link-english"
+            href="#english"
+          >
+            English
+          </a>
+          <div
+            class="vr border opacity-100"
+          />
+          <a
+            class="me-auto text-white "
+            data-testid="link-japanese"
+            href="#japanese"
+          >
+            日本語
+          </a>
+        </div>
+      </div>
+      <div
+        class="container"
+      >
+        <div
+          class="bg-primary pt-3 d-flex container-fluid"
+          data-testid="footer-2"
+        >
+          <div
+            class="d-flex flex-column justify-content-center mt-4 mb-3 px-4 col-sm-4"
+          >
+            <div
+              class="mb-4 row"
+            >
+              <div
+                class="d-flex flex-column px-3 gap-0 text-white"
+                data-testid="linksList1"
+              >
+                <p
+                  class="m-1 fs-5 fw-bold"
+                >
+                  footer.title
+                </p>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/"
+                >
+                  footer.link1
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/topics/all"
+                >
+                  footer.link2
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/booklet"
+                >
+                  footer.link3
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/resources"
+                >
+                  footer.link4
+                </a>
+                <a
+                  class="m-1 fs-6 fw-lighter text-white text-decoration-none"
+                  href="/about"
+                >
+                  footer.link5
+                </a>
+              </div>
+            </div>
+            <div
+              class="pt-3 px-2 row"
+            >
+              <p
+                class="text-white fs-5 fw-light footer-copyright"
+                data-testid="copyright-2"
+              >
+                footer.copyright
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6"
+          />
+          <div
+            class="my-4 pl-5 col-sm-2"
+          >
+            <div
+              class="d-flex align-items-center pt-2 pb-2 row"
+            >
+              <img
+                alt="logo"
+                class=""
+                src="/wire-logo.png"
+                style="max-height: 100px; width: 96px;"
+              />
+            </div>
+            <div
+              class="row"
+            >
+              <p
+                class="footer-blurb text-white"
+              >
+                footer.tagline
+              </p>
+            </div>
+            <div
+              class="d-flex align-items-center pt-3 pb-4 text-white row"
+            >
+              <a
+                class="text-white footer-icon"
+                href="https://vimeo.com/japanprayerguide"
+              >
+                <svg
+                  fill="currentColor"
+                  height="25px"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-white footer-icon"
+                href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+              >
+                <svg
+                  fill="currentColor"
+                  height="25px"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  width="25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-white footer-icon"
+                href="https://www.instagram.com/omf_japan/"
+              >
+                <svg
+                  fill="currentColor"
+                  height="25px"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

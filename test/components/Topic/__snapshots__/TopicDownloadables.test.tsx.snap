@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topic Downloadables Snapshot test 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="d-flex flex-column my-5 container"
+        data-testid="topic-downloadables-container"
+        id="topic-downloads"
+      >
+        <div
+          class="d-flex flex-row justify-content-between align-items-center container"
+        >
+          <h1
+            class="text-primary my-4 fs-1"
+            data-testid="topic-downloadables-title"
+          >
+            Downloadables
+          </h1>
+          <a
+            class="text-secondary d-none d-md-block"
+            href="/resources"
+          >
+            hi
+          </a>
+        </div>
+        <div
+          class="g-3 row row-cols-xl-4 row-cols-md-2"
+          data-testid="topic-downloadables-links"
+        >
+          <div
+            class="col"
+          >
+            <a
+              class="text-decoration-none"
+              href="/"
+            >
+              <div
+                class="shadow-sm border-0 rounded card"
+                style="background-color: rgb(226, 226, 226); min-height: 125px;"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center card-body"
+                >
+                  <p
+                    class="text-center fw-bold fs-4 my-0"
+                  >
+                    ab
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col"
+          >
+            <a
+              class="text-decoration-none"
+              href="/"
+            >
+              <div
+                class="shadow-sm border-0 rounded card"
+                style="background-color: rgb(226, 226, 226); min-height: 125px;"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center card-body"
+                >
+                  <p
+                    class="text-center fw-bold fs-4 my-0"
+                  >
+                    cd
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col"
+          >
+            <a
+              class="text-decoration-none"
+              href="/"
+            >
+              <div
+                class="shadow-sm border-0 rounded card"
+                style="background-color: rgb(226, 226, 226); min-height: 125px;"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center card-body"
+                >
+                  <p
+                    class="text-center fw-bold fs-4 my-0"
+                  >
+                    ef
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a
+          class="align-self-center w-100"
+          href="/"
+          style="max-width: 500px;"
+        >
+          <button
+            class="align-self-center w-100 mt-4 text-white border-secondary bg-secondary btn btn-primary"
+            type="button"
+          >
+            test
+          </button>
+        </a>
+        <a
+          class="align-self-center my-3 text-secondary d-md-none"
+          href="/resources"
+        >
+          hi
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="d-flex flex-column my-5 container"
+      data-testid="topic-downloadables-container"
+      id="topic-downloads"
+    >
+      <div
+        class="d-flex flex-row justify-content-between align-items-center container"
+      >
+        <h1
+          class="text-primary my-4 fs-1"
+          data-testid="topic-downloadables-title"
+        >
+          Downloadables
+        </h1>
+        <a
+          class="text-secondary d-none d-md-block"
+          href="/resources"
+        >
+          hi
+        </a>
+      </div>
+      <div
+        class="g-3 row row-cols-xl-4 row-cols-md-2"
+        data-testid="topic-downloadables-links"
+      >
+        <div
+          class="col"
+        >
+          <a
+            class="text-decoration-none"
+            href="/"
+          >
+            <div
+              class="shadow-sm border-0 rounded card"
+              style="background-color: rgb(226, 226, 226); min-height: 125px;"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center card-body"
+              >
+                <p
+                  class="text-center fw-bold fs-4 my-0"
+                >
+                  ab
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col"
+        >
+          <a
+            class="text-decoration-none"
+            href="/"
+          >
+            <div
+              class="shadow-sm border-0 rounded card"
+              style="background-color: rgb(226, 226, 226); min-height: 125px;"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center card-body"
+              >
+                <p
+                  class="text-center fw-bold fs-4 my-0"
+                >
+                  cd
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col"
+        >
+          <a
+            class="text-decoration-none"
+            href="/"
+          >
+            <div
+              class="shadow-sm border-0 rounded card"
+              style="background-color: rgb(226, 226, 226); min-height: 125px;"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center card-body"
+              >
+                <p
+                  class="text-center fw-bold fs-4 my-0"
+                >
+                  ef
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a
+        class="align-self-center w-100"
+        href="/"
+        style="max-width: 500px;"
+      >
+        <button
+          class="align-self-center w-100 mt-4 text-white border-secondary bg-secondary btn btn-primary"
+          type="button"
+        >
+          test
+        </button>
+      </a>
+      <a
+        class="align-self-center my-3 text-secondary d-md-none"
+        href="/resources"
+      >
+        hi
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
