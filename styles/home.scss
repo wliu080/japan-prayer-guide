@@ -1,0 +1,415 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+#prayForJapanSection {
+    .offset-pad-bottom {
+        padding-bottom: 10rem !important;
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: 20rem !important;
+        }
+    }
+
+    .offset-up {
+        position: relative;
+        top: -10rem;
+
+        @include media-breakpoint-up(md) {
+            top: -20rem;
+        }
+    }
+
+    .offset-remove-bottom {
+        margin-bottom: -10rem;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: -20rem;
+        }
+    }
+
+    #placeholder-image {
+        background-color: #868686;
+        @include media-breakpoint-up(xl) {
+            height: 600px;
+        }
+    }
+}
+
+.home-hero {
+    z-index: -1;
+    width: 100%;
+    height: 800px;
+    @include media-breakpoint-down(xl) {
+        height: 700px;
+    }
+    @include media-breakpoint-down(md) {
+        height: 600px;
+    }
+    object-fit: cover;
+    object-position: 40% 10%;
+}
+
+.home-hero-text-group {
+    bottom: 250px;
+    @include media-breakpoint-down(xl) {
+        bottom: 225px;
+    }
+    @include media-breakpoint-down(md) {
+        bottom: 200px;
+    }
+    .container {
+        max-width: 1128px;
+    }
+    h1 {
+        font-family: $font-family-secondary;
+        font-size: 60px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+        @include media-breakpoint-down(xl) {
+            font-size: 52px;
+            margin-top: -9px;
+            margin-bottom: 26px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 40px;
+            margin-top: -8px;
+            margin-bottom: 22px;
+        }
+    }
+    h2 {
+        font-family: $font-family-secondary;
+        font-size: 34px;
+        @include media-breakpoint-down(xl) {
+            font-size: 32px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+        }
+    }
+}
+
+.home-main-blurb {
+    max-width: 1128px;
+    font-size: 28px;
+    font-family: $font-family-secondary;
+    @include media-breakpoint-down(xl) {
+        font-size: 24px;
+        max-width: 920px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
+    }
+}
+
+.home-invitation {
+    $carousel-image-height: 500px;
+    $carousel-image-height-tablet: 400px;
+    $carousel-image-ratio: 1.93;
+    .home-carousel-image {
+        max-height: $carousel-image-height;
+        object-fit: cover;
+        aspect-ratio: $carousel-image-ratio;
+        @include media-breakpoint-down(xl) {
+            max-height: $carousel-image-height-tablet;
+        }
+        @include media-breakpoint-down(md) {
+            max-height: none;
+            width: 95%;
+        }
+    }
+
+    .home-invite-inner {
+        max-height: $carousel-image-height;
+        aspect-ratio: $carousel-image-ratio + 0.3;
+        @include media-breakpoint-down(xl) {
+            max-height: $carousel-image-height-tablet;
+            aspect-ratio: $carousel-image-ratio;
+        }
+        @include media-breakpoint-down(md) {
+            max-height: none;
+            width: 95%;
+        }
+    }
+
+    .carousel {
+        .carousel-indicators {
+            button {
+                background-color: white;
+                transition: none;
+                opacity: 0.7;
+            }
+            .active {
+                background-color: $secondary-5;
+                transition: none;
+                opacity: 0.7;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 5px;
+            }
+        }
+        .carousel-indicators [data-bs-target] {
+            height: 5px;
+            @include media-breakpoint-down(md) {
+                height: 4px;
+            }
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+            color: $secondary-5;
+            height: 30px;
+            width: 30px;
+            top: 50%;
+            border-radius: 50%;
+            background-color: $grey-2;
+        }
+        .carousel-control-next {
+            right: 9%;
+            @include media-breakpoint-down(md) {
+                right: 5%;
+            }
+        }
+        .carousel-control-prev {
+            left: 9%;
+            @include media-breakpoint-down(md) {
+                left: 5%;
+            }
+        }
+        .carousel-control-next-icon {
+            background-image: url("/icons/arrow-right-s-line.svg");
+        }
+        .carousel-control-prev-icon {
+            background-image: url("/icons/arrow-left-s-line.svg");
+        }
+    }
+
+    .container {
+        margin-top: 100px;
+        max-width: 900px;
+    }
+}
+
+$home-paragraph-text: 20px;
+$home-paragraph-text-tablet: $home-paragraph-text - 1px;
+$home-paragraph-text-mobile: $home-paragraph-text - 2px;
+.home-verse-container {
+    max-width: none;
+    h2 {
+        font-family: $font-family-secondary;
+        font-style: italic;
+        font-weight: 300;
+    }
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-size: 18px;
+        @include media-breakpoint-down(xl) {
+            font-size: 16px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+        }
+    }
+}
+
+.home-call-to-action {
+    max-width: 900px;
+    p {
+        font-size: $home-paragraph-text;
+        @include media-breakpoint-down(xl) {
+            font-size: $home-paragraph-text-tablet;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: $home-paragraph-text-mobile;
+        }
+    }
+}
+
+#featuredTopicSection {
+    $featured-card-width: 500px;
+    $featured-card-width-tablet: 375px;
+    $featured-card-width-mobile: 600px;
+    .featured-topic-card {
+        max-width: $featured-card-width;
+        @include media-breakpoint-down(lg) {
+            max-width: $featured-card-width-tablet;
+        }
+        @include media-breakpoint-down(md) {
+            max-width: $featured-card-width-mobile;
+        }
+    }
+    .home-feature-img {
+        height: auto;
+        max-width: $featured-card-width;
+        object-fit: cover;
+        @include media-breakpoint-down(lg) {
+            max-width: $featured-card-width-tablet;
+        }
+        @include media-breakpoint-down(md) {
+            max-width: $featured-card-width-mobile;
+        }
+    }
+
+    $bullet-point-factor: 1px;
+    .bullet-point {
+        font-size: $home-paragraph-text - $bullet-point-factor;
+        @include media-breakpoint-down(xl) {
+            font-size: $home-paragraph-text-tablet - $bullet-point-factor;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: $home-paragraph-text-mobile - $bullet-point-factor;
+        }
+    }
+
+    .feature-button,
+    .feature-view-all {
+        font-size: 14px;
+    }
+}
+
+.home-purchase-section {
+    @include media-breakpoint-down(xl) {
+        max-width: none !important;
+    }
+    .purchase-text-container {
+        max-width: 558px;
+    }
+    img {
+        height: 470px;
+        @include media-breakpoint-down(xl) {
+            height: 322px;
+        }
+        @include media-breakpoint-down(md) {
+            height: 240px;
+        }
+    }
+    a {
+        font-weight: 700;
+    }
+}
+
+.home-order-section {
+    max-width: 1130px;
+    gap: 14px;
+    h1 {
+        z-index: 2;
+        font-family: $font-family-secondary;
+        width: fit-content !important;
+        font-weight: 700;
+        font-size: 24px;
+        @include media-breakpoint-down(xl) {
+            font-size: 20px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+        }
+    }
+    .horizontal-bar {
+        height: 1px;
+        top: -35px;
+        @include media-breakpoint-down(md) {
+            top: -30px;
+        }
+    }
+    .region {
+        width: 208px;
+        @include media-breakpoint-down(md) {
+            width: 308px;
+        }
+        border-radius: 4px;
+        padding: 8px 16px;
+    }
+    .japan-order {
+        width: 208px;
+        @include media-breakpoint-down(md) {
+            width: 308px;
+        }
+        border-radius: 4px;
+        padding: 8px 16px;
+    }
+}
+
+.coming-soon-button {
+    @include media-breakpoint-up(md) {
+        width: auto !important;
+    }
+}
+
+.home-common-h1 {
+    font-size: 40px;
+    font-family: $font-family-secondary;
+    font-weight: 500;
+    @include media-breakpoint-down(xl) {
+        font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 24px;
+    }
+}
+
+.common-p {
+    font-size: $home-paragraph-text;
+    @include media-breakpoint-down(xl) {
+        font-size: $home-paragraph-text-tablet;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: $home-paragraph-text-mobile;
+    }
+}
+
+.home-common-blurb {
+    max-width: 900px;
+}
+
+.home-download-card {
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1.69;
+}
+
+.home-logo-crane {
+    @include media-breakpoint-down(md) {
+        height: 72px;
+    }
+}
+
+.home-logo-text {
+    max-width: 300px;
+    @include media-breakpoint-down(md) {
+        height: 40px;
+    }
+}
+
+.featuredTopicTitle {
+    font-family: $font-family-secondary;
+    font-weight: 700;
+}
+
+.featuredTopicSubtitle {
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+    }
+}
+
+.featured-topic-container {
+    @include media-breakpoint-down(lg) {
+        max-width: none;
+    }
+}
+
+.slick-next::before,
+.slick-prev::before {
+    color: black !important;
+}
+
+@include media-breakpoint-down(sm) {
+    .slick-prev {
+        left: -10px !important;
+    }
+
+    .slick-next {
+        right: -10px !important;
+    }
+}

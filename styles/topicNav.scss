@@ -1,0 +1,96 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+#overview-nav {
+    transition: all 0.1s ease;
+    height: 50px;
+    @include media-breakpoint-down(md) {
+        height: 56px;
+    }
+}
+
+.topic-nav-hero {
+    z-index: -1;
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    object-position: 80% 80%;
+}
+
+.topic-nav-hero-title {
+    padding-top: 10px;
+    font-family: $font-family-secondary;
+    font-size: 40px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 32px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 24px;
+    }
+}
+
+.topics-header-container {
+    @include media-breakpoint-only(lg) {
+        max-width: 720px;
+    }
+    @include media-breakpoint-up(xl) {
+        max-width: 960px;
+    }
+}
+
+.topic-nav-hero-subtitle {
+    max-width: 896px;
+    font-size: $home-paragraph-text - 1px;
+    @include media-breakpoint-down(xl) {
+        font-size: $home-paragraph-text-tablet - 1px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: $home-paragraph-text-mobile - 1px;
+    }
+}
+
+.topic-nav-tab {
+    cursor: pointer;
+    font-size: 19px;
+    @include media-breakpoint-down(md) {
+        font-size: 16px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 14px;
+    }
+}
+
+.topic-nav-section-title {
+    font-size: 32px;
+    font-family: $font-family-secondary;
+    @include media-breakpoint-down(md) {
+        font-size: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 18px;
+    }
+}
+
+.topic-nav-card {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    height: 90%;
+}
+
+.topic-nav-card-title {
+    font-size: 19px;
+    color: #49474e;
+    @include media-breakpoint-down(md) {
+        font-size: 16px;
+    }
+    P {
+        padding: 16px;
+        @include media-breakpoint-down(md) {
+            padding: 8px 16px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 8px;
+        }
+    }
+}
