@@ -35,6 +35,14 @@ describe("Footer", () => {
         })
     })
 
+    test("Snapshot test", () => {
+        // This test is to check against unintended changes.
+        // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
+
+        const component = render(<Footer />)
+        expect(component).toMatchSnapshot()
+    })
+
     test("Renders the correct class name on the outer container", () => {
         render(<Footer />)
         const footer = screen.getByTestId("footer")

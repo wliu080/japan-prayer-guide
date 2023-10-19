@@ -42,6 +42,14 @@ describe("ToggleHeader", () => {
         })
     })
 
+    test("Snapshot test", () => {
+        // This test is to check against unintended changes.
+        // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
+
+        const component = render(<ToggleHeader />)
+        expect(component).toMatchSnapshot()
+    })
+
     test("renders a Navbar with a white background and light variant by default", () => {
         const { getByRole } = render(<ToggleHeader />)
         const navbar = getByRole("navigation")

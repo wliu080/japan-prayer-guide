@@ -22,6 +22,16 @@ jest.mock("react-i18next", () => ({
 }))
 
 describe("Overview Nav", () => {
+    test("Snapshot test", () => {
+        // This test is to check against unintended changes.
+        // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
+
+        const setSelected = jest.fn()
+        const selected = "culture"
+        const component = render(<TopicOverviewNav selected={selected} setSelected={setSelected} />)
+        expect(component).toMatchSnapshot()
+    })
+
     test("Renders a section with the right text inside", () => {
         const setSelected = jest.fn()
         const selected = "church"

@@ -1,0 +1,434 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleHeader Snapshot test 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="shadow-sm navbar navbar-expand-xl navbar-light bg-white sticky-top"
+      >
+        <div
+          class="container"
+        >
+          <a
+            class="navbar-brand"
+            href="/undefined"
+          >
+            <img
+              alt="header.brandAlt"
+              class="d-inline-block align-top header-crane-button"
+              data-nimg="1"
+              decoding="async"
+              height="384"
+              loading="lazy"
+              src="/_next/image?url=%2Fbts-crane-wht-logo-undefined.png&w=3840&q=75"
+              srcset="/_next/image?url=%2Fbts-crane-wht-logo-undefined.png&w=3840&q=75 1x"
+              style="color: transparent;"
+              width="2136"
+            />
+             
+          </a>
+          <button
+            aria-controls="header-navbar-nav"
+            aria-label="Toggle navigation"
+            class="navbar-toggler collapsed"
+            type="button"
+          >
+            <span
+              class="navbar-toggler-icon"
+            />
+          </button>
+          <div
+            class="navbar-collapse collapse"
+            id="header-navbar-nav"
+          >
+            <div
+              class="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0 container"
+            >
+              <div
+                class="ml-auto d-md-flex gap-md-3 align-items-xl-center navbar-nav nav-light"
+              >
+                <div
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/"
+                  >
+                    <span
+                      class="nav-link"
+                    >
+                      header.home
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/topics/all"
+                  >
+                    <span
+                      class="nav-link"
+                    >
+                      header.topics
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/booklet"
+                  >
+                    <span
+                      class="nav-link"
+                    >
+                      header.booklet
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/resources"
+                  >
+                    <span
+                      class="nav-link"
+                    >
+                      header.download
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/about"
+                  >
+                    <span
+                      class="nav-link"
+                    >
+                      header.about
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="d-none d-xl-flex align-items-center nav-item dropdown"
+                >
+                  <a
+                    aria-expanded="false"
+                    class="dropdown-toggle nav-link"
+                    href="#"
+                    role="button"
+                    tabindex="0"
+                  >
+                    日本語
+                  </a>
+                </div>
+              </div>
+              <div
+                class="d-xl-none text-center mobile-menu-footer container"
+              >
+                <div
+                  class="mb-4 row"
+                >
+                  <div
+                    class="ms-auto hstack gap-3 minBreakpoint-xs"
+                    data-testid="language-switcher"
+                    id="language-switch"
+                  >
+                    <a
+                      class="ms-auto text-white "
+                      data-testid="link-english"
+                      href="#english"
+                    >
+                      English
+                    </a>
+                    <div
+                      class="vr border opacity-100"
+                    />
+                    <a
+                      class="me-auto text-white "
+                      data-testid="link-japanese"
+                      href="#japanese"
+                    >
+                      日本語
+                    </a>
+                  </div>
+                </div>
+                <img
+                  alt="Crane logo"
+                  class="mb-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="48"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fwire-logo.png&w=96&q=75"
+                  srcset="/_next/image?url=%2Fwire-logo.png&w=48&q=75 1x, /_next/image?url=%2Fwire-logo.png&w=96&q=75 2x"
+                  style="color: transparent;"
+                  width="48"
+                />
+                 
+                <div
+                  class="mt-2 mb-5 row"
+                >
+                  <p
+                    class="mobile-menu-tagline text-light pb-3"
+                  >
+                    header.blurb
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="shadow-sm navbar navbar-expand-xl navbar-light bg-white sticky-top"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="navbar-brand"
+          href="/undefined"
+        >
+          <img
+            alt="header.brandAlt"
+            class="d-inline-block align-top header-crane-button"
+            data-nimg="1"
+            decoding="async"
+            height="384"
+            loading="lazy"
+            src="/_next/image?url=%2Fbts-crane-wht-logo-undefined.png&w=3840&q=75"
+            srcset="/_next/image?url=%2Fbts-crane-wht-logo-undefined.png&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="2136"
+          />
+           
+        </a>
+        <button
+          aria-controls="header-navbar-nav"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="header-navbar-nav"
+        >
+          <div
+            class="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0 container"
+          >
+            <div
+              class="ml-auto d-md-flex gap-md-3 align-items-xl-center navbar-nav nav-light"
+            >
+              <div
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="/"
+                >
+                  <span
+                    class="nav-link"
+                  >
+                    header.home
+                  </span>
+                </a>
+              </div>
+              <div
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="/topics/all"
+                >
+                  <span
+                    class="nav-link"
+                  >
+                    header.topics
+                  </span>
+                </a>
+              </div>
+              <div
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="/booklet"
+                >
+                  <span
+                    class="nav-link"
+                  >
+                    header.booklet
+                  </span>
+                </a>
+              </div>
+              <div
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="/resources"
+                >
+                  <span
+                    class="nav-link"
+                  >
+                    header.download
+                  </span>
+                </a>
+              </div>
+              <div
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="/about"
+                >
+                  <span
+                    class="nav-link"
+                  >
+                    header.about
+                  </span>
+                </a>
+              </div>
+              <div
+                class="d-none d-xl-flex align-items-center nav-item dropdown"
+              >
+                <a
+                  aria-expanded="false"
+                  class="dropdown-toggle nav-link"
+                  href="#"
+                  role="button"
+                  tabindex="0"
+                >
+                  日本語
+                </a>
+              </div>
+            </div>
+            <div
+              class="d-xl-none text-center mobile-menu-footer container"
+            >
+              <div
+                class="mb-4 row"
+              >
+                <div
+                  class="ms-auto hstack gap-3 minBreakpoint-xs"
+                  data-testid="language-switcher"
+                  id="language-switch"
+                >
+                  <a
+                    class="ms-auto text-white "
+                    data-testid="link-english"
+                    href="#english"
+                  >
+                    English
+                  </a>
+                  <div
+                    class="vr border opacity-100"
+                  />
+                  <a
+                    class="me-auto text-white "
+                    data-testid="link-japanese"
+                    href="#japanese"
+                  >
+                    日本語
+                  </a>
+                </div>
+              </div>
+              <img
+                alt="Crane logo"
+                class="mb-2"
+                data-nimg="1"
+                decoding="async"
+                height="48"
+                loading="lazy"
+                src="/_next/image?url=%2Fwire-logo.png&w=96&q=75"
+                srcset="/_next/image?url=%2Fwire-logo.png&w=48&q=75 1x, /_next/image?url=%2Fwire-logo.png&w=96&q=75 2x"
+                style="color: transparent;"
+                width="48"
+              />
+               
+              <div
+                class="mt-2 mb-5 row"
+              >
+                <p
+                  class="mobile-menu-tagline text-light pb-3"
+                >
+                  header.blurb
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
