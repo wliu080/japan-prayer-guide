@@ -171,14 +171,14 @@ const Booklet: React.FC = () => {
                             <Col className="d-flex align-items-center">
                                 <div className="book-text">
                                     <h1>
-                                        <Trans components={{ italic: <i /> }}>{t("heading")}</Trans>
+                                        <Trans>{t("heading")}</Trans>
                                     </h1>
                                     <p className="book-subheading">
-                                        <Trans components={{ italic: <i /> }}>{t("subheading")}</Trans>
+                                        <Trans>{t("subheading")}</Trans>
                                     </p>
                                     {introTextParagraphs.map((text: string, idx: number) => (
                                         <p key={idx + text} className="book-introText">
-                                            <Trans components={{ italic: <i /> }}>{text}</Trans>
+                                            <Trans>{text}</Trans>
                                         </p>
                                     ))}
                                 </div>

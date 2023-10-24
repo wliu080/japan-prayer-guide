@@ -78,7 +78,7 @@ const About: React.FC = () => {
                 <div className="bg-secondary-2 w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center flex-column px-4 px-md-4">
                     <Container className="about-beneath-surface align-items-center">
                         <h1 className="mt-2 mb-4 pb-2 text-primary about-h1-header text-center">
-                            <Trans t={t} i18nKey="contextTitle" components={{ italic: <i /> }} />
+                            <Trans t={t} i18nKey="contextTitle" />
                         </h1>
                         <Container className="d-flex flex-column flex-md-row gap-3 gap-xl-4 about-images justify-content-center px-4">
                             <Image alt="about img 2" src="/photos/about/about_02.png" className="about-image" />
@@ -87,10 +87,10 @@ const About: React.FC = () => {
                         <div className="w-100 mt-4 pt-3"></div>
                         <Container className="about-beneath-surface-text">
                             <p className="common-p about-body-text">
-                                <Trans t={t} i18nKey="contextBlurb.0" components={{ italic: <i /> }} />
+                                <Trans t={t} i18nKey="contextBlurb.0" />
                             </p>
                             <p className="common-p about-body-text">
-                                <Trans t={t} i18nKey="contextBlurb.1" components={{ italic: <i /> }} />
+                                <Trans t={t} i18nKey="contextBlurb.1" />
                             </p>
                         </Container>
                     </Container>
