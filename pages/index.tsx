@@ -107,7 +107,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 {/* Main blurb */}
                 <Container fluid id="mainBlurbSection" className="py-1 home-main-blurb d-flex align-items-center">
                     <p className="px-3 text-primary py-4 py-md-5 mb-0">
-                        <Trans t={homePageTranslation} i18nKey="introText1" components={{ bold: <b /> }} />
+                        <Trans t={homePageTranslation} i18nKey="introText1" />
                     </p>
                 </Container>
 
@@ -156,7 +156,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
                     <h1 className="home-common-h1 text-center mt-5">{introText2Subheading}</h1>
                     <p className="mt-4">
-                        <Trans t={homePageTranslation} i18nKey="introText2a" components={{ italic: <i /> }} />
+                        <Trans t={homePageTranslation} i18nKey="introText2a" />
                     </p>
                     <p className="w-100 mt-3">
                         {introText2b} <strong>{callToAction}</strong>
@@ -185,7 +185,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                     <div className="w-100 align-items-center align-items-md-start d-flex flex-column purchase-text-container mx-2 me-md-5 ms-md-2">
                         <h1 className="mt-5 mb-1 home-common-h1">{purchaseTitle}</h1>
                         <p className="mb-3 mt-4 px-3 px-md-0 common-p">
-                            <Trans t={homePageTranslation} i18nKey="purchaseBlurb" components={{ italic: <i /> }} />
+                            <Trans t={homePageTranslation} i18nKey="purchaseBlurb" />
                         </p>
                         <Link
                             href={"/booklet"}
@@ -250,7 +250,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                         />
                     </div>
                     <div className="home-common-blurb common-p text-center text-white my-3 w-100">
-                        <Trans t={homePageTranslation} i18nKey="learnBlurb" components={{ italic: <i /> }} />
+                        <Trans t={homePageTranslation} i18nKey="learnBlurb" />
                     </div>
                     <Link href="/about" locale={i18n.language}>
                         <Button className="fs-4 text-nowrap border-white px-4 text-white text-center bg-grey-7 mt-2 mb-4">

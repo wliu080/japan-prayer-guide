@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Card, Container, Row, Col, Image } from "react-bootstrap"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "next-i18next"
 
 interface TopicOverviewProps {
     title: string
