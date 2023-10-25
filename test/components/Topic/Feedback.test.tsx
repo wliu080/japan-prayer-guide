@@ -2,6 +2,16 @@ import { render, screen } from "@testing-library/react"
 import Feedback from "../../../components/topic/Feedback"
 
 describe("Feedback", () => {
+    test("Snapshot test", () => {
+        // This test is to check against unintended changes.
+        // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
+
+        const testText = "abc"
+        const testTitle = "feedback"
+        const component = render(<Feedback button={testText} title={testTitle} />)
+        expect(component).toMatchSnapshot()
+    })
+
     test("Renders a section with the right text inside", () => {
         const testText = "Hey how's it going"
         const testTitle = "Give us Feedback"

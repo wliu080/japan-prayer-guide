@@ -2,6 +2,15 @@ import { render, screen } from "@testing-library/react"
 import { TopicNav } from "../../../components/topic/TopicNav"
 
 describe("Topic Nav", () => {
+    test("Snapshot test", () => {
+        // This test is to check against unintended changes.
+        // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
+
+        const labels = ["About", "Prayer", "Download"]
+        const component = render(<TopicNav selected={"About"} setSelected={() => {}} labels={labels} />)
+        expect(component).toMatchSnapshot()
+    })
+
     test("Renders a section with the right text inside", () => {
         const labels = ["About this Topic", "Prayer Points", "Downloadables"]
         render(<TopicNav selected={"About"} setSelected={() => {}} labels={labels} />)

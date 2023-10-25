@@ -2,6 +2,16 @@ import { render, screen } from "@testing-library/react"
 import PrayerPoints from "../../../components/common/PrayerPoints"
 
 describe("Prayer Points", () => {
+    test("Snapshot test", () => {
+        // This test is to check against unintended changes.
+        // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
+
+        const testTextArray = ["ABC", "Item123"]
+        const testTitle = "Prayer Points1"
+        const component = render(<PrayerPoints prayerPoints={testTextArray} title={testTitle} />)
+        expect(component).toMatchSnapshot()
+    })
+
     test("Renders a section with the right text inside", () => {
         const testTextArray = ["Hey how's it going", "I'm doing fine", "Thanks"]
         const testTitle = "Prayer Points"

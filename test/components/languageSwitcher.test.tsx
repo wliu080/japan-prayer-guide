@@ -28,6 +28,14 @@ describe("LanguageSwitcher", () => {
         })
     })
 
+    test("Snapshot test", () => {
+        // This test is to check against unintended changes.
+        // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
+
+        const component = render(<LanguageSwitcher />)
+        expect(component).toMatchSnapshot()
+    })
+
     test("renders a horizontal stack with 2 links", () => {
         render(<LanguageSwitcher />)
         const languageSwitcher = screen.getByTestId("language-switcher")
