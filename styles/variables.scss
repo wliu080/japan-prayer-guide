@@ -1,0 +1,65 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// ------------------------
+// Bootstrap overrides
+// ------------------------
+
+// theme colors - include here also used in scss
+$primary: #002266;
+$secondary: #74b6ff;
+$secondary-5: #285abd;
+$grey-2: #ebf0f6;
+$grey-7: #505c7c;
+// custom theme map - if set here, will be available as bootstrap theme, e.g, text-primary-blue
+$custom-colors: (
+    "primary": $primary,
+    "primary-blue": #002266,
+    "primary-dark": #2b2f37,
+    "secondary": $secondary,
+    "secondary-1": #f2f4f9,
+    "secondary-2": #dfeeff,
+    "secondary-3": #acd2ff,
+    "secondary-4": #74b6ff,
+    "secondary-5": $secondary-5,
+    "tertiary": #f46b59,
+    "grey-2": $grey-2,
+    "grey-4": #bcc3cf,
+    "grey-6": #727c96,
+    "grey-7": #505c7c,
+);
+// Merge custom to theme & regenerate
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$box-shadow-sm: 0 0.25rem 1rem rgba($black, 0.1);
+
+$link-color: $secondary-5;
+$navbar-light-color: $secondary-5;
+//$display-font-weight: 700;
+$font-sizes: (
+    1: 2rem,
+    2: 1.5rem,
+    3: 1.25rem,
+    4: 1rem,
+    5: 0.875rem,
+    6: 0.8rem,
+);
+
+// Proxima Nova / Open Sans - sub-heading, body copy, quote source
+// Adelle / Aleo - heading, quote body
+$font-family-base: "Proxima Nova", "Open Sans", "sans-serif";
+$font-family-secondary: "Aleo", "adelle", "serif";
+
+// From design library, please prefer media-breakpoint-up/down/only/between to target certain breakpoints
+// See also: https://getbootstrap.com/docs/5.2/layout/breakpoints/#media-queries
+// xs + sm: 365px (mobile)
+// md     : 768px (tablet)
+// lg + xl: 1280px (desktop)
+// xxl    : 1440px (wide screen desktop)
+$grid-breakpoints: (
+    xs: 0,
+    sm: 365px,
+    md: 768px,
+    lg: 992px,
+    xl: 1280px,
+    xxl: 1440px,
+);

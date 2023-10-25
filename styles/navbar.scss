@@ -1,0 +1,101 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// navbar overrides:
+// - toggleHeader component should collapse fill full screen when expanded on mobile
+// - dropdowns should look button-ish (border)
+// - nav language links don't have underline unless active
+@include media-breakpoint-down(xl) {
+    // do need specific heights for different mobile browsers?
+    .mobile-header {
+        height: 95vh;
+    }
+}
+
+.mobile-menu-footer {
+    max-width: 400px;
+    font-family: $font-family-secondary;
+}
+
+.mobile-menu-tagline {
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .navbar .navbar-nav .nav-link:hover {
+        color: rgba(255, 255, 255, 0.55);
+    }
+    .navbar .navbar-nav .selected-nav-link {
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+.navbar .navbar-nav .nav-link {
+    @include media-breakpoint-down(xl) {
+        font-size: 20px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
+    }
+}
+
+div.nav-item {
+    font-family: $font-family-secondary;
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+$dropdown-button-height: 34px;
+div.nav-item.dropdown {
+    border-radius: 0.25rem;
+    border: 1px solid $secondary-5;
+    font-family: $font-family-secondary;
+    height: $dropdown-button-height;
+}
+
+#language-switch a {
+    font-family: $font-family-secondary;
+    text-decoration: none;
+
+    &.active-language-link {
+        text-decoration: underline #4592cf 3px;
+        text-underline-position: under;
+        text-underline-offset: 4px;
+    }
+}
+
+.selected-nav-link {
+    font-weight: 800;
+    text-decoration: underline #4592cf 2px;
+    text-underline-position: under;
+    text-underline-offset: 2px;
+}
+
+.navbar-brand {
+    padding-top: 3px;
+}
+
+$header-crane-button-width: 89px;
+$header-crane-button-height: 16px;
+.header-crane-button {
+    @include media-breakpoint-down(xl) {
+        $tablet-scale: 2.69;
+        width: $header-crane-button-width * $tablet-scale;
+        height: $header-crane-button-height * $tablet-scale;
+    }
+
+    @include media-breakpoint-down(md) {
+        $mobile-scale: 2.4375;
+        width: $header-crane-button-width * $mobile-scale;
+        height: $header-crane-button-height * $mobile-scale;
+    }
+
+    margin-bottom: -3px;
+    $desktop-scale: 3.075;
+    width: $header-crane-button-width * $desktop-scale;
+    height: $header-crane-button-height * $desktop-scale;
+    object-fit: scale-down;
+}

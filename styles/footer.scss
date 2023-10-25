@@ -1,0 +1,32 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+.footer-icon {
+    width: auto;
+    cursor: pointer;
+}
+
+.footer-icon > :hover {
+    color: $secondary;
+}
+
+.footer-blurb {
+    font-family: $font-family-secondary;
+    font-size: 18px;
+    font-weight: 400;
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.footer-blurb-row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.footer-copyright {
+    font-family: $font-family-secondary;
+}
