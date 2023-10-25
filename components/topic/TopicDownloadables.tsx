@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Link from "next/link"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "next-i18next"
 
 interface downloadProps {
     links: string[]
