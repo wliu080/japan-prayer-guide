@@ -53,6 +53,7 @@ export default function FeaturedTopic({ title, prayerPoints, featuredImg }: Prop
                         className="mt-3 w-100 mx-auto text-center text-decoration-underline text-secondary-5 fw-bold fs-4 feature-view-all"
                         style={{ cursor: "pointer" }}
                         onClick={() => router.push("topics/all", "topics/all", { locale: i18n.language })}
+                        tabIndex={0}
                     >
                         {view}
                     </Card.Text>

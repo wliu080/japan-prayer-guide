@@ -98,16 +98,25 @@ export default function Footer() {
                             </Row>
                             <Row className="d-flex align-items-center pt-3 pb-4 text-white">
                                 <IconContext.Provider value={{ size: "25px" }}>
-                                    <a className="text-white footer-icon" href="https://vimeo.com/japanprayerguide">
+                                    <a
+                                        className="text-white footer-icon"
+                                        href="https://vimeo.com/japanprayerguide"
+                                        aria-label="Vimeo"
+                                    >
                                         <BsVimeo />
                                     </a>
                                     <a
                                         className="text-white footer-icon"
                                         href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+                                        aria-label="Amazon"
                                     >
                                         <FaAmazon />
                                     </a>
-                                    <a className="text-white footer-icon" href="https://www.instagram.com/omf_japan/">
+                                    <a
+                                        className="text-white footer-icon"
+                                        href="https://www.instagram.com/omf_japan/"
+                                        aria-label="Instagram"
+                                    >
                                         <BsInstagram />
                                     </a>
                                 </IconContext.Provider>
