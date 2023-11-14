@@ -51,11 +51,6 @@ export async function getStaticProps({ locale }: any) {
     }
 }
 
-interface OrderRegionType {
-    text: string
-    url: string
-}
-
 interface PaginationSrcType {
     src: StaticImageData
     text?: string
@@ -138,14 +133,6 @@ const Booklet: React.FC = () => {
         }
     }
 
-    const orderTitle: string = bookletTranslation("orderTitle")
-    const orderBlurb: string = bookletTranslation("orderBlurb")
-    const orderRegions: OrderRegionType[] = bookletTranslation("orderRegions", { returnObjects: true })
-    const orderEBook: string = bookletTranslation("orderEBook")
-    const orderJapan: string = bookletTranslation("orderJapan")
-    const orderWarning: string = bookletTranslation("orderWarning")
-    const orderBooklet: string = bookletTranslation("orderBooklet")
-
     return (
         <div>
             <Head>
@@ -195,13 +182,14 @@ const Booklet: React.FC = () => {
                     <BootstrapImage className="w-100 px-10" src={`/photos/booklet/BOOK_GIF-${i18n.language}.gif`} />
                 </Container>
                 <OrderBook
-                    title={orderTitle}
-                    blurb={orderBlurb}
-                    orderRegionsMap={orderRegions}
-                    orderPrompt={orderEBook}
-                    orderJapan={orderJapan}
-                    orderWarning={orderWarning}
-                    orderBooklet={orderBooklet}
+                    translation={bookletTranslation}
+                    title="orderTitle"
+                    blurb="orderBlurb"
+                    orderRegionsMap="orderRegions"
+                    orderPrompt="orderEBook"
+                    orderJapan="orderJapan"
+                    orderWarning="orderWarning"
+                    orderBooklet="orderBooklet"
                     language={i18n.language}
                 />
                 <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
