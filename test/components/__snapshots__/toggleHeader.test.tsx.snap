@@ -55,6 +55,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                   <a
                     class="nav-link"
                     href="/"
+                    tabindex="0"
                   >
                     <span
                       class="nav-link"
@@ -69,6 +70,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                   <a
                     class="nav-link"
                     href="/topics/all"
+                    tabindex="0"
                   >
                     <span
                       class="nav-link"
@@ -83,6 +85,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                   <a
                     class="nav-link"
                     href="/booklet"
+                    tabindex="0"
                   >
                     <span
                       class="nav-link"
@@ -97,6 +100,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                   <a
                     class="nav-link"
                     href="/resources"
+                    tabindex="0"
                   >
                     <span
                       class="nav-link"
@@ -111,6 +115,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                   <a
                     class="nav-link"
                     href="/about"
+                    tabindex="0"
                   >
                     <span
                       class="nav-link"
@@ -243,6 +248,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                 <a
                   class="nav-link"
                   href="/"
+                  tabindex="0"
                 >
                   <span
                     class="nav-link"
@@ -257,6 +263,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                 <a
                   class="nav-link"
                   href="/topics/all"
+                  tabindex="0"
                 >
                   <span
                     class="nav-link"
@@ -271,6 +278,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                 <a
                   class="nav-link"
                   href="/booklet"
+                  tabindex="0"
                 >
                   <span
                     class="nav-link"
@@ -285,6 +293,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                 <a
                   class="nav-link"
                   href="/resources"
+                  tabindex="0"
                 >
                   <span
                     class="nav-link"
@@ -299,6 +308,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
                 <a
                   class="nav-link"
                   href="/about"
+                  tabindex="0"
                 >
                   <span
                     class="nav-link"

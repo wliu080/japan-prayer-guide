@@ -22,12 +22,14 @@ exports[`Overview Nav Snapshot test 1`] = `
           <a
             class="common-p topic-nav-tab px-3 my-0 text-decoration-none border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
             data-testid="overview-nav-link"
+            tabindex="0"
           >
             topHeading
           </a>
           <a
             class="common-p topic-nav-tab px-3 my-0 text-decoration-none  text-black"
             data-testid="overview-nav-link-2"
+            tabindex="0"
           >
             botHeading
           </a>
@@ -53,12 +55,14 @@ exports[`Overview Nav Snapshot test 1`] = `
         <a
           class="common-p topic-nav-tab px-3 my-0 text-decoration-none border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
           data-testid="overview-nav-link"
+          tabindex="0"
         >
           topHeading
         </a>
         <a
           class="common-p topic-nav-tab px-3 my-0 text-decoration-none  text-black"
           data-testid="overview-nav-link-2"
+          tabindex="0"
         >
           botHeading
         </a>

@@ -64,7 +64,7 @@ const ImagePagination = ({ pages, TabletOrMobileMediaQuery, barDisplay = true }:
     return (
         <>
             <Container className="d-flex justify-content-center">
-                <button onClick={onPrevClick} className="image-pagination-button">
+                <button onClick={onPrevClick} className="image-pagination-button" aria-label="previous page">
                     <RiArrowLeftSLine size={32} />
                 </button>
                 <Container className="image-pagination-images" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
@@ -79,7 +79,7 @@ const ImagePagination = ({ pages, TabletOrMobileMediaQuery, barDisplay = true }:
                         </div>
                     ))}
                 </Container>
-                <button type="button" onClick={onNextClick} className="image-pagination-button">
+                <button type="button" onClick={onNextClick} className="image-pagination-button" aria-label="next page">
                     <RiArrowRightSLine size={32} />
                 </button>
             </Container>

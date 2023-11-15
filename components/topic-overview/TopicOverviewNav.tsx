@@ -97,6 +97,7 @@ export const TopicOverviewNav = ({ selected, setSelected }: Props) => {
                         }
                         onClick={() => scrollToCustomPosition("culture")}
                         data-testid={"overview-nav-link"}
+                        tabIndex={0}
                     >
                         {t("topHeading")}
                     </a>
@@ -109,6 +110,7 @@ export const TopicOverviewNav = ({ selected, setSelected }: Props) => {
                         }
                         onClick={() => scrollToCustomPosition("church")}
                         data-testid="overview-nav-link-2"
+                        tabIndex={0}
                     >
                         {t("botHeading")}
                     </a>

@@ -20,7 +20,7 @@ const NavLinkWithLocale = ({
 }) => {
     return (
         <Nav.Item>
-            <Link href={href} passHref locale={locale} className={"nav-link"}>
+            <Link href={href} passHref locale={locale} className={"nav-link"} tabIndex={0}>
                 <Nav.Link as="span" className={current === href ? "selected-nav-link" : ""}>
                     {text}
                 </Nav.Link>

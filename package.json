@@ -8,6 +8,7 @@
         "start": "next start",
         "lint": "next lint",
         "test": "jest",
+        "updateSnapshot": "jest --updateSnapshot",
         "format": "prettier --write '**/*.{ts,tsx}'"
     },
     "dependencies": {
