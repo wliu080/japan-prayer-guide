@@ -94,8 +94,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 {/* Hero banner section */}
                 <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
                     <Image
-                        height={1000}
-                        width={1000}
+                        height={1500}
+                        width={1500}
                         src={HomeHero}
                         placeholder="blur"
                         alt="home page hero"
