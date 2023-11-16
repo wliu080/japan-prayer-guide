@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { ToggleHeader } from "../components/toggleHeader"
-import { Button, Carousel, CarouselItem, Container, Image } from "react-bootstrap"
+import { Button, Carousel, CarouselItem, Container, Image as Image_ } from "react-bootstrap"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
@@ -8,6 +8,9 @@ import Footer from "../components/footer"
 import FeaturedTopic from "../components/landing/FeaturedTopic"
 import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
+import Image from "next/image"
+
+import HomeHero from "../public/photos/home/hp_hero.png"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
     // schedule is from featured-topics.json
@@ -90,7 +93,14 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
                 {/* Hero banner section */}
                 <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
-                    <Image alt="home page hero" src="/photos/home/hp_hero.png" className="home-hero" />
+                    <Image
+                        height={1000}
+                        width={1000}
+                        src={HomeHero}
+                        placeholder="blur"
+                        alt="home page hero"
+                        className="home-hero"
+                    />
                     <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute w-100">
                         <Container className="d-flex flex-column align-items-start w-100">
                             <h2 className="text-white text-start">{heroSubheading}</h2>
@@ -129,21 +139,21 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                             className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
                         >
                             <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
+                                <Image_
                                     className="home-carousel-image"
                                     alt="hero image 1"
                                     src="/photos/home/hp_slider-1.jpg"
                                 />
                             </CarouselItem>
                             <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
+                                <Image_
                                     className="home-carousel-image"
                                     alt="hero image 2"
                                     src="/photos/home/hp_slider-2.jpg"
                                 />
                             </CarouselItem>
                             <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
+                                <Image_
                                     className="home-carousel-image"
                                     alt="hero image 3"
                                     src="/photos/home/hp_slider-3.jpg"
@@ -177,7 +187,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
                 {/* Purchase snippet */}
                 <Container className="home-purchase-section py-3 py-md-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
-                    <Image
+                    <Image_
                         alt="book-cover"
                         src={`/photos/home/hp_cover-${i18n.language}.jpg`}
                         className="mt-3 mx-3 shadow"
@@ -242,8 +252,8 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 {/* Beneath the Surface initiative - About snippet */}
                 <div className="w-100 bg-grey-7 p-3 p-md-5 d-flex flex-column align-items-center">
                     <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2 mb-1 pb-1">
-                        <Image alt="BTS Crane" src={`/photos/home/hp_crane.png`} className="home-logo-crane" />
-                        <Image
+                        <Image_ alt="BTS Crane" src={`/photos/home/hp_crane.png`} className="home-logo-crane" />
+                        <Image_
                             alt="BTS Logo"
                             src={`/photos/home/hp_logo_${i18n.language}.png`}
                             className="home-logo-text"
