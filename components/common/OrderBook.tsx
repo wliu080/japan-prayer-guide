@@ -45,9 +45,7 @@ export default function OrderBook({
                     </h1>
                     <div className="w-100 bg-grey-7 horizontal-bar position-relative"></div>
                 </div>
-                <h2 className="text-primary fs-4 fw-bold mb-2 mt-1">
-                    <Trans t={translation} i18nKey={blurb} />
-                </h2>
+                <h2 className="text-primary fs-4 fw-bold mb-2 mt-1"></h2>
                 <div className="d-flex flex-column flex-md-row align-items-center gap-3 mb-2">
                     {orderRegions.map((region) => (
                         <Link
@@ -55,7 +53,7 @@ export default function OrderBook({
                             href={region.url}
                             key={region.text}
                         >
-                            {region.text}
+                            <Trans>{region.text}</Trans>
                         </Link>
                     ))}
                 </div>

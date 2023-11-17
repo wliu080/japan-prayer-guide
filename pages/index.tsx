@@ -69,7 +69,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                             </h1>
                             <Link href="/topics/all" locale={i18n.language}>
                                 <Button className="text-white my-3 bg-secondary-5 border-secondary-5 hero-button">
-                                    <Trans t={homePageTranslation} i18nKey="heroViewTopicsBtn" />
+                                    <Trans t={homePageTranslation} i18nKey="titleButton" />
                                 </Button>
                             </Link>
                         </Container>
@@ -139,7 +139,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                     <p className="w-100 mt-3">
                         <Trans t={homePageTranslation} i18nKey="introText2b" />{" "}
                         <strong>
-                            <Trans t={homePageTranslation} i18nKey="callToAction" />
+                            <Trans t={homePageTranslation} i18nKey="introText2bCallToAction" />
                         </strong>
                     </p>
                 </Container>

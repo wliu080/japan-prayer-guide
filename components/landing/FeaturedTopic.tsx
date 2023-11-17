@@ -38,7 +38,7 @@ export default function FeaturedTopic({ topicTrans, title, prayerPointsKey, feat
                     <ul className="bullet-points">
                         {prayerPoints.map((point: string, idx: number) => (
                             <li key={idx + point} className="my-2 bullet-point">
-                                {point}
+                                <Trans>{point}</Trans>
                             </li>
                         ))}
                     </ul>
@@ -46,14 +46,14 @@ export default function FeaturedTopic({ topicTrans, title, prayerPointsKey, feat
                         className="feature-button fs-4 fw-bold bg-grey-4 text-white text-center border-0 mt-3 mb-2 w-100"
                         variant="primary"
                     >
-                        <Trans t={t} key="prayerSummary.readMore" />
+                        <Trans t={t} i18nKey="prayerSummary.readMore" />
                     </Button>
                     <Card.Text
                         className="mt-3 w-100 mx-auto text-center text-decoration-underline text-secondary-5 fw-bold fs-4 feature-view-all"
                         style={{ cursor: "pointer" }}
                         onClick={() => router.push("topics/all", "topics/all", { locale: i18n.language })}
                     >
-                        <Trans t={t} key="prayerSummary.viewAll" />
+                        <Trans t={t} i18nKey="prayerSummary.viewAll" />
                     </Card.Text>
                 </Card.Body>
             </Card>
