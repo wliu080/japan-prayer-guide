@@ -28,8 +28,7 @@ export interface OrderRegionType {
 }
 
 const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
-    const { t: commonTranslation, i18n } = useTranslation("common")
-    const { t: homePageTranslation } = useTranslation("home")
+    const { t: homePageTranslation, i18n } = useTranslation("home")
     const { t: featuredTranslation } = useTranslation(featuredTopicRef)
 
     const webpageTitle: string = homePageTranslation("webpageTitle")
@@ -49,14 +48,6 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
     const purchaseTitle: string = homePageTranslation("purchaseTitle")
     const purchasePreview: string = homePageTranslation("purchasePreview")
-
-    const orderTitle: string = commonTranslation("order.title")
-    const orderBlurb: string = commonTranslation("order.blurb")
-    const orderRegions: OrderRegionType[] = commonTranslation("order.regions", { returnObjects: true })
-    const orderEBook: string = commonTranslation("order.prompt")
-    const orderJapan: string = commonTranslation("order.japan")
-    const orderWarning: string = commonTranslation("order.warning")
-    const orderBooklet: string = commonTranslation("order.form")
 
     const downloadTitle: string = homePageTranslation("downloadTitle")
     const downloadBlurb: string = homePageTranslation("downloadBlurb")
@@ -198,16 +189,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </Container>
 
                 {/* Order snippet */}
-                <OrderBook
-                    title={orderTitle}
-                    blurb={orderBlurb}
-                    orderRegionsMap={orderRegions}
-                    orderPrompt={orderEBook}
-                    orderJapan={orderJapan}
-                    orderWarning={orderWarning}
-                    orderBooklet={orderBooklet}
-                    language={i18n.language}
-                />
+                <OrderBook />
 
                 {/* Downloads snippet */}
                 <div
