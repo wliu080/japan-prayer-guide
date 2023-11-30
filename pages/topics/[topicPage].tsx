@@ -6,13 +6,13 @@ import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
 import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Feedback from "../../components/topic/Feedback"
 import ImageGroup from "../../components/topic/ImageGroup"
 import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
-import PrayerPoints from "../../components/common/PrayerPoints"
+import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -77,7 +77,10 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     return (
         <>
             <Head>
-                <title>{pageTitle}</title>
+                <title>
+                    <Trans t={t} i18nKey="webpageTitle" />
+                    {pageTitle}
+                </title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -91,7 +94,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     temporary image placeholder
                     <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
                         <h1 className="fs-1 text-white px-3">{t("title")}</h1>
-                        <PrayerPoints prayerPoints={summaryPoints} />
+                        <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicTop} />
                     </Container>
                 </div>
 
@@ -148,7 +151,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
 
                 {/* Prayer Points */}
-                <PrayerPoints prayerPoints={summaryPoints} showImg={true} showSubtitle={true} />
+                <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicBottom} />
                 <br />
 
                 {/* Give us Feedback */}
