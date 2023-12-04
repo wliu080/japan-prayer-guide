@@ -13,6 +13,7 @@ import ImageGroup from "../../components/topic/ImageGroup"
 import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
 import PrayerPoints from "../../components/common/PrayerPoints"
+import NestedModal from "../../components/NestedModal/NestedModal"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -97,6 +98,8 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                 {/* Topic Nav Component */}
                 <TopicNav selected={selected} setSelected={setSelected} labels={navLabels} />
+
+                <NestedModal />
 
                 {/* Video/Reel Placeholder */}
                 <Container className="py-5" id="topic-about">
