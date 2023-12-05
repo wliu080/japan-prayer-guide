@@ -65,8 +65,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const relatedLabels: string[] = t("related.labels", { returnObjects: true })
     const relatedLinks: string[] = t("related.links", { returnObjects: true })
 
-    const navLabels: string[] = t("topicNav.labels", { returnObjects: true })
-
     const pageTitle: string = t("title")
 
     // States
@@ -97,7 +95,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </div>
 
                 {/* Topic Nav Component */}
-                <TopicNav selected={selected} setSelected={setSelected} labels={navLabels} />
+                <TopicNav selected={selected} setSelected={setSelected} topicTrans={t} />
 
                 {/* Video/Reel Placeholder */}
                 <Container className="py-5" id="topic-about">
