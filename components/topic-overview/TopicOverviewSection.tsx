@@ -10,7 +10,7 @@ interface TopicOverviewProps {
 }
 
 // REMOVE THIS eslint disable WHEN WE ADD THIS FUNCTIONALITY TO THE COMPONENT!
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const TopicOverviewSection = ({ title, links, labels, section }: TopicOverviewProps) => {
     const { i18n } = useTranslation("common")
     return (

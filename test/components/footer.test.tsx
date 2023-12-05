@@ -1,12 +1,7 @@
 import { render, screen } from "@testing-library/react"
 import Footer from "../../components/footer"
-import nextI18nextConfig from "../../next-i18next.config"
-import { I18nextProvider } from "react-i18next"
 
-jest.mock("next/router", () => ({
-    useRouter: jest.fn(),
-}))
-jest.mock("react-i18next", () => ({
+jest.mock("next-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
     useTranslation: () => {
         return {
@@ -17,14 +12,7 @@ jest.mock("react-i18next", () => ({
             },
         }
     },
-    withTranslation: () => (Component: any) => {
-        Component.defaultProps = { ...Component.defaultProps, t: () => "" }
-        return Component
-    },
-    initReactI18next: {
-        type: "3rdParty",
-        init: () => {},
-    },
+    Trans: ({ i18nKey }: { i18nKey: string }) => i18nKey,
 }))
 
 describe("Footer", () => {

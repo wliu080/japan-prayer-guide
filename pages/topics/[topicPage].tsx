@@ -46,8 +46,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const { t: common } = useTranslation("common")
 
     // Objects holding translations
-    const summaryPoints: string[] = t("prayerSummary", { returnObjects: true })
-
     const bodyContent1: string[] = t("mainBody.content1", { returnObjects: true })
     const bodyContent2: string[] = t("mainBody.content2", { returnObjects: true })
     const bodyContent3: string[] = t("mainBody.content3", { returnObjects: true })

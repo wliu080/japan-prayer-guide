@@ -39,6 +39,8 @@
         "@types/jest": "^29.4.0",
         "@types/node": "18.11.19",
         "@types/react": "^18.0.27",
+        "@typescript-eslint/eslint-plugin": "^6.13.1",
+        "@typescript-eslint/parser": "^6.13.1",
         "eslint": "^8.31.0",
         "eslint-config-next": "13.1.2",
         "eslint-config-prettier": "^9.0.0",
