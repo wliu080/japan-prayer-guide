@@ -53,13 +53,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const quoteContent: string = t("quote.content")
     const quoteSource: string = t("quote.source")
 
-    const feedbackTitle: string = common("feedback.title")
-    const feedbackButton: string = common("feedback.button")
-
-    const relatedTitle: string = t("related.title")
-    const relatedLabels: string[] = t("related.labels", { returnObjects: true })
-    const relatedLinks: string[] = t("related.links", { returnObjects: true })
-
     const pageTitle: string = t("title")
 
     // States
@@ -146,11 +139,11 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <br />
 
                 {/* Give us Feedback */}
-                <Feedback title={feedbackTitle} button={feedbackButton} />
+                <Feedback topicTrans={t} />
 
                 {/* Downloads and Related */}
                 <TopicDownloadables topicTrans={t} />
-                <RelatedContent topics={relatedLabels} links={relatedLinks} title={relatedTitle} />
+                <RelatedContent topicTrans={t} />
 
                 {/* Footer */}
                 <Footer />
