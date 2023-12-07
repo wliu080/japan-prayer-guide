@@ -139,7 +139,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <br />
 
                 {/* Give us Feedback */}
-                <Feedback topicTrans={t} />
+                <Feedback topicTrans={common} />
 
                 {/* Downloads and Related */}
                 <TopicDownloadables topicTrans={t} />
