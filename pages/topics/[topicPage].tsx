@@ -56,11 +56,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const feedbackTitle: string = common("feedback.title")
     const feedbackButton: string = common("feedback.button")
 
-    const downloadsTitle: string = t("downloads.title")
-    const downloadsLabels: string[] = t("downloads.labels", { returnObjects: true })
-    const downloadsLinks: string[] = t("downloads.links", { returnObjects: true })
-    const downloadsHeaders: string[] = t("downloads.headers", { returnObjects: true })
-
     const relatedTitle: string = t("related.title")
     const relatedLabels: string[] = t("related.labels", { returnObjects: true })
     const relatedLinks: string[] = t("related.links", { returnObjects: true })
@@ -154,12 +149,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <Feedback title={feedbackTitle} button={feedbackButton} />
 
                 {/* Downloads and Related */}
-                <TopicDownloadables
-                    links={downloadsLinks}
-                    labels={downloadsLabels}
-                    title={downloadsTitle}
-                    headers={downloadsHeaders}
-                />
+                <TopicDownloadables topicTrans={t} />
                 <RelatedContent topics={relatedLabels} links={relatedLinks} title={relatedTitle} />
 
                 {/* Footer */}
