@@ -6,13 +6,13 @@ import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
 import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Feedback from "../../components/topic/Feedback"
 import ImageGroup from "../../components/topic/ImageGroup"
 import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
-import PrayerPoints from "../../components/common/PrayerPoints"
+import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -46,28 +46,12 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const { t: common } = useTranslation("common")
 
     // Objects holding translations
-    const summaryPoints: string[] = t("prayerSummary", { returnObjects: true })
-
     const bodyContent1: string[] = t("mainBody.content1", { returnObjects: true })
     const bodyContent2: string[] = t("mainBody.content2", { returnObjects: true })
     const bodyContent3: string[] = t("mainBody.content3", { returnObjects: true })
 
     const quoteContent: string = t("quote.content")
     const quoteSource: string = t("quote.source")
-
-    const feedbackTitle: string = common("feedback.title")
-    const feedbackButton: string = common("feedback.button")
-
-    const downloadsTitle: string = t("downloads.title")
-    const downloadsLabels: string[] = t("downloads.labels", { returnObjects: true })
-    const downloadsLinks: string[] = t("downloads.links", { returnObjects: true })
-    const downloadsHeaders: string[] = t("downloads.headers", { returnObjects: true })
-
-    const relatedTitle: string = t("related.title")
-    const relatedLabels: string[] = t("related.labels", { returnObjects: true })
-    const relatedLinks: string[] = t("related.links", { returnObjects: true })
-
-    const navLabels: string[] = t("topicNav.labels", { returnObjects: true })
 
     const pageTitle: string = t("title")
 
@@ -77,7 +61,10 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     return (
         <>
             <Head>
-                <title>{pageTitle}</title>
+                <title>
+                    <Trans t={t} i18nKey="webpageTitle" />
+                    {pageTitle}
+                </title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -91,12 +78,12 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     temporary image placeholder
                     <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
                         <h1 className="fs-1 text-white px-3">{t("title")}</h1>
-                        <PrayerPoints prayerPoints={summaryPoints} />
+                        <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicTop} />
                     </Container>
                 </div>
 
                 {/* Topic Nav Component */}
-                <TopicNav selected={selected} setSelected={setSelected} labels={navLabels} />
+                <TopicNav selected={selected} setSelected={setSelected} topicTrans={t} />
 
                 {/* Video/Reel Placeholder */}
                 <Container className="py-5" id="topic-about">
@@ -148,20 +135,15 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
 
                 {/* Prayer Points */}
-                <PrayerPoints prayerPoints={summaryPoints} showImg={true} showSubtitle={true} />
+                <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicBottom} />
                 <br />
 
                 {/* Give us Feedback */}
-                <Feedback title={feedbackTitle} button={feedbackButton} />
+                <Feedback topicTrans={common} />
 
                 {/* Downloads and Related */}
-                <TopicDownloadables
-                    links={downloadsLinks}
-                    labels={downloadsLabels}
-                    title={downloadsTitle}
-                    headers={downloadsHeaders}
-                />
-                <RelatedContent topics={relatedLabels} links={relatedLinks} title={relatedTitle} />
+                <TopicDownloadables topicTrans={t} />
+                <RelatedContent topicTrans={t} />
 
                 {/* Footer */}
                 <Footer />

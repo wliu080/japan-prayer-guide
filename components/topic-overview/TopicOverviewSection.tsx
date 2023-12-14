@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Card, Container, Row, Col, Image } from "react-bootstrap"
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 
 interface TopicOverviewProps {
     title: string
@@ -10,14 +10,16 @@ interface TopicOverviewProps {
 }
 
 // REMOVE THIS eslint disable WHEN WE ADD THIS FUNCTIONALITY TO THE COMPONENT!
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const TopicOverviewSection = ({ title, links, labels, section }: TopicOverviewProps) => {
     const { i18n } = useTranslation("common")
     return (
         <>
             <section>
                 <Container id={section} className="no-max-container mt-4 mt-md-4">
-                    <h1 className="topic-nav-section-title text-primary pt-4 px-1 px-md-2 mb-0">{title}</h1>
+                    <h1 className="topic-nav-section-title text-primary pt-4 px-1 px-md-2 mb-0">
+                        <Trans>{title}</Trans>
+                    </h1>
                 </Container>
                 <Container className="bottom-grey-border px-4 pt-1 no-max-container pb-5">
                     <Row xl={3} lg={3} md={2} sm={2} xs={2} className="d-flex">
@@ -63,7 +65,9 @@ export const TopicOverviewSection = ({ title, links, labels, section }: TopicOve
                                                 className="d-flex topic-nav-card-title p-0"
                                                 style={{ cursor: "not-allowed" }}
                                             >
-                                                <p className="m-0 text-grey-6">{element}</p>
+                                                <p className="m-0 text-grey-6">
+                                                    <Trans>{element}</Trans>
+                                                </p>
                                             </Card.Body>
                                         </Card>
                                     </Link>

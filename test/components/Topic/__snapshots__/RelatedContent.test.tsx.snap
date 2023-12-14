@@ -16,7 +16,7 @@ exports[`Related Content Snapshot test 1`] = `
             class="text-primary my-4 fs-1"
             data-testid="related-content-title"
           >
-            Related Content
+            related.title
           </h1>
           <a
             class="text-secondary d-none d-md-block"
@@ -660,7 +660,7 @@ exports[`Related Content Snapshot test 1`] = `
           class="text-primary my-4 fs-1"
           data-testid="related-content-title"
         >
-          Related Content
+          related.title
         </h1>
         <a
           class="text-secondary d-none d-md-block"

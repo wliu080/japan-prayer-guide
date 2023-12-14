@@ -17,7 +17,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             class="text-primary my-4 fs-1"
             data-testid="topic-downloadables-title"
           >
-            Downloadables
+            downloads.title
           </h1>
           <a
             class="text-secondary d-none d-md-block"
@@ -134,7 +134,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
           class="text-primary my-4 fs-1"
           data-testid="topic-downloadables-title"
         >
-          Downloadables
+          downloads.title
         </h1>
         <a
           class="text-secondary d-none d-md-block"

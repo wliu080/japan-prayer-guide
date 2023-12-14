@@ -13,6 +13,11 @@ exports[`Prayer Points Snapshot test 1`] = `
         <div
           class="my-4 shadow d-md-flex flex-md-row card"
         >
+          <img
+            class="card-img-top h-100"
+            src="/bamboo.jpeg"
+            style="max-width: 600px;"
+          />
           <div
             class="card-body"
             style="max-width: 400px;"
@@ -21,7 +26,7 @@ exports[`Prayer Points Snapshot test 1`] = `
               class="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey d-flex justify-content-between align-items-center card-text"
               data-testid="prayer-points-title"
             >
-              Prayer Points1
+              title
               <svg
                 class="text-secondary fw-bold"
                 fill="currentColor"
@@ -48,14 +53,26 @@ exports[`Prayer Points Snapshot test 1`] = `
               <li
                 class="my-3"
               >
-                ABC
+                A
               </li>
               <li
                 class="my-3"
               >
-                Item123
+                B
               </li>
             </ul>
+            <button
+              class="w-100 mt-2 text-secondary border-secondary bg-white btn btn-primary"
+              type="button"
+            >
+              prayerSummary.readMore
+            </button>
+            <p
+              class="my-3 w-100 mx-auto text-center text-decoration-underline text-secondary card-text"
+              style="cursor: pointer;"
+            >
+              prayerSummary.viewAll
+            </p>
           </div>
         </div>
       </div>
@@ -70,6 +87,11 @@ exports[`Prayer Points Snapshot test 1`] = `
       <div
         class="my-4 shadow d-md-flex flex-md-row card"
       >
+        <img
+          class="card-img-top h-100"
+          src="/bamboo.jpeg"
+          style="max-width: 600px;"
+        />
         <div
           class="card-body"
           style="max-width: 400px;"
@@ -78,7 +100,7 @@ exports[`Prayer Points Snapshot test 1`] = `
             class="px-2 pb-3 fs-2 fst-italic fw-bold border-bottom border-grey d-flex justify-content-between align-items-center card-text"
             data-testid="prayer-points-title"
           >
-            Prayer Points1
+            title
             <svg
               class="text-secondary fw-bold"
               fill="currentColor"
@@ -105,14 +127,26 @@ exports[`Prayer Points Snapshot test 1`] = `
             <li
               class="my-3"
             >
-              ABC
+              A
             </li>
             <li
               class="my-3"
             >
-              Item123
+              B
             </li>
           </ul>
+          <button
+            class="w-100 mt-2 text-secondary border-secondary bg-white btn btn-primary"
+            type="button"
+          >
+            prayerSummary.readMore
+          </button>
+          <p
+            class="my-3 w-100 mx-auto text-center text-decoration-underline text-secondary card-text"
+            style="cursor: pointer;"
+          >
+            prayerSummary.viewAll
+          </p>
         </div>
       </div>
     </div>

@@ -15,9 +15,15 @@ jest.mock("react-i18next", () => ({
             },
         }
     },
-    initReactI18next: {
-        type: "3rdParty",
-        init: () => {},
+    Trans: (props: any) => {
+        if (props.children) {
+            // mock for <Trans>{value}</Trans>
+            return props.children
+        } else if (props.i18nKey) {
+            // mock for <Trans t={t} i18nKey={value} />
+            return props.i18nKey
+        }
+        return props
     },
 }))
 
