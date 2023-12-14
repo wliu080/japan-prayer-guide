@@ -39,9 +39,7 @@ export default function Overview() {
     return (
         <>
             <Head>
-                <title>
-                    <Trans t={t} i18nKey="webpageTitle" />
-                </title>
+                <title>{t("webpageTitle")}</title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
