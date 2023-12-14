@@ -3,8 +3,20 @@ import styles from "./lightbox.module.scss"
 import { Left, Cross, LeftArrow, RightArrow } from "../icons"
 import { Image } from "react-bootstrap"
 
-const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }) => {
-    const handleSwitch = (type) => {
+interface LightBoxProps {
+    index: number
+    setImage: React.Dispatch<React.SetStateAction<number>>
+    images: {
+        src: string
+        title: string
+    }[]
+    setGallery: React.Dispatch<React.SetStateAction<boolean>>
+    setLightBox: React.Dispatch<React.SetStateAction<boolean>>
+    lightBox: boolean
+}
+
+const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }: LightBoxProps) => {
+    const handleSwitch = (type: string) => {
         if (type === "inc" && index + 1 !== images.length) {
             setImage(index + 1)
         }

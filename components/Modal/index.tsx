@@ -1,4 +1,4 @@
-import React from "react"
+import React, { PropsWithChildren } from "react"
 import ReactModal from "react-modal"
 
 const galleryStyles = {
@@ -31,7 +31,13 @@ const customStyles = {
     },
 }
 
-const Modal = ({ typ, modal, setModal, children }) => {
+interface ModalProps extends PropsWithChildren {
+    typ: string
+    modal: boolean
+    setModal: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Modal = ({ typ, modal, setModal, children }: ModalProps) => {
     return (
         <ReactModal
             isOpen={modal}
