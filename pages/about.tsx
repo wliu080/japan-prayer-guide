@@ -20,23 +20,14 @@ export async function getStaticProps({ locale }: any) {
 const About: React.FC = () => {
     const { t } = useTranslation("about")
 
-    const heroHeader: string = t("heroHeader")
-    const heroSubheader: string = t("heroSubheader")
-
-    const introTitle: string = t("introTitle")
     const introBlurb: string[] = t("introBlurb", { returnObjects: true })
-
-    const biblePassageLocation: string = t("bible.passageLocation")
-    const bibleContent: string = t("bible.content")
-
-    const inviteTitle: string = t("inviteTitle")
-    const inviteBlurb: string = t("inviteBlurb")
-    const callToAction: string = t("callToAction")
 
     return (
         <div>
             <Head>
-                <title>{t("webpageTitle")}</title>
+                <title>
+                    <Trans t={t} i18nKey="webpageTitle" />
+                </title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -54,21 +45,25 @@ const About: React.FC = () => {
                         src="/photos/about/about_hero.jpg"
                         className="position-absolute top-0"
                     />
-                    <h2 className="px-4 px-md-5 px-lg-4 text-white w-100">{heroSubheader}</h2>
+                    <h2 className="px-4 px-md-5 px-lg-4 text-white w-100">
+                        <Trans t={t} i18nKey="heroSubheader" />
+                    </h2>
                     <h1 className="px-4 px-md-5 px-lg-4 text-white w-100" style={{ whiteSpace: "pre-line" }}>
-                        {heroHeader}
+                        <Trans t={t} i18nKey="heroHeader" />
                     </h1>
                 </div>
 
                 {/* Growing interest section */}
                 <Container id="who-are-we" className="w-100 d-flex flex-column align-items-center px-4 px-md-4">
-                    <h1 className="text-primary about-h1-header text-center">{introTitle}</h1>
+                    <h1 className="text-primary about-h1-header text-center">
+                        <Trans t={t} i18nKey="introTitle" />
+                    </h1>
                     <Image className="mt-4 about-main-image" alt="about img 1" src="/photos/about/about_01.png" />
                     <Container className="px-0">
                         <div className="w-100 mt-4 pt-3"></div>
                         {introBlurb.map((text, idx) => (
                             <p key={idx + text} className="common-p about-body-text">
-                                {text}
+                                <Trans>{text}</Trans>
                             </p>
                         ))}
                     </Container>
@@ -99,9 +94,11 @@ const About: React.FC = () => {
                 {/* Verse section */}
                 <div className="w-100 py-5 px-4 bg-grey-7">
                     <Container className="w-100 about-verse">
-                        <h2 className="common-p text-white text-center fst-italic mt-3">{bibleContent}</h2>
+                        <h2 className="common-p text-white text-center fst-italic mt-3">
+                            <Trans t={t} i18nKey="bible.content" />
+                        </h2>
                         <h3 className="text-white text-center about-passage-location mt-4 mb-2">
-                            {biblePassageLocation}
+                            <Trans t={t} i18nKey="bible.passageLocation" />
                         </h3>
                     </Container>
                 </div>
@@ -109,10 +106,15 @@ const About: React.FC = () => {
                 {/* Invitation to prayer */}
                 <Container className="w-100 about-invite px-4">
                     <div className="d-flex mt-2 flex-column align-items-center border-grey-4 border-bottom">
-                        <h1 className="mt-5 about-h1-header text-black text-center">{inviteTitle}</h1>
+                        <h1 className="mt-5 about-h1-header text-black text-center">
+                            <Trans t={t} i18nKey="inviteTitle" />
+                        </h1>
                         <Container className="px-0">
                             <p className="mt-4 mb-5 common-p about-body-text">
-                                {inviteBlurb} <strong>{callToAction}</strong>
+                                <Trans t={t} i18nKey="inviteBlurb" />{" "}
+                                <strong>
+                                    <Trans t={t} i18nKey="callToAction" />
+                                </strong>
                             </p>
                         </Container>
                     </div>

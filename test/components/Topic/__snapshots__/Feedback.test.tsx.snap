@@ -14,7 +14,7 @@ exports[`Feedback Snapshot test 1`] = `
           class="text-primary fs-2"
           data-testid="feedback-title"
         >
-          feedback
+          feedback.title
         </h1>
         <button
           class="bg-secondary text-white border-0 p-2 w-100 mt-4 btn btn-primary"
@@ -25,7 +25,7 @@ exports[`Feedback Snapshot test 1`] = `
             class="m-0"
             data-testid="feedback-button"
           >
-            abc
+            feedback.button
           </p>
         </button>
       </section>
@@ -41,7 +41,7 @@ exports[`Feedback Snapshot test 1`] = `
         class="text-primary fs-2"
         data-testid="feedback-title"
       >
-        feedback
+        feedback.title
       </h1>
       <button
         class="bg-secondary text-white border-0 p-2 w-100 mt-4 btn btn-primary"
@@ -52,7 +52,7 @@ exports[`Feedback Snapshot test 1`] = `
           class="m-0"
           data-testid="feedback-button"
         >
-          abc
+          feedback.button
         </p>
       </button>
     </section>

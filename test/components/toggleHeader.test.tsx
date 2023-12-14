@@ -1,9 +1,6 @@
 import { render, fireEvent } from "@testing-library/react"
 import { ToggleHeader } from "../../components/toggleHeader"
 
-jest.mock("next/router", () => ({
-    useRouter: jest.fn(),
-}))
 jest.mock("react-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
     useTranslation: () => {
@@ -14,10 +11,7 @@ jest.mock("react-i18next", () => ({
             },
         }
     },
-    initReactI18next: {
-        type: "3rdParty",
-        init: () => {},
-    },
+    Trans: ({ i18nKey }: { i18nKey: string }) => i18nKey,
 }))
 
 Object.defineProperty(window, "matchMedia", {

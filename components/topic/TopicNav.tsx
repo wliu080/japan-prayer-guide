@@ -1,15 +1,17 @@
+import { TFunction, Trans } from "next-i18next"
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react"
 import { Container } from "react-bootstrap"
 
 interface navProps {
     selected: string
     setSelected: Dispatch<SetStateAction<string>>
-    labels: string[]
+    topicTrans: TFunction
 }
 
-export const TopicNav = ({ selected, setSelected, labels }: navProps) => {
+export const TopicNav = ({ selected, setSelected, topicTrans }: navProps) => {
     const bannerRef = useRef(null)
     const [show, setShow] = useState(false)
+    const labels: string[] = topicTrans("topicNav.labels", { returnObjects: true })
 
     useEffect(() => {
         const handleScroll = () => {
@@ -50,7 +52,7 @@ export const TopicNav = ({ selected, setSelected, labels }: navProps) => {
                     onClick={() => setSelected("About")}
                     data-testid={"topic-nav-link"}
                 >
-                    {labels[0]}
+                    <Trans>{labels[0]}</Trans>
                 </a>
                 <a
                     href="#topic-prayer"
@@ -60,7 +62,7 @@ export const TopicNav = ({ selected, setSelected, labels }: navProps) => {
                     }
                     onClick={() => setSelected("Prayer")}
                 >
-                    {labels[1]}
+                    <Trans>{labels[1]}</Trans>
                 </a>
                 <a
                     href="#topic-downloads"
@@ -70,7 +72,7 @@ export const TopicNav = ({ selected, setSelected, labels }: navProps) => {
                     }
                     onClick={() => setSelected("Downloads")}
                 >
-                    {labels[2]}
+                    <Trans>{labels[2]}</Trans>
                 </a>
             </div>
         </Container>

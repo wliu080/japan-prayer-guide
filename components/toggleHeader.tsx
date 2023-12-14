@@ -2,18 +2,20 @@ import React from "react"
 import Image from "next/image"
 import { Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap"
 import { useState, useEffect } from "react"
-import { useTranslation } from "next-i18next"
+import { TFunction, Trans, useTranslation } from "next-i18next"
 import LanguageSwitcher from "./languageSwitcher"
 import { useRouter } from "next/router"
 import Link from "next/link"
 
 const NavLinkWithLocale = ({
-    text,
+    trans,
+    textKey,
     href,
     locale,
     current,
 }: {
-    text: string
+    trans: TFunction
+    textKey: string
     href: string
     locale: string
     current: string
@@ -22,7 +24,7 @@ const NavLinkWithLocale = ({
         <Nav.Item>
             <Link href={href} passHref locale={locale} className={"nav-link"} tabIndex={0}>
                 <Nav.Link as="span" className={current === href ? "selected-nav-link" : ""}>
-                    {text}
+                    <Trans t={trans} i18nKey={textKey} />
                 </Nav.Link>
             </Link>
         </Nav.Item>
@@ -100,32 +102,37 @@ const ToggleHeader: React.FC = () => {
                     <Container className="mobile-header d-flex flex-column justify-content-between w-auto ms-auto me-0">
                         <Nav className="ml-auto d-md-flex gap-md-3 align-items-xl-center" variant={variant}>
                             <NavLinkWithLocale
+                                trans={t}
                                 current={router.pathname}
-                                text={t("header.home")}
+                                textKey="header.home"
                                 href="/"
                                 locale={i18n.language}
                             />
                             <NavLinkWithLocale
+                                trans={t}
                                 current={router.pathname}
-                                text={t("header.topics")}
+                                textKey="header.topics"
                                 href="/topics/all"
                                 locale={i18n.language}
                             />
                             <NavLinkWithLocale
+                                trans={t}
                                 current={router.pathname}
-                                text={t("header.booklet")}
+                                textKey="header.booklet"
                                 href="/booklet"
                                 locale={i18n.language}
                             />
                             <NavLinkWithLocale
+                                trans={t}
                                 current={router.pathname}
-                                text={t("header.download")}
+                                textKey="header.download"
                                 href="/resources"
                                 locale={i18n.language}
                             />
                             <NavLinkWithLocale
+                                trans={t}
                                 current={router.pathname}
-                                text={t("header.about")}
+                                textKey="header.about"
                                 href="/about"
                                 locale={i18n.language}
                             />
@@ -152,7 +159,9 @@ const ToggleHeader: React.FC = () => {
                             </Row>
                             <Image alt="Crane logo" src="/wire-logo.png" width="48" height="48" className="mb-2" />{" "}
                             <Row className="mt-2 mb-5">
-                                <p className="mobile-menu-tagline text-light pb-3">{t("header.blurb")}</p>
+                                <p className="mobile-menu-tagline text-light pb-3">
+                                    <Trans t={t} i18nKey="header.blurb" />
+                                </p>
                             </Row>
                         </Container>
                     </Container>

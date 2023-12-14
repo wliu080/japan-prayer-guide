@@ -51,11 +51,6 @@ export async function getStaticProps({ locale }: any) {
     }
 }
 
-interface OrderRegionType {
-    text: string
-    url: string
-}
-
 interface PaginationSrcType {
     src: StaticImageData
     text?: string
@@ -119,7 +114,6 @@ function useBetterMediaQuery(query: string) {
 const TabletOrMobileMediaQuery = "(min-width: 992px)"
 const Booklet: React.FC = () => {
     const { t, i18n } = useTranslation("booklet")
-    const { t: bookletTranslation } = useTranslation("booklet")
     const introTextParagraphs: string[] = t("introText", { returnObjects: true })
     const isTabletOrMobile = useBetterMediaQuery(TabletOrMobileMediaQuery)
     const isInEnglish = i18n.language === "en"
@@ -138,18 +132,12 @@ const Booklet: React.FC = () => {
         }
     }
 
-    const orderTitle: string = bookletTranslation("orderTitle")
-    const orderBlurb: string = bookletTranslation("orderBlurb")
-    const orderRegions: OrderRegionType[] = bookletTranslation("orderRegions", { returnObjects: true })
-    const orderEBook: string = bookletTranslation("orderEBook")
-    const orderJapan: string = bookletTranslation("orderJapan")
-    const orderWarning: string = bookletTranslation("orderWarning")
-    const orderBooklet: string = bookletTranslation("orderBooklet")
-
     return (
         <div>
             <Head>
-                <title>{t("webpageTitle")}</title>
+                <title>
+                    <Trans t={t} i18nKey="webpageTitle" />
+                </title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -171,10 +159,10 @@ const Booklet: React.FC = () => {
                             <Col className="d-flex align-items-center">
                                 <div className="book-text">
                                     <h1>
-                                        <Trans>{t("heading")}</Trans>
+                                        <Trans t={t} i18nKey="heading" />
                                     </h1>
                                     <p className="book-subheading">
-                                        <Trans>{t("subheading")}</Trans>
+                                        <Trans t={t} i18nKey="subheading" />
                                     </p>
                                     {introTextParagraphs.map((text: string, idx: number) => (
                                         <p key={idx + text} className="book-introText">
@@ -194,21 +182,16 @@ const Booklet: React.FC = () => {
                 <Container className="booklet-gif mb-5">
                     <BootstrapImage className="w-100 px-10" src={`/photos/booklet/BOOK_GIF-${i18n.language}.gif`} />
                 </Container>
-                <OrderBook
-                    title={orderTitle}
-                    blurb={orderBlurb}
-                    orderRegionsMap={orderRegions}
-                    orderPrompt={orderEBook}
-                    orderJapan={orderJapan}
-                    orderWarning={orderWarning}
-                    orderBooklet={orderBooklet}
-                    language={i18n.language}
-                />
+                <OrderBook />
                 <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
                     <Container className="text-center">
-                        <h1>{t("prayerRedirectHeading")}</h1>
+                        <h1>
+                            <Trans t={t} i18nKey="prayerRedirectHeading" />
+                        </h1>
                         <Link href="/topics/all" locale={i18n.language}>
-                            <Button className="text-white">{t("prayerRedirectButtonText")}</Button>
+                            <Button className="text-white">
+                                <Trans t={t} i18nKey="prayerRedirectButtonText" />
+                            </Button>
                         </Link>
                     </Container>
                 </section>

@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react"
 import { Container } from "react-bootstrap"
 
@@ -99,7 +99,7 @@ export const TopicOverviewNav = ({ selected, setSelected }: Props) => {
                         data-testid={"overview-nav-link"}
                         tabIndex={0}
                     >
-                        {t("topHeading")}
+                        <Trans t={t} i18nKey="topHeading" />
                     </a>
                     <a
                         className={
@@ -112,7 +112,7 @@ export const TopicOverviewNav = ({ selected, setSelected }: Props) => {
                         data-testid="overview-nav-link-2"
                         tabIndex={0}
                     >
-                        {t("botHeading")}
+                        <Trans t={t} i18nKey="botHeading" />
                     </a>
                 </div>
             </Container>
