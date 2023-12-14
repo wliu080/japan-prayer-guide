@@ -8,7 +8,7 @@ import Gallery from "../../components/Gallery"
 import { Image, Row } from "react-bootstrap"
 
 const style = {
-    position: "absolute" as "absolute",
+    position: "absolute",
     width: "100%",
     height: "100vh",
     bgcolor: "background.paper",

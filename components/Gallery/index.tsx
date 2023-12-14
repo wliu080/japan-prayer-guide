@@ -20,7 +20,7 @@ interface GalleryProps {
 }
 
 const style = {
-    position: "absolute" as "absolute",
+    position: "absolute",
     width: "100%",
     bgcolor: "background.paper",
     border: "2px solid #000",
