@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "./lightbox.module.scss"
 import { Left, Cross, LeftArrow, RightArrow } from "../icons"
 import { Image } from "react-bootstrap"
 
@@ -31,10 +30,10 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
     }
 
     return (
-        <div className={styles.lightbox}>
-            <div className={styles.container}>
-                <div className={styles.header}>
-                    <span onClick={() => setLightBox(!lightBox)} className={styles.headLeft}>
+        <div className="lightbox">
+            <div className="lightbox-container">
+                <div className="lightbox-header">
+                    <span onClick={() => setLightBox(!lightBox)} className="headLeft">
                         <span style={{ marginTop: "6px" }}>
                             <Left />
                         </span>
@@ -42,25 +41,25 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
                     <span>
                         {index + 1}/{images.length}
                     </span>
-                    <span onClick={handleClose} className={styles.headRight}>
+                    <span onClick={handleClose} className="headRight">
                         <Cross />
                     </span>
                 </div>
-                <div className={styles.body}>
-                    <div className={styles.auto + " " + styles.leftArrow}>
+                <div className="lightbox-body">
+                    <div className="lightbox-auto lightbox-leftArrow">
                         {index !== 0 && (
-                            <span className={styles.arrow} onClick={() => handleSwitch("dec")}>
+                            <span className="lightbox-arrow" onClick={() => handleSwitch("dec")}>
                                 <LeftArrow />
                             </span>
                         )}
                     </div>
-                    <div className={styles.box}>
+                    <div className="lightbox-box">
                         <Image src={images[index].src} alt="light box" />
                         <h1>{images[index].title}</h1>
                     </div>
-                    <div className={styles.auto + " " + styles.rightArrow}>
+                    <div className="lightbox-auto lightbox-rightArrow">
                         {index + 1 !== images.length && (
-                            <span className={styles.arrow} onClick={() => handleSwitch("inc")}>
+                            <span className="lightbox-arrow" onClick={() => handleSwitch("inc")}>
                                 <RightArrow />
                             </span>
                         )}
