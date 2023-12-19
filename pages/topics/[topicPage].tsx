@@ -6,7 +6,7 @@ import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
 import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
-import { Trans, useTranslation } from "next-i18next"
+import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Feedback from "../../components/topic/Feedback"
 import ImageGroup from "../../components/topic/ImageGroup"
@@ -62,10 +62,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     return (
         <>
             <Head>
-                <title>
-                    <Trans t={t} i18nKey="webpageTitle" />
-                    {pageTitle}
-                </title>
+                <title>{pageTitle}</title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
