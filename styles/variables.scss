@@ -9,6 +9,7 @@
 $primary: #002266;
 $secondary: #74b6ff;
 $secondary-5: #285abd;
+$grey-1: #f5f7fb;
 $grey-2: #ebf0f6;
 $grey-7: #505c7c;
 // custom theme map - if set here, will be available as bootstrap theme, e.g, text-primary-blue
@@ -23,6 +24,7 @@ $custom-colors: (
     "secondary-4": #74b6ff,
     "secondary-5": $secondary-5,
     "tertiary": #f46b59,
+    "grey-1": $grey-1,
     "grey-2": $grey-2,
     "grey-4": #bcc3cf,
     "grey-6": #727c96,
