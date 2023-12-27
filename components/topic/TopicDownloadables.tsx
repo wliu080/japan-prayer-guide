@@ -29,8 +29,8 @@ const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) =>
                 tabIndex={disabled ? -1 : undefined}
             >
                 <Card
-                    className="shadow-sm border-0 rounded"
-                    style={{ minHeight: "125px" }}
+                    className={"shadow-sm border-0 rounded" + (disabled ? " disabled" : "")}
+                    style={{ backgroundColor: "#E2E2E2", minHeight: "125px" }}
                     onClick={(event) => (disabled ? event.preventDefault() : null)}
                 >
                     <Card.Body
