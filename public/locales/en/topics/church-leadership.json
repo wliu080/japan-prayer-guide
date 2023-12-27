@@ -15,10 +15,10 @@
         "source": "-Bible verse or quote."
     },
     "downloads": {
-        "title": "Downloads",
-        "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-        "links": ["/", "/", "/", "/", "/"],
-        "headers": ["View all downloadables", "Download All"]
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
     },
     "related": {
         "title": "Other related topics",

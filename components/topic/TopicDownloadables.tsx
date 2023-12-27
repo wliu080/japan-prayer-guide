@@ -1,21 +1,68 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { Container, Card } from "react-bootstrap"
 import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Link from "next/link"
 import { TFunction, Trans, useTranslation } from "next-i18next"
+import { RiDonutChartFill, RiFile3Line, RiImageFill, RiMic2Fill, RiSlideshowLine } from "react-icons/ri"
+import { FaPrayingHands } from "react-icons/fa"
 
 interface downloadProps {
     topicTrans: TFunction
 }
 
-export default function TopicDownloadables({ topicTrans }: downloadProps) {
-    const { i18n } = useTranslation("common")
+interface ResourceProps {
+    disabled?: boolean
+    icon: ReactNode
+    label: string
+    link: string
+}
 
-    const labels: string[] = topicTrans("downloads.labels", { returnObjects: true })
+const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) => {
+    return (
+        <Col key={label}>
+            <Link
+                href={link}
+                className={"text-decoration-none"}
+                aria-disabled={disabled}
+                tabIndex={disabled ? -1 : undefined}
+            >
+                <Card
+                    className={"shadow-sm border-0 rounded" + (disabled ? " disabled" : "")}
+                    style={{ backgroundColor: "#E2E2E2", minHeight: "125px" }}
+                >
+                    <Card.Body className="d-flex align-items-center justify-content-center topic-downloadables">
+                        {icon}
+                        <p className="text-center fw-bold fs-4 my-0">
+                            <Trans>{label}</Trans>
+                            {disabled ? "[disabled]" : ""}
+                        </p>
+                    </Card.Body>
+                </Card>
+            </Link>
+        </Col>
+    )
+}
+
+export default function TopicDownloadables({ topicTrans }: downloadProps) {
+    const { t, i18n } = useTranslation("common")
+
     const links: string[] = topicTrans("downloads.links", { returnObjects: true })
-    const headers: string[] = topicTrans("downloads.headers", { returnObjects: true })
+    const infographicsLabel = t("downloads.infographicsLabel")
+    const photographyLabel = t("downloads.photographyLabel")
+    const pdfLabel = t("downloads.pdfLabel")
+    const prayerPtsLabel = t("downloads.prayerPtsLabel")
+    const prayerVidLabel = t("downloads.prayerVidLabel")
+    const slidesLabel = t("downloads.slidesLabel")
+
+    // defaults to "" if not available, this is checked for use in ResourceCard
+    const infographicsUrl = topicTrans("downloads.infographicsUrl", "")
+    const photographyUrl = topicTrans("downloads.photographyUrl", "")
+    const pdfUrl = topicTrans("downloads.pdfUrl", "")
+    const prayerPtsUrl = topicTrans("downloads.prayerPtsUrl", "")
+    const prayerVidUrl = topicTrans("downloads.prayerVidUrl", "")
+    const slidesUrl = topicTrans("downloads.slidesUrl", "")
 
     return (
         <Container
@@ -23,31 +70,46 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
             className="d-flex flex-column my-5"
             id="topic-downloads"
         >
-            <Container className="d-flex flex-row justify-content-between align-items-center">
-                <h1 data-testid={"topic-downloadables-title"} className="text-primary my-4 fs-1">
-                    <Trans t={topicTrans} i18nKey="downloads.title" />
+            <Container>
+                <h1 data-testid={"topic-downloadables-title"} className="text-primary mt-4 mb-3 fs-1">
+                    <Trans t={t} i18nKey="downloads.title" />
                 </h1>
-                <Link href={"/resources"} className="text-secondary d-none d-md-block" locale={i18n.language}>
-                    <Trans>{headers[0]}</Trans>
-                </Link>
+                <p>
+                    <Trans t={t} i18nKey="downloads.description" />
+                </p>
             </Container>
-            <Row xl={4} md={2} className="g-3" data-testid={"topic-downloadables-links"}>
-                {labels.map((label, idx) => (
-                    <Col key={idx + label}>
-                        <Link href={links[idx]} className="text-decoration-none" locale={i18n.language}>
-                            <Card
-                                className="shadow-sm border-0 rounded"
-                                style={{ backgroundColor: "#E2E2E2", minHeight: "125px" }}
-                            >
-                                <Card.Body className="d-flex align-items-center justify-content-center">
-                                    <p className="text-center fw-bold fs-4 my-0">
-                                        <Trans>{label}</Trans>
-                                    </p>
-                                </Card.Body>
-                            </Card>
-                        </Link>
-                    </Col>
-                ))}
+            <Row md={3} sm={2} className="g-3" data-testid={"topic-downloadables-links"}>
+                <ResourceCard
+                    icon={<RiDonutChartFill />}
+                    label={infographicsLabel}
+                    link={infographicsUrl}
+                    disabled={infographicsUrl === ""}
+                />
+                <ResourceCard
+                    icon={<RiImageFill />}
+                    label={photographyLabel}
+                    link={photographyUrl}
+                    disabled={photographyUrl === ""}
+                />
+                <ResourceCard icon={<RiFile3Line />} label={pdfLabel} link={pdfUrl} disabled={pdfUrl === ""} />
+                <ResourceCard
+                    icon={<FaPrayingHands />}
+                    label={prayerPtsLabel}
+                    link={prayerPtsUrl}
+                    disabled={prayerPtsUrl === ""}
+                />
+                <ResourceCard
+                    icon={<RiMic2Fill />}
+                    label={prayerVidLabel}
+                    link={prayerVidUrl}
+                    disabled={prayerVidUrl === ""}
+                />
+                <ResourceCard
+                    icon={<RiSlideshowLine />}
+                    label={slidesLabel}
+                    link={slidesUrl}
+                    disabled={slidesUrl === ""}
+                />
             </Row>
             <Link
                 href={links[4]}
@@ -56,18 +118,18 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
                 locale={i18n.language}
             >
                 <Button
-                    className="align-self-center w-100 mt-4 text-white border-secondary bg-secondary"
+                    className="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder"
                     variant="primary"
                 >
-                    <Trans>{headers[1]}</Trans>
+                    <Trans t={t} i18nKey="downloads.downloadAllBtn" />
                 </Button>
             </Link>
             <Link
                 href={"/resources"}
-                className="align-self-center my-3 text-secondary d-md-none"
+                className="align-self-center my-3 text-secondary-5 fw-bolder fs-5"
                 locale={i18n.language}
             >
-                <Trans>{headers[0]}</Trans>
+                <Trans t={t} i18nKey="downloads.viewAllBtn" />
             </Link>
         </Container>
     )
