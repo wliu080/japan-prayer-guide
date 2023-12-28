@@ -12,4 +12,10 @@
         flex-shrink: 0;
         margin-right: 0.5rem;
     }
+
+    &.disabled {
+        background: $grey-4;
+        cursor: not-allowed;
+        color: $grey-1;
+    }
 }
