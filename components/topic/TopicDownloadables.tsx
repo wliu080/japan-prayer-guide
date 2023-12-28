@@ -28,15 +28,17 @@ const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) =>
                 aria-disabled={disabled}
                 tabIndex={disabled ? -1 : undefined}
             >
-                <Card
-                    className={"shadow-sm border-0 rounded" + (disabled ? " disabled" : "")}
-                    style={{ backgroundColor: "#E2E2E2", minHeight: "125px" }}
-                >
-                    <Card.Body className="d-flex align-items-center justify-content-center topic-downloadables">
+                <Card className="shadow-sm border-0 rounded" style={{ minHeight: "125px" }}>
+                    <Card.Body
+                        data-testid="topic-downloadables-cards"
+                        className={
+                            "d-flex align-items-center justify-content-center topic-downloadables" +
+                            (disabled ? " disabled" : "")
+                        }
+                    >
                         {icon}
                         <p className="text-center fw-bold fs-4 my-0">
                             <Trans>{label}</Trans>
-                            {disabled ? "[disabled]" : ""}
                         </p>
                     </Card.Body>
                 </Card>
