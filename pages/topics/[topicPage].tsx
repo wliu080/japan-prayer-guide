@@ -12,6 +12,7 @@ import Feedback from "../../components/topic/Feedback"
 import ImageGroup from "../../components/topic/ImageGroup"
 import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
+import NestedModal from "../../components/NestedModal/NestedModal"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -81,6 +82,8 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                 {/* Topic Nav Component */}
                 <TopicNav selected={selected} setSelected={setSelected} topicTrans={t} />
+
+                <NestedModal />
 
                 {/* Video/Reel Placeholder */}
                 <Container className="py-5" id="topic-about">

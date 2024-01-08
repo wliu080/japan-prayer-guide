@@ -9,9 +9,12 @@
         "lint": "next lint",
         "test": "jest",
         "updateSnapshot": "jest --updateSnapshot",
-        "format": "prettier --write '**/*.{ts,tsx}'"
+        "format": "prettier --write '**/*.{ts,tsx,jsx}'"
     },
     "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@mui/material": "^5.14.18",
         "@next/font": "13.1.2",
         "@types/react-slick": "^0.23.10",
         "@vercel/analytics": "^1.0.2",
