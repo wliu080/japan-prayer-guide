@@ -5,9 +5,9 @@ import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
 import Footer from "../components/footer"
-import FeaturedTopic from "../components/landing/FeaturedTopic"
 import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
+import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
     // schedule is from featured-topics.json
@@ -148,7 +148,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                             <Trans t={t} i18nKey="featuredTopicTitle" />
                         </h1>
                     </Container>
-                    <FeaturedTopic featuredTrans={featuredTranslation} />
+                    <PrayerPoints topicTrans={featuredTranslation} displayStyle={PrayerDisplayStyle.Featured} />
                 </Container>
 
                 {/* Purchase snippet */}
