@@ -23,12 +23,16 @@ const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) =>
     return (
         <Col key={label}>
             <Link
-                href={link}
+                href={disabled ? "#" : link}
                 className={"text-decoration-none"}
                 aria-disabled={disabled}
                 tabIndex={disabled ? -1 : undefined}
             >
-                <Card className="shadow-sm border-0 rounded" style={{ minHeight: "125px" }}>
+                <Card
+                    className="shadow-sm border-0 rounded"
+                    style={{ minHeight: "125px" }}
+                    onClick={(event) => (disabled ? event.preventDefault() : null)}
+                >
                     <Card.Body
                         data-testid="topic-downloadables-cards"
                         className={
