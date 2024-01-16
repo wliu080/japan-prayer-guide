@@ -1,51 +1,38 @@
 {
-  "title": "Church leadership",
-  "prayerSummary": [
-    "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
-    "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
-    "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
-  ],
-  "mainBody": {
-    "content1": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "title": "Church leadership",
+    "prayerSummary": [
+        "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
+        "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
+        "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
     ],
-    "content2": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "textBody": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     ],
-    "content3": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    ]
-  },
-  "quote": {
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-    "source": "-Bible verse or quote."
-  },
-  "downloads": {
-    "title": "Downloads",
-    "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-    "links": ["/", "/", "/", "/", "/"],
-    "headers": ["View all downloadables", "Download All"]
-  },
-  "related": {
-    "title": "Other related topics",
-    "labels": [
-      "Ancestor Veneration",
-      "Workplace Pressure",
-      "Other Topics",
-      "Other Topics 2",
-      "Other Topics 3",
-      "Other Topics 4"
-    ],
-    "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
-  },
-  "topicNav": {
-    "labels": ["About this Topic", "Prayer Points", "Downloadables"]
-  }
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "title": "Downloads",
+        "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
+        "links": ["/", "/", "/", "/", "/"],
+        "headers": ["View all downloadables", "Download All"]
+    },
+    "related": {
+        "title": "Other related topics",
+        "labels": [
+            "Ancestor Veneration",
+            "Workplace Pressure",
+            "Other Topics",
+            "Other Topics 2",
+            "Other Topics 3",
+            "Other Topics 4"
+        ],
+        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+    },
+    "topicNav": {
+        "labels": ["About this Topic", "Prayer Points", "Downloadables"]
+    }
 }
