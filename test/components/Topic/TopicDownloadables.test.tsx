@@ -6,7 +6,7 @@ jest.mock("next-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
     useTranslation: () => {
         return {
-            t: (str) => str,
+            t: (str: any) => str,
             i18n: {
                 changeLanguage: () => new Promise(() => {}),
             },
@@ -24,14 +24,12 @@ jest.mock("next-i18next", () => ({
     },
 }))
 
-const setUpTFunctionMock = (labels: string[], links: string[], headers: string[]) => {
-    const t: TFunction = jest.fn().mockImplementation((key, params) => {
-        if (key === "downloads.labels") {
-            return labels
-        } else if (key === "downloads.links") {
-            return links
-        } else if (key === "downloads.headers") {
-            return headers
+const setUpTFunctionMock = (urls: Record<string, string>) => {
+    const t: TFunction = jest.fn().mockImplementation((key: string) => {
+        if (key in urls) {
+            return urls[key]
+        } else {
+            return key
         }
     })
     return t
@@ -42,20 +40,22 @@ describe("Topic Downloadables", () => {
         // This test is to check against unintended changes.
         // If the change is intentional you can update the snapshot with `jest --updateSnapshot`
 
-        const testTextArray = ["ab", "cd", "ef"]
-        const testTextArray2 = ["/", "/", "/", "/", "/"]
-        const testHeaders = ["hi", "test"]
-        const t = setUpTFunctionMock(testTextArray, testTextArray2, testHeaders)
+        const t = setUpTFunctionMock({})
 
         const component = render(<TopicDownloadables topicTrans={t} />)
         expect(component).toMatchSnapshot()
     })
 
     test("Renders a section with the right text inside", () => {
-        const testTextArray = ["Hey how's it going", "I'm doing fine", "Thanks", "great"]
-        const testTextArray2 = ["/", "/", "/", "/", "/"]
-        const testHeaders = ["hello", "testing"]
-        const t = setUpTFunctionMock(testTextArray, testTextArray2, testHeaders)
+        const mockUrls = {
+            "downloads.infographicsUrl": "value",
+            "downloads.photographyUrl": "url2",
+            "downloads.pdfUrl": "url3",
+            "downloads.prayerPtsUrl": "",
+            "downloads.prayerVidUrl": "url5",
+            "downloads.slidesUrl": "url6",
+        }
+        const t = setUpTFunctionMock(mockUrls)
 
         render(<TopicDownloadables topicTrans={t} />)
         const topicDownloadablesCont = screen.getByTestId("topic-downloadables-container")
@@ -65,10 +65,33 @@ describe("Topic Downloadables", () => {
         expect(topicDownloadablesCont).toHaveClass("d-flex", "flex-column", "my-5")
 
         expect(topicDownloadablesTitle).toHaveTextContent("downloads.title")
-        expect(topicDownloadablesTitle).toHaveClass("text-primary", "my-4", "fs-1")
+        expect(topicDownloadablesTitle).toHaveClass("text-primary", "mt-4", "mb-3", "fs-1")
 
-        expect(topicDownloadablesLinks.length).toBe(4)
-        expect(topicDownloadablesLinks[0]).toHaveTextContent(testTextArray[0])
+        expect(topicDownloadablesLinks.length).toBe(6)
+        expect(topicDownloadablesLinks[0]).toHaveTextContent("downloads.infographicsLabel")
         expect(topicDownloadablesLinks[0]).toHaveClass("col")
+        expect(topicDownloadablesLinks[0].children[0].getAttribute("href")).toBe("value")
+    })
+
+    test("sets disabled if no url provided", () => {
+        const mockUrls = {
+            "downloads.infographicsUrl": "url1",
+            "downloads.photographyUrl": "",
+            "downloads.pdfUrl": "",
+            "downloads.prayerPtsUrl": "",
+            "downloads.prayerVidUrl": "",
+            "downloads.slidesUrl": "",
+        }
+        const t = setUpTFunctionMock(mockUrls)
+
+        const { getByText } = render(<TopicDownloadables topicTrans={t} />)
+
+        const topicDownloadablesLinks = screen.getByTestId("topic-downloadables-links").children
+        const enabledCard = getByText("downloads.infographicsLabel")
+        expect(enabledCard.parentNode).not.toHaveClass("disabled")
+        expect(topicDownloadablesLinks[0].children[0].getAttribute("href")).toBe("url1")
+
+        const disabledCard = getByText("downloads.photographyLabel")
+        expect(disabledCard.parentNode).toHaveClass("disabled")
     })
 })

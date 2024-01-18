@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+.topic-downloadables {
+    border-radius: 0.25rem;
+    background: $grey-1;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+        margin-right: 0.5rem;
+    }
+
+    &.disabled {
+        background: $grey-4;
+        cursor: not-allowed;
+        color: $grey-1;
+    }
+}
