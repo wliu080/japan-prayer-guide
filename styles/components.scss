@@ -353,3 +353,18 @@ button.collapse-label {
     color: $primary !important;
     border-color: white !important;
 }
+
+#prayer-response {
+    background-color: $grey-2;
+
+    h2 {
+        font-family: $font-family-secondary;
+        padding-top: 4rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+        font-family: $font-family-secondary;
+        line-height: normal;
+    }
+}

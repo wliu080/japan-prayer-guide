@@ -11,6 +11,7 @@ $secondary: #74b6ff;
 $secondary-5: #285abd;
 $grey-2: #ebf0f6;
 $grey-7: #505c7c;
+
 // custom theme map - if set here, will be available as bootstrap theme, e.g, text-primary-blue
 $custom-colors: (
     "primary": $primary,
@@ -27,6 +28,7 @@ $custom-colors: (
     "grey-4": #bcc3cf,
     "grey-6": #727c96,
     "grey-7": #505c7c,
+    "grey-9": #1e2951,
 );
 // Merge custom to theme & regenerate
 $theme-colors: map-merge($theme-colors, $custom-colors);

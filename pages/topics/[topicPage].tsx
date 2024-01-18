@@ -8,12 +8,12 @@ import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import Feedback from "../../components/topic/Feedback"
 import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
 import NestedModal from "../../components/NestedModal/NestedModal"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
+import PrayerResponse from "../../components/topic/PrayerResponse"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -118,12 +118,10 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     </Container>
                 </CollapseBlock>
 
-                {/* Prayer Points */}
-                <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicBottom} />
-                <br />
+                {/* Responding in Prayer */}
+                <PrayerResponse topicTrans={t} />
 
-                {/* Give us Feedback */}
-                <Feedback />
+                <br />
 
                 {/* Downloads and Related */}
                 <TopicDownloadables topicTrans={t} />

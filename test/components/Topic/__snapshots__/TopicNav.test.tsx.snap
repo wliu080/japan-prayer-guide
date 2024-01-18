@@ -28,7 +28,7 @@ exports[`Topic Nav Snapshot test 1`] = `
           </a>
           <a
             class="px-3 my-0 text-decoration-none fs-4"
-            href="#topic-prayer"
+            href="#topic-prayer-topicBottom"
           >
             Prayer
           </a>
@@ -66,7 +66,7 @@ exports[`Topic Nav Snapshot test 1`] = `
         </a>
         <a
           class="px-3 my-0 text-decoration-none fs-4"
-          href="#topic-prayer"
+          href="#topic-prayer-topicBottom"
         >
           Prayer
         </a>

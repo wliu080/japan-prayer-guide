@@ -55,7 +55,7 @@ export const TopicNav = ({ selected, setSelected, topicTrans }: navProps) => {
                     <Trans>{labels[0]}</Trans>
                 </a>
                 <a
-                    href="#topic-prayer"
+                    href="#topic-prayer-topicBottom"
                     className={
                         "px-3 my-0 text-decoration-none fs-4" +
                         (selected === "Prayer" ? " border-bottom border-secondary border-3 text-secondary" : "")
