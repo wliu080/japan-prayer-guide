@@ -14,14 +14,17 @@ const style = {
     bgcolor: "background.paper",
     border: "2px solid #000",
     boxShadow: 24,
-    // pt: 2,
-    // px: 4,
-    // pb: 3,
-    // p: 4,
     overflow: "auto",
 }
 
-export default function NestedModal() {
+interface NestedModalProps {
+    images: {
+        src: string
+        title: string
+    }[]
+}
+
+export const NestedModal = ({ images }: NestedModalProps) => {
     const [open, setOpen] = React.useState(false)
 
     const handleOpen = () => {
@@ -34,32 +37,11 @@ export default function NestedModal() {
     const [lightBox, setLightBox] = React.useState(false)
     const [index, setImage] = React.useState(0)
 
-    const images = [
-        { src: "/images/0.png", title: "scrambled it to make a type specimen book" },
-        { src: "/images/1.png", title: "now use Lorem Ipsum as their default model text" },
-        { src: "/images/2.png", title: "Various versions have evolved over the years" },
-        { src: "/images/3.png", title: "Lorem Ipsum available" },
-        { src: "/images/4.png", title: "you need to be sure there" },
-        { src: "/images/5.png", title: "making this the first true generator on the Internet" },
-        { src: "/images/3.png", title: "look even slightly believable" },
-        { src: "/images/2.png", title: "Various versions have evolved" },
-        { src: "/images/4.png", title: "Ipsum as their default model tex" },
-        { src: "/images/0.png", title: "scrambled it to make a type" },
-        { src: "/images/5.png", title: "making this the first true" },
-        { src: "/images/1.png", title: "Various versions have evolved" },
-        { src: "/images/3.png", title: "making this the first true" },
-        { src: "/images/0.png", title: "scrambled it to make a type" },
-        { src: "/images/1.png", title: "Various versions have evolved" },
-        { src: "/images/2.png", title: "Ipsum as their default model tex" },
-        { src: "/images/4.png", title: "making this the first true" },
-        { src: "/images/5.png", title: "scrambled it to make a type" },
-    ]
-
     return (
         <div>
             <div className="container" style={{ marginTop: "50px" }}>
                 <Row className="galleryContainer" xl={4} sm={2} md={2}>
-                    {images.splice(0, 4).map((item, index) => {
+                    {[...images].splice(0, 4).map((item, index) => {
                         if (index !== 3) {
                             return (
                                 <div className="galleryImage" key={index} onClick={handleOpen}>
