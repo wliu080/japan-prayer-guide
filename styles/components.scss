@@ -130,7 +130,7 @@
     transition: all 0.3s ease;
     margin: 10px 10px;
     &:hover {
-        opacity: 0.2
+        opacity: 0.2;
     }
 }
 
@@ -149,7 +149,7 @@
     transition: all 0.3s ease;
     margin: 10px 10px;
     &:hover {
-        opacity: 0.9
+        opacity: 0.9;
     }
     .galleryMoreNumber {
         color: white;
@@ -181,13 +181,13 @@
     width: 100%;
     box-sizing: content-box;
 
-    svg{
+    svg {
         color: #ffffff;
     }
 
     .lightbox-container {
         width: 95%;
-        margin: 0 auto; 
+        margin: 0 auto;
         padding-top: 20px;
         height: 100%;
     }
@@ -199,27 +199,27 @@
         color: #ffffff;
     }
 
-    .headRight{
+    .headRight {
         display: flex;
         gap: 12px;
         cursor: pointer;
         margin-top: 6px;
     }
 
-    .headRight span{
+    .headRight span {
         cursor: pointer;
     }
 
-    .headLeft{
+    .headLeft {
         display: flex;
         gap: 6px;
     }
 
-    .headLeft span{
+    .headLeft span {
         cursor: pointer;
     }
 
-    .headLeft svg{
+    .headLeft svg {
         cursor: pointer;
     }
 
@@ -246,7 +246,7 @@
         height: auto;
         aspect-ratio: 1.5;
     }
-    
+
     .lightbox-box h1 {
         text-align: center;
         font-size: 16px;
@@ -258,7 +258,7 @@
         position: absolute;
         bottom: 70px;
     }
-    
+
     .lightbox-auto {
         display: flex;
         flex-direction: column;
@@ -266,7 +266,7 @@
         position: absolute;
         height: calc(100% - 100px);
     }
-    
+
     .lightbox-arrow {
         padding: 14px;
         border: 1px solid #efefef;
@@ -274,15 +274,15 @@
         cursor: pointer;
         transition: all 0.2s ease;
     }
-    
+
     .lightbox-arrow:hover {
         background: #d1d1d17c;
     }
-    
+
     .lightbox-leftArrow {
         left: 0;
     }
-    
+
     .lightbox-rightArrow {
         right: 0;
     }

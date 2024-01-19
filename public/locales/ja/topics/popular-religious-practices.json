@@ -1,51 +1,41 @@
 {
-  "title": "Popular Religious Practices",
-  "prayerSummary": [
-    "Pray for wisdom and compassion for pastors as they answer seekers' questions.",
-    "Pray for freedom and peace in Christ for those who feel bound by fear or obligation to their ancestors.",
-    "Pray for Christians to find appropriate ways to remember those who have died and to care for their graves."
-  ],
-  "mainBody": {
-    "content1": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "title": "Popular Religious Practices",
+    "prayerSummary": [
+        "Pray for wisdom to share the gospel within this Japanese context.",
+        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
+        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
     ],
-    "content2": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "textBody": [
+        "“Can I ask what you believe in?” Carlos* asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
+        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
+        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
+        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
+        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them.",
+        "*All names used in this booklet are pseudonyms."
     ],
-    "content3": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    ]
-  },
-  "quote": {
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-    "source": "-Bible verse or quote."
-  },
-  "downloads": {
-    "title": "Downloads",
-    "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-    "links": ["/", "/", "/", "/", "/"],
-    "headers": ["View all downloadables", "Download All"]
-  },
-  "related": {
-    "title": "Other related topics",
-    "labels": [
-      "Ancestor Veneration",
-      "Workplace Pressure",
-      "Other Topics",
-      "Other Topics 2",
-      "Other Topics 3",
-      "Other Topics 4"
-    ],
-    "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
-  },
-  "topicNav": {
-    "labels": ["About this Topic", "Prayer Points", "Downloadables"]
-  }
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "title": "Downloads",
+        "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
+        "links": ["/", "/", "/", "/", "/"],
+        "headers": ["View all downloadables", "Download All"]
+    },
+    "related": {
+        "title": "Other related topics",
+        "labels": [
+            "Ancestor Veneration",
+            "Workplace Pressure",
+            "Other Topics",
+            "Other Topics 2",
+            "Other Topics 3",
+            "Other Topics 4"
+        ],
+        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+    },
+    "topicNav": {
+        "labels": ["About this Topic", "Prayer Points", "Downloadables"]
+    }
 }
