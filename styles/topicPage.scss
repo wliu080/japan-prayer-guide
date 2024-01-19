@@ -1,6 +1,32 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
+// -------------------------
+// Text content Section
+// -------------------------
+.main-content {
+    font-size: 1.125rem;
+}
+
+// -------------------------
+// Collapse/Accordion Section
+// -------------------------
+
+button.collapse-label {
+    font-family: $font-family-secondary;
+    background-color: transparent !important;
+    color: $primary !important;
+    border-color: white !important;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+// -------------------------
+// Downloadables Section
+// -------------------------
+
 .topic-downloadables {
     border-radius: 0.25rem;
     background: $grey-1;

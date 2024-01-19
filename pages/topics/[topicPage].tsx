@@ -92,7 +92,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
 
                 {/* Placeholder text */}
-                <Container className="py-5">
+                <Container className="main-content">
                     {textContent.map((text: string, idx: number) => (
                         <p key={idx + text}>{text}</p>
                     ))}
