@@ -289,6 +289,22 @@
 }
 
 // -------------------------
+// Photo Mosaic
+// -------------------------
+
+.mosaicImage {
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+    }
+}
+
+// -------------------------
 // Prayer Points
 // -------------------------
 
