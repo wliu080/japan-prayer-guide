@@ -22,9 +22,6 @@ export async function getStaticProps({ locale }: any) {
 export default function Overview() {
     const { t } = useTranslation("topic-overview")
 
-    // States
-    const [selected, setSelected] = React.useState<string>("culture")
-
     const cultureTopics: string[] = t("cultureTopics", { returnObjects: true })
     const churchTopics: string[] = t("churchTopics", { returnObjects: true })
 

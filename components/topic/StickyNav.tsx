@@ -27,7 +27,7 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
         const currentScrolledSection = tabs
             .map((tab) => {
                 const section = document.getElementById(tab.refId)
-                let tabWithPosition = {
+                const tabWithPosition = {
                     tab: tab,
                     sectionTop: -1,
                 }
