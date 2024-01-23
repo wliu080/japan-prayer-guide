@@ -7,8 +7,8 @@
         "",
         "準備中。\n2024年にウェブサイト完全公開予定。"
     ],
-    "topHeading": "文化と社会",
-    "botHeading": "教会と宣教",
+    "cultureHeading": "文化と社会",
+    "churchHeading": "教会と宣教",
     "cultureTopics": [
         { "label": "日本人の宗教的習慣", "link": "popular-religious-practices", "disabled": false },
         { "label": "日本人のキリスト教観", "link": "japanese-views-of-chrisianity", "disabled": true },
