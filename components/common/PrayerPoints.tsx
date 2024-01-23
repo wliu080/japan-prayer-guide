@@ -51,7 +51,7 @@ export default function PrayerPoints({ topicTrans, displayStyle }: prayerProps) 
         <Container
             data-testid={"prayer-points-container"}
             className={"d-flex px-6" + (alignLeft ? " justify-content-start" : " justify-content-center")}
-            id="topic-prayer"
+            id={displayStyle == PrayerDisplayStyle.TopicBottom ? "prayer" : "topic-prayer"}
         >
             <Card className="my-4 shadow d-md-flex flex-md-row">
                 {showImg && <Card.Img variant="top" src={featuredImg} className="prayer-img" />}

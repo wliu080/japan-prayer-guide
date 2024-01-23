@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic Nav Snapshot test 1`] = `
+exports[`Sticky Nav Snapshot test 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="w-100 d-flex justify-content-center flex-column sticky-top p-0 container"
-        data-testid="topic-nav-container"
+        class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav container"
+        data-testid="sticky-nav-container"
         style="max-width: none;"
       >
         <div
@@ -16,27 +16,26 @@ exports[`Topic Nav Snapshot test 1`] = `
           style="height: 0px;"
         />
         <div
-          class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around bg-white"
+          class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
           data-testid="topic-nav-links"
         >
           <a
-            class="px-3 my-0 text-decoration-none fs-4 border-bottom border-secondary border-3 text-secondary"
-            data-testid="topic-nav-link"
-            href="#topic-about"
+            class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary border-3 text-secondary-5 fw-bold"
+            data-testid="topic-nav-link0"
           >
-            About
+            abc
           </a>
           <a
-            class="px-3 my-0 text-decoration-none fs-4"
-            href="#topic-prayer"
+            class="px-3 my-0 text-decoration-none fw-normal"
+            data-testid="topic-nav-link1"
           >
-            Prayer
+            def
           </a>
           <a
-            class="px-3 my-0 text-decoration-none fs-4"
-            href="#topic-downloads"
+            class="px-3 my-0 text-decoration-none fw-normal"
+            data-testid="topic-nav-link2"
           >
-            Download
+            ghi
           </a>
         </div>
       </div>
@@ -44,8 +43,8 @@ exports[`Topic Nav Snapshot test 1`] = `
   </body>,
   "container": <div>
     <div
-      class="w-100 d-flex justify-content-center flex-column sticky-top p-0 container"
-      data-testid="topic-nav-container"
+      class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav container"
+      data-testid="sticky-nav-container"
       style="max-width: none;"
     >
       <div
@@ -54,27 +53,26 @@ exports[`Topic Nav Snapshot test 1`] = `
         style="height: 0px;"
       />
       <div
-        class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-around bg-white"
+        class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
         data-testid="topic-nav-links"
       >
         <a
-          class="px-3 my-0 text-decoration-none fs-4 border-bottom border-secondary border-3 text-secondary"
-          data-testid="topic-nav-link"
-          href="#topic-about"
+          class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary border-3 text-secondary-5 fw-bold"
+          data-testid="topic-nav-link0"
         >
-          About
+          abc
         </a>
         <a
-          class="px-3 my-0 text-decoration-none fs-4"
-          href="#topic-prayer"
+          class="px-3 my-0 text-decoration-none fw-normal"
+          data-testid="topic-nav-link1"
         >
-          Prayer
+          def
         </a>
         <a
-          class="px-3 my-0 text-decoration-none fs-4"
-          href="#topic-downloads"
+          class="px-3 my-0 text-decoration-none fw-normal"
+          data-testid="topic-nav-link2"
         >
-          Download
+          ghi
         </a>
       </div>
     </div>

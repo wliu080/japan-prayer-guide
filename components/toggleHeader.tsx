@@ -33,7 +33,11 @@ const NavLinkWithLocale = ({
 
 const mediaQuery = "(min-width: 1280px)"
 
-const ToggleHeader: React.FC = () => {
+interface HeaderProp {
+    hideShadow?: boolean
+}
+
+const ToggleHeader: React.FC<HeaderProp> = ({ hideShadow = false }: HeaderProp) => {
     const { t } = useTranslation("common") // specify translation file from public/locales/[lng]
     const { i18n } = useTranslation()
     const router = useRouter()
@@ -82,7 +86,7 @@ const ToggleHeader: React.FC = () => {
     }, []) // Only do this once, aka hook-ish way of saying didMount
 
     return (
-        <Navbar className="shadow-sm" sticky="top" bg={bg} expand="xl" variant={variant}>
+        <Navbar className={hideShadow ? "" : "shadow-sm"} fixed="top" bg={bg} expand="xl" variant={variant}>
             <Container>
                 <Navbar.Brand href={"/" + i18n.language}>
                     <Image

@@ -2,12 +2,12 @@ import Head from "next/head"
 import { ToggleHeader } from "../../../components/toggleHeader"
 import { Trans, useTranslation } from "next-i18next"
 import { Container } from "react-bootstrap"
-import { TopicOverviewNav } from "../../../components/topic-overview/TopicOverviewNav"
 import React from "react"
 import Footer from "../../../components/footer"
 import { TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Image from "react-bootstrap/Image"
+import { StickyNav } from "../../../components/topic/StickyNav"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -31,8 +31,12 @@ export default function Overview() {
     const cultureLinks: string[] = t("cultureLinks", { returnObjects: true })
     const churchLinks: string[] = t("churchLinks", { returnObjects: true })
 
-    const topHeading = t("topHeading")
-    const botHeading = t("botHeading")
+    const cultureHeading = t("cultureHeading")
+    const churchHeading = t("churchHeading")
+    const navTabs = [
+        { refId: "culture", label: cultureHeading },
+        { refId: "church", label: churchHeading },
+    ]
 
     const heroSubtext: string[] = t("pageSubtitle", { returnObjects: true })
 
@@ -46,7 +50,7 @@ export default function Overview() {
             </Head>
             <main>
                 {/* Header component */}
-                <ToggleHeader />
+                <ToggleHeader hideShadow={true} />
 
                 {/* Hero Banner */}
                 <div
@@ -75,18 +79,23 @@ export default function Overview() {
                 </div>
 
                 {/* Overview Nav Component */}
-                <TopicOverviewNav selected={selected} setSelected={setSelected} />
+                <StickyNav tabs={navTabs} />
 
                 {/* Culture and Society Section */}
                 <TopicOverviewSection
-                    title={topHeading}
+                    title={cultureHeading}
                     section={"culture"}
                     labels={cultureTopics}
                     links={cultureLinks}
                 />
 
                 {/* Church and Missions Section */}
-                <TopicOverviewSection title={botHeading} section={"church"} labels={churchTopics} links={churchLinks} />
+                <TopicOverviewSection
+                    title={churchHeading}
+                    section={"church"}
+                    labels={churchTopics}
+                    links={churchLinks}
+                />
 
                 <Footer />
             </main>
