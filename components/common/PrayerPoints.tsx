@@ -53,7 +53,12 @@ export default function PrayerPoints({ topicTrans, displayStyle }: prayerProps) 
             className={"d-flex px-6" + (alignLeft ? " justify-content-start" : " justify-content-center")}
             id={"topic-prayer-" + style}
         >
-            <Card className="my-4 shadow d-md-flex flex-md-row">
+            <Card
+                className={
+                    "shadow d-md-flex flex-md-row" +
+                    (displayStyle === PrayerDisplayStyle.TopicBottom ? " mb-4" : "my-4")
+                }
+            >
                 {showImg && <Card.Img variant="top" src={featuredImg} className="prayer-img" />}
                 <Card.Body data-testid="prayer-points-body" className={"p-4 " + style}>
                     {showTitle && (
