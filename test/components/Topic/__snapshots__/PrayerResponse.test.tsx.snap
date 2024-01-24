@@ -27,60 +27,66 @@ exports[`Responding in Prayer Snapshot test 1`] = `
             response.recordingLabel
           </h3>
           <div
-            class="px-0 container-fluid"
-            data-testid="feedback"
+            class="row"
           >
-            <h3
-              class="fw-bold text-grey-9"
-            >
-              response.feedbackLabel
-            </h3>
-            <p
-              class="text-primary-dark"
-            >
-              response.feedbackBlurb
-            </p>
-            <form
-              action="https://formbold.com/s/3Zgzd"
-              class=""
-              method="POST"
+            <div
+              class="col-lg-6 col-md-12"
+            />
+            <div
+              class="col-lg-6 col-md-12"
             >
               <div
-                class="mb-2"
+                class="px-0 container-fluid"
+                data-testid="feedback"
               >
-                <div
-                  class="text-muted form-floating"
+                <h3
+                  class="fw-bold text-grey-9 mt-0"
                 >
-                  <textarea
-                    class="form-control"
-                    id="floatingTextArea"
-                    name="message"
-                    placeholder="response.feedbackTextPlaceholder"
-                    style="height: 100px;"
-                  />
-                  <label
-                    for="floatingTextArea"
+                  response.feedbackLabel
+                </h3>
+                <form
+                  action="https://formbold.com/s/3Zgzd"
+                  class=""
+                  method="POST"
+                >
+                  <div
+                    class="mb-2"
                   >
-                    response.feedbackTextPlaceholder
-                  </label>
-                </div>
+                    <div
+                      class="text-muted form-floating"
+                    >
+                      <textarea
+                        class="form-control"
+                        id="floatingTextArea"
+                        name="message"
+                        placeholder="response.feedbackTextPlaceholder"
+                        style="height: 100px;"
+                      />
+                      <label
+                        for="floatingTextArea"
+                      >
+                        response.feedbackTextPlaceholder
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-3"
+                  >
+                    <input
+                      class="form-control"
+                      placeholder="response.feedbackEmailPlaceholder"
+                      type="email"
+                    />
+                  </div>
+                  <button
+                    class="fw-bold px-4 py-2 btn btn-outline-primary"
+                    type="submit"
+                  >
+                    response.feedbackSubmit
+                  </button>
+                </form>
               </div>
-              <div
-                class="mb-3"
-              >
-                <input
-                  class="form-control"
-                  placeholder="response.feedbackEmailPlaceholder"
-                  type="email"
-                />
-              </div>
-              <button
-                class="fw-bold px-4 py-2 btn btn-outline-primary"
-                type="submit"
-              >
-                response.feedbackSubmit
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -109,60 +115,66 @@ exports[`Responding in Prayer Snapshot test 1`] = `
           response.recordingLabel
         </h3>
         <div
-          class="px-0 container-fluid"
-          data-testid="feedback"
+          class="row"
         >
-          <h3
-            class="fw-bold text-grey-9"
-          >
-            response.feedbackLabel
-          </h3>
-          <p
-            class="text-primary-dark"
-          >
-            response.feedbackBlurb
-          </p>
-          <form
-            action="https://formbold.com/s/3Zgzd"
-            class=""
-            method="POST"
+          <div
+            class="col-lg-6 col-md-12"
+          />
+          <div
+            class="col-lg-6 col-md-12"
           >
             <div
-              class="mb-2"
+              class="px-0 container-fluid"
+              data-testid="feedback"
             >
-              <div
-                class="text-muted form-floating"
+              <h3
+                class="fw-bold text-grey-9 mt-0"
               >
-                <textarea
-                  class="form-control"
-                  id="floatingTextArea"
-                  name="message"
-                  placeholder="response.feedbackTextPlaceholder"
-                  style="height: 100px;"
-                />
-                <label
-                  for="floatingTextArea"
+                response.feedbackLabel
+              </h3>
+              <form
+                action="https://formbold.com/s/3Zgzd"
+                class=""
+                method="POST"
+              >
+                <div
+                  class="mb-2"
                 >
-                  response.feedbackTextPlaceholder
-                </label>
-              </div>
+                  <div
+                    class="text-muted form-floating"
+                  >
+                    <textarea
+                      class="form-control"
+                      id="floatingTextArea"
+                      name="message"
+                      placeholder="response.feedbackTextPlaceholder"
+                      style="height: 100px;"
+                    />
+                    <label
+                      for="floatingTextArea"
+                    >
+                      response.feedbackTextPlaceholder
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="mb-3"
+                >
+                  <input
+                    class="form-control"
+                    placeholder="response.feedbackEmailPlaceholder"
+                    type="email"
+                  />
+                </div>
+                <button
+                  class="fw-bold px-4 py-2 btn btn-outline-primary"
+                  type="submit"
+                >
+                  response.feedbackSubmit
+                </button>
+              </form>
             </div>
-            <div
-              class="mb-3"
-            >
-              <input
-                class="form-control"
-                placeholder="response.feedbackEmailPlaceholder"
-                type="email"
-              />
-            </div>
-            <button
-              class="fw-bold px-4 py-2 btn btn-outline-primary"
-              type="submit"
-            >
-              response.feedbackSubmit
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>

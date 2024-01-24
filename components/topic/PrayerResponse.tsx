@@ -1,6 +1,6 @@
 import { TFunction, Trans, useTranslation } from "next-i18next"
 import React from "react"
-import { Container, FloatingLabel, Form } from "react-bootstrap"
+import { Col, Container, FloatingLabel, Form, Row } from "react-bootstrap"
 import Button from "react-bootstrap/Button"
 import PrayerPoints, { PrayerDisplayStyle } from "../common/PrayerPoints"
 
@@ -36,33 +36,40 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                                 title="trees"
                             ></iframe>
                         </div> */}
-                <PrayerPoints topicTrans={topicTrans} displayStyle={PrayerDisplayStyle.TopicBottom} />
-                <Container data-testid="feedback" fluid className="px-0">
-                    <h3 className="fw-bold text-grey-9">
-                        <Trans t={common} i18nKey="response.feedbackLabel" />
-                    </h3>
-                    <p className="text-primary-dark">
-                        <Trans t={common} i18nKey="response.feedbackBlurb" />
-                    </p>
-                    <Form action="https://formbold.com/s/3Zgzd" method="POST">
-                        <Form.Group className="mb-2">
-                            <FloatingLabel controlId="floatingTextArea" label={textPlaceholder} className="text-muted">
-                                <Form.Control
-                                    as="textarea"
-                                    name="message"
-                                    placeholder={textPlaceholder}
-                                    style={{ height: "100px" }}
-                                />
-                            </FloatingLabel>
-                        </Form.Group>
-                        <Form.Group className="mb-3">
-                            <Form.Control type="email" placeholder={emailPlaceholder} />
-                        </Form.Group>
-                        <Button variant="outline-primary" className="fw-bold px-4 py-2" type="submit">
-                            <Trans t={common} i18nKey="response.feedbackSubmit" />
-                        </Button>
-                    </Form>
-                </Container>
+                <Row>
+                    <Col lg={6} md={12}>
+                        <PrayerPoints topicTrans={topicTrans} displayStyle={PrayerDisplayStyle.TopicBottom} />
+                    </Col>
+                    <Col lg={6} md={12}>
+                        <Container data-testid="feedback" fluid className="px-0">
+                            <h3 className="fw-bold text-grey-9 mt-0">
+                                <Trans t={common} i18nKey="response.feedbackLabel" />
+                            </h3>
+                            <Form action="https://formbold.com/s/3Zgzd" method="POST">
+                                <Form.Group className="mb-2">
+                                    <FloatingLabel
+                                        controlId="floatingTextArea"
+                                        label={textPlaceholder}
+                                        className="text-muted"
+                                    >
+                                        <Form.Control
+                                            as="textarea"
+                                            name="message"
+                                            placeholder={textPlaceholder}
+                                            style={{ height: "100px" }}
+                                        />
+                                    </FloatingLabel>
+                                </Form.Group>
+                                <Form.Group className="mb-3">
+                                    <Form.Control type="email" placeholder={emailPlaceholder} />
+                                </Form.Group>
+                                <Button variant="outline-primary" className="fw-bold px-4 py-2" type="submit">
+                                    <Trans t={common} i18nKey="response.feedbackSubmit" />
+                                </Button>
+                            </Form>
+                        </Container>
+                    </Col>
+                </Row>
             </Container>
         </Container>
     )
