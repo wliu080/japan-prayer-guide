@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap"
 import { TopicOverviewNav } from "../../../components/topic-overview/TopicOverviewNav"
 import React from "react"
 import Footer from "../../../components/footer"
-import { TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection"
+import { Topic, TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Image from "react-bootstrap/Image"
 
@@ -25,11 +25,10 @@ export default function Overview() {
     // States
     const [selected, setSelected] = React.useState<string>("culture")
 
-    const cultureTopics: string[] = t("cultureTopics", { returnObjects: true })
-    const churchTopics: string[] = t("churchTopics", { returnObjects: true })
-
-    const cultureLinks: string[] = t("cultureLinks", { returnObjects: true })
-    const churchLinks: string[] = t("churchLinks", { returnObjects: true })
+    let cultureTopics: Topic[] = t("cultureTopics", { returnObjects: true })
+    let churchTopics: Topic[] = t("churchTopics", { returnObjects: true })
+    cultureTopics = Array.isArray(cultureTopics) ? cultureTopics : []
+    churchTopics = Array.isArray(churchTopics) ? churchTopics : []
 
     const topHeading = t("topHeading")
     const botHeading = t("botHeading")
@@ -78,15 +77,10 @@ export default function Overview() {
                 <TopicOverviewNav selected={selected} setSelected={setSelected} />
 
                 {/* Culture and Society Section */}
-                <TopicOverviewSection
-                    title={topHeading}
-                    section={"culture"}
-                    labels={cultureTopics}
-                    links={cultureLinks}
-                />
+                <TopicOverviewSection title={topHeading} section={"culture"} topics={cultureTopics} />
 
                 {/* Church and Missions Section */}
-                <TopicOverviewSection title={botHeading} section={"church"} labels={churchTopics} links={churchLinks} />
+                <TopicOverviewSection title={botHeading} section={"church"} topics={churchTopics} />
 
                 <Footer />
             </main>
