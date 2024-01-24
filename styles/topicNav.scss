@@ -76,6 +76,24 @@
 .topic-nav-card {
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
     height: 90%;
+
+    &.disabled {
+        cursor: not-allowed;
+
+        div.disabled-layer {
+            z-index: 2;
+            top: 0;
+            background-color: $grey-6;
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+
+    img.placeholder-nav-img {
+        aspect-ratio: 1.772 !important;
+        object-fit: cover !important;
+        width: 100% !important;
+        border-radius: 4px 4px 0px 4px !important;
+    }
 }
 
 .topic-nav-card-title {
