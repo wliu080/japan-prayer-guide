@@ -181,7 +181,7 @@ const Booklet: React.FC = () => {
                     <BootstrapImage className="w-100 px-10" src={`/photos/booklet/BOOK_GIF-${i18n.language}.gif`} />
                 </Container>
                 <OrderBook />
-                <section className="redirect-section d-flex align-items-center" style={{ height: "25rem;" }}>
+                <section className="redirect-section d-flex align-items-center" style={{ height: "25rem" }}>
                     <Container className="text-center">
                         <h1>
                             <Trans t={t} i18nKey="prayerRedirectHeading" />
