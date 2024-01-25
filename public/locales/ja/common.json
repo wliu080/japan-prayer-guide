@@ -32,11 +32,11 @@
     },
     "response": {
         "title": "Responding in prayer",
-        "blurb": "We invite you to respond to this topic in a few ways. Listen to and pray along with a local believer's prayer for this topic, and then lift up your own prayer of faith to God. Download the prayer points and share them with others. Share your reflections from your time of prayer with us.",
+        "blurb": "We invite you to listen to a local believer pray for this topic and to respond with your own prayer to God. We also invite you to share the prayer points with others, or to send us your reflections using the form below.",
         "recordingLabel": "Prayer recording",
         "feedbackLabel": "Share your reflections with us",
         "feedbackTextPlaceholder": "Write your reflections or prayer insights here.",
-        "feedbackEmailPlaceholder": "Your email",
+        "feedbackEmailPlaceholder": "Email address",
         "feedbackSubmit": "Submit"
     },
     "downloads": {
@@ -44,12 +44,16 @@
         "description": "All of the resources for this topic are available to download or stream. Choose which ones you want to download, or download them all for this topic.",
         "infographicsLabel": "Infographics",
         "photographyLabel": "Photography",
-        "pdfLabel": "PDF files",
+        "pdfLabel": "PDF file",
         "prayerPtsLabel": "Prayer points",
-        "prayerVidLabel": "Prayer recordings",
+        "prayerVidLabel": "Prayer recording",
         "slidesLabel": "Presentation slides",
         "downloadAllBtn": "Download all",
         "viewAllBtn": "View all website resources"
+    },
+    "relatedTopics": {
+        "heading": "Related topics",
+        "viewAll": "View all topics"
     },
     "footer": {
         "title": "サイトマップ",

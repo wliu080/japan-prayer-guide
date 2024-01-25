@@ -16,7 +16,7 @@ function SampleArrow(props: any) {
 }
 
 export default function RelatedContent({ topicTrans }: relatedProps) {
-    const { i18n } = useTranslation("common")
+    const { t: common, i18n } = useTranslation("common")
     const responsive = [
         {
             breakpoint: 1300,
@@ -48,10 +48,10 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
         <Container data-testid={"related-content-container"} className="d-flex flex-column my-5">
             <Container className="d-flex flex-row justify-content-between align-items-center">
                 <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1">
-                    <Trans t={topicTrans} i18nKey="related.title" />
+                    <Trans t={common} i18nKey="relatedTopics.heading" />
                 </h1>
                 <Link href={"/topics"} className="text-secondary d-none d-md-block" locale={i18n.language}>
-                    View all topics
+                    <Trans t={common} i18nKey="relatedTopics.viewAll" />
                 </Link>
             </Container>
             <Slider
@@ -86,7 +86,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                 ))}
             </Slider>
             <Link href={"/topics"} className="align-self-center my-3 text-secondary d-md-none" locale={i18n.language}>
-                View all topics
+                <Trans t={common} i18nKey="relatedTopics.viewAll" />
             </Link>
         </Container>
     )
