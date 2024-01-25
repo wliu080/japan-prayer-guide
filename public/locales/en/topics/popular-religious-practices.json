@@ -6,22 +6,24 @@
         "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos* asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
+        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
         "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
         "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
         "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
         "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them.",
-        "*All names used in this booklet are pseudonyms."
+        "<sup>*</sup>All names used in this booklet are pseudonyms."
     ],
     "quote": {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
         "source": "-Bible verse or quote."
     },
     "downloads": {
-        "title": "Downloads",
-        "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-        "links": ["/", "/", "/", "/", "/"],
-        "headers": ["View all downloadables", "Download All"]
+        "infographicsUrl": "www.google.com",
+        "photographyUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com",
+        "slidesUrl": "www.google.com"
     },
     "related": {
         "title": "Other related topics",
@@ -36,24 +38,24 @@
         "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
     },
     "photos": [
-      { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
-      { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
-      { "src": "/images/2.png", "title": "Various versions have evolved over the years" },
-      { "src": "/images/3.png", "title": "Lorem Ipsum available" },
-      { "src": "/images/4.png", "title": "you need to be sure there" },
-      { "src": "/images/5.png", "title": "making this the first true generator on the Internet" },
-      { "src": "/images/3.png", "title": "look even slightly believable" },
-      { "src": "/images/2.png", "title": "Various versions have evolved" },
-      { "src": "/images/4.png", "title": "Ipsum as their default model tex" },
-      { "src": "/images/0.png", "title": "scrambled it to make a type" },
-      { "src": "/images/5.png", "title": "making this the first true" },
-      { "src": "/images/1.png", "title": "Various versions have evolved" },
-      { "src": "/images/3.png", "title": "making this the first true" },
-      { "src": "/images/0.png", "title": "scrambled it to make a type" },
-      { "src": "/images/1.png", "title": "Various versions have evolved" },
-      { "src": "/images/2.png", "title": "Ipsum as their default model tex" },
-      { "src": "/images/4.png", "title": "making this the first true" },
-      { "src": "/images/5.png", "title": "scrambled it to make a type" }
+        { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
+        { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
+        { "src": "/images/2.png", "title": "Various versions have evolved over the years" },
+        { "src": "/images/3.png", "title": "Lorem Ipsum available" },
+        { "src": "/images/4.png", "title": "you need to be sure there" },
+        { "src": "/images/5.png", "title": "making this the first true generator on the Internet" },
+        { "src": "/images/3.png", "title": "look even slightly believable" },
+        { "src": "/images/2.png", "title": "Various versions have evolved" },
+        { "src": "/images/4.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/5.png", "title": "making this the first true" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/3.png", "title": "making this the first true" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/2.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/4.png", "title": "making this the first true" },
+        { "src": "/images/5.png", "title": "scrambled it to make a type" }
     ],
     "galleryType": "mosaic",
     "blockOrder": [6, 7, 6, 6]
