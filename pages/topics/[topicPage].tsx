@@ -11,9 +11,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import React from "react"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
-import { PhotosWrapper } from "../../components/PhotosWrapper/PhotosWrapper"
 import PrayerResponse from "../../components/topic/PrayerResponse"
 import { StickyNav, Tab } from "../../components/topic/StickyNav"
+import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
