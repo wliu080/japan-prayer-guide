@@ -121,6 +121,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                         </div>
                     </Container>
                 </CollapseBlock>
+                <Container className="bottom-spacing">
+                    <hr />
+                </Container>
 
                 {/* Responding in Prayer */}
                 <PrayerResponse topicTrans={t} />
