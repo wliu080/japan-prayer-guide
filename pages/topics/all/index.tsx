@@ -4,7 +4,7 @@ import { Trans, useTranslation } from "next-i18next"
 import { Container } from "react-bootstrap"
 import React from "react"
 import Footer from "../../../components/footer"
-import { TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection"
+import { Topic, TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Image from "react-bootstrap/Image"
 import { StickyNav } from "../../../components/topic/StickyNav"
@@ -22,11 +22,10 @@ export async function getStaticProps({ locale }: any) {
 export default function Overview() {
     const { t } = useTranslation("topic-overview")
 
-    const cultureTopics: string[] = t("cultureTopics", { returnObjects: true })
-    const churchTopics: string[] = t("churchTopics", { returnObjects: true })
-
-    const cultureLinks: string[] = t("cultureLinks", { returnObjects: true })
-    const churchLinks: string[] = t("churchLinks", { returnObjects: true })
+    let cultureTopics: Topic[] = t("cultureTopics", { returnObjects: true })
+    let churchTopics: Topic[] = t("churchTopics", { returnObjects: true })
+    cultureTopics = Array.isArray(cultureTopics) ? cultureTopics : []
+    churchTopics = Array.isArray(churchTopics) ? churchTopics : []
 
     const cultureHeading = t("cultureHeading")
     const churchHeading = t("churchHeading")
@@ -79,20 +78,10 @@ export default function Overview() {
                 <StickyNav tabs={navTabs} />
 
                 {/* Culture and Society Section */}
-                <TopicOverviewSection
-                    title={cultureHeading}
-                    section={"culture"}
-                    labels={cultureTopics}
-                    links={cultureLinks}
-                />
+                <TopicOverviewSection title={cultureHeading} section={"culture"} topics={cultureTopics} />
 
                 {/* Church and Missions Section */}
-                <TopicOverviewSection
-                    title={churchHeading}
-                    section={"church"}
-                    labels={churchTopics}
-                    links={churchLinks}
-                />
+                <TopicOverviewSection title={churchHeading} section={"church"} topics={churchTopics} />
 
                 <Footer />
             </main>
