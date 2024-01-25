@@ -10,9 +10,9 @@ import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Feedback from "../../components/topic/Feedback"
 import React from "react"
-import NestedModal from "../../components/NestedModal/NestedModal"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
+import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
 import { StickyNav, Tab } from "../../components/topic/StickyNav"
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -60,6 +60,10 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const galleryLabel: string = topicCommon("galleryLabel")
     const factsLabel: string = topicCommon("factsLabel")
 
+    const images: any[] = t("photos", { returnObjects: true })
+    const galleryType: string = t("galleryType")
+    const blockOrder: number[] = t("blockOrder", { returnObjects: true })
+
     return (
         <>
             <Head>
@@ -102,9 +106,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                 {/* Images */}
                 <CollapseBlock title={galleryLabel}>
-                    <NestedModal />
-                    {/* Image Grid
-                        <ImageGroup /> */}
+                    <PhotosWrapper images={images} type={galleryType} blocks={blockOrder} />
                 </CollapseBlock>
 
                 {/* Infographics Placeholder */}
