@@ -78,10 +78,10 @@ export default function Overview() {
                 <StickyNav tabs={navTabs} />
 
                 {/* Culture and Society Section */}
-                <TopicOverviewSection title={topHeading} section={"culture"} topics={cultureTopics} />
+                <TopicOverviewSection title={cultureHeading} section={"culture"} topics={cultureTopics} />
 
                 {/* Church and Missions Section */}
-                <TopicOverviewSection title={botHeading} section={"church"} topics={churchTopics} />
+                <TopicOverviewSection title={churchHeading} section={"church"} topics={churchTopics} />
 
                 <Footer />
             </main>
