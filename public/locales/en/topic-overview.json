@@ -7,8 +7,8 @@
         "",
         "Coming soon.\nFull website launch in 2024."
     ],
-    "topHeading": "Culture and society",
-    "botHeading": "Church and mission",
+    "cultureHeading": "Culture and society",
+    "churchHeading": "Church and mission",
     "cultureTopics": [
         { "label": "Popular religious practices", "link": "popular-religious-practices", "disabled": false },
         { "label": "Japanese views of Chrisianity", "link": "japanese-views-of-chrisianity", "disabled": true },

@@ -2,12 +2,12 @@ import Head from "next/head"
 import { ToggleHeader } from "../../../components/toggleHeader"
 import { Trans, useTranslation } from "next-i18next"
 import { Container } from "react-bootstrap"
-import { TopicOverviewNav } from "../../../components/topic-overview/TopicOverviewNav"
 import React from "react"
 import Footer from "../../../components/footer"
 import { Topic, TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Image from "react-bootstrap/Image"
+import { StickyNav } from "../../../components/topic/StickyNav"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -22,16 +22,17 @@ export async function getStaticProps({ locale }: any) {
 export default function Overview() {
     const { t } = useTranslation("topic-overview")
 
-    // States
-    const [selected, setSelected] = React.useState<string>("culture")
-
     let cultureTopics: Topic[] = t("cultureTopics", { returnObjects: true })
     let churchTopics: Topic[] = t("churchTopics", { returnObjects: true })
     cultureTopics = Array.isArray(cultureTopics) ? cultureTopics : []
     churchTopics = Array.isArray(churchTopics) ? churchTopics : []
 
-    const topHeading = t("topHeading")
-    const botHeading = t("botHeading")
+    const cultureHeading = t("cultureHeading")
+    const churchHeading = t("churchHeading")
+    const navTabs = [
+        { refId: "culture", label: cultureHeading },
+        { refId: "church", label: churchHeading },
+    ]
 
     const heroSubtext: string[] = t("pageSubtitle", { returnObjects: true })
 
@@ -45,7 +46,7 @@ export default function Overview() {
             </Head>
             <main>
                 {/* Header component */}
-                <ToggleHeader />
+                <ToggleHeader hideShadow={true} />
 
                 {/* Hero Banner */}
                 <div
@@ -74,7 +75,7 @@ export default function Overview() {
                 </div>
 
                 {/* Overview Nav Component */}
-                <TopicOverviewNav selected={selected} setSelected={setSelected} />
+                <StickyNav tabs={navTabs} />
 
                 {/* Culture and Society Section */}
                 <TopicOverviewSection title={topHeading} section={"culture"} topics={cultureTopics} />

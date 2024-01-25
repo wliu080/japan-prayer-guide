@@ -9,11 +9,11 @@ import Footer from "../../components/footer"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Feedback from "../../components/topic/Feedback"
-import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
-import NestedModal from "../../components/NestedModal/NestedModal"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
+import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
+import { StickyNav, Tab } from "../../components/topic/StickyNav"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -55,11 +55,14 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
     const pageTitle: string = t("title")
 
+    const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
+
     const galleryLabel: string = topicCommon("galleryLabel")
     const factsLabel: string = topicCommon("factsLabel")
 
-    // States
-    const [selected, setSelected] = React.useState<string>("About")
+    const images: any[] = t("photos", { returnObjects: true })
+    const galleryType: string = t("galleryType")
+    const blockOrder: number[] = t("blockOrder", { returnObjects: true })
 
     return (
         <>
@@ -71,7 +74,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
             </Head>
             <main>
                 {/* Header Component */}
-                <ToggleHeader />
+                <ToggleHeader hideShadow={true} />
 
                 {/* Component to Hold image, as well as title and Prayer Summary */}
                 <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{ height: "700px" }}>
@@ -83,10 +86,13 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </div>
 
                 {/* Topic Nav Component */}
-                <TopicNav selected={selected} setSelected={setSelected} topicTrans={t} />
+                <StickyNav tabs={navTabs} />
 
                 {/* Placeholder for a quote */}
-                <Container className="d-flex flex-column justify-content-center align-items-center py-4 my-4">
+                <Container
+                    id="about-topic"
+                    className="d-flex flex-column justify-content-center align-items-center py-4 my-4"
+                >
                     <h1 className="text-secondary fs-1 text-center">{quoteContent}</h1>
                     <h2 className="text-secondary fs-6 text-center">{quoteSource}</h2>
                 </Container>
@@ -100,9 +106,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                 {/* Images */}
                 <CollapseBlock title={galleryLabel}>
-                    <NestedModal />
-                    {/* Image Grid
-                        <ImageGroup /> */}
+                    <PhotosWrapper images={images} type={galleryType} blocks={blockOrder} />
                 </CollapseBlock>
 
                 {/* Infographics Placeholder */}
