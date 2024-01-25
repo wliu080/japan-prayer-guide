@@ -106,7 +106,7 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
                         className={
                             "px-3 my-0 text-decoration-none fw-normal" +
                             (selected === tab.refId
-                                ? " border-bottom border-secondary border-3 text-secondary-5 fw-bold"
+                                ? " border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
                                 : "")
                         }
                         onClick={() => scrollToCustomPosition(tab.refId)}

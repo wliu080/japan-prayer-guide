@@ -20,7 +20,7 @@ exports[`Sticky Nav Snapshot test 1`] = `
           data-testid="topic-nav-links"
         >
           <a
-            class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary border-3 text-secondary-5 fw-bold"
+            class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
             data-testid="topic-nav-link0"
           >
             abc
@@ -57,7 +57,7 @@ exports[`Sticky Nav Snapshot test 1`] = `
         data-testid="topic-nav-links"
       >
         <a
-          class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary border-3 text-secondary-5 fw-bold"
+          class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
           data-testid="topic-nav-link0"
         >
           abc
