@@ -13,7 +13,7 @@ import { TopicNav } from "../../components/topic/TopicNav"
 import React from "react"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
-import { PhotosWrapper } from "../../components/PhotosWrapper/PhotosWrapper"
+import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
