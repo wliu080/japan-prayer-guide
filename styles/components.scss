@@ -380,3 +380,27 @@
         cursor: pointer;
     }
 }
+
+// -------------------------
+// Prayer Response
+// -------------------------
+
+#prayer-response {
+    background-color: $grey-2;
+
+    h2 {
+        font-family: $font-family-secondary;
+        padding-top: 4rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+        font-family: $font-family-secondary;
+        line-height: normal;
+    }
+
+    #topic-prayer-topicBottom {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

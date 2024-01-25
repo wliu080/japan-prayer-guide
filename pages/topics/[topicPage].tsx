@@ -8,10 +8,10 @@ import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import Feedback from "../../components/topic/Feedback"
 import React from "react"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
+import PrayerResponse from "../../components/topic/PrayerResponse"
 import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
 import { StickyNav, Tab } from "../../components/topic/StickyNav"
 
@@ -121,13 +121,14 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                         </div>
                     </Container>
                 </CollapseBlock>
+                <Container className="bottom-spacing">
+                    <hr />
+                </Container>
 
-                {/* Prayer Points */}
-                <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicBottom} />
+                {/* Responding in Prayer */}
+                <PrayerResponse topicTrans={t} />
+
                 <br />
-
-                {/* Give us Feedback */}
-                <Feedback />
 
                 {/* Downloads and Related */}
                 <TopicDownloadables topicTrans={t} />

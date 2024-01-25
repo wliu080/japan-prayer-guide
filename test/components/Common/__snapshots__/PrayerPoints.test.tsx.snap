@@ -8,10 +8,10 @@ exports[`Prayer Points Snapshot test 1`] = `
       <div
         class="d-flex px-6 justify-content-center container"
         data-testid="prayer-points-container"
-        id="topic-prayer"
+        id="topic-prayer-featured"
       >
         <div
-          class="my-4 shadow d-md-flex flex-md-row card"
+          class="shadow d-md-flex flex-md-rowmy-4 card"
         >
           <img
             class="card-img-top prayer-img"
@@ -75,10 +75,10 @@ exports[`Prayer Points Snapshot test 1`] = `
     <div
       class="d-flex px-6 justify-content-center container"
       data-testid="prayer-points-container"
-      id="topic-prayer"
+      id="topic-prayer-featured"
     >
       <div
-        class="my-4 shadow d-md-flex flex-md-row card"
+        class="shadow d-md-flex flex-md-rowmy-4 card"
       >
         <img
           class="card-img-top prayer-img"

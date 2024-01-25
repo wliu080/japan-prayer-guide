@@ -23,6 +23,14 @@ hr {
     margin: 2rem 0;
 }
 
+.bottom-spacing {
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 2.5rem;
+    }
+}
+
 // -------------------------
 // Downloadables Section
 // -------------------------
