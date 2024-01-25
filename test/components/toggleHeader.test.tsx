@@ -66,7 +66,13 @@ describe("ToggleHeader", () => {
         fireEvent.click(toggleButton)
         fireEvent.click(toggleButton)
         const navbar = getByRole("navigation")
-        expect(navbar).toHaveClass("bg-white")
-        expect(navbar).toHaveClass("navbar-light")
+        expect(navbar).toHaveClass("bg-white", "navbar-light", "shadow-sm")
+    })
+
+    test("should not render with shadows if specified", () => {
+        const { getByRole } = render(<ToggleHeader hideShadow={true} />)
+        const navbar = getByRole("navigation")
+        expect(navbar).toHaveClass("bg-white", "navbar-light", "fixed-top")
+        expect(navbar).not.toHaveClass("shadow-sm")
     })
 })

@@ -35,9 +35,6 @@
         ],
         "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
     },
-    "topicNav": {
-        "labels": ["About this Topic", "Prayer Points", "Downloadables"]
-    },
     "photos": [
       { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
       { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
