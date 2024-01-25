@@ -1,5 +1,5 @@
 import React from "react"
-import { Left, Cross, LeftArrow, RightArrow } from "../icons"
+import { Left, Cross, LeftArrow, RightArrow } from "../../icons"
 import { Image } from "react-bootstrap"
 
 interface LightBoxProps {
