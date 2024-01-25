@@ -6,7 +6,7 @@ import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
 import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Feedback from "../../components/topic/Feedback"
 import React from "react"
@@ -50,11 +50,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     let textContent: string[] = t("textBody", { returnObjects: true })
     textContent = Array.isArray(textContent) ? textContent : []
 
-    const quoteContent: string = t("quote.content")
-    const quoteSource: string = t("quote.source")
-
-    const pageTitle: string = t("title")
-
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
     const galleryLabel: string = topicCommon("galleryLabel")
@@ -67,7 +62,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     return (
         <>
             <Head>
-                <title>{pageTitle}</title>
+                <title>{t("title")}</title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -93,8 +88,12 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     id="about-topic"
                     className="d-flex flex-column justify-content-center align-items-center py-4 my-4"
                 >
-                    <h1 className="text-secondary fs-1 text-center">{quoteContent}</h1>
-                    <h2 className="text-secondary fs-6 text-center">{quoteSource}</h2>
+                    <h1 className="text-secondary fs-1 text-center">
+                        <Trans t={t} i18nKey="quote.content" />
+                    </h1>
+                    <h2 className="text-secondary fs-6 text-center">
+                        <Trans t={t} i18nKey="quote.source" />
+                    </h2>
                 </Container>
 
                 {/* Placeholder text */}

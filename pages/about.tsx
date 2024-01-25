@@ -21,6 +21,7 @@ const About: React.FC = () => {
     const { t } = useTranslation("about")
 
     const introBlurb: string[] = t("introBlurb", { returnObjects: true })
+    const contextBlurb: string[] = t("contextBlurb", { returnObjects: true })
 
     return (
         <div>
@@ -79,12 +80,11 @@ const About: React.FC = () => {
                         </Container>
                         <div className="w-100 mt-4 pt-3"></div>
                         <Container className="about-beneath-surface-text">
-                            <p className="common-p about-body-text">
-                                <Trans t={t} i18nKey="contextBlurb.0" />
-                            </p>
-                            <p className="common-p about-body-text">
-                                <Trans t={t} i18nKey="contextBlurb.1" />
-                            </p>
+                            {contextBlurb.map((text, idx) => (
+                                <p key={"context-blurb-" + idx} className="common-p about-body-text">
+                                    <Trans>{text}</Trans>
+                                </p>
+                            ))}
                         </Container>
                     </Container>
                 </div>

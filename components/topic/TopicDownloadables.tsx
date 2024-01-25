@@ -54,7 +54,6 @@ const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) =>
 export default function TopicDownloadables({ topicTrans }: downloadProps) {
     const { t, i18n } = useTranslation("common")
 
-    const links: string[] = topicTrans("downloads.links", { returnObjects: true })
     const infographicsLabel = t("downloads.infographicsLabel")
     const photographyLabel = t("downloads.photographyLabel")
     const pdfLabel = t("downloads.pdfLabel")
@@ -69,6 +68,7 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
     const prayerPtsUrl = topicTrans("downloads.prayerPtsUrl", "")
     const prayerVidUrl = topicTrans("downloads.prayerVidUrl", "")
     const slidesUrl = topicTrans("downloads.slidesUrl", "")
+    const downloadAllUrl = topicTrans("downloads.downloadAllUrl", "#")
 
     return (
         <Container
@@ -118,7 +118,7 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
                 />
             </Row>
             <Link
-                href={links[4]}
+                href={downloadAllUrl}
                 className="align-self-center w-100"
                 style={{ maxWidth: "500px" }}
                 locale={i18n.language}
