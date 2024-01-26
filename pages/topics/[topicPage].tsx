@@ -42,6 +42,16 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }: any) =>
     }
 }
 
+const JsonLink = ({ children = "" }: { children?: string }) => {
+    const url = children
+    const onClick = () => window.open(url, "_blank")
+    return (
+        <a href={url} onClick={onClick}>
+            {url}
+        </a>
+    )
+}
+
 export default function TopicPage({ localeRef }: { localeRef: string }) {
     const { t } = useTranslation(localeRef)
     const { t: topicCommon } = useTranslation("topic-pages")
@@ -100,7 +110,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <Container className="main-content">
                     {textContent.map((text: string, idx: number) => (
                         <p key={idx + text}>
-                            <Trans>{text}</Trans>
+                            <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
                         </p>
                     ))}
                 </Container>
