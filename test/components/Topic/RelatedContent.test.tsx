@@ -58,7 +58,7 @@ describe("Related Content", () => {
 
         expect(relatedContentCont).toHaveClass("d-flex", "flex-column", "my-5")
 
-        expect(relatedContentTitle).toHaveTextContent("related.title")
+        expect(relatedContentTitle).toHaveTextContent("relatedTopics.heading")
         expect(relatedContentTitle).toHaveClass("text-primary", "my-4", "fs-1")
     })
 })
