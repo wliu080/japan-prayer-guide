@@ -21,5 +21,5 @@ module.exports = {
     // saveMissing: false,
     // strictMode: true,
     // serializeConfig: false,
-    react: { useSuspense: false, transKeepBasicHtmlNodesFor: ["i", "b"] },
+    react: { useSuspense: false, transKeepBasicHtmlNodesFor: ["i", "b", "sup", "br"] },
 }

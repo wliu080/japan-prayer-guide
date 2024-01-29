@@ -6,13 +6,13 @@ import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
 import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import React from "react"
 import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
-import PrayerResponse from "../../components/topic/PrayerResponse"
 import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
+import PrayerResponse from "../../components/topic/PrayerResponse"
 import { StickyNav, Tab } from "../../components/topic/StickyNav"
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -42,6 +42,16 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }: any) =>
     }
 }
 
+const JsonLink = ({ children = "" }: { children?: string }) => {
+    const url = children
+    const onClick = () => window.open(url, "_blank")
+    return (
+        <a href={url} onClick={onClick}>
+            {url}
+        </a>
+    )
+}
+
 export default function TopicPage({ localeRef }: { localeRef: string }) {
     const { t } = useTranslation(localeRef)
     const { t: topicCommon } = useTranslation("topic-pages")
@@ -49,11 +59,6 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     // Objects holding translations
     let textContent: string[] = t("textBody", { returnObjects: true })
     textContent = Array.isArray(textContent) ? textContent : []
-
-    const quoteContent: string = t("quote.content")
-    const quoteSource: string = t("quote.source")
-
-    const pageTitle: string = t("title")
 
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
@@ -67,7 +72,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     return (
         <>
             <Head>
-                <title>{pageTitle}</title>
+                <title>{t("title")}</title>
                 <meta name="description" content="Japan prayer guide" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -93,14 +98,20 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     id="about-topic"
                     className="d-flex flex-column justify-content-center align-items-center py-4 my-4"
                 >
-                    <h1 className="text-secondary fs-1 text-center">{quoteContent}</h1>
-                    <h2 className="text-secondary fs-6 text-center">{quoteSource}</h2>
+                    <h1 className="text-secondary fs-1 text-center">
+                        <Trans t={t} i18nKey="quote.content" />
+                    </h1>
+                    <h2 className="text-secondary fs-6 text-center">
+                        <Trans t={t} i18nKey="quote.source" />
+                    </h2>
                 </Container>
 
                 {/* Placeholder text */}
                 <Container className="main-content">
                     {textContent.map((text: string, idx: number) => (
-                        <p key={idx + text}>{text}</p>
+                        <p key={idx + text}>
+                            <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
+                        </p>
                     ))}
                 </Container>
 

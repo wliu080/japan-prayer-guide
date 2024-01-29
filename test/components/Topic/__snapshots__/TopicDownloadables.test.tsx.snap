@@ -288,7 +288,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         </div>
         <a
           class="align-self-center w-100"
-          href="l"
+          href="downloads.downloadAllUrl"
           style="max-width: 500px;"
         >
           <button
@@ -591,7 +591,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
       </div>
       <a
         class="align-self-center w-100"
-        href="l"
+        href="downloads.downloadAllUrl"
         style="max-width: 500px;"
       >
         <button
