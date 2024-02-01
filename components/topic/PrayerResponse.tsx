@@ -37,7 +37,7 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                             ></iframe>
                         </div> */}
                 <Row>
-                    <Col lg={6} md={12}>
+                    <Col lg={6} md={12} className="px-0">
                         <PrayerPoints topicTrans={topicTrans} displayStyle={PrayerDisplayStyle.TopicBottom} />
                     </Col>
                     <Col lg={6} md={12}>

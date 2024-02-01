@@ -84,7 +84,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 {/* Component to Hold image, as well as title and Prayer Summary */}
                 <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{ height: "700px" }}>
                     temporary image placeholder
-                    <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5">
+                    <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5 px-0">
                         <h1 className="fs-1 text-white px-3">{t("title")}</h1>
                         <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicTop} />
                     </Container>
