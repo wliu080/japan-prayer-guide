@@ -30,7 +30,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
             class="row"
           >
             <div
-              class="col-lg-6 col-md-12"
+              class="px-0 col-lg-6 col-md-12"
             />
             <div
               class="col-lg-6 col-md-12"
@@ -118,7 +118,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
           class="row"
         >
           <div
-            class="col-lg-6 col-md-12"
+            class="px-0 col-lg-6 col-md-12"
           />
           <div
             class="col-lg-6 col-md-12"
