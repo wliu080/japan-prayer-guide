@@ -40,7 +40,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                 data-testid="feedback"
               >
                 <h3
-                  class="fw-bold text-grey-9 mt-0"
+                  class="fw-bold mt-0"
                 >
                   response.feedbackLabel
                 </h3>
@@ -128,7 +128,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
               data-testid="feedback"
             >
               <h3
-                class="fw-bold text-grey-9 mt-0"
+                class="fw-bold mt-0"
               >
                 response.feedbackLabel
               </h3>

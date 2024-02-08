@@ -42,7 +42,7 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                     </Col>
                     <Col lg={6} md={12}>
                         <Container data-testid="feedback" fluid className="px-0">
-                            <h3 className="fw-bold text-grey-9 mt-0">
+                            <h3 className="fw-bold mt-0">
                                 <Trans t={common} i18nKey="response.feedbackLabel" />
                             </h3>
                             <Form action="https://formbold.com/s/3Zgzd" method="POST">

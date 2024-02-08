@@ -6,10 +6,11 @@ import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri"
 interface feedbackProps {
     title: string
     children: ReactNode
+    startOpened?: boolean
 }
 
-const CollapseBlock = ({ title, children }: feedbackProps) => {
-    const [openCollapse, setOpenCollapse] = React.useState(false)
+const CollapseBlock = ({ title, children, startOpened = false }: feedbackProps) => {
+    const [openCollapse, setOpenCollapse] = React.useState(startOpened)
 
     return (
         <Container>

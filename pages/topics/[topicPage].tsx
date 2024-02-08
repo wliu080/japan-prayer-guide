@@ -4,7 +4,6 @@ import { GetStaticProps, GetStaticPaths } from "next"
 import { Container } from "react-bootstrap"
 import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
-import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
 import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
@@ -116,12 +115,12 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
 
                 {/* Images */}
-                <CollapseBlock title={galleryLabel}>
+                <CollapseBlock title={galleryLabel} startOpened={true}>
                     <PhotosWrapper images={images} type={galleryType} blocks={blockOrder} />
                 </CollapseBlock>
 
                 {/* Infographics Placeholder */}
-                <CollapseBlock title={factsLabel}>
+                <CollapseBlock title={factsLabel} startOpened={true}>
                     <Container>
                         <div id="placeholder-image" className="w-100">
                             Infographics Placeholder
@@ -143,7 +142,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                 {/* Downloads and Related */}
                 <TopicDownloadables topicTrans={t} />
-                <RelatedContent topicTrans={t} />
+                {/* <RelatedContent topicTrans={t} /> */}
 
                 {/* Footer */}
                 <Footer />
