@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { ToggleHeader } from "../components/toggleHeader"
-import { Button, Carousel, CarouselItem, Container, Image } from "react-bootstrap"
+import { Button, Container, Image } from "react-bootstrap"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
@@ -8,6 +8,22 @@ import Footer from "../components/footer"
 import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
 import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints"
+import { ImageCarousel } from "../components/GalleryComponents/Carousel"
+
+const carouselImages: { src: string; title: string }[] = [
+    {
+        src: "/photos/home/hp_slider-1.jpg",
+        title: "home image 1",
+    },
+    {
+        src: "/photos/home/hp_slider-2.jpg",
+        title: "home image 2",
+    },
+    {
+        src: "/photos/home/hp_slider-3.jpg",
+        title: "home image 3",
+    },
+]
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
     // schedule is from featured-topics.json
@@ -93,38 +109,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </Container>
 
                 {/* Invitation to prayer */}
-                <div className="home-invitation d-flex flex-column align-items-center position-relative w-100">
-                    <div className="home-invite-inner mb-0 mb-md-5">
-                        <Carousel
-                            controls={true}
-                            fade={true}
-                            interval={3000}
-                            className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
-                        >
-                            <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
-                                    className="home-carousel-image"
-                                    alt="hero image 1"
-                                    src="/photos/home/hp_slider-1.jpg"
-                                />
-                            </CarouselItem>
-                            <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
-                                    className="home-carousel-image"
-                                    alt="hero image 2"
-                                    src="/photos/home/hp_slider-2.jpg"
-                                />
-                            </CarouselItem>
-                            <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
-                                    className="home-carousel-image"
-                                    alt="hero image 3"
-                                    src="/photos/home/hp_slider-3.jpg"
-                                />
-                            </CarouselItem>
-                        </Carousel>
-                    </div>
-                </div>
+                <ImageCarousel images={carouselImages} />
 
                 <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
                     <h1 className="home-common-h1 text-center mt-5">
