@@ -7,21 +7,40 @@ interface feedbackProps {
     title: string
     children: ReactNode
     startOpened?: boolean
+    galleryType?: string
 }
 
-const CollapseBlock = ({ title, children, startOpened = false }: feedbackProps) => {
+const CollapseBlock = ({ title, children, startOpened = false, galleryType = "mosaic" }: feedbackProps) => {
     const [openCollapse, setOpenCollapse] = React.useState(startOpened)
+    const disableAccordion = galleryType === "gallery" || galleryType === "carousel"
+
+    const clickHandler = () => {
+        if (disableAccordion) {
+            return
+        } else {
+            setOpenCollapse(!openCollapse)
+        }
+    }
+
+    const renderChevron = () => {
+        if (disableAccordion) {
+            return <></>
+        } else {
+            return openCollapse ? <RiArrowUpSLine /> : <RiArrowDownSLine />
+        }
+    }
 
     return (
         <Container>
             <hr />
             <Button
                 className="collapse-label fs-2 fw-semibold lh-sm ps-0"
-                onClick={() => setOpenCollapse(!openCollapse)}
+                onClick={clickHandler}
                 aria-controls="collapse-block"
                 aria-expanded={openCollapse}
+                style={{ cursor: disableAccordion ? "default" : "pointer" }}
             >
-                {title} {openCollapse ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
+                {title} {renderChevron()}
             </Button>
             <Collapse in={openCollapse}>
                 <Container className="p-0" id="collapse-block">

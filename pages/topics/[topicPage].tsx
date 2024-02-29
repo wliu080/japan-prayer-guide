@@ -123,12 +123,12 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
 
                 {/* Images */}
-                <CollapseBlock title={galleryLabel} startOpened={true}>
+                <CollapseBlock title={galleryLabel} startOpened={true} galleryType={galleryType}>
                     <PhotosWrapper images={images} type={galleryType} blocks={blockOrder} />
                 </CollapseBlock>
 
                 {/* Infographics Placeholder */}
-                <CollapseBlock title={factsLabel} startOpened={true}>
+                <CollapseBlock title={factsLabel} startOpened={true} galleryType={galleryType}>
                     <Container>
                         <div id="placeholder-image" className="w-100">
                             Infographics Placeholder
