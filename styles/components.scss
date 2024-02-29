@@ -15,6 +15,9 @@
         width: 100%;
         padding: 10px 10px;
         aspect-ratio: 2.5;
+        @include media-breakpoint-down(md) {
+            padding: 2px;
+        }
     }
 }
 
@@ -29,6 +32,9 @@
         width: 100%;
         padding: 10px 10px;
         aspect-ratio: 1.5;
+        @include media-breakpoint-down(md) {
+            padding: 2px;
+        }
     }
 }
 
@@ -112,10 +118,14 @@
     cursor: pointer;
     position: relative;
     padding: 0;
+    object-fit: cover;
 
     img {
         width: 100%;
         padding: 10px 10px;
+        @include media-breakpoint-down(md) {
+            padding: 4px;
+        }
     }
 }
 

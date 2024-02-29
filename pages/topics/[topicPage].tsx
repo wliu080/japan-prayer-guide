@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { getTopicPageIds } from "../../services/staticTopicLoader"
 import { GetStaticProps, GetStaticPaths } from "next"
-import { Container } from "react-bootstrap"
+import { Container, Image } from "react-bootstrap"
 import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
 import Footer from "../../components/footer"
@@ -68,6 +68,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const galleryType: string = t("galleryType")
     const blockOrder: number[] = t("blockOrder", { returnObjects: true })
 
+    const heroPhoto: string = t("heroPhoto")
+    const heroFocus: string = t("heroFocus")
+
     return (
         <>
             <Head>
@@ -81,10 +84,15 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <ToggleHeader hideShadow={true} />
 
                 {/* Component to Hold image, as well as title and Prayer Summary */}
-                <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{ height: "700px" }}>
-                    temporary image placeholder
+                <div className="w-100 mx-0 px-0 position-relative" style={{ height: "700px" }}>
+                    <Image
+                        src={heroPhoto}
+                        alt="topic hero image"
+                        className="hero-photo"
+                        style={{ objectPosition: heroFocus }}
+                    />
                     <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5 px-0">
-                        <h1 className="fs-1 text-white px-3">{t("title")}</h1>
+                        <h1 className="fs-1 text-white px-3 hero-title">{t("title")}</h1>
                         <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicTop} />
                     </Container>
                 </div>

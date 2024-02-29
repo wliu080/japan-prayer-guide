@@ -24,7 +24,9 @@ const CollapseBlock = ({ title, children, startOpened = false }: feedbackProps) 
                 {title} {openCollapse ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
             </Button>
             <Collapse in={openCollapse}>
-                <Container id="collapse-block">{children}</Container>
+                <Container className="p-0" id="collapse-block">
+                    {children}
+                </Container>
             </Collapse>
         </Container>
     )
