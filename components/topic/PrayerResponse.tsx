@@ -9,6 +9,10 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
 
     const textPlaceholder: string = common("response.feedbackTextPlaceholder", "")
     const emailPlaceholder: string = common("response.feedbackEmailPlaceholder", "")
+
+    const topicVideoSrc: string = topicTrans("videoSrc", "")
+    const couldLoadVideo: boolean = topicVideoSrc !== ""
+
     return (
         <Container fluid id="prayer-response" data-testid="prayer-response" className="pb-5">
             <Container>
@@ -21,21 +25,25 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                 <h3 className="fw-bold fs-2">
                     <Trans t={common} i18nKey="response.recordingLabel" />
                 </h3>
-                {/* <div style={{ padding: "177.78%", position: "relative" }}>
-                            <iframe
-                                src="https://player.vimeo.com/video/641660551?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                style={{
-                                    position: "absolute",
-                                    top: "0",
-                                    left: "0",
-                                    width: "100%",
-                                    height: "100%",
-                                    border: "0px",
-                                }}
-                                title="trees"
-                            ></iframe>
-                        </div> */}
+                <div style={{ paddingBottom: "50%", position: "relative" }}>
+                    {couldLoadVideo ? (
+                        <iframe
+                            src={topicVideoSrc}
+                            allow="autoplay; fullscreen"
+                            style={{
+                                position: "absolute",
+                                top: "0",
+                                left: "0",
+                                width: "100%",
+                                height: "100%",
+                                border: "0px",
+                            }}
+                            title="test vimeo player"
+                        />
+                    ) : (
+                        <div>Error loading video</div>
+                    )}
+                </div>
                 <Row>
                     <Col lg={6} md={12} className="px-0">
                         <PrayerPoints topicTrans={topicTrans} displayStyle={PrayerDisplayStyle.TopicBottom} />
