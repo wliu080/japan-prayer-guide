@@ -14,7 +14,7 @@
     img {
         width: 100%;
         padding: 10px 10px;
-        aspect-ratio: 2.5;
+        // aspect-ratio: 2.5;
         @include media-breakpoint-down(md) {
             padding: 2px;
         }
@@ -60,6 +60,19 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-center {
+    width: 60%;
+    @include media-breakpoint-down(xxl) {
+        width: 75%;
+    }
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
 }
 
 .gallery-title {
