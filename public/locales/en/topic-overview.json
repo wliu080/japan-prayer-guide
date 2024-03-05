@@ -15,7 +15,7 @@
         { "label": "Japanese culture and Christianity", "link": "japanese-culture-and-christianity", "disabled": true },
         { "label": "Ancestor veneration", "link": "ancestor-veneration", "disabled": true },
         { "label": "Harmony", "link": "harmony", "disabled": true },
-        { "label": "Social conformity", "link": "social-conformity", "disabled": false },
+        { "label": "Social conformity", "link": "social-conformity", "disabled": true },
         { "label": "Self-reliance and materialism", "link": "self-reliance-and-materialism", "disabled": true },
         { "label": "Mental and emotional health", "link": "mental-and-emotional-health", "disabled": true },
         { "label": "Aging society", "link": "aging-society", "disabled": true },
@@ -29,12 +29,12 @@
         { "label": "Technology and media", "link": "technology-and-media", "disabled": true },
         { "label": "Workplace pressure", "link": "workplace-pressure", "disabled": true },
         { "label": "Family life", "link": "family-life", "disabled": true },
-        { "label": "Youth and young adults", "link": "youth-and-young-adults", "disabled": false }
+        { "label": "Youth and young adults", "link": "youth-and-young-adults", "disabled": true }
     ],
     "churchTopics": [
         { "label": "Struggling churches", "link": "struggling-churches", "disabled": true },
         { "label": "Church planting", "link": "church-planting", "disabled": true },
-        { "label": "Church leadership", "link": "church-leadership", "disabled": false },
+        { "label": "Church leadership", "link": "church-leadership", "disabled": true },
         { "label": "Church in the community", "link": "church-in-the-community", "disabled": true },
         { "label": "Creative ways of ministry", "link": "creative-ways-of-ministry", "disabled": true },
         { "label": "Christianity in rural areas", "link": "christianity-in-rural-areas", "disabled": true },
