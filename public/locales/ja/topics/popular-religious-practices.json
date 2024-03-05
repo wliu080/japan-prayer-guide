@@ -36,26 +36,56 @@
         "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
-    "heroFocus": "",
+    "heroFocus": "20% 50%",
     "photos": [
-        { "src": "/photos/topics/topic1/TP01-Album-01.jpg", "title": "元日、京都の伏見稲荷大社は初詣に訪れた人々で賑わう。" },
-        { "src": "/photos/topics/topic1/TP01-Album-02.jpg", "title": "市街の通り、階段、森、川、野原など、日本のあちこちで見かける鳥居。" },
-        { "src": "/photos/topics/topic1/TP01-Album-03.jpg", "title": "明治神宮の鳥居をくぐる前に一礼する参拝者。鳥居は神聖な場所への入口を示すとされる。" },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-01.jpg",
+            "title": "元日、京都の伏見稲荷大社は初詣に訪れた人々で賑わう。"
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-02.jpg",
+            "title": "市街の通り、階段、森、川、野原など、日本のあちこちで見かける鳥居。"
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-03.jpg",
+            "title": "明治神宮の鳥居をくぐる前に一礼する参拝者。鳥居は神聖な場所への入口を示すとされる。"
+        },
         { "src": "/photos/topics/topic1/TP01-Album-04.jpg", "title": "宮崎県の小さな島（青島）にある神社。" },
         { "src": "/photos/topics/topic1/TP01-Album-05.jpg", "title": "近所の神社を参拝する男性（千葉県）。" },
         { "src": "/photos/topics/topic1/TP01-Album-06.jpg", "title": "東京で人気の寺のひとつ、浅草寺。" },
-        { "src": "/photos/topics/topic1/TP01-Album-07.jpg", "title": "香の煙をかぶる子どもと保護者。寺でよく見かける、身体の浄化や治癒を願う儀式のひとつ。" },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-07.jpg",
+            "title": "香の煙をかぶる子どもと保護者。寺でよく見かける、身体の浄化や治癒を願う儀式のひとつ。"
+        },
         { "src": "/photos/topics/topic1/TP01-Album-08.jpg", "title": "おみくじを引く若い男性。" },
-        { "src": "/photos/topics/topic1/TP01-Album-09.jpg", "title": "神社で売られるお守り。安全や幸運をもたらすとされる。" },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-09.jpg",
+            "title": "神社で売られるお守り。安全や幸運をもたらすとされる。"
+        },
         { "src": "/photos/topics/topic1/TP01-Album-10.jpg", "title": "寺でお守りを選ぶ女性。" },
         { "src": "/photos/topics/topic1/TP01-Album-11.jpg", "title": "明治神宮で絵馬に願いごとを書く参拝者。" },
         { "src": "/photos/topics/topic1/TP01-Album-12.jpg", "title": "子どもの願いごとが書かれた神社の絵馬。" },
         { "src": "/photos/topics/topic1/TP01-Album-13.jpg", "title": "人気のある寺で祈る年配女性（東京）。" },
-        { "src": "/photos/topics/topic1/TP01-Album-14.jpg", "title": "猿像の前の賽銭箱に賽銭を入れる女性。猿は安産の守り神とされる。" },
-        { "src": "/photos/topics/topic1/TP01-Album-15.jpg", "title": "神社は、日本の家族の祝いごとや人生の節目の行事にたびたび登場する。" },
-        { "src": "/photos/topics/topic1/TP01-Album-16.jpg", "title": "神社で結婚写真を撮るカップル。日本では、人生の重要なイベントを神社で祝うことが多い。" },
-        { "src": "/photos/topics/topic1/TP01-Album-17.jpg", "title": "11月の祝い行事である七五三。神社でおこなう場合が多い。" },
-        { "src": "/photos/topics/topic1/TP01-Album-18.jpg", "title": "神社の夏祭りは若者に人気のイベント。友人や家族、恋人と連れ立って出かける。" },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-14.jpg",
+            "title": "猿像の前の賽銭箱に賽銭を入れる女性。猿は安産の守り神とされる。"
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-15.jpg",
+            "title": "神社は、日本の家族の祝いごとや人生の節目の行事にたびたび登場する。"
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-16.jpg",
+            "title": "神社で結婚写真を撮るカップル。日本では、人生の重要なイベントを神社で祝うことが多い。"
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-17.jpg",
+            "title": "11月の祝い行事である七五三。神社でおこなう場合が多い。"
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-18.jpg",
+            "title": "神社の夏祭りは若者に人気のイベント。友人や家族、恋人と連れ立って出かける。"
+        },
         { "src": "/photos/topics/topic1/TP01-Album-19.jpg", "title": "築地本願寺の納涼盆踊り大会。" },
         { "src": "/photos/topics/topic1/TP01-Album-20.jpg", "title": "築地本願寺の納涼盆踊り大会。" }
     ],
