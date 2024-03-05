@@ -27,12 +27,13 @@ exports[`Responding in Prayer Snapshot test 1`] = `
             response.recordingLabel
           </h3>
           <div
-            style="padding-bottom: 50%; position: relative;"
+            class="mb-5 video-embed"
           >
             <iframe
               allow="autoplay; fullscreen"
+              class="d-flex align-content-start"
               style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: 0px;"
-              title="test vimeo player"
+              title="Prayer recording"
             />
           </div>
           <div
@@ -124,12 +125,13 @@ exports[`Responding in Prayer Snapshot test 1`] = `
           response.recordingLabel
         </h3>
         <div
-          style="padding-bottom: 50%; position: relative;"
+          class="mb-5 video-embed"
         >
           <iframe
             allow="autoplay; fullscreen"
+            class="d-flex align-content-start"
             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: 0px;"
-            title="test vimeo player"
+            title="Prayer recording"
           />
         </div>
         <div

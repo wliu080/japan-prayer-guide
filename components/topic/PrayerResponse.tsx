@@ -25,9 +25,10 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                 <h3 className="fw-bold fs-2">
                     <Trans t={common} i18nKey="response.recordingLabel" />
                 </h3>
-                <div style={{ paddingBottom: "50%", position: "relative" }}>
+                <div className="mb-5 video-embed">
                     {couldLoadVideo ? (
                         <iframe
+                            className="d-flex align-content-start"
                             src={topicVideoSrc}
                             allow="autoplay; fullscreen"
                             style={{
@@ -38,10 +39,12 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                                 height: "100%",
                                 border: "0px",
                             }}
-                            title="test vimeo player"
+                            title="Prayer recording"
                         />
                     ) : (
-                        <div>Error loading video</div>
+                        <div>
+                            <Trans t={common} i18nKey="errors.videoLoadError" />
+                        </div>
                     )}
                 </div>
                 <Row>

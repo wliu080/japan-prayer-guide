@@ -448,5 +448,10 @@
         padding-left: 0;
         padding-right: 0;
     }
-}
 
+    .video-embed {
+        position: relative;
+        padding-bottom: 56.25% !important; /* 16:9 */
+        height: 0;
+    }
+}
