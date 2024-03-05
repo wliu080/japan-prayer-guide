@@ -50,9 +50,9 @@ function Gallery({ index, setImage, images, setGallery, lightBox, setLightBox }:
             </div>
 
             <div className="gallery-container">
-                <div className="center">
+                <div className="center gallery-center">
                     {images.map((item, index) => {
-                        if (index % 3 === 0) {
+                        if (index % 3 === 0 || (index % 3 === 1 && index === images.length - 1)) {
                             return (
                                 <Row xs={1} sm={1} md={1} lg={1} xl={1} key={index}>
                                     <div

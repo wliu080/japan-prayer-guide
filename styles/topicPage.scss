@@ -2,6 +2,27 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 // -------------------------
+// Hero Image Section
+// -------------------------
+
+.hero-photo {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    height: calc(100% - 64px);
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    @include media-breakpoint-down(md) {
+        top: 50px;
+    }
+}
+
+.hero-title {
+    font-family: $font-family-secondary;
+}
+
+// -------------------------
 // Text content Section
 // -------------------------
 .main-content {

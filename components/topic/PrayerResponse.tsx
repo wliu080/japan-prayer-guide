@@ -45,7 +45,7 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                             <h3 className="fw-bold mt-0">
                                 <Trans t={common} i18nKey="response.feedbackLabel" />
                             </h3>
-                            <Form action="https://formbold.com/s/3Zgzd" method="POST">
+                            <Form action="https://formbold.com/s/67Gj1" method="POST">
                                 <Form.Group className="mb-2">
                                     <FloatingLabel
                                         controlId="floatingTextArea"
