@@ -71,7 +71,7 @@ export default function OrderBook() {
                 >
                     <Trans t={t} i18nKey="order.form" />
                 </Link>
-                <h2 className="text-black fs-5 fst-italic mb-2 d-flex align-items-center gap-1 mb-4">
+                <h2 className="text-black fs-5 mb-2 d-flex align-items-center gap-1 mb-4">
                     <IconContext.Provider value={{ size: "16px" }}>
                         <RiInformationLine />
                     </IconContext.Provider>
