@@ -20,8 +20,12 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                     <Trans t={common} i18nKey="response.title" />
                 </h2>
                 <p>
-                    <Trans t={common} i18nKey="response.blurb" />
+                    <Trans t={common} i18nKey="response.blurb0" />
                 </p>
+                <p>
+                    <Trans t={common} i18nKey="response.blurb1" />
+                </p>
+
                 <h3 className="fw-bold fs-2">
                     <Trans t={common} i18nKey="response.recordingLabel" />
                 </h3>

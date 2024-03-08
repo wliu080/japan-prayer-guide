@@ -1,5 +1,5 @@
 {
-    "title": "Popular religious practices",
+    "title": "日本人の宗教的習慣",
     "prayerSummary": [
         "こうした日本の状況下で福音を伝えるための知恵が与えられるように。",
         "様々な宗教儀式を通して救いを求める人たちが、聖霊によってキリストを見出すことができるように。",
@@ -80,7 +80,10 @@
             "title": "神社の夏祭りは若者に人気のイベント。友人や家族、恋人と連れ立って出かける。"
         },
         { "src": "/photos/topics/topic1/TP01-Album-19.jpg", "title": "築地本願寺の納涼盆踊り大会。" },
-        { "src": "/photos/topics/topic1/TP01-Album-20.jpg", "title": "築地本願寺の納涼盆踊り大会。" }
+        {
+            "src": "/photos/topics/topic1/TP01-Album-20.jpg",
+            "title": "神社や寺では、祭りなど地域の行事が多く開かれる。"
+        }
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
