@@ -3,7 +3,7 @@
     "factsLabel": "More facts about this topic",
     "nav": [
         { "refId": "about-topic", "label": "About" },
-        { "refId": "prayer", "label": "Pray" },
+        { "refId": "prayer-response", "label": "Pray" },
         { "refId": "topic-downloads", "label": "Resources" }
     ]
 }

@@ -3,7 +3,7 @@
     "factsLabel": "More facts about this topic",
     "nav": [
         { "refId": "about-topic", "label": "テーマについて" },
-        { "refId": "prayer", "label": "祈りましょう" },
+        { "refId": "prayer-response", "label": "祈りましょう" },
         { "refId": "topic-downloads", "label": "資料" }
     ]
 }
