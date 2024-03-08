@@ -84,6 +84,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                   >
                     <input
                       class="form-control"
+                      name="email"
                       placeholder="response.feedbackEmailPlaceholder"
                       type="email"
                     />
@@ -182,6 +183,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                 >
                   <input
                     class="form-control"
+                    name="email"
                     placeholder="response.feedbackEmailPlaceholder"
                     type="email"
                   />

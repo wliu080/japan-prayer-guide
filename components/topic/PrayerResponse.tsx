@@ -72,7 +72,7 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                                     </FloatingLabel>
                                 </Form.Group>
                                 <Form.Group className="mb-3">
-                                    <Form.Control type="email" placeholder={emailPlaceholder} />
+                                    <Form.Control type="email" name="email" placeholder={emailPlaceholder} />
                                 </Form.Group>
                                 <Button variant="outline-primary" className="fw-bold px-4 py-2" type="submit">
                                     <Trans t={common} i18nKey="response.feedbackSubmit" />
