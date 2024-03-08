@@ -289,10 +289,11 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         <a
           class="align-self-center w-100"
           href="downloads.downloadAllUrl"
-          style="max-width: 500px;"
+          style="max-width: 500px; cursor: not-allowed;"
         >
           <button
             class="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder btn btn-primary"
+            disabled=""
             type="button"
           >
             downloads.downloadAllBtn
@@ -592,10 +593,11 @@ exports[`Topic Downloadables Snapshot test 1`] = `
       <a
         class="align-self-center w-100"
         href="downloads.downloadAllUrl"
-        style="max-width: 500px;"
+        style="max-width: 500px; cursor: not-allowed;"
       >
         <button
           class="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder btn btn-primary"
+          disabled=""
           type="button"
         >
           downloads.downloadAllBtn

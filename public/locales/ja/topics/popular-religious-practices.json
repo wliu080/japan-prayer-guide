@@ -16,14 +16,7 @@
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
         "source": "-Bible verse or quote."
     },
-    "downloads": {
-        "infographicsUrl": "www.google.com",
-        "photographyUrl": "www.google.com",
-        "pdfUrl": "www.google.com",
-        "prayerPtsUrl": "www.google.com",
-        "prayerVidUrl": "www.google.com",
-        "slidesUrl": "www.google.com"
-    },
+    "downloads": {},
     "related": {
         "labels": [
             "Ancestor veneration",
