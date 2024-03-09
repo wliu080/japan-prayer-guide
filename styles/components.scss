@@ -421,6 +421,7 @@
     }
 
     .prayer-img {
+        object-fit: cover;
         @include media-breakpoint-up(md) {
             width: 50%;
         }

@@ -15,7 +15,7 @@ exports[`Prayer Points Snapshot test 1`] = `
         >
           <img
             class="card-img-top prayer-img"
-            src="/photos/topic-nav/church/church-leadership-b.jpg"
+            src="/photos/topics/topic1/TP01-Hero.jpg"
           />
           <div
             class="p-4 featured card-body"
@@ -82,7 +82,7 @@ exports[`Prayer Points Snapshot test 1`] = `
       >
         <img
           class="card-img-top prayer-img"
-          src="/photos/topic-nav/church/church-leadership-b.jpg"
+          src="/photos/topics/topic1/TP01-Hero.jpg"
         />
         <div
           class="p-4 featured card-body"

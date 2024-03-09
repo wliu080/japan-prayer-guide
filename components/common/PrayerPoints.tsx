@@ -22,7 +22,7 @@ export default function PrayerPoints({ topicTrans, displayStyle }: prayerProps) 
     const prayerPoints: string[] = topicTrans("prayerSummary", { returnObjects: true })
 
     // TODO replace with lookup via topicTrans("keyImage") etc
-    const featuredImg: string = "/photos/topic-nav/church/church-leadership-b.jpg"
+    const featuredImg: string = "/photos/topics/topic1/TP01-Hero.jpg"
 
     let alignLeft: boolean = false
     let showTitle: boolean = false
