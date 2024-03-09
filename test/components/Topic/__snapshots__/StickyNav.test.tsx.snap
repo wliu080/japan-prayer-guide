@@ -6,15 +6,10 @@ exports[`Sticky Nav Snapshot test 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav container"
+        class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top px-0 sticky-nav container"
         data-testid="sticky-nav-container"
         style="max-width: none;"
       >
-        <div
-          class="w-100"
-          id="overview-nav"
-          style="height: 0px;"
-        />
         <div
           class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
           data-testid="topic-nav-links"
@@ -43,15 +38,10 @@ exports[`Sticky Nav Snapshot test 1`] = `
   </body>,
   "container": <div>
     <div
-      class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav container"
+      class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top px-0 sticky-nav container"
       data-testid="sticky-nav-container"
       style="max-width: none;"
     >
-      <div
-        class="w-100"
-        id="overview-nav"
-        style="height: 0px;"
-      />
       <div
         class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
         data-testid="topic-nav-links"
