@@ -62,7 +62,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
     const galleryLabel: string = topicCommon("galleryLabel")
-    const factsLabel: string = topicCommon("factsLabel")
+    //const factsLabel: string = topicCommon("factsLabel")
 
     const images: any[] = t("photos", { returnObjects: true })
     const galleryType: string = t("galleryType")
@@ -128,17 +128,16 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </CollapseBlock>
 
                 {/* Infographics Placeholder */}
-                <CollapseBlock title={factsLabel} startOpened={true} galleryType={galleryType}>
+                {/* <CollapseBlock title={factsLabel} startOpened={true} galleryType={galleryType}>
                     <Container>
                         <div id="placeholder-image" className="w-100">
                             Infographics Placeholder
                         </div>
-                        {/* Placeholder Image */}
                         <div id="placeholder-image" className="w-100 my-5">
                             Placeholder
                         </div>
                     </Container>
-                </CollapseBlock>
+                </CollapseBlock> */}
                 <Container className="bottom-spacing">
                     <hr />
                 </Container>

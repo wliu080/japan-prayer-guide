@@ -120,10 +120,11 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
             <Link
                 href={downloadAllUrl}
                 className="align-self-center w-100"
-                style={{ maxWidth: "500px" }}
+                style={{ maxWidth: "500px", cursor: "not-allowed" }}
                 locale={i18n.language}
             >
                 <Button
+                    disabled
                     className="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder"
                     variant="primary"
                 >

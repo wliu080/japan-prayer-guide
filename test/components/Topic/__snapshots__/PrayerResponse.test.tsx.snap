@@ -19,7 +19,10 @@ exports[`Responding in Prayer Snapshot test 1`] = `
             response.title
           </h2>
           <p>
-            response.blurb
+            response.blurb0
+          </p>
+          <p>
+            response.blurb1
           </p>
           <h3
             class="fw-bold fs-2"
@@ -118,7 +121,10 @@ exports[`Responding in Prayer Snapshot test 1`] = `
           response.title
         </h2>
         <p>
-          response.blurb
+          response.blurb0
+        </p>
+        <p>
+          response.blurb1
         </p>
         <h3
           class="fw-bold fs-2"

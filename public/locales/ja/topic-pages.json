@@ -1,9 +1,9 @@
 {
-    "galleryLabel": "Photo gallery",
+    "galleryLabel": "ギャラリー",
     "factsLabel": "More facts about this topic",
     "nav": [
-        { "refId": "about-topic", "label": "About this topic" },
-        { "refId": "prayer", "label": "Prayer points" },
-        { "refId": "topic-downloads", "label": "Resources" }
+        { "refId": "about-topic", "label": "テーマについて" },
+        { "refId": "prayer-response", "label": "祈りましょう" },
+        { "refId": "topic-downloads", "label": "資料" }
     ]
 }

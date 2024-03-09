@@ -30,15 +30,16 @@
         ],
         "prompt": "Order the e-book",
         "japan": "Order the Japanese booklet",
-        "warning": "We're only able to ship within Japan at this time.",
+        "warning": "<i>We're only able to ship within Japan at this time.</i>",
         "form": "Fill out the order form"
     },
     "response": {
         "title": "Responding in prayer",
-        "blurb": "We invite you to listen to a local believer pray for this topic and to respond with your own prayer to God. We also invite you to share the prayer points with others, or to send us your reflections using the form below.",
+        "blurb0": "We invite you to listen to a local believer pray for this topic and to respond with your own prayer to God.",
+        "blurb1": "We also invite you to share the prayer points with others, or to send us your reflections using the form below.",
         "recordingLabel": "Prayer recording",
         "feedbackLabel": "Share your reflections with us",
-        "feedbackTextPlaceholder": "Write your reflections or prayer insights here.",
+        "feedbackTextPlaceholder": "Write your reflections or prayer insights here. We'd love to hear from you.",
         "feedbackEmailPlaceholder": "Email address",
         "feedbackSubmit": "Submit"
     },

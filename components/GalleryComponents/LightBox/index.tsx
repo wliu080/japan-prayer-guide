@@ -1,6 +1,7 @@
 import React from "react"
 import { Left, Cross, LeftArrow, RightArrow } from "../../icons"
 import { Image } from "react-bootstrap"
+import { Trans } from "next-i18next"
 
 interface LightBoxProps {
     index: number
@@ -55,7 +56,9 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
                     </div>
                     <div className="lightbox-box">
                         <Image src={images[index].src} alt="light box" />
-                        <h1>{images[index].title}</h1>
+                        <h1>
+                            <Trans>{images[index].title}</Trans>
+                        </h1>
                     </div>
                     <div className="lightbox-auto lightbox-rightArrow">
                         {index + 1 !== images.length && (
