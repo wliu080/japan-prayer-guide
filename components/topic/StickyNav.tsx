@@ -93,7 +93,7 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
             style={{ maxWidth: "none" }}
             ref={bannerRef}
             data-testid={"sticky-nav-container"}
-            className="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav"
+            className="w-100 d-block sticky-top p-0 sticky-nav"
         >
             <div id="overview-nav" className="w-100" style={show ? {} : { height: "0px" }}></div>
             <div
