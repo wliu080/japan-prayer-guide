@@ -54,7 +54,7 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
             const bannerElement: any = bannerRef.current
             if (bannerElement) {
                 const { top } = bannerElement.getBoundingClientRect()
-                if (top === 0) {
+                if (top <= 0) {
                     setShow(true)
                 } else {
                     setShow(false)
