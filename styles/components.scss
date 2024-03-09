@@ -4,6 +4,14 @@
 // Topic Gallery
 // -------------------------
 
+.gallerySubtitle {
+    margin-left: -10px;
+    font-size: 20px;
+    @include media-breakpoint-down(med) {
+        font-size: 18px;
+    }
+}
+
 .gallerySpreadImage {
     aspect-ratio: 2.5;
     cursor: pointer;
@@ -395,6 +403,7 @@
 }
 
 .prayer-points-card {
+    border-radius: 4px;
     @include media-breakpoint-up(lg) {
         max-width: 646px;
     }
@@ -457,6 +466,12 @@
 
 #prayer-response {
     background-color: $grey-2;
+    p {
+        font-size: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+        }
+    }
 
     h2 {
         font-family: $font-family-secondary;
@@ -477,6 +492,38 @@
     .video-embed {
         position: relative;
         padding-bottom: 56.25% !important; /* 16:9 */
+        margin-bottom: 30px;
         height: 0;
+    }
+
+    .reflections-submission-heading {
+        font-size: 24px;
+        @include media-breakpoint-down(sm) {
+            font-size: 22px;
+        }
+    }
+}
+
+// -------------------------
+// Topic Downloadables
+// -------------------------
+
+#topic-downloads {
+    h1 {
+        font-family: $font-family-secondary;
+    }
+
+    p {
+        font-size: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+        }
+    }
+
+    .btn {
+        font-size: 19px;
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
     }
 }

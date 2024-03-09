@@ -5,6 +5,35 @@
 // Hero Image Section
 // -------------------------
 
+ul.bullet-points {
+    margin-bottom: 0px;
+    padding-inline-start:10px;
+    li {
+        padding-left: 10px;
+    }
+    li::marker {
+        content: "•";
+    }
+}
+
+
+.hero-section {
+    height: 904px;
+    @include media-breakpoint-down(md) {
+        height: 1009px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 784px;
+    }
+}
+
+.bullet-point {
+    font-size: $home-paragraph-text;
+    @include media-breakpoint-down(sm) {
+        font-size: $home-paragraph-text-mobile;
+    }
+}
+
 .hero-photo {
     position: absolute;
     top: 64px;
@@ -20,11 +49,60 @@
 
 .hero-title {
     font-family: $font-family-secondary;
+    font-size: 52px;
+    @include media-breakpoint-down(md) {
+        font-size: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 32px;
+    }
 }
 
 // -------------------------
 // Text content Section
 // -------------------------
+
+.card-body {
+    padding: 24px;
+    @include media-breakpoint-down(md) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#topic-prayer-topicTop {
+    @include media-breakpoint-down(md) {
+        max-width: 720px;
+    }
+    @include media-breakpoint-down(sm) {
+        max-width: 343px;
+    }
+}
+
+.main-section-container {
+    max-width: 1176px;
+    @include media-breakpoint-down(md) {
+        max-width: 745px;
+    }
+    @include media-breakpoint-down(sm) {
+        max-width: 343px;
+    }
+}
+
+.quote {
+    font-family: $font-family-secondary;
+    font-style: italic;
+    font-size: 32px;
+    @include media-breakpoint-down(md) {
+        font-size: 24px;
+    }
+}
+
 .main-content {
     font-size: 1.125rem;
 }

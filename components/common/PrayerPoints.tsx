@@ -61,7 +61,7 @@ export default function PrayerPoints({ topicTrans, displayStyle }: prayerProps) 
                 }
             >
                 {showImg && <Card.Img variant="top" src={featuredImg} className="prayer-img" />}
-                <Card.Body data-testid="prayer-points-body" className={"p-4 " + style}>
+                <Card.Body data-testid="prayer-points-body" className={style}>
                     {showTitle && (
                         <Card.Text
                             data-testid={"prayer-points-title"}
