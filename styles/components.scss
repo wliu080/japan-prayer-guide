@@ -445,6 +445,7 @@
 // -------------------------
 
 .sticky-nav {
+    position: -webkit-sticky;
     a {
         font-size: 1.125rem;
         color: black;
