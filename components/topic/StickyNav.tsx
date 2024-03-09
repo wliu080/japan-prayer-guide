@@ -13,6 +13,16 @@ interface StickyNavProps {
     tabs: Tab[]
 }
 
+function debounce(callback: any, delay: number) {
+    let timer: any = null
+    return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+            callback()
+        }, delay)
+    }
+}
+
 export const StickyNav = ({ tabs }: StickyNavProps) => {
     const bannerRef = useRef<HTMLDivElement>(null)
     const [selected, setSelected] = useState<string>(tabs[0].refId)
@@ -66,9 +76,11 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
             }
         }
 
-        window.addEventListener("scroll", handleScroll)
+        const debouncedScroll = debounce(handleScroll, 50)
+
+        window.addEventListener("scroll", debouncedScroll)
         return () => {
-            window.removeEventListener("scroll", handleScroll)
+            window.removeEventListener("scroll", debouncedScroll)
         }
     }, [])
 
