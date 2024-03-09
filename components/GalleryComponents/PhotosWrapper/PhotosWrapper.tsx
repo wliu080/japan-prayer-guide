@@ -8,14 +8,16 @@ interface PhotosWrapperProps {
         title: string
     }[]
     blocks?: number[]
+    subTitle?: string
 }
 
-export const PhotosWrapper = ({ type = "gallery", images = [], blocks = [] }: PhotosWrapperProps) => {
+export const PhotosWrapper = ({ type = "gallery", images = [], blocks = [], subTitle = "" }: PhotosWrapperProps) => {
     if (type === "mosaic") {
         return <Mosaic images={images} blocks={blocks} />
     }
     if (type === "gallery") {
-        return <NestedModal images={images} />
+        console.log(subTitle)
+        return <NestedModal images={images} subTitle={subTitle} />
     }
     return <></>
 }

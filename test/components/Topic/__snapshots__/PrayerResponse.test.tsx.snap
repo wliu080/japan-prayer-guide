@@ -25,12 +25,12 @@ exports[`Responding in Prayer Snapshot test 1`] = `
             response.blurb1
           </p>
           <h3
-            class="fw-bold fs-2"
+            class="mb-3 fw-bold fs-2"
           >
             response.recordingLabel
           </h3>
           <div
-            class="mb-5 video-embed"
+            class="video-embed"
           >
             <iframe
               allow="autoplay; fullscreen"
@@ -52,14 +52,14 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                 class="px-0 container-fluid"
                 data-testid="feedback"
               >
-                <h3
-                  class="fw-bold mt-0"
+                <p
+                  class="reflections-submission-heading fw-bold mt-0"
                 >
                   response.feedbackLabel
-                </h3>
+                </p>
                 <form
                   action="https://formbold.com/s/67Gj1"
-                  class=""
+                  class="mt-4"
                   method="POST"
                 >
                   <div
@@ -73,7 +73,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                     />
                   </div>
                   <div
-                    class="mb-3"
+                    class="mb-4"
                   >
                     <input
                       class="form-control"
@@ -117,12 +117,12 @@ exports[`Responding in Prayer Snapshot test 1`] = `
           response.blurb1
         </p>
         <h3
-          class="fw-bold fs-2"
+          class="mb-3 fw-bold fs-2"
         >
           response.recordingLabel
         </h3>
         <div
-          class="mb-5 video-embed"
+          class="video-embed"
         >
           <iframe
             allow="autoplay; fullscreen"
@@ -144,14 +144,14 @@ exports[`Responding in Prayer Snapshot test 1`] = `
               class="px-0 container-fluid"
               data-testid="feedback"
             >
-              <h3
-                class="fw-bold mt-0"
+              <p
+                class="reflections-submission-heading fw-bold mt-0"
               >
                 response.feedbackLabel
-              </h3>
+              </p>
               <form
                 action="https://formbold.com/s/67Gj1"
-                class=""
+                class="mt-4"
                 method="POST"
               >
                 <div
@@ -165,7 +165,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                   />
                 </div>
                 <div
-                  class="mb-3"
+                  class="mb-4"
                 >
                   <input
                     class="form-control"

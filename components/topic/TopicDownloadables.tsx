@@ -42,7 +42,7 @@ const ResourceCard = ({ icon, label, link, disabled = false, shrinkWidth = false
                         }
                     >
                         {icon}
-                        <p className={"fw-bold fs-4 my-0" + (shrinkWidth ? " shrinkWidth" : "")}>
+                        <p className={"fw-bold my-0" + (shrinkWidth ? " shrinkWidth" : "")}>
                             <Trans>{label}</Trans>
                         </p>
                     </Card.Body>
@@ -85,44 +85,46 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
                     <Trans t={t} i18nKey="downloads.description" />
                 </p>
             </Container>
-            <Row md={3} sm={2} className="g-3" data-testid={"topic-downloadables-links"}>
-                <ResourceCard
-                    icon={<RiDonutChartFill />}
-                    label={infographicsLabel}
-                    link={infographicsUrl}
-                    disabled={infographicsUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiImageFill />}
-                    label={photographyLabel}
-                    link={photographyUrl}
-                    disabled={photographyUrl === ""}
-                />
-                <ResourceCard icon={<RiFile3Line />} label={pdfLabel} link={pdfUrl} disabled={pdfUrl === ""} />
-                <ResourceCard
-                    icon={<FaPrayingHands />}
-                    label={prayerPtsLabel}
-                    link={prayerPtsUrl}
-                    disabled={prayerPtsUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiMic2Fill />}
-                    label={prayerVidLabel}
-                    link={prayerVidUrl}
-                    disabled={prayerVidUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiSlideshowLine />}
-                    label={slidesLabel}
-                    link={slidesUrl}
-                    disabled={slidesUrl === ""}
-                    shrinkWidth={true}
-                />
-            </Row>
+            <Container>
+                <Row md={3} sm={2} className="g-3" data-testid={"topic-downloadables-links"}>
+                    <ResourceCard
+                        icon={<RiDonutChartFill />}
+                        label={infographicsLabel}
+                        link={infographicsUrl}
+                        disabled={infographicsUrl === ""}
+                    />
+                    <ResourceCard icon={<RiFile3Line />} label={pdfLabel} link={pdfUrl} disabled={pdfUrl === ""} />
+                    <ResourceCard
+                        icon={<RiImageFill />}
+                        label={photographyLabel}
+                        link={photographyUrl}
+                        disabled={photographyUrl === ""}
+                    />
+                    <ResourceCard
+                        icon={<FaPrayingHands />}
+                        label={prayerPtsLabel}
+                        link={prayerPtsUrl}
+                        disabled={prayerPtsUrl === ""}
+                    />
+                    <ResourceCard
+                        icon={<RiMic2Fill />}
+                        label={prayerVidLabel}
+                        link={prayerVidUrl}
+                        disabled={prayerVidUrl === ""}
+                    />
+                    <ResourceCard
+                        icon={<RiSlideshowLine />}
+                        label={slidesLabel}
+                        link={slidesUrl}
+                        disabled={slidesUrl === ""}
+                        shrinkWidth={true}
+                    />
+                </Row>
+            </Container>
             <Link
                 href={downloadAllUrl}
                 className="align-self-center w-100"
-                style={{ maxWidth: "500px", cursor: "not-allowed" }}
+                style={{ maxWidth: "280px", cursor: "not-allowed" }}
                 locale={i18n.language}
             >
                 <Button

@@ -1,5 +1,6 @@
 {
     "galleryLabel": "Photo gallery",
+    "galleryClickInstructions": "Click photos to enlarge and view captions.",
     "factsLabel": "More facts about this topic",
     "nav": [
         { "refId": "about-topic", "label": "About" },

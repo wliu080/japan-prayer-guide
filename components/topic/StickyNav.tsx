@@ -82,25 +82,30 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
             data-testid={"sticky-nav-container"}
             className="w-100 d-flex align-items-center justify-content-center flex-column sticky-top px-0 sticky-nav"
         >
-            <div
-                data-testid={"topic-nav-links"}
-                className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
-            >
-                {tabs.map((tab, idx) => (
-                    <a
-                        key={tab.refId}
-                        className={
-                            "px-3 my-0 text-decoration-none fw-normal" +
-                            (selected === tab.refId
-                                ? " border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
-                                : "")
-                        }
-                        onClick={() => scrollToCustomPosition(tab.refId)}
-                        data-testid={"topic-nav-link" + idx}
+            <div className="w-100 d-flex justify-content-center bg-white">
+                <div className="limit-width d-flex justify-content-center border-bottom">
+                    <div
+                        data-testid={"topic-nav-links"}
+                        id="topic-nav-links"
+                        className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white text-center"
                     >
-                        <Trans>{tab.label}</Trans>
-                    </a>
-                ))}
+                        {tabs.map((tab, idx) => (
+                            <a
+                                key={tab.refId}
+                                className={
+                                    "px-3 my-0 text-decoration-none fw-normal w-100" +
+                                    (selected === tab.refId
+                                        ? " border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
+                                        : "")
+                                }
+                                onClick={() => scrollToCustomPosition(tab.refId)}
+                                data-testid={"topic-nav-link" + idx}
+                            >
+                                <Trans>{tab.label}</Trans>
+                            </a>
+                        ))}
+                    </div>
+                </div>
             </div>
         </Container>
     )
