@@ -5,7 +5,7 @@
 // -------------------------
 
 .gallerySpreadImage {
-    aspect-ratio: 2.5;
+    // aspect-ratio: 2.5;
     cursor: pointer;
     position: relative;
     padding: 0;
@@ -22,7 +22,7 @@
 }
 
 .gallerySpreadImage2 {
-    aspect-ratio: 1.5;
+    // aspect-ratio: 1.5;
     cursor: pointer;
     position: relative;
     padding: 0;
@@ -31,7 +31,7 @@
     img {
         width: 100%;
         padding: 10px 10px;
-        aspect-ratio: 1.5;
+        // aspect-ratio: 1.5;
         @include media-breakpoint-down(md) {
             padding: 2px;
         }
@@ -286,6 +286,10 @@
         margin-bottom: 10px;
         // preserve spaces if tags (like <i> or <sup>) are used throughout
         white-space: pre-wrap;
+        position: relative;
+        @include media-breakpoint-down(sm) {
+            top: -50px;
+        }
     }
 
     .lightbox-auto {
