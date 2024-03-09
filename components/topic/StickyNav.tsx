@@ -13,20 +13,8 @@ interface StickyNavProps {
     tabs: Tab[]
 }
 
-function debounce(callback: any, delay: number) {
-    let timer: any = null
-    return function () {
-        clearTimeout(timer)
-        timer = setTimeout(() => {
-            callback()
-        }, delay)
-    }
-}
-
 export const StickyNav = ({ tabs }: StickyNavProps) => {
-    const bannerRef = useRef<HTMLDivElement>(null)
     const [selected, setSelected] = useState<string>(tabs[0].refId)
-    const [show, setShow] = useState(false)
     const isScrolling = useRef(false)
 
     const highlightCurrentNavLink = () => {
@@ -61,26 +49,14 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const bannerElement: any = bannerRef.current
-            if (bannerElement) {
-                const { top } = bannerElement.getBoundingClientRect()
-                if (top <= 0) {
-                    setShow(true)
-                } else {
-                    setShow(false)
-                }
-            }
-
             if (!isScrolling.current) {
                 highlightCurrentNavLink()
             }
         }
 
-        const debouncedScroll = debounce(handleScroll, 50)
-
-        window.addEventListener("scroll", debouncedScroll)
+        window.addEventListener("scroll", handleScroll)
         return () => {
-            window.removeEventListener("scroll", debouncedScroll)
+            window.removeEventListener("scroll", handleScroll)
         }
     }, [])
 
@@ -103,11 +79,9 @@ export const StickyNav = ({ tabs }: StickyNavProps) => {
     return (
         <Container
             style={{ maxWidth: "none" }}
-            ref={bannerRef}
             data-testid={"sticky-nav-container"}
-            className="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav"
+            className="w-100 d-flex align-items-center justify-content-center flex-column sticky-top px-0 sticky-nav"
         >
-            <div id="overview-nav" className="w-100" style={show ? {} : { height: "0px" }}></div>
             <div
                 data-testid={"topic-nav-links"}
                 className="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
