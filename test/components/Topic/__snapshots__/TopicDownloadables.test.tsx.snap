@@ -63,7 +63,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold fs-4 my-0"
                   >
                     downloads.infographicsLabel
                   </p>
@@ -107,7 +107,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold fs-4 my-0"
                   >
                     downloads.photographyLabel
                   </p>
@@ -151,7 +151,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold fs-4 my-0"
                   >
                     downloads.pdfLabel
                   </p>
@@ -189,7 +189,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     />
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold fs-4 my-0"
                   >
                     downloads.prayerPtsLabel
                   </p>
@@ -233,7 +233,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold fs-4 my-0"
                   >
                     downloads.prayerVidLabel
                   </p>
@@ -277,7 +277,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold fs-4 my-0 shrinkWidth"
                   >
                     downloads.slidesLabel
                   </p>
@@ -367,7 +367,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                   </g>
                 </svg>
                 <p
-                  class="text-center fw-bold fs-4 my-0"
+                  class="fw-bold fs-4 my-0"
                 >
                   downloads.infographicsLabel
                 </p>
@@ -411,7 +411,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                   </g>
                 </svg>
                 <p
-                  class="text-center fw-bold fs-4 my-0"
+                  class="fw-bold fs-4 my-0"
                 >
                   downloads.photographyLabel
                 </p>
@@ -455,7 +455,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                   </g>
                 </svg>
                 <p
-                  class="text-center fw-bold fs-4 my-0"
+                  class="fw-bold fs-4 my-0"
                 >
                   downloads.pdfLabel
                 </p>
@@ -493,7 +493,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                   />
                 </svg>
                 <p
-                  class="text-center fw-bold fs-4 my-0"
+                  class="fw-bold fs-4 my-0"
                 >
                   downloads.prayerPtsLabel
                 </p>
@@ -537,7 +537,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                   </g>
                 </svg>
                 <p
-                  class="text-center fw-bold fs-4 my-0"
+                  class="fw-bold fs-4 my-0"
                 >
                   downloads.prayerVidLabel
                 </p>
@@ -581,7 +581,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                   </g>
                 </svg>
                 <p
-                  class="text-center fw-bold fs-4 my-0"
+                  class="fw-bold fs-4 my-0 shrinkWidth"
                 >
                   downloads.slidesLabel
                 </p>
