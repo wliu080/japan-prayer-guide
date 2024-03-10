@@ -48,7 +48,7 @@ describe("Responding in Prayer", () => {
 
         const feedbackSection = screen.getByTestId("feedback")
         const feedbackTitle = responseSection.querySelector("h3")
-        const feedbackLabel = feedbackSection.querySelector('label[for="floatingTextArea"]')
+        const feedbackLabel = feedbackSection.querySelector("textarea[name='message']")
         const feedbackEmail: HTMLInputElement = feedbackSection.querySelector('input[type="email"]') as HTMLInputElement
         const feedbackSubmit = feedbackSection.querySelector('button[type="submit"]')
 
@@ -56,7 +56,7 @@ describe("Responding in Prayer", () => {
         expect(responseTitle).toHaveClass("fw-bold", "text-primary")
 
         expect(feedbackTitle?.textContent).toBe("response.recordingLabel")
-        expect(feedbackLabel?.textContent).toBe("response.feedbackTextPlaceholder")
+        expect(feedbackLabel?.getAttribute("placeholder")).toBe("response.feedbackTextPlaceholder")
         expect(feedbackEmail?.type).toBe("email")
 
         expect(feedbackSubmit).toHaveClass("fw-bold", "px-4", "py-2")
