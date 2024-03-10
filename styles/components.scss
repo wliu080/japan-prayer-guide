@@ -381,6 +381,7 @@
                 max-width: fit-content;
             }
         }
+        
     }
 
     .prayer-img {
@@ -516,6 +517,8 @@
         @include media-breakpoint-down(sm) {
             font-size: 22px;
         }
+        font-family: $font-family-secondary;
+        font-weight: 700;
     }
 }
 
@@ -524,7 +527,7 @@
 // -------------------------
 
 #topic-downloads {
-    h1 {
+    h2 {
         font-family: $font-family-secondary;
     }
 

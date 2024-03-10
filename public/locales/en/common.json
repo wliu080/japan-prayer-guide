@@ -30,7 +30,7 @@
         ],
         "prompt": "Order the e-book",
         "japan": "Order the Japanese booklet",
-        "warning": "<i>We're only able to ship within Japan at this time.</i>",
+        "warning": "We're only able to ship within Japan at this time.",
         "form": "Fill out the order form"
     },
     "response": {

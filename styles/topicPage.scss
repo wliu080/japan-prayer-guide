@@ -7,13 +7,6 @@
 
 ul.bullet-points {
     margin-bottom: 0px;
-    padding-inline-start:10px;
-    li {
-        padding-left: 10px;
-    }
-    li::marker {
-        content: "•";
-    }
 }
 
 
@@ -28,10 +21,8 @@ ul.bullet-points {
 }
 
 .bullet-point {
-    font-size: $home-paragraph-text;
-    @include media-breakpoint-down(sm) {
-        font-size: $home-paragraph-text-mobile;
-    }
+    // match article text size (.main-content)
+    font-size: 1.125rem;
 }
 
 .hero-photo {
@@ -65,13 +56,12 @@ ul.bullet-points {
 .card-body {
     padding: 24px;
     @include media-breakpoint-down(md) {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding: 16px 24px 16px 24px;
+        padding: 10px;
     }
     @include media-breakpoint-down(sm) {
-        padding: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        // padding: 10px 10px 10px 10px;
+        padding: 8px;
     }
 }
 
