@@ -232,12 +232,12 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
 
     $bullet-point-factor: 1px;
     .bullet-point {
-        font-size: $home-paragraph-text - $bullet-point-factor;
+        font-size: $home-paragraph-text ;
         @include media-breakpoint-down(xl) {
-            font-size: $home-paragraph-text-tablet - $bullet-point-factor;
+            font-size: $home-paragraph-text-tablet ;
         }
         @include media-breakpoint-down(md) {
-            font-size: $home-paragraph-text-mobile - $bullet-point-factor;
+            font-size: $home-paragraph-text-mobile ;
         }
     }
 

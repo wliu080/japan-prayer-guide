@@ -47,7 +47,7 @@ export const TopicOverviewSection = ({ title, section, topics }: TopicOverviewPr
                                         >
                                             <Image
                                                 src={
-                                                    idx === 0
+                                                    idx === 0 && section === "culture"
                                                         ? "/photos/topic-nav/culture/popular-religious-practices.png"
                                                         : `/photos/topic-nav/${section}/placeholder.png`
                                                 }

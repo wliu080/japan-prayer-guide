@@ -56,7 +56,7 @@ describe("Prayer Points", () => {
         const prayerPoints = screen.getByTestId("prayer-points-points").children
 
         expect(componentContainer).toHaveClass("d-flex", "container", "px-6")
-        expect(cardBody).toHaveClass("p-4", expectedDisplayStyle)
+        expect(cardBody).toHaveClass("card-body", expectedDisplayStyle)
         // expect(TopicPrayerPointsTitle).toHaveClass("px-2", "pb-3", "d-flex")
 
         expect(prayerPoints.length).toBe(3)
@@ -82,7 +82,7 @@ describe("Prayer Points", () => {
 
         expect(componentContainer).toHaveClass("d-flex", "container", "px-6")
         expect(title).toHaveClass("px-2", "pb-2", "fs-2", "border-bottom", "border-grey", "prayer-title", "card-text")
-        expect(cardBody).toHaveClass("p-4", expectedDisplayStyle)
+        expect(cardBody).toHaveClass("card-body", expectedDisplayStyle)
 
         expect(prayerPoints.length).toBe(2)
         expect(prayerPoints[0]).toHaveClass("my-2 bullet-point")

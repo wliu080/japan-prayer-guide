@@ -19,17 +19,17 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                 <h2 className="fw-bold text-primary">
                     <Trans t={common} i18nKey="response.title" />
                 </h2>
-                <p>
+                <p className="mt-3">
                     <Trans t={common} i18nKey="response.blurb0" />
                 </p>
                 <p>
                     <Trans t={common} i18nKey="response.blurb1" />
                 </p>
 
-                <h3 className="fw-bold fs-2">
+                <h3 className="mb-3 fw-bold fs-2">
                     <Trans t={common} i18nKey="response.recordingLabel" />
                 </h3>
-                <div className="mb-5 video-embed">
+                <div className="video-embed">
                     {couldLoadVideo ? (
                         <iframe
                             className="d-flex align-content-start"
@@ -56,11 +56,11 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                         <PrayerPoints topicTrans={topicTrans} displayStyle={PrayerDisplayStyle.TopicBottom} />
                     </Col>
                     <Col lg={6} md={12}>
-                        <Container data-testid="feedback" fluid className="px-0">
-                            <h3 className="fw-bold mt-0">
+                        <Container data-testid="feedback" fluid className="px-0 pt-4">
+                            <p className="reflections-submission-heading fw-bold mt-0">
                                 <Trans t={common} i18nKey="response.feedbackLabel" />
-                            </h3>
-                            <Form action="https://formbold.com/s/67Gj1" method="POST">
+                            </p>
+                            <Form action="https://formbold.com/s/67Gj1" method="POST" className="mt-3">
                                 <Form.Group className="mb-2">
                                     <FloatingLabel
                                         controlId="floatingTextArea"
@@ -78,7 +78,7 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                                 <Form.Group className="mb-3">
                                     <Form.Control type="email" name="email" placeholder={emailPlaceholder} />
                                 </Form.Group>
-                                <Button variant="outline-primary" className="fw-bold px-4 py-2" type="submit">
+                                <Button variant="outline-primary" className="fw-bold px-3" type="submit">
                                     <Trans t={common} i18nKey="response.feedbackSubmit" />
                                 </Button>
                             </Form>

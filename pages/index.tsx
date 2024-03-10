@@ -65,7 +65,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                                 <Trans t={t} i18nKey="heroHeading" />
                             </h1>
                             <Link href="/topics/all" locale={i18n.language}>
-                                <Button className="text-white my-3 bg-secondary-5 border-secondary-5 hero-button">
+                                <Button className="fw-bold text-white my-3 bg-secondary-5 border-secondary-5 hero-button">
                                     <Trans t={t} i18nKey="titleButton" />
                                 </Button>
                             </Link>
@@ -207,7 +207,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
             </IconContext.Provider>
           </Container> */}
 
-                    <Button className="coming-soon-button fs-4 bg-grey-4 text-white px-3 text-center border-0 mt-3 mb-3 w-100">
+                    <Button className="fw-bold coming-soon-button fs-4 bg-grey-4 text-white px-3 text-center border-0 mt-3 mb-3 w-100">
                         <Trans t={t} i18nKey="comingSoon" />
                     </Button>
                 </div>
@@ -226,7 +226,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                         <Trans t={t} i18nKey="learnBlurb" />
                     </div>
                     <Link href="/about" locale={i18n.language}>
-                        <Button className="fs-4 text-nowrap border-white px-4 text-white text-center bg-grey-7 mt-2 mb-4">
+                        <Button className="fw-bold fs-4 text-nowrap border-white px-3 text-white text-center bg-grey-7 mt-2 mb-4">
                             <Trans t={t} i18nKey="learnMoreAbout" />
                         </Button>
                     </Link>
