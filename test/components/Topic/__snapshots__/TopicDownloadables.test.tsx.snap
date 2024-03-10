@@ -237,7 +237,6 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </svg>
                     <p
                       class="fw-bold my-0"
-
                     >
                       downloads.prayerVidLabel
                     </p>
