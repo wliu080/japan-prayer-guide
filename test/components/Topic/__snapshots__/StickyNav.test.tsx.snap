@@ -11,6 +11,11 @@ exports[`Sticky Nav Snapshot test 1`] = `
         style="max-width: none;"
       >
         <div
+          class="w-100"
+          id="overview-nav"
+          style="height: 0px;"
+        />
+        <div
           class="w-100 d-flex justify-content-center bg-white"
         >
           <div
@@ -51,6 +56,11 @@ exports[`Sticky Nav Snapshot test 1`] = `
       data-testid="sticky-nav-container"
       style="max-width: none;"
     >
+      <div
+        class="w-100"
+        id="overview-nav"
+        style="height: 0px;"
+      />
       <div
         class="w-100 d-flex justify-content-center bg-white"
       >
