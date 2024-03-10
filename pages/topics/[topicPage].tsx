@@ -64,6 +64,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const galleryLabel: string = topicCommon("galleryLabel")
     //const factsLabel: string = topicCommon("factsLabel")
     const galleryClickInstructions: string = topicCommon("galleryClickInstructions")
+    const galleryImageText: string = topicCommon("galleryImageText")
 
     const images: any[] = t("photos", { returnObjects: true })
     const galleryType: string = t("galleryType")
@@ -131,6 +132,8 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                             type={galleryType}
                             blocks={blockOrder}
                             subTitle={galleryClickInstructions}
+                            galleryTitle={galleryLabel}
+                            imageText={galleryImageText}
                         />
                     </CollapseBlock>
 
@@ -150,15 +153,14 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     </Container>
                 </Container>
 
-                <Container fluid className="bg-grey-2">
-                    <Container className="main-section-container">
+                <Container fluid className="bg-grey-2 px-0">
+                    <Container className="main-section-container px-0">
                         {/* Responding in Prayer */}
                         <PrayerResponse topicTrans={t} />
                     </Container>
                 </Container>
-                <br />
 
-                <Container className="main-section-container">
+                <Container className="main-section-container px-0">
                     {/* Downloads and Related */}
                     <TopicDownloadables topicTrans={t} />
                     {/* <RelatedContent topicTrans={t} /> */}

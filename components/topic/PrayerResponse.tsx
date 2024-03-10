@@ -19,7 +19,7 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                 <h2 className="fw-bold text-primary">
                     <Trans t={common} i18nKey="response.title" />
                 </h2>
-                <p>
+                <p className="mt-3">
                     <Trans t={common} i18nKey="response.blurb0" />
                 </p>
                 <p>
@@ -56,11 +56,11 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                         <PrayerPoints topicTrans={topicTrans} displayStyle={PrayerDisplayStyle.TopicBottom} />
                     </Col>
                     <Col lg={6} md={12}>
-                        <Container data-testid="feedback" fluid className="px-0">
+                        <Container data-testid="feedback" fluid className="px-0 pt-4">
                             <p className="reflections-submission-heading fw-bold mt-0">
                                 <Trans t={common} i18nKey="response.feedbackLabel" />
                             </p>
-                            <Form action="https://formbold.com/s/67Gj1" method="POST" className="mt-4">
+                            <Form action="https://formbold.com/s/67Gj1" method="POST" className="mt-3">
                                 <Form.Group className="mb-2">
                                     <FloatingLabel
                                         controlId="floatingTextArea"
@@ -75,10 +75,10 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                                         />
                                     </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
+                                <Form.Group className="mb-3">
                                     <Form.Control type="email" name="email" placeholder={emailPlaceholder} />
                                 </Form.Group>
-                                <Button variant="outline-primary" className="fw-bold px-4 py-2" type="submit">
+                                <Button variant="outline-primary" className="fw-bold px-3" type="submit">
                                     <Trans t={common} i18nKey="response.feedbackSubmit" />
                                 </Button>
                             </Form>

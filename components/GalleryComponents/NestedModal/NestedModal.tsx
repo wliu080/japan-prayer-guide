@@ -23,9 +23,11 @@ interface NestedModalProps {
         title: string
     }[]
     subTitle: string
+    galleryTitle: string
+    imageText: string
 }
 
-export const NestedModal = ({ images, subTitle }: NestedModalProps) => {
+export const NestedModal = ({ images, subTitle, galleryTitle, imageText }: NestedModalProps) => {
     const [open, setOpen] = React.useState(false)
 
     const handleOpen = () => {
@@ -40,7 +42,7 @@ export const NestedModal = ({ images, subTitle }: NestedModalProps) => {
 
     return (
         <div>
-            <div className="container" style={{ marginTop: "20px" }}>
+            <div className="container" style={{ marginTop: "12px" }}>
                 <p className="gallerySubtitle">{subTitle}</p>
                 <Row className="galleryContainer" xl={4} sm={2} md={2}>
                     {[...images].splice(0, 4).map((item, index) => {
@@ -57,7 +59,6 @@ export const NestedModal = ({ images, subTitle }: NestedModalProps) => {
                                     <Image key={index} src={item.src} className="galleryImage" alt="logo" />
                                     <div className="galleryMoreOverlay">
                                         <div className="galleryMoreNumber">{`+${images.length - 4}`}</div>
-                                        <div className="galleryMoreText">photos</div>
                                     </div>
                                 </div>
                             )
@@ -87,6 +88,8 @@ export const NestedModal = ({ images, subTitle }: NestedModalProps) => {
                             setImage={setImage}
                             lightBox={lightBox}
                             setLightBox={setLightBox}
+                            galleryTitle={galleryTitle}
+                            imageText={imageText}
                         />
                     </Box>
                 </Slide>
