@@ -13,12 +13,12 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         <div
           class="container"
         >
-          <h1
-            class="text-primary mt-4 mb-3 fs-1"
+          <h2
+            class="fw-bold text-primary mt-4 mb-3"
             data-testid="topic-downloadables-title"
           >
             downloads.title
-          </h1>
+          </h2>
           <p>
             downloads.description
           </p>
@@ -40,7 +40,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               >
                 <div
                   class="shadow-sm border-0 rounded card"
-                  style="min-height: 125px;"
+                  style="min-height: 100px;"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -66,7 +66,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                       </g>
                     </svg>
                     <p
-                      class="fw-bold my-0"
+                      class="text-left fw-bold my-0"
                     >
                       downloads.infographicsLabel
                     </p>
@@ -84,7 +84,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               >
                 <div
                   class="shadow-sm border-0 rounded card"
-                  style="min-height: 125px;"
+                  style="min-height: 100px;"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -110,7 +110,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                       </g>
                     </svg>
                     <p
-                      class="fw-bold my-0"
+                      class="text-left fw-bold my-0"
                     >
                       downloads.pdfLabel
                     </p>
@@ -128,7 +128,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               >
                 <div
                   class="shadow-sm border-0 rounded card"
-                  style="min-height: 125px;"
+                  style="min-height: 100px;"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -154,7 +154,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                       </g>
                     </svg>
                     <p
-                      class="fw-bold my-0"
+                      class="text-left fw-bold my-0"
                     >
                       downloads.photographyLabel
                     </p>
@@ -172,7 +172,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               >
                 <div
                   class="shadow-sm border-0 rounded card"
-                  style="min-height: 125px;"
+                  style="min-height: 100px;"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -192,7 +192,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                       />
                     </svg>
                     <p
-                      class="fw-bold my-0"
+                      class="text-left fw-bold my-0"
                     >
                       downloads.prayerPtsLabel
                     </p>
@@ -210,7 +210,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               >
                 <div
                   class="shadow-sm border-0 rounded card"
-                  style="min-height: 125px;"
+                  style="min-height: 100px;"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -236,7 +236,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                       </g>
                     </svg>
                     <p
-                      class="fw-bold my-0"
+                      class="text-left fw-bold my-0"
                     >
                       downloads.prayerVidLabel
                     </p>
@@ -254,7 +254,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               >
                 <div
                   class="shadow-sm border-0 rounded card"
-                  style="min-height: 125px;"
+                  style="min-height: 100px;"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -280,7 +280,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                       </g>
                     </svg>
                     <p
-                      class="fw-bold my-0 shrinkWidth"
+                      class="text-left fw-bold my-0"
                     >
                       downloads.slidesLabel
                     </p>
@@ -296,18 +296,12 @@ exports[`Topic Downloadables Snapshot test 1`] = `
           style="max-width: 280px; cursor: not-allowed;"
         >
           <button
-            class="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder btn btn-primary"
+            class="align-self-center w-100 mt-4 px-3 text-white bg-secondary-5 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
             disabled=""
             type="button"
           >
             downloads.downloadAllBtn
           </button>
-        </a>
-        <a
-          class="align-self-center my-3 text-secondary-5 fw-bolder fs-5"
-          href="/resources"
-        >
-          downloads.viewAllBtn
         </a>
       </div>
     </div>
@@ -321,12 +315,12 @@ exports[`Topic Downloadables Snapshot test 1`] = `
       <div
         class="container"
       >
-        <h1
-          class="text-primary mt-4 mb-3 fs-1"
+        <h2
+          class="fw-bold text-primary mt-4 mb-3"
           data-testid="topic-downloadables-title"
         >
           downloads.title
-        </h1>
+        </h2>
         <p>
           downloads.description
         </p>
@@ -348,7 +342,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             >
               <div
                 class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                style="min-height: 100px;"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -374,7 +368,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="fw-bold my-0"
+                    class="text-left fw-bold my-0"
                   >
                     downloads.infographicsLabel
                   </p>
@@ -392,7 +386,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             >
               <div
                 class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                style="min-height: 100px;"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -418,7 +412,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="fw-bold my-0"
+                    class="text-left fw-bold my-0"
                   >
                     downloads.pdfLabel
                   </p>
@@ -436,7 +430,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             >
               <div
                 class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                style="min-height: 100px;"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -462,7 +456,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="fw-bold my-0"
+                    class="text-left fw-bold my-0"
                   >
                     downloads.photographyLabel
                   </p>
@@ -480,7 +474,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             >
               <div
                 class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                style="min-height: 100px;"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -500,7 +494,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     />
                   </svg>
                   <p
-                    class="fw-bold my-0"
+                    class="text-left fw-bold my-0"
                   >
                     downloads.prayerPtsLabel
                   </p>
@@ -518,7 +512,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             >
               <div
                 class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                style="min-height: 100px;"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -544,7 +538,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="fw-bold my-0"
+                    class="text-left fw-bold my-0"
                   >
                     downloads.prayerVidLabel
                   </p>
@@ -562,7 +556,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             >
               <div
                 class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                style="min-height: 100px;"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -588,7 +582,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="fw-bold my-0 shrinkWidth"
+                    class="text-left fw-bold my-0"
                   >
                     downloads.slidesLabel
                   </p>
@@ -604,18 +598,12 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         style="max-width: 280px; cursor: not-allowed;"
       >
         <button
-          class="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder btn btn-primary"
+          class="align-self-center w-100 mt-4 px-3 text-white bg-secondary-5 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
           disabled=""
           type="button"
         >
           downloads.downloadAllBtn
         </button>
-      </a>
-      <a
-        class="align-self-center my-3 text-secondary-5 fw-bolder fs-5"
-        href="/resources"
-      >
-        downloads.viewAllBtn
       </a>
     </div>
   </div>,

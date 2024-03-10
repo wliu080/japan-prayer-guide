@@ -31,7 +31,7 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
     }
 
     useEffect(() => {
-        const keyDownHandler = (e) => {
+        const keyDownHandler = (e: KeyboardEvent) => {
             if (e.code === "ArrowRight") {
                 handleSwitch("inc")
             }

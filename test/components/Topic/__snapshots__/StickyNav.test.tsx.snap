@@ -11,36 +11,32 @@ exports[`Sticky Nav Snapshot test 1`] = `
         style="max-width: none;"
       >
         <div
-          class="w-100 d-flex justify-content-center bg-white"
+          class="w-100"
+          id="overview-nav"
+          style="height: 0px;"
+        />
+        <div
+          class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
+          data-testid="topic-nav-links"
         >
-          <div
-            class="limit-width d-flex justify-content-center border-bottom"
+          <a
+            class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
+            data-testid="topic-nav-link0"
           >
-            <div
-              class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white text-center"
-              data-testid="topic-nav-links"
-              id="topic-nav-links"
-            >
-              <a
-                class="px-3 my-0 text-decoration-none fw-normal w-100 border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
-                data-testid="topic-nav-link0"
-              >
-                abc
-              </a>
-              <a
-                class="px-3 my-0 text-decoration-none fw-normal w-100"
-                data-testid="topic-nav-link1"
-              >
-                def
-              </a>
-              <a
-                class="px-3 my-0 text-decoration-none fw-normal w-100"
-                data-testid="topic-nav-link2"
-              >
-                ghi
-              </a>
-            </div>
-          </div>
+            abc
+          </a>
+          <a
+            class="px-3 my-0 text-decoration-none fw-normal"
+            data-testid="topic-nav-link1"
+          >
+            def
+          </a>
+          <a
+            class="px-3 my-0 text-decoration-none fw-normal"
+            data-testid="topic-nav-link2"
+          >
+            ghi
+          </a>
         </div>
       </div>
     </div>
@@ -52,36 +48,32 @@ exports[`Sticky Nav Snapshot test 1`] = `
       style="max-width: none;"
     >
       <div
-        class="w-100 d-flex justify-content-center bg-white"
+        class="w-100"
+        id="overview-nav"
+        style="height: 0px;"
+      />
+      <div
+        class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
+        data-testid="topic-nav-links"
       >
-        <div
-          class="limit-width d-flex justify-content-center border-bottom"
+        <a
+          class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
+          data-testid="topic-nav-link0"
         >
-          <div
-            class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white text-center"
-            data-testid="topic-nav-links"
-            id="topic-nav-links"
-          >
-            <a
-              class="px-3 my-0 text-decoration-none fw-normal w-100 border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
-              data-testid="topic-nav-link0"
-            >
-              abc
-            </a>
-            <a
-              class="px-3 my-0 text-decoration-none fw-normal w-100"
-              data-testid="topic-nav-link1"
-            >
-              def
-            </a>
-            <a
-              class="px-3 my-0 text-decoration-none fw-normal w-100"
-              data-testid="topic-nav-link2"
-            >
-              ghi
-            </a>
-          </div>
-        </div>
+          abc
+        </a>
+        <a
+          class="px-3 my-0 text-decoration-none fw-normal"
+          data-testid="topic-nav-link1"
+        >
+          def
+        </a>
+        <a
+          class="px-3 my-0 text-decoration-none fw-normal"
+          data-testid="topic-nav-link2"
+        >
+          ghi
+        </a>
       </div>
     </div>
   </div>,
