@@ -18,19 +18,21 @@ exports[`Responding in Prayer Snapshot test 1`] = `
           >
             response.title
           </h2>
-          <p>
+          <p
+            class="mt-3"
+          >
             response.blurb0
           </p>
           <p>
             response.blurb1
           </p>
           <h3
-            class="fw-bold fs-2"
+            class="mb-3 fw-bold fs-2"
           >
             response.recordingLabel
           </h3>
           <div
-            class="mb-5 video-embed"
+            class="video-embed"
           >
             <iframe
               allow="autoplay; fullscreen"
@@ -49,17 +51,17 @@ exports[`Responding in Prayer Snapshot test 1`] = `
               class="col-lg-6 col-md-12"
             >
               <div
-                class="px-0 container-fluid"
+                class="px-0 pt-4 container-fluid"
                 data-testid="feedback"
               >
-                <h3
-                  class="fw-bold mt-0"
+                <p
+                  class="reflections-submission-heading fw-bold mt-0"
                 >
                   response.feedbackLabel
-                </h3>
+                </p>
                 <form
                   action="https://formbold.com/s/67Gj1"
-                  class=""
+                  class="mt-3"
                   method="POST"
                 >
                   <div
@@ -93,7 +95,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                     />
                   </div>
                   <button
-                    class="fw-bold px-4 py-2 btn btn-outline-primary"
+                    class="fw-bold px-3 btn btn-outline-primary"
                     type="submit"
                   >
                     response.feedbackSubmit
@@ -120,19 +122,21 @@ exports[`Responding in Prayer Snapshot test 1`] = `
         >
           response.title
         </h2>
-        <p>
+        <p
+          class="mt-3"
+        >
           response.blurb0
         </p>
         <p>
           response.blurb1
         </p>
         <h3
-          class="fw-bold fs-2"
+          class="mb-3 fw-bold fs-2"
         >
           response.recordingLabel
         </h3>
         <div
-          class="mb-5 video-embed"
+          class="video-embed"
         >
           <iframe
             allow="autoplay; fullscreen"
@@ -151,17 +155,17 @@ exports[`Responding in Prayer Snapshot test 1`] = `
             class="col-lg-6 col-md-12"
           >
             <div
-              class="px-0 container-fluid"
+              class="px-0 pt-4 container-fluid"
               data-testid="feedback"
             >
-              <h3
-                class="fw-bold mt-0"
+              <p
+                class="reflections-submission-heading fw-bold mt-0"
               >
                 response.feedbackLabel
-              </h3>
+              </p>
               <form
                 action="https://formbold.com/s/67Gj1"
-                class=""
+                class="mt-3"
                 method="POST"
               >
                 <div
@@ -195,7 +199,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                   />
                 </div>
                 <button
-                  class="fw-bold px-4 py-2 btn btn-outline-primary"
+                  class="fw-bold px-3 btn btn-outline-primary"
                   type="submit"
                 >
                   response.feedbackSubmit

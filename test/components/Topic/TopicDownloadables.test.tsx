@@ -65,7 +65,7 @@ describe("Topic Downloadables", () => {
         expect(topicDownloadablesCont).toHaveClass("d-flex", "flex-column", "my-5")
 
         expect(topicDownloadablesTitle).toHaveTextContent("downloads.title")
-        expect(topicDownloadablesTitle).toHaveClass("text-primary", "mt-4", "mb-3", "fs-1")
+        expect(topicDownloadablesTitle).toHaveClass("text-primary", "mt-4", "mb-3", "fw-bold")
 
         expect(topicDownloadablesLinks.length).toBe(6)
         expect(topicDownloadablesLinks[0]).toHaveTextContent("downloads.infographicsLabel")

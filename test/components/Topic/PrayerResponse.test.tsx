@@ -59,7 +59,7 @@ describe("Responding in Prayer", () => {
         expect(feedbackLabel?.textContent).toBe("response.feedbackTextPlaceholder")
         expect(feedbackEmail?.type).toBe("email")
 
-        expect(feedbackSubmit).toHaveClass("fw-bold", "px-4", "py-2")
+        expect(feedbackSubmit).toHaveClass("fw-bold", "px-3", "btn", "btn-outline-primary")
         expect(feedbackSubmit?.textContent).toBe("response.feedbackSubmit")
     })
 })
