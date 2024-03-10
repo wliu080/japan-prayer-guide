@@ -61,7 +61,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                 </p>
                 <form
                   action="https://formbold.com/s/67Gj1"
-                  class="mt-4"
+                  class="mt-3"
                   method="POST"
                 >
                   <div
@@ -75,7 +75,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                     />
                   </div>
                   <div
-                    class="mb-4"
+                    class="mb-3"
                   >
                     <input
                       class="form-control"
@@ -155,7 +155,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
               </p>
               <form
                 action="https://formbold.com/s/67Gj1"
-                class="mt-4"
+                class="mt-3"
                 method="POST"
               >
                 <div
@@ -169,7 +169,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
                   />
                 </div>
                 <div
-                  class="mb-4"
+                  class="mb-3"
                 >
                   <input
                     class="form-control"
