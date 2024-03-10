@@ -1,4 +1,3 @@
-import Gallery from "../Gallery"
 import { Mosaic } from "../Mosaic/Mosaic"
 import { NestedModal } from "../NestedModal/NestedModal"
 
