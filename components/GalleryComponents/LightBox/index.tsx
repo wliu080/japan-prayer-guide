@@ -73,10 +73,10 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
                     </div>
                     <div className="lightbox-box">
                         <Image src={images[index].src} alt="light box" />
-                        <h1>
-                            <Trans>{images[index].title}</Trans>
-                        </h1>
                     </div>
+                    <h1>
+                        <Trans>{images[index].title}</Trans>
+                    </h1>
                     <div className="lightbox-auto lightbox-rightArrow">
                         {index + 1 !== images.length && (
                             <span className="lightbox-arrow" onClick={() => handleSwitch("inc")}>

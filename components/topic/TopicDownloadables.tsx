@@ -42,7 +42,7 @@ const ResourceCard = ({ icon, label, link, disabled = false, shrinkWidth = false
                         }
                     >
                         {icon}
-                        <p className={"fw-bold fs-4 my-0" + (shrinkWidth ? " shrinkWidth" : "")}>
+                        <p className={"fw-bold my-0" + (shrinkWidth ? " shrinkWidth" : "")}>
                             <Trans>{label}</Trans>
                         </p>
                     </Card.Body>

@@ -1,6 +1,6 @@
 import { TFunction, Trans, useTranslation } from "next-i18next"
 import React from "react"
-import { Col, Container, FloatingLabel, Form, Row } from "react-bootstrap"
+import { Col, Container, Form, Row } from "react-bootstrap"
 import Button from "react-bootstrap/Button"
 import PrayerPoints, { PrayerDisplayStyle } from "../common/PrayerPoints"
 
@@ -62,18 +62,12 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                             </p>
                             <Form action="https://formbold.com/s/67Gj1" method="POST" className="mt-3">
                                 <Form.Group className="mb-2">
-                                    <FloatingLabel
-                                        controlId="floatingTextArea"
-                                        label={textPlaceholder}
-                                        className="text-muted"
-                                    >
-                                        <Form.Control
-                                            as="textarea"
-                                            name="message"
-                                            placeholder={textPlaceholder}
-                                            style={{ height: "100px" }}
-                                        />
-                                    </FloatingLabel>
+                                    <Form.Control
+                                        as="textarea"
+                                        name="message"
+                                        placeholder={textPlaceholder}
+                                        style={{ height: "100px" }}
+                                    />
                                 </Form.Group>
                                 <Form.Group className="mb-3">
                                     <Form.Control type="email" name="email" placeholder={emailPlaceholder} />
