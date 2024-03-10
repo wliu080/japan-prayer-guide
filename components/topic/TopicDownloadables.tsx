@@ -17,9 +17,10 @@ interface ResourceProps {
     icon: ReactNode
     label: string
     link: string
+    shrinkWidth?: boolean
 }
 
-const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) => {
+const ResourceCard = ({ icon, label, link, disabled = false, shrinkWidth = false }: ResourceProps) => {
     return (
         <Col key={label}>
             <Link
@@ -41,7 +42,7 @@ const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) =>
                         }
                     >
                         {icon}
-                        <p className="text-center fw-bold fs-4 my-0">
+                        <p className={"fw-bold fs-4 my-0" + (shrinkWidth ? " shrinkWidth" : "")}>
                             <Trans>{label}</Trans>
                         </p>
                     </Card.Body>
@@ -115,6 +116,7 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
                     label={slidesLabel}
                     link={slidesUrl}
                     disabled={slidesUrl === ""}
+                    shrinkWidth={true}
                 />
             </Row>
             <Link

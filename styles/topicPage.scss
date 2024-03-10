@@ -61,6 +61,12 @@ hr {
     background: $grey-1;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
 
+    .shrinkWidth {
+        @include media-breakpoint-down(lg) {
+            width: min-content;
+        }
+    }
+
     svg {
         width: 2rem;
         height: 2rem;
