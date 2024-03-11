@@ -30,8 +30,7 @@ const ResourceCard = ({ icon, label, link, disabled = false, shrinkWidth = false
                 tabIndex={disabled ? -1 : undefined}
             >
                 <Card
-                    className={"shadow-sm border-0 rounded" + (disabled ? " disabled" : "")}
-                    style={{ minHeight: "100px" }}
+                    className={"resource-card shadow-sm border-0 rounded" + (disabled ? " disabled" : "")}
                     onClick={(event) => (disabled ? event.preventDefault() : null)}
                 >
                     <Card.Body
@@ -86,7 +85,7 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
                 </p>
             </Container>
             <Container>
-                <Row md={3} sm={2} className="g-3" data-testid={"topic-downloadables-links"}>
+                <Row md={3} sm={1} className="g-3 d-md-flex d-block" data-testid={"topic-downloadables-links"}>
                     <ResourceCard
                         icon={<RiDonutChartFill />}
                         label={infographicsLabel}
