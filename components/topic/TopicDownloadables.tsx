@@ -128,7 +128,7 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
             >
                 <Button
                     disabled
-                    className="align-self-center w-100 mt-4 px-3 text-white bg-secondary-5 border-secondary-5 fw-bold fs-4 border-0"
+                    className="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0"
                     variant="primary"
                 >
                     <Trans t={t} i18nKey="downloads.downloadAllBtn" />

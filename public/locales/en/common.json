@@ -11,7 +11,7 @@
     },
     "prayerSummary": {
         "subtitle": "Pray",
-        "readMore": "Coming soon",
+        "readMore": "Learn more",
         "viewAll": "View all topics"
     },
     "order": {
@@ -52,7 +52,7 @@
         "prayerPtsLabel": "Prayer points",
         "prayerVidLabel": "Prayer recording",
         "slidesLabel": "Presentation slides",
-        "downloadAllBtn": "Download all",
+        "downloadAllBtn": "Coming soon",
         "viewAllBtn": "View all website resources"
     },
     "relatedTopics": {

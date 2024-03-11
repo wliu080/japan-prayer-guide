@@ -11,7 +11,7 @@
     },
     "prayerSummary": {
         "subtitle": "祈りましょう",
-        "readMore": "準備中",
+        "readMore": "もっと詳しく",
         "viewAll": "全てのテーマを見る"
     },
     "order": {
@@ -49,7 +49,7 @@
         "prayerPtsLabel": "祈りの課題",
         "prayerVidLabel": "祈りの音声",
         "slidesLabel": "プレゼン用スライド",
-        "downloadAllBtn": "すべてをダウンロード",
+        "downloadAllBtn": "準備中",
         "viewAllBtn": "資料をすべて見る"
     },
     "relatedTopics": {
