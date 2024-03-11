@@ -59,6 +59,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     let textContent: string[] = t("textBody", { returnObjects: true })
     textContent = Array.isArray(textContent) ? textContent : []
 
+    let textAsterisk: string[] = t("textBodyAsterisk", { returnObjects: true })
+    textAsterisk = Array.isArray(textAsterisk) ? textAsterisk : []
+
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
     const galleryLabel: string = topicCommon("galleryLabel")
@@ -119,6 +122,13 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     {/* Placeholder text */}
                     <Container className="main-content mt-4">
                         {textContent.map((text: string, idx: number) => (
+                            <p key={idx + text}>
+                                <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
+                            </p>
+                        ))}
+                    </Container>
+                    <Container className="fs-5">
+                        {textAsterisk.map((text: string, idx: number) => (
                             <p key={idx + text}>
                                 <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
                             </p>
