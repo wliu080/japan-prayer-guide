@@ -195,7 +195,6 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
     max-width: none;
     h2 {
         font-family: $font-family-secondary;
-        font-style: italic;
         font-weight: 300;
     }
     h3 {
@@ -225,38 +224,20 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
 }
 
 #featuredTopicSection {
-    $featured-card-width: 500px;
-    $featured-card-width-tablet: 375px;
-    $featured-card-width-mobile: 600px;
-    .featured-topic-card {
-        max-width: $featured-card-width;
+    .container {
         @include media-breakpoint-down(lg) {
-            max-width: $featured-card-width-tablet;
-        }
-        @include media-breakpoint-down(md) {
-            max-width: $featured-card-width-mobile;
-        }
-    }
-    .home-feature-img {
-        height: auto;
-        max-width: $featured-card-width;
-        object-fit: cover;
-        @include media-breakpoint-down(lg) {
-            max-width: $featured-card-width-tablet;
-        }
-        @include media-breakpoint-down(md) {
-            max-width: $featured-card-width-mobile;
+            max-width: none;
         }
     }
 
     $bullet-point-factor: 1px;
     .bullet-point {
-        font-size: $home-paragraph-text - $bullet-point-factor;
+        font-size: $home-paragraph-text ;
         @include media-breakpoint-down(xl) {
-            font-size: $home-paragraph-text-tablet - $bullet-point-factor;
+            font-size: $home-paragraph-text-tablet ;
         }
         @include media-breakpoint-down(md) {
-            font-size: $home-paragraph-text-mobile - $bullet-point-factor;
+            font-size: $home-paragraph-text-mobile ;
         }
     }
 
@@ -376,26 +357,6 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
     max-width: 300px;
     @include media-breakpoint-down(md) {
         height: 40px;
-    }
-}
-
-.featuredTopicTitle {
-    font-family: $font-family-secondary;
-    font-weight: 700;
-}
-
-.featuredTopicSubtitle {
-    font-family: $font-family-secondary;
-    font-weight: 700;
-    font-size: 16px;
-    @include media-breakpoint-down(md) {
-        font-size: 14px;
-    }
-}
-
-.featured-topic-container {
-    @include media-breakpoint-down(lg) {
-        max-width: none;
     }
 }
 

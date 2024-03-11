@@ -1,51 +1,59 @@
 {
-  "title": "Workplace Pressure",
-  "prayerSummary": [
-    "Pray for wisdom and compassion for pastors as they answer seekers' questions.",
-    "Pray for freedom and peace in Christ for those who feel bound by fear or obligation to their ancestors.",
-    "Pray for Christians to find appropriate ways to remember those who have died and to care for their graves."
-  ],
-  "mainBody": {
-    "content1": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "title": "Workplace pressure",
+    "prayerSummary": [
+        "Pray for government and company leaders to prioritize the importance of taking care of their workers. ",
+        "Pray that non-Christians interested in the gospel would have the opportunity and energy to pursue Christ.",
+        "Pray for Christians to have wisdom to balance the demands of work with family, church, and rest."
     ],
-    "content2": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "textBody": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     ],
-    "content3": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    ]
-  },
-  "quote": {
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-    "source": "-Bible verse or quote."
-  },
-  "downloads": {
-    "title": "Downloads",
-    "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-    "links": ["/", "/", "/", "/", "/"],
-    "headers": ["View all downloadables", "Download All"]
-  },
-  "related": {
-    "title": "Other related topics",
-    "labels": [
-      "Ancestor Veneration",
-      "Workplace Pressure",
-      "Other Topics",
-      "Other Topics 2",
-      "Other Topics 3",
-      "Other Topics 4"
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "photographyUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com",
+        "slidesUrl": "www.google.com"
+    },
+    "related": {
+        "labels": [
+            "Ancestor veneration",
+            "Workplace pressure",
+            "Other Topics",
+            "Other Topics 2",
+            "Other Topics 3",
+            "Other Topics 4"
+        ],
+        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+    },
+    "photos": [
+        { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
+        { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
+        { "src": "/images/2.png", "title": "Various versions have evolved over the years" },
+        { "src": "/images/3.png", "title": "Lorem Ipsum available" },
+        { "src": "/images/4.png", "title": "you need to be sure there" },
+        { "src": "/images/5.png", "title": "making this the first true generator on the Internet" },
+        { "src": "/images/3.png", "title": "look even slightly believable" },
+        { "src": "/images/2.png", "title": "Various versions have evolved" },
+        { "src": "/images/4.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/5.png", "title": "making this the first true" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/3.png", "title": "making this the first true" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/2.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/4.png", "title": "making this the first true" },
+        { "src": "/images/5.png", "title": "scrambled it to make a type" }
     ],
-    "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
-  },
-  "topicNav": {
-    "labels": ["About this Topic", "Prayer Points", "Downloadables"]
-  }
+    "galleryType": "mosaic",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a"
 }

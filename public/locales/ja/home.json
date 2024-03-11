@@ -14,23 +14,8 @@
     "purchaseTitle": "祈りの冊子を注文する",
     "purchaseBlurb": "祈りの冊子「御心が地にもなるように」は17団体の宣教師やクリスチャンリーダーの協力で制作されました。すでに2万冊が世界中で配布されています。現在、日本語版、英語版、その他数ヶ国語に翻訳されています。",
     "purchasePreview": "冊子のプレビュー",
-    "orderTitle": "英語の冊子を注文する",
-    "orderBlurb": "配送先の地域を選択してください",
-    "orderRegions": [
-        { "text": "北米", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
-        {
-            "text": "日本",
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-        },
-        { "text": "その他", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
-    ],
-    "orderEBook": "英語の eBook を注文する",
-    "orderJapan": "日本語の冊子を注文する",
-    "orderWarning": "現在は国内発送のみ承っています",
-    "orderBooklet": "注文フォームを入力する",
     "downloadTitle": "資料のダウンロード",
     "downloadBlurb": "当ウェブサイトのデザイン、テキスト、画像・映像などは、ダウンロードまたはストリーミングでご利用いただけます。 私たちの願いは、これらの資料を通して多くの人々が日本のための祈りに招かれ、整えられることです。",
-    "downloadList": ["インフォグラフィック", "PDFファイル", "写真", "祈りの課題", "祈りの音声", "プレゼン用スライド"],
     "comingSoon": "準備中",
     "learnBlurb": "2018年、OMF Japan と Pioneers Japan の協力により、日本における福音の前進のための祈りを集中的に高める働きを始めました。その最初の働きかけが、この祈りの冊子「御心が地にもなるように」の出版でした。",
     "learnMoreAbout": "祈りの働きについてもっと詳しく"

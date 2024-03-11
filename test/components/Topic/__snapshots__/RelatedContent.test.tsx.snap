@@ -16,13 +16,13 @@ exports[`Related Content Snapshot test 1`] = `
             class="text-primary my-4 fs-1"
             data-testid="related-content-title"
           >
-            Related Content
+            relatedTopics.heading
           </h1>
           <a
             class="text-secondary d-none d-md-block"
             href="/topics"
           >
-            View all topics
+            relatedTopics.viewAll
           </a>
         </div>
         <div
@@ -643,7 +643,7 @@ exports[`Related Content Snapshot test 1`] = `
           class="align-self-center my-3 text-secondary d-md-none"
           href="/topics"
         >
-          View all topics
+          relatedTopics.viewAll
         </a>
       </div>
     </div>
@@ -660,13 +660,13 @@ exports[`Related Content Snapshot test 1`] = `
           class="text-primary my-4 fs-1"
           data-testid="related-content-title"
         >
-          Related Content
+          relatedTopics.heading
         </h1>
         <a
           class="text-secondary d-none d-md-block"
           href="/topics"
         >
-          View all topics
+          relatedTopics.viewAll
         </a>
       </div>
       <div
@@ -1287,7 +1287,7 @@ exports[`Related Content Snapshot test 1`] = `
         class="align-self-center my-3 text-secondary d-md-none"
         href="/topics"
       >
-        View all topics
+        relatedTopics.viewAll
       </a>
     </div>
   </div>,

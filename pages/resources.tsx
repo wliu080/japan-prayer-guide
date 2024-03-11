@@ -2,7 +2,7 @@ import Head from "next/head"
 import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
 import { Button, Container, Image } from "react-bootstrap"
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
 import Link from "next/link"
@@ -33,10 +33,16 @@ const Downloads: React.FC = () => {
 
                 <Container className="w-100 d-flex flex-column align-items-center justify-content-center gap-4 sorryContainer text-center">
                     <Image alt={"We're sorry"} src="/sorry.png" height="150" />
-                    <div className="text-center sorryTitle">{t("title")}</div>
-                    <div className="text-center sorryMsg">{t("message")}</div>
+                    <div className="text-center sorryTitle">
+                        <Trans t={t} i18nKey="title" />
+                    </div>
+                    <div className="text-center sorryMsg">
+                        <Trans t={t} i18nKey="message" />
+                    </div>
                     <Link href={"/"}>
-                        <Button className="text-secondary-5 border-secondary-5 bg-white">{t("back")}</Button>
+                        <Button className="text-secondary-5 border-secondary-5 bg-white">
+                            <Trans t={t} i18nKey="back" />
+                        </Button>
                     </Link>
                 </Container>
 

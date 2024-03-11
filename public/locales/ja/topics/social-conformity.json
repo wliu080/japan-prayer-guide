@@ -1,0 +1,62 @@
+{
+    "title": "Social conformity",
+    "prayerSummary": [
+        "父なる神様がイエス様を通して、ありのままの自分を受け入れてくださることに感謝しましょう。",
+        "厳しいストレスの下にある人々が、キリストを信じ、その恵みを受けられるように。",
+        "日本にいるクリスチャンが、社会的な圧力に対応するため、神様の知恵と力が与えられるように。"
+    ],
+    "textBody": [
+        "「私はクリスチャンになれません。今まで家族にクリスチャンは一人もいなかったし、私がなったら家族を裏切ることになります。」<br>「朝6時に上司から出勤依頼の電話がありました。休日ですが行くしかありません。」<br>「和を乱したくないので、職場でイエス様の話をしたことはありません。」<br>「他の人のように上手に祈れないので、教会では祈りたくありません。」",
+        "周囲に合わせること、失敗しないこと、弱音を吐かないこと、限界を超えてまで働き続けること。日本人はこのようなプレッシャーを強く感じています。他人の視線を気にするあまり、多くの人が本当の自分を隠しています。日々のストレスが積み重なると、精神的な不安、アルコール依存症、家庭の不和、ひいては自殺など、悲惨な結果を招くこともあります。",
+        "クリスチャンの割合が極めて低い日本では、社会から受ける同調圧力が「クリスチャンになるな」という圧力として感じられることがあります。またクリスチャンにとって、それは信仰をひそかに守り、葛藤は表に出さないようにという圧力として感じられるかもしれません。",
+        "キリストにあって、私たちは受け入れられており、恵みと安らぎが与えられています。しかし様々な圧力がかかる社会にあって、それを信じることは簡単なことではなく、そのように生きることはさらに難しいのです。"
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "photographyUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com",
+        "slidesUrl": "www.google.com"
+    },
+    "related": {
+        "labels": [
+            "Ancestor Veneration",
+            "Workplace Pressure",
+            "Other Topics",
+            "Other Topics 2",
+            "Other Topics 3",
+            "Other Topics 4"
+        ],
+        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+    },
+    "heroPhoto": "/photos/topics/topic6/TP06-Hero.jpg",
+    "heroFocus": "50% 50%",
+    "photos": [
+        { "src": "/photos/topics/topic6/TP06-Album-01.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-02.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-03.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-04.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-05.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-06.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-07.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-08.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-09.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-10.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-11.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-12.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-13.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-14.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-15.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-16.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-17.jpg", "title": "Placeholder Caption" },
+        { "src": "/photos/topics/topic6/TP06-Album-18.jpg", "title": "Placeholder Caption" }
+    ],
+    "galleryType": "gallery",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a"
+}

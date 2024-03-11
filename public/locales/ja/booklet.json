@@ -1,35 +1,12 @@
 {
-  "webpageTitle": "冊子",
-  "heading": "「御心が地にもなるように」",
-  "subheading": "日本のために祈る30項目",
-  "introText": [
-    "祈りの冊子「御心が地にもなるように」は17団体の宣教師やクリスチャンリーダーの協力で制作されました。2020年の第一出版以降、約2万冊が世界中で配布されています。現在は日本語版、英語版、その他数ヶ国語に翻訳されています。",
-    "「御心が地にもなるように」では、日本の文化と社会、そして日本におけるキリスト教会と宣教を覚えて祈るための30のテーマが紹介されています。これらの30の祈りテーマは、今日の日本における福音の重要な機会および課題として、日本のクリスチャンリーダーたちが優先的に取り上げたものです。"
-  ],
-  "bookImageAlt": "Beneath the Surface Book Front Cover",
-  "samplePageImageAlt": "Beneath the Surface Sample Page",
-  "purchaseHeading": "英語の冊子を注文する",
-  "purchaseText": "配送先の地域を選択してください",
-  "buttons": {
-    "northAmerica": "北米",
-    "japan": "日本",
-    "international": "その他"
-  },
-  "languageAvailability": "Information about other languages coming soon",
-  "orderTitle": "英語の冊子を注文する",
-  "orderBlurb": "配送先の地域を選択してください",
-  "orderRegions": [
-    { "text": "北米", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
-    {
-      "text": "日本",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-    },
-    { "text": "その他", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
-  ],
-  "orderEBook": "英語の eBook を注文する",
-  "orderJapan": "日本語の冊子を注文する",
-  "orderWarning": "現在は国内発送のみ承っています",
-  "orderBooklet": "注文フォームを入力する",
-  "prayerRedirectHeading": "祈りのテーマ",
-  "prayerRedirectButtonText": "全てのテーマを見る"
+    "webpageTitle": "冊子",
+    "heading": "「御心が地にもなるように」",
+    "subheading": "日本のために祈る30項目",
+    "introText": [
+        "祈りの冊子「御心が地にもなるように」は17団体の宣教師やクリスチャンリーダーの協力で制作されました。2020年の第一出版以降、約2万冊が世界中で配布されています。現在は日本語版、英語版、その他数ヶ国語に翻訳されています。",
+        "「御心が地にもなるように」では、日本の文化と社会、そして日本におけるキリスト教会と宣教を覚えて祈るための30のテーマが紹介されています。これらの30の祈りテーマは、今日の日本における福音の重要な機会および課題として、日本のクリスチャンリーダーたちが優先的に取り上げたものです。"
+    ],
+    "bookImageAlt": "Beneath the Surface Book Front Cover",
+    "prayerRedirectHeading": "祈りのテーマ",
+    "prayerRedirectButtonText": "全てのテーマを見る"
 }

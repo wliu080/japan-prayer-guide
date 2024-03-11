@@ -1,48 +1,75 @@
 {
-  "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
-  "header": {
-    "brandAlt": "Crane logo with the text: Beneath the Surface",
-    "topics": "Topics",
-    "booklet": "Booklet",
-    "download": "Resources",
-    "about": "About",
-    "blurb": "We exist to call and equip God's people to pray for spiritual breakthrough in Japan.",
-    "home": "Home"
-  },
-  "prayerSummary": {
-    "title": "Prayer Points",
-    "subtitle": "Pray",
-    "readMore": "Coming soon",
-    "viewAll": "View all topics"
-  },
-  "order": {
-    "title": "Order the English booklet",
-    "blurb": "Select your shipping destination",
-    "regions": [
-      { "text": "North America", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
-      {
-        "text": "Japan",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
-      },
-      { "text": "International", "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback" }
-    ],
-    "prompt": "Order the e-book",
-    "japan": "Order the Japanese booklet",
-    "warning": "We're only able to ship within Japan at this time.",
-    "form": "Fill out the order form"
-  },
-  "feedback": {
-    "title": "Share your reflections with us! We'd love to hear it!",
-    "button": "Give Feedback"
-  },
-  "footer": {
-    "title": "Site map",
-    "link1": "Home",
-    "link2": "Topics",
-    "link3": "Booklet",
-    "link4": "Resources",
-    "link5": "About",
-    "tagline": "We exist to call and equip God's people to pray for spiritual breakthrough in Japan.",
-    "copyright": "Copyright © 2023 Beneath the Surface. All rights reserved."
-  }
+    "placeholder": "Sample text change here. Vestibulum finibus ante vehicula, maximus erat vel, mollis ex. In erat elit, maximus at enim nec, tincidunt vulputate est. Quisque rhoncus egestas egestas. Vivamus ut iaculis ante, id volutpat lacus. Proin sit amet rutrum arcu. Cras elementum ligula nec volutpat varius. Maecenas viverra lectus quis velit finibus tempor. Donec et ligula enim. Sed eget scelerisque enim. Duis quis metus ac nisi accumsan eleifend id quis massa.",
+    "header": {
+        "brandAlt": "Crane logo with the text: Beneath the Surface",
+        "topics": "Topics",
+        "booklet": "Booklet",
+        "download": "Resources",
+        "about": "About",
+        "blurb": "We exist to call and equip God's people to pray for spiritual breakthrough in Japan.",
+        "home": "Home"
+    },
+    "prayerSummary": {
+        "subtitle": "Pray",
+        "readMore": "Learn more",
+        "viewAll": "View all topics"
+    },
+    "order": {
+        "title": "Order the English booklet",
+        "blurb": "Select your shipping destination",
+        "regions": [
+            { "text": "North America", "url": "https://www.davidsonpublishing.org/prayer-guides1.html" },
+            {
+                "text": "Japan",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03r2GXDfFa17f5ICL_HTy_NuQOpaJcmNgRyFQN10ghgEYqQ/viewform"
+            },
+            {
+                "text": "International",
+                "url": "https://uk.10ofthose.com/product/9780853631965/beneath-the-surface-paperback"
+            }
+        ],
+        "prompt": "Order the e-book",
+        "japan": "Order the Japanese booklet",
+        "warning": "We're only able to ship within Japan at this time.",
+        "form": "Fill out the order form"
+    },
+    "response": {
+        "title": "Responding in prayer",
+        "blurb0": "We invite you to listen to a local believer pray for this topic and to respond with your own prayer to God.",
+        "blurb1": "We also invite you to share the prayer points with others, or to send us your reflections using the form below.",
+        "recordingLabel": "Prayer recording",
+        "feedbackLabel": "Share your reflections with us",
+        "feedbackTextPlaceholder": "We'd love to hear from you. Write your reflections or prayer insights here.",
+        "feedbackEmailPlaceholder": "Your email address",
+        "feedbackSubmit": "Submit"
+    },
+    "downloads": {
+        "title": "Resources",
+        "description": "All of the resources for this topic are available to download or stream. Choose which ones you want to download, or download them all for this topic.",
+        "infographicsLabel": "Infographics",
+        "photographyLabel": "Photography",
+        "pdfLabel": "PDF file",
+        "prayerPtsLabel": "Prayer points",
+        "prayerVidLabel": "Prayer recording",
+        "slidesLabel": "Presentation slides",
+        "downloadAllBtn": "Coming soon",
+        "viewAllBtn": "View all website resources"
+    },
+    "relatedTopics": {
+        "heading": "Related topics",
+        "viewAll": "View all topics"
+    },
+    "footer": {
+        "title": "Site map",
+        "link1": "Home",
+        "link2": "Topics",
+        "link3": "Booklet",
+        "link4": "Resources",
+        "link5": "About",
+        "tagline": "We exist to call and equip God's people to pray for spiritual breakthrough in Japan.",
+        "copyright": "Copyright © 2023 Beneath the Surface. All rights reserved."
+    },
+    "errors": {
+        "videoLoadError": "Could not load embed video"
+    }
 }

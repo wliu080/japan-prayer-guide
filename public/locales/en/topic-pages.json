@@ -1,0 +1,11 @@
+{
+    "galleryLabel": "Photo gallery",
+    "galleryClickInstructions": "Click photos to enlarge and view captions.",
+    "galleryImageText": "## images",
+    "factsLabel": "More facts about this topic",
+    "nav": [
+        { "refId": "about-topic", "label": "About" },
+        { "refId": "prayer-response", "label": "Pray" },
+        { "refId": "topic-downloads", "label": "Resources" }
+    ]
+}

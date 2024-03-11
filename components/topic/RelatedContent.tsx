@@ -4,12 +4,10 @@ import { Card, Container } from "react-bootstrap"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { useTranslation } from "next-i18next"
+import { TFunction, Trans, useTranslation } from "next-i18next"
 
 interface relatedProps {
-    topics: string[]
-    links: string[]
-    title?: string
+    topicTrans: TFunction
 }
 
 function SampleArrow(props: any) {
@@ -17,8 +15,8 @@ function SampleArrow(props: any) {
     return <div className={className} style={{ ...style, display: "block", borderRadius: "50%" }} onClick={onClick} />
 }
 
-export default function RelatedContent({ topics, links, title }: relatedProps) {
-    const { i18n } = useTranslation("common")
+export default function RelatedContent({ topicTrans }: relatedProps) {
+    const { t: common, i18n } = useTranslation("common")
     const responsive = [
         {
             breakpoint: 1300,
@@ -42,14 +40,18 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
             },
         },
     ]
+
+    const topics: string[] = topicTrans("related.labels", { returnObjects: true })
+    const links: string[] = topicTrans("related.links", { returnObjects: true })
+
     return (
         <Container data-testid={"related-content-container"} className="d-flex flex-column my-5">
             <Container className="d-flex flex-row justify-content-between align-items-center">
                 <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1">
-                    {title}
+                    <Trans t={common} i18nKey="relatedTopics.heading" />
                 </h1>
                 <Link href={"/topics"} className="text-secondary d-none d-md-block" locale={i18n.language}>
-                    View all topics
+                    <Trans t={common} i18nKey="relatedTopics.viewAll" />
                 </Link>
             </Container>
             <Slider
@@ -75,14 +77,16 @@ export default function RelatedContent({ topics, links, title }: relatedProps) {
                                 <div className="w-100 bg-secondary" style={{ height: "138px" }}></div>
                             </Card.Body>
                             <Card.Body className="m-2 p-1">
-                                <p>{topic}</p>
+                                <p>
+                                    <Trans>{topic}</Trans>
+                                </p>
                             </Card.Body>
                         </Card>
                     </Link>
                 ))}
             </Slider>
             <Link href={"/topics"} className="align-self-center my-3 text-secondary d-md-none" locale={i18n.language}>
-                View all topics
+                <Trans t={common} i18nKey="relatedTopics.viewAll" />
             </Link>
         </Container>
     )

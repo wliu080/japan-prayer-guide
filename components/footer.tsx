@@ -8,13 +8,10 @@ import { FaAmazon } from "react-icons/fa"
 import Link from "next/link"
 import LanguageSwitcher from "./languageSwitcher"
 import { Col } from "react-bootstrap"
-import { useTranslation } from "next-i18next"
+import { Trans, useTranslation } from "next-i18next"
 
 export default function Footer() {
     const { t } = useTranslation("common")
-
-    const tagline = t("footer.tagline")
-    const copyrightText = t("footer.copyright")
 
     return (
         // Footer needs to be two separate things I THINK because the order of components is different between
@@ -38,7 +35,9 @@ export default function Footer() {
                             ></Image>
                         </Row>
                         <Row className="text-center px-3 mx-1">
-                            <p className="footer-blurb text-white fs-6 fw-light">{tagline}</p>
+                            <p className="footer-blurb text-white fs-6 fw-light">
+                                <Trans t={t} i18nKey="footer.tagline" />
+                            </p>
                         </Row>
                         <Row className="d-flex justify-content-center align-items-center pt-4 text-white">
                             <IconContext.Provider value={{ size: "25px" }}>
@@ -58,7 +57,7 @@ export default function Footer() {
                         </Row>
                         <Row className="text-center py-4 px-3">
                             <p className="text-white fs-6 fw-light footer-copyright" data-testid={"copyright"}>
-                                {copyrightText}
+                                <Trans t={t} i18nKey="footer.copyright" />
                             </p>
                         </Row>
                     </Container>
@@ -79,7 +78,7 @@ export default function Footer() {
                             </Row>
                             <Row className="pt-3 px-2">
                                 <p className="text-white fs-5 fw-light footer-copyright" data-testid={"copyright-2"}>
-                                    {copyrightText}
+                                    <Trans t={t} i18nKey="footer.copyright" />
                                 </p>
                             </Row>
                         </Col>
@@ -94,7 +93,9 @@ export default function Footer() {
                                 ></Image>
                             </Row>
                             <Row>
-                                <p className="footer-blurb text-white">{tagline}</p>
+                                <p className="footer-blurb text-white">
+                                    <Trans t={t} i18nKey="footer.tagline" />
+                                </p>
                             </Row>
                             <Row className="d-flex align-items-center pt-3 pb-4 text-white">
                                 <IconContext.Provider value={{ size: "25px" }}>
@@ -132,42 +133,37 @@ export default function Footer() {
 function LinksList({ additional }: { additional: string }) {
     const { t, i18n } = useTranslation("common")
 
-    const siteMapText = t("footer.title")
-    const mapLink1Text = t("footer.link1")
-    const mapLink2Text = t("footer.link2")
-    const mapLink3Text = t("footer.link3")
-    const mapLink4Text = t("footer.link4")
-    const mapLink5Text = t("footer.link5")
-
     return (
         <div data-testid={"linksList" + additional} className="d-flex flex-column px-3 gap-0 text-white">
-            <p className="m-1 fs-5 fw-bold">{siteMapText}</p>
+            <p className="m-1 fs-5 fw-bold">
+                <Trans t={t} i18nKey="footer.title" />
+            </p>
             <Link href="/" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
-                {mapLink1Text}
+                <Trans t={t} i18nKey="footer.link1" />
             </Link>
             <Link
                 href="/topics/all"
                 className="m-1 fs-6 fw-lighter text-white text-decoration-none"
                 locale={i18n.language}
             >
-                {mapLink2Text}
+                <Trans t={t} i18nKey="footer.link2" />
             </Link>
             <Link
                 href="/booklet"
                 className="m-1 fs-6 fw-lighter text-white text-decoration-none"
                 locale={i18n.language}
             >
-                {mapLink3Text}
+                <Trans t={t} i18nKey="footer.link3" />
             </Link>
             <Link
                 href="/resources"
                 className="m-1 fs-6 fw-lighter text-white text-decoration-none"
                 locale={i18n.language}
             >
-                {mapLink4Text}
+                <Trans t={t} i18nKey="footer.link4" />
             </Link>
             <Link href="/about" className="m-1 fs-6 fw-lighter text-white text-decoration-none" locale={i18n.language}>
-                {mapLink5Text}
+                <Trans t={t} i18nKey="footer.link5" />
             </Link>
         </div>
     )

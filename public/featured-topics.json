@@ -1,14 +1,14 @@
 [
-  {
-    "start-month-day": "01-01",
-    "topic-name": "workplace-pressure"
-  },
-  {
-    "start-month-day": "06-06",
-    "topic-name": "ancestor-veneration"
-  },
-  {
-    "start-month-day": "08-15",
-    "topic-name": "church-leadership"
-  }
+    {
+        "start-month-day": "01-01",
+        "topic-name": "popular-religious-practices"
+    },
+    {
+        "start-month-day": "06-06",
+        "topic-name": "ancestor-veneration"
+    },
+    {
+        "start-month-day": "08-15",
+        "topic-name": "church-leadership"
+    }
 ]

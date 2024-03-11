@@ -1,51 +1,62 @@
 {
-  "title": "Workplace Pressure",
-  "prayerSummary": [
-    "Pray for wisdom and compassion for pastors as they answer seekers' questions.",
-    "Pray for freedom and peace in Christ for those who feel bound by fear or obligation to their ancestors.",
-    "Pray for Christians to find appropriate ways to remember those who have died and to care for their graves."
-  ],
-  "mainBody": {
-    "content1": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "title": "Workplace pressure",
+    "prayerSummary": [
+        "政府や企業のリーダーが、労働者保護の重要性を優先事項とするように。",
+        "福音に興味を持つ人々が、キリストを求めるための機会と気力を持てるように。",
+        "クリスチャンに仕事の責任と、家庭・教会・休息のバランスを取るための知恵が与えられるように。"
     ],
-    "content2": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "textBody": [
+        "日本では、社員に容赦ないプレッシャーをかける職場が多く、正社員は長時間労働を求められたり、家庭や私生活より会社を優先するよう期待されることがあります。",
+        "ある外国人はこう言います。「初めて日本に来た時、私が滞在していた家では、父親は平日に幼い二人の息子に会うことがほとんどなくて、週末は子どもたちと遊ぶ気力も残っていませんでした。これには衝撃を受けました。」",
+        "このようなプレッシャーの多い生活では、精神や心の健康に悪影響が出かねません。自殺や過労死に至ることさえあります。",
+        "非正規雇用なら勤務時間は短いかもしれませんが、基本的な生活費をまかなう程度の収入にしかならないことがしばしばです。正社員と同じ福利厚生も得られません。",
+        "日曜日は、忙しい１週間の中で唯一休める日という人もいます。その貴重な休みに教会に行くことは、用事が一つ増えるようなことと感じてしまうクリスチャンもいることでしょう。また、福音に興味はあっても教会に足を運べない人々は、実は次の一歩を踏み出すための時間や気力がないだけなのかもしれません。",
+        "幸い、労働環境は徐々に変化しているように思われます。多くの若い世代は、仕事と生活のバランスを取ろうとしており、政府は新たな施策を導入しています。"
     ],
-    "content3": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    ]
-  },
-  "quote": {
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-    "source": "-Bible verse or quote."
-  },
-  "downloads": {
-    "title": "Downloads",
-    "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-    "links": ["/", "/", "/", "/", "/"],
-    "headers": ["View all downloadables", "Download All"]
-  },
-  "related": {
-    "title": "Other related topics",
-    "labels": [
-      "Ancestor Veneration",
-      "Workplace Pressure",
-      "Other Topics",
-      "Other Topics 2",
-      "Other Topics 3",
-      "Other Topics 4"
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "photographyUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com",
+        "slidesUrl": "www.google.com"
+    },
+    "related": {
+        "labels": [
+            "Ancestor veneration",
+            "Workplace pressure",
+            "Other Topics",
+            "Other Topics 2",
+            "Other Topics 3",
+            "Other Topics 4"
+        ],
+        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+    },
+    "photos": [
+        { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
+        { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
+        { "src": "/images/2.png", "title": "Various versions have evolved over the years" },
+        { "src": "/images/3.png", "title": "Lorem Ipsum available" },
+        { "src": "/images/4.png", "title": "you need to be sure there" },
+        { "src": "/images/5.png", "title": "making this the first true generator on the Internet" },
+        { "src": "/images/3.png", "title": "look even slightly believable" },
+        { "src": "/images/2.png", "title": "Various versions have evolved" },
+        { "src": "/images/4.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/5.png", "title": "making this the first true" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/3.png", "title": "making this the first true" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/2.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/4.png", "title": "making this the first true" },
+        { "src": "/images/5.png", "title": "scrambled it to make a type" }
     ],
-    "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
-  },
-  "topicNav": {
-    "labels": ["About this Topic", "Prayer Points", "Downloadables"]
-  }
+    "galleryType": "mosaic",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a"
 }

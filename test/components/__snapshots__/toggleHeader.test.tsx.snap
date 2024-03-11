@@ -6,7 +6,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
   "baseElement": <body>
     <div>
       <nav
-        class="shadow-sm navbar navbar-expand-xl navbar-light bg-white sticky-top"
+        class="shadow-sm navbar navbar-expand-xl navbar-light bg-white fixed-top"
       >
         <div
           class="container"
@@ -199,7 +199,7 @@ exports[`ToggleHeader Snapshot test 1`] = `
   </body>,
   "container": <div>
     <nav
-      class="shadow-sm navbar navbar-expand-xl navbar-light bg-white sticky-top"
+      class="shadow-sm navbar navbar-expand-xl navbar-light bg-white fixed-top"
     >
       <div
         class="container"

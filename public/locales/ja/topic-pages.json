@@ -1,0 +1,11 @@
+{
+    "galleryLabel": "ギャラリー",
+    "galleryClickInstructions": "写真をクリックして拡大・キャプションを表示します。",
+    "galleryImageText": "写真##件",
+    "factsLabel": "More facts about this topic",
+    "nav": [
+        { "refId": "about-topic", "label": "テーマ" },
+        { "refId": "prayer-response", "label": "祈り" },
+        { "refId": "topic-downloads", "label": "資料" }
+    ]
+}

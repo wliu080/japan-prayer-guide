@@ -1,0 +1,151 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// -------------------------
+// Hero Image Section
+// -------------------------
+
+ul.bullet-points {
+    margin-bottom: 0px;
+}
+
+
+.hero-section {
+    height: 904px;
+    @include media-breakpoint-down(md) {
+        height: 1009px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 784px;
+    }
+}
+
+.bullet-point {
+    // match article text size (.main-content)
+    font-size: 1.125rem;
+}
+
+.hero-photo {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    height: calc(100% - 64px);
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    @include media-breakpoint-down(md) {
+        top: 50px;
+    }
+}
+
+.hero-title {
+    font-family: $font-family-secondary;
+    font-size: 52px;
+    @include media-breakpoint-down(md) {
+        font-size: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 32px;
+    }
+}
+
+// -------------------------
+// Text content Section
+// -------------------------
+
+.card-body {
+    padding: 24px;
+    @include media-breakpoint-down(md) {
+        padding: 16px 24px 16px 24px;
+        padding: 10px;
+    }
+    @include media-breakpoint-down(sm) {
+        // padding: 10px 10px 10px 10px;
+        padding: 8px;
+    }
+}
+
+#topic-prayer-topicTop {
+    @include media-breakpoint-down(md) {
+        max-width: 720px;
+    }
+    @include media-breakpoint-down(sm) {
+        max-width: 343px;
+    }
+}
+
+.main-section-container {
+    max-width: 1176px;
+    @include media-breakpoint-down(md) {
+        max-width: 745px;
+    }
+}
+
+.quote {
+    font-family: $font-family-secondary;
+    font-size: 28px;
+    @include media-breakpoint-down(md) {
+        font-size: 24px;
+    }
+}
+
+.main-content {
+    font-size: 1.125rem;
+}
+
+// -------------------------
+// Collapse/Accordion Section
+// -------------------------
+
+button.collapse-label {
+    font-family: $font-family-secondary;
+    background-color: transparent !important;
+    color: $primary !important;
+    border-color: white !important;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+.bottom-spacing {
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+// -------------------------
+// Downloadables Section
+// -------------------------
+
+
+.resource-card {
+    min-height: 110px;
+    @include media-breakpoint-down(md) {
+        min-height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        min-height: 50px;
+    }
+}
+
+.topic-downloadables {
+    border-radius: 0.25rem;
+    background: $grey-1;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+        margin-right: 0.5rem;
+    }
+
+    &.disabled {
+        background: $grey-4;
+        cursor: not-allowed;
+        color: $grey-1;
+    }
+}

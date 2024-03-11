@@ -1,51 +1,57 @@
 {
-  "title": "Ancestor Veneration",
-  "prayerSummary": [
-    "Pray for wisdom and compassion for pastors as they answer seekers' questions.",
-    "Pray for freedom and peace in Christ for those who feel bound by fear or obligation to their ancestors.",
-    "Pray for Christians to find appropriate ways to remember those who have died and to care for their graves."
-  ],
-  "mainBody": {
-    "content1": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "title": "Ancestor veneration",
+    "prayerSummary": [
+        "Pray for wisdom and compassion for pastors as they answer seekers’ questions.",
+        "Pray for freedom and peace in Christ for those who feel bound by fear or obligation to their ancestors.",
+        "Pray for Christians to find appropriate ways to remember those who have died and to care for their graves."
     ],
-    "content2": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "textBody": [
+        "Mrs. Sato knelt in front of the <i>butsudan</i>, the Buddhist altar in her home. She lit incense, struck a bell, and prayed for her family. Then she turned toward her deceased mother’s photo to tell her about the grandchildren. Family altars have traditionally been the center of religious ritual within Japanese homes.",
+        "Japanese people’s relationship to their ancestors is complex and varied. Many want to express gratitude and respect, or commune with loved ones. They ask their ancestors for help, or pray for their ancestors’ souls. The relationship is usually understood to be reciprocal: the living take care of the dead and the dead take care of the living.",
+        "Some Japanese people believe that <i>butsudan</i> or grave rituals are sacred, but for others, social aspects outweigh religious ones. For example, a Japanese pastor explains that his mother placing a cup of coffee before a photo of her deceased husband is primarily an expression of grief. Christians need to distinguish between social and religious elements.",
+        "Many seekers want to know where deceased family members are. It is important for churches to address difficult questions well and to find appropriate biblical ways to show respect for ancestors."
     ],
-    "content3": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    ]
-  },
-  "quote": {
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-    "source": "-Bible verse or quote."
-  },
-  "downloads": {
-    "title": "Downloads",
-    "labels": ["Infographics", "PDF of prayer topics", "Photography", "Video files"],
-    "links": ["/", "/", "/", "/", "/"],
-    "headers": ["View all downloadables", "Download All"]
-  },
-  "related": {
-    "title": "Other related topics",
-    "labels": [
-      "Ancestor Veneration",
-      "Workplace Pressure",
-      "Other Topics",
-      "Other Topics 2",
-      "Other Topics 3",
-      "Other Topics 4"
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "slidesUrl": "www.google.com"
+    },
+    "related": {
+        "labels": [
+            "Ancestor veneration",
+            "Workplace pressure",
+            "Other Topics",
+            "Other Topics 2",
+            "Other Topics 3",
+            "Other Topics 4"
+        ],
+        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+    },
+    "photos": [
+        { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
+        { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
+        { "src": "/images/2.png", "title": "Various versions have evolved over the years" },
+        { "src": "/images/3.png", "title": "Lorem Ipsum available" },
+        { "src": "/images/4.png", "title": "you need to be sure there" },
+        { "src": "/images/5.png", "title": "making this the first true generator on the Internet" },
+        { "src": "/images/3.png", "title": "look even slightly believable" },
+        { "src": "/images/2.png", "title": "Various versions have evolved" },
+        { "src": "/images/4.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/5.png", "title": "making this the first true" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/3.png", "title": "making this the first true" },
+        { "src": "/images/0.png", "title": "scrambled it to make a type" },
+        { "src": "/images/1.png", "title": "Various versions have evolved" },
+        { "src": "/images/2.png", "title": "Ipsum as their default model tex" },
+        { "src": "/images/4.png", "title": "making this the first true" },
+        { "src": "/images/5.png", "title": "scrambled it to make a type" }
     ],
-    "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
-  },
-  "topicNav": {
-    "labels": ["About this Topic", "Prayer Points", "Downloadables"]
-  }
+    "galleryType": "mosaic",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a"
 }
