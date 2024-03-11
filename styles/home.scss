@@ -241,6 +241,14 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
         }
     }
 
+    .feature-button {
+        width: 100%;
+        @include media-breakpoint-down(md) {
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+
     .feature-button,
     .feature-view-all {
         font-size: 14px;

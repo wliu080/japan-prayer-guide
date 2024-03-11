@@ -84,7 +84,7 @@ export default function PrayerPoints({ topicTrans, displayStyle, featuredTopicRe
                     {buttonPrompts && (
                         <>
                             <Button
-                                className="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 w-100"
+                                className="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2"
                                 variant="primary"
                                 onClick={() =>
                                     router.push(featuredTopicRef, featuredTopicRef, { locale: i18n.language })
