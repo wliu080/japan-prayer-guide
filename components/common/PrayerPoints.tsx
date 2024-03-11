@@ -13,7 +13,7 @@ export enum PrayerDisplayStyle {
 interface prayerProps {
     topicTrans: TFunction // the translation object for the given topic
     displayStyle: PrayerDisplayStyle
-    featuredTopicRef: string
+    featuredTopicRef?: string
 }
 
 export default function PrayerPoints({ topicTrans, displayStyle, featuredTopicRef = "" }: prayerProps) {
