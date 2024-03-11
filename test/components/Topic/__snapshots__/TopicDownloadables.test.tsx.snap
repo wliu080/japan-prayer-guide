@@ -290,7 +290,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
           style="max-width: 280px; cursor: not-allowed;"
         >
           <button
-            class="align-self-center w-100 mt-4 px-3 text-white bg-secondary-5 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
+            class="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
             disabled=""
             type="button"
           >
@@ -586,7 +586,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         style="max-width: 280px; cursor: not-allowed;"
       >
         <button
-          class="align-self-center w-100 mt-4 px-3 text-white bg-secondary-5 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
+          class="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
           disabled=""
           type="button"
         >
