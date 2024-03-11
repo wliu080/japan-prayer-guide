@@ -106,18 +106,18 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     {/* Placeholder for a quote */}
                     <Container
                         id="about-topic"
-                        className="d-flex flex-column justify-content-center align-items-center py-4 my-4"
+                        className="d-flex flex-column justify-content-center align-items-center py-4 mt-4"
                     >
                         <p className="text-primary-blue quote text-center">
                             <Trans t={t} i18nKey="quote.content" />
                         </p>
-                        <p className="text-primary-blue fs-6 text-center">
+                        <p className="text-primary-blue fs-5 text-center">
                             <Trans t={t} i18nKey="quote.source" />
                         </p>
                     </Container>
 
                     {/* Placeholder text */}
-                    <Container className="main-content">
+                    <Container className="main-content mt-4">
                         {textContent.map((text: string, idx: number) => (
                             <p key={idx + text}>
                                 <Trans components={{ url: <JsonLink /> }}> {text} </Trans>

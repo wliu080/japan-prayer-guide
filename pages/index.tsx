@@ -148,7 +148,11 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                             <Trans t={t} i18nKey="featuredTopicTitle" />
                         </h1>
                     </Container>
-                    <PrayerPoints topicTrans={featuredTranslation} displayStyle={PrayerDisplayStyle.Featured} />
+                    <PrayerPoints
+                        topicTrans={featuredTranslation}
+                        displayStyle={PrayerDisplayStyle.Featured}
+                        featuredTopicRef={featuredTopicRef}
+                    />
                 </Container>
 
                 {/* Purchase snippet */}

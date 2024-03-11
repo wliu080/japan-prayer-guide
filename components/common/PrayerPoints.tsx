@@ -13,16 +13,16 @@ export enum PrayerDisplayStyle {
 interface prayerProps {
     topicTrans: TFunction // the translation object for the given topic
     displayStyle: PrayerDisplayStyle
+    featuredTopicRef?: string
 }
 
-export default function PrayerPoints({ topicTrans, displayStyle }: prayerProps) {
+export default function PrayerPoints({ topicTrans, displayStyle, featuredTopicRef = "" }: prayerProps) {
     const { t, i18n } = useTranslation("common")
     const router = useRouter()
 
     const prayerPoints: string[] = topicTrans("prayerSummary", { returnObjects: true })
 
-    // TODO replace with lookup via topicTrans("keyImage") etc
-    const featuredImg: string = "/photos/topics/topic1/TP01-Hero.jpg"
+    const featuredImg: string = topicTrans("heroPhoto", { returnObjects: true })
 
     let alignLeft: boolean = false
     let showTitle: boolean = false
@@ -84,8 +84,11 @@ export default function PrayerPoints({ topicTrans, displayStyle }: prayerProps) 
                     {buttonPrompts && (
                         <>
                             <Button
-                                className="feature-button fs-4 fw-bold bg-grey-4 text-white text-center border-0 mt-3 mb-2 w-100"
+                                className="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 w-100"
                                 variant="primary"
+                                onClick={() =>
+                                    router.push(featuredTopicRef, featuredTopicRef, { locale: i18n.language })
+                                }
                             >
                                 <Trans t={t} i18nKey="prayerSummary.readMore" />
                             </Button>

@@ -27,7 +27,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
           class="container"
         >
           <div
-            class="g-3 row row-cols-md-3 row-cols-sm-2"
+            class="g-3 d-md-flex d-block row row-cols-md-3 row-cols-sm-1"
             data-testid="topic-downloadables-links"
           >
             <div
@@ -39,8 +39,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                 href="downloads.infographicsUrl"
               >
                 <div
-                  class="shadow-sm border-0 rounded card"
-                  style="min-height: 100px;"
+                  class="resource-card shadow-sm border-0 rounded card"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -83,8 +82,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                 href="downloads.pdfUrl"
               >
                 <div
-                  class="shadow-sm border-0 rounded card"
-                  style="min-height: 100px;"
+                  class="resource-card shadow-sm border-0 rounded card"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -127,8 +125,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                 href="downloads.photographyUrl"
               >
                 <div
-                  class="shadow-sm border-0 rounded card"
-                  style="min-height: 100px;"
+                  class="resource-card shadow-sm border-0 rounded card"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -171,8 +168,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                 href="downloads.prayerPtsUrl"
               >
                 <div
-                  class="shadow-sm border-0 rounded card"
-                  style="min-height: 100px;"
+                  class="resource-card shadow-sm border-0 rounded card"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -209,8 +205,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                 href="downloads.prayerVidUrl"
               >
                 <div
-                  class="shadow-sm border-0 rounded card"
-                  style="min-height: 100px;"
+                  class="resource-card shadow-sm border-0 rounded card"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -253,8 +248,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                 href="downloads.slidesUrl"
               >
                 <div
-                  class="shadow-sm border-0 rounded card"
-                  style="min-height: 100px;"
+                  class="resource-card shadow-sm border-0 rounded card"
                 >
                   <div
                     class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -296,7 +290,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
           style="max-width: 280px; cursor: not-allowed;"
         >
           <button
-            class="align-self-center w-100 mt-4 px-3 text-white bg-secondary-5 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
+            class="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
             disabled=""
             type="button"
           >
@@ -329,7 +323,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         class="container"
       >
         <div
-          class="g-3 row row-cols-md-3 row-cols-sm-2"
+          class="g-3 d-md-flex d-block row row-cols-md-3 row-cols-sm-1"
           data-testid="topic-downloadables-links"
         >
           <div
@@ -341,8 +335,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.infographicsUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 100px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -385,8 +378,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.pdfUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 100px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -429,8 +421,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.photographyUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 100px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -473,8 +464,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.prayerPtsUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 100px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -511,8 +501,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.prayerVidUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 100px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -555,8 +544,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.slidesUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 100px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -598,7 +586,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         style="max-width: 280px; cursor: not-allowed;"
       >
         <button
-          class="align-self-center w-100 mt-4 px-3 text-white bg-secondary-5 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
+          class="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
           disabled=""
           type="button"
         >

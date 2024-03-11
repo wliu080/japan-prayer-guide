@@ -79,15 +79,11 @@ ul.bullet-points {
     @include media-breakpoint-down(md) {
         max-width: 745px;
     }
-    @include media-breakpoint-down(sm) {
-        max-width: 343px;
-    }
 }
 
 .quote {
     font-family: $font-family-secondary;
-    font-style: italic;
-    font-size: 32px;
+    font-size: 28px;
     @include media-breakpoint-down(md) {
         font-size: 24px;
     }
@@ -124,16 +120,21 @@ hr {
 // Downloadables Section
 // -------------------------
 
+
+.resource-card {
+    min-height: 110px;
+    @include media-breakpoint-down(md) {
+        min-height: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+        min-height: 50px;
+    }
+}
+
 .topic-downloadables {
     border-radius: 0.25rem;
     background: $grey-1;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
-
-    .shrinkWidth {
-        @include media-breakpoint-down(lg) {
-            width: min-content;
-        }
-    }
 
     svg {
         width: 2rem;
