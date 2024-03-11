@@ -54,7 +54,7 @@ exports[`Prayer Points Snapshot test 1`] = `
               </li>
             </ul>
             <button
-              class="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 w-100 btn btn-primary"
+              class="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 btn btn-primary"
               type="button"
             >
               prayerSummary.readMore
@@ -121,7 +121,7 @@ exports[`Prayer Points Snapshot test 1`] = `
             </li>
           </ul>
           <button
-            class="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 w-100 btn btn-primary"
+            class="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 btn btn-primary"
             type="button"
           >
             prayerSummary.readMore
