@@ -44,7 +44,7 @@ export const NestedModal = ({ images, subTitle, galleryTitle, imageText }: Neste
         <div>
             <div className="container" style={{ marginTop: "12px" }}>
                 <p className="gallerySubtitle">{subTitle}</p>
-                <Row className="galleryContainer" xl={4} sm={2} md={2}>
+                <Row className="galleryContainer" xl={4} sm={2} md={2} xs={2}>
                     {[...images].splice(0, 4).map((item, index) => {
                         if (index !== 3) {
                             return (
