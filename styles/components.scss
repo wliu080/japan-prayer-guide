@@ -163,6 +163,13 @@
     &:hover {
         opacity: 0.2;
     }
+    @include media-breakpoint-down(md) {
+        top: 3px;
+        left: 3px;
+        height: calc(100% - 6px);
+        width: calc(100% - 6px);
+        margin: 0;
+    }
 }
 
 .galleryMoreOverlay {
@@ -181,6 +188,13 @@
     margin: 10px 10px;
     &:hover {
         opacity: 0.9;
+    }
+    @include media-breakpoint-down(md) {
+        top: 3px;
+        left: 3px;
+        height: calc(100% - 6px);
+        width: calc(100% - 6px);
+        margin: 0;
     }
     .galleryMoreNumber {
         color: white;
