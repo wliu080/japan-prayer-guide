@@ -106,7 +106,7 @@ exports[`Footer Snapshot test 1`] = `
             >
               <a
                 class="text-white footer-icon"
-                href="https://vimeo.com/japanprayerguide"
+                href="footer.vimeoUrl"
               >
                 <svg
                   fill="currentColor"
@@ -124,7 +124,7 @@ exports[`Footer Snapshot test 1`] = `
               </a>
               <a
                 class="text-white footer-icon"
-                href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+                href="footer.amazonUrl"
               >
                 <svg
                   fill="currentColor"
@@ -142,7 +142,7 @@ exports[`Footer Snapshot test 1`] = `
               </a>
               <a
                 class="text-white footer-icon"
-                href="https://www.instagram.com/omf_japan/"
+                href="footer.instaUrl"
               >
                 <svg
                   fill="currentColor"
@@ -298,7 +298,7 @@ exports[`Footer Snapshot test 1`] = `
                 <a
                   aria-label="Vimeo"
                   class="text-white footer-icon"
-                  href="https://vimeo.com/japanprayerguide"
+                  href="footer.vimeoUrl"
                 >
                   <svg
                     fill="currentColor"
@@ -317,7 +317,7 @@ exports[`Footer Snapshot test 1`] = `
                 <a
                   aria-label="Amazon"
                   class="text-white footer-icon"
-                  href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+                  href="footer.amazonUrl"
                 >
                   <svg
                     fill="currentColor"
@@ -336,7 +336,7 @@ exports[`Footer Snapshot test 1`] = `
                 <a
                   aria-label="Instagram"
                   class="text-white footer-icon"
-                  href="https://www.instagram.com/omf_japan/"
+                  href="footer.instaUrl"
                 >
                   <svg
                     fill="currentColor"
@@ -461,7 +461,7 @@ exports[`Footer Snapshot test 1`] = `
           >
             <a
               class="text-white footer-icon"
-              href="https://vimeo.com/japanprayerguide"
+              href="footer.vimeoUrl"
             >
               <svg
                 fill="currentColor"
@@ -479,7 +479,7 @@ exports[`Footer Snapshot test 1`] = `
             </a>
             <a
               class="text-white footer-icon"
-              href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+              href="footer.amazonUrl"
             >
               <svg
                 fill="currentColor"
@@ -497,7 +497,7 @@ exports[`Footer Snapshot test 1`] = `
             </a>
             <a
               class="text-white footer-icon"
-              href="https://www.instagram.com/omf_japan/"
+              href="footer.instaUrl"
             >
               <svg
                 fill="currentColor"
@@ -653,7 +653,7 @@ exports[`Footer Snapshot test 1`] = `
               <a
                 aria-label="Vimeo"
                 class="text-white footer-icon"
-                href="https://vimeo.com/japanprayerguide"
+                href="footer.vimeoUrl"
               >
                 <svg
                   fill="currentColor"
@@ -672,7 +672,7 @@ exports[`Footer Snapshot test 1`] = `
               <a
                 aria-label="Amazon"
                 class="text-white footer-icon"
-                href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
+                href="footer.amazonUrl"
               >
                 <svg
                   fill="currentColor"
@@ -691,7 +691,7 @@ exports[`Footer Snapshot test 1`] = `
               <a
                 aria-label="Instagram"
                 class="text-white footer-icon"
-                href="https://www.instagram.com/omf_japan/"
+                href="footer.instaUrl"
               >
                 <svg
                   fill="currentColor"
