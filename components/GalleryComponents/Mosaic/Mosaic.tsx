@@ -72,23 +72,47 @@ export const Mosaic = ({ images, blocks }: MosaicProps) => {
         setLightBox(true)
     }
 
+    // For smaller than desktop
     let idx = 0
     const calculatedStarts = []
     for (let i = 0; i < blocks.length; i++) {
         if (i == 0) {
             calculatedStarts.push(idx)
         } else {
-            idx = index + blockMap[blocks[i]].numImgs
+            idx = idx + blockMap[blocks[i]].numImgs
             calculatedStarts.push(idx)
         }
     }
 
+    const firstHalf = calculatedStarts.slice(0, Math.ceil(calculatedStarts.length / 2))
+    const secondHalf = calculatedStarts.slice(Math.ceil(calculatedStarts.length / 2))
+    const halfBlocks = blocks.length / 2
+
     return (
-        <div>
-            <div className="container" style={{ marginTop: "50px" }}>
+        <div style={{ display: "flex" }}>
+            <div className="container d-xl-none" style={{ marginTop: "50px" }}>
                 {calculatedStarts.map((num, idx) => {
                     const MosaicComponent = blockMap[blocks[idx]].component ?? MosaicBlockOne
                     return <MosaicComponent key={idx} images={images} startIdx={num} handleOpen={handleOpen} />
+                })}
+            </div>
+            <div className="container d-none d-xl-block" style={{ marginTop: "50px" }}>
+                {firstHalf.map((num, idx) => {
+                    const MosaicComponent = blockMap[blocks[idx]].component ?? MosaicBlockOne
+                    return <MosaicComponent key={idx} images={images} startIdx={num} handleOpen={handleOpen} />
+                })}
+            </div>
+            <div className="container d-none d-xl-block" style={{ marginTop: "50px" }}>
+                {secondHalf.map((num, idx) => {
+                    const MosaicComponent = blockMap[blocks[idx + halfBlocks]].component ?? MosaicBlockOne
+                    return (
+                        <MosaicComponent
+                            key={idx + halfBlocks}
+                            images={images}
+                            startIdx={num}
+                            handleOpen={handleOpen}
+                        />
+                    )
                 })}
             </div>
             <Modal
