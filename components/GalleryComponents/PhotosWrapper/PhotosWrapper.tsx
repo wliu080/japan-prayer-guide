@@ -9,14 +9,24 @@ interface PhotosWrapperProps {
         title: string
     }[]
     blocks?: number[]
+    subTitle?: string
+    galleryTitle?: string
+    imageText?: string
 }
 
-export const PhotosWrapper = ({ type = "gallery", images = [], blocks = [] }: PhotosWrapperProps) => {
+export const PhotosWrapper = ({
+    type = "gallery",
+    images = [],
+    blocks = [],
+    subTitle = "",
+    galleryTitle = "",
+    imageText = "",
+}: PhotosWrapperProps) => {
     if (type === "mosaic") {
         return <Mosaic images={images} blocks={blocks} />
     }
     if (type === "gallery") {
-        return <NestedModal images={images} />
+        return <NestedModal images={images} subTitle={subTitle} galleryTitle={galleryTitle} imageText={imageText} />
     }
     if (type === "carousel") {
         return <ImageCarousel images={images} />

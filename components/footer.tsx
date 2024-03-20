@@ -12,6 +12,9 @@ import { Trans, useTranslation } from "next-i18next"
 
 export default function Footer() {
     const { t } = useTranslation("common")
+    const vimeoUrl: string = t("footer.vimeoUrl", "")
+    const amazonUrl: string = t("footer.amazonUrl", "")
+    const instaUrl: string = t("footer.instaUrl", "")
 
     return (
         // Footer needs to be two separate things I THINK because the order of components is different between
@@ -41,16 +44,13 @@ export default function Footer() {
                         </Row>
                         <Row className="d-flex justify-content-center align-items-center pt-4 text-white">
                             <IconContext.Provider value={{ size: "25px" }}>
-                                <a className="text-white footer-icon" href="https://vimeo.com/japanprayerguide">
+                                <a className="text-white footer-icon" href={vimeoUrl}>
                                     <BsVimeo />
                                 </a>
-                                <a
-                                    className="text-white footer-icon"
-                                    href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
-                                >
+                                <a className="text-white footer-icon" href={amazonUrl}>
                                     <FaAmazon />
                                 </a>
-                                <a className="text-white footer-icon" href="https://www.instagram.com/omf_japan/">
+                                <a className="text-white footer-icon" href={instaUrl}>
                                     <BsInstagram />
                                 </a>
                             </IconContext.Provider>
@@ -99,25 +99,13 @@ export default function Footer() {
                             </Row>
                             <Row className="d-flex align-items-center pt-3 pb-4 text-white">
                                 <IconContext.Provider value={{ size: "25px" }}>
-                                    <a
-                                        className="text-white footer-icon"
-                                        href="https://vimeo.com/japanprayerguide"
-                                        aria-label="Vimeo"
-                                    >
+                                    <a className="text-white footer-icon" href={vimeoUrl} aria-label="Vimeo">
                                         <BsVimeo />
                                     </a>
-                                    <a
-                                        className="text-white footer-icon"
-                                        href="https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79"
-                                        aria-label="Amazon"
-                                    >
+                                    <a className="text-white footer-icon" href={amazonUrl} aria-label="Amazon">
                                         <FaAmazon />
                                     </a>
-                                    <a
-                                        className="text-white footer-icon"
-                                        href="https://www.instagram.com/omf_japan/"
-                                        aria-label="Instagram"
-                                    >
+                                    <a className="text-white footer-icon" href={instaUrl} aria-label="Instagram">
                                         <BsInstagram />
                                     </a>
                                 </IconContext.Provider>

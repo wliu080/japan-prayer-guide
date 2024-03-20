@@ -4,8 +4,16 @@
 // Topic Gallery
 // -------------------------
 
+.gallerySubtitle {
+    margin-left: -10px;
+    font-size: 20px;
+    @include media-breakpoint-down(med) {
+        font-size: 18px;
+    }
+}
+
 .gallerySpreadImage {
-    aspect-ratio: 2.5;
+    // aspect-ratio: 2.5;
     cursor: pointer;
     position: relative;
     padding: 0;
@@ -14,12 +22,15 @@
     img {
         width: 100%;
         padding: 10px 10px;
-        aspect-ratio: 2.5;
+        // aspect-ratio: 2.5;
+        @include media-breakpoint-down(md) {
+            padding: 2px;
+        }
     }
 }
 
 .gallerySpreadImage2 {
-    aspect-ratio: 1.5;
+    // aspect-ratio: 1.5;
     cursor: pointer;
     position: relative;
     padding: 0;
@@ -28,7 +39,10 @@
     img {
         width: 100%;
         padding: 10px 10px;
-        aspect-ratio: 1.5;
+        // aspect-ratio: 1.5;
+        @include media-breakpoint-down(md) {
+            padding: 2px;
+        }
     }
 }
 
@@ -54,6 +68,19 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-center {
+    width: 60%;
+    @include media-breakpoint-down(xxl) {
+        width: 75%;
+    }
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
 }
 
 .gallery-title {
@@ -112,10 +139,14 @@
     cursor: pointer;
     position: relative;
     padding: 0;
+    object-fit: cover;
 
     img {
         width: 100%;
         padding: 10px 10px;
+        @include media-breakpoint-down(md) {
+            padding: 4px;
+        }
     }
 }
 
@@ -131,6 +162,13 @@
     margin: 10px 10px;
     &:hover {
         opacity: 0.2;
+    }
+    @include media-breakpoint-down(md) {
+        top: 3px;
+        left: 3px;
+        height: calc(100% - 6px);
+        width: calc(100% - 6px);
+        margin: 0;
     }
 }
 
@@ -150,6 +188,13 @@
     margin: 10px 10px;
     &:hover {
         opacity: 0.9;
+    }
+    @include media-breakpoint-down(md) {
+        top: 3px;
+        left: 3px;
+        height: calc(100% - 6px);
+        width: calc(100% - 6px);
+        margin: 0;
     }
     .galleryMoreNumber {
         color: white;
@@ -193,7 +238,7 @@
     }
 
     .lightbox-header {
-        height: 70px;
+        height: 30px;
         display: flex;
         justify-content: space-between;
         color: #ffffff;
@@ -226,13 +271,14 @@
     .lightbox-body {
         display: flex;
         justify-content: space-between;
-        gap: 10px;
+        flex-direction: column;
         color: #ffffff;
         position: relative;
-        height: 100%;
+        height: calc(100% - 80px);
+        gap: 16px;
     }
     .lightbox-box {
-        height: calc(100% - 100px);
+        height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -241,22 +287,31 @@
     }
     .lightbox-box img {
         display: block;
-        width: 100%;
-        max-width: 1000px;
+        width: auto;
+        max-width: 1200px;
         height: auto;
-        aspect-ratio: 1.5;
+        max-height: calc(100% - 10px);
+        object-fit: cover;
+        @include media-breakpoint-down(xxl) {
+            width: 100%;
+        }
     }
 
-    .lightbox-box h1 {
+    .lightbox-body h1 {
         text-align: center;
         font-size: 16px;
         font-weight: 400;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: 70px;
+        height: 50px;
+        min-height: 50px;
+        max-height: 50px;
+        margin-top: auto;
+        margin-bottom: 10px;
+        // preserve spaces if tags (like <i> or <sup>) are used throughout
+        white-space: pre-wrap;
+        position: relative;
+        @include media-breakpoint-down(sm) {
+            top: -70px;
+        }
     }
 
     .lightbox-auto {
@@ -340,6 +395,7 @@
                 max-width: fit-content;
             }
         }
+        
     }
 
     .prayer-img {
@@ -370,6 +426,7 @@
 }
 
 .prayer-points-card {
+    border-radius: 4px;
     @include media-breakpoint-up(lg) {
         max-width: 646px;
     }
@@ -396,6 +453,7 @@
     }
 
     .prayer-img {
+        object-fit: cover;
         @include media-breakpoint-up(md) {
             width: 50%;
         }
@@ -419,6 +477,12 @@
 // -------------------------
 
 .sticky-nav {
+    position: -webkit-sticky;
+    padding-top: 50px;
+    margin-top: -50px;
+    @include media-breakpoint-down(md) {
+        margin-top: -56px;
+    }
     a {
         font-size: 1.125rem;
         color: black;
@@ -432,6 +496,12 @@
 
 #prayer-response {
     background-color: $grey-2;
+    p {
+        font-size: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+        }
+    }
 
     h2 {
         font-family: $font-family-secondary;
@@ -448,5 +518,44 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    .video-embed {
+        position: relative;
+        padding-bottom: 56.25% !important; /* 16:9 */
+        margin-bottom: 30px;
+        height: 0;
+    }
+
+    .reflections-submission-heading {
+        font-size: 24px;
+        @include media-breakpoint-down(sm) {
+            font-size: 22px;
+        }
+        font-family: $font-family-secondary;
+        font-weight: 700;
+    }
 }
 
+// -------------------------
+// Topic Downloadables
+// -------------------------
+
+#topic-downloads {
+    h2 {
+        font-family: $font-family-secondary;
+    }
+
+    p {
+        font-size: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+        }
+    }
+
+    .btn {
+        font-size: 19px;
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+}

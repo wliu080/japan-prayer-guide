@@ -15,10 +15,11 @@ const mockToday = (date: Date): void => {
 
 describe("Month Selector", () => {
     test("Should return a topic where the start date is 'today'", () => {
-        const mockDate = new Date("2023-02-14")
+        const mockDate = new Date("2023-02-14T08:00:00")
+        console.log(mockDate)
         mockToday(mockDate)
 
-        let testSchedule: FeaturedEntryType[] = [
+        const testSchedule: FeaturedEntryType[] = [
             { startDate: "01-01", topicName: "Topic A" },
             { startDate: "02-14", topicName: "Topic B" },
         ]
@@ -32,7 +33,7 @@ describe("Month Selector", () => {
         const mockDate = new Date("2023-03-17")
         mockToday(mockDate)
 
-        let testSchedule: FeaturedEntryType[] = [
+        const testSchedule: FeaturedEntryType[] = [
             { startDate: "01-01", topicName: "Topic A" },
             { startDate: "03-18", topicName: "Topic B" },
         ]
@@ -46,7 +47,7 @@ describe("Month Selector", () => {
         const mockDate = new Date("2023-01-04")
         mockToday(mockDate)
 
-        let testSchedule: FeaturedEntryType[] = [
+        const testSchedule: FeaturedEntryType[] = [
             { startDate: "01-05", topicName: "Topic A" },
             { startDate: "12-18", topicName: "Topic B" },
         ]
@@ -59,7 +60,7 @@ describe("Month Selector", () => {
         const mockDate = new Date("2023-04-15")
         mockToday(mockDate)
 
-        let testSchedule: FeaturedEntryType[] = [
+        const testSchedule: FeaturedEntryType[] = [
             { startDate: "01-01", topicName: "Topic A" },
             { startDate: "02-29", topicName: "Topic B" },
         ]
@@ -72,7 +73,7 @@ describe("Month Selector", () => {
         const mockDate = new Date("2023-11-20")
         mockToday(mockDate)
 
-        let testSchedule: FeaturedEntryType[] = [
+        const testSchedule: FeaturedEntryType[] = [
             { startDate: "invalid", topicName: "Topic A" },
             { startDate: "09-02", topicName: "Topic B" },
             { startDate: "50-15", topicName: "Topic C" },

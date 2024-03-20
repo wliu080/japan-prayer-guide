@@ -6,74 +6,82 @@ exports[`Sticky Nav Snapshot test 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav container"
+        class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top px-0 sticky-nav container"
         data-testid="sticky-nav-container"
         style="max-width: none;"
       >
         <div
-          class="w-100"
-          id="overview-nav"
-          style="height: 0px;"
-        />
-        <div
-          class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
-          data-testid="topic-nav-links"
+          class="w-100 d-flex justify-content-center bg-white"
         >
-          <a
-            class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
-            data-testid="topic-nav-link0"
+          <div
+            class="limit-width d-flex justify-content-center border-bottom"
           >
-            abc
-          </a>
-          <a
-            class="px-3 my-0 text-decoration-none fw-normal"
-            data-testid="topic-nav-link1"
-          >
-            def
-          </a>
-          <a
-            class="px-3 my-0 text-decoration-none fw-normal"
-            data-testid="topic-nav-link2"
-          >
-            ghi
-          </a>
+            <div
+              class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white text-center"
+              data-testid="topic-nav-links"
+              id="topic-nav-links"
+            >
+              <a
+                class="px-3 my-0 text-decoration-none fw-normal w-100 border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
+                data-testid="topic-nav-link0"
+              >
+                abc
+              </a>
+              <a
+                class="px-3 my-0 text-decoration-none fw-normal w-100"
+                data-testid="topic-nav-link1"
+              >
+                def
+              </a>
+              <a
+                class="px-3 my-0 text-decoration-none fw-normal w-100"
+                data-testid="topic-nav-link2"
+              >
+                ghi
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top p-0 sticky-nav container"
+      class="w-100 d-flex align-items-center justify-content-center flex-column sticky-top px-0 sticky-nav container"
       data-testid="sticky-nav-container"
       style="max-width: none;"
     >
       <div
-        class="w-100"
-        id="overview-nav"
-        style="height: 0px;"
-      />
-      <div
-        class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white"
-        data-testid="topic-nav-links"
+        class="w-100 d-flex justify-content-center bg-white"
       >
-        <a
-          class="px-3 my-0 text-decoration-none fw-normal border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
-          data-testid="topic-nav-link0"
+        <div
+          class="limit-width d-flex justify-content-center border-bottom"
         >
-          abc
-        </a>
-        <a
-          class="px-3 my-0 text-decoration-none fw-normal"
-          data-testid="topic-nav-link1"
-        >
-          def
-        </a>
-        <a
-          class="px-3 my-0 text-decoration-none fw-normal"
-          data-testid="topic-nav-link2"
-        >
-          ghi
-        </a>
+          <div
+            class="pt-4 pb-0 w-100 border-bottom d-flex justify-content-center bg-white text-center"
+            data-testid="topic-nav-links"
+            id="topic-nav-links"
+          >
+            <a
+              class="px-3 my-0 text-decoration-none fw-normal w-100 border-bottom border-secondary-5 border-3 text-secondary-5 fw-bold"
+              data-testid="topic-nav-link0"
+            >
+              abc
+            </a>
+            <a
+              class="px-3 my-0 text-decoration-none fw-normal w-100"
+              data-testid="topic-nav-link1"
+            >
+              def
+            </a>
+            <a
+              class="px-3 my-0 text-decoration-none fw-normal w-100"
+              data-testid="topic-nav-link2"
+            >
+              ghi
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>,

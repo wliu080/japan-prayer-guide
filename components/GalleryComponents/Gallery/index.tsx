@@ -17,6 +17,8 @@ interface GalleryProps {
     setGallery: React.Dispatch<React.SetStateAction<boolean>>
     setLightBox: React.Dispatch<React.SetStateAction<boolean>>
     lightBox: boolean
+    galleryTitle: string
+    imageText: string
 }
 
 const style = {
@@ -28,21 +30,31 @@ const style = {
     padding: 0,
 }
 
-function Gallery({ index, setImage, images, setGallery, lightBox, setLightBox }: GalleryProps) {
+function Gallery({
+    index,
+    setImage,
+    images,
+    setGallery,
+    lightBox,
+    setLightBox,
+    galleryTitle,
+    imageText,
+}: GalleryProps) {
     useEffect(() => {}, [lightBox])
 
     const handleLightBox = (__i__: number) => {
         setImage(__i__)
         setLightBox(true)
     }
+    imageText = imageText.replace("##", images.length.toString())
 
     return (
         <div className="image-gallery">
             <div className="gallery-header">
                 <div className="gallery-title">
-                    Photo gallery
+                    {galleryTitle}
                     <div className="gallery-divider"></div>
-                    <span className="gallery-number">{images.length} images</span>
+                    <span className="gallery-number">{imageText}</span>
                 </div>
                 <span className="cursor-pointer" onClick={() => setGallery(false)}>
                     <Cross />
@@ -50,9 +62,9 @@ function Gallery({ index, setImage, images, setGallery, lightBox, setLightBox }:
             </div>
 
             <div className="gallery-container">
-                <div className="center">
+                <div className="center gallery-center">
                     {images.map((item, index) => {
-                        if (index % 3 === 0) {
+                        if (index % 3 === 0 || (index % 3 === 1 && index === images.length - 1)) {
                             return (
                                 <Row xs={1} sm={1} md={1} lg={1} xl={1} key={index}>
                                     <div

@@ -11,7 +11,7 @@
     },
     "prayerSummary": {
         "subtitle": "Pray",
-        "readMore": "Coming soon",
+        "readMore": "Learn more",
         "viewAll": "View all topics"
     },
     "order": {
@@ -35,11 +35,12 @@
     },
     "response": {
         "title": "Responding in prayer",
-        "blurb": "We invite you to listen to a local believer pray for this topic and to respond with your own prayer to God. We also invite you to share the prayer points with others, or to send us your reflections using the form below.",
+        "blurb0": "We invite you to listen to a local believer pray for this topic and to respond with your own prayer to God.",
+        "blurb1": "We also invite you to share the prayer points with others, or to send us your reflections using the form below.",
         "recordingLabel": "Prayer recording",
         "feedbackLabel": "Share your reflections with us",
-        "feedbackTextPlaceholder": "Write your reflections or prayer insights here.",
-        "feedbackEmailPlaceholder": "Email address",
+        "feedbackTextPlaceholder": "We'd love to hear from you. Write your reflections or prayer insights here.",
+        "feedbackEmailPlaceholder": "Your email address",
         "feedbackSubmit": "Submit"
     },
     "downloads": {
@@ -51,7 +52,7 @@
         "prayerPtsLabel": "Prayer points",
         "prayerVidLabel": "Prayer recording",
         "slidesLabel": "Presentation slides",
-        "downloadAllBtn": "Download all",
+        "downloadAllBtn": "Coming soon",
         "viewAllBtn": "View all website resources"
     },
     "relatedTopics": {
@@ -59,6 +60,9 @@
         "viewAll": "View all topics"
     },
     "footer": {
+        "vimeoUrl": "https://vimeo.com/japanprayerguide",
+        "amazonUrl": "https://www.amazon.com/BENEATH-SURFACE-WAYS-PRAY-JAPAN-ebook/dp/B099KSSY79",
+        "instaUrl": "https://www.instagram.com/omf_japan/",
         "title": "Site map",
         "link1": "Home",
         "link2": "Topics",
@@ -67,5 +71,8 @@
         "link5": "About",
         "tagline": "We exist to call and equip God's people to pray for spiritual breakthrough in Japan.",
         "copyright": "Copyright © 2023 Beneath the Surface. All rights reserved."
+    },
+    "errors": {
+        "videoLoadError": "Could not load embed video"
     }
 }

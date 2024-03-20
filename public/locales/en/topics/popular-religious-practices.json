@@ -10,21 +10,16 @@
         "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
         "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
         "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them.",
+        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+    ],
+    "textBodyAsterisk": [
         "<sup>*</sup>All names used in this booklet are pseudonyms."
     ],
     "quote": {
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-        "source": "-Bible verse or quote."
+        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
+        "source": "A Japanese Christian in her 20s, Tokyo"
     },
-    "downloads": {
-        "infographicsUrl": "www.google.com",
-        "photographyUrl": "www.google.com",
-        "pdfUrl": "www.google.com",
-        "prayerPtsUrl": "www.google.com",
-        "prayerVidUrl": "www.google.com",
-        "slidesUrl": "www.google.com"
-    },
+    "downloads": {},
     "related": {
         "labels": [
             "Ancestor veneration",
@@ -36,26 +31,85 @@
         ],
         "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
     },
+    "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
+    "heroFocus": "20% 50%",
     "photos": [
-        { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
-        { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
-        { "src": "/images/2.png", "title": "Various versions have evolved over the years" },
-        { "src": "/images/3.png", "title": "Lorem Ipsum available" },
-        { "src": "/images/4.png", "title": "you need to be sure there" },
-        { "src": "/images/5.png", "title": "making this the first true generator on the Internet" },
-        { "src": "/images/3.png", "title": "look even slightly believable" },
-        { "src": "/images/2.png", "title": "Various versions have evolved" },
-        { "src": "/images/4.png", "title": "Ipsum as their default model tex" },
-        { "src": "/images/0.png", "title": "scrambled it to make a type" },
-        { "src": "/images/5.png", "title": "making this the first true" },
-        { "src": "/images/1.png", "title": "Various versions have evolved" },
-        { "src": "/images/3.png", "title": "making this the first true" },
-        { "src": "/images/0.png", "title": "scrambled it to make a type" },
-        { "src": "/images/1.png", "title": "Various versions have evolved" },
-        { "src": "/images/2.png", "title": "Ipsum as their default model tex" },
-        { "src": "/images/4.png", "title": "making this the first true" },
-        { "src": "/images/5.png", "title": "scrambled it to make a type" }
+        {
+            "src": "/photos/topics/topic1/TP01-Album-01.jpg",
+            "title": "A large crowd of visitors at a prominent shrine in Kyoto (Fushimi Inari Taisha) on New Year's Day."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-02.jpg",
+            "title": "A gate at a Shinto shrine, called <i>torii</i>. <i>Torii</i> can be found at many places in Japan: city streets, staircases, forests, rivers, fields, and more."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-03.jpg",
+            "title": "A visitor at Meiji shrine bows before passing through the <i>torii</i> gate. A <i>torii</i> gate is seen as an entryway into sacred space."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-04.jpg",
+            "title": "A shrine on a small beach island (Aoshima) in Miyazaki prefecture. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-05.jpg",
+            "title": "A man prays at a local neighborhood shrine in Chiba prefecture. "
+        },
+        { "src": "/photos/topics/topic1/TP01-Album-06.jpg", "title": "Sensoji, a popular Buddhist temple in Tokyo." },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-07.jpg",
+            "title": "A child and his guardian wave incense over themselves. This is a common purification or healing ritual at Buddhist temples."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-08.jpg",
+            "title": "A young man locating his <i>omikuji</i>, or fortune-telling paper."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-09.jpg",
+            "title": "Charms for protection and good luck called <i>omamori</i> on sale at a shrine. "
+        },
+        { "src": "/photos/topics/topic1/TP01-Album-10.jpg", "title": "A woman shops for a charm at a temple. " },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-11.jpg",
+            "title": "Visitors at Meiji shrine write prayer requests on wooden tablets called <i>ema</i>."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-12.jpg",
+            "title": "A child's prayer written on a prayer tablet at a shrine. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-13.jpg",
+            "title": "An elderly woman prays at the altar of a popular temple in Tokyo."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-14.jpg",
+            "title": "A woman drops coins in the offering box in front of a monkey statue, which is considered a patron of safety in childbirth."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-15.jpg",
+            "title": "Shrines often feature in important celebrations and rites of passage for Japanese families. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-16.jpg",
+            "title": "A couple takes wedding photographs at a shrine. In Japan, important life events are often celebrated at shrines."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-17.jpg",
+            "title": "<i>Shichi-go-san</i> is a festival in November celebrating children at the ages of seven, five, and three. It is often commemorated at shrines. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-18.jpg",
+            "title": "Summer festivals at shrines are often popular events for youth and young adults to attend with friends, family, or dates."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-19.jpg",
+            "title": "The <i>Bon</i> dance festival at Tsukiji Hongwanji temple. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-20.jpg",
+            "title": "Festivals and community events often take place at shrines or temples."
+        }
     ],
-    "galleryType": "mosaic",
-    "blockOrder": [6, 7, 6, 6]
+    "galleryType": "gallery",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/921387464"
 }

@@ -99,3 +99,12 @@ $header-crane-button-height: 16px;
     height: $header-crane-button-height * $desktop-scale;
     object-fit: scale-down;
 }
+
+#topic-nav-links {
+    max-width: 500px;
+}
+
+.limit-width {
+    width: 95%;
+
+}

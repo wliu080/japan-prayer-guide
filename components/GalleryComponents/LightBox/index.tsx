@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Left, Cross, LeftArrow, RightArrow } from "../../icons"
 import { Image } from "react-bootstrap"
+import { Trans } from "next-i18next"
 
 interface LightBoxProps {
     index: number
@@ -29,6 +30,23 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
         setLightBox(!lightBox)
     }
 
+    useEffect(() => {
+        const keyDownHandler = (e: KeyboardEvent) => {
+            if (e.code === "ArrowRight") {
+                handleSwitch("inc")
+            }
+            if (e.code === "ArrowLeft") {
+                handleSwitch("dec")
+            }
+        }
+        document.addEventListener("keydown", keyDownHandler)
+
+        // clean up
+        return () => {
+            document.removeEventListener("keydown", keyDownHandler)
+        }
+    }, [index])
+
     return (
         <div className="lightbox">
             <div className="lightbox-container">
@@ -55,8 +73,10 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
                     </div>
                     <div className="lightbox-box">
                         <Image src={images[index].src} alt="light box" />
-                        <h1>{images[index].title}</h1>
                     </div>
+                    <h1>
+                        <Trans>{images[index].title}</Trans>
+                    </h1>
                     <div className="lightbox-auto lightbox-rightArrow">
                         {index + 1 !== images.length && (
                             <span className="lightbox-arrow" onClick={() => handleSwitch("inc")}>

@@ -13,18 +13,317 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         <div
           class="container"
         >
-          <h1
-            class="text-primary mt-4 mb-3 fs-1"
+          <h2
+            class="fw-bold text-primary mt-4 mb-3"
             data-testid="topic-downloadables-title"
           >
             downloads.title
-          </h1>
+          </h2>
           <p>
             downloads.description
           </p>
         </div>
         <div
-          class="g-3 row row-cols-md-3 row-cols-sm-2"
+          class="container"
+        >
+          <div
+            class="g-3 d-md-flex d-block row row-cols-md-3 row-cols-sm-1"
+            data-testid="topic-downloadables-links"
+          >
+            <div
+              class="col"
+            >
+              <a
+                aria-disabled="false"
+                class="text-decoration-none"
+                href="downloads.infographicsUrl"
+              >
+                <div
+                  class="resource-card shadow-sm border-0 rounded card"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-center topic-downloadables card-body"
+                    data-testid="topic-downloadables-cards"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="M0 0H24V24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M11 2.05v3.02C7.608 5.557 5 8.475 5 12c0 3.866 3.134 7 7 7 1.572 0 3.024-.518 4.192-1.394l2.137 2.137C16.605 21.153 14.4 22 12 22 6.477 22 2 17.523 2 12c0-5.185 3.947-9.449 9-9.95zM21.95 13c-.2 2.011-.994 3.847-2.207 5.328l-2.137-2.136c.687-.916 1.153-2.006 1.323-3.192h3.022zM13.002 2.05c4.724.469 8.48 4.226 8.95 8.95h-3.022c-.438-3.065-2.863-5.49-5.928-5.929V2.049z"
+                        />
+                      </g>
+                    </svg>
+                    <p
+                      class="fw-bold my-0"
+                    >
+                      downloads.infographicsLabel
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col"
+            >
+              <a
+                aria-disabled="false"
+                class="text-decoration-none"
+                href="downloads.pdfUrl"
+              >
+                <div
+                  class="resource-card shadow-sm border-0 rounded card"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-center topic-downloadables card-body"
+                    data-testid="topic-downloadables-cards"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M21 8v12.993A1 1 0 0 1 20.007 22H3.993A.993.993 0 0 1 3 21.008V2.992C3 2.455 3.449 2 4.002 2h10.995L21 8zm-2 1h-5V4H5v16h14V9z"
+                        />
+                      </g>
+                    </svg>
+                    <p
+                      class="fw-bold my-0"
+                    >
+                      downloads.pdfLabel
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col"
+            >
+              <a
+                aria-disabled="false"
+                class="text-decoration-none"
+                href="downloads.photographyUrl"
+              >
+                <div
+                  class="resource-card shadow-sm border-0 rounded card"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-center topic-downloadables card-body"
+                    data-testid="topic-downloadables-cards"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M20 5H4v14l9.292-9.294a1 1 0 0 1 1.414 0L20 15.01V5zM2 3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                        />
+                      </g>
+                    </svg>
+                    <p
+                      class="fw-bold my-0"
+                    >
+                      downloads.photographyLabel
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col"
+            >
+              <a
+                aria-disabled="false"
+                class="text-decoration-none"
+                href="downloads.prayerPtsUrl"
+              >
+                <div
+                  class="resource-card shadow-sm border-0 rounded card"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-center topic-downloadables card-body"
+                    data-testid="topic-downloadables-cards"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M272 191.91c-17.6 0-32 14.4-32 32v80c0 8.84-7.16 16-16 16s-16-7.16-16-16v-76.55c0-17.39 4.72-34.47 13.69-49.39l77.75-129.59c9.09-15.16 4.19-34.81-10.97-43.91-14.45-8.67-32.72-4.3-42.3 9.21-.2.23-.62.21-.79.48l-117.26 175.9C117.56 205.9 112 224.31 112 243.29v80.23l-90.12 30.04A31.974 31.974 0 0 0 0 383.91v96c0 10.82 8.52 32 32 32 2.69 0 5.41-.34 8.06-1.03l179.19-46.62C269.16 449.99 304 403.8 304 351.91v-128c0-17.6-14.4-32-32-32zm346.12 161.73L528 323.6v-80.23c0-18.98-5.56-37.39-16.12-53.23L394.62 14.25c-.18-.27-.59-.24-.79-.48-9.58-13.51-27.85-17.88-42.3-9.21-15.16 9.09-20.06 28.75-10.97 43.91l77.75 129.59c8.97 14.92 13.69 32 13.69 49.39V304c0 8.84-7.16 16-16 16s-16-7.16-16-16v-80c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 51.89 34.84 98.08 84.75 112.34l179.19 46.62c2.66.69 5.38 1.03 8.06 1.03 23.48 0 32-21.18 32-32v-96c0-13.77-8.81-25.99-21.88-30.35z"
+                      />
+                    </svg>
+                    <p
+                      class="fw-bold my-0"
+                    >
+                      downloads.prayerPtsLabel
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col"
+            >
+              <a
+                aria-disabled="false"
+                class="text-decoration-none"
+                href="downloads.prayerVidUrl"
+              >
+                <div
+                  class="resource-card shadow-sm border-0 rounded card"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-center topic-downloadables card-body"
+                    data-testid="topic-downloadables-cards"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M12 1a5 5 0 0 1 5 5v6a5 5 0 0 1-10 0V6a5 5 0 0 1 5-5zM2.192 13.962l1.962-.393a8.003 8.003 0 0 0 15.692 0l1.962.393C20.896 18.545 16.85 22 12 22s-8.896-3.455-9.808-8.038z"
+                        />
+                      </g>
+                    </svg>
+                    <p
+                      class="fw-bold my-0"
+                    >
+                      downloads.prayerVidLabel
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col"
+            >
+              <a
+                aria-disabled="false"
+                class="text-decoration-none"
+                href="downloads.slidesUrl"
+              >
+                <div
+                  class="resource-card shadow-sm border-0 rounded card"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-center topic-downloadables card-body"
+                    data-testid="topic-downloadables-cards"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M13 21v2h-2v-2H3a1 1 0 0 1-1-1V6h20v14a1 1 0 0 1-1 1h-8zm-9-2h16V8H4v11zm9-9h5v2h-5v-2zm0 4h5v2h-5v-2zm-4-4v3h3a3 3 0 1 1-3-3zM2 3h20v2H2V3z"
+                        />
+                      </g>
+                    </svg>
+                    <p
+                      class="fw-bold my-0 shrinkWidth"
+                    >
+                      downloads.slidesLabel
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a
+          class="align-self-center w-100"
+          href="downloads.downloadAllUrl"
+          style="max-width: 280px; cursor: not-allowed;"
+        >
+          <button
+            class="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
+            disabled=""
+            type="button"
+          >
+            downloads.downloadAllBtn
+          </button>
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="d-flex flex-column my-5 container"
+      data-testid="topic-downloadables-container"
+      id="topic-downloads"
+    >
+      <div
+        class="container"
+      >
+        <h2
+          class="fw-bold text-primary mt-4 mb-3"
+          data-testid="topic-downloadables-title"
+        >
+          downloads.title
+        </h2>
+        <p>
+          downloads.description
+        </p>
+      </div>
+      <div
+        class="container"
+      >
+        <div
+          class="g-3 d-md-flex d-block row row-cols-md-3 row-cols-sm-1"
           data-testid="topic-downloadables-links"
         >
           <div
@@ -36,8 +335,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.infographicsUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -63,53 +361,9 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold my-0"
                   >
                     downloads.infographicsLabel
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col"
-          >
-            <a
-              aria-disabled="false"
-              class="text-decoration-none"
-              href="downloads.photographyUrl"
-            >
-              <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
-              >
-                <div
-                  class="d-flex align-items-center justify-content-center topic-downloadables card-body"
-                  data-testid="topic-downloadables-cards"
-                >
-                  <svg
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M20 5H4v14l9.292-9.294a1 1 0 0 1 1.414 0L20 15.01V5zM2 3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-                      />
-                    </g>
-                  </svg>
-                  <p
-                    class="text-center fw-bold fs-4 my-0"
-                  >
-                    downloads.photographyLabel
                   </p>
                 </div>
               </div>
@@ -124,8 +378,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.pdfUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -151,9 +404,52 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold my-0"
                   >
                     downloads.pdfLabel
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col"
+          >
+            <a
+              aria-disabled="false"
+              class="text-decoration-none"
+              href="downloads.photographyUrl"
+            >
+              <div
+                class="resource-card shadow-sm border-0 rounded card"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center topic-downloadables card-body"
+                  data-testid="topic-downloadables-cards"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M20 5H4v14l9.292-9.294a1 1 0 0 1 1.414 0L20 15.01V5zM2 3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                      />
+                    </g>
+                  </svg>
+                  <p
+                    class="fw-bold my-0"
+                  >
+                    downloads.photographyLabel
                   </p>
                 </div>
               </div>
@@ -168,8 +464,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.prayerPtsUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -189,7 +484,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     />
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold my-0"
                   >
                     downloads.prayerPtsLabel
                   </p>
@@ -206,8 +501,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.prayerVidUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -233,7 +527,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold my-0"
                   >
                     downloads.prayerVidLabel
                   </p>
@@ -250,8 +544,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
               href="downloads.slidesUrl"
             >
               <div
-                class="shadow-sm border-0 rounded card"
-                style="min-height: 125px;"
+                class="resource-card shadow-sm border-0 rounded card"
               >
                 <div
                   class="d-flex align-items-center justify-content-center topic-downloadables card-body"
@@ -277,7 +570,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
                     </g>
                   </svg>
                   <p
-                    class="text-center fw-bold fs-4 my-0"
+                    class="fw-bold my-0 shrinkWidth"
                   >
                     downloads.slidesLabel
                   </p>
@@ -286,326 +579,19 @@ exports[`Topic Downloadables Snapshot test 1`] = `
             </a>
           </div>
         </div>
-        <a
-          class="align-self-center w-100"
-          href="downloads.downloadAllUrl"
-          style="max-width: 500px;"
-        >
-          <button
-            class="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder btn btn-primary"
-            type="button"
-          >
-            downloads.downloadAllBtn
-          </button>
-        </a>
-        <a
-          class="align-self-center my-3 text-secondary-5 fw-bolder fs-5"
-          href="/resources"
-        >
-          downloads.viewAllBtn
-        </a>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="d-flex flex-column my-5 container"
-      data-testid="topic-downloadables-container"
-      id="topic-downloads"
-    >
-      <div
-        class="container"
-      >
-        <h1
-          class="text-primary mt-4 mb-3 fs-1"
-          data-testid="topic-downloadables-title"
-        >
-          downloads.title
-        </h1>
-        <p>
-          downloads.description
-        </p>
-      </div>
-      <div
-        class="g-3 row row-cols-md-3 row-cols-sm-2"
-        data-testid="topic-downloadables-links"
-      >
-        <div
-          class="col"
-        >
-          <a
-            aria-disabled="false"
-            class="text-decoration-none"
-            href="downloads.infographicsUrl"
-          >
-            <div
-              class="shadow-sm border-0 rounded card"
-              style="min-height: 125px;"
-            >
-              <div
-                class="d-flex align-items-center justify-content-center topic-downloadables card-body"
-                data-testid="topic-downloadables-cards"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g>
-                    <path
-                      d="M0 0H24V24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M11 2.05v3.02C7.608 5.557 5 8.475 5 12c0 3.866 3.134 7 7 7 1.572 0 3.024-.518 4.192-1.394l2.137 2.137C16.605 21.153 14.4 22 12 22 6.477 22 2 17.523 2 12c0-5.185 3.947-9.449 9-9.95zM21.95 13c-.2 2.011-.994 3.847-2.207 5.328l-2.137-2.136c.687-.916 1.153-2.006 1.323-3.192h3.022zM13.002 2.05c4.724.469 8.48 4.226 8.95 8.95h-3.022c-.438-3.065-2.863-5.49-5.928-5.929V2.049z"
-                    />
-                  </g>
-                </svg>
-                <p
-                  class="text-center fw-bold fs-4 my-0"
-                >
-                  downloads.infographicsLabel
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div
-          class="col"
-        >
-          <a
-            aria-disabled="false"
-            class="text-decoration-none"
-            href="downloads.photographyUrl"
-          >
-            <div
-              class="shadow-sm border-0 rounded card"
-              style="min-height: 125px;"
-            >
-              <div
-                class="d-flex align-items-center justify-content-center topic-downloadables card-body"
-                data-testid="topic-downloadables-cards"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g>
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M20 5H4v14l9.292-9.294a1 1 0 0 1 1.414 0L20 15.01V5zM2 3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-                    />
-                  </g>
-                </svg>
-                <p
-                  class="text-center fw-bold fs-4 my-0"
-                >
-                  downloads.photographyLabel
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div
-          class="col"
-        >
-          <a
-            aria-disabled="false"
-            class="text-decoration-none"
-            href="downloads.pdfUrl"
-          >
-            <div
-              class="shadow-sm border-0 rounded card"
-              style="min-height: 125px;"
-            >
-              <div
-                class="d-flex align-items-center justify-content-center topic-downloadables card-body"
-                data-testid="topic-downloadables-cards"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g>
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M21 8v12.993A1 1 0 0 1 20.007 22H3.993A.993.993 0 0 1 3 21.008V2.992C3 2.455 3.449 2 4.002 2h10.995L21 8zm-2 1h-5V4H5v16h14V9z"
-                    />
-                  </g>
-                </svg>
-                <p
-                  class="text-center fw-bold fs-4 my-0"
-                >
-                  downloads.pdfLabel
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div
-          class="col"
-        >
-          <a
-            aria-disabled="false"
-            class="text-decoration-none"
-            href="downloads.prayerPtsUrl"
-          >
-            <div
-              class="shadow-sm border-0 rounded card"
-              style="min-height: 125px;"
-            >
-              <div
-                class="d-flex align-items-center justify-content-center topic-downloadables card-body"
-                data-testid="topic-downloadables-cards"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 640 512"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M272 191.91c-17.6 0-32 14.4-32 32v80c0 8.84-7.16 16-16 16s-16-7.16-16-16v-76.55c0-17.39 4.72-34.47 13.69-49.39l77.75-129.59c9.09-15.16 4.19-34.81-10.97-43.91-14.45-8.67-32.72-4.3-42.3 9.21-.2.23-.62.21-.79.48l-117.26 175.9C117.56 205.9 112 224.31 112 243.29v80.23l-90.12 30.04A31.974 31.974 0 0 0 0 383.91v96c0 10.82 8.52 32 32 32 2.69 0 5.41-.34 8.06-1.03l179.19-46.62C269.16 449.99 304 403.8 304 351.91v-128c0-17.6-14.4-32-32-32zm346.12 161.73L528 323.6v-80.23c0-18.98-5.56-37.39-16.12-53.23L394.62 14.25c-.18-.27-.59-.24-.79-.48-9.58-13.51-27.85-17.88-42.3-9.21-15.16 9.09-20.06 28.75-10.97 43.91l77.75 129.59c8.97 14.92 13.69 32 13.69 49.39V304c0 8.84-7.16 16-16 16s-16-7.16-16-16v-80c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 51.89 34.84 98.08 84.75 112.34l179.19 46.62c2.66.69 5.38 1.03 8.06 1.03 23.48 0 32-21.18 32-32v-96c0-13.77-8.81-25.99-21.88-30.35z"
-                  />
-                </svg>
-                <p
-                  class="text-center fw-bold fs-4 my-0"
-                >
-                  downloads.prayerPtsLabel
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div
-          class="col"
-        >
-          <a
-            aria-disabled="false"
-            class="text-decoration-none"
-            href="downloads.prayerVidUrl"
-          >
-            <div
-              class="shadow-sm border-0 rounded card"
-              style="min-height: 125px;"
-            >
-              <div
-                class="d-flex align-items-center justify-content-center topic-downloadables card-body"
-                data-testid="topic-downloadables-cards"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g>
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M12 1a5 5 0 0 1 5 5v6a5 5 0 0 1-10 0V6a5 5 0 0 1 5-5zM2.192 13.962l1.962-.393a8.003 8.003 0 0 0 15.692 0l1.962.393C20.896 18.545 16.85 22 12 22s-8.896-3.455-9.808-8.038z"
-                    />
-                  </g>
-                </svg>
-                <p
-                  class="text-center fw-bold fs-4 my-0"
-                >
-                  downloads.prayerVidLabel
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div
-          class="col"
-        >
-          <a
-            aria-disabled="false"
-            class="text-decoration-none"
-            href="downloads.slidesUrl"
-          >
-            <div
-              class="shadow-sm border-0 rounded card"
-              style="min-height: 125px;"
-            >
-              <div
-                class="d-flex align-items-center justify-content-center topic-downloadables card-body"
-                data-testid="topic-downloadables-cards"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g>
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M13 21v2h-2v-2H3a1 1 0 0 1-1-1V6h20v14a1 1 0 0 1-1 1h-8zm-9-2h16V8H4v11zm9-9h5v2h-5v-2zm0 4h5v2h-5v-2zm-4-4v3h3a3 3 0 1 1-3-3zM2 3h20v2H2V3z"
-                    />
-                  </g>
-                </svg>
-                <p
-                  class="text-center fw-bold fs-4 my-0"
-                >
-                  downloads.slidesLabel
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
       <a
         class="align-self-center w-100"
         href="downloads.downloadAllUrl"
-        style="max-width: 500px;"
+        style="max-width: 280px; cursor: not-allowed;"
       >
         <button
-          class="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder btn btn-primary"
+          class="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0 btn btn-primary"
+          disabled=""
           type="button"
         >
           downloads.downloadAllBtn
         </button>
-      </a>
-      <a
-        class="align-self-center my-3 text-secondary-5 fw-bolder fs-5"
-        href="/resources"
-      >
-        downloads.viewAllBtn
       </a>
     </div>
   </div>,

@@ -11,7 +11,7 @@
     },
     "prayerSummary": {
         "subtitle": "祈りましょう",
-        "readMore": "準備中",
+        "readMore": "もっと詳しく",
         "viewAll": "全てのテーマを見る"
     },
     "order": {
@@ -31,31 +31,35 @@
         "form": "注文フォームを入力する"
     },
     "response": {
-        "title": "Responding in prayer",
-        "blurb": "We invite you to listen to a local believer pray for this topic and to respond with your own prayer to God. We also invite you to share the prayer points with others, or to send us your reflections using the form below.",
-        "recordingLabel": "Prayer recording",
-        "feedbackLabel": "Share your reflections with us",
-        "feedbackTextPlaceholder": "Write your reflections or prayer insights here.",
-        "feedbackEmailPlaceholder": "Email address",
-        "feedbackSubmit": "Submit"
+        "title": "祈りの応答",
+        "blurb0": "このテーマのために祈る日本のクリスチャンの祈りの音声を聴き、あなた自身の祈りで応答しましょう。",
+        "blurb1": "また、他の人にも祈りの課題を分かち合ったり、下記のフォームを使って、祈りを通して語られたことを分かち合ったりしましょう。",
+        "recordingLabel": "祈りの音声",
+        "feedbackLabel": "感想を分かち合う",
+        "feedbackTextPlaceholder": "語られたことや祈りから導かれた思いをここに書いてください。あなたの感想をお待ちしています。",
+        "feedbackEmailPlaceholder": "メールアドレス",
+        "feedbackSubmit": "送信"
     },
     "downloads": {
-        "title": "Downloads",
-        "description": "All of the resources for this topic are available to download or stream. Choose which ones you want to download, or download them all for this topic.",
-        "infographicsLabel": "Infographics",
-        "photographyLabel": "Photography",
-        "pdfLabel": "PDF file",
-        "prayerPtsLabel": "Prayer points",
-        "prayerVidLabel": "Prayer recording",
-        "slidesLabel": "Presentation slides",
-        "downloadAllBtn": "Download all",
-        "viewAllBtn": "View all website resources"
+        "title": "資料",
+        "description": "このテーマに関する資料はすべてダウンロードまたはストリームしていただけます。ダウンロードしたいものを選ぶか、「すべてをダウンロード」を選んでください。",
+        "infographicsLabel": "インフォグラフィック",
+        "photographyLabel": "写真",
+        "pdfLabel": "PDFファイル",
+        "prayerPtsLabel": "祈りの課題",
+        "prayerVidLabel": "祈りの音声",
+        "slidesLabel": "プレゼン用スライド",
+        "downloadAllBtn": "準備中",
+        "viewAllBtn": "資料をすべて見る"
     },
     "relatedTopics": {
-        "heading": "Related topics",
-        "viewAll": "View all topics"
+        "heading": "関連テーマ",
+        "viewAll": "すべてのテーマを見る"
     },
     "footer": {
+        "vimeoUrl": "https://vimeo.com/japanprayerguide",
+        "amazonUrl": "https://www.amazon.co.jp/BENEATH-SURFACE-WAYS-JAPAN-English-ebook/dp/B099KSSY79/",
+        "instaUrl": "https://www.instagram.com/omf_japan/",
         "title": "サイトマップ",
         "link1": "ホーム",
         "link2": "祈りのテーマ",
@@ -64,5 +68,8 @@
         "link5": "活動紹介",
         "tagline": "私たちの働きは、日本における福音前進のために祈ることができるよう神の民を呼びかけ、整えることです。",
         "copyright": "© 2023 御心が地にもなるように　転載禁止"
+    },
+    "errors": {
+        "videoLoadError": "Could not load embed video"
     }
 }

@@ -17,9 +17,10 @@ interface ResourceProps {
     icon: ReactNode
     label: string
     link: string
+    shrinkWidth?: boolean
 }
 
-const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) => {
+const ResourceCard = ({ icon, label, link, disabled = false, shrinkWidth = false }: ResourceProps) => {
     return (
         <Col key={label}>
             <Link
@@ -29,8 +30,7 @@ const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) =>
                 tabIndex={disabled ? -1 : undefined}
             >
                 <Card
-                    className={"shadow-sm border-0 rounded" + (disabled ? " disabled" : "")}
-                    style={{ minHeight: "125px" }}
+                    className={"resource-card shadow-sm border-0 rounded" + (disabled ? " disabled" : "")}
                     onClick={(event) => (disabled ? event.preventDefault() : null)}
                 >
                     <Card.Body
@@ -41,7 +41,7 @@ const ResourceCard = ({ icon, label, link, disabled = false }: ResourceProps) =>
                         }
                     >
                         {icon}
-                        <p className="text-center fw-bold fs-4 my-0">
+                        <p className={"fw-bold my-0" + (shrinkWidth ? " shrinkWidth" : "")}>
                             <Trans>{label}</Trans>
                         </p>
                     </Card.Body>
@@ -77,66 +77,70 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
             id="topic-downloads"
         >
             <Container>
-                <h1 data-testid={"topic-downloadables-title"} className="text-primary mt-4 mb-3 fs-1">
+                <h2 data-testid={"topic-downloadables-title"} className="fw-bold text-primary mt-4 mb-3">
                     <Trans t={t} i18nKey="downloads.title" />
-                </h1>
+                </h2>
                 <p>
                     <Trans t={t} i18nKey="downloads.description" />
                 </p>
             </Container>
-            <Row md={3} sm={2} className="g-3" data-testid={"topic-downloadables-links"}>
-                <ResourceCard
-                    icon={<RiDonutChartFill />}
-                    label={infographicsLabel}
-                    link={infographicsUrl}
-                    disabled={infographicsUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiImageFill />}
-                    label={photographyLabel}
-                    link={photographyUrl}
-                    disabled={photographyUrl === ""}
-                />
-                <ResourceCard icon={<RiFile3Line />} label={pdfLabel} link={pdfUrl} disabled={pdfUrl === ""} />
-                <ResourceCard
-                    icon={<FaPrayingHands />}
-                    label={prayerPtsLabel}
-                    link={prayerPtsUrl}
-                    disabled={prayerPtsUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiMic2Fill />}
-                    label={prayerVidLabel}
-                    link={prayerVidUrl}
-                    disabled={prayerVidUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiSlideshowLine />}
-                    label={slidesLabel}
-                    link={slidesUrl}
-                    disabled={slidesUrl === ""}
-                />
-            </Row>
+            <Container>
+                <Row md={3} sm={1} className="g-3 d-md-flex d-block" data-testid={"topic-downloadables-links"}>
+                    <ResourceCard
+                        icon={<RiDonutChartFill />}
+                        label={infographicsLabel}
+                        link={infographicsUrl}
+                        disabled={infographicsUrl === ""}
+                    />
+                    <ResourceCard icon={<RiFile3Line />} label={pdfLabel} link={pdfUrl} disabled={pdfUrl === ""} />
+                    <ResourceCard
+                        icon={<RiImageFill />}
+                        label={photographyLabel}
+                        link={photographyUrl}
+                        disabled={photographyUrl === ""}
+                    />
+                    <ResourceCard
+                        icon={<FaPrayingHands />}
+                        label={prayerPtsLabel}
+                        link={prayerPtsUrl}
+                        disabled={prayerPtsUrl === ""}
+                    />
+                    <ResourceCard
+                        icon={<RiMic2Fill />}
+                        label={prayerVidLabel}
+                        link={prayerVidUrl}
+                        disabled={prayerVidUrl === ""}
+                    />
+                    <ResourceCard
+                        icon={<RiSlideshowLine />}
+                        label={slidesLabel}
+                        link={slidesUrl}
+                        disabled={slidesUrl === ""}
+                        shrinkWidth={true}
+                    />
+                </Row>
+            </Container>
             <Link
                 href={downloadAllUrl}
                 className="align-self-center w-100"
-                style={{ maxWidth: "500px" }}
+                style={{ maxWidth: "280px", cursor: "not-allowed" }}
                 locale={i18n.language}
             >
                 <Button
-                    className="align-self-center w-100 mt-4 px-4 py-2 text-white bg-secondary-5 border-secondary-5 fw-bolder"
+                    disabled
+                    className="align-self-center w-100 mt-4 px-3 text-white bg-grey-4 border-secondary-5 fw-bold fs-4 border-0"
                     variant="primary"
                 >
                     <Trans t={t} i18nKey="downloads.downloadAllBtn" />
                 </Button>
             </Link>
-            <Link
+            {/* <Link
                 href={"/resources"}
                 className="align-self-center my-3 text-secondary-5 fw-bolder fs-5"
                 locale={i18n.language}
             >
                 <Trans t={t} i18nKey="downloads.viewAllBtn" />
-            </Link>
+            </Link> */}
         </Container>
     )
 }

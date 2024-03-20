@@ -1,10 +1,9 @@
 import Head from "next/head"
 import { getTopicPageIds } from "../../services/staticTopicLoader"
 import { GetStaticProps, GetStaticPaths } from "next"
-import { Container } from "react-bootstrap"
+import { Container, Image } from "react-bootstrap"
 import { ToggleHeader } from "../../components/toggleHeader"
 import TopicDownloadables from "../../components/topic/TopicDownloadables"
-import RelatedContent from "../../components/topic/RelatedContent"
 import Footer from "../../components/footer"
 import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
@@ -60,14 +59,22 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     let textContent: string[] = t("textBody", { returnObjects: true })
     textContent = Array.isArray(textContent) ? textContent : []
 
+    let textAsterisk: string[] = t("textBodyAsterisk", { returnObjects: true })
+    textAsterisk = Array.isArray(textAsterisk) ? textAsterisk : []
+
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
     const galleryLabel: string = topicCommon("galleryLabel")
-    const factsLabel: string = topicCommon("factsLabel")
+    //const factsLabel: string = topicCommon("factsLabel")
+    const galleryClickInstructions: string = topicCommon("galleryClickInstructions")
+    const galleryImageText: string = topicCommon("galleryImageText")
 
     const images: any[] = t("photos", { returnObjects: true })
     const galleryType: string = t("galleryType")
     const blockOrder: number[] = t("blockOrder", { returnObjects: true })
+
+    const heroPhoto: string = t("heroPhoto")
+    const heroFocus: string = t("heroFocus")
 
     return (
         <>
@@ -82,10 +89,15 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <ToggleHeader hideShadow={true} />
 
                 {/* Component to Hold image, as well as title and Prayer Summary */}
-                <div id="placeholder-image" className="w-100 mx-0 px-0 position-relative" style={{ height: "700px" }}>
-                    temporary image placeholder
+                <div className="w-100 mx-0 px-0 position-relative hero-section">
+                    <Image
+                        src={heroPhoto}
+                        alt="topic hero image"
+                        className="hero-photo"
+                        style={{ objectPosition: heroFocus }}
+                    />
                     <Container className="d-flex flex-column align-items-start justify-content-end h-100 py-5 px-0">
-                        <h1 className="fs-1 text-white px-3">{t("title")}</h1>
+                        <h1 className="text-white px-3 hero-title">{t("title")}</h1>
                         <PrayerPoints topicTrans={t} displayStyle={PrayerDisplayStyle.TopicTop} />
                     </Container>
                 </div>
@@ -93,58 +105,76 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 {/* Topic Nav Component */}
                 <StickyNav tabs={navTabs} />
 
-                {/* Placeholder for a quote */}
-                <Container
-                    id="about-topic"
-                    className="d-flex flex-column justify-content-center align-items-center py-4 my-4"
-                >
-                    <h1 className="text-secondary fs-1 text-center">
-                        <Trans t={t} i18nKey="quote.content" />
-                    </h1>
-                    <h2 className="text-secondary fs-6 text-center">
-                        <Trans t={t} i18nKey="quote.source" />
-                    </h2>
-                </Container>
-
-                {/* Placeholder text */}
-                <Container className="main-content">
-                    {textContent.map((text: string, idx: number) => (
-                        <p key={idx + text}>
-                            <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
+                <Container className="main-section-container">
+                    {/* Placeholder for a quote */}
+                    <Container
+                        id="about-topic"
+                        className="d-flex flex-column justify-content-center align-items-center py-4 mt-4"
+                    >
+                        <p className="text-primary-blue quote text-center">
+                            <Trans t={t} i18nKey="quote.content" />
                         </p>
-                    ))}
-                </Container>
-
-                {/* Images */}
-                <CollapseBlock title={galleryLabel}>
-                    <PhotosWrapper images={images} type={galleryType} blocks={blockOrder} />
-                </CollapseBlock>
-
-                {/* Infographics Placeholder */}
-                <CollapseBlock title={factsLabel}>
-                    <Container>
-                        <div id="placeholder-image" className="w-100">
-                            Infographics Placeholder
-                        </div>
-                        {/* Placeholder Image */}
-                        <div id="placeholder-image" className="w-100 my-5">
-                            Placeholder
-                        </div>
+                        <p className="text-primary-blue fs-5 text-center">
+                            <Trans t={t} i18nKey="quote.source" />
+                        </p>
                     </Container>
-                </CollapseBlock>
-                <Container className="bottom-spacing">
-                    <hr />
+
+                    {/* Placeholder text */}
+                    <Container className="main-content mt-4">
+                        {textContent.map((text: string, idx: number) => (
+                            <p key={idx + text}>
+                                <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
+                            </p>
+                        ))}
+                    </Container>
+                    <Container className="fs-5">
+                        {textAsterisk.map((text: string, idx: number) => (
+                            <p key={idx + text}>
+                                <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
+                            </p>
+                        ))}
+                    </Container>
+
+                    {/* Images */}
+                    <CollapseBlock title={galleryLabel} startOpened={true} galleryType={galleryType}>
+                        <PhotosWrapper
+                            images={images}
+                            type={galleryType}
+                            blocks={blockOrder}
+                            subTitle={galleryClickInstructions}
+                            galleryTitle={galleryLabel}
+                            imageText={galleryImageText}
+                        />
+                    </CollapseBlock>
+
+                    {/* Infographics Placeholder */}
+                    {/* <CollapseBlock title={factsLabel} startOpened={true} galleryType={galleryType}>
+                        <Container>
+                            <div id="placeholder-image" className="w-100 my-3">
+                                Infographics Placeholder
+                            </div>
+                            <div id="placeholder-image" className="w-100 my-5">
+                                Placeholder
+                            </div>
+                        </Container>
+                    </CollapseBlock> */}
+                    <Container className="bottom-spacing">
+                        <hr />
+                    </Container>
                 </Container>
 
-                {/* Responding in Prayer */}
-                <PrayerResponse topicTrans={t} />
+                <Container fluid className="bg-grey-2 px-0">
+                    <Container className="main-section-container px-0">
+                        {/* Responding in Prayer */}
+                        <PrayerResponse topicTrans={t} />
+                    </Container>
+                </Container>
 
-                <br />
-
-                {/* Downloads and Related */}
-                <TopicDownloadables topicTrans={t} />
-                <RelatedContent topicTrans={t} />
-
+                <Container className="main-section-container px-0">
+                    {/* Downloads and Related */}
+                    <TopicDownloadables topicTrans={t} />
+                    {/* <RelatedContent topicTrans={t} /> */}
+                </Container>
                 {/* Footer */}
                 <Footer />
             </main>

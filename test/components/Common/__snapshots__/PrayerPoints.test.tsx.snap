@@ -15,10 +15,10 @@ exports[`Prayer Points Snapshot test 1`] = `
         >
           <img
             class="card-img-top prayer-img"
-            src="/photos/topic-nav/church/church-leadership-b.jpg"
+            src="A,B"
           />
           <div
-            class="p-4 featured card-body"
+            class="featured card-body"
             data-testid="prayer-points-body"
           >
             <p
@@ -54,7 +54,7 @@ exports[`Prayer Points Snapshot test 1`] = `
               </li>
             </ul>
             <button
-              class="feature-button fs-4 fw-bold bg-grey-4 text-white text-center border-0 mt-3 mb-2 w-100 btn btn-primary"
+              class="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 btn btn-primary"
               type="button"
             >
               prayerSummary.readMore
@@ -82,10 +82,10 @@ exports[`Prayer Points Snapshot test 1`] = `
       >
         <img
           class="card-img-top prayer-img"
-          src="/photos/topic-nav/church/church-leadership-b.jpg"
+          src="A,B"
         />
         <div
-          class="p-4 featured card-body"
+          class="featured card-body"
           data-testid="prayer-points-body"
         >
           <p
@@ -121,7 +121,7 @@ exports[`Prayer Points Snapshot test 1`] = `
             </li>
           </ul>
           <button
-            class="feature-button fs-4 fw-bold bg-grey-4 text-white text-center border-0 mt-3 mb-2 w-100 btn btn-primary"
+            class="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2 btn btn-primary"
             type="button"
           >
             prayerSummary.readMore
