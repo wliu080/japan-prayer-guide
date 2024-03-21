@@ -29,7 +29,7 @@ export const PhotosWrapper = ({
         return <NestedModal images={images} subTitle={subTitle} galleryTitle={galleryTitle} imageText={imageText} />
     }
     if (type === "carousel") {
-        return <ImageCarousel images={images} />
+        return <ImageCarousel images={images} topic />
     }
     return <></>
 }

@@ -1,13 +1,76 @@
+import Box from "@mui/material/Box"
+import Modal from "@mui/material/Modal"
+import Slide from "@mui/material/Slide"
+import React from "react"
 import { Carousel, CarouselItem, Image } from "react-bootstrap"
+import LightBox from "../LightBox"
 
 interface CarouselProps {
     images: {
         src: string
         title: string
     }[]
+    topic?: boolean
 }
 
-export const ImageCarousel = ({ images }: CarouselProps) => {
+export const ImageCarousel = ({ images, topic = false }: CarouselProps) => {
+    const [lightBox, setLightBox] = React.useState(false)
+    const [index, setImage] = React.useState(0)
+
+    const handleOpen = (__i__: number) => {
+        setImage(__i__)
+        setLightBox(true)
+    }
+
+    if (topic)
+        return (
+            <>
+                <div className="topic-carousel-container d-flex flex-column align-items-center position-relative w-100">
+                    <div className="home-invite-inner mb-0 mb-md-5" style={{ aspectRatio: "unset", width: "100%" }}>
+                        <Carousel
+                            controls={true}
+                            fade={true}
+                            interval={3000}
+                            className="w-100 d-flex flex-column justify-content-center align-items-center mt-2 mt-md-4"
+                        >
+                            {images.map((img, index) => (
+                                <CarouselItem className="w-100 d-flex justify-content-center" key={index}>
+                                    <Image
+                                        className="carousel-image"
+                                        alt={"hero image" + index}
+                                        src={img.src}
+                                        style={{ maxHeight: "none", width: "100%", aspectRatio: "unset" }}
+                                        onClick={() => handleOpen(index)}
+                                    />
+                                </CarouselItem>
+                            ))}
+                        </Carousel>
+                    </div>
+                </div>
+                <Modal
+                    open={lightBox}
+                    onClose={() => {
+                        setLightBox(false)
+                    }}
+                    aria-labelledby="child-modal-title"
+                    aria-describedby="child-modal-description"
+                >
+                    <Slide direction="up" in={lightBox} mountOnEnter unmountOnExit>
+                        <Box className="carouselBox">
+                            <LightBox
+                                index={index}
+                                setImage={setImage}
+                                images={images}
+                                lightBox={lightBox}
+                                setLightBox={setLightBox}
+                                setGallery={() => {}}
+                            />
+                        </Box>
+                    </Slide>
+                </Modal>
+            </>
+        )
+
     return (
         <div className="home-invitation d-flex flex-column align-items-center position-relative w-100">
             <div className="home-invite-inner mb-0 mb-md-5">
