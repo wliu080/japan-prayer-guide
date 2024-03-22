@@ -1,4 +1,4 @@
-import { ImageCarousel } from "../Carousel"
+import { ImageCarousel } from "../Carousel/Carousel"
 import { Mosaic } from "../Mosaic/Mosaic"
 import { NestedModal } from "../NestedModal/NestedModal"
 

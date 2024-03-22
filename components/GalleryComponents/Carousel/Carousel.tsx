@@ -3,7 +3,7 @@ import Modal from "@mui/material/Modal"
 import Slide from "@mui/material/Slide"
 import React from "react"
 import { Carousel, CarouselItem, Image } from "react-bootstrap"
-import LightBox from "../LightBox"
+import LightBox from "../LightBox/LightBox"
 
 interface CarouselProps {
     images: {

@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
 import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints"
-import { ImageCarousel } from "../components/GalleryComponents/Carousel"
+import { ImageCarousel } from "../components/GalleryComponents/Carousel/Carousel"
 
 const carouselImages: { src: string; title: string }[] = [
     {
