@@ -3,7 +3,7 @@ import Box from "@mui/material/Box"
 import Modal from "@mui/material/Modal"
 import Slide from "@mui/material/Slide"
 
-import LightBox from "../LightBox"
+import LightBox from "../LightBox/LightBox"
 import {
     MosaicBlockFive,
     MosaicBlockFour,

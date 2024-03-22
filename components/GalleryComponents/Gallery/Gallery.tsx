@@ -1,5 +1,5 @@
 import * as React from "react"
-import LightBox from "../LightBox"
+import LightBox from "../LightBox/LightBox"
 import { Cross } from "../../icons"
 import { useEffect } from "react"
 import Modal from "@mui/material/Modal"

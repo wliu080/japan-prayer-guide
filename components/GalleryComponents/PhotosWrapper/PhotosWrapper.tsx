@@ -1,3 +1,4 @@
+import { ImageCarousel } from "../Carousel/Carousel"
 import { Mosaic } from "../Mosaic/Mosaic"
 import { NestedModal } from "../NestedModal/NestedModal"
 
@@ -26,6 +27,9 @@ export const PhotosWrapper = ({
     }
     if (type === "gallery") {
         return <NestedModal images={images} subTitle={subTitle} galleryTitle={galleryTitle} imageText={imageText} />
+    }
+    if (type === "carousel") {
+        return <ImageCarousel images={images} topic />
     }
     return <></>
 }

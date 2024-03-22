@@ -43,7 +43,7 @@
         { "label": "Daily Christian life and faith", "link": "daily-christian-life-and-faith", "disabled": true },
         { "label": "Japanese overseas", "link": "japanese-overseas", "disabled": true },
         { "label": "Missionary life", "link": "missionary-life", "disabled": true },
-        { "label": "Unity in Christ", "link": "unity-in-christ", "disabled": true },
+        { "label": "Unity in Christ", "link": "unity-in-christ", "disabled": false },
         { "label": "Japanese mission movement", "link": "japanese-mission-movement", "disabled": true },
         { "label": "Prayer for spiritual breakthrough", "link": "prayer-for-spiritual-breakthrough", "disabled": true }
     ]

@@ -4,7 +4,7 @@ import Modal from "@mui/material/Modal"
 import Slide from "@mui/material/Slide"
 
 import Backdrop from "@mui/material/Backdrop"
-import Gallery from "../Gallery"
+import Gallery from "../Gallery/Gallery"
 import { Image, Row } from "react-bootstrap"
 
 const style = {
