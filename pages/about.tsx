@@ -6,7 +6,7 @@ import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
 import Link from "next/link"
-import { BlurImage } from "../components/BlurImage"
+import { LowHighImage } from "../components/LowHighImage"
 import Image from "next/image"
 import about1 from "../public/photos/about/about_01.png"
 import about2 from "../public/photos/about/about_02.png"
@@ -47,7 +47,7 @@ const About: React.FC = () => {
                     id="about-landing-image"
                     className="w-100 mx-0 d-flex align-items-center justify-content-center flex-column position-relative"
                 >
-                    <BlurImage
+                    <LowHighImage
                         alt="about hero image"
                         highSrc="/photos/about/about_hero.jpg"
                         lowSrc="/photos/about/about_hero_LowRes.jpg"
