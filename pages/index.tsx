@@ -9,7 +9,7 @@ import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
 import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints"
 import { ImageCarousel } from "../components/GalleryComponents/Carousel/Carousel"
-import { BlurImage } from "../components/BlurImage"
+import { LowHighImage } from "../components/LowHighImage"
 
 const carouselImages: { src: string; title: string }[] = [
     {
@@ -72,7 +72,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
 
                 {/* Hero banner section */}
                 <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
-                    <BlurImage
+                    <LowHighImage
                         alt="home page hero"
                         highSrc="/photos/home/hp_hero.png"
                         lowSrc="/photos/home/hp_hero_LowRes.jpg"

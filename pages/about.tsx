@@ -6,7 +6,7 @@ import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
 import Link from "next/link"
-import { BlurImage } from "../components/BlurImage"
+import { LowHighImage } from "../components/LowHighImage"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -40,7 +40,7 @@ const About: React.FC = () => {
                     id="about-landing-image"
                     className="w-100 mx-0 d-flex align-items-center justify-content-center flex-column position-relative"
                 >
-                    <BlurImage
+                    <LowHighImage
                         alt="about hero image"
                         highSrc="/photos/about/about_hero.jpg"
                         lowSrc="/photos/about/about_hero_LowRes.jpg"

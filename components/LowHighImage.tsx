@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import { Image as BootstrapImage, ImageProps } from "react-bootstrap"
 
-interface BlurImageProps extends ImageProps {
+interface LowHighImageProps extends ImageProps {
     lowSrc: string
     highSrc: string
 }
 
-export const BlurImage = ({ lowSrc, highSrc, alt, ...rest }: BlurImageProps) => {
+export const LowHighImage = ({ lowSrc, highSrc, alt, ...rest }: LowHighImageProps) => {
     const [src, setSrc] = useState(lowSrc)
 
     useEffect(() => {
