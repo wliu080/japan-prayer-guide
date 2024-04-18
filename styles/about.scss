@@ -4,247 +4,255 @@
 // About Page Classes
 #about {
     .about-h1-header {
-      font-family: $font-family-secondary;
-      font-size: 40px;
-      @include media-breakpoint-down(xl) {
-        font-size: 32px;
-      }
-      @include media-breakpoint-down(md) {
-        font-size: 24px;
-      }
+        font-family: $font-family-secondary;
+        font-size: 40px;
+        @include media-breakpoint-down(xl) {
+            font-size: 32px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+        }
     }
-  
+
     .about-body-text {
-      max-width: 900px;
+        max-width: 900px;
     }
-  
+
     #about-landing-image {
-      height: 490px;
-  
-      img {
-        object-fit: cover;
-        object-position: 60% 0%;
-        width: 100%;
         height: 490px;
-        z-index: -1;
-      }
-  
-      h1 {
-        font-size: 60px;
-        font-family: $font-family-secondary;
-        max-width: 1120px;
-        margin-top: -10px;
-        margin-bottom: 32px;
-        @include media-breakpoint-down(xl) {
-          font-size: 52px;
-          margin-top: -9px;
-          margin-bottom: 32px;
+
+        img {
+            object-fit: cover;
+            object-position: 60% 0%;
+            width: 100%;
+            height: 490px;
+            z-index: -1;
         }
-        @include media-breakpoint-down(md) {
-          font-size: 40px;
-          margin-top: -8px;
-          margin-bottom: 32px;
+
+        h1 {
+            font-size: 60px;
+            font-family: $font-family-secondary;
+            max-width: 1120px;
+            margin-top: -10px;
+            margin-bottom: 32px;
+            @include media-breakpoint-down(xl) {
+                font-size: 52px;
+                margin-top: -9px;
+                margin-bottom: 32px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 40px;
+                margin-top: -8px;
+                margin-bottom: 32px;
+            }
         }
-      }
-  
-      h2 {
-        font-size: 34px;
-        font-family: $font-family-secondary;
-        max-width: 1120px;
-        @include media-breakpoint-down(xl) {
-          font-size: 32px;
+
+        h2 {
+            font-size: 34px;
+            font-family: $font-family-secondary;
+            max-width: 1120px;
+            @include media-breakpoint-down(xl) {
+                font-size: 32px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+            }
         }
-        @include media-breakpoint-down(md) {
-          font-size: 24px;
-        }
-      }
     }
-  
+
     .about-beneath-surface {
-      max-width: 900px;
-      @include media-breakpoint-down(md) {
-        max-width: none;
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-      .about-images {
-        aspect-ratio: 1.5;
-        max-width: 700px;
-        object-fit: cover;
-  
-        height: 285px;
-        @include media-breakpoint-down(xl) {
-          height: 245px;
-        }
+        max-width: 900px;
         @include media-breakpoint-down(md) {
-          max-width: none;
-          height: auto;
+            max-width: none;
+            padding-left: 0px;
+            padding-right: 0px;
         }
-      }
+        .about-images {
+            aspect-ratio: 1.5;
+            max-width: 876px;
+            object-fit: cover;
+
+            height: 285px;
+            @include media-breakpoint-down(xl) {
+                height: 245px;
+                max-width: 751px;
+            }
+            @include media-breakpoint-down(md) {
+                max-width: none;
+                height: auto;
+            }
+        }
     }
-  
+
     .about-beneath-surface-text {
-      @include media-breakpoint-down(lg) {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
+        @include media-breakpoint-down(lg) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
-  
+
     .about-verse {
-      max-width: 900px;
-      font-family: $font-family-secondary;
-  
-      .about-passage-location {
-        font-family: $font-family-base;
-      }
-  
-      h2 {
+        max-width: 900px;
         font-family: $font-family-secondary;
-        font-style: italic;
-        font-weight: 300;
-        line-height: 1.5;
-      }
-  
-      h3 {
-        text-transform: uppercase;
-        letter-spacing: 1.8px;
-        font-size: 18px;
-  
-        @include media-breakpoint-down(xl) {
-          font-size: 16px;
+
+        .about-passage-location {
+            font-family: $font-family-base;
         }
-  
-        @include media-breakpoint-down(md) {
-          font-size: 14px;
+
+        h2 {
+            font-family: $font-family-secondary;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.5;
         }
-      }
+
+        h3 {
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            font-size: 18px;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 16px;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
     }
     .about-logos-container {
-      gap: 4.5rem !important;
-      @include media-breakpoint-down(xl) {
-        gap: 3.5rem !important;
-      }
-  
-      @include media-breakpoint-down(md) {
-        gap: 2.5rem !important;
-      }
+        gap: 4.5rem !important;
+        @include media-breakpoint-down(xl) {
+            gap: 3.5rem !important;
+        }
+
+        @include media-breakpoint-down(md) {
+            gap: 2.5rem !important;
+        }
     }
-  
+
     $logo-size: 100px;
     $logo-size-tablet: 90px;
     $logo-size-mobile: 80px;
     .omf-logo {
-      height: $logo-size;
-      @include media-breakpoint-down(xl) {
-        height: $logo-size-tablet;
-      }
-      @include media-breakpoint-down(md) {
-        height: $logo-size-mobile;
-      }
+        height: $logo-size;
+        width: $logo-size;
+
+        @include media-breakpoint-down(xl) {
+            height: $logo-size-tablet;
+            width: $logo-size-tablet;
+        }
+        @include media-breakpoint-down(md) {
+            height: $logo-size-mobile;
+            width: $logo-size-mobile;
+        }
     }
-  
+
     $logo-ratio: 102/116;
     .pioneers-logo {
-      height: $logo-size * $logo-ratio;
-      @include media-breakpoint-down(xl) {
-        height: $logo-size-tablet * $logo-ratio;
-      }
-      @include media-breakpoint-down(md) {
-        height: $logo-size-mobile * $logo-ratio;
-      }
+        height: $logo-size * $logo-ratio;
+        width: $logo-size * $logo-ratio;
+        @include media-breakpoint-down(xl) {
+            height: $logo-size-tablet * $logo-ratio;
+            width: $logo-size-tablet * $logo-ratio;
+        }
+        @include media-breakpoint-down(md) {
+            height: $logo-size-mobile * $logo-ratio;
+            width: $logo-size-mobile * $logo-ratio;
+        }
     }
     .about-invite {
-      max-width: 900px;
-    }
-  
-    #who-are-we {
-      max-width: 900px;
-      padding-top: 60px;
-      padding-bottom: 46px;
-  
-      @include media-breakpoint-down(xl) {
-        padding-top: 40px;
-        padding-bottom: 48px;
-      }
-  
-      @include media-breakpoint-down(md) {
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
-  
-      .about-main-image {
-        width: 85%;
-        max-width: 700px;
-        aspect-ratio: 1.7;
-        object-fit: cover;
-      }
-  
-      p {
         max-width: 900px;
-      }
     }
-  
+
+    #who-are-we {
+        max-width: 900px;
+        padding-top: 60px;
+        padding-bottom: 46px;
+
+        @include media-breakpoint-down(xl) {
+            padding-top: 40px;
+            padding-bottom: 48px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .about-main-image {
+            width: 85%;
+            max-width: 700px;
+            aspect-ratio: 1.7;
+            position: relative;
+        }
+
+        p {
+            max-width: 900px;
+        }
+    }
+
     #mission-vision-section {
-      min-height: 100px;
-      background-color: #eaf4ff;
+        min-height: 100px;
+        background-color: #eaf4ff;
     }
-  
+
     #mission-vision {
-      max-width: 1000px;
-      position: relative;
-      top: -110px;
+        max-width: 1000px;
+        position: relative;
+        top: -110px;
     }
-  
+
     #about-bible-verse {
-      max-width: 850px;
+        max-width: 850px;
     }
-  
+
     .verse-bar {
-      width: 171px;
-      height: 5px;
+        width: 171px;
+        height: 5px;
     }
-  
+
     #why-the-name-section {
-      min-height: 100px;
+        min-height: 100px;
     }
-  
+
     #why-the-name {
-      max-width: 1000px;
-      position: relative;
-      top: -110px;
+        max-width: 1000px;
+        position: relative;
+        top: -110px;
     }
-  
+
     .why-content {
-      max-width: 800px;
+        max-width: 800px;
     }
-  
+
     .why-bar {
-      width: 100%;
-      height: 2px;
-      background-color: #cecece;
-  
-      @media screen and (max-width: 700px) {
-        display: none;
-      }
+        width: 100%;
+        height: 2px;
+        background-color: #cecece;
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
     }
-  
+
     #team-image {
-      height: 350px;
-      background-color: #868686;
-      top: -50px;
-      position: relative;
+        height: 350px;
+        background-color: #868686;
+        top: -50px;
+        position: relative;
     }
-  
+
     #team-container {
-      max-width: 1000px;
+        max-width: 1000px;
     }
-  
+
     .team-box {
-      background-color: #efefef;
+        background-color: #efefef;
     }
-  
+
     #partners-section {
-      min-height: 100px;
-      background-color: #eaf4ff;
+        min-height: 100px;
+        background-color: #eaf4ff;
     }
-  }
+}

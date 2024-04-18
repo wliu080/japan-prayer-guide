@@ -1,11 +1,18 @@
 import Head from "next/head"
 import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
-import { Container, Image } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
 import Link from "next/link"
+import Image from "next/image"
+import heroImage from "../public/photos/about/about_hero.jpg"
+import about1 from "../public/photos/about/about_01.png"
+import about2 from "../public/photos/about/about_02.png"
+import about3 from "../public/photos/about/about_03.png"
+import omfLogo from "../public/photos/about/about_omf.png"
+import pioneersLogo from "../public/photos/about/about_pioneers.png"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -39,11 +46,7 @@ const About: React.FC = () => {
                     id="about-landing-image"
                     className="w-100 mx-0 d-flex align-items-center justify-content-center flex-column position-relative"
                 >
-                    <Image
-                        alt="about hero image"
-                        src="/photos/about/about_hero.jpg"
-                        className="position-absolute top-0"
-                    />
+                    <Image alt="about hero image" src={heroImage} className="position-absolute top-0" />
                     <h2 className="px-4 px-md-5 px-lg-4 text-white w-100">
                         <Trans t={t} i18nKey="heroSubheader" />
                     </h2>
@@ -57,7 +60,10 @@ const About: React.FC = () => {
                     <h1 className="text-primary about-h1-header text-center">
                         <Trans t={t} i18nKey="introTitle" />
                     </h1>
-                    <Image className="mt-4 about-main-image" alt="about img 1" src="/photos/about/about_01.png" />
+                    <Container className="about-main-image mt-4">
+                        <Image alt="about img 1" src={about1} fill={true} style={{ objectFit: "cover" }} />
+                    </Container>
+
                     <Container className="px-0">
                         <div className="w-100 mt-4 pt-3"></div>
                         {introBlurb.map((text, idx) => (
@@ -74,9 +80,23 @@ const About: React.FC = () => {
                         <h1 className="mt-2 mb-4 pb-2 text-primary about-h1-header text-center">
                             <Trans t={t} i18nKey="contextTitle" />
                         </h1>
-                        <Container className="d-flex flex-column flex-md-row gap-3 gap-xl-4 about-images justify-content-center px-4">
-                            <Image alt="about img 2" src="/photos/about/about_02.png" className="about-image" />
-                            <Image alt="about img 3" src="/photos/about/about_03.png" className="about-image" />
+                        <Container className="d-flex flex-column flex-md-row gap-3 gap-xl-4 about-images justify-content-center px-0">
+                            <Container className="about-image px-0" style={{ position: "relative" }}>
+                                <Image
+                                    alt="about img 2"
+                                    src={about2}
+                                    fill={true}
+                                    style={{ objectFit: "cover", aspectRatio: "1.5" }}
+                                />
+                            </Container>
+                            <Container className="about-image px-0" style={{ position: "relative" }}>
+                                <Image
+                                    alt="about img 3"
+                                    src={about3}
+                                    fill={true}
+                                    style={{ objectFit: "cover", aspectRatio: "1.5" }}
+                                />
+                            </Container>
                         </Container>
                         <div className="w-100 mt-4 pt-3"></div>
                         <Container className="about-beneath-surface-text">
@@ -122,12 +142,12 @@ const About: React.FC = () => {
                 <Container className="about-logos-container w-100 d-flex justify-content-center align-items-center my-5">
                     <div className="ms-2">
                         <Link href="https://omf.org/east-asia/japan/">
-                            <Image className="omf-logo" alt="omf logo" src="/photos/about/about_omf.png" />
+                            <Image className="omf-logo" alt="omf logo" src={omfLogo} />
                         </Link>
                     </div>
                     <div className="">
                         <Link href="https://www.pioneersjapan.org/">
-                            <Image className="pioneers-logo" alt="omf logo" src="/photos/about/about_pioneers.png" />
+                            <Image className="pioneers-logo" alt="omf logo" src={pioneersLogo} />
                         </Link>
                     </div>
                 </Container>
