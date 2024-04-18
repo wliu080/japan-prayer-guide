@@ -51,7 +51,7 @@ export default function Overview() {
                 {/* Hero Banner */}
                 <div
                     className="w-100 mx-0 px-0 position-relative d-flex flex-column align-items-center justify-content-center"
-                    style={{ height: "490px" }}
+                    style={{ height: "490px", marginTop: "60px" }}
                 >
                     <LowHighImage
                         lowSrc="/photos/topic-nav/TOPNAV_HERO_LowRes.jpg"

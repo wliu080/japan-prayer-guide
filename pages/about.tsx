@@ -46,6 +46,7 @@ const About: React.FC = () => {
                 <div
                     id="about-landing-image"
                     className="w-100 mx-0 d-flex align-items-center justify-content-center flex-column position-relative"
+                    style={{ marginTop: "60px" }}
                 >
                     <LowHighImage
                         alt="about hero image"
