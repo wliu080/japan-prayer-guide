@@ -13,16 +13,15 @@ export enum PrayerDisplayStyle {
 interface prayerProps {
     topicTrans: TFunction // the translation object for the given topic
     displayStyle: PrayerDisplayStyle
-    featuredTopicRef?: string
 }
 
-export default function PrayerPoints({ topicTrans, displayStyle, featuredTopicRef = "" }: prayerProps) {
+export default function PrayerPoints({ topicTrans, displayStyle }: prayerProps) {
     const { t, i18n } = useTranslation("common")
     const router = useRouter()
 
     const prayerPoints: string[] = topicTrans("prayerSummary", { returnObjects: true })
-
     const featuredImg: string = topicTrans("heroPhoto", { returnObjects: true })
+    const featuredTopicUrl: string = "topics/" + topicTrans("path", "all")
 
     let alignLeft: boolean = false
     let showTitle: boolean = false
@@ -87,7 +86,7 @@ export default function PrayerPoints({ topicTrans, displayStyle, featuredTopicRe
                                 className="feature-button fs-4 fw-bold bg-white text-secondary-5 text-center border-secondary-5 mt-3 mb-2"
                                 variant="primary"
                                 onClick={() =>
-                                    router.push(featuredTopicRef, featuredTopicRef, { locale: i18n.language })
+                                    router.push(featuredTopicUrl, featuredTopicUrl, { locale: i18n.language })
                                 }
                             >
                                 <Trans t={t} i18nKey="prayerSummary.readMore" />
