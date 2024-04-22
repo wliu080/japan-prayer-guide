@@ -81,7 +81,7 @@ const About: React.FC = () => {
                             <Trans t={t} i18nKey="contextTitle" />
                         </h1>
                         <Container className="d-flex flex-column flex-md-row gap-3 gap-xl-4 about-images justify-content-center px-0">
-                            <Container className="about-image px-0" style={{ position: "relative" }}>
+                            <Container className="about-image px-0">
                                 <Image
                                     alt="about img 2"
                                     src={about2}
@@ -89,7 +89,7 @@ const About: React.FC = () => {
                                     style={{ objectFit: "cover", aspectRatio: "1.5" }}
                                 />
                             </Container>
-                            <Container className="about-image px-0" style={{ position: "relative" }}>
+                            <Container className="about-image px-0">
                                 <Image
                                     alt="about img 3"
                                     src={about3}

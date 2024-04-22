@@ -70,8 +70,6 @@
         .about-images {
             aspect-ratio: 1.5;
             max-width: 876px;
-            object-fit: cover;
-
             height: 285px;
             @include media-breakpoint-down(xl) {
                 height: 245px;
@@ -80,6 +78,13 @@
             @include media-breakpoint-down(md) {
                 max-width: none;
                 height: auto;
+            }
+        }
+        .about-image {
+            position: relative;
+            height: 100%;
+            @include media-breakpoint-down(md) {
+                height: 93%;
             }
         }
     }
