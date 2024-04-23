@@ -142,7 +142,7 @@ const Booklet: React.FC = () => {
             </Head>
             <ToggleHeader />
             <main id="booklet">
-                <div className="w-100 book-description position-relative">
+                <div className="w-100 book-description position-relative" style={{ marginTop: "60px" }}>
                     <Container>
                         <Row xs={1} sm={1} md={1} xl={2}>
                             <Col className="align-items-center">
