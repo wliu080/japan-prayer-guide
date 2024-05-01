@@ -31,8 +31,7 @@ export default function Footer() {
                             <LinksList additional="" />
                         </Row>
                         <Row className="d-flex justify-content-center align-items-center pt-3 pb-2">
-                            {/* another temp inline-style for an image */}
-                            <Image style={{ maxHeight: "100px", width: "96px" }} src={craneLogo} alt="logo"></Image>
+                            <Image style={{ height: "72px", width: "96px" }} src={craneLogo} alt="logo"></Image>
                         </Row>
                         <Row className="text-center px-3 mx-1">
                             <p className="footer-blurb text-white fs-6 fw-light">
@@ -82,8 +81,7 @@ export default function Footer() {
                         <Col sm={6}></Col>
                         <Col sm={2} className="my-4 pl-5">
                             <Row className="d-flex align-items-center pt-2 pb-2">
-                                {/* another temp inline-style for an image */}
-                                <Image style={{ maxHeight: "100px", width: "96px" }} src={craneLogo} alt="logo"></Image>
+                                <Image style={{ height: "72px", width: "96px" }} src={craneLogo} alt="logo"></Image>
                             </Row>
                             <Row>
                                 <p className="footer-blurb text-white">

@@ -39,7 +39,7 @@ import MobileBookPageImageJA7 from "../public/photos/booklet/pagination/ja/ja_Bo
 import MobileBookPageImageJA8 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 8.jpg"
 import MobileBookPageImageJA9 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 9.jpg"
 import MobileBookPageImageJA10 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 10.jpg"
-import Image, { StaticImageData } from "next/image"
+import { StaticImageData } from "next/image"
 import coverEN from "../public/photos/home/hp_cover-en.jpg"
 import coverJA from "../public/photos/home/hp_cover-ja.jpg"
 import NextImage from "../components/common/NextImage/NextImage"
