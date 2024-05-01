@@ -3,7 +3,6 @@ import Link from "next/link"
 import React from "react"
 import { ToggleHeader } from "../components/toggleHeader"
 import { Container, Row, Col, Button } from "react-bootstrap"
-import BootstrapImage from "react-bootstrap/Image"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/footer"
@@ -39,10 +38,12 @@ import MobileBookPageImageJA7 from "../public/photos/booklet/pagination/ja/ja_Bo
 import MobileBookPageImageJA8 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 8.jpg"
 import MobileBookPageImageJA9 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 9.jpg"
 import MobileBookPageImageJA10 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 10.jpg"
-import { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/image"
+import NextImage from "../components/common/NextImage/NextImage"
 import coverEN from "../public/photos/home/hp_cover-en.jpg"
 import coverJA from "../public/photos/home/hp_cover-ja.jpg"
-import NextImage from "../components/common/NextImage/NextImage"
+import bookGifEN from "../public/photos/booklet/BOOK_GIF-en.gif"
+import bookGifJA from "../public/photos/booklet/BOOK_GIF-ja.gif"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -179,7 +180,11 @@ const Booklet: React.FC = () => {
                     </Container>
                 </Container>
                 <Container className="booklet-gif mb-5">
-                    <BootstrapImage className="w-100 px-10" src={`/photos/booklet/BOOK_GIF-${i18n.language}.gif`} />
+                    <Image
+                        className="w-100 px-10"
+                        alt="physical booklet preview"
+                        src={i18n.language === "en" ? bookGifEN : bookGifJA}
+                    />
                 </Container>
                 <OrderBook />
                 <section className="redirect-section d-flex align-items-center" style={{ height: "25rem" }}>
