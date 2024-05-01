@@ -39,7 +39,10 @@ import MobileBookPageImageJA7 from "../public/photos/booklet/pagination/ja/ja_Bo
 import MobileBookPageImageJA8 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 8.jpg"
 import MobileBookPageImageJA9 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 9.jpg"
 import MobileBookPageImageJA10 from "../public/photos/booklet/pagination/ja/ja_Book_mweb-Slider 10.jpg"
-import { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/image"
+import coverEN from "../public/photos/home/hp_cover-en.jpg"
+import coverJA from "../public/photos/home/hp_cover-ja.jpg"
+import NextImage from "../components/common/NextImage/NextImage"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -145,14 +148,12 @@ const Booklet: React.FC = () => {
                 <div className="w-100 book-description position-relative">
                     <Container>
                         <Row xs={1} sm={1} md={1} xl={2}>
-                            <Col className="align-items-center">
-                                <div className="book-image">
-                                    <BootstrapImage
-                                        className="book-front-cover"
-                                        src={`/photos/home/hp_cover-${i18n.language}.jpg`}
-                                        alt={t("bookImageAlt")!}
-                                    />
-                                </div>
+                            <Col>
+                                <NextImage
+                                    className="book-image book-front-cover"
+                                    src={i18n.language == "en" ? coverEN : coverJA}
+                                    alt={t("bookImageAlt")!}
+                                />
                             </Col>
                             <Col className="d-flex align-items-center">
                                 <div className="book-text">

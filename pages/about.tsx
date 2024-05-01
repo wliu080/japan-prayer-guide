@@ -13,6 +13,7 @@ import about2 from "../public/photos/about/about_02.png"
 import about3 from "../public/photos/about/about_03.png"
 import omfLogo from "../public/photos/about/about_omf.png"
 import pioneersLogo from "../public/photos/about/about_pioneers.png"
+import NextImage from "../components/common/NextImage/NextImage"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -60,9 +61,7 @@ const About: React.FC = () => {
                     <h1 className="text-primary about-h1-header text-center">
                         <Trans t={t} i18nKey="introTitle" />
                     </h1>
-                    <Container className="about-main-image mt-4">
-                        <Image alt="about img 1" src={about1} fill={true} style={{ objectFit: "cover" }} />
-                    </Container>
+                    <NextImage className="about-main-image mt-4" alt="about img 1" src={about1} />
 
                     <Container className="px-0">
                         <div className="w-100 mt-4 pt-3"></div>
@@ -81,22 +80,8 @@ const About: React.FC = () => {
                             <Trans t={t} i18nKey="contextTitle" />
                         </h1>
                         <Container className="d-flex flex-column flex-md-row gap-3 gap-xl-4 about-images justify-content-center px-0">
-                            <Container className="about-image px-0">
-                                <Image
-                                    alt="about img 2"
-                                    src={about2}
-                                    fill={true}
-                                    style={{ objectFit: "cover", aspectRatio: "1.5" }}
-                                />
-                            </Container>
-                            <Container className="about-image px-0">
-                                <Image
-                                    alt="about img 3"
-                                    src={about3}
-                                    fill={true}
-                                    style={{ objectFit: "cover", aspectRatio: "1.5" }}
-                                />
-                            </Container>
+                            <NextImage className="about-image" src={about2} alt="about img 2" />
+                            <NextImage className="about-image" src={about3} alt="about img 3" />
                         </Container>
                         <div className="w-100 mt-4 pt-3"></div>
                         <Container className="about-beneath-surface-text">

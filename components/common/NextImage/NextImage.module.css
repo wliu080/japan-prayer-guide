@@ -1,0 +1,7 @@
+.coverFit {
+    object-fit: cover;
+}
+
+.imgContainer {
+    position: relative;
+}
