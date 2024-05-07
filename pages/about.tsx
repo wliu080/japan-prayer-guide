@@ -8,6 +8,8 @@ import Footer from "../components/footer"
 import Link from "next/link"
 import { LowHighImage } from "../components/LowHighImage"
 import Image from "next/image"
+import bannerHeroHighRes from "../public/photos/about/about_hero.jpg"
+import bannerHeroLowRes from "../public/photos/about/about_hero_LowRes.jpg"
 import about1 from "../public/photos/about/about_01.png"
 import about2 from "../public/photos/about/about_02.png"
 import about3 from "../public/photos/about/about_03.png"
@@ -50,9 +52,10 @@ const About: React.FC = () => {
                 >
                     <LowHighImage
                         alt="about hero image"
-                        highSrc="/photos/about/about_hero.jpg"
-                        lowSrc="/photos/about/about_hero_LowRes.jpg"
+                        highSrc={bannerHeroHighRes}
+                        src={bannerHeroLowRes}
                         className="position-absolute top-0"
+                        isMainImage={true}
                     />
                     <h2 className="px-4 px-md-5 px-lg-4 text-white w-100">
                         <Trans t={t} i18nKey="heroSubheader" />

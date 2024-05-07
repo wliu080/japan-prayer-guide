@@ -93,7 +93,7 @@ exports[`Footer Snapshot test 1`] = `
                 loading="lazy"
                 src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
                 srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-                style="color: transparent; max-height: 100px; width: 96px;"
+                style="color: transparent; height: 72px; width: 96px;"
                 width="40"
               />
             </div>
@@ -289,7 +289,7 @@ exports[`Footer Snapshot test 1`] = `
                   loading="lazy"
                   src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
                   srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-                  style="color: transparent; max-height: 100px; width: 96px;"
+                  style="color: transparent; height: 72px; width: 96px;"
                   width="40"
                 />
               </div>
@@ -458,7 +458,7 @@ exports[`Footer Snapshot test 1`] = `
               loading="lazy"
               src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
               srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-              style="color: transparent; max-height: 100px; width: 96px;"
+              style="color: transparent; height: 72px; width: 96px;"
               width="40"
             />
           </div>
@@ -654,7 +654,7 @@ exports[`Footer Snapshot test 1`] = `
                 loading="lazy"
                 src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
                 srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-                style="color: transparent; max-height: 100px; width: 96px;"
+                style="color: transparent; height: 72px; width: 96px;"
                 width="40"
               />
             </div>

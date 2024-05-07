@@ -11,6 +11,8 @@ import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoi
 import { ImageCarousel } from "../components/GalleryComponents/Carousel/Carousel"
 import { LowHighImage } from "../components/LowHighImage"
 import Image from "next/image"
+import bannerHeroHighRes from "../public/photos/home/hp_hero.png"
+import bannerHeroLowRes from "../public//photos/home/hp_hero_LowRes.jpg"
 import btsCrane from "../public/photos/home/hp_crane.png"
 import coverEN from "../public/photos/home/hp_cover-en.jpg"
 import coverJA from "../public/photos/home/hp_cover-ja.jpg"
@@ -78,9 +80,10 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
                     <LowHighImage
                         alt="home page hero"
-                        highSrc="/photos/home/hp_hero.png"
-                        lowSrc="/photos/home/hp_hero_LowRes.jpg"
+                        highSrc={bannerHeroHighRes}
+                        src={bannerHeroLowRes}
                         className="home-hero"
+                        isMainImage={true}
                     />
                     <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute w-100">
                         <Container className="d-flex flex-column align-items-start w-100">

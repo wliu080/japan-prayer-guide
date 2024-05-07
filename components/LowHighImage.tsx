@@ -1,24 +1,31 @@
-import { useEffect, useState } from "react"
-import { Image as BootstrapImage, ImageProps } from "react-bootstrap"
+import Image, { ImageProps, StaticImageData } from "next/image"
+import { useState } from "react"
 
 interface LowHighImageProps extends ImageProps {
-    lowSrc: string
-    highSrc: string
+    highSrc: StaticImageData
+    isMainImage?: boolean // large or main images like the hero banner should be preloaded
 }
 
-export const LowHighImage = ({ lowSrc, highSrc, alt, ...rest }: LowHighImageProps) => {
-    const [src, setSrc] = useState(lowSrc)
+type LoadingValue = "eager" | "lazy" | undefined
 
-    useEffect(() => {
-        setSrc(lowSrc)
+export const LowHighImage = ({ highSrc, isMainImage = false, src, alt, ...rest }: LowHighImageProps) => {
+    const [toggleDisplay, setToggleDisplay] = useState(false)
+    const loadingStyle: LoadingValue = isMainImage ? "eager" : "lazy"
+    const priorityLoad: boolean = isMainImage ? true : false
 
-        const img = new Image()
-        img.src = highSrc
-
-        img.onload = () => {
-            setSrc(highSrc)
-        }
-    }, [lowSrc, highSrc])
-
-    return <BootstrapImage alt={alt} src={src} {...rest} />
+    // note: d-block and d-none on the next/image component does not seem to work, hence inline styling
+    return (
+        <>
+            <Image alt={alt} src={src} {...rest} style={{ display: !toggleDisplay ? "block" : "none" }} />
+            <Image
+                alt={alt}
+                src={highSrc}
+                {...rest}
+                style={{ display: toggleDisplay ? "block" : "none" }}
+                onLoad={() => setToggleDisplay(true)}
+                loading={loadingStyle}
+                priority={priorityLoad}
+            />
+        </>
+    )
 }
