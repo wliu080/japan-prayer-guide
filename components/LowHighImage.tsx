@@ -16,7 +16,13 @@ export const LowHighImage = ({ highSrc, isMainImage = false, src, alt, ...rest }
     // note: d-block and d-none on the next/image component does not seem to work, hence inline styling
     return (
         <>
-            <Image alt={alt} src={src} {...rest} style={{ display: !toggleDisplay ? "block" : "none" }} />
+            <Image
+                placeholder="blur"
+                alt={alt}
+                src={src}
+                {...rest}
+                style={{ display: !toggleDisplay ? "block" : "none" }}
+            />
             <Image
                 alt={alt}
                 src={highSrc}

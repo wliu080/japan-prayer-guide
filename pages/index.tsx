@@ -77,7 +77,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 <ToggleHeader />
 
                 {/* Hero banner section */}
-                <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
+                <div id="heroBannerSection" className="w-100 position-relative text-center">
                     <LowHighImage
                         alt="home page hero"
                         highSrc={bannerHeroHighRes}
