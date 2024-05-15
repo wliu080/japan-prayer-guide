@@ -61,9 +61,13 @@ interface MosaicProps {
         title: string
     }[]
     blocks: number[]
+    uncropped: {
+        src: string
+        title: string
+    }[]
 }
 
-export const Mosaic = ({ images, blocks }: MosaicProps) => {
+export const Mosaic = ({ images, blocks, uncropped }: MosaicProps) => {
     const [lightBox, setLightBox] = React.useState(false)
     const [index, setImage] = React.useState(0)
 
@@ -79,7 +83,7 @@ export const Mosaic = ({ images, blocks }: MosaicProps) => {
         if (i == 0) {
             calculatedStarts.push(idx)
         } else {
-            idx = idx + blockMap[blocks[i]].numImgs
+            idx = idx + blockMap[blocks[i - 1]].numImgs
             calculatedStarts.push(idx)
         }
     }
@@ -89,20 +93,29 @@ export const Mosaic = ({ images, blocks }: MosaicProps) => {
     const halfBlocks = blocks.length / 2
 
     return (
-        <div style={{ display: "flex" }}>
-            <div className="container d-xl-none" style={{ marginTop: "50px" }}>
+        <div className="flex-column flex-xl-row" style={{ display: "flex", alignItems: "center" }}>
+            <div
+                className="d-flex align-items-center justify-content-center flex-column d-xl-none"
+                style={{ marginTop: "50px" }}
+            >
                 {calculatedStarts.map((num, idx) => {
                     const MosaicComponent = blockMap[blocks[idx]].component ?? MosaicBlockOne
                     return <MosaicComponent key={idx} images={images} startIdx={num} handleOpen={handleOpen} />
                 })}
             </div>
-            <div className="container d-none d-xl-block" style={{ marginTop: "50px" }}>
+            <div
+                className="d-none d-xl-flex w-50 align-items-center justify-content-center flex-column"
+                style={{ marginTop: "50px" }}
+            >
                 {firstHalf.map((num, idx) => {
                     const MosaicComponent = blockMap[blocks[idx]].component ?? MosaicBlockOne
                     return <MosaicComponent key={idx} images={images} startIdx={num} handleOpen={handleOpen} />
                 })}
             </div>
-            <div className="container d-none d-xl-block" style={{ marginTop: "50px" }}>
+            <div
+                className="d-none d-xl-flex w-50 align-items-center justify-content-center flex-column"
+                style={{ marginTop: "50px" }}
+            >
                 {secondHalf.map((num, idx) => {
                     const MosaicComponent = blockMap[blocks[idx + halfBlocks]].component ?? MosaicBlockOne
                     return (
@@ -128,7 +141,7 @@ export const Mosaic = ({ images, blocks }: MosaicProps) => {
                         <LightBox
                             index={index}
                             setImage={setImage}
-                            images={images}
+                            images={uncropped}
                             lightBox={lightBox}
                             setLightBox={setLightBox}
                             setGallery={() => {}}

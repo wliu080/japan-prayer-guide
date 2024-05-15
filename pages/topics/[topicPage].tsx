@@ -72,6 +72,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const images: any[] = t("photos", { returnObjects: true })
     const galleryType: string = t("galleryType")
     const blockOrder: number[] = t("blockOrder", { returnObjects: true })
+    const uncropped: any[] = t("uncroppedPhotos", { returnObjects: true })
 
     const heroPhoto: string = t("heroPhoto")
     const heroFocus: string = t("heroFocus")
@@ -144,6 +145,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                             subTitle={galleryClickInstructions}
                             galleryTitle={galleryLabel}
                             imageText={galleryImageText}
+                            uncropped={uncropped}
                         />
                     </CollapseBlock>
 
