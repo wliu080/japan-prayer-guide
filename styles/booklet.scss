@@ -10,6 +10,14 @@
         @include media-breakpoint-down(md) {
             max-width: 380px;
         }
+        img {
+            @include media-breakpoint-down(lg) {
+                max-height: 312px;
+            }
+            @include media-breakpoint-down(md) {
+                max-height: 200px;
+            }
+        }
     }
     .book-description {
         display: flex;
@@ -47,17 +55,18 @@
         align-items: center;
 
         .book-image {
-            .book-front-cover {
-                flex-grow: 1;
-                max-width: 100%;
-                max-height: 666px;
-                padding-top: 60px;
-                @include media-breakpoint-down(md) {
-                    max-height: 418px;
-                }
-                @include media-breakpoint-down(xl) {
-                    max-height: 543px;
-                }
+            width: 427px;
+            height: 606px;
+            max-width: 100%;
+            max-height: 666px;
+            padding-top: 60px;
+            @include media-breakpoint-down(xl) {
+                width: 340px;
+                height: 483px;
+                max-height: 543px;
+            }
+            @include media-breakpoint-down(md) {
+                max-height: 418px;
             }
         }
         .book-text {
