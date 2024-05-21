@@ -8,6 +8,8 @@ import { Topic, TopicOverviewSection } from "../../../components/topic-overview/
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { StickyNav } from "../../../components/topic/StickyNav"
 import { LowHighImage } from "../../../components/LowHighImage"
+import bannerHeroHighRes from "../../../public/photos/topic-nav/TOPNAV_HERO.jpg"
+import bannerHeroLowRes from "../../../public/photos/topic-nav/TOPNAV_HERO_LowRes.jpg"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -54,10 +56,11 @@ export default function Overview() {
                     style={{ height: "490px", marginTop: "60px" }}
                 >
                     <LowHighImage
-                        lowSrc="/photos/topic-nav/TOPNAV_HERO_LowRes.jpg"
-                        highSrc={"/photos/topic-nav/TOPNAV_HERO.jpg"}
+                        src={bannerHeroLowRes}
+                        highSrc={bannerHeroHighRes}
                         alt={"Topic-nav hero image"}
                         className="w-100 h-100 topic-nav-hero position-absolute"
+                        isMainImage={true}
                     />
                     <Container className="d-flex flex-column align-items-center justify-content-center h-100 topics-header-container">
                         <h1 className="text-black px-3 pb-2 topic-nav-hero-title">
