@@ -2,7 +2,7 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 // navbar overrides:
-// - toggleHeader component should collapse fill full screen when expanded on mobile
+// - ToggleHeader component should collapse fill full screen when expanded on mobile
 // - dropdowns should look button-ish (border)
 // - nav language links don't have underline unless active
 @include media-breakpoint-down(xl) {
@@ -106,5 +106,4 @@ $header-crane-button-height: 16px;
 
 .limit-width {
     width: 95%;
-
 }
