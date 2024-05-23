@@ -11,12 +11,7 @@ interface BlockProps {
 
 export const MosaicBlockOne = ({ images, startIdx, handleOpen }: BlockProps) => {
     return (
-        <div
-            className="mosaicImage mosaicGroup"
-            style={{ width: "100%" }}
-            key={startIdx}
-            onClick={() => handleOpen(startIdx)}
-        >
+        <div className="mosaicImage mosaicGroup" key={startIdx} onClick={() => handleOpen(startIdx)}>
             <Image
                 style={{ width: "100%" }}
                 key={startIdx}

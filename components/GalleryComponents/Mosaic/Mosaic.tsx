@@ -93,7 +93,7 @@ export const Mosaic = ({ images, blocks, uncropped }: MosaicProps) => {
     const halfBlocks = blocks.length / 2
 
     return (
-        <div className="flex-column flex-xl-row" style={{ display: "flex", alignItems: "center" }}>
+        <div className="flex-column" style={{ display: "flex", alignItems: "center" }}>
             <div
                 className="d-flex align-items-center justify-content-center flex-column d-xl-none"
                 style={{ marginTop: "50px" }}
@@ -104,8 +104,8 @@ export const Mosaic = ({ images, blocks, uncropped }: MosaicProps) => {
                 })}
             </div>
             <div
-                className="d-none d-xl-flex w-50 align-items-center justify-content-center flex-column"
-                style={{ marginTop: "50px" }}
+                className="d-none d-xl-flex w-100 align-items-center justify-content-center p-0"
+                style={{ marginTop: "50px", boxSizing: "border-box" }}
             >
                 {firstHalf.map((num, idx) => {
                     const MosaicComponent = blockMap[blocks[idx]].component ?? MosaicBlockOne
@@ -113,8 +113,8 @@ export const Mosaic = ({ images, blocks, uncropped }: MosaicProps) => {
                 })}
             </div>
             <div
-                className="d-none d-xl-flex w-50 align-items-center justify-content-center flex-column"
-                style={{ marginTop: "50px" }}
+                className="d-none d-xl-flex w-100 align-items-center justify-content-center p-0"
+                style={{ boxSizing: "border-box" }}
             >
                 {secondHalf.map((num, idx) => {
                     const MosaicComponent = blockMap[blocks[idx + halfBlocks]].component ?? MosaicBlockOne
