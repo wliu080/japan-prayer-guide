@@ -206,7 +206,7 @@ export const MosaicBlockEight = ({ images, startIdx, handleOpen }: BlockProps) =
                     <div className="mosaicImageOverlay"></div>
                 </div>
             </Col>
-            <Col xs={6} className="p-0">
+            <Col xs={6} className="p-0" style={{ height: "100%" }}>
                 <div
                     style={{ height: "100%", width: "100%" }}
                     className="mosaicImage"

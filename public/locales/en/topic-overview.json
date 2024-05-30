@@ -12,7 +12,7 @@
     "cultureTopics": [
         { "label": "Popular religious practices", "link": "popular-religious-practices", "disabled": false },
         { "label": "Japanese views of Chrisianity", "link": "japanese-views-of-chrisianity", "disabled": true },
-        { "label": "Japanese culture and Christianity", "link": "japanese-culture-and-christianity", "disabled": true },
+        { "label": "Japanese culture and Christianity", "link": "japanese-culture-and-christianity", "disabled": false },
         { "label": "Ancestor veneration", "link": "ancestor-veneration", "disabled": true },
         { "label": "Harmony", "link": "harmony", "disabled": true },
         { "label": "Social conformity", "link": "social-conformity", "disabled": true },
