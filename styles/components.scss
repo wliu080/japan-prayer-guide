@@ -1,5 +1,8 @@
 // This file is to organize component specific styles
 
+@import "../components/common/PrayerPoints/PrayerPoints.scss";
+@import "../components/topic/PrayerResponse/PrayerResponse.scss";
+
 // -------------------------
 // Topic Gallery
 // -------------------------
@@ -435,110 +438,7 @@
         cursor: pointer;
         transition: all 0.2s ease;
         &:hover {
-            filter: brightness(0.7)
-        }
-    }
-}
-
-// -------------------------
-// Prayer Points
-// -------------------------
-
-#topic-prayer {
-    $featured-card-width: 500px;
-    $featured-card-width-tablet: 375px;
-    $featured-card-width-mobile: 600px;
-
-    .card-body {
-        &.featured {
-            max-width: $featured-card-width;
-            @include media-breakpoint-down(lg) {
-                max-width: $featured-card-width-tablet;
-            }
-            @include media-breakpoint-down(md) {
-                max-width: $featured-card-width-mobile;
-            }
-        }
-
-        &.topicTop {
-            max-width: 452px;
-            @include media-breakpoint-down(lg) {
-                max-width: fit-content;
-            }
-        }
-        
-    }
-
-    .prayer-img {
-        height: auto;
-        max-width: $featured-card-width;
-        object-fit: cover;
-        @include media-breakpoint-down(lg) {
-            max-width: $featured-card-width-tablet;
-        }
-        @include media-breakpoint-down(md) {
-            max-width: $featured-card-width-mobile;
-        }
-    }
-
-    .prayer-title {
-        font-family: $font-family-secondary;
-        font-weight: 700;
-    }
-
-    .prayerSubtitle {
-        font-family: $font-family-secondary;
-        font-weight: 700;
-        font-size: 16px;
-        @include media-breakpoint-down(md) {
-            font-size: 14px;
-        }
-    }
-}
-
-.prayer-points-card {
-    border-radius: 4px;
-    @include media-breakpoint-up(lg) {
-        max-width: 646px;
-    }
-}
-
-.prayerSubtitle {
-    font-family: $font-family-secondary;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.prayer-title {
-    font-family: $font-family-secondary;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-#topic-prayer-featured {
-    .card-body {
-        background-color: white;
-        @include media-breakpoint-up(xl) {
-            max-width: 550px;
-        }
-    }
-
-    .prayer-img {
-        object-fit: cover;
-        @include media-breakpoint-up(md) {
-            width: 50%;
-        }
-        @include media-breakpoint-up(xl) {
-            height: 515px;
-        }
-        @include media-breakpoint-up(xl) {
-            width: calc(100% - 550px);
-        }
-    }
-
-    .prayer-points-card {
-        @include media-breakpoint-up(lg) {
-            max-width: none;
+            filter: brightness(0.7);
         }
     }
 }
@@ -558,52 +458,6 @@
         font-size: 1.125rem;
         color: black;
         cursor: pointer;
-    }
-}
-
-// -------------------------
-// Prayer Response
-// -------------------------
-
-#prayer-response {
-    background-color: $grey-2;
-    p {
-        font-size: 20px;
-        @include media-breakpoint-down(md) {
-            font-size: 18px;
-        }
-    }
-
-    h2 {
-        font-family: $font-family-secondary;
-        padding-top: 4rem;
-    }
-
-    h3 {
-        margin-top: 2rem;
-        font-family: $font-family-secondary;
-        line-height: normal;
-    }
-
-    #topic-prayer-topicBottom {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .video-embed {
-        position: relative;
-        padding-bottom: 56.25% !important; /* 16:9 */
-        margin-bottom: 30px;
-        height: 0;
-    }
-
-    .reflections-submission-heading {
-        font-size: 24px;
-        @include media-breakpoint-down(sm) {
-            font-size: 22px;
-        }
-        font-family: $font-family-secondary;
-        font-weight: 700;
     }
 }
 

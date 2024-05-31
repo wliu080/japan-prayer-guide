@@ -7,7 +7,7 @@ import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector
 import Footer from "../components/Footer"
 import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
-import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints"
+import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints/PrayerPoints"
 import { ImageCarousel } from "../components/GalleryComponents/Carousel/Carousel"
 import { LowHighImage } from "../components/LowHighImage"
 import Image from "next/image"

@@ -1,0 +1,45 @@
+// -------------------------
+// Prayer Response
+// -------------------------
+
+#prayer-response {
+    background-color: $grey-2;
+    p {
+        font-size: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+        }
+    }
+
+    h2 {
+        font-family: $font-family-secondary;
+        padding-top: 4rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+        font-family: $font-family-secondary;
+        line-height: normal;
+    }
+
+    #topic-prayer-topicBottom {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .video-embed {
+        position: relative;
+        padding-bottom: 56.25% !important; /* 16:9 */
+        margin-bottom: 30px;
+        height: 0;
+    }
+
+    .reflections-submission-heading {
+        font-size: 24px;
+        @include media-breakpoint-down(sm) {
+            font-size: 22px;
+        }
+        font-family: $font-family-secondary;
+        font-weight: 700;
+    }
+}

@@ -8,10 +8,10 @@ import Footer from "../../components/Footer"
 import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import React from "react"
-import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints"
+import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/PrayerPoints/PrayerPoints"
 import CollapseBlock from "../../components/topic/CollapseBlock"
 import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
-import PrayerResponse from "../../components/topic/PrayerResponse"
+import PrayerResponse from "../../components/topic/PrayerResponse/PrayerResponse"
 import { StickyNav, Tab } from "../../components/topic/StickyNav"
 
 export const getStaticPaths: GetStaticPaths = async () => {

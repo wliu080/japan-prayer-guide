@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import PrayerResponse from "../../../components/topic/PrayerResponse"
+import PrayerResponse from "../../../../components/topic/PrayerResponse/PrayerResponse"
 
 jest.mock("next-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
@@ -23,7 +23,7 @@ jest.mock("next-i18next", () => ({
     },
 }))
 
-jest.mock("../../../components/common/PrayerPoints")
+jest.mock("../../../../components/common/PrayerPoints/PrayerPoints")
 
 describe("Responding in Prayer", () => {
     beforeEach(() => {
