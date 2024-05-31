@@ -1,0 +1,13 @@
+.sticky-nav {
+    position: -webkit-sticky;
+    padding-top: 50px;
+    margin-top: -50px;
+    @include media-breakpoint-down(md) {
+        margin-top: -56px;
+    }
+    a {
+        font-size: 1.125rem;
+        color: black;
+        cursor: pointer;
+    }
+}

@@ -12,7 +12,7 @@ import PrayerPoints, { PrayerDisplayStyle } from "../../components/common/Prayer
 import CollapseBlock from "../../components/topic/CollapseBlock"
 import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
 import PrayerResponse from "../../components/topic/PrayerResponse/PrayerResponse"
-import { StickyNav, Tab } from "../../components/topic/StickyNav"
+import { StickyNav, Tab } from "../../components/topic/StickyNav/StickyNav"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()

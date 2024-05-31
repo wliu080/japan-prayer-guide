@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react"
-import { StickyNav, Tab } from "../../../components/topic/StickyNav"
+import { StickyNav, Tab } from "../../../../components/topic/StickyNav/StickyNav"
 
 jest.mock("next-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
