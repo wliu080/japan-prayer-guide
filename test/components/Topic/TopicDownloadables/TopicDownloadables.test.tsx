@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react"
 import { TFunction } from "next-i18next"
-import TopicDownloadables from "../../../components/topic/TopicDownloadables"
+import TopicDownloadables from "../../../../components/topic/TopicDownloadables/TopicDownloadables"
 
 jest.mock("next-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
