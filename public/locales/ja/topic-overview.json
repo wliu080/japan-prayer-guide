@@ -39,7 +39,7 @@
         { "label": "日常生活と信仰", "link": "daily-christian-life-and-faith", "disabled": true },
         { "label": "海外に住む日本人", "link": "japanese-overseas", "disabled": true },
         { "label": "宣教師の生活", "link": "missionary-life", "disabled": true },
-        { "label": "キリストにおける一致", "link": "unity-in-christ", "disabled": false },
+        { "label": "キリストにおける一致", "link": "unity-in-christ", "disabled": true },
         { "label": "世界宣教への関わり", "link": "japanese-mission-movement", "disabled": true },
         { "label": "霊的突破のための祈り", "link": "prayer-for-spiritual-breakthrough", "disabled": true }
     ]
