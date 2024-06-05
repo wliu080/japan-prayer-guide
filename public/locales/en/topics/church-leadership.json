@@ -1,5 +1,6 @@
 {
     "title": "Church leadership",
+    "path": "church-leadership",
     "prayerSummary": [
         "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
         "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
@@ -33,26 +34,30 @@
         "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
     },
     "photos": [
-        { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
-        { "src": "/images/1.png", "title": "now use Lorem Ipsum as their default model text" },
-        { "src": "/images/2.png", "title": "Various versions have evolved over the years" },
-        { "src": "/images/3.png", "title": "Lorem Ipsum available" },
-        { "src": "/images/4.png", "title": "you need to be sure there" },
-        { "src": "/images/5.png", "title": "making this the first true generator on the Internet" },
-        { "src": "/images/3.png", "title": "look even slightly believable" },
-        { "src": "/images/2.png", "title": "Various versions have evolved" },
-        { "src": "/images/4.png", "title": "Ipsum as their default model tex" },
-        { "src": "/images/0.png", "title": "scrambled it to make a type" },
-        { "src": "/images/5.png", "title": "making this the first true" },
-        { "src": "/images/1.png", "title": "Various versions have evolved" },
-        { "src": "/images/3.png", "title": "making this the first true" },
-        { "src": "/images/0.png", "title": "scrambled it to make a type" },
-        { "src": "/images/1.png", "title": "Various versions have evolved" },
-        { "src": "/images/2.png", "title": "Ipsum as their default model tex" },
-        { "src": "/images/4.png", "title": "making this the first true" },
-        { "src": "/images/5.png", "title": "scrambled it to make a type" }
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
     ],
     "galleryType": "mosaic",
-    "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a"
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
 }

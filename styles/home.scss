@@ -232,12 +232,12 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
 
     $bullet-point-factor: 1px;
     .bullet-point {
-        font-size: $home-paragraph-text ;
+        font-size: $home-paragraph-text;
         @include media-breakpoint-down(xl) {
-            font-size: $home-paragraph-text-tablet ;
+            font-size: $home-paragraph-text-tablet;
         }
         @include media-breakpoint-down(md) {
-            font-size: $home-paragraph-text-mobile ;
+            font-size: $home-paragraph-text-mobile;
         }
     }
 
@@ -264,11 +264,15 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
     }
     img {
         height: 470px;
+        width: 331px;
+
         @include media-breakpoint-down(xl) {
             height: 322px;
+            width: 227px;
         }
         @include media-breakpoint-down(md) {
             height: 240px;
+            width: 169px;
         }
     }
     a {
@@ -358,6 +362,7 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
 .home-logo-crane {
     @include media-breakpoint-down(md) {
         height: 72px;
+        width: 72px;
     }
 }
 
@@ -365,6 +370,7 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
     max-width: 300px;
     @include media-breakpoint-down(md) {
         height: 40px;
+        width: 149px;
     }
 }
 

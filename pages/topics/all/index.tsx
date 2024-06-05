@@ -6,8 +6,10 @@ import React from "react"
 import Footer from "../../../components/footer"
 import { Topic, TopicOverviewSection } from "../../../components/topic-overview/TopicOverviewSection"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import Image from "react-bootstrap/Image"
 import { StickyNav } from "../../../components/topic/StickyNav"
+import { LowHighImage } from "../../../components/LowHighImage"
+import bannerHeroHighRes from "../../../public/photos/topic-nav/TOPNAV_HERO.jpg"
+import bannerHeroLowRes from "../../../public/photos/topic-nav/TOPNAV_HERO_LowRes.jpg"
 
 export async function getStaticProps({ locale }: any) {
     return {
@@ -51,12 +53,14 @@ export default function Overview() {
                 {/* Hero Banner */}
                 <div
                     className="w-100 mx-0 px-0 position-relative d-flex flex-column align-items-center justify-content-center"
-                    style={{ height: "490px" }}
+                    style={{ height: "490px", marginTop: "60px" }}
                 >
-                    <Image
-                        src={"/photos/topic-nav/TOPNAV_HERO.jpg"}
+                    <LowHighImage
+                        src={bannerHeroLowRes}
+                        highSrc={bannerHeroHighRes}
                         alt={"Topic-nav hero image"}
                         className="w-100 h-100 topic-nav-hero position-absolute"
+                        isMainImage={true}
                     />
                     <Container className="d-flex flex-column align-items-center justify-content-center h-100 topics-header-container">
                         <h1 className="text-black px-3 pb-2 topic-nav-hero-title">

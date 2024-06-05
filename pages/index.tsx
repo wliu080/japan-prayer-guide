@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { ToggleHeader } from "../components/toggleHeader"
-import { Button, Carousel, CarouselItem, Container, Image } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
@@ -8,6 +8,29 @@ import Footer from "../components/footer"
 import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
 import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints"
+import { ImageCarousel } from "../components/GalleryComponents/Carousel/Carousel"
+import { LowHighImage } from "../components/LowHighImage"
+import Image from "next/image"
+import bannerHeroHighRes from "../public/photos/home/hp_hero.png"
+import bannerHeroLowRes from "../public//photos/home/hp_hero_LowRes.jpg"
+import btsCrane from "../public/photos/home/hp_crane.png"
+import coverEN from "../public/photos/home/hp_cover-en.jpg"
+import coverJA from "../public/photos/home/hp_cover-ja.jpg"
+
+const carouselImages: { src: string; title: string }[] = [
+    {
+        src: "/photos/home/hp_slider-1.jpg",
+        title: "home image 1",
+    },
+    {
+        src: "/photos/home/hp_slider-2.jpg",
+        title: "home image 2",
+    },
+    {
+        src: "/photos/home/hp_slider-3.jpg",
+        title: "home image 3",
+    },
+]
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
     // schedule is from featured-topics.json
@@ -54,8 +77,14 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 <ToggleHeader />
 
                 {/* Hero banner section */}
-                <div id="heroBannerSection" className="w-100 bg-secondary position-relative text-center">
-                    <Image alt="home page hero" src="/photos/home/hp_hero.png" className="home-hero" />
+                <div id="heroBannerSection" className="w-100 position-relative text-center">
+                    <LowHighImage
+                        alt="home page hero"
+                        highSrc={bannerHeroHighRes}
+                        src={bannerHeroLowRes}
+                        className="home-hero"
+                        isMainImage={true}
+                    />
                     <div className="home-hero-text-group d-flex flex-column align-items-start justify-content-center px-lg-5 px-md-4 px-3 position-absolute w-100">
                         <Container className="d-flex flex-column align-items-start w-100">
                             <h2 className="text-white text-start">
@@ -93,38 +122,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </Container>
 
                 {/* Invitation to prayer */}
-                <div className="home-invitation d-flex flex-column align-items-center position-relative w-100">
-                    <div className="home-invite-inner mb-0 mb-md-5">
-                        <Carousel
-                            controls={true}
-                            fade={true}
-                            interval={3000}
-                            className="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
-                        >
-                            <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
-                                    className="home-carousel-image"
-                                    alt="hero image 1"
-                                    src="/photos/home/hp_slider-1.jpg"
-                                />
-                            </CarouselItem>
-                            <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
-                                    className="home-carousel-image"
-                                    alt="hero image 2"
-                                    src="/photos/home/hp_slider-2.jpg"
-                                />
-                            </CarouselItem>
-                            <CarouselItem className="w-100 d-flex justify-content-center">
-                                <Image
-                                    className="home-carousel-image"
-                                    alt="hero image 3"
-                                    src="/photos/home/hp_slider-3.jpg"
-                                />
-                            </CarouselItem>
-                        </Carousel>
-                    </div>
-                </div>
+                <ImageCarousel images={carouselImages} />
 
                 <Container className="home-call-to-action d-flex flex-column align-items-center justify-content-center px-4 mb-5">
                     <h1 className="home-common-h1 text-center mt-5">
@@ -148,18 +146,14 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                             <Trans t={t} i18nKey="featuredTopicTitle" />
                         </h1>
                     </Container>
-                    <PrayerPoints
-                        topicTrans={featuredTranslation}
-                        displayStyle={PrayerDisplayStyle.Featured}
-                        featuredTopicRef={featuredTopicRef}
-                    />
+                    <PrayerPoints topicTrans={featuredTranslation} displayStyle={PrayerDisplayStyle.Featured} />
                 </Container>
 
                 {/* Purchase snippet */}
                 <Container className="home-purchase-section py-3 py-md-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
                     <Image
                         alt="book-cover"
-                        src={`/photos/home/hp_cover-${i18n.language}.jpg`}
+                        src={i18n.language == "en" ? coverEN : coverJA}
                         className="mt-3 mx-3 shadow"
                     />
                     <div className="w-100 align-items-center align-items-md-start d-flex flex-column purchase-text-container mx-2 me-md-5 ms-md-2">
@@ -219,10 +213,12 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 {/* Beneath the Surface initiative - About snippet */}
                 <div className="w-100 bg-grey-7 p-3 p-md-5 d-flex flex-column align-items-center">
                     <div className="d-flex gap-3 align-items-center justify-content-center w-100 mt-2 mb-1 pb-1">
-                        <Image alt="BTS Crane" src={`/photos/home/hp_crane.png`} className="home-logo-crane" />
+                        <Image alt="BTS Crane" src={btsCrane} className="home-logo-crane" />
                         <Image
                             alt="BTS Logo"
                             src={`/photos/home/hp_logo_${i18n.language}.png`}
+                            width="238"
+                            height="64"
                             className="home-logo-text"
                         />
                     </div>
