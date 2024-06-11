@@ -11,24 +11,26 @@
 .topic-carousel-container {
     .carousel {
         .carousel-indicators {
+            display: flex;
+            align-items: center;
             button {
                 background-color: white;
-                transition: none;
+                transition: all 0.2s ease;
                 opacity: 0.7;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
             }
             .active {
                 background-color: $secondary-5;
-                transition: none;
+                transition: all 0.2s ease;
                 opacity: 0.7;
+                width: 30px;
+                border-radius: 10px;
+                height: 7px;
             }
             @include media-breakpoint-down(md) {
                 margin-bottom: 5px;
-            }
-        }
-        .carousel-indicators [data-bs-target] {
-            height: 5px;
-            @include media-breakpoint-down(md) {
-                height: 4px;
             }
         }
         .carousel-control-next,

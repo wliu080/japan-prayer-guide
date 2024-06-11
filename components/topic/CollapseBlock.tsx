@@ -32,9 +32,9 @@ const CollapseBlock = ({ title, children, startOpened = false, galleryType = "mo
 
     return (
         <Container>
-            <hr />
+            {!disableAccordion && <hr />}
             <Button
-                className="collapse-label fs-2 fw-bold lh-sm ps-0"
+                className={"collapse-label fs-2 fw-bold lh-sm ps-0 " + (disableAccordion && "pt-4")}
                 onClick={clickHandler}
                 aria-controls="collapse-block"
                 aria-expanded={openCollapse}

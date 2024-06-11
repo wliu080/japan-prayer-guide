@@ -56,7 +56,7 @@ const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
                         <PrayerPoints topicTrans={topicTrans} displayStyle={PrayerDisplayStyle.TopicBottom} />
                     </Col>
                     <Col lg={6} md={12}>
-                        <Container data-testid="feedback" fluid className="px-0 pt-4">
+                        <Container data-testid="feedback" fluid className="px-0 pt-0">
                             <p className="reflections-submission-heading fw-bold mt-0">
                                 <Trans t={common} i18nKey="response.feedbackLabel" />
                             </p>

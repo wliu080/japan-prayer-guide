@@ -51,7 +51,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
               class="col-lg-6 col-md-12"
             >
               <div
-                class="px-0 pt-4 container-fluid"
+                class="px-0 pt-0 container-fluid"
                 data-testid="feedback"
               >
                 <p
@@ -145,7 +145,7 @@ exports[`Responding in Prayer Snapshot test 1`] = `
             class="col-lg-6 col-md-12"
           >
             <div
-              class="px-0 pt-4 container-fluid"
+              class="px-0 pt-0 container-fluid"
               data-testid="feedback"
             >
               <p

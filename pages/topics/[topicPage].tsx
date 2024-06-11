@@ -121,7 +121,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     </Container>
 
                     {/* Placeholder text */}
-                    <Container className="main-content mt-4">
+                    <Container className="main-content mt-0">
                         {textContent.map((text: string, idx: number) => (
                             <p key={idx + text}>
                                 <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
@@ -160,9 +160,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                             </div>
                         </Container>
                     </CollapseBlock> */}
-                    <Container className="bottom-spacing">
-                        <hr />
-                    </Container>
+                    <Container className={"bottom-spacing"}>{galleryType === "mosaic" && <hr />}</Container>
                 </Container>
 
                 <Container fluid className="bg-grey-2 px-0">
