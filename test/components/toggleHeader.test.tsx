@@ -1,11 +1,11 @@
 import { render, fireEvent } from "@testing-library/react"
-import { ToggleHeader } from "../../components/toggleHeader"
+import { ToggleHeader } from "../../components/ToggleHeader"
 
 jest.mock("react-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
     useTranslation: () => {
         return {
-            t: (str) => str,
+            t: (str: any) => str,
             i18n: {
                 changeLanguage: () => new Promise(() => {}),
             },

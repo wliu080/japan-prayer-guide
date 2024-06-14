@@ -2,7 +2,7 @@ import { TFunction, Trans, useTranslation } from "next-i18next"
 import React from "react"
 import { Col, Container, Form, Row } from "react-bootstrap"
 import Button from "react-bootstrap/Button"
-import PrayerPoints, { PrayerDisplayStyle } from "../common/PrayerPoints"
+import PrayerPoints, { PrayerDisplayStyle } from "../../common/PrayerPoints/PrayerPoints"
 
 const PrayerResponse = ({ topicTrans }: { topicTrans: TFunction }) => {
     const { t: common } = useTranslation("common")

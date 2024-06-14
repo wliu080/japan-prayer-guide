@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap"
 import { useState, useEffect } from "react"
 import { TFunction, Trans, useTranslation } from "next-i18next"
-import LanguageSwitcher from "./languageSwitcher"
+import LanguageSwitcher from "./LanguageSwitcher"
 import { useRouter } from "next/router"
 import Link from "next/link"
 

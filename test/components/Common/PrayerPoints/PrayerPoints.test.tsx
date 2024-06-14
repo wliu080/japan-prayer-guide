@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import PrayerPoints, { PrayerDisplayStyle } from "../../../components/common/PrayerPoints"
+import PrayerPoints, { PrayerDisplayStyle } from "../../../../components/common/PrayerPoints/PrayerPoints"
 
 jest.mock("next-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
