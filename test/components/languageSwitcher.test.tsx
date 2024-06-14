@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react"
-import LanguageSwitcher from "../../components/languageSwitcher"
+import LanguageSwitcher from "../../components/LanguageSwitcher"
 
 const changeLanguageSpy = jest.fn()
 
@@ -7,7 +7,7 @@ jest.mock("react-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
     useTranslation: jest.fn(() => {
         return {
-            t: (str) => str,
+            t: (str: any) => str,
             i18n: {
                 changeLanguage: changeLanguageSpy,
             },
