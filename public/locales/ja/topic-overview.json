@@ -12,7 +12,7 @@
     "cultureTopics": [
         { "label": "日本人の宗教的習慣", "link": "popular-religious-practices", "disabled": false },
         { "label": "日本人のキリスト教観", "link": "japanese-views-of-chrisianity", "disabled": true },
-        { "label": "日本文化とキリスト教", "link": "japanese-culture-and-christianity", "disabled": true },
+        { "label": "日本文化とキリスト教", "link": "japanese-culture-and-christianity", "disabled": false },
         { "label": "先祖崇拝", "link": "ancestor-veneration", "disabled": true },
         { "label": "和を重んじる文化", "link": "harmony", "disabled": true },
         { "label": "社会の同調圧力", "link": "social-conformity", "disabled": true },

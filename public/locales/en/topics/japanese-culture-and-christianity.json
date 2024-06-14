@@ -1,0 +1,63 @@
+{
+    "title": "Japanese Culture and Christianity",
+    "path": "japanese-culture-and-christianity",
+    "prayerSummary": [
+        "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
+        "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
+        "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
+    ],
+    "textBody": [
+        "Pastor Yamanaka has a passionate desire to shepherd his church. He longs to equip members to live out the good news in their neighborhoods, workplaces, and schools. However, his church faces various challenges, and being in his mid-seventies, Pastor Yamanaka also needs to find someone to replace him.",
+        "There is great concern about the future of church leadership in Japan. In 2021 half of the pastors in Japan were aged 65 and over, with an average age of 62.<sup>1</sup> The number of churches without a pastor increased by 65% between 2009 and 2016, and seminaries reported decreasing enrollments.",
+        "Pastor Kimura is a recent seminary graduate in his thirties who oversees two churches. He wants to be mentored as a Christian leader, but struggles to find time for this. He would like to stay in touch with seminary friends for mutual support, but they are busy too.",
+        "Japanese pastors have tremendous ministry responsibilities and a limited support team, if any at all. Japan has a great need for young pastors who will faithfully preach God’s Word and shepherd his people. But as they are called, young pastors must also be supported and encouraged, so that they can continue in ministry for the years ahead."
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": [
+            "Ancestor veneration",
+            "Workplace pressure",
+            "Other Topics",
+            "Other Topics 2",
+            "Other Topics 3",
+            "Other Topics 4"
+        ],
+        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic3/TP03-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic3/TP03-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic3/TP03-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [9, 1, 4, 8],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic3/TP03-Hero.jpg",
+    "heroFocus": "60% 50%"
+}
