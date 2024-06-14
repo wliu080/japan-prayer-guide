@@ -12,7 +12,7 @@ interface feedbackProps {
 
 const CollapseBlock = ({ title, children, startOpened = false, galleryType = "mosaic" }: feedbackProps) => {
     const [openCollapse, setOpenCollapse] = React.useState(startOpened)
-    const disableAccordion = galleryType === "gallery" || galleryType === "carousel"
+    const disableAccordion = galleryType === "gallery" || galleryType === "carousel" || galleryType === "mosaic"
 
     const clickHandler = () => {
         if (disableAccordion) {

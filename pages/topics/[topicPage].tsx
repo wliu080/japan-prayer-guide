@@ -160,7 +160,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                             </div>
                         </Container>
                     </CollapseBlock> */}
-                    <Container className={"bottom-spacing"}>{galleryType === "mosaic" && <hr />}</Container>
+                    <Container className={"bottom-spacing"}></Container>
                 </Container>
 
                 <Container fluid className="bg-grey-2 px-0">
