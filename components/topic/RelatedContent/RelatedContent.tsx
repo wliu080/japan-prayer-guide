@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import { Card, Container, Image } from "react-bootstrap"
+import { Card, Container } from "react-bootstrap"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -11,7 +11,7 @@ interface relatedProps {
 }
 
 export default function RelatedContent({ topicTrans }: relatedProps) {
-    const slider = React.useRef(null)
+    const slider: any = React.useRef(null)
     const { t: common, i18n } = useTranslation("common")
     const responsive = [
         {
