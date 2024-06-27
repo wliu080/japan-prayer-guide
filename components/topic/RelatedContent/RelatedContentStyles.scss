@@ -1,0 +1,43 @@
+#related-content-main {
+    position: relative;
+    h1 {
+        font-family: $font-family-secondary;
+    }
+    a {
+        font-family: $font-family-base;
+        color: $secondary-5!important;
+        font-weight: 600;
+    }
+    p {
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+    }
+    .related-next,
+    .related-prev {
+        position: absolute;
+        color: $secondary-5;
+        height: 30px;
+        width: 30px;
+        top: 50%;
+        border-radius: 50%;
+        background-color: $grey-2;
+        cursor: pointer;
+    }
+    .related-next {
+        right: 20px;
+    }
+    .related-prev {
+        left: 20px;
+    }
+    .related-next-icon {
+        height: 100%;
+        width: 100%;
+        background-image: url("/icons/arrow-right-s-line.svg");
+    }
+    .related-prev-icon {
+        height: 100%;
+        width: 100%;
+        background-image: url("/icons/arrow-left-s-line.svg");
+    }
+}

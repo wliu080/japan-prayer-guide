@@ -13,6 +13,7 @@ import CollapseBlock from "../../components/topic/CollapseBlock"
 import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
 import PrayerResponse from "../../components/topic/PrayerResponse/PrayerResponse"
 import { StickyNav, Tab } from "../../components/topic/StickyNav/StickyNav"
+import RelatedContent from "../../components/topic/RelatedContent/RelatedContent"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -65,7 +66,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
     const galleryLabel: string = topicCommon("galleryLabel")
-    //const factsLabel: string = topicCommon("factsLabel")
+    const factsLabel: string = topicCommon("factsLabel")
     const galleryClickInstructions: string = topicCommon("galleryClickInstructions")
     const galleryImageText: string = topicCommon("galleryImageText")
 
@@ -76,6 +77,10 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
     const heroPhoto: string = t("heroPhoto")
     const heroFocus: string = t("heroFocus")
+
+    const infographicDesktop: string = t("infographic.desktop")
+    const infographicTablet: string = t("infographic.tablet")
+    const infographicMobile: string = t("infographic.mobile")
 
     return (
         <>
@@ -150,16 +155,14 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     </CollapseBlock>
 
                     {/* Infographics Placeholder */}
-                    {/* <CollapseBlock title={factsLabel} startOpened={true} galleryType={galleryType}>
-                        <Container>
-                            <div id="placeholder-image" className="w-100 my-3">
-                                Infographics Placeholder
-                            </div>
-                            <div id="placeholder-image" className="w-100 my-5">
-                                Placeholder
-                            </div>
+                    <CollapseBlock title={factsLabel} startOpened={true} galleryType={"infographic"}>
+                        <Container className="mt-3 d-flex justify-content-center">
+                            <Image className="d-none d-xl-block" src={infographicDesktop} alt="infographic" />
+                            <Image className="d-none d-md-block d-xl-none" src={infographicTablet} alt="infographic" />
+                            <Image className="d-block d-md-none" src={infographicMobile} alt="infographic" />
                         </Container>
-                    </CollapseBlock> */}
+                    </CollapseBlock>
+                    <hr />
                     <Container className={"bottom-spacing"}></Container>
                 </Container>
 
@@ -173,7 +176,13 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <Container className="main-section-container px-0">
                     {/* Downloads and Related */}
                     <TopicDownloadables topicTrans={t} />
-                    {/* <RelatedContent topicTrans={t} /> */}
+                    <Container>
+                        <hr />
+                    </Container>
+                    <RelatedContent topicTrans={t} />
+                    <Container>
+                        <hr />
+                    </Container>
                 </Container>
                 {/* Footer */}
                 <Footer />

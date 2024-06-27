@@ -24,14 +24,11 @@
     },
     "related": {
         "labels": [
-            "Ancestor veneration",
-            "Workplace pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
+            "日本文化とキリスト教",
+            "先祖崇拝",
+            "自分に頼る生き方と物質主義"
         ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "links": ["/topics/japanese-culture-and-christianity", "/topics/ancestor-veneration", "/self-reliance-and-materialism"]
     },
     "photos": [
         { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import { Card, Container } from "react-bootstrap"
+import { Card, Container, Image } from "react-bootstrap"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -10,18 +10,14 @@ interface relatedProps {
     topicTrans: TFunction
 }
 
-function SampleArrow(props: any) {
-    const { className, style, onClick } = props
-    return <div className={className} style={{ ...style, display: "block", borderRadius: "50%" }} onClick={onClick} />
-}
-
 export default function RelatedContent({ topicTrans }: relatedProps) {
+    const slider = React.useRef(null)
     const { t: common, i18n } = useTranslation("common")
     const responsive = [
         {
-            breakpoint: 1300,
+            breakpoint: 1280,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
             },
         },
@@ -44,13 +40,25 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
     const topics: string[] = topicTrans("related.labels", { returnObjects: true })
     const links: string[] = topicTrans("related.links", { returnObjects: true })
 
+    const onClickPrev = () => {
+        slider?.current?.slickPrev()
+    }
+
+    const onClickNext = () => {
+        slider?.current?.slickNext()
+    }
+
     return (
-        <Container data-testid={"related-content-container"} className="d-flex flex-column my-5">
-            <Container className="d-flex flex-row justify-content-between align-items-center">
+        <Container
+            id="related-content-main"
+            data-testid={"related-content-container"}
+            className="d-flex flex-column my-4"
+        >
+            <Container className="d-flex flex-row gap-4 align-items-center">
                 <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1">
                     <Trans t={common} i18nKey="relatedTopics.heading" />
                 </h1>
-                <Link href={"/topics"} className="text-secondary d-none d-md-block" locale={i18n.language}>
+                <Link href={"/topics"} className="text-secondary" locale={i18n.language}>
                     <Trans t={common} i18nKey="relatedTopics.viewAll" />
                 </Link>
             </Container>
@@ -58,23 +66,22 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                 dots={false}
                 infinite={true}
                 speed={500}
-                slidesToShow={4}
+                slidesToShow={3}
                 slidesToScroll={1}
-                arrows={true}
+                arrows={false}
                 responsive={responsive}
-                nextArrow={<SampleArrow />}
-                prevArrow={<SampleArrow />}
+                ref={slider}
             >
                 {topics.map((topic, idx) => (
                     <Link
                         href={links[idx]}
                         key={idx + topic}
-                        className="d-flex flex-column align-items-center"
+                        className="d-flex flex-column align-items-center text-decoration-none"
                         locale={i18n.language}
                     >
-                        <Card style={{ width: "308px", height: "186px" }}>
+                        <Card style={{ width: "350px", height: "273px" }}>
                             <Card.Body className="m-0 p-0">
-                                <div className="w-100 bg-secondary" style={{ height: "138px" }}></div>
+                                <div className="w-100 bg-secondary" style={{ height: "220px" }}></div>
                             </Card.Body>
                             <Card.Body className="m-2 p-1">
                                 <p>
@@ -85,9 +92,12 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                     </Link>
                 ))}
             </Slider>
-            <Link href={"/topics"} className="align-self-center my-3 text-secondary d-md-none" locale={i18n.language}>
-                <Trans t={common} i18nKey="relatedTopics.viewAll" />
-            </Link>
+            <div className="related-prev d-xl-none" onClick={onClickPrev}>
+                <div className="related-prev-icon" />
+            </div>
+            <div className="related-next d-xl-none" onClick={onClickNext}>
+                <div className="related-next-icon" />
+            </div>
         </Container>
     )
 }

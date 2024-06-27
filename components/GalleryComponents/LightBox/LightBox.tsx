@@ -59,10 +59,10 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox }: LightBoxPr
                 <div className="lightbox-body">
                     <div className="lightbox-auto lightbox-leftArrow">
                         {index !== 0 && (
-                            <span className="lightbox-arrow lightbox-left-icon" onClick={() => handleSwitch("dec")}>
-                                {/* <LeftArrow /> */}
-                                {/* <Image alt="left arrow" src="/icons/arrow-left-s-line.svg" /> */}
-                            </span>
+                            <span
+                                className="lightbox-arrow lightbox-left-icon"
+                                onClick={() => handleSwitch("dec")}
+                            ></span>
                         )}
                     </div>
                     <div className="lightbox-box">
@@ -73,10 +73,10 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox }: LightBoxPr
                     </h1>
                     <div className="lightbox-auto lightbox-rightArrow">
                         {index + 1 !== images.length && (
-                            <span className="lightbox-arrow lightbox-right-icon" onClick={() => handleSwitch("inc")}>
-                                {/* <RightArrow /> */}
-                                {/* <Image alt="left arrow" src="/icons/arrow-right-s-line.svg" /> */}
-                            </span>
+                            <span
+                                className="lightbox-arrow lightbox-right-icon"
+                                onClick={() => handleSwitch("inc")}
+                            ></span>
                         )}
                     </div>
                 </div>
