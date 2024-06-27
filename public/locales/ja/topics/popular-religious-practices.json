@@ -20,14 +20,11 @@
     "downloads": {},
     "related": {
         "labels": [
-            "Ancestor veneration",
-            "Workplace pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
+            "日本文化とキリスト教",
+            "先祖崇拝",
+            "自分に頼る生き方と物質主義"
         ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "links": ["/topics/japanese-culture-and-christianity", "/topics/ancestor-veneration", "/self-reliance-and-materialism"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",
@@ -88,5 +85,10 @@
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/921387496"
+    "videoSrc": "https://player.vimeo.com/video/921387496",
+    "infographic": {
+        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
+        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
+        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
+    }
 }

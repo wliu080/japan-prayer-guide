@@ -86,24 +86,11 @@ const Heart = () => {
 }
 const LeftArrow = () => {
     return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style={{
-                display: "block",
-                fill: "none",
-                height: "12px",
-                width: "12px",
-                stroke: "currentcolor",
-                strokeWidth: 4,
-                overflow: "visible",
-                cursor: "pointer",
-            }}
-        >
-            <path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"
+                fill="black"
+            ></path>
         </svg>
     )
 }

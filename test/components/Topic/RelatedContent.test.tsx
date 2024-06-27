@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import RelatedContent from "../../../components/topic/RelatedContent"
+import RelatedContent from "../../../components/topic/RelatedContent/RelatedContent"
 
 jest.mock("next-i18next", () => ({
     // this mock makes sure any components using the translate hook can use it without a warning being shown
@@ -56,7 +56,7 @@ describe("Related Content", () => {
         const relatedContentCont = screen.getByTestId("related-content-container")
         const relatedContentTitle = screen.getByTestId("related-content-title")
 
-        expect(relatedContentCont).toHaveClass("d-flex", "flex-column", "my-5")
+        expect(relatedContentCont).toHaveClass("d-flex", "flex-column", "my-4")
 
         expect(relatedContentTitle).toHaveTextContent("relatedTopics.heading")
         expect(relatedContentTitle).toHaveClass("text-primary", "my-4", "fs-1")
