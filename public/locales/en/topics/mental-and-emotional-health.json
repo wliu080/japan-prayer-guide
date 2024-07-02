@@ -1,0 +1,107 @@
+{
+    "title": "Mental and emotional health",
+    "path": "mental-and-emotional-health",
+    "prayerSummary": [
+        "Pray that seeking mental health care would lose its current stigma in Japan.",
+        "Pray for more Christian counselors, and that the church would be equipped to minister to those who are struggling.",
+        "Pray that more Japanese people would discover God’s grace and acceptance, and that Christians would model this for them."
+    ],
+    "textBody": [
+        "A missionary couple hosted Riku for four months at their home. For two years before then, he had shut himself inside his house, but had eventually been kicked out for being violent.",
+        "Riku was one of over a million people in Japan with <i>hikikomori</i>, a condition in which individuals shut themselves off from society for at least six months.<sup>1</sup> Yet any time the couple mentioned healing, Riku would insist he was not like one of “those people.”",
+        "It can be difficult for Japanese people to admit they struggle with a mental health issue. Many fear being stigmatized. Treatment in Japan often focuses on medication without the support of counseling.",
+        "In another troubling trend, suicides of young people climbed to an all-time high in 2022.<sup>2</sup> Suicide is the leading cause of death among 10-39 year olds in Japan.<sup>3</sup> The number of school children committing suicide typically peaks after the summer break. There can be several contributing factors to this, including family issues, bullying, and academic pressures.",
+        "There is, however, a growing awareness of mental and emotional health issues both in society and the church. Government-funded suicide prevention strategies are showing some success. And more Christians are interested in going into mental health professions."
+    ],
+    "textBodyAsterisk": [],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
+    },
+    "downloads": {},
+    "related": {
+        "labels": ["Social conformity", "Workplace pressure", "Family life"],
+        "links": ["/topics/social-conformity", "/topics/workplace-pressure", "/topics/family-life"]
+    },
+    "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
+    "heroFocus": "20% 50%",
+    "photos": [
+        {
+            "src": "/photos/topics/topic1/TP01-Album-01.jpg",
+            "title": "A large crowd of visitors at a prominent shrine in Kyoto (Fushimi Inari Taisha) on New Year's Day."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-02.jpg",
+            "title": "A gate at a Shinto shrine, called <i>torii</i>. <i>Torii</i> can be found at many places in Japan: city streets, staircases, forests, rivers, fields, and more."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-03.jpg",
+            "title": "A visitor at Meiji shrine bows before passing through the <i>torii</i> gate. A <i>torii</i> gate is seen as an entryway into sacred space."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-04.jpg",
+            "title": "A shrine on a small beach island (Aoshima) in Miyazaki prefecture. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-05.jpg",
+            "title": "A man prays at a local neighborhood shrine in Chiba prefecture. "
+        },
+        { "src": "/photos/topics/topic1/TP01-Album-06.jpg", "title": "Sensoji, a popular Buddhist temple in Tokyo." },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-07.jpg",
+            "title": "A child and his guardian wave incense over themselves. This is a common purification or healing ritual at Buddhist temples."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-08.jpg",
+            "title": "A young man locating his <i>omikuji</i>, or fortune-telling paper."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-09.jpg",
+            "title": "Charms for protection and good luck called <i>omamori</i> on sale at a shrine. "
+        },
+        { "src": "/photos/topics/topic1/TP01-Album-10.jpg", "title": "A woman shops for a charm at a temple. " },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-11.jpg",
+            "title": "Visitors at Meiji shrine write prayer requests on wooden tablets called <i>ema</i>."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-12.jpg",
+            "title": "A child's prayer written on a prayer tablet at a shrine. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-13.jpg",
+            "title": "An elderly woman prays at the altar of a popular temple in Tokyo."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-14.jpg",
+            "title": "A woman drops coins in the offering box in front of a monkey statue, which is considered a patron of safety in childbirth."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-15.jpg",
+            "title": "Shrines often feature in important celebrations and rites of passage for Japanese families. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-16.jpg",
+            "title": "A couple takes wedding photographs at a shrine. In Japan, important life events are often celebrated at shrines."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-17.jpg",
+            "title": "<i>Shichi-go-san</i> is a festival in November celebrating children at the ages of seven, five, and three. It is often commemorated at shrines. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-18.jpg",
+            "title": "Summer festivals at shrines are often popular events for youth and young adults to attend with friends, family, or dates."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-19.jpg",
+            "title": "The <i>Bon</i> dance festival at Tsukiji Hongwanji temple. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-20.jpg",
+            "title": "Festivals and community events often take place at shrines or temples."
+        }
+    ],
+    "galleryType": "gallery",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/921387464"
+}

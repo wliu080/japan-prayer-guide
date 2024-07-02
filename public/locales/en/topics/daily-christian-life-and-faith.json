@@ -1,0 +1,58 @@
+{
+    "title": "Daily Christian life and faith",
+    "path": "daily-christian-life-and-faith",
+    "prayerSummary": [
+        "Pray for those who struggle with their faith in the midst of busy lives or family opposition.",
+        "Pray for Christians to find creative ways to bring the Bible and prayer into their regular routines.",
+        "Pray that they will know how to apply biblical values and principles to their situations and relationships."
+    ],
+    "textBody": [
+        "Ayako became a Christian at university. Her mother was adamantly opposed to her baptism, but Ayako remained strong in her faith. ",
+        "After graduating, Ayako shared with her missionary friend Sun-young that she was struggling. Her veterinary job was stressful, and she had little peace at home with her mother. ",
+        "Ayako asked, “I feel like my life with Jesus is separate from my working life. How can I bring them together?”",
+        "In Japanese culture, keeping private and public lives separate is highly valued, and religion is often reserved for special occasions or times of need. Christians may attend church on Sundays, but have difficulty discussing their faith over lunch with a non-Christian coworker.",
+        "There is also a clear hierarchy between teachers and students, or <i>senpai</i> and <i>kohai</i> (seniors and juniors). This is seen in schools, clubs, and companies. In churches, many Christians think it is best to learn the Bible through a pastor or missionary. They may struggle to study the Bible on their own during the week.",
+        "Ayako and Sun-young talked about praying in the ordinary places and routines of life. Ayako could pray silently on the subway, ask God for wisdom while working, or even pray in the bath."
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["Harmony", "Family life", "Faith in the workplace"],
+        "links": ["/topics/harmony", "/topics/family-life", "/topics/faith-in-the-workplace"]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}

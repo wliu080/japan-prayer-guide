@@ -1,0 +1,60 @@
+{
+    "title": "Creative ways of ministry",
+    "path": "creative-ways-of-ministry",
+    "prayerSummary": [
+        "Give thanks for creative ways of ministry in Japan, and pray for more.",
+        "Pray that churches can find authentic ways to connect with different groups in Japanese society.",
+        "Pray that Christian workers can find ways to partner with others and not burn out amidst the vast opportunities."
+    ],
+    "textBody": [
+        "Opposite a local subway station is a small café—seven tables around a long one in the middle of the room. It’s where a retired quantum mechanics professor connects with a younger autistic man and where patients from a nearby mental health clinic come with their therapist for lunch. Others come to find community. This café is a ministry run by missionaries to reach people through authentic connections.",
+        "This kind of ministry is one creative way to reach out to communities in Japan. Some churches reach out through kids’ programs, English clubs, or hobby groups like quilting or cycling. Other churches have contemporary worship or bilingual services that appeal to younger people.",
+        "Christians in Japan are using sports, social media, music, and more to creatively engage people who are unlikely to enter a church building. A snowboarder shares about Christ on the ski lift. A Japanese pastor does the same on his surfboard. A Japanese church starts a monthly board-game night. A missionary couple shares original Christian songs at open mic events.",
+        "There are people of all backgrounds and interests in Japan. Creativity and wisdom are needed to enter into their lives and share Christ in authentic ways."
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["Japanese views of Christianity", "Church in the community", "Personal evangelism"],
+        "links": [
+            "/topics/japanese-views-of-christianity",
+            "/topics/church-in-the-community",
+            "/topics/personal-evangelism"
+        ]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}

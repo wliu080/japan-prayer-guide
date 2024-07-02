@@ -1,0 +1,107 @@
+{
+    "title": "精神と心の健康",
+    "path": "mental-and-emotional-health",
+    "prayerSummary": [
+        "日本で精神医療を受けることに対する偏見がなくなるように。",
+        "クリスチャンのカウンセラーが増えるように。心の問題を抱えた人のニーズに応えられるよう、教会が整えられるように。",
+        "神様が恵みをもって私たちを受け入れてくださることを、多くの人が知るようになり、クリスチャンの生き方が、その証しとなるように。"
+    ],
+    "textBody": [
+        "ある宣教師夫婦が、陸くんを4か月間自宅に引き取りました。それまでの2年間、陸くんは自宅にひきこもっていましたが、とうとう暴力が手に負えないということで追い出されてしまったのです。",
+        "陸くんは日本に百万人以上いる「ひきこもり」の一人です。「ひきこもり」とは、半年以上、社会と関わりを持たずにいる人たちです<sup>1</sup>。しかし、宣教師夫婦が癒やしについて話すたびに、陸くんは「自分と『ああいう人たち』とは違う」と言い張りました。",
+        "精神的な病を抱えていると認めるのは、日本人にとって難しいことです。レッテルを貼られるのが怖いのです。日本では精神病治療の中心は投薬で、カウンセリング支援はまだあまり浸透していません。",
+        "もう一つ心配な社会問題は若者の自殺です。児童生徒の自殺者数は2022年に過去最多となり<sup>2</sup>、日本における10〜39歳の死因の第1位でした<sup>3</sup>。児童生徒の自殺者数は、夏休みが終わった直後に最も多くなります。その理由は家庭問題、いじめ、勉強の悩みなど複合的で複雑です。",
+        "一般社会でも教会でも、精神や心の健康についての意識が高まっています。公的資金を用いた自殺防止対策も効果を表しています。クリスチャンの中にも、メンタルヘルスに関わる職業に就こうとする人が増えています。"
+    ],
+    "textBodyAsterisk": [],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
+    },
+    "downloads": {},
+    "related": {
+        "labels": ["社会の同調圧力", "仕事のプレッシャー", "家庭生活"],
+        "links": ["/topics/social-conformity", "/topics/workplace-pressure", "/topics/family-life"]
+    },
+    "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
+    "heroFocus": "20% 50%",
+    "photos": [
+        {
+            "src": "/photos/topics/topic1/TP01-Album-01.jpg",
+            "title": "A large crowd of visitors at a prominent shrine in Kyoto (Fushimi Inari Taisha) on New Year's Day."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-02.jpg",
+            "title": "A gate at a Shinto shrine, called <i>torii</i>. <i>Torii</i> can be found at many places in Japan: city streets, staircases, forests, rivers, fields, and more."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-03.jpg",
+            "title": "A visitor at Meiji shrine bows before passing through the <i>torii</i> gate. A <i>torii</i> gate is seen as an entryway into sacred space."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-04.jpg",
+            "title": "A shrine on a small beach island (Aoshima) in Miyazaki prefecture. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-05.jpg",
+            "title": "A man prays at a local neighborhood shrine in Chiba prefecture. "
+        },
+        { "src": "/photos/topics/topic1/TP01-Album-06.jpg", "title": "Sensoji, a popular Buddhist temple in Tokyo." },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-07.jpg",
+            "title": "A child and his guardian wave incense over themselves. This is a common purification or healing ritual at Buddhist temples."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-08.jpg",
+            "title": "A young man locating his <i>omikuji</i>, or fortune-telling paper."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-09.jpg",
+            "title": "Charms for protection and good luck called <i>omamori</i> on sale at a shrine. "
+        },
+        { "src": "/photos/topics/topic1/TP01-Album-10.jpg", "title": "A woman shops for a charm at a temple. " },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-11.jpg",
+            "title": "Visitors at Meiji shrine write prayer requests on wooden tablets called <i>ema</i>."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-12.jpg",
+            "title": "A child's prayer written on a prayer tablet at a shrine. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-13.jpg",
+            "title": "An elderly woman prays at the altar of a popular temple in Tokyo."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-14.jpg",
+            "title": "A woman drops coins in the offering box in front of a monkey statue, which is considered a patron of safety in childbirth."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-15.jpg",
+            "title": "Shrines often feature in important celebrations and rites of passage for Japanese families. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-16.jpg",
+            "title": "A couple takes wedding photographs at a shrine. In Japan, important life events are often celebrated at shrines."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-17.jpg",
+            "title": "<i>Shichi-go-san</i> is a festival in November celebrating children at the ages of seven, five, and three. It is often commemorated at shrines. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-18.jpg",
+            "title": "Summer festivals at shrines are often popular events for youth and young adults to attend with friends, family, or dates."
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-19.jpg",
+            "title": "The <i>Bon</i> dance festival at Tsukiji Hongwanji temple. "
+        },
+        {
+            "src": "/photos/topics/topic1/TP01-Album-20.jpg",
+            "title": "Festivals and community events often take place at shrines or temples."
+        }
+    ],
+    "galleryType": "gallery",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/921387464"
+}

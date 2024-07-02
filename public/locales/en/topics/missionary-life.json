@@ -1,0 +1,61 @@
+{
+    "title": "Missionary life",
+    "path": "missionary-life",
+    "prayerSummary": [
+        "Pray that missionaries would persevere in learning Japanese language and culture to communicate the gospel more effectively.",
+        "Pray for missionaries to be mindful of how they are doing spiritually, physically, and emotionally so they can continue long term.",
+        "Pray against discouragement, a common weapon of the enemy against missions work in Japan."
+    ],
+    "textBody": [
+        "Jack arrived in Japan as a new missionary. He was fired up—ready to learn Japanese and get out there to make a difference. His mission agency required him to attend a local Japanese church, but he soon became worn out. He thought, “What’s the point of going if I don’t know what they’re saying and can’t talk to anyone?”",
+        "After a few months, he realized that he still struggled to order a meal and certainly wasn’t able to explain the gospel in Japanese yet. Amidst the difficulties, Jack began to lose sight of why he was in Japan. ",
+        "New missionaries need to persevere and maintain their spiritual fervor, especially when they understand little of the language and culture. Families have the added stress of helping their children adjust. Missionaries may face cultural stress working with teammates from different countries. They can also feel pressure to appear as though they are coping, and not admit their struggles. Seasoned missionaries are not exempt and can be discouraged by a lack of fruit. ",
+        "But missionaries also have testimonies of thankfulness and joy because they’ve experienced God sustaining them through challenges. They know his ongoing call in their lives and see him at work in and through them."
+    ],
+    "textBodyAsterisk": [],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["Immigration and foreign nationals", "Unity in Christ", "Japanese mission movement"],
+        "links": [
+            "/topics/immigration-and-foreign-nationals",
+            "/topics/unity-in-christ",
+            "/topics/japanese-mission-movement"
+        ]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}

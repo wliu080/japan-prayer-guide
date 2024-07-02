@@ -1,0 +1,56 @@
+{
+    "title": "Faith in the workplace",
+    "path": "faith-in-the-workplace",
+    "prayerSummary": [
+        "Pray that Japanese Christians would have the courage to be open about their faith at work.",
+        "Pray that Christians would see their work as an important way they can serve God in the world and be a light to their coworkers.",
+        "Pray that Christians in positions of influence would impact their workplace culture and values in godly ways."
+    ],
+    "textBody": [
+        "While waiting to board a packed Tokyo-bound train, a salaryman engaged Mark, a missionary, in conversation. The man apologized profusely that he was drunk—he was on his way to visit the grave of his recently deceased sister and had been drinking with his coworkers. He then poured out his heart, in public, to a total stranger.",
+        "This man, like many in Japan, was in need of a place to be heard and belong (an <i>ibasho</i>). Mark asked if he could pray for him; the salaryman nodded and listened. ",
+        "The workplace may seem like the easiest setting to reach out to working people. But harmonious relationships with coworkers is key in Japan, and many Japanese Christians struggle to express their faith at work because of the pressure not to stand out. On top of that, Christians can feel stretched by their responsibilities and the demands of their bosses.",
+        "There may be few Christians in any given workplace, often only one, so they can feel isolated or timid. But with each believer, there is an opportunity for someone at the next desk or across the aisle to hear about and receive the <i>ibasho</i> we have in Christ."
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["Social conformity", "Workplace pressure", "Personal evangelism"],
+        "links": ["/topics/social-conformity", "/topics/workplace-pressure", "/topics/personal-evangelism"]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}

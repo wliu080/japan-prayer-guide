@@ -1,0 +1,62 @@
+{
+    "title": "Personal evangelism",
+    "path": "personal-evangelism",
+    "prayerSummary": [
+        "Pray that Japanese Christians would joyfully share their personal lives and testimonies with those around them.",
+        "Pray that Christians would intentionally go out to meet people and share the gospel in word and deed.",
+        "Pray that the Holy Spirit would work in the hearts of Japanese non-believers every time they interact with Christians."
+    ],
+    "textBody": [
+        "Joe, a missionary, and two short-term workers were on a tour. They entered a Buddhist temple and saw statues representing the twelve Chinese zodiac creatures on a table. The guide asked them what year they were born. ",
+        "When one of the short-termers discovered she was born in the year of the sheep, she said, “That’s fitting. I am a sheep and Jesus is my good shepherd.” ",
+        "The guide, Tomoko, didn’t understand, so Joe explained the biblical reference. Tomoko listened intently and at the end of the tour, she asked to become Joe’s Facebook friend. She often engages with his posts.",
+        "On another occasion, a Japanese believer said to Joe’s wife, “I wish I could talk with non-believers like your husband does.” ",
+        "Japanese values, including group harmony and not bothering others, can make it difficult for Japanese people to identify as Christians and initiate conversations about Jesus. This is especially true with people they see often, like neighbors, classmates, or coworkers.",
+        "Other times, when it comes to sharing their faith, believers may worry that they don’t know enough about God or the Bible, and that they might say the wrong thing. But many desire to be greater witnesses where they live and work."
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["Church in the community", "Creative ways of ministry", "Faith in the workplace"],
+        "links": [
+            "/topics/church-in-the-community",
+            "/topics/creative-ways-of-ministry",
+            "/topics/faith-in-the-workplace"
+        ]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}
