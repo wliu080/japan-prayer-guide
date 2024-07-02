@@ -22,15 +22,12 @@
         "slidesUrl": "www.google.com"
     },
     "related": {
-        "labels": [
-            "Ancestor veneration",
-            "Workplace pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "labels": ["Popular religious practices", "Japanese culture and Christianity", "Aging society"],
+        "links": [
+            "/topics/popular-religious-practices",
+            "/topics/japanese-culture-and-christianity",
+            "/topics/aging-society"
+        ]
     },
     "photos": [
         { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },

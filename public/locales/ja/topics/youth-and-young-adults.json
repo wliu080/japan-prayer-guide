@@ -1,31 +1,27 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "若者たち",
+    "path": "youth-and-young-adults",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "KGK（キリスト者学生会）、JCCC（日本キャンパス・クルセード・フォー・クライスト）、国際ナビゲーター、hi-b.a.（高校生聖書伝道協会）、その他の若者のための働きをする諸団体を主に感謝しましょう。",
+        "若者の信仰生活を励まし、指導する働き人たちのために。",
+        "クリスチャンの若者が、信仰に喜びを持ち、他の人と分かち合う勇気を持てるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "「私はクリスチャンとして失格だと思います。聖書はほとんど読まないし、読んでもよく分からないんです。」ひろ子さんが主事に打ち明けたのは深夜2時、KGKのキャンプでのことでした。他の学生たちと楽しい1日を過ごした後、彼女は正直な思いを語ってくれました。",
+        "「祈っていても、独り言のような気がするんです。神様は本当にいるのだろうかと思うこともあります。教会では他に同年代はいないし、あまり行きたいとも思えません。もうやめようかと思うこともあるんですよ。」",
+        "このような悩みは日本では珍しくありません。クリスチャン人口が少なく、教会の規模が小さい上に高齢化が進み、若い人が少ないからです。",
+        "クリスチャン、ノンクリスチャンを問わず、日本の若者は学業、家族、人間関係、将来のことなど、様々な悩みを抱えています。学生から社会人生活への適応は難しく、経済的な不安から結婚や出産に前向きになれません。",
+        "クリスチャンの若者にとって、信仰を励まし合う仲間を見つけ、分かち合うことはとても大切です。KGKのような超教派の働きが重要な役割を担っているのです。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["精神と心の健康", "テクノロジーとメディア", "家庭生活"],
+        "links": ["/topics/mental-and-emotional-health", "/topics/technology-and-media", "/topics/family-life"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",

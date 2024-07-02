@@ -1,30 +1,32 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "入国管理と外国人居住者",
+    "path": "immigration-and-foreign-nationals",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "外国人の日本入国を監督する、日本の当局者や諸団体のために。",
+        "クリスチャン外国人居住者のために。学校、職場、地域社会で日本人の隣人のための祝福となるように。",
+        "日本の教会が外国人居住者に重荷を持ち、ディアスポラのグループや外国語教会と協力できるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "ホアさんがコンビニのレジで支払いをしようとした時、店員の名札を見て、自分と同じ名字であることに気づきました。<br>「ベトナム人ですか？」ホアさんはベトナム語で尋ねました。<br>「はい、あなたも？」",
+        "二人とも同じ大学で学んでいることが分かり、その週のうちに一緒にお昼を食べる約束をしました。",
+        "日本に居住する外国人の数は、近年徐々に増加し、コロナ禍による減少の後、再び増加傾向にあります。多くの外国人は専門職、技術者、留学生として来日します。日本人の配偶者として来日する人もいます。2019年、日本政府は大きく政策を転換し、深刻な労働力不足に対応するため、製造業、農業、介護などに従事する労働者を受け入れることにしました。",
+        "日本は、同じであることを良しとする非常に均質的な社会で、新しい人々を受け入れる過程で多くの課題に直面します。外国人居住者も問題にぶつかります。日本の文化、職場の環境、高い生活費、さらに、日本語も学ぶ必要があります。",
+        "外国人居住者の中には宗教ビザを持つ宣教師もいます。日本社会の中で仕事を見つけ、職場で人間関係を築いているクリスチャンもいます。フィリピン人、ブラジル人、中国人と言ったディアスポラ<sup>*</sup>のグループの教会が形成され、都市によっては様々な国籍の人が集う国際教会もあります。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [
+        "<sup>*</sup>*ディアスポラとは母国を離れ、世界各地に散らされている人々のことで、ここでは日本に寄留している外国人のことを指します。"
+    ],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["政治と国際関係", "海外に住む日本人", "宣教師の生活"],
         "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/politics-and-international-relations",
+            "/topics/japanese-overseas",
+            "/topics/missionary-life"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",

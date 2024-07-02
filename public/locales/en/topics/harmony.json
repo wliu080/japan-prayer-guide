@@ -1,30 +1,33 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "Harmony",
+    "path": "harmony",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "Give thanks for the love of harmony and pray it would be balanced with love of God’s truth.",
+        "Pray for Japanese churches and Christians to find ways to live harmoniously with non-believers without compromising their faith.",
+        "Pray for wisdom and courage when Christians need to prioritize obedience to God over harmony."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "“My daughter turned three last month,” Aiko, a young Christian mother, explained to the missionary. “My mother-in-law wants the Shinto priest to pray for her at the <i>Shichi-Go-San</i> festival.”<sup>*</sup>",
+        "The grandmother had argued that this was an important tradition and the first chance for the little girl to dress up in a formal <i>kimono</i>. ",
+        "Aiko said, “If I refuse, she will say that I am ruining the harmony of the family.” ",
+        "As the missionary talked and prayed with Aiko, he realized that the grandmother just wanted the little girl to have a celebration. They decided to have a time of prayer for the children at church and encourage them to wear <i>kimonos</i>. ",
+        "The grandmother came and took many photos; the little girl looked magnificent in her red-and-gold <i>kimono</i>. Parents were happy to have their children prayed for. A new church tradition had begun.",
+        "Harmony is a beautiful value in Japanese culture and arts, but it can have a darker side. People may avoid telling the truth if it ruins the harmony of the group. They may find it easier to avoid someone they disagree with rather than confront the issue. Students might not speak out when bullied, nor employees when their boss is wrong."
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [
+        "<sup>*</sup><i>Shichi-Go-San</i> is a Japanese festival to celebrate children’s growth at seven, five, and three years old."
+    ],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["Social conformity", "Japanese culture and Christianity", "Personal evangelism"],
         "links": [
+            "/topics/social-conformity",
             "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/personal-evangelism"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",

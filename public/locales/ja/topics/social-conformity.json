@@ -1,5 +1,5 @@
 {
-    "title": "Social conformity",
+    "title": "社会の同調圧力",
     "path": "social-conformity",
     "prayerSummary": [
         "父なる神様がイエス様を通して、ありのままの自分を受け入れてくださることに感謝しましょう。",
@@ -25,15 +25,8 @@
         "slidesUrl": "www.google.com"
     },
     "related": {
-        "labels": [
-            "Ancestor Veneration",
-            "Workplace Pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "labels": ["和を重んじる文化", "精神と心の健康", "日常生活と信仰"],
+        "links": ["/topics/harmony", "/topics/mental-and-emotional-health", "/topics/daily-christian-life-and-faith"]
     },
     "heroPhoto": "/photos/topics/topic6/TP06-Hero.jpg",
     "heroFocus": "50% 50%",

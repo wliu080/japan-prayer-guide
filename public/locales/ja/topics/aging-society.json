@@ -1,31 +1,27 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "高齢化社会",
+    "path": "aging-society",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "忠実な高齢者クリスチャンの存在に感謝しましょう。彼らが同年代の人たちに信仰を証しできるように。",
+        "日本の教会が高齢者のニーズに応えることができるように。多くの高齢者が孤独を感じています。",
+        "医療、年金、地域プログラムなどの意思決定をする日本政府と社会のリーダーに知恵が与えられるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "セレスティさんは、おじいさんが車椅子からころげ落ちているのを通りで見かけ、助けて家まで送りました。その際、教会の住所をおじいさんに伝えたところ、その週のうちに教会に来てくださいました。おじいさんにとって、教会に行くのは初めてのことでした。",
+        "2023年には日本の人口の29%以上が65歳以上となっています<sup>1</sup>。高齢者人口の割合が世界でも最も高い国の一つで、さらに出生率の低下と生涯未婚率の増加によって日本の人口減少は進んでいて、高齢者の割合はさらに上昇しています。",
+        "このことから来る長期的影響は計り知れません。労働力不足により外国人労働者が増え、人工知能（AI）への投資が拡大しています。医療や年金の制度はひっ迫し、多くの人が将来に不安を感じています。",
+        "一人暮らしの高齢者が増加し、社会的に孤立するようになっています。自宅で孤独死する人の数も増えています。キャンペーンやイベントを通じて、高齢者の福祉を促進しようとしている地域もあります。",
+        "クリスチャンも手を差し伸べようとしています。運動教室や高齢者昼食会を開いている教会もありますし、高齢の教会員の自宅や入院先を訪問する牧師もいます。高齢のクリスチャンの中にも、介護施設でボランティアをしたり、同年代の人と友だちになろうとする人がいます。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["テクノロジーとメディア", "教会のリーダーシップ", "地方伝道"],
+        "links": ["/topics/technology-and-media", "/topics/church-leadership", "/topics/christianity-in-rural-areas"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",

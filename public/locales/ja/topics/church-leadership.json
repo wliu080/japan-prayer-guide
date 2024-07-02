@@ -1,5 +1,5 @@
 {
-    "title": "Church leadership",
+    "title": "教会のリーダーシップ",
     "path": "church-leadership",
     "prayerSummary": [
         "年配の牧師が次の世代を信頼し、リーダーシップと伝道のために彼らを励ますことができるように。",
@@ -23,15 +23,8 @@
         "headers": ["View all downloadables", "Download All"]
     },
     "related": {
-        "labels": [
-            "Ancestor veneration",
-            "Workplace pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "labels": ["高齢化社会", "伸び悩む教会", "教会開拓"],
+        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },

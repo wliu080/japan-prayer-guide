@@ -1,0 +1,64 @@
+{
+    "title": "海外に住む日本人",
+    "path": "japanese-overseas",
+    "prayerSummary": [
+        "海外の教会やミニストリーが、日本人に向けて良い働きができるように。",
+        "海外に住んでいる日本人の心が福音に開かれ、キリストに導いてくれるクリスチャンに出会えるように。",
+        "帰国者<sup>*</sup>クリスチャンが、彼らを愛し、支えてくれる教会コミュニティーを見つけることができるように。"
+    ],
+    "textBody": [
+        "里奈さんは、ロンドンへ留学する前に初めて東京の教会へ行き始めました。後に、その教会の牧師は、彼女が海外滞在中に信仰に導かれたことを聞いてとても喜びました。",
+        "2019年には、海外在住邦人が130万人以上いました。そして、毎年1,000人近くの日本人が海外でクリスチャンになっていると言われています<sup>1</sup>。国内と比べて、これは高い比率です。",
+        "一方、その逆のパターンもあります。海外で求道者となり、帰国後信仰を持つようになる人もいます。神様はオーストラリア、アメリカ、シンガポールなど、遠く離れた場所に種を蒔いておられます。",
+        "海外生活には、言葉の壁、異文化、家族や友人との距離など、多くの困難が伴います。そのような背景もあって、海外の教会やホームステイ先には、日本人を受け入れ、福音を伝えるための大きなチャンスがあります。",
+        "海外から帰国した後にも困難が待ち受けています。求道者や新しい信者は、友人や家族に自分の変化を理解してもらえず、がっかりすることがあります。近くに教会や他のクリスチャンを見つけるのにも苦労するかもしれません。理解をもって彼らを受け入れ、ケアしてくれるクリスチャンのコミュニティーにつながることが、芽生えたばかりの魂の「植え替え」と「成長」には必要不可欠です。"
+    ],
+    "textBodyAsterisk": [
+        "<sup>*</sup>帰国者をリターニーということがあります。帰国者とは、学びや仕事などのために海外に引越し、後に母国に戻ってくる人のことです。"
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["社会の同調圧力", "日常生活と信仰", "世界宣教への関わり"],
+        "links": [
+            "/topics/social-conformity",
+            "/topics/daily-christian-life-and-faith",
+            "/topics/japanese-mission-movement"
+        ]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}

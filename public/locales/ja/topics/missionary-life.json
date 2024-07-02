@@ -1,0 +1,61 @@
+{
+    "title": "宣教師の生活",
+    "path": "missionary-life",
+    "prayerSummary": [
+        "福音をより効果的に伝えるために、宣教師が日本語と日本文化を根気よく学ぶことができるように。",
+        "宣教師が長期的な働きができるよう、心身ともに守られるように。",
+        "宣教師が日本での宣教活動に際し、サタンの常とう手段である、失意落胆から守られるように。"
+    ],
+    "textBody": [
+        "新人宣教師として来日したジャックは日本語を学び、良い働きをしようと張り切っていました。宣教団体の紹介で、地域教会に通うようになりましたが、ほどなく疲れ切ってしまいました。「何を言っているのか分からないし、誰とも話せない。行く意味があるのだろうか」と思ったのです。",
+        "数か月経っても、福音を日本語で説明するどころか、食事の注文すらまだ上手くできないことにがっかりしました。何もかもが難しく感じられる中、日本にいる意味を見失い始めたのです。",
+        "新人宣教師は、忍耐強く霊的な熱意を維持する必要があります。現地の言葉と文化をまだ理解していない場合はなおさらです。家族がいれば、子どもたちが日本に慣れるよう助ける必要もあるので、さらなるストレスを抱えます。宣教師同士でも、異なる国から来日している人たちと働くことで、異文化ストレスを感じることもあります。さらに、しっかり対処しているように見せなければいけないというプレッシャーから、自分の苦悩を打ち明けることができない場合もあります。これは、ベテランの宣教師も例外ではなく、働きの成果が見えないと落胆してしまうものなのです。",
+        "しかし、それと同時に宣教師は困難の中でも神様に支えられていることを経験し、感謝と喜びの証しをしています。神様が変わらず召してくださり、自分自身のうちに、また自分を通して働かれる神様の御業を見ることができるのです。"
+    ],
+    "textBodyAsterisk": [],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["入国管理と外国人居住者", "キリストにおける一致", "世界宣教への関わり"],
+        "links": [
+            "/topics/immigration-and-foreign-nationals",
+            "/topics/unity-in-christ",
+            "/topics/japanese-mission-movement"
+        ]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}

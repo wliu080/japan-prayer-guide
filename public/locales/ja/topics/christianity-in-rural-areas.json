@@ -1,16 +1,16 @@
 {
-    "title": "Church leadership",
-    "path": "church-leadership",
+    "title": "地方伝道",
+    "path": "christianity-in-rural-areas",
     "prayerSummary": [
-        "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
-        "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
-        "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
+        "地方に住む数千万人の人々に福音を伝えるために、さらに多くの働き人が長期的に奉仕できるように。",
+        "地方に住む人たちが福音を聞き、聖霊の働きによってキリストに導かれるように。",
+        "地方自治体が地域の課題を決定する際に、知恵が与えられるように。"
     ],
     "textBody": [
-        "Pastor Yamanaka has a passionate desire to shepherd his church. He longs to equip members to live out the good news in their neighborhoods, workplaces, and schools. However, his church faces various challenges, and being in his mid-seventies, Pastor Yamanaka also needs to find someone to replace him.",
-        "There is great concern about the future of church leadership in Japan. In 2021 half of the pastors in Japan were aged 65 and over, with an average age of 62.<sup>1</sup> The number of churches without a pastor increased by 65% between 2009 and 2016, and seminaries reported decreasing enrollments.",
-        "Pastor Kimura is a recent seminary graduate in his thirties who oversees two churches. He wants to be mentored as a Christian leader, but struggles to find time for this. He would like to stay in touch with seminary friends for mutual support, but they are busy too.",
-        "Japanese pastors have tremendous ministry responsibilities and a limited support team, if any at all. Japan has a great need for young pastors who will faithfully preach God’s Word and shepherd his people. But as they are called, young pastors must also be supported and encouraged, so that they can continue in ministry for the years ahead."
+        "東北のある街で、望美さんは地元で唯一のショッピングモールにある衣料品店で働いていました。そこで教会を開拓している人に出会い、お茶会に誘われたのがきっかけで、感謝祭、クリスマス礼拝、聖書研究会などに参加するようになりました。そして、望美さんは、ついに信仰を持つに至ったのです。その後、彼女は県内唯一のキリスト教書店の店長になりました。",
+        "日本で「地方」というと、人口密度の低い地方都市や小さな町や村を意味し、しばしば寂しいイメージを持たれます。若者は大都市に流出しています。教会は高齢化し、無牧の教会も多くあります。住民は伝統にしばられており、福音に対して心を閉ざしていると思われがちです。",
+        "地方自治体は地元の活性化を目指し、道路を整備し、観光業に力を入れています。その結果、地方の小都市はアクセスがよくなり、大都市よりも新しい関係を築きやすくなっているかもしれません。",
+        "地方にはおよそ3,800万人が住み<sup>1</sup>、キリスト教への関心もありますが、伝道の働きは遅々として進みません。福音を伝え、分かち合い、長期にわたり証しする働き人が必要とされています。"
     ],
     "quote": {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
@@ -23,8 +23,8 @@
         "prayerVidUrl": "www.google.com"
     },
     "related": {
-        "labels": ["Aging society", "Struggling churches", "Church planting"],
-        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
+        "labels": ["高齢化社会", "教会開拓", "教会のリーダーシップ"],
+        "links": ["/topics/aging-society", "/topics/church-planting", "/topics/church-leadership"]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },

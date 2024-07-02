@@ -25,15 +25,8 @@
         "slidesUrl": "www.google.com"
     },
     "related": {
-        "labels": [
-            "Ancestor Veneration",
-            "Workplace Pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "labels": ["Harmony", "Mental and emotional health", "Daily Christian life and faith"],
+        "links": ["/topics/harmony", "/topics/mental-and-emotional-health", "/topics/daily-christian-life-and-faith"]
     },
     "heroPhoto": "/photos/topics/topic6/TP06-Hero.jpg",
     "heroFocus": "50% 50%",

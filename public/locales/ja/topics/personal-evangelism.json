@@ -1,0 +1,61 @@
+{
+    "title": "個人伝道",
+    "path": "personal-evangelism",
+    "prayerSummary": [
+        "日本のクリスチャンが、自分の人生や証しを喜んで周りの人たちと分かち合うことができるように。",
+        "クリスチャンが意図的に人々に会いに出て行き、言葉と行いで福音を伝えることができるように。",
+        "まだ信仰を持たない多くの人々が、クリスチャンと接するたびに、その心の中に聖霊様が働いてくださるように。"
+    ],
+    "textBody": [
+        "宣教師のジョーさんは、二人の短期宣教師とツアーに参加していました。お寺に入ると、十二支を表す像があり、ツアーガイドに何年生まれか聞かれました。短期宣教師のうちの一人は自分が未年（ひつじどし）だと知って、言いました。「それはいい。私は羊で、イエス様は私の良き羊飼いですから。」",
+        "ガイドの知子さんにはその意味が分かりませんでしたが、聖書に書いてあることだとジョーさんが説明すると、真剣に聞き入りました。ツアーの終わりには、フェイスブックで友だちになってくださいとジョーさんに頼み、その後も、信仰に関する彼の投稿にコメントすることがよくありました。",
+        "また、ある日本人クリスチャンはジョーさんの妻に、「あなたのご主人のように、私も未信者と話ができればいいのですが ……」と言ったこともありました。",
+        "日本人は和を重んじ、他人に迷惑をかけないように努めるため、クリスチャンであると表明したり、イエス様について積極的に話すことは難しいと感じます。特に、近所の人、同級生、同僚など、よく会う人たちにほどそうなりがちです。",
+        "また、信仰を伝える時、自分は神様や聖書について十分に知らないのではないか、間違ったことを言うのではないかと心配することもあります。しかし同時に、多くのクリスチャンはより良い福音の証人になりたいと願っています。"
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["地域社会における教会", "創造的なミニストリー", "職場における信仰生活"],
+        "links": [
+            "/topics/church-in-the-community",
+            "/topics/creative-ways-of-ministry",
+            "/topics/faith-in-the-workplace"
+        ]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}

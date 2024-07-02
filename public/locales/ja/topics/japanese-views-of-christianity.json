@@ -1,30 +1,28 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "日本人のキリスト教観",
+    "path": "japanese-views-of-christianity",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "多くのクリスチャンが周りの人から尊敬されていることを主に感謝しましょう。彼らを通して人々の心がキリストに向けられるように。",
+        "クリスチャンとの関わりを通して、キリスト教に対する否定的な固定観念や誤った考えが改められるように。",
+        "クリスチャンや教会が人々を歓迎し、分かりやすく福音を伝えることができるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "正子さんが初めて教会に行った時、賛美歌の一節が分からず教会員に尋ねたところ、周りにはその意味を説明できる人は誰もいませんでした。古い日本語が使われていたからです。このような経験から「キリスト教は分かりにくい」「古臭い」という印象を持つ人がいます。教会では最新の翻訳の聖書が使われていますが、固定観念が残ってしまうことがあります。また、一般の人に馴染みのない言葉が多く使われていることも、分かりにくい一つの要因でしょう。あるいは、ただ教会のことが全く知られていないのかもしれません。",
+        "日本では統一教会やエホバの証人などのカルト宗教がキリスト教とは全く違うことを理解せずに、人々が真理を求めることから遠ざかってしまう傾向が、昨今特に見られます。また、キリスト教が「西洋」あるいは「外国」のものであると考え、敬遠する人もいますが、逆にひきつけられる人もいます。",
+        "一方、キリスト教に良い印象を持つ人もいます。クリスチャンは恵まれない人を助ける親切な人だと思っている人もいますし、聖書を知恵の源と見なす人、クリスチャンに敬意を持ってアドバイスを求める人もいます。日本のクリスチャン人口は極めて少ないのですが、クリスチャンは何十年にもわたって、医療や教育機関を立ち上げてきましたし、近年では災害援助を通して、社会に良い影響を与えてきました。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["日本人の宗教的習慣", "日本文化とキリスト教", "地域社会における教会"],
         "links": [
+            "/topics/popular-religious-practices",
             "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/church-in-the-community"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",

@@ -1,16 +1,20 @@
 {
-    "title": "Church leadership",
-    "path": "church-leadership",
+    "title": "Japanese overseas",
+    "path": "japanese-overseas",
     "prayerSummary": [
-        "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
-        "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
-        "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
+        "Pray for churches and ministries outside Japan as they seek to reach out to Japanese people.",
+        "Pray that Japanese people living overseas would be open to the gospel and meet believers who can lead them to Christ.",
+        "Pray that returnees<sup>*</sup> would find church communities in Japan that will love and support them."
     ],
     "textBody": [
-        "Pastor Yamanaka has a passionate desire to shepherd his church. He longs to equip members to live out the good news in their neighborhoods, workplaces, and schools. However, his church faces various challenges, and being in his mid-seventies, Pastor Yamanaka also needs to find someone to replace him.",
-        "There is great concern about the future of church leadership in Japan. In 2021 half of the pastors in Japan were aged 65 and over, with an average age of 62.<sup>1</sup> The number of churches without a pastor increased by 65% between 2009 and 2016, and seminaries reported decreasing enrollments.",
-        "Pastor Kimura is a recent seminary graduate in his thirties who oversees two churches. He wants to be mentored as a Christian leader, but struggles to find time for this. He would like to stay in touch with seminary friends for mutual support, but they are busy too.",
-        "Japanese pastors have tremendous ministry responsibilities and a limited support team, if any at all. Japan has a great need for young pastors who will faithfully preach God’s Word and shepherd his people. But as they are called, young pastors must also be supported and encouraged, so that they can continue in ministry for the years ahead."
+        "Rina had been a seeker at a church in Tokyo before she went to study in London. The pastor was later delighted to hear that she had come to faith while overseas.",
+        "In 2021 more than 1.3 million Japanese were living abroad. It is estimated that every year nearly 1,000 Japanese people become Christians overseas.<sup>1</sup>",
+        "This is a high percentage compared to those living in Japan, but as one church plant in Tokyo experienced, it can work the other way too. Some members became seekers overseas and then came to faith in Japan. God had been planting seeds in places as far-flung as Australia, Boston, and Singapore.",
+        "Living abroad presents many challenges—language, a new culture, and distance from family and friends. Churches and Christian home-stay families around the world have an amazing opportunity to welcome Japanese people and share the gospel with them.",
+        "Coming back to Japan can also be difficult. Seekers or new believers may feel discouraged if friends and family don’t understand the changes they are going through. They may struggle to find a church or other Christians nearby. Finding a caring community can help them replant and grow."
+    ],
+    "textBodyAsterisk": [
+        "<sup>*</sup>Returnees are those who move overseas, often to study or work, then “return” to their home country."
     ],
     "quote": {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
@@ -23,8 +27,12 @@
         "prayerVidUrl": "www.google.com"
     },
     "related": {
-        "labels": ["Aging society", "Struggling churches", "Church planting"],
-        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
+        "labels": ["Social conformity", "Daily Christian life and faith", "Japanese mission movement"],
+        "links": [
+            "/topics/social-conformity",
+            "/topics/daily-christian-life-and-faith",
+            "/topics/japanese-mission-movement"
+        ]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },

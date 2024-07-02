@@ -1,31 +1,26 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "教会開拓",
+    "path": "church-planting",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "神様が日本を活気ある教会で満たし、すべての日本人がクリスチャンのコミュニティーにアクセスできるように。",
+        "新しい世代の教会開拓者である、牧師、宣教師、信徒リーダーが起こされるように。",
+        "日本の教会が協力して、それぞれの地域で教会開拓の運動を促進することができるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "多くのクリスチャンリーダーは、日本で教会が増え、誰もが簡単に近くの教会に行けるようになることを夢見ています。すべての市町村に教会を……それは5万以上の教会を意味します。2021年時点でプロテスタント教会の数は8,000足らずでした<sup>1</sup>。",
+        "日本人は世界で2番目に多い、福音がいまだ届いていない民族です<sup>2</sup>。福音宣教の有効な方法の一つは、新たに次の教会を生み出すことができる教会を建て上げることですが、多くの地域では、まだその最初の教会すらありません。",
+        "課題は人材と財力の不足、そして既存の教会にたくさんの必要があることです。教会開拓は一人でできるものではありません。しかし、多くの牧師たちは、教会開拓の志を持って共に伝道する信徒を見つけるのに苦労しています。また、困難な教会開拓の初期段階を支援するネットワークも必要です。",
+        "それにも関わらず、励まされる事例がいくつかあります。JCGIは、日本全国で約30の教会開拓ネットワークの立ち上げを確立しました。その結果、1996年以来160以上の新しい教会が生まれました<sup>3</sup>。東京の別のネットワークでは、2010年に1つの教会から始まり、10年の間に10の教会に増えました。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["伸び悩む教会", "教会のリーダーシップ", "地域社会における教会"],
+        "links": ["/topics/struggling-churches", "/topics/church-leadership", "/topics/church-in-the-community"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",

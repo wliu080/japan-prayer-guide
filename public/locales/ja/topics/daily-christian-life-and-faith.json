@@ -1,16 +1,18 @@
 {
-    "title": "Church leadership",
-    "path": "church-leadership",
+    "title": "日常生活と信仰",
+    "path": "daily-christian-life-and-faith",
     "prayerSummary": [
-        "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
-        "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
-        "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
+        "忙しい生活や家族の反対にあって、信仰を保つのに苦労している人のために。",
+        "クリスチャンが普段の生活の中に聖書と祈りを取り入れる工夫ができるように。",
+        "クリスチャンが聖書の教えを学び、日常の中で自分の状況や人間関係に適用する方法を見出すことができるように。"
     ],
     "textBody": [
-        "Pastor Yamanaka has a passionate desire to shepherd his church. He longs to equip members to live out the good news in their neighborhoods, workplaces, and schools. However, his church faces various challenges, and being in his mid-seventies, Pastor Yamanaka also needs to find someone to replace him.",
-        "There is great concern about the future of church leadership in Japan. In 2021 half of the pastors in Japan were aged 65 and over, with an average age of 62.<sup>1</sup> The number of churches without a pastor increased by 65% between 2009 and 2016, and seminaries reported decreasing enrollments.",
-        "Pastor Kimura is a recent seminary graduate in his thirties who oversees two churches. He wants to be mentored as a Christian leader, but struggles to find time for this. He would like to stay in touch with seminary friends for mutual support, but they are busy too.",
-        "Japanese pastors have tremendous ministry responsibilities and a limited support team, if any at all. Japan has a great need for young pastors who will faithfully preach God’s Word and shepherd his people. But as they are called, young pastors must also be supported and encouraged, so that they can continue in ministry for the years ahead."
+        "綾子さんは大学時代にクリスチャンになりました。母親は洗礼に断固反対しましたが、綾子さんは信仰を堅く持ち続けました。",
+        "卒業後、綾子さんは友人で宣教師であるソンヨンさんに悩みを打ち明けました。獣医の仕事はストレスが多く、家では母親との関係がぎくしゃくしていたのです｡",
+        "綾子さんは言いました。「クリスチャンの自分と職場の自分が別人のように感じるのです。どうしたら一致させることができるのでしょうか。」",
+        "日本の文化では、公私の区別が大切にされています。そして、多くの人にとって、宗教は特別な節目や、困った時にしか関わらないものです。日曜日に教会に通っているクリスチャンでも、平日に同僚とランチをしながら、信仰について話すことは難しいと感じるのです。",
+        "また、学校、部活、会社、といった社会には、至る所で先輩後輩の明確な上下関係があります。教会でいうと、聖書は牧師や宣教師から学ぶのが一番だと考える人が多く、平日、自分で聖書の学びに取り組むことはなかなかできません。",
+        "綾子さんとソンヨンさんは、日常のありふれた場所や生活の中で祈ることについて話し合いました。通勤電車の中や、仕事の合間、あるいはお風呂の中でというふうに。綾子さんは生活のあらゆる場面で神様との交わりが持てることに気がついたのです。"
     ],
     "quote": {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
@@ -23,8 +25,8 @@
         "prayerVidUrl": "www.google.com"
     },
     "related": {
-        "labels": ["Aging society", "Struggling churches", "Church planting"],
-        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
+        "labels": ["和を重んじる文化", "家庭生活", "職場における信仰生活"],
+        "links": ["/topics/harmony", "/topics/family-life", "/topics/faith-in-the-workplace"]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },

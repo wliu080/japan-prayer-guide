@@ -1,31 +1,26 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "伸び悩む教会",
+    "path": "struggling-churches",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "クリスチャンが自分の賜物を喜んで用いて教会を建て上げ、地域社会に働きかけられるように。",
+        "礼拝、みことば、交わりを通し、教会員とリーダーが強められるように。",
+        "教会が、直面する課題を理解し、それを乗り越えていくために神様の恵みを受けられるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "ある宣教師夫婦は、前任の牧師が疲れ切って退任した教会で奉仕するようになりましたが、ほどなく、教会員が霊的な糧を得るために指導者に頼りきっていると感じるようになりました。前任者にとってはそれが当たり前だったようです。それから5年間、教会員は宣教師夫婦のもとで自らみことばを学び、協力して教会を建て上げていくことを学びました。",
+        "伸び悩む教会の多くに共通しているのは、牧師がリードし、教会のメンバーは参加者、あるいは最低限の奉仕をする人、という構図です。その理由の一つは文化的なものでしょう。牧師は教会では教師の役割を担いますが、日本において教師とは共に歩むものというより、その後について行き、従う存在なのです。",
+        "もう一つの理由は、教会員の忙しさです。学校や会社では日曜にも行事が入り、出席が強制されることもあります。日曜日が1週間で唯一の休日である人もいます。疲れすぎて教会に来ることもままならないのですから、ましてや奉仕したり、他の人たちと関わることなどできません。",
+        "教会は、喜びや交わり、帰属意識を失い始めており、そのような状況においては伝道もうまくいかず、救われる人も多くありません。こういった文化的、社会的要因に加え、教会は激しい霊的攻撃にもさらされており、落胆させられることも多いのです。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["自分に頼る生き方と物質主義", "教会開拓", "教会のリーダーシップ"],
+        "links": ["/topics/self-reliance-and-materialism", "/topics/church-planting", "/topics/church-leadership"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",

@@ -7,9 +7,12 @@
         "Pray for Christians to have wisdom to balance the demands of work with family, church, and rest."
     ],
     "textBody": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        "Many Japanese workplaces exert relentless pressure on their workers. Permanent employees are often expected to work long hours and put the company before family and personal life.",
+        "One foreigner said: “When I first came to Japan, I was shocked that the father of my host family almost never saw his two small boys during the week and had little energy to engage with them on weekends.”",
+        "This pressurized lifestyle can adversely affect mental and emotional health, and even be a cause of suicide or death by overwork (<i>karoshi</i>).",
+        "Casual workers may be able to work fewer hours, but their pay often only covers basic living costs, and they don't receive the same benefits as permanent employees.",
+        "Sundays may be the only day people have to recuperate from a tiring week. For Christians, attending church on their only day off can feel like just another thing to do. Non-Christians who are interested in the gospel may simply not have the time or energy to take the next steps. ",
+        "Thankfully, there are signs that the work culture may be gradually changing. Many in the younger generation are seeking a better work/life balance and the government is introducing some new initiatives."
     ],
     "quote": {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
@@ -24,15 +27,12 @@
         "slidesUrl": "www.google.com"
     },
     "related": {
-        "labels": [
-            "Ancestor veneration",
-            "Workplace pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "labels": ["Social conformity", "Self-reliance and materialism", "Faith in the workplace"],
+        "links": [
+            "/topics/social-conformity",
+            "/topics/self-reliance-and-materialism",
+            "/topics/faith-in-the-workplace"
+        ]
     },
     "photos": [
         { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
