@@ -23,15 +23,8 @@
         "prayerVidUrl": "www.google.com"
     },
     "related": {
-        "labels": [
-            "Ancestor veneration",
-            "Workplace pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "labels": ["Aging society", "Struggling churches", "Church planting"],
+        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },

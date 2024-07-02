@@ -20,15 +20,12 @@
     },
     "downloads": {},
     "related": {
-        "labels": [
-            "Ancestor veneration",
-            "Workplace pressure",
-            "Other Topics",
-            "Other Topics 2",
-            "Other Topics 3",
-            "Other Topics 4"
-        ],
-        "links": ["/topics/ancestor-veneration", "/topics/workplace-pressure", "/", "/", "/", "/"]
+        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "links": [
+            "/topics/japanese-culture-and-christianity",
+            "/topics/ancestor-veneration",
+            "/topics/self-reliance-and-materialism"
+        ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",
