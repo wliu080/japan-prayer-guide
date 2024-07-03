@@ -1,16 +1,16 @@
 {
-    "title": "Church leadership",
-    "path": "church-leadership",
+    "title": "地域社会における教会",
+    "path": "church-in-the-community",
     "prayerSummary": [
-        "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
-        "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
-        "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
+        "地域社会の必要に積極的に応えようとする教会を主に感謝しましょう。",
+        "教会員が地域社会の人々と良い関係を築くことができるように。",
+        "教会で、社会のあらゆる層の人々がキリストと出会えるように。"
     ],
     "textBody": [
-        "Pastor Yamanaka has a passionate desire to shepherd his church. He longs to equip members to live out the good news in their neighborhoods, workplaces, and schools. However, his church faces various challenges, and being in his mid-seventies, Pastor Yamanaka also needs to find someone to replace him.",
-        "There is great concern about the future of church leadership in Japan. In 2021 half of the pastors in Japan were aged 65 and over, with an average age of 62.<sup>1</sup> The number of churches without a pastor increased by 65% between 2009 and 2016, and seminaries reported decreasing enrollments.",
-        "Pastor Kimura is a recent seminary graduate in his thirties who oversees two churches. He wants to be mentored as a Christian leader, but struggles to find time for this. He would like to stay in touch with seminary friends for mutual support, but they are busy too.",
-        "Japanese pastors have tremendous ministry responsibilities and a limited support team, if any at all. Japan has a great need for young pastors who will faithfully preach God’s Word and shepherd his people. But as they are called, young pastors must also be supported and encouraged, so that they can continue in ministry for the years ahead."
+        "「アイスもう少し食べていい？」もう2杯平らげたのに、そのか細い5歳の女の子は尋ねました。それは、その子にとって今日最初の食事でした。実は朝に、その少女の母親は新しい恋人が訪ねてきたため、3人の娘を家から追い出したのです。追い出された娘たちが教会の夏休みのイベントにやって来ての出来事でした。",
+        "ひとり親家庭は食べる物にも事欠き、ホームレスは駅や橋の下で寝ています。7人に1人の子どもが貧困ラインを下回って暮らしています<sup>1</sup>。日本は裕福な国だと思われていますが、貧しい人々や社会から疎外された人々は全国にいます。",
+        "目に見える苦しみに手を差し伸べるのは、まだたやすいかもしれません。日本の大多数の中流層や富裕層は、必要なものをすべて持っているように見えますが、実はそうとは限りません。満たされない思いや深い必要が隠されているかもしれないのです。真実な関わりを通して初めて、人々は本当に求めているものを見出すことができるのです。",
+        "冒頭の教会は徒歩圏内に小学校が2校あり、子ども向けのイベントを開催していました。他の教会にも、それぞれの環境に適した形で、地域社会との良いつながりを築くための機会があります。"
     ],
     "quote": {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
@@ -23,8 +23,8 @@
         "prayerVidUrl": "www.google.com"
     },
     "related": {
-        "labels": ["Aging society", "Struggling churches", "Church planting"],
-        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
+        "labels": ["日本人のキリスト教観", "和を重んじる文化", "創造的なミニストリー"],
+        "links": ["/topics/japanese-views-of-christianity", "/topics/harmony", "/topics/creative-ways-of-ministry"]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },

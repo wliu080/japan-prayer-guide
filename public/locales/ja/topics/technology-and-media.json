@@ -1,30 +1,28 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "テクノロジーとメディア",
+    "path": "technology-and-media",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "日本人クリスチャンのコンテンツクリエイター、ソーシャルメディア・インフルエンサー、技術開発者が、オンラインプラットフォームを使って福音を分かち合い、クリスチャンを励ませるように。",
+        "日本人の心が神様に向かい、ポルノなど、テクノロジーが助長する悪から離れられるように。",
+        "テクノロジーやメディアとの健全な向き合い方について、日本人クリスチャンが模範を示せるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "日本は50年以上、先端技術で世界をリードしてきました。日本を訪れる人々は、店頭で多言語を話すロボットに出会い、一流のVR（仮想現実）ゲームに没入し、新幹線にも乗ります。テクノロジーとメディアは、日本社会のすみずみに浸透し、教会も例外ではありません。",
+        "日本語聖書アプリなど、子どもや大人向けのキリスト教アプリの製作には進歩が見られます。ソーシャルメディアやデジタルコンテンツを使って福音を分かち合い、身近にクリスチャンがいない信徒や、教会から離れた場所に住んでいるクリスチャンを励ましています。しかし、高齢の信徒を抱える教会は、変化についていくのが困難です。このことは、コロナウィルスが流行した時に明らかになりました。聖日礼拝をオンライン化することができない教会は、説教を印刷したり、CDに録音して信徒に配布しました。",
+        "テクノロジーとメディアには、問題も当然あります。子どもも大人もスマホに夢中になり、画面ではつながっているように見えても、実際には相手とはつながっていません。現実世界よりも仮想世界でのほうが、自分のアイデンティティや人間関係が大きな割合を占めているという人もいます。また、インターネットはサイバー犯罪、ポルノ、いじめ、ネット詐欺を生み出します。プライバシーや虚偽のコンテンツに関する懸念は、ますます増大しています。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["高齢化社会", "創造的なミニストリー", "日常生活と信仰"],
         "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/aging-society",
+            "/topics/creative-ways-of-ministry",
+            "/topics/daily-christian-life-and-faith"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",

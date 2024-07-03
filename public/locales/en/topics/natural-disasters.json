@@ -1,30 +1,29 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "Natural disasters",
+    "path": "natural-disasters",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "Pray for church networks to be strengthened and new ones to be started, so that relief efforts can reach communities effectively.",
+        "Pray for chaplains and churches to be trained to provide emotional care to survivors and minister to them well.",
+        "Pray for more long-term Christian workers to live and minister in rural areas hit by disasters."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "On March 11, 2011, the largest recorded earthquake in Japan struck the region of Tohoku, triggering a massive tsunami and nuclear reactor failure. Known as <i>3.11</i>, this sparked Japan’s worst humanitarian crisis since World War II. But this is not Japan’s only disaster in recent years. The country continues to be hit by typhoons, earthquakes, and flooding.",
+        "Before <i>3.11</i>, most Christian relief work in Japan was ad hoc. This led to an unequal distribution of volunteers based on relationship rather than need. Since then local church networks have been formed, which allow aid to reach communities more evenly.",
+        "Disaster response has become an important part of Christian ministry in Japan. There has been a visible improvement of Christian witness in areas that were resistant to the gospel. This has resulted in new believers, churches planted, and more long-term Christian workers.",
+        "The Japanese government’s preparedness for and response to natural disasters is among the best in the world. It is effective in providing supplies, recovering victims, and making repairs. However, most disaster survivors need ongoing help as they struggle to cope with the losses they have suffered. The church can walk alongside them in the love and hope of Christ."
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["Japanese views of Christianity", "Mental and emotional health", "Church in the community"],
         "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/japanese-views-of-Christianity",
+            "/topics/mental-and-emotional-health",
+            "/topics/church-in-the-community"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",

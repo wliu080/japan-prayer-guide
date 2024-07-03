@@ -1,31 +1,27 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "自分に頼る生き方と物質主義",
+    "path": "self-reliance-and-materialism",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "日本にいるクリスチャンが、神様に依り頼む幸いを証しできるように。",
+        "まだ神様を知らない人々が自分の限界を悟り、神様の恵みが必要だと感じるように。",
+        "「がんばって」「しょうがない」という言葉と同じぐらい、恵みと救いが日本に広く行き渡るように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "日本に住んでいると、必ず聞く二つの言葉があります。<br>「がんばって」……最善を尽くして、あきらめないで。<br>「しょうがない」……自分のせいじゃない、自分たちにできることはない。",
+        "二つとも日本人に共通する、自分に頼る生き方を表す言葉です。たいていの問題はもっと努力すればきっと解決できる、その一方で、努力してもどうにもならない物事は、あきらめて耐えるしかない、という考え方です。",
+        "日本人は長時間労働に耐え、家族を養います。学生は入試に合格するために、夜遅くまで勉強します。最善を尽くすために自分自身を頼みとしているのです。",
+        "このような勤勉さや忍耐強さは日本人の誇るべき長所だと言えるでしょう。しかし、私たちを休ませてくださる、あわれみ深い神様に頼らずにいると、恨みが蓄積し、燃え尽きてしまい、ついには倒れてしまうことになりかねません。そして、その影響は個人だけでなく、家族や社会にまで及ぶのです。",
+        "多くの日本の家は、一生懸命に働いて得た快適なものに満ちていますが、心に安らぎを与えてくれるような恵みあふれる人間関係には欠けていることがしばしばです。クリスチャンでさえ、心しておかないと、自分自身に「がんばって」とか「しょうがない」などと言い聞かせるようになってしまい、主にあって休息し、主の助けに頼ることを忘れてしまいます。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["社会の同調圧力", "精神と心の健康", "仕事のプレッシャー"],
+        "links": ["/topics/social-conformity", "/topics/mental-and-emotional-health", "/topics/workplace-pressure"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",

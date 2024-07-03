@@ -1,31 +1,26 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "Church planting",
+    "path": "church-planting",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "Pray for God to saturate Japan with vibrant churches so that every Japanese person can access a Christian community.",
+        "Pray for a new generation of church planters that includes pastors, missionaries, and lay leaders.",
+        "Pray that Japanese churches would work together to encourage church planting movements in their areas."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "Many Christian leaders are dreaming that God would multiply his church in Japan so that everyone has easy access to a church—one for every community. That would mean more than 50,000 churches. There were fewer than 8,000 Protestant churches in 2021.<sup>1</sup>",
+        "Japanese people are the world’s second largest unreached people group.<sup>2</sup> One of the primary strategies for evangelizing people groups is planting churches that reproduce to plant more churches. But many places still need their first church.",
+        "Challenges include limited numbers of leaders and resources, and overwhelming needs within existing churches. Church planting cannot easily be done alone, but many pastors struggle to find like-minded lay people to join them or to commit to outreach. They also need networks that can support them through the difficult initial stages.",
+        "But there are some encouraging examples of church planting movements. The Japan Church Growth Institute has helped set up about 30 church planting networks across Japan. This has led to more than 160 new churches since 1996.<sup>3</sup> Another network in Tokyo started with one church in 2010 and grew to ten within the decade."
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["Struggling churches", "Church leadership", "Church in the community"],
+        "links": ["/topics/struggling-churches", "/topics/church-leadership", "/topics/church-in-the-community"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",

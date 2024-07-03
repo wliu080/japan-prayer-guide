@@ -1,30 +1,30 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "和を重んじる文化",
+    "path": "harmony",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "「和を重んじる」日本的精神を神様に感謝し、それが神様の真理と釣り合うように。",
+        "信仰について妥協することなく、信者でない方々と平和に生活する方法を見出せるように。",
+        "クリスチャンが調和よりも神様への従順を優先させる必要がある時、知恵と勇気が与えられるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "クリスチャンの愛子さんは若い母親です。ある日、宣教師にこう言いました。「娘が先月3歳になったのですが、義母が、七五三だから神主さんに祈祷してもらいたいと言っているのです。女の子が初めて着物を着る機会だし、とても大切な伝統行事だというのが義母の言い分です。」",
+        "愛子さんは不安げに語りました。「もし私が断ったら、家族の和を乱していると言われてしまいそうで、怖いのです。」",
+        "宣教師は彼女と話し、また祈るうちに、この義理のお母さんはただ可愛い孫のお祝いをしたかったのだと気づきました。そこで、教会で子どもたちのために祈る時間を設けて、着物で参加できるようにしようと二人で決めました。",
+        "その日になると、義理のお母さんは教会に足を運んでくれました。赤と金色の柄の着物を着たお孫さんはとても可愛くて、写真をたくさん撮りました。他の親御さんたちも、子どもの祝福を祈ってもらえたことを喜びました。こうして、教会の新しい伝統が始まりました。",
+        "「和の心」は日本文化の中で最も美しい精神の一つと言えるでしょう。しかし、そこには弊害もあります。集団の和を乱しかねないと思うと、本当のことも言えません。また、問題を直視するよりも、意見の合わない人を避けるほうが簡単だと思ってしまいます。学生はいじめにあっても声を上げず、社員は上司が間違っていたとしても指摘する勇気がありません。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["社会の同調圧力", "日本文化とキリスト教", "個人伝道"],
         "links": [
+            "/topics/social-conformity",
             "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/personal-evangelism"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
