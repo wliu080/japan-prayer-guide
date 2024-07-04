@@ -1,5 +1,5 @@
 {
-    "title": "Ancestor veneration",
+    "title": "先祖崇拝",
     "path": "ancestor-veneration",
     "prayerSummary": [
         "牧師が求道者の質問に答える時、知恵と思いやりをもって答えられるように。",
@@ -23,12 +23,12 @@
         "headers": ["View all downloadables", "Download All"]
     },
     "related": {
-        "labels": [
-            "日本文化とキリスト教",
-            "先祖崇拝",
-            "自分に頼る生き方と物質主義"
-        ],
-        "links": ["/topics/japanese-culture-and-christianity", "/topics/ancestor-veneration", "/self-reliance-and-materialism"]
+        "labels": ["日本人の宗教的習慣", "日本文化とキリスト教", "高齢化社会"],
+        "links": [
+            "/topics/popular-religious-practices",
+            "/topics/japanese-culture-and-christianity",
+            "/topics/aging-society"
+        ]
     },
     "photos": [
         { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },

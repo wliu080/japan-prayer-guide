@@ -1,16 +1,16 @@
 {
-    "title": "Church leadership",
-    "path": "church-leadership",
+    "title": "職場における信仰生活",
+    "path": "faith-in-the-workplace",
     "prayerSummary": [
-        "Pray for older pastors to trust and equip the next generation for leadership and evangelism.",
-        "Pray for God to give daily refreshing and strength to Japanese pastors, both young and old.",
-        "Pray for many Japanese believers to be called by God into pastoral ministry and to have the support they need to thrive in it."
+        "日本のクリスチャンが職場で信仰をオープンにする勇気を持つことができるように。",
+        "クリスチャンが自分の仕事を、世の中で神様に仕え、同僚の光となることができる重要な方法だと捉えることができるように。",
+        "影響力のあるクリスチャンが、職場の文化や価値観に、神様の御心にかなう良い影響を与えることができるように。"
     ],
     "textBody": [
-        "Pastor Yamanaka has a passionate desire to shepherd his church. He longs to equip members to live out the good news in their neighborhoods, workplaces, and schools. However, his church faces various challenges, and being in his mid-seventies, Pastor Yamanaka also needs to find someone to replace him.",
-        "There is great concern about the future of church leadership in Japan. In 2021 half of the pastors in Japan were aged 65 and over, with an average age of 62.<sup>1</sup> The number of churches without a pastor increased by 65% between 2009 and 2016, and seminaries reported decreasing enrollments.",
-        "Pastor Kimura is a recent seminary graduate in his thirties who oversees two churches. He wants to be mentored as a Christian leader, but struggles to find time for this. He would like to stay in touch with seminary friends for mutual support, but they are busy too.",
-        "Japanese pastors have tremendous ministry responsibilities and a limited support team, if any at all. Japan has a great need for young pastors who will faithfully preach God’s Word and shepherd his people. But as they are called, young pastors must also be supported and encouraged, so that they can continue in ministry for the years ahead."
+        "東京行きの満員電車を待っていた時、あるサラリーマンが宣教師のマークさんに話しかけてきました。彼は、同僚との飲み会の帰りで、酒が入っていることを詫びつつ、実は、これから最近亡くなった姉の墓参りに行くのだと赤の他人のマークさんに心を打ち明けたのです。",
+        "この男性は、自分の話を聞いてもらえる場所（居場所）を求めていたのです。マークさんが、その彼のために祈ってもいいかと尋ねたところ、彼はうなずき、マークさんの祈りに耳を傾けました。",
+        "職場は、伝道をする上で社会人にアプローチしやすい場所のように思えるかもしれません。しかし、日本では同僚との調和が重要であり、多くの日本人クリスチャンは、目立ちたくないというプレッシャーから、職場で自分の信仰を表明するのは難しいと思っています。それに加えて、仕事の責任の重さや上司から来る多くの要求によって、手一杯だと感じることもあります。",
+        "また、職場にクリスチャンはほとんどおらず、多くの場合、自分一人しかいないため、孤立を感じ、臆病になることもあります。しかし、隣のデスクや通路を隔てた誰かに、キリストにこそ「居場所」があることを伝えるなら、それを受け取る人がいることでしょう。"
     ],
     "quote": {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
@@ -23,8 +23,8 @@
         "prayerVidUrl": "www.google.com"
     },
     "related": {
-        "labels": ["Aging society", "Struggling churches", "Church planting"],
-        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
+        "labels": ["社会の同調圧力", "仕事のプレッシャー", "個人伝道"],
+        "links": ["/topics/social-conformity", "/topics/workplace-pressure", "/topics/personal-evangelism"]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
@@ -52,10 +52,5 @@
     "blockOrder": [7, 1, 3, 9],
     "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
     "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
-    "heroFocus": "60% 50%",
-    "infographic": {
-        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
-        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
-        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
-    }
+    "heroFocus": "60% 50%"
 }

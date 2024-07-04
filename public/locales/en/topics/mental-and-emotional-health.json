@@ -1,31 +1,27 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "Mental and emotional health",
+    "path": "mental-and-emotional-health",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "Pray that seeking mental health care would lose its current stigma in Japan.",
+        "Pray for more Christian counselors, and that the church would be equipped to minister to those who are struggling.",
+        "Pray that more Japanese people would discover God’s grace and acceptance, and that Christians would model this for them."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "A missionary couple hosted Riku for four months at their home. For two years before then, he had shut himself inside his house, but had eventually been kicked out for being violent.",
+        "Riku was one of over a million people in Japan with <i>hikikomori</i>, a condition in which individuals shut themselves off from society for at least six months.<sup>1</sup> Yet any time the couple mentioned healing, Riku would insist he was not like one of “those people.”",
+        "It can be difficult for Japanese people to admit they struggle with a mental health issue. Many fear being stigmatized. Treatment in Japan often focuses on medication without the support of counseling.",
+        "In another troubling trend, suicides of young people climbed to an all-time high in 2022.<sup>2</sup> Suicide is the leading cause of death among 10-39 year olds in Japan.<sup>3</sup> The number of school children committing suicide typically peaks after the summer break. There can be several contributing factors to this, including family issues, bullying, and academic pressures.",
+        "There is, however, a growing awareness of mental and emotional health issues both in society and the church. Government-funded suicide prevention strategies are showing some success. And more Christians are interested in going into mental health professions."
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["Social conformity", "Workplace pressure", "Family life"],
+        "links": ["/topics/social-conformity", "/topics/workplace-pressure", "/topics/family-life"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",
@@ -107,10 +103,5 @@
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/921387464",
-    "infographic": {
-        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
-        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
-        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
-    }
+    "videoSrc": "https://player.vimeo.com/video/921387464"
 }

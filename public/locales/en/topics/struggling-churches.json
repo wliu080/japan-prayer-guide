@@ -1,31 +1,26 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "Struggling churches",
+    "path": "struggling-churches",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "Pray for believers to be willing and able to use their gifts to build up the church and reach out to their communities.",
+        "Pray for God to strengthen members and leaders through worship, the Word, and fellowship.",
+        "Pray for churches to understand their challenges and receive God’s grace to overcome them."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "Jeff and Sandra came to serve at a church whose former pastor had burned out. They quickly discovered that church members depended solely on the leader to keep them fed spiritually. The former pastor also thought that was his calling and had not challenged those ideas. Over the next five years, as church members engaged with God’s Word themselves, they learned to work together in building up the church.",
+        "Many struggling churches have a common feature: the pastor leads and members attend or participate minimally. One reason is cultural. The pastor is a teacher in the church. In Japanese culture, it’s appropriate to follow and submit to a teacher, rather than to walk alongside.",
+        "Another reason is the busyness of church members. Schools and companies hold events on Sundays and attendance is often compulsory. On weeks without events, Sunday might be their only day off. Some are simply too tired to attend church, let alone serve or engage with others. ",
+        "Churches can start to lack joy, fellowship, and ownership. This can lead to a lack of outreach and few new believers. On top of cultural and social factors, churches face a very real spiritual battle and it is easy to get discouraged."
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["Self-reliance and materialism", "Church planting", "Church leadership"],
+        "links": ["/topics/self-reliance-and-materialism", "/topics/church-planting", "/topics/church-leadership"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",
@@ -107,10 +102,5 @@
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/921387464",
-    "infographic": {
-        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
-        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
-        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
-    }
+    "videoSrc": "https://player.vimeo.com/video/921387464"
 }

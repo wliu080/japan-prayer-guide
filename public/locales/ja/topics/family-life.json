@@ -1,30 +1,29 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "家庭生活",
+    "path": "family-life",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "教会が家族の問題を取り上げることで、地域社会に支え、人々が信仰に導かれるように。",
+        "家庭形成に役立つ聖書に基づく書籍や動画が作成されるように。",
+        "多くの家庭がキリストに導かれるように。クリスチャンホームを通して人々がイエス様に近づけるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "「親父は仕事のことしか頭にないんだ。僕がカリフォルニアで勉強していると思っているけど、ここにいるのは女の子たちと麻薬が理由だよ。」この青年は、飛行機で隣に座った宣教師が、数週間前に彼の父親の相談に乗っていたことなど、思いもよりませんでした。",
+        "その父親はこう話していました。「私は仕事に明け暮れ、家庭を顧みませんでした。息子は金が欲しいとき以外は口をきいてくれません。どうしたら息子は戻ってきてくれるでしょうか？」その宣教師は放蕩息子のたとえ話を父親にしました。そして飛行機の中で、息子にもその話をしたのです。今、その父親と息子は和解し、一緒に教会に通っています。",
+        "日本の父親が子どもと過ごす1日の平均時間は、他の多くの国と比べても低く、妻ともあまり一緒に過ごせません。家庭内の断絶、孤独、混乱がまん延しています。若者の結婚離れが進み、政府は少子化を国家的な危機と捉えています。",
+        "このような状況の中で、結婚の本当の意味や、子育て支援、苦しむ子どもたちへのサポートの機運が高まっています。家族の問題に取り組むことは、聖書の真理を紹介する機会にもなっています。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["仕事のプレッシャー", "若者たち", "日常生活と信仰"],
         "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/workplace-pressure",
+            "/topics/youth-and-young-adults",
+            "/topics/daily-christian-life-and-faith"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
@@ -107,10 +106,5 @@
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/921387464",
-    "infographic": {
-        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
-        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
-        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
-    }
+    "videoSrc": "https://player.vimeo.com/video/921387464"
 }

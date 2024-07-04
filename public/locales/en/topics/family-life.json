@@ -1,30 +1,31 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "Family life",
+    "path": "family-life",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "Pray that churches will minister to their communities through addressing family issues and lead many families to faith.",
+        "Pray that helpful, good quality Christian resources on family life will be produced in Japanese.",
+        "Pray that more families would come to Christ, and for the lives of Christian families to attract others to Jesus."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "“All my father cares about is work, so I’m doing whatever I want. He thinks I’m in California to study, but I’m here for the girls and the drugs.” ",
+        "This young Japanese man didn’t know that the missionary he was sitting next to on the plane had counseled his father only weeks earlier. ",
+        "The father had said, “I’ve been a slave to my work and neglected my family. Now my son won’t talk to me unless he wants money. How can I get him back?” ",
+        "The missionary had explained the parable of the prodigal son to the father. On the plane he shared it with the son. Today father and son are reconciled and attend church together.",
+        "The daily average time Japanese fathers spend with their children is less than in many other countries. They don’t see much of their wives either. Disconnectedness, loneliness, and confusion within families is widespread. Young people are avoiding marriage in increasing numbers. The government views low birth rates as a national crisis. ",
+        "This situation has led some to seek the true meaning of marriage, help with parenting, or support for struggling children. Addressing family issues has provided opportunities to introduce biblical truths."
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
+        "labels": ["Workplace pressure", "Youth and young adults", "Daily Christian life and faith"],
         "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
+            "/topics/workplace-pressure",
+            "/topics/youth-and-young-adults",
+            "/topics/daily-christian-life-and-faith"
         ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
@@ -107,10 +108,5 @@
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/921387464",
-    "infographic": {
-        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
-        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
-        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
-    }
+    "videoSrc": "https://player.vimeo.com/video/921387464"
 }

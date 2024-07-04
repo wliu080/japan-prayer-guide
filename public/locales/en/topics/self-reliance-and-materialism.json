@@ -1,31 +1,27 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "Self-reliance and materialism",
+    "path": "self-reliance-and-materialism",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "Pray for Japanese Christians and missionaries to demonstrate joyful dependency on God.",
+        "Pray for Japanese non-believers to see their limitations and need for God’s grace.",
+        "Pray for grace and salvation to become as prevalent in Japan as <i>ganbatte</i> and <i>shōganai</i>."
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "There are two words you’re guaranteed to learn if you live in Japan:<br><i>Ganbatte</i>—Do your best, keep going.<br><i>Shōganai</i>—It can’t be helped, there’s nothing we can do.",
+        "Together these words demonstrate the spirit of self-reliance that is common in Japanese thinking. Most problems can be solved by simply trying harder. And the things that can’t be solved this way are seen as things that just need to be tolerated.",
+        "People work long hours to provide financial security for their families. Students study late into the night in order to pass entrance exams. They are relying on themselves to “do their best.”",
+        "In many ways this strong work ethic and determined perseverance is admirable. But without reliance on the merciful God who calls us to rest in him, it can lead to bitterness, burnout, and breakdowns—of individuals, families, and society.",
+        "Many Japanese apartments are filled with hard-earned comforts, but are empty of grace-filled relationships that give rest to the soul. And even missionaries need to keep a close watch on their hearts, that they don’t end up preaching at themselves “<i>ganbatte</i>!” and “<i>shōganai</i>!” rather than resting in the Lord and relying on his help."
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["Social conformity", "Mental and emotional health", "Workplace pressure"],
+        "links": ["/topics/social-conformity", "/topics/mental-and-emotional-health", "/topics/workplace-pressure"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",
@@ -107,10 +103,5 @@
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/921387464",
-    "infographic": {
-        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
-        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
-        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
-    }
+    "videoSrc": "https://player.vimeo.com/video/921387464"
 }

@@ -1,31 +1,26 @@
 {
-    "title": "Popular religious practices",
-    "path": "popular-religious-practices",
+    "title": "日本文化とキリスト教",
+    "path": "japanese-culture-and-christianity",
     "prayerSummary": [
-        "Pray for wisdom to share the gospel within this Japanese context.",
-        "Pray that the Holy Spirit would lead those who seek salvation through various rituals to find Jesus Christ.",
-        "Pray that Japanese people would find their most authentic belonging and identity in the God who created them."
+        "日本のクリスチャンが自国文化の中に神様の救いを示すひな型を見出し、それを用いて人々にキリストを指し示すことができるように。",
+        "日本のクリスチャンが日常生活において知恵をもって、神様に喜ばれる決断をすることができるように。",
+        "神様がクリスチャンの日本人アーティストを起こし、神様の栄光のために、クリエイティブな方法で文化に影響を与えることができるように。"
     ],
     "textBody": [
-        "“Can I ask what you believe in?” Carlos<sup>*</sup> asked his Japanese friend Takeshi after watching him pray at the Shinto shrine.",
-        "“It’s hard to explain,” Takeshi replied slowly. “It’s been part of my life since I was young.”",
-        "Japanese people have gone to Shinto shrines and Buddhist temples for centuries. Many find comfort in repeating the simple rituals of purification and prayer. Faith or belief is not a prerequisite and anyone is welcome to join in. Such religious practices are deeply rooted in what it means to be Japanese.",
-        "At busy times, lines of people take turns to pray. They clap their hands and bow at the appropriate places. They buy charms to protect themselves from bad luck or to bring in good luck. They seek blessing for important life events, enjoy festivals, or find refreshment in the nature that is part of many religious sites.",
-        "Shrines and temples can be found in nearly every community in Japan, and many Japanese people view them as familiar places of belonging. Shinto and Buddhist influences have shaped Japanese society and identity in significant ways. But through Christ, Japanese people can find their deepest belonging in the God who created them."
+        "日本では割れた陶器を捨ててしまうのではなく、漆と金の粉で破片を元通りに継ぎ合わせて長く使います。金継ぎという技法です。",
+        "専門家によると、陶器の割れ方は、11通りあるそうです。金継ぎ職人はその割れ方を見極め、それぞれの器の美しさを引き出す方法を知っています。",
+        "ある日本人のクリスチャン画家は、神様は金継ぎの名人だと表現しました。神様は私たちの人生の壊れたところを探り当て、そこから美しいものを引き出す力を持っています。日本文化の中には、神様の救いを指し示すものがたくさんあり、福音について説明するために役立てることができます<sup>1</sup>。",
+        "しかし、日本の多くのクリスチャンにとって、文化は神様を指し示すものというより、人を神様から遠ざけるもののように感じられることがしばしばです。文化についてどう考えたらいいのか分からないというクリスチャンもいます。お祭りや祭日になると神社やお寺が重要な役割を果たしますし、人生の節目の行事や学校の遠足でも同様です。日曜日には子どもも大人も、教会に行くか、それともみんなが行くスポーツの練習や会社のイベントに行くか、選択を迫られます。先祖崇拝などの宗教的慣習や家族からの期待から、家庭内で起こる対立に直面するクリスチャンもいます。信仰にもとづく判断が日々必要とされます。"
     ],
-    "textBodyAsterisk": ["<sup>*</sup>All names used in this booklet are pseudonyms."],
+    "textBodyAsterisk": [],
     "quote": {
-        "content": "Shrines and temples are quite important to a lot of people because they’re used as symbols or icons to represent Japan. There’s always an image of Sensoji temple, for example, on pamphlets about Japan.",
-        "source": "A Japanese Christian in her 20s, Tokyo"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
     },
     "downloads": {},
     "related": {
-        "labels": ["Japanese culture and Christianity", "Ancestor veneration", "Self-reliance and materialism"],
-        "links": [
-            "/topics/japanese-culture-and-christianity",
-            "/topics/ancestor-veneration",
-            "/topics/self-reliance-and-materialism"
-        ]
+        "labels": ["日本人のキリスト教観", "先祖崇拝", "和を重んじる文化"],
+        "links": ["/topics/japanese-views-of-christianity", "/topics/ancestor-veneration", "/topics/harmony"]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",
@@ -107,10 +102,5 @@
     ],
     "galleryType": "gallery",
     "blockOrder": [6, 7, 6, 6],
-    "videoSrc": "https://player.vimeo.com/video/921387464",
-    "infographic": {
-        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
-        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
-        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
-    }
+    "videoSrc": "https://player.vimeo.com/video/921387464"
 }

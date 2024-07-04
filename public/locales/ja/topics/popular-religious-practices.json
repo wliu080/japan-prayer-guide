@@ -19,12 +19,12 @@
     },
     "downloads": {},
     "related": {
-        "labels": [
-            "日本文化とキリスト教",
-            "先祖崇拝",
-            "自分に頼る生き方と物質主義"
-        ],
-        "links": ["/topics/japanese-culture-and-christianity", "/topics/ancestor-veneration", "/self-reliance-and-materialism"]
+        "labels": ["日本文化とキリスト教", "先祖崇拝", "自分に頼る生き方と物質主義"],
+        "links": [
+            "/topics/japanese-culture-and-christianity",
+            "/topics/ancestor-veneration",
+            "/topics/self-reliance-and-materialism"
+        ]
     },
     "heroPhoto": "/photos/topics/topic1/TP01-Hero.jpg",
     "heroFocus": "20% 50%",
