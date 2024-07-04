@@ -23,11 +23,15 @@
     },
     "related": {
         "labels": [
+            "Popular religious practices",
             "Japanese culture and Christianity",
-            "Ancestor veneration",
-            "Self-reliance and materialism"
+            "Aging society"
         ],
-        "links": ["/topics/japanese-culture-and-christianity", "/topics/ancestor-veneration", "/self-reliance-and-materialism"]
+        "links": [
+            "/topics/popular-religious-practices",
+            "/topics/japanese-culture-and-christianity",
+            "/topics/aging-society"
+        ]
     },
     "photos": [
         { "src": "/images/0.png", "title": "scrambled it to make a type specimen book" },
