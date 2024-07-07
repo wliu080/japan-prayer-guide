@@ -24,7 +24,12 @@
     },
     "related": {
         "labels": ["高齢化社会", "伸び悩む教会", "教会開拓"],
-        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"]
+        "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"],
+        "thumbs": [
+            "/photos/topic-nav/culture/japanese-culture-and-christianity.png",
+            "/photos/topic-nav/culture/popular-religious-practices.png",
+            "/photos/topic-nav/church/placeholder.png"
+        ]
     },
     "photos": [
         { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },

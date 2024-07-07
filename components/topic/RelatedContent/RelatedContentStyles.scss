@@ -41,3 +41,16 @@
         background-image: url("/icons/arrow-left-s-line.svg");
     }
 }
+
+.related-topic-card {
+    width: 350px;
+    height: 273px;
+
+    @include media-breakpoint-down(lg) {
+        width: 320px;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 350px;
+    }
+}

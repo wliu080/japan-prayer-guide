@@ -14,6 +14,7 @@ import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/
 import PrayerResponse from "../../components/topic/PrayerResponse/PrayerResponse"
 import { StickyNav, Tab } from "../../components/topic/StickyNav/StickyNav"
 import RelatedContent from "../../components/topic/RelatedContent/RelatedContent"
+import { ReferencesSection } from "../../components/topic/References/References"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -162,6 +163,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                             <Image className="d-block d-md-none" src={infographicMobile} alt="infographic" />
                         </Container>
                     </CollapseBlock>
+                    <Container className="">
+                        <ReferencesSection />
+                    </Container>
                     <hr />
                     <Container className={"bottom-spacing"}></Container>
                 </Container>

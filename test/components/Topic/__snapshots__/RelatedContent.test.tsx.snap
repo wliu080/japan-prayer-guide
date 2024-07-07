@@ -46,20 +46,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link4"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="gh thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link4"
                           style="height: 220px;"
                         />
                       </div>
@@ -83,20 +84,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link5"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="ij thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link5"
                           style="height: 220px;"
                         />
                       </div>
@@ -120,20 +122,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link6"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="kl thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link6"
                           style="height: 220px;"
                         />
                       </div>
@@ -157,20 +160,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link1"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="ab thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link1"
                           style="height: 220px;"
                         />
                       </div>
@@ -194,20 +198,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link2"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="cd thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link2"
                           style="height: 220px;"
                         />
                       </div>
@@ -231,20 +236,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link3"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="ef thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link3"
                           style="height: 220px;"
                         />
                       </div>
@@ -268,20 +274,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link4"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="gh thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link4"
                           style="height: 220px;"
                         />
                       </div>
@@ -305,20 +312,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link5"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="ij thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link5"
                           style="height: 220px;"
                         />
                       </div>
@@ -342,20 +350,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link6"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="kl thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link6"
                           style="height: 220px;"
                         />
                       </div>
@@ -379,20 +388,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link1"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="ab thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link1"
                           style="height: 220px;"
                         />
                       </div>
@@ -416,20 +426,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link2"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="cd thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link2"
                           style="height: 220px;"
                         />
                       </div>
@@ -453,20 +464,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link3"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="ef thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link3"
                           style="height: 220px;"
                         />
                       </div>
@@ -490,20 +502,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link4"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="gh thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link4"
                           style="height: 220px;"
                         />
                       </div>
@@ -527,20 +540,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link5"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="ij thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link5"
                           style="height: 220px;"
                         />
                       </div>
@@ -564,20 +578,21 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none"
+                    class="d-flex flex-column align-items-center text-decoration-none p-1"
                     href="/link6"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
                   >
                     <div
-                      class="card"
-                      style="width: 350px; height: 273px;"
+                      class="related-topic-card card"
                     >
                       <div
                         class="m-0 p-0 card-body"
                       >
-                        <div
+                        <img
+                          alt="kl thumbnail"
                           class="w-100 bg-secondary"
+                          src="/link6"
                           style="height: 220px;"
                         />
                       </div>
@@ -654,20 +669,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link4"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="gh thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link4"
                         style="height: 220px;"
                       />
                     </div>
@@ -691,20 +707,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link5"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="ij thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link5"
                         style="height: 220px;"
                       />
                     </div>
@@ -728,20 +745,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link6"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="kl thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link6"
                         style="height: 220px;"
                       />
                     </div>
@@ -765,20 +783,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link1"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="ab thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link1"
                         style="height: 220px;"
                       />
                     </div>
@@ -802,20 +821,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link2"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="cd thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link2"
                         style="height: 220px;"
                       />
                     </div>
@@ -839,20 +859,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link3"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="ef thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link3"
                         style="height: 220px;"
                       />
                     </div>
@@ -876,20 +897,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link4"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="gh thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link4"
                         style="height: 220px;"
                       />
                     </div>
@@ -913,20 +935,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link5"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="ij thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link5"
                         style="height: 220px;"
                       />
                     </div>
@@ -950,20 +973,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link6"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="kl thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link6"
                         style="height: 220px;"
                       />
                     </div>
@@ -987,20 +1011,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link1"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="ab thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link1"
                         style="height: 220px;"
                       />
                     </div>
@@ -1024,20 +1049,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link2"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="cd thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link2"
                         style="height: 220px;"
                       />
                     </div>
@@ -1061,20 +1087,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link3"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="ef thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link3"
                         style="height: 220px;"
                       />
                     </div>
@@ -1098,20 +1125,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link4"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="gh thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link4"
                         style="height: 220px;"
                       />
                     </div>
@@ -1135,20 +1163,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link5"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="ij thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link5"
                         style="height: 220px;"
                       />
                     </div>
@@ -1172,20 +1201,21 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none"
+                  class="d-flex flex-column align-items-center text-decoration-none p-1"
                   href="/link6"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
                 >
                   <div
-                    class="card"
-                    style="width: 350px; height: 273px;"
+                    class="related-topic-card card"
                   >
                     <div
                       class="m-0 p-0 card-body"
                     >
-                      <div
+                      <img
+                        alt="kl thumbnail"
                         class="w-100 bg-secondary"
+                        src="/link6"
                         style="height: 220px;"
                       />
                     </div>

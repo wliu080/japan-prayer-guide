@@ -5,6 +5,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { TFunction, Trans, useTranslation } from "next-i18next"
+import { Image } from "react-bootstrap"
 
 interface relatedProps {
     topicTrans: TFunction
@@ -39,6 +40,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
 
     const topics: string[] = topicTrans("related.labels", { returnObjects: true })
     const links: string[] = topicTrans("related.links", { returnObjects: true })
+    const thumbnails: string[] = topicTrans("related.thumbs", { returnObjects: true })
 
     const onClickPrev = () => {
         slider?.current?.slickPrev()
@@ -76,12 +78,17 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                     <Link
                         href={links[idx]}
                         key={idx + topic}
-                        className="d-flex flex-column align-items-center text-decoration-none"
+                        className="d-flex flex-column align-items-center text-decoration-none p-1"
                         locale={i18n.language}
                     >
-                        <Card style={{ width: "350px", height: "273px" }}>
+                        <Card className={"related-topic-card"}>
                             <Card.Body className="m-0 p-0">
-                                <div className="w-100 bg-secondary" style={{ height: "220px" }}></div>
+                                <Image
+                                    src={thumbnails[idx]}
+                                    alt={`${topic} thumbnail`}
+                                    className="w-100 bg-secondary"
+                                    style={{ height: "220px" }}
+                                />
                             </Card.Body>
                             <Card.Body className="m-2 p-1">
                                 <p>

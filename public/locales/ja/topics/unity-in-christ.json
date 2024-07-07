@@ -20,7 +20,12 @@
     "downloads": {},
     "related": {
         "labels": ["和を重んじる文化", "教会開拓", "霊的突破のための祈り"],
-        "links": ["/topics/harmony", "/topics/church-planting", "/topics/prayer-for-spiritual-breakthrough"]
+        "links": ["/topics/harmony", "/topics/church-planting", "/topics/prayer-for-spiritual-breakthrough"],
+        "thumbs": [
+            "/photos/topic-nav/culture/japanese-culture-and-christianity.png",
+            "/photos/topic-nav/culture/popular-religious-practices.png",
+            "/photos/topic-nav/church/placeholder.png"
+        ]
     },
     "heroPhoto": "/photos/topics/topic28/TP28-Hero.jpg",
     "heroFocus": "60% 10%",
