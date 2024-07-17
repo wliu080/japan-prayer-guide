@@ -32,7 +32,6 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }: any) =>
 
     // const topicId: string = params.topicPage
     const localeRef: string = "topics/" + params.topicPage
-
     return {
         props: {
             localeRef,
@@ -68,8 +67,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     //const factsLabel: string = topicCommon("factsLabel")
     const galleryClickInstructions: string = topicCommon("galleryClickInstructions")
     const galleryImageText: string = topicCommon("galleryImageText")
-
-    const images: any[] = t("photos", { returnObjects: true })
+    const localeImages: any[] = t("photos", { returnObjects: true })
+    const images = Array.isArray(localeImages) && localeImages.length > 0 ? localeImages : null
+    const timeline: string = t("timeline")
     const galleryType: string = t("galleryType")
     const blockOrder: number[] = t("blockOrder", { returnObjects: true })
     const uncropped: any[] = t("uncroppedPhotos", { returnObjects: true })
@@ -137,17 +137,21 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     </Container>
 
                     {/* Images */}
-                    <CollapseBlock title={galleryLabel} startOpened={true} galleryType={galleryType}>
-                        <PhotosWrapper
-                            images={images}
-                            type={galleryType}
-                            blocks={blockOrder}
-                            subTitle={galleryClickInstructions}
-                            galleryTitle={galleryLabel}
-                            imageText={galleryImageText}
-                            uncropped={uncropped}
-                        />
-                    </CollapseBlock>
+                    {images && (
+                        <CollapseBlock title={galleryLabel} startOpened={true} galleryType={galleryType}>
+                            <PhotosWrapper
+                                images={images}
+                                type={galleryType}
+                                blocks={blockOrder}
+                                subTitle={galleryClickInstructions}
+                                galleryTitle={galleryLabel}
+                                imageText={galleryImageText}
+                                uncropped={uncropped}
+                            />
+                        </CollapseBlock>
+                    )}
+                    {/* Timeline */}
+                    {timeline && <h1>timeline</h1>}
 
                     {/* Infographics Placeholder */}
                     {/* <CollapseBlock title={factsLabel} startOpened={true} galleryType={galleryType}>
