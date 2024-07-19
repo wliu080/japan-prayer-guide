@@ -14,7 +14,7 @@ exports[`Related Content Snapshot test 1`] = `
           class="d-flex flex-row gap-4 align-items-center container"
         >
           <h1
-            class="text-primary my-4 fs-1"
+            class="text-primary my-4 fs-1 fw-bold"
             data-testid="related-content-title"
           >
             relatedTopics.heading
@@ -46,7 +46,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link4"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -84,7 +84,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link5"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -122,7 +122,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link6"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -160,7 +160,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link1"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -198,7 +198,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link2"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -236,7 +236,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link3"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -274,7 +274,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link4"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -312,7 +312,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link5"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -350,7 +350,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link6"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -388,7 +388,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link1"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -426,7 +426,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link2"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -464,7 +464,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link3"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -502,7 +502,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link4"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -540,7 +540,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link5"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -578,7 +578,7 @@ exports[`Related Content Snapshot test 1`] = `
               >
                 <div>
                   <a
-                    class="d-flex flex-column align-items-center text-decoration-none p-1"
+                    class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                     href="/link6"
                     style="width: 100%; display: inline-block;"
                     tabindex="-1"
@@ -611,14 +611,14 @@ exports[`Related Content Snapshot test 1`] = `
           </div>
         </div>
         <div
-          class="related-prev d-xl-none"
+          class="related-prev d-lg-none"
         >
           <div
             class="related-prev-icon"
           />
         </div>
         <div
-          class="related-next d-xl-none"
+          class="related-next d-lg-none"
         >
           <div
             class="related-next-icon"
@@ -637,7 +637,7 @@ exports[`Related Content Snapshot test 1`] = `
         class="d-flex flex-row gap-4 align-items-center container"
       >
         <h1
-          class="text-primary my-4 fs-1"
+          class="text-primary my-4 fs-1 fw-bold"
           data-testid="related-content-title"
         >
           relatedTopics.heading
@@ -669,7 +669,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link4"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -707,7 +707,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link5"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -745,7 +745,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link6"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -783,7 +783,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link1"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -821,7 +821,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link2"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -859,7 +859,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link3"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -897,7 +897,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link4"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -935,7 +935,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link5"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -973,7 +973,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link6"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -1011,7 +1011,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link1"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -1049,7 +1049,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link2"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -1087,7 +1087,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link3"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -1125,7 +1125,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link4"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -1163,7 +1163,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link5"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -1201,7 +1201,7 @@ exports[`Related Content Snapshot test 1`] = `
             >
               <div>
                 <a
-                  class="d-flex flex-column align-items-center text-decoration-none p-1"
+                  class="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                   href="/link6"
                   style="width: 100%; display: inline-block;"
                   tabindex="-1"
@@ -1234,14 +1234,14 @@ exports[`Related Content Snapshot test 1`] = `
         </div>
       </div>
       <div
-        class="related-prev d-xl-none"
+        class="related-prev d-lg-none"
       >
         <div
           class="related-prev-icon"
         />
       </div>
       <div
-        class="related-next d-xl-none"
+        class="related-next d-lg-none"
       >
         <div
           class="related-next-icon"
