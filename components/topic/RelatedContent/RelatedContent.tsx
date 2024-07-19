@@ -23,14 +23,14 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
             },
         },
         {
-            breakpoint: 1000,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
             },
         },
         {
-            breakpoint: 800,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
