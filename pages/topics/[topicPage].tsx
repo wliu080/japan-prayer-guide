@@ -83,6 +83,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const infographicTablet: string = t("infographic.tablet")
     const infographicMobile: string = t("infographic.mobile")
 
+    const previousText: string = topicCommon("previousTopic")
+    const nextText: string = topicCommon("nextTopic")
+
     return (
         <>
             <Head>
@@ -189,6 +192,18 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     </Container>
                 </Container>
                 {/* Footer */}
+
+                <Container className="px-0 d-flex align-items-center justify-content-between my-5">
+                    <div className="prev-next-topic d-flex align-items-center gap-2 fw-bold text-decoration-underline text-secondary-5 cursor-pointer">
+                        <Image alt="left arrow" src="/icons/arrow-left-s-line.svg" height={28} width={28} />
+                        {previousText}
+                    </div>
+                    <div className="prev-next-topic d-flex align-items-center gap-2 fw-bold text-decoration-underline text-secondary-5 cursor-pointer">
+                        {nextText}
+                        <Image alt="right arrow" src="/icons/arrow-right-s-line.svg" height={28} width={28} />
+                    </div>
+                </Container>
+
                 <Footer />
             </main>
         </>

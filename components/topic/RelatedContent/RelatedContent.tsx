@@ -18,7 +18,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
         {
             breakpoint: 1280,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 1,
             },
         },
@@ -57,7 +57,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
             className="d-flex flex-column my-4"
         >
             <Container className="d-flex flex-row gap-4 align-items-center">
-                <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1">
+                <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1 fw-bold">
                     <Trans t={common} i18nKey="relatedTopics.heading" />
                 </h1>
                 <Link href={"/topics"} className="text-secondary" locale={i18n.language}>
@@ -78,7 +78,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                     <Link
                         href={links[idx]}
                         key={idx + topic}
-                        className="d-flex flex-column align-items-center text-decoration-none p-1"
+                        className="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                         locale={i18n.language}
                     >
                         <Card className={"related-topic-card"}>
@@ -99,10 +99,10 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                     </Link>
                 ))}
             </Slider>
-            <div className="related-prev d-xl-none" onClick={onClickPrev}>
+            <div className="related-prev d-lg-none" onClick={onClickPrev}>
                 <div className="related-prev-icon" />
             </div>
-            <div className="related-next d-xl-none" onClick={onClickNext}>
+            <div className="related-next d-lg-none" onClick={onClickNext}>
                 <div className="related-next-icon" />
             </div>
         </Container>
