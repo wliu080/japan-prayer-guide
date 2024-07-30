@@ -10,6 +10,14 @@
     "byMediaTypeAltText": "A picture of media types",
     "byMediaTypeHeading": "Download by media type",
     "byMediaTypeDescriptions": ["We have a total of 6 media types."],
+    "byMediaUrls": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "photographyUrl": "",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com",
+        "slidesUrl": ""
+    },
     "byTopicAltText": "A picture of topics",
     "byTopicHeading": "Download by topic",
     "byTopicDescriptions": [

@@ -19,6 +19,8 @@ import tutImg1 from "../public/photos/about/about_02.png"
 import tutImg2 from "../public/photos/about/about_03.png"
 import tutImg3 from "../public/photos/about/about_02.png"
 import NextImage from "../components/common/NextImage/NextImage"
+import TopicDownloadables from "../components/topic/TopicDownloadables/TopicDownloadables"
+import DownloadablesGrid from "../components/common/DownloadablesGrid/DownloadablesGrid"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
     const isPageReady: boolean = resources.enabled
@@ -66,6 +68,13 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
     const heroHeader: string = t("heroHeader")
     const heroSubtitle: string[] = t("heroSubtitle", { returnObjects: true })
     const copyrightText: string = t("copyrightText")
+
+    const infographicsUrl = t("byMediaUrls.infographicsUrl", "")
+    const photographyUrl = t("byMediaUrls.photographyUrl", "")
+    const pdfUrl = t("byMediaUrls.pdfUrl", "")
+    const prayerPtsUrl = t("byMediaUrls.prayerPtsUrl", "")
+    const prayerVidUrl = t("byMediaUrls.prayerVidUrl", "")
+    const slidesUrl = t("byMediaUrls.slidesUrl", "")
 
     const downloadSectionTitle: string = t("downloadSectionTitle")
     const downloadBlurb: string = t("downloadBlurb")
@@ -117,10 +126,14 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                         <p className="px-4 px-md-5 px-lg-4 text-center w-100">
                             <Trans t={t} i18nKey="mediaTypesDisclaimer" />
                         </p>
-                        {/* <TopicDownloadables topicTrans={t} /> */}
-
-                        {/* extract out topicdownloadables block here */}
-                        <p>Topic downloadables block goes here - see if it can match the one in topics</p>
+                        <DownloadablesGrid
+                            infographicsUrl={infographicsUrl}
+                            photographyUrl={photographyUrl}
+                            pdfUrl={pdfUrl}
+                            prayerPtsUrl={prayerPtsUrl}
+                            prayerVidUrl={prayerVidUrl}
+                            slidesUrl={slidesUrl}
+                        />
 
                         <p className="px-4 px-md-5 px-lg-4 text-center w-100">
                             <Trans
