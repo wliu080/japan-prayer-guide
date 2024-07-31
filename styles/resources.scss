@@ -62,7 +62,7 @@
         .image-content-flex {
             width: 432px;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 width: 432px;
             }
 
@@ -73,8 +73,8 @@
             .content-image {
                 height: 244px;
 
-                @include media-breakpoint-down(md) {
-                    height: 244px;
+                @include media-breakpoint-down(lg) {
+                    height: 198px;
                 }
 
                 @include media-breakpoint-down(sm) {

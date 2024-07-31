@@ -5,8 +5,10 @@ import { StaticImageData } from "next/image"
 import NextImage from "../../common/NextImage/NextImage"
 
 interface ResourceProps {
+    className?: string
     src: StaticImageData
     imgAltKey: string
+    contentClass?: string
     headingKey: string
     headingClass?: string
     descriptionArrayKey: string
@@ -14,8 +16,10 @@ interface ResourceProps {
 }
 
 export default function ImageWithContentFlexCol({
+    className = "",
     src,
     imgAltKey,
+    contentClass = "",
     headingClass = "",
     headingKey,
     descriptionArrayKey,
@@ -29,16 +33,18 @@ export default function ImageWithContentFlexCol({
     descriptions = Array.isArray(descriptions) ? descriptions : []
 
     return (
-        <Container className="d-flex flex-column my-4 image-content-flex">
+        <Container className={"d-flex flex-column my-4 image-content-flex " + className}>
             <NextImage src={src} alt={imgAlt} className={"mb-4 content-image"} />
-            <h3 className={"text-primary " + headingClass}>
-                <Trans>{heading}</Trans>
-            </h3>
-            {descriptions.map((description, idx) => (
-                <p key={description.substring(0, 5) + idx}>
-                    <Trans>{description}</Trans>
-                </p>
-            ))}
+            <div className={"d-flex flex-column " + contentClass}>
+                <h3 className={"text-primary " + headingClass}>
+                    <Trans>{heading}</Trans>
+                </h3>
+                {descriptions.map((description, idx) => (
+                    <p key={description.substring(0, 5) + idx}>
+                        <Trans>{description}</Trans>
+                    </p>
+                ))}
+            </div>
             <br />
             {children}
         </Container>

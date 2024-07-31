@@ -8,7 +8,7 @@ import Footer from "../components/Footer"
 import Link from "next/link"
 import resources from "../public/locales/en/resources.json"
 import { LowHighImage } from "../components/LowHighImage"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import ImageWithContentFlexCol from "../components/resources/ImageWithContentFlexCol/ImageWithContentFlexCol"
 
 import bannerHeroHighRes from "../public/photos/about/about_hero.jpg"
@@ -19,7 +19,6 @@ import tutImg1 from "../public/photos/about/about_02.png"
 import tutImg2 from "../public/photos/about/about_03.png"
 import tutImg3 from "../public/photos/about/about_02.png"
 import NextImage from "../components/common/NextImage/NextImage"
-import TopicDownloadables from "../components/topic/TopicDownloadables/TopicDownloadables"
 import DownloadablesGrid from "../components/common/DownloadablesGrid/DownloadablesGrid"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
@@ -78,6 +77,8 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
 
     const downloadSectionTitle: string = t("downloadSectionTitle")
     const downloadBlurb: string = t("downloadBlurb")
+
+    const tutorialImages: StaticImageData[] = [tutImg1, tutImg2, tutImg3]
 
     const bookletImgAltText: string = t("bookletImgAlt", "background picture of calm waves")
 
@@ -163,7 +164,10 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
             </div>
 
             {/* 'How to' section */}
-            <div className="bg-secondary-2 w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center flex-column px-4 px-md-4">
+            <div
+                id="tutorial"
+                className="bg-secondary-2 w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center flex-column px-4 px-md-4"
+            >
                 <Container className="align-items-center">
                     <h1 className="mt-2 mb-4 pb-2 text-primary about-h1-header text-center">
                         <Trans>{downloadSectionTitle}</Trans>
@@ -172,28 +176,22 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                         <Trans>{downloadBlurb}</Trans>
                     </p>
 
-                    <Container id="tutorial" className="d-flex flex-column flex-md-row">
-                        <ImageWithContentFlexCol
-                            src={tutImg1}
-                            imgAltKey="tut1AltText"
-                            headingClass="fs-2"
-                            headingKey="tut1Heading"
-                            descriptionArrayKey="tut1Descriptions"
-                        />
-                        <ImageWithContentFlexCol
-                            src={tutImg2}
-                            imgAltKey="tut2AltText"
-                            headingClass="fs-2"
-                            headingKey="tut2Heading"
-                            descriptionArrayKey="tut2Descriptions"
-                        />
-                        <ImageWithContentFlexCol
-                            src={tutImg3}
-                            imgAltKey="tut3AltText"
-                            headingClass="fs-2"
-                            headingKey="tut3Heading"
-                            descriptionArrayKey="tut3Descriptions"
-                        />
+                    <Container className="d-flex flex-column flex-lg-row">
+                        {tutorialImages.map((img, idx) => {
+                            const prefix = "tut" + (idx + 1)
+                            return (
+                                <ImageWithContentFlexCol
+                                    key={"img" + idx}
+                                    className="my-0 w-auto flex-sm-column flex-md-row flex-lg-column"
+                                    src={img}
+                                    imgAltKey={prefix + "AltText"}
+                                    contentClass="px-md-4"
+                                    headingClass="fs-2"
+                                    headingKey={prefix + "Heading"}
+                                    descriptionArrayKey={prefix + "Descriptions"}
+                                />
+                            )
+                        })}
                     </Container>
                 </Container>
             </div>
