@@ -72,6 +72,7 @@
 
             .content-image {
                 height: 244px;
+                margin-bottom: 0px;
 
                 @include media-breakpoint-down(lg) {
                     height: 198px;

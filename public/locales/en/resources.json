@@ -18,6 +18,7 @@
         "prayerVidUrl": "www.google.com",
         "slidesUrl": ""
     },
+    "switchLanguage": "To view Japanese content visit <0>HERE</0>",
     "byTopicAltText": "A picture of topics",
     "byTopicHeading": "Download by topic",
     "byTopicDescriptions": [
@@ -33,19 +34,19 @@
     "downloadSectionTitle": "How do I download?",
     "downloadBlurb": "View tutorial here PDF document",
     "tutAltText1": "",
-    "tut1Heading": "1. Step up",
+    "tut1Heading": " 1. Step up",
     "tut1Descriptions": [
         "There are two ways to download our resources, by topic or by media type. Please note that the links below will take you to an external site (Box, Vimeo) to access the files. ",
         "You can also download a simple PDF here of the references that appear on our website."
     ],
     "tutAltText2": "",
-    "tut2Heading": "2. hjkjhkjhkjhk",
+    "tut2Heading": " 2. hjkjhkjhkjhk",
     "tut2Descriptions": [
         "There are two ways to download our resources, by topic or by media type. Please note that the links below will take you to an external site (Box, Vimeo) to access the files. ",
         "You can also download a simple PDF here of the references that appear on our website."
     ],
     "tutAltText3": "",
-    "tut3Heading": "3. hjkjhkjhkjhk",
+    "tut3Heading": " 3. hjkjhkjhkjhk",
     "tut3Descriptions": [
         "There are two ways to download our resources, by topic or by media type. Please note that the links below will take you to an external site (Box, Vimeo) to access the files. ",
         "You can also download a simple PDF here of the references that appear on our website."

@@ -182,11 +182,11 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                             return (
                                 <ImageWithContentFlexCol
                                     key={"img" + idx}
-                                    className="my-0 w-auto flex-sm-column flex-md-row flex-lg-column"
+                                    className="my-0 w-auto flex-sm-column flex-md-row flex-lg-column mb-sm-0 mb-md-0"
                                     src={img}
                                     imgAltKey={prefix + "AltText"}
                                     contentClass="px-md-4"
-                                    headingClass="fs-2"
+                                    headingClass="fs-2 ps-2 mb-3"
                                     headingKey={prefix + "Heading"}
                                     descriptionArrayKey={prefix + "Descriptions"}
                                 />
