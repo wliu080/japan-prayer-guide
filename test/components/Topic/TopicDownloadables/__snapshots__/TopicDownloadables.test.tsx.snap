@@ -6,7 +6,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="d-flex flex-column my-5 container"
+        class="d-flex flex-column my-3 my-md-5 container"
         data-testid="topic-downloadables-container"
         id="topic-downloads"
       >
@@ -302,7 +302,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
   </body>,
   "container": <div>
     <div
-      class="d-flex flex-column my-5 container"
+      class="d-flex flex-column my-3 my-md-5 container"
       data-testid="topic-downloadables-container"
       id="topic-downloads"
     >

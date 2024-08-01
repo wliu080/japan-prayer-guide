@@ -60,7 +60,7 @@ describe("Related Content", () => {
         const relatedContentCont = screen.getByTestId("related-content-container")
         const relatedContentTitle = screen.getByTestId("related-content-title")
 
-        expect(relatedContentCont).toHaveClass("d-flex", "flex-column", "my-4")
+        expect(relatedContentCont).toHaveClass("d-flex", "flex-column", "my-3")
 
         expect(relatedContentTitle).toHaveTextContent("relatedTopics.heading")
         expect(relatedContentTitle).toHaveClass("text-primary", "my-4", "fs-1")
