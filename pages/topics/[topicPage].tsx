@@ -167,9 +167,9 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                         </Container>
                     </CollapseBlock>
                     <Container className="">
+                        <hr />
                         <ReferencesSection />
                     </Container>
-                    <hr />
                     <Container className={"bottom-spacing"}></Container>
                 </Container>
 
@@ -193,7 +193,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
                 {/* Footer */}
 
-                <Container className="px-0 d-flex align-items-center justify-content-between my-5">
+                <Container className="prev-next-buttons px-0 d-flex align-items-center justify-content-between my-5">
                     <div className="prev-next-topic d-flex align-items-center gap-2 fw-bold text-decoration-underline text-secondary-5 cursor-pointer">
                         <Image alt="left arrow" src="/icons/arrow-left-s-line.svg" height={28} width={28} />
                         {previousText}

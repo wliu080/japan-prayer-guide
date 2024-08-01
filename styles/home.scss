@@ -231,6 +231,9 @@ $home-paragraph-text-mobile: $home-paragraph-text - 2px;
     .feature-button,
     .feature-view-all {
         font-size: 14px;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 8px;
+        }
     }
 }
 

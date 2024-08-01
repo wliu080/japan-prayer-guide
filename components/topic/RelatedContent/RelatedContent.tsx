@@ -54,7 +54,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
         <Container
             id="related-content-main"
             data-testid={"related-content-container"}
-            className="d-flex flex-column my-4"
+            className="d-flex flex-column my-3 my-md-4"
         >
             <Container className="d-flex flex-row gap-4 align-items-center">
                 <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1 fw-bold">

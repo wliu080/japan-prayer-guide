@@ -73,7 +73,7 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
     return (
         <Container
             data-testid={"topic-downloadables-container"}
-            className="d-flex flex-column my-5"
+            className="d-flex flex-column my-3 my-md-5"
             id="topic-downloads"
         >
             <Container>
