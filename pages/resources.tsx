@@ -116,8 +116,9 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
 
             {/* 'Download by' section */}
             <div id="downloadBy" className="w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center flex-column px-4 px-md-4">
-                <Container className="d-flex flex-row">
+                <Container className="d-flex flex-row mw-100 px-sm-0 px-md-0">
                     <ImageWithContentFlexCol
+                        className="px-sm-2 px-md-2"
                         src={byMediaType}
                         imgAltKey="byMediaTypeAltText"
                         headingClass="fs-1"
@@ -128,6 +129,7 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                             <Trans t={t} i18nKey="mediaTypesDisclaimer" />
                         </p>
                         <DownloadablesGrid
+                            className="d-sm-flex row-cols-sm-2"
                             infographicsUrl={infographicsUrl}
                             photographyUrl={photographyUrl}
                             pdfUrl={pdfUrl}
@@ -145,6 +147,7 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                         </p>
                     </ImageWithContentFlexCol>
                     <ImageWithContentFlexCol
+                        className="px-sm-2 px-md-2"
                         src={byTopic}
                         imgAltKey="byTopicAltText"
                         headingClass="fs-1"

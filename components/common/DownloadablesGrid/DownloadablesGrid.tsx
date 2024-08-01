@@ -8,6 +8,7 @@ import { RiDonutChartFill, RiFile3Line, RiImageFill, RiMic2Fill, RiSlideshowLine
 import { FaPrayingHands } from "react-icons/fa"
 
 interface downloadProps {
+    className?: string
     infographicsUrl?: string
     photographyUrl?: string
     pdfUrl?: string
@@ -26,7 +27,7 @@ interface ResourceProps {
 
 const ResourceCard = ({ icon, label, link, disabled = false, shrinkWidth = false }: ResourceProps) => {
     return (
-        <Col key={label}>
+        <Col key={label} className="resource-card">
             <Link
                 href={disabled ? "#" : link}
                 className={"text-decoration-none"}
@@ -56,6 +57,7 @@ const ResourceCard = ({ icon, label, link, disabled = false, shrinkWidth = false
 }
 
 export default function DownloadablesGrid({
+    className,
     infographicsUrl = "",
     photographyUrl = "",
     pdfUrl = "",
@@ -74,7 +76,12 @@ export default function DownloadablesGrid({
 
     return (
         <Container>
-            <Row md={3} sm={1} className="g-3 d-md-flex d-block" data-testid={"topic-downloadables-links"}>
+            <Row
+                md={3}
+                sm={1}
+                className={"grid-row g-3 d-md-flex d-block " + className}
+                data-testid={"topic-downloadables-links"}
+            >
                 <ResourceCard
                     icon={<RiDonutChartFill />}
                     label={infographicsLabel}
