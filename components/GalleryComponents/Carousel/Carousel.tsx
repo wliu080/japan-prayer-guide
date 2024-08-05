@@ -1,8 +1,9 @@
 import Box from "@mui/material/Box"
 import Modal from "@mui/material/Modal"
 import Slide from "@mui/material/Slide"
+import Image from "next/image"
 import React from "react"
-import { Carousel, CarouselItem, Image } from "react-bootstrap"
+import { Carousel, CarouselItem } from "react-bootstrap"
 import LightBox from "../LightBox/LightBox"
 
 interface CarouselProps {
@@ -39,7 +40,14 @@ export const ImageCarousel = ({ images, topic = false }: CarouselProps) => {
                                         className="carousel-image"
                                         alt={"hero image" + index}
                                         src={img.src}
-                                        style={{ maxHeight: "none", width: "100%", aspectRatio: "unset" }}
+                                        width={1800}
+                                        height={1200}
+                                        style={{
+                                            maxHeight: "none",
+                                            width: "100%",
+                                            height: "100%",
+                                            aspectRatio: "unset",
+                                        }}
                                         onClick={() => handleOpen(index)}
                                     />
                                 </CarouselItem>
