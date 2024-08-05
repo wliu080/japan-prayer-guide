@@ -98,16 +98,16 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                     isMainImage={true}
                 />
 
-                <h1 className="px-4 px-md-5 px-lg-4 text-white text-center w-100">
+                <h1 className="px-4 px-md-5 px-lg-4 text-white text-center w-75">
                     <Trans>{heroHeader}</Trans>
                 </h1>
                 {heroSubtitle.map((text, idx) => (
-                    <p key={text + idx} className="px-4 px-md-5 px-lg-4 text-white text-center w-75">
+                    <p key={text + idx} className="subtext px-4 px-md-5 px-lg-4 text-white text-center w-75">
                         <Trans>{text}</Trans>
                     </p>
                 ))}
 
-                <p className="px-4 px-md-5 px-lg-4 text-grey-6 text-center fst-italic w-100">
+                <p className="px-4 px-md-5 px-lg-4 text-grey-6 text-center fst-italic w-75">
                     <Trans components={[<LinkFromJson key={copyrightText.substring(0, 5)} href="/"></LinkFromJson>]}>
                         {copyrightText}
                     </Trans>
@@ -115,8 +115,8 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
             </div>
 
             {/* 'Download by' section */}
-            <div id="downloadBy" className="w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center flex-column px-4 px-md-4">
-                <Container className="d-flex flex-row mw-100 px-sm-0 px-md-0">
+            <div id="downloadBy" className="w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center px-4 px-md-4">
+                <Container className="d-flex flex-md-row flex-sm-column mw-100 px-sm-0 px-md-0">
                     <ImageWithContentFlexCol
                         className="px-sm-2 px-md-2"
                         src={byMediaType}
