@@ -11,7 +11,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         id="topic-downloads"
       >
         <div
-          class="container"
+          class="mb-3 mb-md-0 container"
         >
           <h2
             class="fw-bold text-primary mt-4 mb-3"
@@ -285,7 +285,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
           </div>
         </div>
         <a
-          class="align-self-center w-100"
+          class="align-self-center w-100 mt-2 mt-md-3"
           href="downloads.downloadAllUrl"
           style="max-width: 280px; cursor: not-allowed;"
         >
@@ -307,7 +307,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
       id="topic-downloads"
     >
       <div
-        class="container"
+        class="mb-3 mb-md-0 container"
       >
         <h2
           class="fw-bold text-primary mt-4 mb-3"
@@ -581,7 +581,7 @@ exports[`Topic Downloadables Snapshot test 1`] = `
         </div>
       </div>
       <a
-        class="align-self-center w-100"
+        class="align-self-center w-100 mt-2 mt-md-3"
         href="downloads.downloadAllUrl"
         style="max-width: 280px; cursor: not-allowed;"
       >
