@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { Left, Cross, LeftArrow, RightArrow } from "../../icons"
-import { Image } from "react-bootstrap"
 import { Trans } from "next-i18next"
+import Image from "next/image"
 
 interface LightBoxProps {
     index: number
@@ -72,7 +72,7 @@ const LightBox = ({ index, setImage, images, lightBox, setLightBox, setGallery }
                         )}
                     </div>
                     <div className="lightbox-box">
-                        <Image src={images[index].src} alt="light box" />
+                        <Image src={images[index].src} width={1800} height={1200} alt="light box" />
                     </div>
                     <h1>
                         <Trans>{images[index].title}</Trans>
