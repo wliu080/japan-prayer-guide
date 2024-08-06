@@ -32,7 +32,7 @@ const CollapseBlock = ({ title, children, startOpened = false, galleryType = "mo
 
     return (
         <Container>
-            {!disableAccordion && <hr />}
+            {!disableAccordion && <hr className="mb-4" />}
             <Button
                 className={"collapse-label fs-2 fw-bold lh-sm ps-0 " + (disableAccordion && "pt-4")}
                 onClick={clickHandler}

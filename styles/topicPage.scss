@@ -56,12 +56,11 @@ ul.bullet-points {
 // -------------------------
 
 .card-body {
+    padding: 16px 24px 16px 24px;
     @include media-breakpoint-down(md) {
-        padding: 16px 24px 16px 24px;
-        padding: 10px;
+        padding: 16px;
     }
     @include media-breakpoint-down(sm) {
-        // padding: 10px 10px 10px 10px;
         padding: 16px;
     }
 }

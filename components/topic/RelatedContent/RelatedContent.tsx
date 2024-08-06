@@ -87,7 +87,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                                     src={thumbnails[idx]}
                                     alt={`${topic} thumbnail`}
                                     className="w-100 bg-secondary"
-                                    style={{ height: "220px" }}
+                                    style={{ height: "200px" }}
                                 />
                             </Card.Body>
                             <Card.Body className="m-2 p-1">

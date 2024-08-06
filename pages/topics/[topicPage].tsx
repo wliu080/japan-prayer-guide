@@ -163,7 +163,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                         <Container className="mt-3 d-flex justify-content-center">
                             <Image className="d-none d-xl-block" src={infographicDesktop} alt="infographic" />
                             <Image className="d-none d-md-block d-xl-none" src={infographicTablet} alt="infographic" />
-                            <Image className="d-block d-md-none" src={infographicMobile} alt="infographic" />
+                            <Image className="d-block d-md-none w-100" src={infographicMobile} alt="infographic" />
                         </Container>
                     </CollapseBlock>
                     <Container className="">
@@ -193,7 +193,10 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 </Container>
                 {/* Footer */}
 
-                <Container className="prev-next-buttons px-0 d-flex align-items-center justify-content-between my-5">
+                <Container
+                    className="prev-next-buttons px-0 d-flex align-items-center justify-content-between"
+                    style={{ marginTop: "40px", marginBottom: "40px" }}
+                >
                     <div className="prev-next-topic d-flex align-items-center gap-2 fw-bold text-decoration-underline text-secondary-5 cursor-pointer">
                         <Image alt="left arrow" src="/icons/arrow-left-s-line.svg" height={28} width={28} />
                         {previousText}
