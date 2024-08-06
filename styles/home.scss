@@ -144,13 +144,13 @@
             background-color: $grey-2;
         }
         .carousel-control-next {
-            right: 9%;
+            right: 3%;
             @include media-breakpoint-down(md) {
                 right: 5%;
             }
         }
         .carousel-control-prev {
-            left: 9%;
+            left: 3%;
             @include media-breakpoint-down(md) {
                 left: 5%;
             }
