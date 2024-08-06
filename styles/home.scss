@@ -107,6 +107,7 @@
     $carousel-image-ratio: 1.93;
     .home-carousel-image {
         max-height: $carousel-image-height;
+        width: 100%;
         object-fit: cover;
         aspect-ratio: $carousel-image-ratio;
         @include media-breakpoint-down(xl) {
@@ -115,6 +116,7 @@
         @include media-breakpoint-down(md) {
             max-height: none;
             width: 95%;
+            height: 100%;
         }
     }
 
