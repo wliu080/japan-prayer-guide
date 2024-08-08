@@ -160,7 +160,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                         </CollapseBlock>
                     )}
                     {/* Timeline */}
-                    {timeline && <h1>timeline</h1>}
+                    {timeline !== "timeline" && <h1>timeline</h1>}
 
                     {/* Infographics Placeholder */}
                     <CollapseBlock title={factsLabel} startOpened={true} galleryType={"infographic"}>
