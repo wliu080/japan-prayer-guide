@@ -18,7 +18,6 @@ import byTopic from "../public/photos/about/about_03.png"
 import tutImg1 from "../public/photos/about/about_02.png"
 import tutImg2 from "../public/photos/about/about_03.png"
 import tutImg3 from "../public/photos/about/about_02.png"
-import NextImage from "../components/common/NextImage/NextImage"
 import DownloadablesGrid from "../components/common/DownloadablesGrid/DownloadablesGrid"
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
