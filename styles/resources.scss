@@ -88,6 +88,17 @@
                     height: 183px;
                 }
             }
+
+            .topic-btn {
+                padding: 12px;
+                width: 225px;
+                height: 55px;
+
+                @include media-breakpoint-down(md) {
+                    width: 168px;
+                    height: 51px;
+                }
+            }
         }
     }
 
@@ -118,16 +129,25 @@
         }
     }
 
-    .booklet-banner {
+    .redirect-section {
         max-width: 100vw !important;
         height: 400px;
 
-        @include media-breakpoint-down(md) {
-            height: 400px;
+        background-image: url("../public/photos/booklet/Rectangle 237.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% 133%;
+
+        button {
+            font-size: 19px;
         }
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             height: 335px;
+
+            button {
+                font-size: 14px;
+            }
         }
     }
 }

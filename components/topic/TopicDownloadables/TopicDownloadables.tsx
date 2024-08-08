@@ -35,14 +35,16 @@ export default function TopicDownloadables({ topicTrans }: downloadProps) {
                     <Trans t={t} i18nKey="downloads.description" />
                 </p>
             </Container>
-            <DownloadablesGrid
-                infographicsUrl={infographicsUrl}
-                photographyUrl={photographyUrl}
-                pdfUrl={pdfUrl}
-                prayerPtsUrl={prayerPtsUrl}
-                prayerVidUrl={prayerVidUrl}
-                slidesUrl={slidesUrl}
-            />
+            <Container>
+                <DownloadablesGrid
+                    infographicsUrl={infographicsUrl}
+                    photographyUrl={photographyUrl}
+                    pdfUrl={pdfUrl}
+                    prayerPtsUrl={prayerPtsUrl}
+                    prayerVidUrl={prayerVidUrl}
+                    slidesUrl={slidesUrl}
+                />
+            </Container>
             <Link
                 href={downloadAllUrl}
                 className="align-self-center w-100"

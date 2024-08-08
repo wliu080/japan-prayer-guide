@@ -52,6 +52,10 @@
         "You can also download a simple PDF here of the references that appear on our website."
     ],
 
+    "bookletImgAlt": "background picture of calm waves",
+    "bookletRedirectHeading": "Get the prayer booklet",
+    "bookletRedirectButtonText": "Order here",
+
     "title": "Coming soon.",
     "message": "Full website launch in 2024.",
     "back": "Return to the home page"

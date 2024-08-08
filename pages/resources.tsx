@@ -2,7 +2,7 @@ import Head from "next/head"
 import React from "react"
 import { ToggleHeader } from "../components/ToggleHeader"
 import { Button, Container } from "react-bootstrap"
-import { TFunction, Trans, useTranslation } from "next-i18next"
+import { I18n, TFunction, Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Footer from "../components/Footer"
 import Link from "next/link"
@@ -35,7 +35,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
 }
 
 const Downloads = ({ isPageReady }: { isPageReady: boolean }) => {
-    const { t } = useTranslation("resources")
+    const { t, i18n } = useTranslation("resources")
 
     return (
         <div>
@@ -48,7 +48,7 @@ const Downloads = ({ isPageReady }: { isPageReady: boolean }) => {
             <main id="resources">
                 <ToggleHeader />
 
-                {isPageReady ? <Resources t={t} /> : <PageNotReady t={t} />}
+                {isPageReady ? <Resources t={t} i18n={i18n} /> : <PageNotReady t={t} />}
                 <Footer />
             </main>
         </div>
@@ -63,7 +63,7 @@ function LinkFromJson({ href, children }: { href: string; children?: React.React
     )
 }
 
-const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
+const Resources: React.FC<{ t: TFunction; i18n: I18n }> = ({ t, i18n }) => {
     const heroHeader: string = t("heroHeader")
     const heroSubtitle: string[] = t("heroSubtitle", { returnObjects: true })
     const copyrightText: string = t("copyrightText")
@@ -78,9 +78,11 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
     const downloadSectionTitle: string = t("downloadSectionTitle")
     const downloadBlurb: string = t("downloadBlurb")
 
-    const tutorialImages: StaticImageData[] = [tutImg1, tutImg2, tutImg3]
-
     const bookletImgAltText: string = t("bookletImgAlt", "background picture of calm waves")
+    const bookletRedirectHeading = t("bookletRedirectHeading")
+    const bookletRedirectBtnText = t("bookletRedirectButtonText")
+
+    const tutorialImages: StaticImageData[] = [tutImg1, tutImg2, tutImg3]
 
     return (
         <>
@@ -115,7 +117,7 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
             </div>
 
             {/* 'Download by' section */}
-            <div id="downloadBy" className="w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center px-4 px-md-4">
+            <div id="downloadBy" className="w-100 pb-4 pb-lg-5 pt-5 d-flex align-items-center px-4 px-md-4">
                 <Container className="d-flex flex-md-row flex-sm-column mw-100 px-sm-0 px-md-0">
                     <ImageWithContentFlexCol
                         className="px-sm-2 px-md-2"
@@ -125,11 +127,11 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                         headingKey="byMediaTypeHeading"
                         descriptionArrayKey="byMediaTypeDescriptions"
                     >
-                        <p className="px-4 px-md-5 px-lg-4 text-center w-100">
+                        <p className="w-100">
                             <Trans t={t} i18nKey="mediaTypesDisclaimer" />
                         </p>
                         <DownloadablesGrid
-                            className="d-sm-flex row-cols-sm-2"
+                            className="d-sm-flex row-cols-sm-2 px-0"
                             infographicsUrl={infographicsUrl}
                             photographyUrl={photographyUrl}
                             pdfUrl={pdfUrl}
@@ -138,7 +140,7 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                             slidesUrl={slidesUrl}
                         />
 
-                        <p className="px-4 px-md-5 px-lg-4 text-center w-100">
+                        <p className="w-100 mt-3">
                             <Trans
                                 t={t}
                                 i18nKey="switchLanguage"
@@ -156,7 +158,7 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
                     >
                         <div className="d-inline-flex">
                             <Link
-                                className="text-white my-3 bg-secondary-5 border-secondary-5 btn btn-primary"
+                                className="text-white text-center my-2 bg-secondary-5 border-secondary-5 btn btn-primary topic-btn"
                                 href="/"
                             >
                                 <Trans t={t} i18nKey="byTopicBtn" />
@@ -169,7 +171,7 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
             {/* 'How to' section */}
             <div
                 id="tutorial"
-                className="bg-secondary-2 w-100 pb-4 pb-md-5 pt-5 d-flex align-items-center flex-column px-4 px-md-4"
+                className="bg-secondary-2 w-100 py-4 py-md-5 d-flex align-items-center flex-column px-4 px-md-4"
             >
                 <Container className="align-items-center">
                     <h1 className="mt-2 mb-4 pb-2 text-primary about-h1-header text-center">
@@ -200,9 +202,18 @@ const Resources: React.FC<{ t: TFunction }> = ({ t }) => {
             </div>
 
             {/* Booklet banner section */}
-            <div className="w-100 mx-0 d-flex align-items-center justify-content-center flex-column position-relative">
-                <NextImage src={bannerHeroLowRes} alt={bookletImgAltText} className="booklet-banner"></NextImage>
-            </div>
+            <section className="redirect-section d-flex align-items-center" title={bookletImgAltText}>
+                <Container className="text-center text-white">
+                    <h1 className="mb-sm-3 mb-md-4">
+                        <Trans>{bookletRedirectHeading}</Trans>
+                    </h1>
+                    <Link href="/booklet" locale={i18n.language}>
+                        <Button className="bg-secondary-5 border-secondary-5 fw-bold">
+                            <Trans>{bookletRedirectBtnText}</Trans>
+                        </Button>
+                    </Link>
+                </Container>
+            </section>
         </>
     )
 }

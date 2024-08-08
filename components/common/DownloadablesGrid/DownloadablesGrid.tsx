@@ -75,46 +75,44 @@ export default function DownloadablesGrid({
     const slidesLabel = t("downloads.slidesLabel")
 
     return (
-        <Container>
-            <Row
-                md={3}
-                sm={1}
-                className={"grid-row g-3 d-md-flex d-block " + className}
-                data-testid={"topic-downloadables-links"}
-            >
-                <ResourceCard
-                    icon={<RiDonutChartFill />}
-                    label={infographicsLabel}
-                    link={infographicsUrl}
-                    disabled={infographicsUrl === ""}
-                />
-                <ResourceCard icon={<RiFile3Line />} label={pdfLabel} link={pdfUrl} disabled={pdfUrl === ""} />
-                <ResourceCard
-                    icon={<RiImageFill />}
-                    label={photographyLabel}
-                    link={photographyUrl}
-                    disabled={photographyUrl === ""}
-                />
-                <ResourceCard
-                    icon={<FaPrayingHands />}
-                    label={prayerPtsLabel}
-                    link={prayerPtsUrl}
-                    disabled={prayerPtsUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiMic2Fill />}
-                    label={prayerVidLabel}
-                    link={prayerVidUrl}
-                    disabled={prayerVidUrl === ""}
-                />
-                <ResourceCard
-                    icon={<RiSlideshowLine />}
-                    label={slidesLabel}
-                    link={slidesUrl}
-                    disabled={slidesUrl === ""}
-                    shrinkWidth={true}
-                />
-            </Row>
-        </Container>
+        <Row
+            md={3}
+            sm={1}
+            className={"grid-row g-3 d-md-flex d-block " + className}
+            data-testid={"topic-downloadables-links"}
+        >
+            <ResourceCard
+                icon={<RiDonutChartFill />}
+                label={infographicsLabel}
+                link={infographicsUrl}
+                disabled={infographicsUrl === ""}
+            />
+            <ResourceCard icon={<RiFile3Line />} label={pdfLabel} link={pdfUrl} disabled={pdfUrl === ""} />
+            <ResourceCard
+                icon={<RiImageFill />}
+                label={photographyLabel}
+                link={photographyUrl}
+                disabled={photographyUrl === ""}
+            />
+            <ResourceCard
+                icon={<FaPrayingHands />}
+                label={prayerPtsLabel}
+                link={prayerPtsUrl}
+                disabled={prayerPtsUrl === ""}
+            />
+            <ResourceCard
+                icon={<RiMic2Fill />}
+                label={prayerVidLabel}
+                link={prayerVidUrl}
+                disabled={prayerVidUrl === ""}
+            />
+            <ResourceCard
+                icon={<RiSlideshowLine />}
+                label={slidesLabel}
+                link={slidesUrl}
+                disabled={slidesUrl === ""}
+                shrinkWidth={true}
+            />
+        </Row>
     )
 }
