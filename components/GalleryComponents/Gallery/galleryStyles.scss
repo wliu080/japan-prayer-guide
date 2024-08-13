@@ -285,7 +285,7 @@
     .lightbox-box img {
         display: block;
         width: auto;
-        max-width: 1200px;
+        max-width: 1400px;
         height: auto;
         max-height: calc(100% - 10px);
         object-fit: cover;
@@ -316,26 +316,36 @@
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        height: calc(100% - 100px);
+        height: calc(100% - 50px);
     }
 
     .lightbox-arrow {
-        padding: 14px;
-        border: 1px solid #efefef;
         border-radius: 100%;
         cursor: pointer;
         transition: all 0.2s ease;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        opacity: 0.6;
     }
 
     .lightbox-arrow:hover {
-        background: #d1d1d17c;
+        opacity: 0.8;
     }
 
     .lightbox-leftArrow {
-        left: 0;
+        left: 10px;
     }
 
     .lightbox-rightArrow {
-        right: 0;
+        right: 10px;
+    }
+
+    .lightbox-left-icon {
+        background-image: url("/icons/arrow-left-s-line.svg");
+    }
+
+    .lightbox-right-icon {
+        background-image: url("/icons/arrow-right-s-line.svg");
     }
 }

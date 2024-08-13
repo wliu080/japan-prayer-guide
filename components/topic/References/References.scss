@@ -1,0 +1,37 @@
+
+.slideUp-container {
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideUp-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    height: 56px;
+}
+
+.slideUp-title {
+    font-size: 24px;
+    font-family: $font-family-secondary;
+    color: $primary;
+    font-weight: bold;
+}
+
+.reference-header {
+    font-size: 22px;
+    font-family: $font-family-secondary;
+    font-weight: bold;
+}
+
+.reference-body {
+    font-size: 18px;
+}

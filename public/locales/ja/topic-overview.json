@@ -30,7 +30,7 @@
     "churchTopics": [
         { "label": "伸び悩む教会", "link": "struggling-churches", "disabled": true },
         { "label": "教会開拓", "link": "church-planting", "disabled": true },
-        { "label": "教会のリーダーシップ", "link": "church-leadership", "disabled": true },
+        { "label": "教会のリーダーシップ", "link": "church-leadership", "disabled": false },
         { "label": "地域社会における教会", "link": "church-in-the-community", "disabled": true },
         { "label": "創造的なミニストリー", "link": "creative-ways-of-ministry", "disabled": true },
         { "label": "地方伝道", "link": "christianity-in-rural-areas", "disabled": true },
@@ -39,7 +39,7 @@
         { "label": "日常生活と信仰", "link": "daily-christian-life-and-faith", "disabled": true },
         { "label": "海外に住む日本人", "link": "japanese-overseas", "disabled": true },
         { "label": "宣教師の生活", "link": "missionary-life", "disabled": true },
-        { "label": "キリストにおける一致", "link": "unity-in-christ", "disabled": true },
+        { "label": "キリストにおける一致", "link": "unity-in-christ", "disabled": false },
         { "label": "世界宣教への関わり", "link": "japanese-mission-movement", "disabled": true },
         { "label": "霊的突破のための祈り", "link": "prayer-for-spiritual-breakthrough", "disabled": true }
     ]

@@ -150,7 +150,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </Container>
 
                 {/* Purchase snippet */}
-                <Container className="home-purchase-section py-3 py-md-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
+                <Container className="home-purchase-section py-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
                     <Image
                         alt="book-cover"
                         src={i18n.language == "en" ? coverEN : coverJA}

@@ -13,6 +13,8 @@ import CollapseBlock from "../../components/topic/CollapseBlock"
 import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/PhotosWrapper"
 import PrayerResponse from "../../components/topic/PrayerResponse/PrayerResponse"
 import { StickyNav, Tab } from "../../components/topic/StickyNav/StickyNav"
+import RelatedContent from "../../components/topic/RelatedContent/RelatedContent"
+import { ReferencesSection } from "../../components/topic/References/References"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -64,7 +66,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
     const galleryLabel: string = topicCommon("galleryLabel")
-    //const factsLabel: string = topicCommon("factsLabel")
+    const factsLabel: string = topicCommon("factsLabel")
     const galleryClickInstructions: string = topicCommon("galleryClickInstructions")
     const galleryImageText: string = topicCommon("galleryImageText")
     const localeImages: any[] = t("photos", { returnObjects: true })
@@ -76,6 +78,13 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
     const heroPhoto: string = t("heroPhoto")
     const heroFocus: string = t("heroFocus")
+
+    const infographicDesktop: string = t("infographic.desktop")
+    const infographicTablet: string = t("infographic.tablet")
+    const infographicMobile: string = t("infographic.mobile")
+
+    const previousText: string = topicCommon("previousTopic")
+    const nextText: string = topicCommon("nextTopic")
 
     return (
         <>
@@ -121,7 +130,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     </Container>
 
                     {/* Placeholder text */}
-                    <Container className="main-content mt-4">
+                    <Container className="main-content mt-0">
                         {textContent.map((text: string, idx: number) => (
                             <p key={idx + text}>
                                 <Trans components={{ url: <JsonLink /> }}> {text} </Trans>
@@ -151,22 +160,25 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                         </CollapseBlock>
                     )}
                     {/* Timeline */}
-                    {timeline && <h1>timeline</h1>}
+                    {timeline !== "timeline" && <h1>timeline</h1>}
 
                     {/* Infographics Placeholder */}
-                    {/* <CollapseBlock title={factsLabel} startOpened={true} galleryType={galleryType}>
-                        <Container>
-                            <div id="placeholder-image" className="w-100 my-3">
-                                Infographics Placeholder
-                            </div>
-                            <div id="placeholder-image" className="w-100 my-5">
-                                Placeholder
-                            </div>
+                    <CollapseBlock title={factsLabel} startOpened={true} galleryType={"infographic"}>
+                        <Container className="mt-3 d-flex justify-content-center px-0">
+                            <Image className="d-none d-xl-block w-100" src={infographicDesktop} alt="infographic" />
+                            <Image
+                                className="d-none d-md-block d-xl-none w-100"
+                                src={infographicTablet}
+                                alt="infographic"
+                            />
+                            <Image className="d-block d-md-none w-100" src={infographicMobile} alt="infographic" />
                         </Container>
-                    </CollapseBlock> */}
-                    <Container className="bottom-spacing">
+                    </CollapseBlock>
+                    <Container className="">
                         <hr />
+                        <ReferencesSection />
                     </Container>
+                    <Container className={"bottom-spacing"}></Container>
                 </Container>
 
                 <Container fluid className="bg-grey-2 px-0">
@@ -179,9 +191,30 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <Container className="main-section-container px-0">
                     {/* Downloads and Related */}
                     <TopicDownloadables topicTrans={t} />
-                    {/* <RelatedContent topicTrans={t} /> */}
+                    <Container>
+                        <hr />
+                    </Container>
+                    <RelatedContent topicTrans={t} />
+                    <Container>
+                        <hr />
+                    </Container>
                 </Container>
                 {/* Footer */}
+
+                <Container
+                    className="prev-next-buttons px-0 d-flex align-items-center justify-content-between"
+                    style={{ marginTop: "40px", marginBottom: "40px" }}
+                >
+                    <div className="prev-next-topic d-flex align-items-center gap-2 fw-bold text-decoration-underline text-secondary-5 cursor-pointer">
+                        <Image alt="left arrow" src="/icons/arrow-left-s-line.svg" height={28} width={28} />
+                        {previousText}
+                    </div>
+                    <div className="prev-next-topic d-flex align-items-center gap-2 fw-bold text-decoration-underline text-secondary-5 cursor-pointer">
+                        {nextText}
+                        <Image alt="right arrow" src="/icons/arrow-right-s-line.svg" height={28} width={28} />
+                    </div>
+                </Container>
+
                 <Footer />
             </main>
         </>
