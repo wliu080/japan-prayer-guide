@@ -164,9 +164,13 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
 
                     {/* Infographics Placeholder */}
                     <CollapseBlock title={factsLabel} startOpened={true} galleryType={"infographic"}>
-                        <Container className="mt-3 d-flex justify-content-center">
-                            <Image className="d-none d-xl-block" src={infographicDesktop} alt="infographic" />
-                            <Image className="d-none d-md-block d-xl-none" src={infographicTablet} alt="infographic" />
+                        <Container className="mt-3 d-flex justify-content-center px-0">
+                            <Image className="d-none d-xl-block w-100" src={infographicDesktop} alt="infographic" />
+                            <Image
+                                className="d-none d-md-block d-xl-none w-100"
+                                src={infographicTablet}
+                                alt="infographic"
+                            />
                             <Image className="d-block d-md-none w-100" src={infographicMobile} alt="infographic" />
                         </Container>
                     </CollapseBlock>
