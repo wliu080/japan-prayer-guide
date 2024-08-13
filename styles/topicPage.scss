@@ -47,7 +47,6 @@ ul.bullet-points {
     @include media-breakpoint-down(sm) {
         font-size: 32px;
         max-width: 343px;
-        align-self: center;
     }
 }
 

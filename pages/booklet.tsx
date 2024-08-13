@@ -149,7 +149,7 @@ const Booklet: React.FC = () => {
                 <div className="w-100 book-description position-relative" style={{ marginTop: "60px" }}>
                     <Container>
                         <Row xs={1} sm={1} md={1} xl={2}>
-                            <Col>
+                            <Col className="my-5">
                                 <NextImage
                                     className="book-image book-front-cover"
                                     src={i18n.language == "en" ? coverEN : coverJA}
