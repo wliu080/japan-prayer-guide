@@ -73,7 +73,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main id="home">
+            <main id="home" role="main">
                 <ToggleHeader />
 
                 {/* Hero banner section */}
