@@ -17,12 +17,12 @@
         { "label": "Harmony", "link": "harmony", "disabled": true },
         { "label": "Social conformity", "link": "social-conformity", "disabled": false },
         { "label": "Self-reliance and materialism", "link": "self-reliance-and-materialism", "disabled": true },
-        { "label": "Mental and emotional health", "link": "mental-and-emotional-health", "disabled": true },
+        { "label": "Mental and emotional health", "link": "mental-and-emotional-health", "disabled": false },
         { "label": "Aging society", "link": "aging-society", "disabled": true },
         {
             "label": "Politics and international relations",
             "link": "politics-and-international-relations",
-            "disabled": true
+            "disabled": false
         },
         { "label": "Immigration and foreign nationals", "link": "immigration-and-foreign-nationals", "disabled": true },
         { "label": "Natural disasters", "link": "natural-disasters", "disabled": true },

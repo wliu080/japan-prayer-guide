@@ -26,32 +26,32 @@
         "labels": ["Aging society", "Struggling churches", "Church planting"],
         "links": ["/topics/aging-society", "/topics/struggling-churches", "/topics/church-planting"],
         "thumbs": [
-            "/photos/topic-nav/culture/japanese-culture-and-christianity.png",
-            "/photos/topic-nav/culture/popular-religious-practices.png",
+            "/photos/topic-nav/culture/aging-society.png",
+            "/photos/topic-nav/culture/placeholder.png",
             "/photos/topic-nav/church/placeholder.png"
         ]
     },
     "photos": [
-        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "", "alt": "" }
     ],
     "uncroppedPhotos": [
-        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
-        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "", "alt": "" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "", "alt": "" }
     ],
     "galleryType": "mosaic",
     "blockOrder": [7, 1, 3, 9],
