@@ -39,7 +39,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
     ]
 
     const topics: string[] = topicTrans("related.labels", { returnObjects: true })
-    const links: string[] = topicTrans("related.links", { returnObjects: true })
+    // const links: string[] = topicTrans("related.links", { returnObjects: true })
     const thumbnails: string[] = topicTrans("related.thumbs", { returnObjects: true })
 
     const onClickPrev = () => {
@@ -60,7 +60,7 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
                 <h1 data-testid={"related-content-title"} className="text-primary my-4 fs-1 fw-bold">
                     <Trans t={common} i18nKey="relatedTopics.heading" />
                 </h1>
-                <Link href={"/topics"} className="text-secondary" locale={i18n.language}>
+                <Link href={"/topics/all"} className="text-secondary" locale={i18n.language}>
                     <Trans t={common} i18nKey="relatedTopics.viewAll" />
                 </Link>
             </Container>
@@ -76,12 +76,14 @@ export default function RelatedContent({ topicTrans }: relatedProps) {
             >
                 {topics.map((topic, idx) => (
                     <Link
-                        href={links[idx]}
                         key={idx + topic}
                         className="d-flex flex-column align-items-center text-decoration-none py-1 px-0"
                         locale={i18n.language}
+                        // href={links[idx]}
+                        // remove bottom after conference. Uncomment top
+                        href={"#"}
                     >
-                        <Card className={"related-topic-card"}>
+                        <Card className={"related-topic-card"} style={{ cursor: "not-allowed" }}>
                             <Card.Body className="m-0 p-0">
                                 <Image
                                     src={thumbnails[idx]}

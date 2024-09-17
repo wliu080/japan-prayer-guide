@@ -14,7 +14,7 @@ import { PhotosWrapper } from "../../components/GalleryComponents/PhotosWrapper/
 import PrayerResponse from "../../components/topic/PrayerResponse/PrayerResponse"
 import { StickyNav, Tab } from "../../components/topic/StickyNav/StickyNav"
 import RelatedContent from "../../components/topic/RelatedContent/RelatedContent"
-import { ReferencesSection } from "../../components/topic/References/References"
+// import { ReferencesSection } from "../../components/topic/References/References"
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getTopicPageIds()
@@ -66,12 +66,12 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const navTabs: Tab[] = topicCommon("nav", { returnObjects: true })
 
     const galleryLabel: string = topicCommon("galleryLabel")
-    const factsLabel: string = topicCommon("factsLabel")
+    // const factsLabel: string = topicCommon("factsLabel")
     const galleryClickInstructions: string = topicCommon("galleryClickInstructions")
     const galleryImageText: string = topicCommon("galleryImageText")
     const localeImages: any[] = t("photos", { returnObjects: true })
     const images = Array.isArray(localeImages) && localeImages.length > 0 ? localeImages : null
-    const timeline: string = t("timeline")
+    // const timeline: string = t("timeline")
     const galleryType: string = t("galleryType")
     const blockOrder: number[] = t("blockOrder", { returnObjects: true })
     const uncropped: any[] = t("uncroppedPhotos", { returnObjects: true })
@@ -79,9 +79,11 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
     const heroPhoto: string = t("heroPhoto")
     const heroFocus: string = t("heroFocus")
 
-    const infographicDesktop: string = t("infographic.desktop")
-    const infographicTablet: string = t("infographic.tablet")
-    const infographicMobile: string = t("infographic.mobile")
+    const quote: string = t("quote.content")
+
+    // const infographicDesktop: string = t("infographic.desktop")
+    // const infographicTablet: string = t("infographic.tablet")
+    // const infographicMobile: string = t("infographic.mobile")
 
     const previousText: string = topicCommon("previousTopic")
     const nextText: string = topicCommon("nextTopic")
@@ -116,20 +118,22 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                 <StickyNav tabs={navTabs} />
 
                 <Container className="main-section-container">
-                    {/* Placeholder for a quote */}
-                    <Container
-                        id="about-topic"
-                        className="d-flex flex-column justify-content-center align-items-center py-4 mt-4"
-                    >
-                        <p className="text-primary-blue quote text-center">
-                            <Trans t={t} i18nKey="quote.content" />
-                        </p>
-                        <p className="text-primary-blue fs-5 text-center">
-                            <Trans t={t} i18nKey="quote.source" />
-                        </p>
-                    </Container>
+                    {quote !== "" ? (
+                        <Container
+                            id="about-topic"
+                            className="d-flex flex-column justify-content-center align-items-center py-4 mt-4"
+                        >
+                            <p className="text-primary-blue quote text-center">
+                                <Trans t={t} i18nKey="quote.content" />
+                            </p>
+                            <p className="text-primary-blue fs-5 text-center">
+                                <Trans t={t} i18nKey="quote.source" />
+                            </p>
+                        </Container>
+                    ) : (
+                        <div style={{ height: "40px" }} />
+                    )}
 
-                    {/* Placeholder text */}
                     <Container className="main-content mt-0">
                         {textContent.map((text: string, idx: number) => (
                             <p key={idx + text}>
@@ -160,10 +164,11 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                         </CollapseBlock>
                     )}
                     {/* Timeline */}
-                    {timeline !== "timeline" && <h1>timeline</h1>}
+                    {/* {timeline !== "timeline" && <h1>timeline</h1>} */}
 
-                    {/* Infographics Placeholder */}
-                    <CollapseBlock title={factsLabel} startOpened={true} galleryType={"infographic"}>
+                    {/* Infographics: Uncomment after conference */}
+
+                    {/* <CollapseBlock title={factsLabel} startOpened={true} galleryType={"infographic"}>
                         <Container className="mt-3 d-flex justify-content-center px-0">
                             <Image className="d-none d-xl-block w-100" src={infographicDesktop} alt="infographic" />
                             <Image
@@ -177,7 +182,7 @@ export default function TopicPage({ localeRef }: { localeRef: string }) {
                     <Container className="">
                         <hr />
                         <ReferencesSection />
-                    </Container>
+                    </Container> */}
                     <Container className={"bottom-spacing"}></Container>
                 </Container>
 
