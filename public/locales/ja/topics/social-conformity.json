@@ -21,9 +21,9 @@
         "labels": ["和を重んじる文化", "精神と心の健康", "日常生活と信仰"],
         "links": ["/topics/harmony", "/topics/mental-and-emotional-health", "/topics/daily-christian-life-and-faith"],
         "thumbs": [
-            "/photos/topic-nav/culture/japanese-culture-and-christianity.png",
-            "/photos/topic-nav/culture/popular-religious-practices.png",
-            "/photos/topic-nav/church/placeholder.png"
+            "/photos/topic-nav/culture/harmony.png",
+            "/photos/topic-nav/culture/mental-and-emotional-health.png",
+            "/photos/topic-nav/church/daily-christian-life-and-faith.png"
         ]
     },
     "heroPhoto": "/photos/topics/topic6/TP06-Hero.jpg",

@@ -62,7 +62,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="gh thumbnail"
                           class="w-100 bg-secondary"
                           src="/link4"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -101,7 +101,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="ij thumbnail"
                           class="w-100 bg-secondary"
                           src="/link5"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -140,7 +140,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="kl thumbnail"
                           class="w-100 bg-secondary"
                           src="/link6"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -179,7 +179,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="ab thumbnail"
                           class="w-100 bg-secondary"
                           src="/link1"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -218,7 +218,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="cd thumbnail"
                           class="w-100 bg-secondary"
                           src="/link2"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -257,7 +257,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="ef thumbnail"
                           class="w-100 bg-secondary"
                           src="/link3"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -296,7 +296,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="gh thumbnail"
                           class="w-100 bg-secondary"
                           src="/link4"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -335,7 +335,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="ij thumbnail"
                           class="w-100 bg-secondary"
                           src="/link5"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -374,7 +374,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="kl thumbnail"
                           class="w-100 bg-secondary"
                           src="/link6"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -413,7 +413,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="ab thumbnail"
                           class="w-100 bg-secondary"
                           src="/link1"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -452,7 +452,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="cd thumbnail"
                           class="w-100 bg-secondary"
                           src="/link2"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -491,7 +491,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="ef thumbnail"
                           class="w-100 bg-secondary"
                           src="/link3"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -530,7 +530,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="gh thumbnail"
                           class="w-100 bg-secondary"
                           src="/link4"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -569,7 +569,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="ij thumbnail"
                           class="w-100 bg-secondary"
                           src="/link5"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -608,7 +608,7 @@ exports[`Related Content Snapshot test 1`] = `
                           alt="kl thumbnail"
                           class="w-100 bg-secondary"
                           src="/link6"
-                          style="height: 200px;"
+                          style="height: 210px;"
                         />
                       </div>
                       <div
@@ -700,7 +700,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="gh thumbnail"
                         class="w-100 bg-secondary"
                         src="/link4"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -739,7 +739,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="ij thumbnail"
                         class="w-100 bg-secondary"
                         src="/link5"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -778,7 +778,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="kl thumbnail"
                         class="w-100 bg-secondary"
                         src="/link6"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -817,7 +817,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="ab thumbnail"
                         class="w-100 bg-secondary"
                         src="/link1"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -856,7 +856,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="cd thumbnail"
                         class="w-100 bg-secondary"
                         src="/link2"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -895,7 +895,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="ef thumbnail"
                         class="w-100 bg-secondary"
                         src="/link3"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -934,7 +934,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="gh thumbnail"
                         class="w-100 bg-secondary"
                         src="/link4"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -973,7 +973,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="ij thumbnail"
                         class="w-100 bg-secondary"
                         src="/link5"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -1012,7 +1012,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="kl thumbnail"
                         class="w-100 bg-secondary"
                         src="/link6"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -1051,7 +1051,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="ab thumbnail"
                         class="w-100 bg-secondary"
                         src="/link1"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -1090,7 +1090,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="cd thumbnail"
                         class="w-100 bg-secondary"
                         src="/link2"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -1129,7 +1129,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="ef thumbnail"
                         class="w-100 bg-secondary"
                         src="/link3"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -1168,7 +1168,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="gh thumbnail"
                         class="w-100 bg-secondary"
                         src="/link4"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -1207,7 +1207,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="ij thumbnail"
                         class="w-100 bg-secondary"
                         src="/link5"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
@@ -1246,7 +1246,7 @@ exports[`Related Content Snapshot test 1`] = `
                         alt="kl thumbnail"
                         class="w-100 bg-secondary"
                         src="/link6"
-                        style="height: 200px;"
+                        style="height: 210px;"
                       />
                     </div>
                     <div
