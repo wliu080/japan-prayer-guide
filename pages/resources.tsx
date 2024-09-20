@@ -1,10 +1,10 @@
 import Head from "next/head"
 import React from "react"
-import { ToggleHeader } from "../components/toggleHeader"
+import { ToggleHeader } from "../components/ToggleHeader"
 import { Button, Container, Image } from "react-bootstrap"
 import { Trans, useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import Footer from "../components/footer"
+import Footer from "../components/Footer"
 import Link from "next/link"
 
 export async function getStaticProps({ locale }: any) {

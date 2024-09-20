@@ -1,13 +1,13 @@
 import Head from "next/head"
-import { ToggleHeader } from "../components/toggleHeader"
+import { ToggleHeader } from "../components/ToggleHeader"
 import { Button, Container } from "react-bootstrap"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { getSchedule, getFeaturedTopic } from "../services/featuredTopicSelector"
-import Footer from "../components/footer"
+import Footer from "../components/Footer"
 import Link from "next/link"
 import OrderBook from "../components/common/OrderBook"
-import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints"
+import PrayerPoints, { PrayerDisplayStyle } from "../components/common/PrayerPoints/PrayerPoints"
 import { ImageCarousel } from "../components/GalleryComponents/Carousel/Carousel"
 import { LowHighImage } from "../components/LowHighImage"
 import Image from "next/image"
@@ -150,7 +150,7 @@ const Home = ({ featuredTopicRef }: { featuredTopicRef: string }) => {
                 </Container>
 
                 {/* Purchase snippet */}
-                <Container className="home-purchase-section py-3 py-md-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
+                <Container className="home-purchase-section py-5 px-2 d-flex align-items-center justify-content-center flex-column flex-md-row">
                     <Image
                         alt="book-cover"
                         src={i18n.language == "en" ? coverEN : coverJA}

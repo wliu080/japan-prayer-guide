@@ -1,0 +1,70 @@
+{
+    "title": "政治と国際関係",
+    "path": "politics-and-international-relations",
+    "prayerSummary": [
+        "政治指導者や国民が、世界における影響力を、謙虚さを持って善のために用いることができるように。",
+        "思想・信条の自由と政教分離の原則が守られるように。",
+        "日本とアジア近隣諸国とが、対立点について平和的解決を見出せるように。"
+    ],
+    "textBody": [
+        "第二次世界大戦後の日本政治は、対米関係の回復から米国追従の傾向にあります。しかしその一方で、対アジア諸国との関係修復は、北方領土、北朝鮮関係、従軍慰安婦や強制労働など過去の清算が未解決な状態で、国内では、原発や沖縄への基地依存などの問題が山積しています。",
+        "長期政権の下で秘密保護法や共謀罪法が成立し、報道の自由は後退し、戦争放棄の憲法の解釈を変えて集団的自衛権の行使容認に至りました。また、経済が優先される一方、環境や人権の課題は取り残されています。",
+        "これまで公共団体が神社に支出することは違憲であるとする判例によって、政教分離は守られてきました。しかし、2019年の新天皇即位の儀式中、大嘗祭という神道の最も重要な神事には24億4千万円の公費が使われました。",
+        "学校における国旗・国歌の強制や、首相をはじめとする国会議員らの伊勢神宮、靖国神社参拝は、民族主義の傾向を示し、懸念されます。"
+    ],
+    "textBodyAsterisk": [],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
+    },
+    "downloads": {},
+    "related": {
+        "labels": ["入国管理と外国人居住者", "自然災害", "テクノロジーとメディア"],
+        "links": [
+            "/topics/immigration-and-foreign-nationals",
+            "/topics/natural-disasters",
+            "/topics/technology-and-media"
+        ],
+        "thumbs": [
+            "/photos/topic-nav/culture/japanese-culture-and-christianity.png",
+            "/photos/topic-nav/culture/popular-religious-practices.png",
+            "/photos/topic-nav/church/placeholder.png"
+        ]
+    },
+    "heroPhoto": "/photos/topics/topic10/TP10-Hero.jpg",
+    "heroFocus": "75% 50%",
+    "photos": [
+        {
+            "src": "/photos/topics/topic10/TP10-Carousel-01.jpg",
+            "title": "The main building at the Imperial Palace, located in central Tokyo. The current emperor Naruhito, enthroned in 2019, is Japan's 126th emperor."
+        },
+        {
+            "src": "/photos/topics/topic10/TP10-Carousel-02.jpg",
+            "title": "The National Diet Building in Tokyo, which houses the legislative bodies of government."
+        },
+        {
+            "src": "/photos/topics/topic10/TP10-Carousel-03.jpg",
+            "title": "The Tokyo Metropolitan Government building, which houses the governor's office and administrative offices for the city."
+        },
+        {
+            "src": "/photos/topics/topic10/TP10-Carousel-04.jpg",
+            "title": "Yasukuni shrine, a controversial shrine that deifies the war dead, including those charged as World War II war criminals. Issues surrounding this shrine continue to be a source of tension for Asian nations."
+        },
+        {
+            "src": "/photos/topics/topic10/TP10-Carousel-05.jpg",
+            "title": "The Atomic Bomb Dome, the only building left standing in the center of Hiroshima after the atomic bomb was dropped by the U.S. military during World War II."
+        },
+        {
+            "src": "/photos/topics/topic10/TP10-Carousel-06.jpg",
+            "title": "A globe showing Japan in proximity to its neighboring nations."
+        }
+    ],
+    "galleryType": "carousel",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/921387464",
+    "infographic": {
+        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
+        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
+        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
+    }
+}

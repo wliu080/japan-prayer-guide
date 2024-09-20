@@ -5,7 +5,8 @@ import { useEffect } from "react"
 import Modal from "@mui/material/Modal"
 import Slide from "@mui/material/Slide"
 import Box from "@mui/material/Box"
-import { Image, Row } from "react-bootstrap"
+import { Row } from "react-bootstrap"
+import Image from "next/image"
 
 interface GalleryProps {
     index: number
@@ -13,6 +14,7 @@ interface GalleryProps {
     images: {
         src: string
         title: string
+        alt?: string
     }[]
     setGallery: React.Dispatch<React.SetStateAction<boolean>>
     setLightBox: React.Dispatch<React.SetStateAction<boolean>>
@@ -72,7 +74,14 @@ function Gallery({
                                         key={index}
                                         onClick={() => handleLightBox(index)}
                                     >
-                                        <Image key={index} src={item.src} className="galleryImage" alt="logo" />
+                                        <Image
+                                            key={index}
+                                            src={item.src}
+                                            width={1800}
+                                            height={1200}
+                                            className="galleryImage"
+                                            alt={item?.alt || item.title}
+                                        />
                                         <div className="galleryImageOverlay"></div>
                                     </div>
                                 </Row>
@@ -85,7 +94,14 @@ function Gallery({
                                         key={index}
                                         onClick={() => handleLightBox(index)}
                                     >
-                                        <Image key={index} src={item.src} className="galleryImage" alt="logo" />
+                                        <Image
+                                            key={index}
+                                            src={item.src}
+                                            width={1800}
+                                            height={1200}
+                                            className="galleryImage"
+                                            alt={item?.alt || item.title}
+                                        />
                                         <div className="galleryImageOverlay"></div>
                                     </div>
                                     {images[index + 1] && (
@@ -97,8 +113,10 @@ function Gallery({
                                             <Image
                                                 key={index + 1}
                                                 src={images[index + 1]?.src}
+                                                width={1800}
+                                                height={1200}
                                                 className="galleryImage"
-                                                alt="logo"
+                                                alt={images[index + 1]?.alt || images[index + 1]?.title}
                                             />
                                             <div className="galleryImageOverlay"></div>
                                         </div>

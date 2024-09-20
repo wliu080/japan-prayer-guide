@@ -1,0 +1,66 @@
+{
+    "title": "Mental and emotional health",
+    "path": "mental-and-emotional-health",
+    "prayerSummary": [
+        "Pray that seeking mental health care would lose its current stigma in Japan.",
+        "Pray for more Christian counselors, and that the church would be equipped to minister to those who are struggling.",
+        "Pray that more Japanese people would discover God’s grace and acceptance, and that Christians would model this for them."
+    ],
+    "textBody": [
+        "A missionary couple hosted Riku for four months at their home. For two years before then, he had shut himself inside his house, but had eventually been kicked out for being violent.",
+        "Riku was one of over a million people in Japan with <i>hikikomori</i>, a condition in which individuals shut themselves off from society for at least six months.<sup>1</sup> Yet any time the couple mentioned healing, Riku would insist he was not like one of “those people.”",
+        "It can be difficult for Japanese people to admit they struggle with a mental health issue. Many fear being stigmatized. Treatment in Japan often focuses on medication without the support of counseling.",
+        "In another troubling trend, suicides of young people climbed to an all-time high in 2022.<sup>2</sup> Suicide is the leading cause of death among 10-39 year olds in Japan.<sup>3</sup> The number of school children committing suicide typically peaks after the summer break. There can be several contributing factors to this, including family issues, bullying, and academic pressures.",
+        "There is, however, a growing awareness of mental and emotional health issues both in society and the church. Government-funded suicide prevention strategies are showing some success. And more Christians are interested in going into mental health professions."
+    ],
+    "textBodyAsterisk": [],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "source": "Lorem ipsum"
+    },
+    "downloads": {},
+    "related": {
+        "labels": ["Social conformity", "Workplace pressure", "Family life"],
+        "links": ["/topics/social-conformity", "/topics/workplace-pressure", "/topics/family-life"],
+        "thumbs": [
+            "/photos/topic-nav/culture/japanese-culture-and-christianity.png",
+            "/photos/topic-nav/culture/popular-religious-practices.png",
+            "/photos/topic-nav/church/placeholder.png"
+        ]
+    },
+    "heroPhoto": "/photos/topics/topic8/TP08-Hero.jpg",
+    "heroFocus": "50% 50%",
+    "photos": [
+        {
+            "src": "/photos/topics/topic8/TP08-Carousel-01.jpg",
+            "title": "",
+            "alt": "A man sitting alone with his face covered by a hooded jacket."
+        },
+        {
+            "src": "/photos/topics/topic8/TP08-Carousel-02.jpg",
+            "title": "",
+            "alt": "Students in uniform walking in a local neighborhood."
+        },
+        {
+            "src": "/photos/topics/topic8/TP08-Carousel-03.jpg",
+            "title": "",
+            "alt": "A man with a tense facial expression on a crowded train platform."
+        },
+        {
+            "src": "/photos/topics/topic8/TP08-Carousel-04.jpg",
+            "title": "A mental health poster at a train station. It is produced by the Ministry of Health, Labour, and Welfare, and reads: 'Life over work' and 'Stop death by overwork!'"
+        },
+        {
+            "src": "/photos/topics/topic8/TP08-Carousel-05.jpg",
+            "title": "Examples of Christian books on topics related to mental and emotional health."
+        }
+    ],
+    "galleryType": "carousel",
+    "blockOrder": [6, 7, 6, 6],
+    "videoSrc": "https://player.vimeo.com/video/921387464",
+    "infographic": {
+        "desktop": "/photos/topics/topic1/topic-1-desktop.svg",
+        "tablet": "/photos/topics/topic1/topic-1-tablet.svg",
+        "mobile": "/photos/topics/topic1/topic-1-mobile.svg"
+    }
+}

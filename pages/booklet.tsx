@@ -1,11 +1,11 @@
 import Head from "next/head"
 import Link from "next/link"
 import React from "react"
-import { ToggleHeader } from "../components/toggleHeader"
+import { ToggleHeader } from "../components/ToggleHeader"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import { useTranslation, Trans } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import Footer from "../components/footer"
+import Footer from "../components/Footer"
 import ImagePagination from "../components/image-pagination/ImagePagination"
 import OrderBook from "../components/common/OrderBook"
 import BookPageImageEN1 from "../public/photos/booklet/pagination/en/Book - Slider 1 EN.jpg"
@@ -149,7 +149,7 @@ const Booklet: React.FC = () => {
                 <div className="w-100 book-description position-relative" style={{ marginTop: "60px" }}>
                     <Container>
                         <Row xs={1} sm={1} md={1} xl={2}>
-                            <Col>
+                            <Col className="my-5">
                                 <NextImage
                                     className="book-image book-front-cover"
                                     src={i18n.language == "en" ? coverEN : coverJA}

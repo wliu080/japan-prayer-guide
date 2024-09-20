@@ -1,0 +1,56 @@
+{
+    "title": "地方伝道",
+    "path": "christianity-in-rural-areas",
+    "prayerSummary": [
+        "地方に住む数千万人の人々に福音を伝えるために、さらに多くの働き人が長期的に奉仕できるように。",
+        "地方に住む人たちが福音を聞き、聖霊の働きによってキリストに導かれるように。",
+        "地方自治体が地域の課題を決定する際に、知恵が与えられるように。"
+    ],
+    "textBody": [
+        "東北のある街で、望美さんは地元で唯一のショッピングモールにある衣料品店で働いていました。そこで教会を開拓している人に出会い、お茶会に誘われたのがきっかけで、感謝祭、クリスマス礼拝、聖書研究会などに参加するようになりました。そして、望美さんは、ついに信仰を持つに至ったのです。その後、彼女は県内唯一のキリスト教書店の店長になりました。",
+        "日本で「地方」というと、人口密度の低い地方都市や小さな町や村を意味し、しばしば寂しいイメージを持たれます。若者は大都市に流出しています。教会は高齢化し、無牧の教会も多くあります。住民は伝統にしばられており、福音に対して心を閉ざしていると思われがちです。",
+        "地方自治体は地元の活性化を目指し、道路を整備し、観光業に力を入れています。その結果、地方の小都市はアクセスがよくなり、大都市よりも新しい関係を築きやすくなっているかもしれません。",
+        "地方にはおよそ3,800万人が住み<sup>1</sup>、キリスト教への関心もありますが、伝道の働きは遅々として進みません。福音を伝え、分かち合い、長期にわたり証しする働き人が必要とされています。"
+    ],
+    "quote": {
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "source": "-Bible verse or quote."
+    },
+    "downloads": {
+        "infographicsUrl": "www.google.com",
+        "pdfUrl": "www.google.com",
+        "prayerPtsUrl": "www.google.com",
+        "prayerVidUrl": "www.google.com"
+    },
+    "related": {
+        "labels": ["高齢化社会", "教会開拓", "教会のリーダーシップ"],
+        "links": ["/topics/aging-society", "/topics/church-planting", "/topics/church-leadership"]
+    },
+    "photos": [
+        { "src": "/photos/topics/topic19/TP00-Mosaic-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP00-Mosaic-09.jpg", "title": "ADD LATER" }
+    ],
+    "uncroppedPhotos": [
+        { "src": "/photos/topics/topic19/TP19-Uncropped-01.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-02.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-03.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-04.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-05.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-06.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-07.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-08.jpg", "title": "ADD LATER" },
+        { "src": "/photos/topics/topic19/TP19-Uncropped-09.jpg", "title": "ADD LATER" }
+    ],
+    "galleryType": "mosaic",
+    "blockOrder": [7, 1, 3, 9],
+    "videoSrc": "https://player.vimeo.com/video/87253223?h=54bcde9d3a",
+    "heroPhoto": "/photos/topics/topic19/TP19-Hero.jpg",
+    "heroFocus": "60% 50%"
+}
